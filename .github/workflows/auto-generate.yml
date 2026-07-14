@@ -49,3 +49,5 @@ jobs:
             src/data/script.json
             src/data/timing.json
           retention-days: 14
+
+# NOTE: workflow_dispatch はActionsタブの「Run workflow」から手動実行する
