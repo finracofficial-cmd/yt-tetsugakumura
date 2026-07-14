@@ -23,6 +23,12 @@ export type Visual =
   | { type: "dialogue"; line: string; image_prompt: string }
   | { type: "stat"; value: string; label: string }
   | {
+      type: "chart";
+      title: string;
+      unit: string;
+      items: { label: string; value: number }[];
+    }
+  | {
       type: "comparison";
       left_title: string;
       right_title: string;

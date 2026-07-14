@@ -10,6 +10,7 @@ import { SceneFrame } from "./components/SceneFrame";
 import { KeywordContent } from "./components/contents/KeywordContent";
 import { StatContent } from "./components/contents/StatContent";
 import { ComparisonContent } from "./components/contents/ComparisonContent";
+import { ChartContent } from "./components/contents/ChartContent";
 import { ListContent } from "./components/contents/ListContent";
 import { DialogueContent } from "./components/contents/DialogueContent";
 import { IllustrationContent } from "./components/contents/IllustrationContent";
@@ -69,6 +70,15 @@ const SceneContent: React.FC<{
         <StatContent
           value={visual.value}
           label={visual.label}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "chart":
+      return (
+        <ChartContent
+          title={visual.title}
+          unit={visual.unit}
+          items={visual.items}
           durationInFrames={durationInFrames}
         />
       );

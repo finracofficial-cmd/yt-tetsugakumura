@@ -42,18 +42,19 @@ import {
   type VideoScript,
 } from "./types";
 
-const TTS_MODEL = process.env.OPENAI_TTS_MODEL ?? "tts-1-hd";
+// 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
+const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "tts-1-hd";
 /** 最も深く落ち着いた低音男性ボイス */
-const TTS_VOICE = process.env.OPENAI_TTS_VOICE ?? "onyx";
+const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "onyx";
 /** 通常より5%遅くして語りの重厚感を出す */
-const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED ?? "0.95");
+const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED || "0.95");
 
 /** 文法ポーズ（ミリ秒） */
 const PAUSE_COMMA_MS = 400;
 const PAUSE_PERIOD_MS = 1000;
 const PAUSE_ELLIPSIS_MS = 1800;
-/** シーン末尾の余韻: 通常 / 幕の変わり目・最終シーン */
-const SCENE_TAIL_MS = 1000;
+/** シーン末尾の余韻: 通常（1シーン=1文のため短め） / 幕の変わり目・最終シーン */
+const SCENE_TAIL_MS = 800;
 const SCENE_TAIL_ACT_CHANGE_MS = 1800;
 /** TTSスキップ時の推定: 日本語 ≒ 6.5文字/秒（speed 0.95で割り引く） */
 const ESTIMATED_CHARS_PER_SEC = 6.5 * TTS_SPEED;

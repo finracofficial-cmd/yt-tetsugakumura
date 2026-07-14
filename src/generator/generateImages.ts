@@ -23,12 +23,14 @@ import {
   type VideoScript,
 } from "./types";
 
-const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-1";
+const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1";
 /** low | medium | high。品質と料金のバランス（mediumで1枚あたり約$0.06） */
-const IMAGE_QUALITY = (process.env.OPENAI_IMAGE_QUALITY ?? "medium") as
+const IMAGE_QUALITY = (process.env.OPENAI_IMAGE_QUALITY || "medium") as
   | "low"
   | "medium"
   | "high";
+/** 1本あたりの生成イラスト枚数の上限（コスト管理用）。超過分はフォールバック描画になる */
+const MAX_SCENE_IMAGES = Number(process.env.MAX_SCENE_IMAGES || "12");
 
 /**
  * 全シーンで統一する画風。台本AIのimage_promptの前に付与する。
@@ -44,10 +46,17 @@ export async function generateImages(): Promise<ImageManifest> {
   const script = JSON.parse(readFileSync(SCRIPT_JSON_PATH, "utf-8")) as VideoScript;
   const apiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
 
-  const targets = script.scenes.filter(
+  const allTargets = script.scenes.filter(
     (s) => s.visual.type === "illustration" || s.visual.type === "dialogue",
   );
+  const targets = allTargets.slice(0, MAX_SCENE_IMAGES);
+  if (allTargets.length > targets.length) {
+    console.warn(
+      `[generateImages] 画像対象${allTargets.length}シーンのうち上限${MAX_SCENE_IMAGES}枚のみ生成します（MAX_SCENE_IMAGESで変更可）。残りはフォールバック描画。`,
+    );
+  }
   const manifest: ImageManifest = {};
+  for (const s of allTargets) manifest[String(s.id)] = null;
 
   if (!apiKey) {
     console.warn(

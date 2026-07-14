@@ -14,7 +14,7 @@ import { pathToFileURL } from "node:url";
 import { SCRIPT_SYSTEM_PROMPT, buildUserPrompt } from "./prompts";
 import { SCRIPT_JSON_PATH, type VideoScript } from "./types";
 
-const MODEL = process.env.ANTHROPIC_MODEL ?? "claude-opus-4-8";
+const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
 
 /**
  * 構造化出力用のJSONスキーマ。
@@ -110,6 +110,29 @@ const VIDEO_SCRIPT_SCHEMA = {
                     },
                   },
                   required: ["type", "value", "label"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "chart" },
+                    title: { type: "string", description: "グラフのタイトル" },
+                    unit: { type: "string", description: "数値の単位（時間, %, 人 など）" },
+                    items: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          label: { type: "string", description: "項目名（2〜8文字）" },
+                          value: { type: "number" },
+                        },
+                        required: ["label", "value"],
+                        additionalProperties: false,
+                      },
+                      description: "2〜6本の棒",
+                    },
+                  },
+                  required: ["type", "title", "unit", "items"],
                   additionalProperties: false,
                 },
                 {
