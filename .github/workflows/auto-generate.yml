@@ -8,6 +8,9 @@ on:
         required: false
         default: ""
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -77,5 +80,23 @@ jobs:
             src/data/script.json
             src/data/timing.json
           retention-days: 14
+
+      # レビュー用: 8秒おきのフレームと低解像度プレビューをリポジトリにコミットする。
+      # これによりClaude（開発エージェント）が実際の生成結果を確認して改善できる。
+      - name: Extract & commit previews
+        if: always() && hashFiles('out/video.mp4') != ''
+        run: |
+          sudo apt-get install -y ffmpeg
+          rm -rf previews/latest
+          mkdir -p previews/latest
+          ffmpeg -y -i out/video.mp4 -vf "fps=1/8,scale=960:-1" -q:v 4 previews/latest/frame-%03d.jpg
+          ffmpeg -y -i out/video.mp4 -vf scale=640:-2 -c:v libx264 -crf 34 -preset veryfast -c:a aac -b:a 64k previews/latest/preview.mp4
+          cp src/data/script.json src/data/timing.json src/data/images.json previews/latest/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add previews
+          git commit -m "previews: run #${{ github.run_number }} の生成結果" || echo "no changes to commit"
+          git pull --rebase origin ${{ github.ref_name }} || true
+          git push
 
 # NOTE: workflow_dispatch はActionsタブの「Run workflow」から手動実行する
