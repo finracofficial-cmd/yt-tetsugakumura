@@ -1,0 +1,423 @@
+{
+  "theme": "友人の成功に対して素直に喜べず胸がざわつくという、誰もが抱えながら口にしないタブーを、社会比較理論と進化心理学から解剖する。",
+  "title": "なぜ友人の成功はこんなにも胸をざわつかせるのか【進化心理学×社会比較理論】",
+  "scenes": [
+    {
+      "id": 1,
+      "act": 1,
+      "narration": "深夜一時。ベッドに沈んだ体の上で、スマートフォンの光だけが、顔を白く照らしている。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A person lying in bed at night, face illuminated only by the glow of a smartphone screen, dark bedroom, overhead view"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 2,
+      "act": 1,
+      "narration": "画面に流れてきたのは、旧友の昇進を知らせる投稿。指は反射的に、祝福の言葉を打っている。",
+      "visual": {
+        "type": "dialogue",
+        "line": "おめでとう、すごいね",
+        "image_prompt": "Close-up of two hands typing a congratulatory message on a smartphone in the dark, faint screen light"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 3,
+      "act": 1,
+      "narration": "送信ボタンを押した、その瞬間。胸の奥に、名前のつかない小さな石が、静かに沈んだ。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "The same person now staring at a dark ceiling, phone lying face-down on the chest, low side angle, dim blue light"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 4,
+      "act": 1,
+      "narration": "口では祝い、心の底ではざわめく。この矛盾した二つは、なぜ同じ胸の中で同居できるのか。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "祝福と嫉妬"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 5,
+      "act": 1,
+      "narration": "友の幸せは、我が幸せ。我々はそう教わって育った。だが、本当にそうなのだろうか。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "建前",
+        "right_title": "本音",
+        "left_items": [
+          "友の幸せは",
+          "我が幸せ",
+          "だと微笑む"
+        ],
+        "right_items": [
+          "胸がざわめき",
+          "石が沈み",
+          "眠れない"
+        ],
+        "center_label": "≠"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 6,
+      "act": 1,
+      "narration": "赤の他人の大成功より、すぐ隣にいた友人の小さな成功のほうが、なぜ深く胸をえぐるのか。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "近い者ほど、痛い"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 7,
+      "act": 2,
+      "narration": "この問いに、一人の社会心理学者が、半世紀以上も前に答えの骨格を残している。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A 1950s social psychologist figure sitting at a wooden desk covered in papers, single desk lamp, vintage academic study, dim light"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 8,
+      "act": 2,
+      "narration": "レオン・フェスティンガー。一九五四年、彼は人間の抱える奇妙な習性を、理論として言語化した。",
+      "visual": {
+        "type": "stat",
+        "value": "1954年",
+        "label": "フェスティンガーが社会比較理論を提唱"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 9,
+      "act": 2,
+      "narration": "人は自分の価値を、絶対的な物差しでは測れない。だから、隣にいる誰かと比べてしまう。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自分を、他人で測る"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 10,
+      "act": 2,
+      "narration": "この比較には、二つの方向がある。自分より上を見上げる上方比較と、下を見下ろす下方比較だ。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "上方比較",
+        "right_title": "下方比較",
+        "left_items": [
+          "上を見上げる",
+          "向上の燃料",
+          "そして劣等感"
+        ],
+        "right_items": [
+          "下を見下ろす",
+          "安堵を得る",
+          "ときに侮り"
+        ],
+        "center_label": "↕"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 11,
+      "act": 2,
+      "narration": "そして比較が最も鋭くなるのは、自分と条件のよく似た『近い相手』を見たときである。",
+      "visual": {
+        "type": "dialogue",
+        "line": "あいつと、同じはずなのに",
+        "image_prompt": "Two similar-looking young men in silhouette standing side by side, one standing slightly higher on a step, cold light"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 12,
+      "act": 2,
+      "narration": "年齢も、出身も、かつての実力も近い友人は、比較対象として、あまりにも精度が高すぎる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "友人は、最良の物差し"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 13,
+      "act": 2,
+      "narration": "我々の脳が本当に気にかけられる相手は、せいぜい百五十人。友人は、その内側に必ずいる。",
+      "visual": {
+        "type": "stat",
+        "value": "150人",
+        "label": "ダンバー数 — 脳が扱える関係の上限"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 14,
+      "act": 2,
+      "narration": "同じ成功でも、その相手が自分に近いほど、胸のざわめきは、はっきりと強くなっていく。",
+      "visual": {
+        "type": "chart",
+        "title": "相手の近さと『ざわつき』の強さ",
+        "unit": "強さ",
+        "items": [
+          {
+            "label": "見知らぬ富豪",
+            "value": 1
+          },
+          {
+            "label": "遠い知人",
+            "value": 3
+          },
+          {
+            "label": "同期",
+            "value": 7
+          },
+          {
+            "label": "親友",
+            "value": 9
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 15,
+      "act": 2,
+      "narration": "人間の満足は、絶対量ではなく、周囲との差で決まる。幸福研究が、繰り返し示してきた事実だ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "相対の生き物"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 16,
+      "act": 2,
+      "narration": "経済が成長し、所得が増えても、人々の幸福感はほとんど上がらない。イースタリンの逆説だ。",
+      "visual": {
+        "type": "stat",
+        "value": "1974年",
+        "label": "イースタリンの逆説が報告された"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 17,
+      "act": 2,
+      "narration": "豊かになったのは、自分だけではない。皆が豊かになれば、差は消え、満足もまた消えていく。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "隣人の芝生"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 18,
+      "act": 2,
+      "narration": "では、そもそもなぜ我々の脳は、これほどまでに執拗に、他人との差を計算し続けるのか。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "Ancient savanna landscape at dusk, a small group of early humans as silhouettes gathered around a fire"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 19,
+      "act": 2,
+      "narration": "数十万年の間、群れの中の序列は、食料や配偶者へのアクセスを、直接に左右してきた。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "地位は、命だった"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 20,
+      "act": 2,
+      "narration": "群れの底辺に置かれた個体が失ったものは、決して抽象的な誇りなどではなかった。",
+      "visual": {
+        "type": "list",
+        "title": "低い序列が奪ったもの",
+        "items": [
+          "奪われる食料",
+          "選ばれぬ配偶者",
+          "絶たれる子孫"
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 21,
+      "act": 2,
+      "narration": "だから嫉妬は、心の欠陥ではない。序列の変動を知らせるため、進化が組み込んだ警報装置だ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "嫉妬という警報"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 22,
+      "act": 3,
+      "narration": "本来この警報が鳴るはずだったのは、顔の見える百五十人ほどの、小さな群れの中だけだった。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A lone modern person surrounded by many floating glowing rectangular screens showing human faces, overwhelmed, dark space"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 23,
+      "act": 3,
+      "narration": "本来百五十人だった比較の相手は、今や数千、数万にまで膨れ上がってしまった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "サバンナの脳",
+        "right_title": "SNSの環境",
+        "left_items": [
+          "比較相手150人",
+          "勝敗は稀",
+          "等身大の日常"
+        ],
+        "right_items": [
+          "相手は数千人",
+          "勝者だけ表示",
+          "加工された絶頂"
+        ],
+        "center_label": "→"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 24,
+      "act": 3,
+      "narration": "タイムラインに流れてくるのは、昇進、結婚、旅行。人生の輝く頂点だけが、無限に押し寄せる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "勝者だけが流れてくる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 25,
+      "act": 3,
+      "narration": "生物学者ティンバーゲンは、自然界にはない過剰な刺激に、生き物が抗えなくなる現象を見出した。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A bird in a nest reacting to an oversized artificial egg beside its own eggs, natural setting, muted tones, scientific illustration feel"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 26,
+      "act": 3,
+      "narration": "他人の絶頂だけを煮詰めたタイムラインは、我々の比較本能にとっての、超正常刺激にほかならない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "超正常刺激"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 27,
+      "act": 3,
+      "narration": "サバンナでは滅多に鳴らなかった警報が、今や二十四時間、鳴りやむことなく鳴り続けている。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A hand endlessly scrolling a glowing social feed at night, blank expression, face lit by screen, dark room"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 28,
+      "act": 3,
+      "narration": "ここに悪人はいない。友人も、あなたも、ただ古い脳で、新しすぎる環境を生きているだけだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "誰も悪くない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 29,
+      "act": 4,
+      "narration": "そしてこれは、画面の向こうの、意志の弱い誰かの話ではない。今この瞬間の、あなたの話だ。",
+      "visual": {
+        "type": "dialogue",
+        "line": "自分は、違うと思ってた",
+        "image_prompt": "A young person lying in bed holding a phone, faint reflection of screen light on the face, dark room"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 30,
+      "act": 4,
+      "narration": "友の慶事に『いいね』を押しながら、あなたの脳もまた、静かに序列を計算している。",
+      "visual": {
+        "type": "dialogue",
+        "line": "また、比べている",
+        "image_prompt": "Close-up of a thumb scrolling a bright phone screen in darkness, dim room"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 31,
+      "act": 4,
+      "narration": "そっとアプリを閉じ、暗い天井を見つめ、理由もわからないまま、静かに自分を嫌う。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "深夜の自己嫌悪"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 32,
+      "act": 4,
+      "narration": "だが、そのざわめきに罪悪感はいらない。それはあなたの人格ではなく、脳の設計だからだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "人格ではなく、設計"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 33,
+      "act": 4,
+      "narration": "ただ、その警報が今鳴っていると、気づけるかどうか。分かれ道は、そこにしかない。",
+      "visual": {
+        "type": "illustration",
+        "image_prompt": "A person placing a smartphone face-down on a nightstand, faint warm light, calm quiet bedroom at night"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 34,
+      "act": 5,
+      "narration": "友の成功は、本当は我が身を一ミリも削らない。頭で分かっていても、古い回路は今夜も鳴る。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "遺伝子の古い囁き"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 35,
+      "act": 5,
+      "narration": "その警報を消すことはできない。ただ鳴っていると知るだけで、夜は少しだけ静かになる。そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "考えすぎる葦"
+      },
+      "concept_color": "pitch-black"
+    }
+  ]
+}
