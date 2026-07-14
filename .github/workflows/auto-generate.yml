@@ -31,6 +31,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Secretsに登録されたキーの「形式」と「認証可否」だけを確認する診断ステップ。
+      # キー本体はログに出さない（長さ・先頭12文字・APIの応答コードのみ）。
+      - name: Verify API keys
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
+          echo "== ANTHROPIC_API_KEY =="
+          echo "length : ${#AK}"
+          echo "prefix : ${AK:0:12}..."
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.anthropic.com/v1/models \
+            -H "x-api-key: $AK" -H "anthropic-version: 2023-06-01")
+          echo "auth check (GET /v1/models): HTTP $STATUS  (200=OK, 401=キーが無効)"
+
+          OK=$(printf '%s' "$OPENAI_API_KEY" | tr -d '[:space:]')
+          echo "== OPENAI_API_KEY =="
+          echo "length : ${#OK}"
+          echo "prefix : ${OK:0:8}..."
+          OSTATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.openai.com/v1/models \
+            -H "Authorization: Bearer $OK")
+          echo "auth check (GET /v1/models): HTTP $OSTATUS  (200=OK, 401=キーが無効)"
+
+          if [ "$STATUS" != "200" ]; then
+            echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
+            exit 1
+          fi
+
       - name: Generate script & audio
         run: npm run generate -- --topic="${{ github.event.inputs.topic }}"
         env:
