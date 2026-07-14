@@ -45,9 +45,9 @@ import {
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
 /** "openai"（デフォルト） | "voicevox" */
 const TTS_PROVIDER = process.env.TTS_PROVIDER || "openai";
-const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "tts-1-hd";
-/** 最も深く落ち着いた低音男性ボイス */
-const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "onyx";
+/** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
+const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
+const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "echo";
 /** 通常より5%遅くして語りの重厚感を出す */
 const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED || "0.95");
 /** gpt-4o系モデルのみ有効な話し方の指示 */
