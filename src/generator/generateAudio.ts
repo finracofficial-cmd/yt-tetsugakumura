@@ -28,10 +28,12 @@ import {
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL ?? "gpt-4o-mini-tts";
 /** 落ち着いた低めの声。alloy でも可 */
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE ?? "onyx";
-/** シーン間の「間」。哲学的な余韻のため音声の後に足す余白秒数 */
-const SCENE_PADDING_SEC = 0.9;
-/** TTSスキップ時の推定: 日本語の落ち着いた読み上げ ≒ 5.5文字/秒 */
-const ESTIMATED_CHARS_PER_SEC = 5.5;
+/** 読み上げ速度（1.0=標準）。間延び防止のためやや速める */
+const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED ?? "1.15");
+/** シーン間の「間」。音声の後に足す余白秒数 */
+const SCENE_PADDING_SEC = 0.5;
+/** TTSスキップ時の推定: 日本語の読み上げ ≒ 6.5文字/秒 */
+const ESTIMATED_CHARS_PER_SEC = 6.5;
 
 export async function generateAudio(): Promise<Timing> {
   const script = JSON.parse(readFileSync(SCRIPT_JSON_PATH, "utf-8")) as VideoScript;
@@ -67,9 +69,10 @@ export async function generateAudio(): Promise<Timing> {
           voice: TTS_VOICE,
           input: scene.narration,
           response_format: "mp3",
+          speed: TTS_SPEED,
           // gpt-4o-mini-tts は instructions で話し方を制御できる（旧tts-1系では無視される）
           instructions:
-            "落ち着いた低いトーンで、感情を抑えた思索的なドキュメンタリーのナレーションとして、ややゆっくり読み上げてください。",
+            "落ち着いた低いトーンの、感情を抑えた思索的なドキュメンタリーのナレーション。ただしテンポは自然な速度を保ち、間延びさせず淡々と読み上げてください。",
         });
         const buffer = Buffer.from(await response.arrayBuffer());
         writeFileSync(filePath, buffer);

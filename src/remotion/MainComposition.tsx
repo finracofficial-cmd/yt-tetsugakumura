@@ -30,6 +30,7 @@ export const MainComposition: React.FC = () => {
           >
             <KeywordScene
               keyword={scene.visual_keyword}
+              narration={scene.narration}
               conceptColor={scene.concept_color}
               durationInFrames={durationInFrames}
             />
