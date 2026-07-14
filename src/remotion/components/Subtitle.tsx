@@ -1,10 +1,11 @@
 import { interpolate, useCurrentFrame } from "remotion";
+import type { SyncSegment } from "../../generator/types";
 
 const SERIF_FONT =
-  '"Noto Serif CJK JP", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif';
+  '"Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif';
 
 /**
- * ナレーションを字幕用のチャンクに分割する。
+ * ナレーションを字幕用のチャンクに分割する（同期セグメントがない場合の推定用）。
  * 文（。！？）単位で区切り、maxLen を超える場合は読点で折る。
  */
 export function splitNarration(text: string, maxLen = 32): string[] {
@@ -27,7 +28,6 @@ export function splitNarration(text: string, maxLen = 32): string[] {
       current = sentence;
       continue;
     }
-    // 1文が長すぎる場合は読点で折り、それも無理なら固定長で切る
     let rest = sentence;
     while (rest.length > maxLen) {
       const commaIdx = rest.lastIndexOf("、", maxLen);
@@ -44,32 +44,51 @@ export function splitNarration(text: string, maxLen = 32): string[] {
 type Props = {
   narration: string;
   durationInFrames: number;
+  /** 音声実測に基づく文単位の同期情報。あればこちらを優先する */
+  segments?: SyncSegment[];
 };
 
+type Active = { text: string; from: number; to: number };
+
 /**
- * 画面下部の字幕。ナレーションを文単位で分割し、
- * 各チャンクの文字数に比例した時間で順次表示する（音声とおおよそ同期）。
+ * 画面下部の字幕。sync-map のセグメント（音声実測）があればそれに完全同期し、
+ * なければ文字数比の推定タイミングで順次表示する。
  */
-export const Subtitle: React.FC<Props> = ({ narration, durationInFrames }) => {
+export const Subtitle: React.FC<Props> = ({
+  narration,
+  durationInFrames,
+  segments,
+}) => {
   const frame = useCurrentFrame();
-  const chunks = splitNarration(narration);
-  if (chunks.length === 0) return null;
 
-  // シーン末尾の余韻ぶんを差し引いた実発話時間に、文字数比で割り当てる
-  const speakingFrames = Math.max(1, durationInFrames - 12);
-  const totalChars = chunks.reduce((sum, c) => sum + c.length, 0);
+  let active: Active | null = null;
 
-  let start = 0;
-  let active: { text: string; from: number; to: number } | null = null;
-  for (const chunk of chunks) {
-    const len = Math.round((chunk.length / totalChars) * speakingFrames);
-    const to = Math.min(start + len, speakingFrames);
-    if (frame >= start && frame < to) {
-      active = { text: chunk, from: start, to };
-      break;
+  if (segments && segments.length > 0) {
+    for (const seg of segments) {
+      // 次のセグメントが始まるまで表示を残す（ポーズ中も文が読める）
+      const holdUntil = seg.startFrame + seg.durationInFrames + 18;
+      if (frame >= seg.startFrame && frame < holdUntil) {
+        active = { text: seg.text, from: seg.startFrame, to: holdUntil };
+        break;
+      }
     }
-    start = to;
+  } else {
+    const chunks = splitNarration(narration);
+    if (chunks.length === 0) return null;
+    const speakingFrames = Math.max(1, durationInFrames - 12);
+    const totalChars = chunks.reduce((sum, c) => sum + c.length, 0);
+    let start = 0;
+    for (const chunk of chunks) {
+      const len = Math.round((chunk.length / totalChars) * speakingFrames);
+      const to = Math.min(start + len, speakingFrames);
+      if (frame >= start && frame < to) {
+        active = { text: chunk, from: start, to };
+        break;
+      }
+      start = to;
+    }
   }
+
   if (!active) return null;
 
   const fade = 6;
@@ -79,6 +98,9 @@ export const Subtitle: React.FC<Props> = ({ narration, durationInFrames }) => {
     [0, 1, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
+
+  // 長い文は2行に折り返しても読めるよう、文字数でサイズを落とす
+  const fontSize = active.text.length > 34 ? 36 : 40;
 
   return (
     <div
@@ -97,7 +119,7 @@ export const Subtitle: React.FC<Props> = ({ narration, durationInFrames }) => {
           opacity,
           color: "rgba(232, 232, 226, 0.95)",
           fontFamily: SERIF_FONT,
-          fontSize: 40,
+          fontSize,
           fontWeight: 400,
           letterSpacing: "0.06em",
           lineHeight: 1.8,

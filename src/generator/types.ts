@@ -56,21 +56,44 @@ export interface VideoScript {
   scenes: Scene[];
 }
 
-export interface SceneTiming {
+/** 字幕・演出の同期単位（文レベル）。フレームはシーン先頭からの相対値 */
+export interface SyncSegment {
+  text: string;
+  startFrame: number;
+  durationInFrames: number;
+}
+
+export interface SceneSync {
   id: number;
-  /** このシーンの表示フレーム数（音声長 + 余白） */
+  /** 動画全体の中での開始位置 */
+  startMs: number;
+  startFrame: number;
+  /** このシーンの長さ（音声 + 文法ポーズ + シーン末尾の余韻） */
+  durationMs: number;
   durationInFrames: number;
   /** public/ からの相対パス。TTSをスキップした場合は null */
   audioFile: string | null;
+  /** 文単位の字幕同期情報 */
+  segments: SyncSegment[];
 }
 
-export interface Timing {
+/** 音声実測に基づく完全同期マップ。Remotionはこれを唯一の尺の情報源とする */
+export interface SyncMap {
   fps: number;
   totalDurationInFrames: number;
-  scenes: SceneTiming[];
+  scenes: SceneSync[];
+}
+
+/** BGM等の音響アセットの有無（public/assets/ を検査して生成される） */
+export interface AssetsManifest {
+  bgm: boolean;
+  noise: boolean;
+  sfx: boolean;
 }
 
 export const FPS = 30;
 export const SCRIPT_JSON_PATH = "src/data/script.json";
-export const TIMING_JSON_PATH = "src/data/timing.json";
+export const SYNC_MAP_PATH = "src/data/sync-map.json";
+export const ASSETS_JSON_PATH = "src/data/assets.json";
 export const AUDIO_DIR = "public/audio";
+export const ASSETS_DIR = "public/assets";

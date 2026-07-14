@@ -1,44 +1,56 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Subtitle } from "./Subtitle";
 import { Particles } from "./Particles";
+import type { SyncSegment } from "../../generator/types";
 
 /**
- * concept_color → 背景色。幕が進むごとに暗くなる設計。
+ * concept_color → 放射状グラデーション背景。
+ * 中心はくすんだ暗色、周辺は漆黒に近い闇。幕が進むごとに暗くなる。
  */
 const BACKGROUND: Record<string, string> = {
-  "dark-navy": "#0d1b2a",
-  charcoal: "#1b1b1e",
-  "pitch-black": "#050505",
+  "dark-navy": "radial-gradient(circle at center, #1a1f2c 0%, #090b0f 100%)",
+  charcoal: "radial-gradient(circle at center, #222222 0%, #0d0d0d 100%)",
+  "pitch-black": "radial-gradient(circle at center, #141414 0%, #050505 100%)",
 };
 
 const ACCENT: Record<string, string> = {
-  "dark-navy": "rgba(120, 160, 210, 0.35)",
-  charcoal: "rgba(200, 200, 195, 0.28)",
-  "pitch-black": "rgba(180, 60, 60, 0.32)",
+  "dark-navy": "rgba(120, 160, 210, 0.30)",
+  charcoal: "rgba(200, 200, 195, 0.22)",
+  "pitch-black": "rgba(180, 60, 60, 0.28)",
 };
 
+/**
+ * 明朝体フォントスタック。GitHub Actionsでは fonts-noto-cjk（apt）で
+ * "Noto Serif CJK JP" が使われる。ネットワーク依存を避けるためシステムフォントを正とする。
+ */
 export const SERIF_FONT =
-  '"Noto Serif CJK JP", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif';
+  '"Noto Serif CJK JP", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif';
 
 type Props = {
   sceneId: number;
   conceptColor: string;
   narration: string;
   durationInFrames: number;
+  /** 音声実測に基づく文単位の字幕同期（あれば優先） */
+  segments?: SyncSegment[];
   /** 全画面イラスト系のシーンでは背景光を消す */
   plainBackdrop?: boolean;
   children: React.ReactNode;
 };
 
 /**
- * 全シーン共通の額縁: 呼吸する背景光・漂う粒子・微小なカメラドリフト・
- * ビネット・下部字幕・黒経由のフェード。
+ * 全シーン共通の額縁:
+ * - 放射状グラデーション背景
+ * - 常時駆動型カメラワーク（scale 1.00→1.04 の微小ズーム + 手持ちドリフト）
+ * - 漂う粒子 / ビネット / 下部字幕 / 黒経由のフェード
+ * 画面は1フレームたりとも完全静止しない。
  */
 export const SceneFrame: React.FC<Props> = ({
   sceneId,
   conceptColor,
   narration,
   durationInFrames,
+  segments,
   plainBackdrop = false,
   children,
 }) => {
@@ -46,7 +58,6 @@ export const SceneFrame: React.FC<Props> = ({
   const bg = BACKGROUND[conceptColor] ?? BACKGROUND["charcoal"];
   const accent = ACCENT[conceptColor] ?? ACCENT["charcoal"];
 
-  const bgScale = interpolate(frame, [0, durationInFrames], [1, 1.12]);
   const fadeInOut = interpolate(
     frame,
     [0, 12, durationInFrames - 12, durationInFrames],
@@ -54,28 +65,29 @@ export const SceneFrame: React.FC<Props> = ({
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
-  // 手持ちカメラのような極小のドリフト（シーンIDで方向を変える）
+  // 常時駆動型カメラワーク: 微小ズーム（Idle）+ 手持ちのようなドリフト
+  const idleScale = interpolate(frame, [0, durationInFrames], [1.0, 1.04]);
   const dir = sceneId % 2 === 0 ? 1 : -1;
-  const camX = Math.sin(frame / 90) * 6 * dir;
+  const camX = interpolate(frame, [0, durationInFrames], [0, 14 * dir]);
   const camY = Math.cos(frame / 110) * 4;
 
   return (
-    <AbsoluteFill style={{ backgroundColor: bg, overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: bg, overflow: "hidden" }}>
       {!plainBackdrop && (
         <AbsoluteFill
           style={{
-            transform: `scale(${bgScale})`,
+            transform: `scale(${idleScale * 1.05})`,
             background: `radial-gradient(ellipse at 50% 42%, ${accent} 0%, rgba(0,0,0,0) 55%)`,
-            opacity: 0.5,
+            opacity: 0.45,
           }}
         />
       )}
 
-      {/* コンテンツ（微小なカメラドリフト付き、字幕領域を避ける） */}
+      {/* コンテンツ（常時ズーム＋ドリフト、字幕領域を避ける） */}
       <AbsoluteFill
         style={{
           paddingBottom: 200,
-          transform: `translate(${camX}px, ${camY}px) scale(1.01)`,
+          transform: `translate(${camX}px, ${camY}px) scale(${idleScale})`,
         }}
       >
         {children}
@@ -90,7 +102,11 @@ export const SceneFrame: React.FC<Props> = ({
         }}
       />
 
-      <Subtitle narration={narration} durationInFrames={durationInFrames} />
+      <Subtitle
+        narration={narration}
+        durationInFrames={durationInFrames}
+        segments={segments}
+      />
 
       <AbsoluteFill
         style={{ backgroundColor: "#000", opacity: fadeInOut, pointerEvents: "none" }}

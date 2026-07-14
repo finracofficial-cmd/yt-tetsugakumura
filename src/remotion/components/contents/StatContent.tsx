@@ -1,10 +1,6 @@
-import {
-  AbsoluteFill,
-  Easing,
-  interpolate,
-  useCurrentFrame,
-} from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { SERIF_FONT } from "../SceneFrame";
+import { CUBIC_OUT } from "../../easing";
 
 type Props = {
   value: string;
@@ -17,12 +13,12 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
   const frame = useCurrentFrame();
 
   const valueOpacity = interpolate(frame, [6, 26], [0, 1], {
-    easing: Easing.out(Easing.cubic),
+    easing: CUBIC_OUT,
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
   const valueScale = interpolate(frame, [6, 36], [1.35, 1], {
-    easing: Easing.out(Easing.cubic),
+    easing: CUBIC_OUT,
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -37,7 +33,7 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
     extrapolateRight: "clamp",
   });
   const labelY = interpolate(frame, [30, 52], [18, 0], {
-    easing: Easing.out(Easing.cubic),
+    easing: CUBIC_OUT,
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -50,7 +46,7 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
     const target = parseFloat(numStr.replace(/,/g, ""));
     const decimals = numStr.includes(".") ? numStr.split(".")[1].length : 0;
     const progress = interpolate(frame, [6, 48], [0, 1], {
-      easing: Easing.out(Easing.cubic),
+      easing: CUBIC_OUT,
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });

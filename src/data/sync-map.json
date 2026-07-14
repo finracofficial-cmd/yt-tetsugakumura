@@ -1,0 +1,141 @@
+{
+  "fps": 30,
+  "totalDurationInFrames": 2290,
+  "scenes": [
+    {
+      "id": 1,
+      "startMs": 0,
+      "startFrame": 0,
+      "durationMs": 15317,
+      "durationInFrames": 460,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "深夜2時。",
+          "startFrame": 0,
+          "durationInFrames": 24
+        },
+        {
+          "text": "モニターの光だけが部屋を照らしている。",
+          "startFrame": 54,
+          "durationInFrames": 92
+        },
+        {
+          "text": "男はまだ、動画を編集している。",
+          "startFrame": 177,
+          "durationInFrames": 85
+        },
+        {
+          "text": "だが、本当にそれは人間の仕事なのだろうか。",
+          "startFrame": 291,
+          "durationInFrames": 114
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "startMs": 15317,
+      "startFrame": 460,
+      "durationMs": 17554,
+      "durationInFrames": 527,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "人間の集中力には限界がある。",
+          "startFrame": 0,
+          "durationInFrames": 68
+        },
+        {
+          "text": "認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
+          "startFrame": 98,
+          "durationInFrames": 158
+        },
+        {
+          "text": "ある研究によれば、人間が深い集中を維持できるのは1日4時間程度だという。",
+          "startFrame": 286,
+          "durationInFrames": 187
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "startMs": 32871,
+      "startFrame": 986,
+      "durationMs": 16773,
+      "durationInFrames": 504,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "人間と機械では、得意なことがまるで違う。",
+          "startFrame": 0,
+          "durationInFrames": 109
+        },
+        {
+          "text": "判断と創造は人間に、反復と精密は機械に。",
+          "startFrame": 139,
+          "durationInFrames": 109
+        },
+        {
+          "text": "悪いのは編集者ではない。",
+          "startFrame": 278,
+          "durationInFrames": 58
+        },
+        {
+          "text": "分業を設計しない仕組みの側である。",
+          "startFrame": 367,
+          "durationInFrames": 83
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "startMs": 49644,
+      "startFrame": 1489,
+      "durationMs": 17661,
+      "durationInFrames": 530,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "これは遠い世界の話ではない。",
+          "startFrame": 0,
+          "durationInFrames": 68
+        },
+        {
+          "text": "自動化には三つの段階がある。",
+          "startFrame": 98,
+          "durationInFrames": 68
+        },
+        {
+          "text": "道具化、半自動化、そして自律化。",
+          "startFrame": 196,
+          "durationInFrames": 102
+        },
+        {
+          "text": "この動画もまた、その最終段階によって組み立てられている。",
+          "startFrame": 328,
+          "durationInFrames": 148
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "startMs": 67305,
+      "startFrame": 2019,
+      "durationMs": 8944,
+      "durationInFrames": 269,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "そんなことを、考えすぎてみました。",
+          "startFrame": 0,
+          "durationInFrames": 95
+        },
+        {
+          "text": "よろしければ、チャンネル登録を。",
+          "startFrame": 125,
+          "durationInFrames": 90
+        }
+      ]
+    }
+  ]
+}

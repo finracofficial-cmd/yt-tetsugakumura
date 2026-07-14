@@ -25,11 +25,11 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Remotionのレンダリングで明朝体（日本語セリフ）を使うためCJKフォントを導入
-      - name: Install Japanese fonts
+      # 明朝体フォント（レンダリング用）と ffmpeg（音声の無音挿入・結合用）を導入
+      - name: Install fonts & ffmpeg
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
+          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra ffmpeg
 
       - name: Install dependencies
         run: npm ci
@@ -78,7 +78,7 @@ jobs:
           path: |
             out/video.mp4
             src/data/script.json
-            src/data/timing.json
+            src/data/sync-map.json
           retention-days: 14
 
       # レビュー用: 8秒おきのフレームと低解像度プレビューをリポジトリにコミットする。
@@ -91,7 +91,7 @@ jobs:
           mkdir -p previews/latest
           ffmpeg -y -i out/video.mp4 -vf "fps=1/8,scale=960:-1" -q:v 4 previews/latest/frame-%03d.jpg
           ffmpeg -y -i out/video.mp4 -vf scale=640:-2 -c:v libx264 -crf 34 -preset veryfast -c:a aac -b:a 64k previews/latest/preview.mp4
-          cp src/data/script.json src/data/timing.json src/data/images.json previews/latest/
+          cp src/data/script.json src/data/sync-map.json src/data/images.json src/data/assets.json previews/latest/
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add previews

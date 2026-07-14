@@ -1,10 +1,6 @@
-import {
-  AbsoluteFill,
-  Easing,
-  interpolate,
-  useCurrentFrame,
-} from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { SERIF_FONT } from "../SceneFrame";
+import { CUBIC_OUT } from "../../easing";
 
 type Props = {
   title: string;
@@ -21,7 +17,7 @@ export const ListContent: React.FC<Props> = ({ title, items }) => {
     extrapolateRight: "clamp",
   });
   const ruleWidth = interpolate(frame, [10, 40], [0, 420], {
-    easing: Easing.out(Easing.cubic),
+    easing: CUBIC_OUT,
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -54,12 +50,12 @@ export const ListContent: React.FC<Props> = ({ title, items }) => {
           {items.map((item, i) => {
             const delay = 34 + i * 14;
             const opacity = interpolate(frame, [delay, delay + 18], [0, 1], {
-              easing: Easing.out(Easing.cubic),
+              easing: CUBIC_OUT,
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             });
             const x = interpolate(frame, [delay, delay + 20], [-46, 0], {
-              easing: Easing.out(Easing.cubic),
+              easing: CUBIC_OUT,
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             });

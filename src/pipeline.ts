@@ -27,8 +27,8 @@ async function main(): Promise<void> {
   // 2. シーンイラスト生成（illustration / dialogue 型のみ）
   await generateImages();
 
-  // 3. 音声合成 + 尺の計算
-  const timing = await generateAudio();
+  // 3. 音声合成（文法ベースの間の挿入）+ 完全同期マップの生成
+  const syncMap = await generateAudio();
 
   // 3. レンダリング（任意）
   if (shouldRender) {
@@ -49,7 +49,7 @@ async function main(): Promise<void> {
 
   console.log("\n========================================");
   console.log(`  ${script.title}`);
-  console.log(`  ${(timing.totalDurationInFrames / timing.fps / 60).toFixed(1)}分 / ${script.scenes.length}シーン`);
+  console.log(`  ${(syncMap.totalDurationInFrames / syncMap.fps / 60).toFixed(1)}分 / ${script.scenes.length}シーン`);
   console.log("========================================");
 }
 
