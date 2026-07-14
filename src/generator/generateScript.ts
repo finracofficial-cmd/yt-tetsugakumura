@@ -50,9 +50,96 @@ const VIDEO_SCRIPT_SCHEMA = {
               type: "string",
               description: "読み上げるナレーション本文（80〜220文字、だ・である調）",
             },
-            visual_keyword: {
-              type: "string",
-              description: "画面中央に表示する抽象的な短い言葉（2〜10文字程度）",
+            visual: {
+              description:
+                "画面構成。ナレーション内容に最も合う型を選ぶ（同じ型を3連続させない）",
+              anyOf: [
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "keyword" },
+                    keyword: {
+                      type: "string",
+                      description: "中央に浮かぶ抽象的な短い言葉（2〜10文字）",
+                    },
+                  },
+                  required: ["type", "keyword"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "dialogue" },
+                    line: {
+                      type: "string",
+                      description: "吹き出しに表示する短いセリフ・内心（5〜20文字）",
+                    },
+                  },
+                  required: ["type", "line"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "stat" },
+                    value: {
+                      type: "string",
+                      description: "大きく表示する数値・年号（例: 150人, 1971年）",
+                    },
+                    label: {
+                      type: "string",
+                      description: "数値の意味の説明（20文字以内）",
+                    },
+                  },
+                  required: ["type", "value", "label"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "comparison" },
+                    left_title: { type: "string" },
+                    right_title: { type: "string" },
+                    left_items: {
+                      type: "array",
+                      items: { type: "string" },
+                      description: "左側の特徴ボックス（2〜4項目、各2〜8文字）",
+                    },
+                    right_items: {
+                      type: "array",
+                      items: { type: "string" },
+                      description: "右側の特徴ボックス（2〜4項目、各2〜8文字）",
+                    },
+                    center_label: {
+                      type: "string",
+                      description: "中央の関係性ラベル（vs, ≠, → など）",
+                    },
+                  },
+                  required: [
+                    "type",
+                    "left_title",
+                    "right_title",
+                    "left_items",
+                    "right_items",
+                    "center_label",
+                  ],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "list" },
+                    title: { type: "string" },
+                    items: {
+                      type: "array",
+                      items: { type: "string" },
+                      description: "列挙する項目（2〜5個、各3〜14文字）",
+                    },
+                  },
+                  required: ["type", "title", "items"],
+                  additionalProperties: false,
+                },
+              ],
             },
             concept_color: {
               type: "string",
@@ -60,7 +147,7 @@ const VIDEO_SCRIPT_SCHEMA = {
               description: "シーンの背景トーン",
             },
           },
-          required: ["id", "act", "narration", "visual_keyword", "concept_color"],
+          required: ["id", "act", "narration", "visual", "concept_color"],
           additionalProperties: false,
         },
       },

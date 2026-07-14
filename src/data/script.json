@@ -6,35 +6,46 @@
       "id": 1,
       "act": 1,
       "narration": "深夜2時。モニターの光だけが部屋を照らしている。男はまだ、動画を編集している。だが、本当にそれは人間の仕事なのだろうか。",
-      "visual_keyword": "深夜2時",
+      "visual": { "type": "dialogue", "line": "まだ終わらない" },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 2,
-      "narration": "人間の集中力には限界がある。認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
-      "visual_keyword": "認知資源",
+      "narration": "人間の集中力には限界がある。認知資源は有限であり、反復作業はそれを静かに削り取っていく。ある研究によれば、人間が深い集中を維持できるのは1日4時間程度だという。",
+      "visual": { "type": "stat", "value": "4時間", "label": "深い集中を維持できる限界" },
       "concept_color": "charcoal"
     },
     {
       "id": 3,
       "act": 3,
-      "narration": "悪いのは編集者ではない。終わらない作業を生み続ける、仕組みの側である。",
-      "visual_keyword": "誰も悪くない",
+      "narration": "人間と機械では、得意なことがまるで違う。判断と創造は人間に、反復と精密は機械に。悪いのは編集者ではない。分業を設計しない仕組みの側である。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "人間",
+        "right_title": "機械",
+        "left_items": ["判断", "創造", "文脈"],
+        "right_items": ["反復", "精密", "速度"],
+        "center_label": "vs"
+      },
       "concept_color": "charcoal"
     },
     {
       "id": 4,
       "act": 4,
-      "narration": "これは遠い世界の話ではない。この動画もまた、機械によって組み立てられている。",
-      "visual_keyword": "あなたの話だ",
+      "narration": "これは遠い世界の話ではない。自動化には三つの段階がある。道具化、半自動化、そして自律化。この動画もまた、その最終段階によって組み立てられている。",
+      "visual": {
+        "type": "list",
+        "title": "自動化の三段階",
+        "items": ["道具化", "半自動化", "自律化"]
+      },
       "concept_color": "pitch-black"
     },
     {
       "id": 5,
       "act": 5,
       "narration": "そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
-      "visual_keyword": "考えすぎる",
+      "visual": { "type": "keyword", "keyword": "考えすぎる" },
       "concept_color": "pitch-black"
     }
   ]

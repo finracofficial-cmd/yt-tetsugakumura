@@ -9,6 +9,28 @@ export type ConceptColor = "dark-navy" | "charcoal" | "pitch-black";
 /** 黄金の5幕構成における幕番号 */
 export type Act = 1 | 2 | 3 | 4 | 5;
 
+/**
+ * シーンの画面構成の型。台本AIがナレーション内容に応じて選択する。
+ * - keyword:    抽象キーワードが中央に浮かぶ（思索・断定・余韻）
+ * - dialogue:   人物シルエット＋吹き出し（情景描写・セリフ）
+ * - stat:       大きな数字・統計値の提示（研究データの引用）
+ * - comparison: 左右対比の図解（2つの概念・集団・環境の比較）
+ * - list:       項目の列挙（要因・特徴・段階の整理）
+ */
+export type Visual =
+  | { type: "keyword"; keyword: string }
+  | { type: "dialogue"; line: string }
+  | { type: "stat"; value: string; label: string }
+  | {
+      type: "comparison";
+      left_title: string;
+      right_title: string;
+      left_items: string[];
+      right_items: string[];
+      center_label: string;
+    }
+  | { type: "list"; title: string; items: string[] };
+
 export interface Scene {
   /** 1始まりの連番 */
   id: number;
@@ -16,8 +38,8 @@ export interface Scene {
   act: Act;
   /** 読み上げるナレーション本文（だ・である調） */
   narration: string;
-  /** 画面中央に表示する抽象的なキーワード */
-  visual_keyword: string;
+  /** 画面構成（シーン型と型ごとの表示データ） */
+  visual: Visual;
   /** シーンの背景トーン */
   concept_color: ConceptColor;
 }
