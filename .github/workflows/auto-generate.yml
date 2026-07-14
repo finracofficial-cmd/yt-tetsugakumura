@@ -1,0 +1,51 @@
+name: Auto Generate Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "動画テーマ（空欄ならAIが自動選定）"
+        required: false
+        default: ""
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # Remotionのレンダリングで明朝体（日本語セリフ）を使うためCJKフォントを導入
+      - name: Install Japanese fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate script & audio
+        run: npm run generate -- --topic="${{ github.event.inputs.topic }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Render video with Remotion
+        run: npx remotion render src/remotion/index.ts Main out/video.mp4
+
+      - name: Upload video artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-video
+          path: |
+            out/video.mp4
+            src/data/script.json
+            src/data/timing.json
+          retention-days: 14

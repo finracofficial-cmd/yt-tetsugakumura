@@ -1,0 +1,30 @@
+{
+  "name": "yt-tetsugakumura",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "哲学×学術系解説アニメーション動画の完全自動生成パイプライン（台本生成 → TTS → Remotionレンダリング）",
+  "scripts": {
+    "generate": "tsx src/pipeline.ts",
+    "generate:script": "tsx src/generator/generateScript.ts",
+    "generate:audio": "tsx src/generator/generateAudio.ts",
+    "render": "remotion render src/remotion/index.ts Main out/video.mp4",
+    "studio": "remotion studio src/remotion/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "@remotion/cli": "^4.0.489",
+    "music-metadata": "^11.13.0",
+    "openai": "^6.46.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "remotion": "^4.0.489"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.3"
+  }
+}

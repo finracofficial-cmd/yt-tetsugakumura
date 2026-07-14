@@ -1,0 +1,9 @@
+node_modules/
+out/
+dist/
+.env
+.DS_Store
+*.log
+
+# 生成された音声（Artifactsで受け渡す。リポジトリには含めない）
+public/audio/*.mp3

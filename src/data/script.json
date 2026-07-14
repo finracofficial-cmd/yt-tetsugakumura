@@ -1,0 +1,41 @@
+{
+  "theme": "サンプル台本（パイプライン実行時に上書きされます）",
+  "title": "なぜ我々は動画を自動生成するのか【怠惰×工学】",
+  "scenes": [
+    {
+      "id": 1,
+      "act": 1,
+      "narration": "深夜2時。モニターの光だけが部屋を照らしている。男はまだ、動画を編集している。だが、本当にそれは人間の仕事なのだろうか。",
+      "visual_keyword": "深夜2時",
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 2,
+      "act": 2,
+      "narration": "人間の集中力には限界がある。認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
+      "visual_keyword": "認知資源",
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 3,
+      "act": 3,
+      "narration": "悪いのは編集者ではない。終わらない作業を生み続ける、仕組みの側である。",
+      "visual_keyword": "誰も悪くない",
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 4,
+      "act": 4,
+      "narration": "これは遠い世界の話ではない。この動画もまた、機械によって組み立てられている。",
+      "visual_keyword": "あなたの話だ",
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 5,
+      "act": 5,
+      "narration": "そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
+      "visual_keyword": "考えすぎる",
+      "concept_color": "pitch-black"
+    }
+  ]
+}
