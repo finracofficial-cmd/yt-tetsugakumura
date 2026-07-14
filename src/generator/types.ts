@@ -19,7 +19,8 @@ export type Act = 1 | 2 | 3 | 4 | 5;
  */
 export type Visual =
   | { type: "keyword"; keyword: string }
-  | { type: "dialogue"; line: string }
+  | { type: "illustration"; image_prompt: string }
+  | { type: "dialogue"; line: string; image_prompt: string }
   | { type: "stat"; value: string; label: string }
   | {
       type: "comparison";
@@ -30,6 +31,11 @@ export type Visual =
       center_label: string;
     }
   | { type: "list"; title: string; items: string[] };
+
+/** シーンID → 生成された背景イラストのパス（public/からの相対）。生成失敗・スキップ時は null */
+export type ImageManifest = Record<string, string | null>;
+export const IMAGES_JSON_PATH = "src/data/images.json";
+export const IMAGES_DIR = "public/images";
 
 export interface Scene {
   /** 1始まりの連番 */

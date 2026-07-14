@@ -6,7 +6,11 @@
       "id": 1,
       "act": 1,
       "narration": "深夜2時。モニターの光だけが部屋を照らしている。男はまだ、動画を編集している。だが、本当にそれは人間の仕事なのだろうか。",
-      "visual": { "type": "dialogue", "line": "まだ終わらない" },
+      "visual": {
+        "type": "dialogue",
+        "line": "まだ終わらない",
+        "image_prompt": "A man working alone at a desk in a dark room at 2am, lit only by a glowing computer monitor, seen from behind, city lights faintly visible through a window"
+      },
       "concept_color": "dark-navy"
     },
     {

@@ -7,6 +7,7 @@
   "scripts": {
     "generate": "tsx src/pipeline.ts",
     "generate:script": "tsx src/generator/generateScript.ts",
+    "generate:images": "tsx src/generator/generateImages.ts",
     "generate:audio": "tsx src/generator/generateAudio.ts",
     "render": "remotion render src/remotion/index.ts Main out/video.mp4",
     "studio": "remotion studio src/remotion/index.ts",

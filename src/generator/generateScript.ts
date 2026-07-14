@@ -69,13 +69,31 @@ const VIDEO_SCRIPT_SCHEMA = {
                 {
                   type: "object",
                   properties: {
+                    type: { type: "string", const: "illustration" },
+                    image_prompt: {
+                      type: "string",
+                      description:
+                        "画像生成AI用の英語プロンプト。情景を具体的に描写（場所・人物・光・構図）。文字・ロゴ禁止",
+                    },
+                  },
+                  required: ["type", "image_prompt"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
                     type: { type: "string", const: "dialogue" },
                     line: {
                       type: "string",
                       description: "吹き出しに表示する短いセリフ・内心（5〜20文字）",
                     },
+                    image_prompt: {
+                      type: "string",
+                      description:
+                        "画像生成AI用の英語プロンプト。セリフを発する人物を含む情景を描写。文字・ロゴ禁止",
+                    },
                   },
-                  required: ["type", "line"],
+                  required: ["type", "line", "image_prompt"],
                   additionalProperties: false,
                 },
                 {

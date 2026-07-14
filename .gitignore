@@ -5,5 +5,6 @@ dist/
 .DS_Store
 *.log
 
-# 生成された音声（Artifactsで受け渡す。リポジトリには含めない）
+# 生成された音声・イラスト（Artifactsで受け渡す。リポジトリには含めない）
 public/audio/*.mp3
+public/images/*.png

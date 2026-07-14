@@ -1,5 +1,6 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Subtitle } from "./Subtitle";
+import { Particles } from "./Particles";
 
 /**
  * concept_color → 背景色。幕が進むごとに暗くなる設計。
@@ -20,20 +21,25 @@ export const SERIF_FONT =
   '"Noto Serif CJK JP", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif';
 
 type Props = {
+  sceneId: number;
   conceptColor: string;
   narration: string;
   durationInFrames: number;
+  /** 全画面イラスト系のシーンでは背景光を消す */
+  plainBackdrop?: boolean;
   children: React.ReactNode;
 };
 
 /**
- * 全シーン共通の額縁: 呼吸する背景光・ビネット・下部字幕・黒経由のフェード。
- * シーン型ごとのコンテンツは children として中央領域に描画される。
+ * 全シーン共通の額縁: 呼吸する背景光・漂う粒子・微小なカメラドリフト・
+ * ビネット・下部字幕・黒経由のフェード。
  */
 export const SceneFrame: React.FC<Props> = ({
+  sceneId,
   conceptColor,
   narration,
   durationInFrames,
+  plainBackdrop = false,
   children,
 }) => {
   const frame = useCurrentFrame();
@@ -48,24 +54,41 @@ export const SceneFrame: React.FC<Props> = ({
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
+  // 手持ちカメラのような極小のドリフト（シーンIDで方向を変える）
+  const dir = sceneId % 2 === 0 ? 1 : -1;
+  const camX = Math.sin(frame / 90) * 6 * dir;
+  const camY = Math.cos(frame / 110) * 4;
+
   return (
     <AbsoluteFill style={{ backgroundColor: bg, overflow: "hidden" }}>
+      {!plainBackdrop && (
+        <AbsoluteFill
+          style={{
+            transform: `scale(${bgScale})`,
+            background: `radial-gradient(ellipse at 50% 42%, ${accent} 0%, rgba(0,0,0,0) 55%)`,
+            opacity: 0.5,
+          }}
+        />
+      )}
+
+      {/* コンテンツ（微小なカメラドリフト付き、字幕領域を避ける） */}
       <AbsoluteFill
         style={{
-          transform: `scale(${bgScale})`,
-          background: `radial-gradient(ellipse at 50% 42%, ${accent} 0%, rgba(0,0,0,0) 55%)`,
-          opacity: 0.5,
+          paddingBottom: 200,
+          transform: `translate(${camX}px, ${camY}px) scale(1.01)`,
         }}
-      />
+      >
+        {children}
+      </AbsoluteFill>
+
+      <Particles seed={sceneId} />
+
       <AbsoluteFill
         style={{
           background:
             "radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)",
         }}
       />
-
-      {/* シーン型ごとのコンテンツ（字幕領域を避けて上部に寄せる） */}
-      <AbsoluteFill style={{ paddingBottom: 200 }}>{children}</AbsoluteFill>
 
       <Subtitle narration={narration} durationInFrames={durationInFrames} />
 

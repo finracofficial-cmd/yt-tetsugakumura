@@ -42,6 +42,26 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
     extrapolateRight: "clamp",
   });
 
+  // 数値部分をカウントアップさせる（"150人" → 0人..150人、"2.7倍" → 0.0倍..2.7倍）
+  const match = value.match(/^([^0-9]*)([\d,]+(?:\.\d+)?)(.*)$/);
+  let displayValue = value;
+  if (match) {
+    const [, prefix, numStr, suffix] = match;
+    const target = parseFloat(numStr.replace(/,/g, ""));
+    const decimals = numStr.includes(".") ? numStr.split(".")[1].length : 0;
+    const progress = interpolate(frame, [6, 48], [0, 1], {
+      easing: Easing.out(Easing.cubic),
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+    const current = target * progress;
+    const formatted = current.toLocaleString("ja-JP", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    });
+    displayValue = `${prefix}${formatted}${suffix}`;
+  }
+
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
       <div
@@ -54,9 +74,10 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
           fontWeight: 600,
           letterSpacing: "0.06em",
           textShadow: "0 0 80px rgba(255,255,255,0.15)",
+          fontVariantNumeric: "tabular-nums",
         }}
       >
-        {value}
+        {displayValue}
       </div>
       <div
         style={{
