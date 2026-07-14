@@ -72,9 +72,25 @@ const VIDEO_SCRIPT_SCHEMA = {
                     type: { type: "string", const: "figure" },
                     figure: {
                       type: "string",
-                      enum: ["person", "crowd", "smartphone", "brain", "money", "city"],
+                      enum: [
+                        "person",
+                        "crowd",
+                        "couple",
+                        "smartphone",
+                        "brain",
+                        "money",
+                        "city",
+                        "scale",
+                        "clock",
+                        "eye",
+                        "mask",
+                        "dna",
+                        "cage",
+                        "stairs",
+                        "heart",
+                      ],
                       description:
-                        "person:個人 crowd:群衆・競争 smartphone:SNS brain:本能・報酬系 money:金・資本 city:都市・夜",
+                        "person:個人 crowd:群衆・競争 couple:恋愛・関係 smartphone:SNS brain:本能・報酬系 money:金・資本 city:都市・夜 scale:比較・天秤 clock:時間 eye:視線・承認 mask:建前・ペルソナ dna:遺伝子・進化 cage:不自由・家畜化 stairs:徒労・出世 heart:恋愛・喪失",
                     },
                     label: {
                       type: "string",

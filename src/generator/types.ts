@@ -13,10 +13,19 @@ export type Act = 1 | 2 | 3 | 4 | 5;
 export type FigureKind =
   | "person"
   | "crowd"
+  | "couple"
   | "smartphone"
   | "brain"
   | "money"
-  | "city";
+  | "city"
+  | "scale"
+  | "clock"
+  | "eye"
+  | "mask"
+  | "dna"
+  | "cage"
+  | "stairs"
+  | "heart";
 
 /**
  * シーンの画面構成の型。台本AIがナレーション内容に応じて選択する。

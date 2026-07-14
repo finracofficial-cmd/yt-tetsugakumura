@@ -286,6 +286,440 @@ const FigureBody: React.FC<{ figure: FigureKind; frame: number; fps: number }> =
       );
     }
 
+    case "couple": {
+      // 二人の距離がゆっくり開いては縮む。間に破線
+      const dist = 130 + Math.sin(t * 0.7) * 60;
+      const breath1 = Math.sin(t * 1.7) * 3;
+      const breath2 = Math.cos(t * 1.5) * 3;
+      return (
+        <div style={{ position: "relative", display: "flex", alignItems: "center", height: 340 }}>
+          <div style={{ transform: `translateX(${-dist}px) translateY(${breath1}px)` }}>
+            <Person tint="rgba(70, 80, 100, 0.95)" />
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              transform: "translateX(-50%)",
+              width: dist * 1.3,
+              borderTop: "2.5px dashed rgba(255,255,255,0.3)",
+              top: 150,
+            }}
+          />
+          <div style={{ transform: `translateX(${dist}px) translateY(${breath2}px) scaleX(-1)` }}>
+            <Person tint="rgba(105, 80, 100, 0.95)" />
+          </div>
+        </div>
+      );
+    }
+
+    case "scale": {
+      // 揺れ続ける天秤
+      const tilt = Math.sin(t * 0.9) * 9;
+      const pan = (side: number) => (
+        <div
+          style={{
+            position: "absolute",
+            left: side < 0 ? -14 : undefined,
+            right: side > 0 ? -14 : undefined,
+            top: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            transform: `translateY(${side * tilt * 3.4}px)`,
+          }}
+        >
+          <div style={{ width: 2, height: 90, backgroundColor: "rgba(255,255,255,0.5)" }} />
+          <div
+            style={{
+              width: 150,
+              height: 26,
+              borderRadius: "0 0 60px 60px",
+              backgroundColor: "rgba(200, 200, 195, 0.35)",
+              border: "2px solid rgba(255,255,255,0.5)",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              style={{
+                width: side < 0 ? 52 : 36,
+                height: side < 0 ? 52 : 36,
+                marginTop: -30,
+                borderRadius: side < 0 ? "50%" : 6,
+                backgroundColor: side < 0 ? AMBER : "rgba(120,150,200,0.85)",
+              }}
+            />
+          </div>
+        </div>
+      );
+      return (
+        <div style={{ position: "relative", width: 560, height: 430 }}>
+          {/* 支柱と台座 */}
+          <div style={{ position: "absolute", left: 272, top: 60, width: 16, height: 320, backgroundColor: "rgba(200,200,195,0.55)", borderRadius: 6 }} />
+          <div style={{ position: "absolute", left: 190, top: 376, width: 180, height: 18, backgroundColor: "rgba(200,200,195,0.55)", borderRadius: 8 }} />
+          {/* 梁（回転） */}
+          <div
+            style={{
+              position: "absolute",
+              left: 30,
+              top: 52,
+              width: 500,
+              height: 10,
+              borderRadius: 5,
+              backgroundColor: "rgba(230,230,225,0.7)",
+              transform: `rotate(${tilt}deg)`,
+              transformOrigin: "center",
+            }}
+          >
+            {pan(-1)}
+            {pan(1)}
+          </div>
+          <div style={{ position: "absolute", left: 265, top: 36, width: 30, height: 30, borderRadius: "50%", backgroundColor: "rgba(230,230,225,0.8)" }} />
+        </div>
+      );
+    }
+
+    case "clock": {
+      // 針が回り続ける時計
+      const minuteAngle = t * 60; // 6秒で一周
+      const hourAngle = t * 5;
+      return (
+        <div
+          style={{
+            position: "relative",
+            width: 400,
+            height: 400,
+            borderRadius: "50%",
+            border: "6px solid rgba(230, 230, 225, 0.7)",
+            backgroundColor: "rgba(10, 12, 18, 0.6)",
+            boxShadow: "0 0 60px rgba(255,255,255,0.08)",
+          }}
+        >
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: "50%",
+                top: "50%",
+                width: 4,
+                height: 18,
+                backgroundColor: "rgba(255,255,255,0.5)",
+                transform: `rotate(${i * 30}deg) translateY(-172px)`,
+                transformOrigin: "center 0",
+              }}
+            />
+          ))}
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              width: 8,
+              height: 120,
+              marginLeft: -4,
+              borderRadius: 4,
+              backgroundColor: "rgba(240,240,235,0.9)",
+              transform: `rotate(${hourAngle}deg)`,
+              transformOrigin: "center 0",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              width: 5,
+              height: 165,
+              marginLeft: -2.5,
+              borderRadius: 3,
+              backgroundColor: AMBER,
+              transform: `rotate(${minuteAngle}deg)`,
+              transformOrigin: "center 0",
+            }}
+          />
+          <div style={{ position: "absolute", left: "50%", top: "50%", width: 20, height: 20, margin: -10, borderRadius: "50%", backgroundColor: "rgba(240,240,235,0.95)" }} />
+        </div>
+      );
+    }
+
+    case "eye": {
+      // 視線が泳ぎ、ときどき瞬きする大きな目
+      const gaze = Math.sin(t * 0.8) * 46;
+      const blinkCycle = 3.2;
+      const bp = (t % blinkCycle) / blinkCycle;
+      const blink = bp > 0.92 ? Math.sin(((bp - 0.92) / 0.08) * Math.PI) : 0;
+      return (
+        <div
+          style={{
+            position: "relative",
+            width: 520,
+            height: 260,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              width: 520,
+              height: 260,
+              borderRadius: "50%",
+              border: "5px solid rgba(230,230,225,0.75)",
+              backgroundColor: "rgba(240, 238, 228, 0.12)",
+              overflow: "hidden",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              transform: `scaleY(${1 - blink * 0.94})`,
+            }}
+          >
+            <div
+              style={{
+                width: 150,
+                height: 150,
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 40% 40%, rgba(140,170,210,0.95), rgba(40,60,100,0.95))",
+                transform: `translateX(${gaze}px)`,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div style={{ width: 64, height: 64, borderRadius: "50%", backgroundColor: "rgba(8,10,14,0.95)" }} />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    case "mask": {
+      // 顔の前に浮かぶ「笑顔の仮面」が近づいたり離れたりする
+      const maskOffset = 90 + Math.sin(t * 0.9) * 55;
+      const bob = Math.sin(t * 1.4) * 5;
+      return (
+        <div style={{ position: "relative", display: "flex", alignItems: "center", height: 380 }}>
+          {/* 素顔（無表情） */}
+          <div
+            style={{
+              width: 190,
+              height: 240,
+              borderRadius: "50% 50% 44% 44%",
+              backgroundColor: "rgba(45, 52, 68, 0.95)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 20,
+            }}
+          >
+            <div style={{ display: "flex", gap: 44 }}>
+              <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "rgba(220,220,215,0.7)" }} />
+              <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "rgba(220,220,215,0.7)" }} />
+            </div>
+            <div style={{ width: 44, height: 3, backgroundColor: "rgba(220,220,215,0.5)" }} />
+          </div>
+          {/* 仮面（笑顔） */}
+          <div
+            style={{
+              position: "absolute",
+              left: 130 + maskOffset,
+              top: 30 + bob,
+              width: 175,
+              height: 220,
+              borderRadius: "50% 50% 44% 44%",
+              backgroundColor: "rgba(240, 236, 224, 0.95)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 18,
+              boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
+            }}
+          >
+            <div style={{ display: "flex", gap: 40 }}>
+              <div style={{ width: 30, height: 14, borderRadius: "0 0 30px 30px", border: "3px solid #1a1a1e", borderTop: "none" }} />
+              <div style={{ width: 30, height: 14, borderRadius: "0 0 30px 30px", border: "3px solid #1a1a1e", borderTop: "none" }} />
+            </div>
+            <div style={{ width: 70, height: 30, borderRadius: "0 0 60px 60px", border: "3.5px solid #1a1a1e", borderTop: "none" }} />
+          </div>
+        </div>
+      );
+    }
+
+    case "dna": {
+      // 回転し続ける二重らせん
+      const N = 14;
+      return (
+        <div style={{ position: "relative", width: 360, height: 480 }}>
+          {Array.from({ length: N }).map((_, i) => {
+            const y = (i / (N - 1)) * 440;
+            const phase = t * 1.6 + i * 0.55;
+            const x1 = 180 + Math.sin(phase) * 120;
+            const x2 = 180 + Math.sin(phase + Math.PI) * 120;
+            const z1 = Math.cos(phase);
+            const z2 = -z1;
+            return (
+              <div key={i}>
+                <div
+                  style={{
+                    position: "absolute",
+                    left: Math.min(x1, x2),
+                    top: y + 9,
+                    width: Math.abs(x2 - x1),
+                    height: 2,
+                    backgroundColor: "rgba(255,255,255,0.18)",
+                  }}
+                />
+                {[
+                  { x: x1, z: z1, c: AMBER },
+                  { x: x2, z: z2, c: "rgba(120,160,220,0.9)" },
+                ].map((p, j) => (
+                  <div
+                    key={j}
+                    style={{
+                      position: "absolute",
+                      left: p.x - 10,
+                      top: y,
+                      width: 20,
+                      height: 20,
+                      borderRadius: "50%",
+                      backgroundColor: p.c,
+                      opacity: 0.45 + 0.55 * ((p.z + 1) / 2),
+                      transform: `scale(${0.7 + 0.4 * ((p.z + 1) / 2)})`,
+                    }}
+                  />
+                ))}
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+
+    case "cage": {
+      // 檻の中で呼吸する人物。上からの光
+      const breath = Math.sin(t * 1.6) * 4;
+      return (
+        <div style={{ position: "relative", width: 460, height: 430, display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+          <div
+            style={{
+              position: "absolute",
+              top: -40,
+              width: 380,
+              height: 320,
+              background: "radial-gradient(ellipse at top, rgba(255,225,170,0.14) 0%, rgba(0,0,0,0) 65%)",
+            }}
+          />
+          <div style={{ marginBottom: 30 }}>
+            <Person scale={1.05} sway={breath} />
+          </div>
+          {/* 檻のバー */}
+          {Array.from({ length: 7 }).map((_, i) => (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: 20 + i * 70,
+                top: 0,
+                width: 13,
+                height: 420,
+                borderRadius: 7,
+                background: "linear-gradient(180deg, rgba(90,95,105,0.95), rgba(50,54,62,0.95))",
+                boxShadow: "6px 0 16px rgba(0,0,0,0.45)",
+              }}
+            />
+          ))}
+          <div style={{ position: "absolute", top: -6, left: 8, width: 452, height: 14, borderRadius: 7, backgroundColor: "rgba(80,84,94,0.95)" }} />
+          <div style={{ position: "absolute", bottom: 0, left: 8, width: 452, height: 14, borderRadius: 7, backgroundColor: "rgba(80,84,94,0.95)" }} />
+        </div>
+      );
+    }
+
+    case "stairs": {
+      // 永遠に終わらない階段を登る（階段が下へ流れ、人物は登り続ける）
+      const STEP_W = 130;
+      const STEP_H = 66;
+      const scrollP = (t * 0.55) % 1;
+      const bob = Math.abs(Math.sin(t * 3.4)) * 10;
+      return (
+        <div style={{ position: "relative", width: 900, height: 600, overflow: "hidden" }}>
+          {Array.from({ length: 9 }).map((_, i) => {
+            const k = i - scrollP;
+            return (
+              <div
+                key={i}
+                style={{
+                  position: "absolute",
+                  left: 60 + k * STEP_W,
+                  bottom: 20 + k * STEP_H,
+                  width: STEP_W + 4,
+                  height: 22,
+                  backgroundColor: "rgba(190, 190, 185, 0.5)",
+                  borderRadius: 4,
+                  opacity: Math.max(0, Math.min(1, 1 - Math.abs(k - 3.5) / 4.5)),
+                }}
+              />
+            );
+          })}
+          {/* 登る人（画面中央に留まり続ける = シーシュポス） */}
+          <div style={{ position: "absolute", left: 60 + 3.5 * STEP_W - 40, bottom: 44 + 3.5 * STEP_H - bob }}>
+            <Person scale={0.95} />
+          </div>
+        </div>
+      );
+    }
+
+    case "heart": {
+      // 鼓動するハート。シーン後半でひびが入る
+      const beat = 1 + Math.max(0, Math.sin(t * 3.4)) * 0.08 + Math.max(0, Math.sin(t * 3.4 + 0.5)) * 0.04;
+      const crack = interpolate(frame, [fps * 3.2, fps * 4], [0, 1], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      });
+      return (
+        <div style={{ position: "relative", width: 380, height: 360, display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ position: "relative", transform: `scale(${beat})` }}>
+            <div style={{ position: "absolute", left: -10, top: 0, width: 150, height: 150, borderRadius: "50%", backgroundColor: "rgba(210, 80, 100, 0.92)" }} />
+            <div style={{ position: "absolute", left: 100, top: 0, width: 150, height: 150, borderRadius: "50%", backgroundColor: "rgba(210, 80, 100, 0.92)" }} />
+            <div
+              style={{
+                position: "absolute",
+                left: 30,
+                top: 60,
+                width: 180,
+                height: 180,
+                backgroundColor: "rgba(210, 80, 100, 0.92)",
+                transform: "rotate(45deg)",
+              }}
+            />
+            {/* ひび */}
+            <div style={{ position: "absolute", left: 108, top: 30, opacity: crack, zIndex: 2 }}>
+              {[
+                { x: 0, y: 0, r: 18, len: 60 },
+                { x: -16, y: 52, r: -24, len: 55 },
+                { x: 4, y: 100, r: 14, len: 62 },
+              ].map((s, i) => (
+                <div
+                  key={i}
+                  style={{
+                    position: "absolute",
+                    left: s.x,
+                    top: s.y,
+                    width: 5,
+                    height: s.len,
+                    backgroundColor: "rgba(10, 8, 10, 0.85)",
+                    transform: `rotate(${s.r}deg)`,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     case "city": {
       // 夜のスカイライン。窓の明かりが瞬き、月が浮かぶ
       const buildings = [180, 300, 240, 380, 210, 330, 260];
