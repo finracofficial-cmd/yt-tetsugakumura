@@ -15,6 +15,12 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    services:
+      # TTS_PROVIDER=voicevox のときに使う無料TTSエンジン（未使用時も起動するが無害）
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+        ports:
+          - 50021:50021
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -69,9 +75,11 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # 以下は Settings → Secrets and variables → Actions → Variables で上書き可能
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
           OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL }}
           OPENAI_TTS_VOICE: ${{ vars.OPENAI_TTS_VOICE }}
           OPENAI_TTS_SPEED: ${{ vars.OPENAI_TTS_SPEED }}
+          VOICEVOX_SPEAKER: ${{ vars.VOICEVOX_SPEAKER }}
           OPENAI_IMAGE_QUALITY: ${{ vars.OPENAI_IMAGE_QUALITY }}
           MAX_SCENE_IMAGES: ${{ vars.MAX_SCENE_IMAGES }}
 

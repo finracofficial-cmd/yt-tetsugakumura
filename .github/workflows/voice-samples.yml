@@ -1,9 +1,10 @@
 name: Voice Samples
 
-# 候補ボイスのサンプルmp3を一括生成し、previews/voice-samples/ にコミットする。
-# GitHub上でmp3をクリックするとそのまま再生できるので、聴き比べて
-# Settings → Secrets and variables → Actions → Variables に
-# OPENAI_TTS_MODEL / OPENAI_TTS_VOICE を設定する。
+# OpenAI TTS と VOICEVOX の男性ボイス候補でサンプルmp3を一括生成し、
+# previews/voice-samples/ にコミットする。GitHub上でmp3をクリックすると
+# そのまま再生できるので、聴き比べて Repository Variables に設定する:
+#   OpenAI採用:   OPENAI_TTS_MODEL / OPENAI_TTS_VOICE
+#   VOICEVOX採用: TTS_PROVIDER=voicevox / VOICEVOX_SPEAKER=<スタイルID>
 on:
   workflow_dispatch:
     inputs:
@@ -18,14 +19,28 @@ permissions:
 jobs:
   samples:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    services:
+      voicevox:
+        image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+        ports:
+          - 50021:50021
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: npm ci
+      - name: Wait for VOICEVOX engine
+        run: |
+          for i in $(seq 1 30); do
+            curl -sf http://127.0.0.1:50021/version && exit 0
+            sleep 3
+          done
+          echo "VOICEVOXエンジンが起動しませんでした（VOICEVOXサンプルはスキップされます）"
       - name: Generate voice samples
         run: npm run voice-samples
         env:

@@ -43,11 +43,22 @@ import {
 } from "./types";
 
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
+/** "openai"（デフォルト） | "voicevox" */
+const TTS_PROVIDER = process.env.TTS_PROVIDER || "openai";
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "tts-1-hd";
 /** 最も深く落ち着いた低音男性ボイス */
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "onyx";
 /** 通常より5%遅くして語りの重厚感を出す */
 const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED || "0.95");
+/** gpt-4o系モデルのみ有効な話し方の指示 */
+const TTS_INSTRUCTIONS =
+  process.env.OPENAI_TTS_INSTRUCTIONS ||
+  "低く落ち着いたトーンの、感情を抑えた思索的なドキュメンタリーのナレーション。自然な速度で、間延びさせず淡々と。";
+
+/** VOICEVOX設定（無料・ローカルエンジン。CIではサービスコンテナで起動） */
+const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
+/** デフォルトは青山龍星（ノーマル）= 深めの男性ナレーション向き */
+const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
 
 /** 文法ポーズ（ミリ秒） */
 const PAUSE_COMMA_MS = 400;
@@ -112,6 +123,36 @@ function ffmpeg(args: string[]): void {
   execFileSync(FFMPEG, ["-hide_banner", "-loglevel", "error", ...args]);
 }
 
+/**
+ * VOICEVOX TTS（無料）。audio_query → synthesis の2段階でwavを得る。
+ * 男性ナレーション向きの話者: 青山龍星(13), 玄野武宏(11) など。
+ */
+export async function voicevoxSpeech(
+  text: string,
+  speaker: number = VOICEVOX_SPEAKER,
+  speedScale: number = TTS_SPEED,
+): Promise<Buffer> {
+  const queryRes = await fetch(
+    `${VOICEVOX_URL}/audio_query?speaker=${speaker}&text=${encodeURIComponent(text)}`,
+    { method: "POST" },
+  );
+  if (!queryRes.ok) {
+    throw new Error(`VOICEVOX audio_query error ${queryRes.status}: ${await queryRes.text()}`);
+  }
+  const query = (await queryRes.json()) as Record<string, unknown>;
+  query.speedScale = speedScale;
+
+  const synthRes = await fetch(`${VOICEVOX_URL}/synthesis?speaker=${speaker}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(query),
+  });
+  if (!synthRes.ok) {
+    throw new Error(`VOICEVOX synthesis error ${synthRes.status}: ${await synthRes.text()}`);
+  }
+  return Buffer.from(await synthRes.arrayBuffer());
+}
+
 /** public/assets/ の音響アセットの有無を検査してマニフェストを書き出す */
 export function writeAssetsManifest(): AssetsManifest {
   const manifest: AssetsManifest = {
@@ -129,18 +170,44 @@ export function writeAssetsManifest(): AssetsManifest {
 
 export async function generateAudio(): Promise<SyncMap> {
   const script = JSON.parse(readFileSync(SCRIPT_JSON_PATH, "utf-8")) as VideoScript;
-  const apiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
+  const openaiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
 
   writeAssetsManifest();
 
-  let client = apiKey ? new OpenAI({ apiKey }) : null;
-  if (!client) {
+  const openaiClient = openaiKey ? new OpenAI({ apiKey: openaiKey }) : null;
+  let ttsEnabled = TTS_PROVIDER === "voicevox" ? true : Boolean(openaiClient);
+
+  /** プロバイダに応じて1フラグメントを音声化する（戻り値は音声バッファと拡張子） */
+  const synthesize = async (
+    text: string,
+  ): Promise<{ buffer: Buffer; ext: "mp3" | "wav" }> => {
+    if (TTS_PROVIDER === "voicevox") {
+      return { buffer: await voicevoxSpeech(text), ext: "wav" };
+    }
+    if (!openaiClient) throw new Error("OPENAI_API_KEY が設定されていません。");
+    const response = await openaiClient.audio.speech.create({
+      model: TTS_MODEL,
+      voice: TTS_VOICE,
+      input: text,
+      response_format: "mp3",
+      speed: TTS_SPEED,
+      // instructions は gpt-4o 系モデルのみ対応
+      ...(TTS_MODEL.startsWith("gpt-4o") ? { instructions: TTS_INSTRUCTIONS } : {}),
+    });
+    return { buffer: Buffer.from(await response.arrayBuffer()), ext: "mp3" };
+  };
+
+  if (!ttsEnabled) {
     console.warn(
       "[generateAudio] OPENAI_API_KEY が未設定のためTTSをスキップし、推定尺で同期マップを生成します。",
     );
   } else {
+    const desc =
+      TTS_PROVIDER === "voicevox"
+        ? `provider=voicevox, speaker=${VOICEVOX_SPEAKER}, speed=${TTS_SPEED}`
+        : `provider=openai, model=${TTS_MODEL}, voice=${TTS_VOICE}, speed=${TTS_SPEED}`;
     console.log(
-      `[generateAudio] TTS音声を生成中... (model=${TTS_MODEL}, voice=${TTS_VOICE}, speed=${TTS_SPEED}, scenes=${script.scenes.length})`,
+      `[generateAudio] TTS音声を生成中... (${desc}, scenes=${script.scenes.length})`,
     );
     mkdirSync(AUDIO_DIR, { recursive: true });
   }
@@ -179,25 +246,19 @@ export async function generateAudio(): Promise<SyncMap> {
     let timedFragments: { text: string; durationMs: number; pauseMs: number }[] = [];
     let sceneDurationMs = 0;
 
-    if (client) {
+    if (ttsEnabled) {
       try {
         const wavList: string[] = [];
         timedFragments = [];
         for (let f = 0; f < fragments.length; f++) {
           const frag = fragments[f];
-          const mp3Path = join(tmp, `s${scene.id}-f${f}.mp3`);
           const wavPath = join(tmp, `s${scene.id}-f${f}.wav`);
 
-          const response = await client.audio.speech.create({
-            model: TTS_MODEL,
-            voice: TTS_VOICE,
-            input: frag.text,
-            response_format: "mp3",
-            speed: TTS_SPEED,
-          });
-          writeFileSync(mp3Path, Buffer.from(await response.arrayBuffer()));
+          const { buffer, ext } = await synthesize(frag.text);
+          const rawPath = join(tmp, `s${scene.id}-f${f}-raw.${ext}`);
+          writeFileSync(rawPath, buffer);
           // 全フラグメントを同一フォーマットのwavに揃えて結合可能にする
-          ffmpeg(["-i", mp3Path, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", wavPath]);
+          ffmpeg(["-i", rawPath, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", wavPath]);
 
           const meta = await parseFile(wavPath);
           const durationMs = Math.round((meta.format.duration ?? 0) * 1000);
@@ -234,12 +295,12 @@ export async function generateAudio(): Promise<SyncMap> {
             err instanceof Error ? err.message : String(err)
           }`,
         );
-        client = null;
+        ttsEnabled = false;
         audioFile = null;
       }
     }
 
-    if (!client || !audioFile) {
+    if (!ttsEnabled || !audioFile) {
       // 推定フォールバック
       timedFragments = fragments.map((frag) => ({
         text: frag.text,
