@@ -1,134 +1,134 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 2073,
+  "totalDurationInFrames": 1460,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 15317,
-      "durationInFrames": 460,
+      "durationMs": 10651,
+      "durationInFrames": 320,
       "audioFile": null,
       "segments": [
         {
           "text": "深夜2時。",
           "startFrame": 0,
-          "durationInFrames": 24
+          "durationInFrames": 21
         },
         {
           "text": "モニターの光だけが部屋を照らしている。",
-          "startFrame": 54,
-          "durationInFrames": 92
+          "startFrame": 33,
+          "durationInFrames": 80
         },
         {
           "text": "男はまだ、動画を編集している。",
-          "startFrame": 177,
-          "durationInFrames": 85
+          "startFrame": 125,
+          "durationInFrames": 68
         },
         {
           "text": "だが、本当にそれは人間の仕事なのだろうか。",
-          "startFrame": 291,
-          "durationInFrames": 114
+          "startFrame": 205,
+          "durationInFrames": 94
         }
       ]
     },
     {
       "id": 2,
-      "startMs": 15317,
-      "startFrame": 460,
-      "durationMs": 10325,
-      "durationInFrames": 310,
+      "startMs": 10651,
+      "startFrame": 320,
+      "durationMs": 7433,
+      "durationInFrames": 223,
       "audioFile": null,
       "segments": [
         {
           "text": "人間の集中力には限界がある。",
           "startFrame": 0,
-          "durationInFrames": 68
+          "durationInFrames": 59
         },
         {
           "text": "認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
-          "startFrame": 98,
-          "durationInFrames": 158
+          "startFrame": 71,
+          "durationInFrames": 131
         }
       ]
     },
     {
       "id": 3,
-      "startMs": 25642,
-      "startFrame": 769,
-      "durationMs": 16773,
-      "durationInFrames": 504,
+      "startMs": 18084,
+      "startFrame": 543,
+      "durationMs": 11911,
+      "durationInFrames": 358,
       "audioFile": null,
       "segments": [
         {
           "text": "人間と機械では、得意なことがまるで違う。",
           "startFrame": 0,
-          "durationInFrames": 109
+          "durationInFrames": 89
         },
         {
           "text": "判断と創造は人間に、反復と精密は機械に。",
-          "startFrame": 139,
-          "durationInFrames": 109
+          "startFrame": 101,
+          "durationInFrames": 89
         },
         {
           "text": "悪いのは編集者ではない。",
-          "startFrame": 278,
-          "durationInFrames": 58
+          "startFrame": 203,
+          "durationInFrames": 50
         },
         {
           "text": "分業を設計しない仕組みの側である。",
-          "startFrame": 367,
-          "durationInFrames": 83
+          "startFrame": 265,
+          "durationInFrames": 71
         }
       ]
     },
     {
       "id": 4,
-      "startMs": 42415,
-      "startFrame": 1272,
-      "durationMs": 17661,
-      "durationInFrames": 530,
+      "startMs": 29995,
+      "startFrame": 900,
+      "durationMs": 12509,
+      "durationInFrames": 376,
       "audioFile": null,
       "segments": [
         {
           "text": "これは遠い世界の話ではない。",
           "startFrame": 0,
-          "durationInFrames": 68
+          "durationInFrames": 59
         },
         {
           "text": "自動化には三つの段階がある。",
-          "startFrame": 98,
-          "durationInFrames": 68
+          "startFrame": 71,
+          "durationInFrames": 59
         },
         {
           "text": "道具化、半自動化、そして自律化。",
-          "startFrame": 196,
-          "durationInFrames": 102
+          "startFrame": 141,
+          "durationInFrames": 78
         },
         {
           "text": "この動画もまた、その最終段階によって組み立てられている。",
-          "startFrame": 328,
-          "durationInFrames": 148
+          "startFrame": 231,
+          "durationInFrames": 123
         }
       ]
     },
     {
       "id": 5,
-      "startMs": 60076,
-      "startFrame": 1802,
-      "durationMs": 8944,
-      "durationInFrames": 269,
+      "startMs": 42504,
+      "startFrame": 1275,
+      "durationMs": 6076,
+      "durationInFrames": 183,
       "audioFile": null,
       "segments": [
         {
           "text": "そんなことを、考えすぎてみました。",
           "startFrame": 0,
-          "durationInFrames": 95
+          "durationInFrames": 77
         },
         {
           "text": "よろしければ、チャンネル登録を。",
-          "startFrame": 125,
-          "durationInFrames": 90
+          "startFrame": 89,
+          "durationInFrames": 73
         }
       ]
     }

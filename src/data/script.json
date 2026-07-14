@@ -6,11 +6,7 @@
       "id": 1,
       "act": 1,
       "narration": "深夜2時。モニターの光だけが部屋を照らしている。男はまだ、動画を編集している。だが、本当にそれは人間の仕事なのだろうか。",
-      "visual": {
-        "type": "dialogue",
-        "line": "まだ終わらない",
-        "image_prompt": "A man working alone at a desk in a dark room at 2am, lit only by a glowing computer monitor, seen from behind, city lights faintly visible through a window"
-      },
+      "visual": { "type": "dialogue", "line": "まだ終わらない" },
       "concept_color": "dark-navy"
     },
     {
@@ -47,11 +43,7 @@
       "id": 4,
       "act": 4,
       "narration": "これは遠い世界の話ではない。自動化には三つの段階がある。道具化、半自動化、そして自律化。この動画もまた、その最終段階によって組み立てられている。",
-      "visual": {
-        "type": "list",
-        "title": "自動化の三段階",
-        "items": ["道具化", "半自動化", "自律化"]
-      },
+      "visual": { "type": "figure", "figure": "crowd", "label": "終わらない椅子取りゲーム" },
       "concept_color": "pitch-black"
     },
     {

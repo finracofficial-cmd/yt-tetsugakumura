@@ -9,18 +9,29 @@ export type ConceptColor = "dark-navy" | "charcoal" | "pitch-black";
 /** 黄金の5幕構成における幕番号 */
 export type Act = 1 | 2 | 3 | 4 | 5;
 
+/** figure型で使えるピクトグラムの種類 */
+export type FigureKind =
+  | "person"
+  | "crowd"
+  | "smartphone"
+  | "brain"
+  | "money"
+  | "city";
+
 /**
  * シーンの画面構成の型。台本AIがナレーション内容に応じて選択する。
  * - keyword:    抽象キーワードが中央に浮かぶ（思索・断定・余韻）
- * - dialogue:   人物シルエット＋吹き出し（情景描写・セリフ）
+ * - figure:     動くフラットピクトグラム（人物・群衆・スマホ・脳・金・都市）
+ * - dialogue:   人物シルエット＋吹き出し（誰かのセリフ・内心）
  * - stat:       大きな数字・統計値の提示（研究データの引用）
+ * - chart:      棒グラフ（複数の数値の比較）
  * - comparison: 左右対比の図解（2つの概念・集団・環境の比較）
  * - list:       項目の列挙（要因・特徴・段階の整理）
  */
 export type Visual =
   | { type: "keyword"; keyword: string }
-  | { type: "illustration"; image_prompt: string }
-  | { type: "dialogue"; line: string; image_prompt: string }
+  | { type: "figure"; figure: FigureKind; label: string }
+  | { type: "dialogue"; line: string }
   | { type: "stat"; value: string; label: string }
   | {
       type: "chart";
@@ -37,11 +48,6 @@ export type Visual =
       center_label: string;
     }
   | { type: "list"; title: string; items: string[] };
-
-/** シーンID → 生成された背景イラストのパス（public/からの相対）。生成失敗・スキップ時は null */
-export type ImageManifest = Record<string, string | null>;
-export const IMAGES_JSON_PATH = "src/data/images.json";
-export const IMAGES_DIR = "public/images";
 
 export interface Scene {
   /** 1始まりの連番 */

@@ -48,26 +48,29 @@ const TTS_PROVIDER = process.env.TTS_PROVIDER || "openai";
 /** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "echo";
-/** 通常より5%遅くして語りの重厚感を出す */
-const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED || "0.95");
+/**
+ * 再生テンポ。tts-1系はAPIのspeed、gpt-4o系はAPIが速度指定に対応しないため
+ * ffmpegのatempoフィルタで確実に適用する（VOICEVOXはspeedScale）。
+ */
+const TTS_SPEED = Number(process.env.OPENAI_TTS_SPEED || "1.1");
 /** gpt-4o系モデルのみ有効な話し方の指示 */
 const TTS_INSTRUCTIONS =
   process.env.OPENAI_TTS_INSTRUCTIONS ||
-  "低く落ち着いたトーンの、感情を抑えた思索的なドキュメンタリーのナレーション。自然な速度で、間延びさせず淡々と。";
+  "低めの落ち着いたトーンのドキュメンタリーナレーション。やや速めのテンポで歯切れよく、間延びさせずに読み上げる。";
 
 /** VOICEVOX設定（無料・ローカルエンジン。CIではサービスコンテナで起動） */
 const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 /** デフォルトは青山龍星（ノーマル）= 深めの男性ナレーション向き */
 const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
 
-/** 文法ポーズ（ミリ秒） */
-const PAUSE_COMMA_MS = 400;
-const PAUSE_PERIOD_MS = 1000;
-const PAUSE_ELLIPSIS_MS = 1800;
-/** シーン末尾の余韻: 通常（1シーン=1文のため短め） / 幕の変わり目・最終シーン */
-const SCENE_TAIL_MS = 800;
-const SCENE_TAIL_ACT_CHANGE_MS = 1800;
-/** TTSスキップ時の推定: 日本語 ≒ 6.5文字/秒（speed 0.95で割り引く） */
+/** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
+const PAUSE_COMMA_MS = 180;
+const PAUSE_PERIOD_MS = 400;
+const PAUSE_ELLIPSIS_MS = 800;
+/** シーン末尾の余韻: 通常 / 幕の変わり目・最終シーン */
+const SCENE_TAIL_MS = 300;
+const SCENE_TAIL_ACT_CHANGE_MS = 700;
+/** TTSスキップ時の推定: 日本語 ≒ 6.5文字/秒 × テンポ */
 const ESTIMATED_CHARS_PER_SEC = 6.5 * TTS_SPEED;
 
 interface Fragment {
@@ -185,17 +188,22 @@ export async function generateAudio(): Promise<SyncMap> {
       return { buffer: await voicevoxSpeech(text), ext: "wav" };
     }
     if (!openaiClient) throw new Error("OPENAI_API_KEY が設定されていません。");
+    const isGpt4o = TTS_MODEL.startsWith("gpt-4o");
     const response = await openaiClient.audio.speech.create({
       model: TTS_MODEL,
       voice: TTS_VOICE,
       input: text,
       response_format: "mp3",
-      speed: TTS_SPEED,
-      // instructions は gpt-4o 系モデルのみ対応
-      ...(TTS_MODEL.startsWith("gpt-4o") ? { instructions: TTS_INSTRUCTIONS } : {}),
+      // speed はtts-1系のみ有効。gpt-4o系はffmpegのatempoで速度を適用する
+      ...(isGpt4o ? { instructions: TTS_INSTRUCTIONS } : { speed: TTS_SPEED }),
     });
     return { buffer: Buffer.from(await response.arrayBuffer()), ext: "mp3" };
   };
+
+  /** gpt-4o系のみ、wav変換時にテンポ加工を挟む（tts-1/VOICEVOXはAPI側で適用済み） */
+  const needsAtempo = TTS_PROVIDER === "openai" && TTS_MODEL.startsWith("gpt-4o");
+  const atempoArgs =
+    needsAtempo && TTS_SPEED !== 1 ? ["-filter:a", `atempo=${TTS_SPEED}`] : [];
 
   if (!ttsEnabled) {
     console.warn(
@@ -257,8 +265,13 @@ export async function generateAudio(): Promise<SyncMap> {
           const { buffer, ext } = await synthesize(frag.text);
           const rawPath = join(tmp, `s${scene.id}-f${f}-raw.${ext}`);
           writeFileSync(rawPath, buffer);
-          // 全フラグメントを同一フォーマットのwavに揃えて結合可能にする
-          ffmpeg(["-i", rawPath, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", wavPath]);
+          // 全フラグメントを同一フォーマットのwavに揃えて結合可能にする（必要ならテンポ加工）
+          ffmpeg([
+            "-i", rawPath,
+            ...atempoArgs,
+            "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
+            wavPath,
+          ]);
 
           const meta = await parseFile(wavPath);
           const durationMs = Math.round((meta.format.duration ?? 0) * 1000);

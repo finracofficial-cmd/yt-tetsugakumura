@@ -7,4 +7,3 @@ dist/
 
 # 生成された音声・イラスト（Artifactsで受け渡す。リポジトリには含めない）
 public/audio/*.mp3
-public/images/*.png

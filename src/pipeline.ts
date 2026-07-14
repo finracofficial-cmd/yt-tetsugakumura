@@ -11,7 +11,6 @@
  */
 import { spawnSync } from "node:child_process";
 import { generateScript, resolveTopic } from "./generator/generateScript";
-import { generateImages } from "./generator/generateImages";
 import { generateAudio } from "./generator/generateAudio";
 
 const OUTPUT_PATH = "out/video.mp4";
@@ -24,10 +23,7 @@ async function main(): Promise<void> {
   // 1. 台本生成
   const script = await generateScript(topic);
 
-  // 2. シーンイラスト生成（illustration / dialogue 型のみ）
-  await generateImages();
-
-  // 3. 音声合成（文法ベースの間の挿入）+ 完全同期マップの生成
+  // 2. 音声合成（文法ベースの間の挿入）+ 完全同期マップの生成
   const syncMap = await generateAudio();
 
   // 3. レンダリング（任意）

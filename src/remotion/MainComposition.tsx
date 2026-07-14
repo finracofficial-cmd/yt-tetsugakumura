@@ -13,21 +13,13 @@ import { ComparisonContent } from "./components/contents/ComparisonContent";
 import { ChartContent } from "./components/contents/ChartContent";
 import { ListContent } from "./components/contents/ListContent";
 import { DialogueContent } from "./components/contents/DialogueContent";
-import { IllustrationContent } from "./components/contents/IllustrationContent";
-import type {
-  AssetsManifest,
-  ImageManifest,
-  Scene,
-  SyncMap,
-  Visual,
-} from "../generator/types";
+import { FigureContent } from "./components/contents/FigureContent";
+import type { AssetsManifest, Scene, SyncMap, Visual } from "../generator/types";
 import scriptJson from "../data/script.json";
-import imagesJson from "../data/images.json";
 import syncMapJson from "../data/sync-map.json";
 import assetsJson from "../data/assets.json";
 
 const scenes = scriptJson.scenes as unknown as Scene[];
-const images = imagesJson as ImageManifest;
 const syncMap = syncMapJson as SyncMap;
 const assets = assetsJson as AssetsManifest;
 
@@ -37,8 +29,6 @@ const SceneContent: React.FC<{
   sceneId: number;
   durationInFrames: number;
 }> = ({ visual, sceneId, durationInFrames }) => {
-  const imageFile = images[String(sceneId)] ?? null;
-
   switch (visual.type) {
     case "keyword":
       return (
@@ -48,23 +38,16 @@ const SceneContent: React.FC<{
           durationInFrames={durationInFrames}
         />
       );
-    case "illustration":
+    case "figure":
       return (
-        <IllustrationContent
-          imageFile={imageFile}
-          sceneId={sceneId}
+        <FigureContent
+          figure={visual.figure}
+          label={visual.label}
           durationInFrames={durationInFrames}
         />
       );
     case "dialogue":
-      return (
-        <DialogueContent
-          line={visual.line}
-          imageFile={imageFile}
-          sceneId={sceneId}
-          durationInFrames={durationInFrames}
-        />
-      );
+      return <DialogueContent line={visual.line} durationInFrames={durationInFrames} />;
     case "stat":
       return (
         <StatContent
@@ -107,13 +90,13 @@ const SceneContent: React.FC<{
 };
 
 /**
- * script.json（台本）・images.json（生成イラスト）・sync-map.json（音声実測の
- * 完全同期マップ）を読み込み、シーンを <Sequence> でつなぎ合わせる。
+ * script.json（台本）と sync-map.json（音声実測の完全同期マップ）を読み込み、
+ * シーンを <Sequence> でつなぎ合わせる。
  *
  * 音響は4レイヤー構成:
  *   L1 ナレーション（シーンごと, volume 1.0）
  *   L2 ミニマル・アンビエントBGM（イントロ/アウトロで 0.15、平常時 0.05）
- *   L3 質感環境ノイズ（全編ループ, volume 0.02 — 完全な無音を作らない）
+ *   L3 質感環境ノイズ（全編ループ, volume 0.02 — 完全な無音を作らない)
  *   L4 シーン転換のSub Bass SFX（各シーン先頭, volume 0.12）
  */
 export const MainComposition: React.FC = () => {
@@ -155,10 +138,6 @@ export const MainComposition: React.FC = () => {
         const durationInFrames = sync?.durationInFrames ?? 150;
         const from = sync?.startFrame ?? 0;
 
-        const hasFullBleedImage =
-          (scene.visual.type === "illustration" || scene.visual.type === "dialogue") &&
-          Boolean(images[String(scene.id)]);
-
         return (
           <Sequence
             key={scene.id}
@@ -172,7 +151,6 @@ export const MainComposition: React.FC = () => {
               narration={scene.narration}
               durationInFrames={durationInFrames}
               segments={sync?.segments}
-              plainBackdrop={hasFullBleedImage}
             >
               <SceneContent
                 visual={scene.visual}

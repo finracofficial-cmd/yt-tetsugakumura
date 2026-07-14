@@ -1,9 +1,7 @@
 import {
   AbsoluteFill,
-  Img,
   interpolate,
   spring,
-  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -11,108 +9,21 @@ import { SERIF_FONT } from "../SceneFrame";
 
 type Props = {
   line: string;
-  imageFile: string | null;
-  sceneId: number;
   durationInFrames: number;
 };
 
-/**
- * イラスト背景（Ken Burns）＋弾む吹き出し。
- * 画像がない場合はフラットな人物シルエットにフォールバックする。
- */
-export const DialogueContent: React.FC<Props> = ({
-  line,
-  imageFile,
-  sceneId,
-  durationInFrames,
-}) => {
+/** フラットな人物シルエット＋弾む吹き出し（誰かのセリフ・内心） */
+export const DialogueContent: React.FC<Props> = ({ line }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const bubblePop = spring({
-    frame: frame - 24,
+    frame: frame - 20,
     fps,
     config: { damping: 10, mass: 0.7, stiffness: 130 },
   });
   const bubbleFloat = Math.sin((frame / fps) * 1.3) * 6;
   const bubbleTilt = Math.sin((frame / fps) * 0.9) * 1.2;
-
-  const bubble = (bottomPosition: boolean) => (
-    <div
-      style={{
-        position: "absolute",
-        top: bottomPosition ? undefined : "16%",
-        bottom: bottomPosition ? "52%" : undefined,
-        left: 0,
-        right: 0,
-        display: "flex",
-        justifyContent: "center",
-        pointerEvents: "none",
-      }}
-    >
-      <div
-        style={{
-          opacity: bubblePop,
-          transform: `scale(${0.5 + 0.5 * bubblePop}) translateY(${bubbleFloat}px) rotate(${bubbleTilt}deg)`,
-          transformOrigin: "bottom center",
-          backgroundColor: "rgba(240, 236, 224, 0.97)",
-          color: "#1a1a1e",
-          fontFamily: SERIF_FONT,
-          fontSize: 52,
-          fontWeight: 600,
-          letterSpacing: "0.08em",
-          padding: "30px 56px",
-          borderRadius: 18,
-          position: "relative",
-          boxShadow: "0 8px 40px rgba(0,0,0,0.55)",
-        }}
-      >
-        {line}
-        <div
-          style={{
-            position: "absolute",
-            bottom: -18,
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: 0,
-            height: 0,
-            borderLeft: "16px solid transparent",
-            borderRight: "16px solid transparent",
-            borderTop: "20px solid rgba(240, 236, 224, 0.97)",
-          }}
-        />
-      </div>
-    </div>
-  );
-
-  if (imageFile) {
-    const dir = sceneId % 2 === 0 ? 1 : -1;
-    const scale = interpolate(frame, [0, durationInFrames], [1.1, 1.22]);
-    const panX = interpolate(frame, [0, durationInFrames], [-20 * dir, 20 * dir]);
-
-    return (
-      <AbsoluteFill style={{ overflow: "hidden" }}>
-        <Img
-          src={staticFile(imageFile)}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            transform: `scale(${scale}) translateX(${panX}px)`,
-          }}
-        />
-        <AbsoluteFill
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%)",
-          }}
-        />
-        {bubble(true)}
-      </AbsoluteFill>
-    );
-  }
-
-  // フォールバック: フラットシルエット
   const figureOpacity = interpolate(frame, [4, 22], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -129,6 +40,7 @@ export const DialogueContent: React.FC<Props> = ({
           alignItems: "center",
         }}
       >
+        {/* 吹き出し */}
         <div
           style={{
             opacity: bubblePop,
@@ -163,6 +75,7 @@ export const DialogueContent: React.FC<Props> = ({
           />
         </div>
 
+        {/* 人物シルエット */}
         <div
           style={{
             opacity: figureOpacity,
@@ -193,6 +106,7 @@ export const DialogueContent: React.FC<Props> = ({
           />
         </div>
 
+        {/* 足元の光だまり */}
         <div
           style={{
             opacity: figureOpacity * 0.6,

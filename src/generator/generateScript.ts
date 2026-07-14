@@ -69,14 +69,19 @@ const VIDEO_SCRIPT_SCHEMA = {
                 {
                   type: "object",
                   properties: {
-                    type: { type: "string", const: "illustration" },
-                    image_prompt: {
+                    type: { type: "string", const: "figure" },
+                    figure: {
                       type: "string",
+                      enum: ["person", "crowd", "smartphone", "brain", "money", "city"],
                       description:
-                        "画像生成AI用の英語プロンプト。情景を具体的に描写（場所・人物・光・構図）。文字・ロゴ禁止",
+                        "person:個人 crowd:群衆・競争 smartphone:SNS brain:本能・報酬系 money:金・資本 city:都市・夜",
+                    },
+                    label: {
+                      type: "string",
+                      description: "画面下部に添える短い言葉（2〜12文字）",
                     },
                   },
-                  required: ["type", "image_prompt"],
+                  required: ["type", "figure", "label"],
                   additionalProperties: false,
                 },
                 {
@@ -87,13 +92,8 @@ const VIDEO_SCRIPT_SCHEMA = {
                       type: "string",
                       description: "吹き出しに表示する短いセリフ・内心（5〜20文字）",
                     },
-                    image_prompt: {
-                      type: "string",
-                      description:
-                        "画像生成AI用の英語プロンプト。セリフを発する人物を含む情景を描写。文字・ロゴ禁止",
-                    },
                   },
-                  required: ["type", "line", "image_prompt"],
+                  required: ["type", "line"],
                   additionalProperties: false,
                 },
                 {
