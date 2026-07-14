@@ -71,13 +71,15 @@ const VIDEO_SCRIPT_SCHEMA = {
 } as const;
 
 export async function generateScript(topic?: string): Promise<VideoScript> {
-  if (!process.env.ANTHROPIC_API_KEY) {
+  // Secretsへの貼り付け時に混入しがちな改行・空白を除去する（改行入りのキーはHTTPヘッダーに載せられない）
+  const apiKey = process.env.ANTHROPIC_API_KEY?.replace(/\s+/g, "");
+  if (!apiKey) {
     throw new Error(
       "ANTHROPIC_API_KEY が設定されていません。GitHub Secrets またはローカルの環境変数に設定してください。",
     );
   }
 
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey });
 
   console.log(
     `[generateScript] 台本を生成中... (model=${MODEL}, topic=${topic?.trim() || "AI自動選定"})`,

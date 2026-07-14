@@ -35,7 +35,9 @@ const ESTIMATED_CHARS_PER_SEC = 5.5;
 
 export async function generateAudio(): Promise<Timing> {
   const script = JSON.parse(readFileSync(SCRIPT_JSON_PATH, "utf-8")) as VideoScript;
-  const useTts = Boolean(process.env.OPENAI_API_KEY);
+  // Secretsへの貼り付け時に混入しがちな改行・空白を除去する
+  const apiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
+  const useTts = Boolean(apiKey);
 
   if (!useTts) {
     console.warn(
@@ -48,7 +50,7 @@ export async function generateAudio(): Promise<Timing> {
     mkdirSync(AUDIO_DIR, { recursive: true });
   }
 
-  const client = useTts ? new OpenAI() : null;
+  const client = useTts ? new OpenAI({ apiKey }) : null;
   const sceneTimings: SceneTiming[] = [];
 
   for (const scene of script.scenes) {
