@@ -9,23 +9,77 @@ export type ConceptColor = "dark-navy" | "charcoal" | "pitch-black";
 /** 黄金の5幕構成における幕番号 */
 export type Act = 1 | 2 | 3 | 4 | 5;
 
-/** figure型で使えるピクトグラムの種類 */
+/**
+ * figure型で使えるピクトグラムの種類（全59種）。
+ * 実体は src/remotion/components/pictograms/ に定義され、
+ * index.tsx の PICTOGRAMS レジストリと必ず一致させること。
+ */
 export type FigureKind =
+  // 人物・社会関係
   | "person"
   | "crowd"
   | "couple"
-  | "smartphone"
+  | "family"
+  | "handshake"
+  | "conflict"
+  | "isolation"
+  | "hierarchy"
+  | "queue"
+  | "blame"
+  | "applause"
+  | "leader"
+  | "bystander"
+  // 心・感情・思考
   | "brain"
+  | "heart"
+  | "mask"
+  | "eye"
+  | "anxiety"
+  | "lightbulb"
+  | "addiction"
+  | "thought"
+  | "tears"
+  | "dream"
+  // 社会・経済・権力・構造
   | "money"
   | "city"
+  | "factory"
   | "scale"
-  | "clock"
-  | "eye"
-  | "mask"
-  | "dna"
-  | "cage"
+  | "gavel"
   | "stairs"
-  | "heart";
+  | "cage"
+  | "chains"
+  | "target"
+  | "trophy"
+  | "podium"
+  | "contract"
+  | "shopping"
+  | "crown"
+  // 時間・生・自然
+  | "clock"
+  | "hourglass"
+  | "candle"
+  | "tree"
+  | "seed"
+  | "path"
+  | "door"
+  | "mountain"
+  // テクノロジー・メディア
+  | "smartphone"
+  | "notification"
+  | "screen"
+  | "camera"
+  | "network"
+  | "echo"
+  // 抽象・科学・概念
+  | "dna"
+  | "atom"
+  | "evolution"
+  | "arrowUp"
+  | "arrowDown"
+  | "cycle"
+  | "crossroad"
+  | "question";
 
 /**
  * シーンの画面構成の型。台本AIがナレーション内容に応じて選択する。
