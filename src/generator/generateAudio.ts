@@ -50,7 +50,7 @@ export async function generateAudio(): Promise<Timing> {
     mkdirSync(AUDIO_DIR, { recursive: true });
   }
 
-  const client = useTts ? new OpenAI({ apiKey }) : null;
+  let client = useTts ? new OpenAI({ apiKey }) : null;
   const sceneTimings: SceneTiming[] = [];
 
   for (const scene of script.scenes) {
@@ -58,25 +58,37 @@ export async function generateAudio(): Promise<Timing> {
     let audioFile: string | null = null;
 
     if (client) {
-      const fileName = `scene-${scene.id}.mp3`;
-      const filePath = join(AUDIO_DIR, fileName);
+      try {
+        const fileName = `scene-${scene.id}.mp3`;
+        const filePath = join(AUDIO_DIR, fileName);
 
-      const response = await client.audio.speech.create({
-        model: TTS_MODEL,
-        voice: TTS_VOICE,
-        input: scene.narration,
-        response_format: "mp3",
-        // gpt-4o-mini-tts は instructions で話し方を制御できる（旧tts-1系では無視される）
-        instructions:
-          "落ち着いた低いトーンで、感情を抑えた思索的なドキュメンタリーのナレーションとして、ややゆっくり読み上げてください。",
-      });
-      const buffer = Buffer.from(await response.arrayBuffer());
-      writeFileSync(filePath, buffer);
+        const response = await client.audio.speech.create({
+          model: TTS_MODEL,
+          voice: TTS_VOICE,
+          input: scene.narration,
+          response_format: "mp3",
+          // gpt-4o-mini-tts は instructions で話し方を制御できる（旧tts-1系では無視される）
+          instructions:
+            "落ち着いた低いトーンで、感情を抑えた思索的なドキュメンタリーのナレーションとして、ややゆっくり読み上げてください。",
+        });
+        const buffer = Buffer.from(await response.arrayBuffer());
+        writeFileSync(filePath, buffer);
 
-      const metadata = await parseFile(filePath);
-      durationSec = metadata.format.duration ?? estimateDuration(scene.narration);
-      audioFile = `audio/${fileName}`;
-      console.log(`  scene ${scene.id}: ${durationSec.toFixed(2)}s -> ${filePath}`);
+        const metadata = await parseFile(filePath);
+        durationSec = metadata.format.duration ?? estimateDuration(scene.narration);
+        audioFile = `audio/${fileName}`;
+        console.log(`  scene ${scene.id}: ${durationSec.toFixed(2)}s -> ${filePath}`);
+      } catch (err) {
+        // クォータ切れ・認証失敗など回復不能なエラーは以降のTTSを打ち切り、
+        // 無音（推定尺）にフォールバックしてパイプラインを完走させる
+        console.warn(
+          `[generateAudio] 警告: TTSに失敗したため、以降は無音・推定尺で続行します: ${
+            err instanceof Error ? err.message : String(err)
+          }`,
+        );
+        client = null;
+        durationSec = estimateDuration(scene.narration);
+      }
     } else {
       durationSec = estimateDuration(scene.narration);
     }
