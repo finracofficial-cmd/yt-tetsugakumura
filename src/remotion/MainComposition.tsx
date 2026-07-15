@@ -11,6 +11,9 @@ import { KeywordContent } from "./components/contents/KeywordContent";
 import { StatContent } from "./components/contents/StatContent";
 import { ComparisonContent } from "./components/contents/ComparisonContent";
 import { ChartContent } from "./components/contents/ChartContent";
+import { LineChartContent } from "./components/contents/LineChartContent";
+import { UnitsContent } from "./components/contents/UnitsContent";
+import { TableContent } from "./components/contents/TableContent";
 import { ListContent } from "./components/contents/ListContent";
 import { DialogueContent } from "./components/contents/DialogueContent";
 import { FigureContent } from "./components/contents/FigureContent";
@@ -62,6 +65,33 @@ const SceneContent: React.FC<{
           title={visual.title}
           unit={visual.unit}
           items={visual.items}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "line":
+      return (
+        <LineChartContent
+          title={visual.title}
+          unit={visual.unit}
+          points={visual.points}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "units":
+      return (
+        <UnitsContent
+          total={visual.total}
+          value={visual.value}
+          label={visual.label}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "table":
+      return (
+        <TableContent
+          title={visual.title}
+          headers={visual.headers}
+          rows={visual.rows}
           durationInFrames={durationInFrames}
         />
       );

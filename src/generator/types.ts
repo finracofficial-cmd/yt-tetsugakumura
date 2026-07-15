@@ -88,6 +88,9 @@ export type FigureKind =
  * - dialogue:   人物シルエット＋吹き出し（誰かのセリフ・内心）
  * - stat:       大きな数字・統計値の提示（研究データの引用）
  * - chart:      棒グラフ（複数の数値の比較）
+ * - line:       折れ線グラフ（推移・変化。最終点を強調）
+ * - units:      ドットの集団（全体の中の割合・減少を人の単位で見せる）
+ * - table:      表（行が順に現れる。段階・分類の整理）
  * - comparison: 左右対比の図解（2つの概念・集団・環境の比較）
  * - list:       項目の列挙（要因・特徴・段階の整理）
  */
@@ -101,6 +104,19 @@ export type Visual =
       title: string;
       unit: string;
       items: { label: string; value: number }[];
+    }
+  | {
+      type: "line";
+      title: string;
+      unit: string;
+      points: { label: string; value: number }[];
+    }
+  | { type: "units"; total: number; value: number; label: string }
+  | {
+      type: "table";
+      title: string;
+      headers: string[];
+      rows: string[][];
     }
   | {
       type: "comparison";

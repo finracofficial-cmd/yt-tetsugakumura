@@ -1,8 +1,14 @@
 import { interpolate, useCurrentFrame } from "remotion";
 import type { SyncSegment } from "../../generator/types";
 
-const SERIF_FONT =
-  '"Noto Serif JP", "Noto Serif CJK JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif';
+/** 字幕は本文と違い視認性最優先: 太ゴシック + 黒縁取り（参考チャンネルと同スタイル） */
+const GOTHIC_FONT =
+  '"Noto Sans CJK JP", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif';
+
+/** 8方向 + ドロップの縁取り。WebKitの text-stroke より確実にレンダリングされる */
+const OUTLINE =
+  "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, " +
+  "-2px 0 0 #000, 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, 0 4px 18px rgba(0,0,0,0.9)";
 
 /**
  * ナレーションを字幕用のチャンクに分割する（同期セグメントがない場合の推定用）。
@@ -100,31 +106,31 @@ export const Subtitle: React.FC<Props> = ({
   );
 
   // 長い文は2行に折り返しても読めるよう、文字数でサイズを落とす
-  const fontSize = active.text.length > 34 ? 36 : 40;
+  const fontSize = active.text.length > 34 ? 40 : 44;
 
   return (
     <div
       style={{
         position: "absolute",
-        bottom: 72,
+        bottom: 64,
         left: 0,
         right: 0,
         display: "flex",
         justifyContent: "center",
-        padding: "0 160px",
+        padding: "0 140px",
       }}
     >
       <div
         style={{
           opacity,
-          color: "rgba(232, 232, 226, 0.95)",
-          fontFamily: SERIF_FONT,
+          color: "rgba(255, 255, 255, 0.98)",
+          fontFamily: GOTHIC_FONT,
           fontSize,
-          fontWeight: 400,
-          letterSpacing: "0.06em",
-          lineHeight: 1.8,
+          fontWeight: 700,
+          letterSpacing: "0.04em",
+          lineHeight: 1.72,
           textAlign: "center",
-          textShadow: "0 2px 16px rgba(0,0,0,0.8)",
+          textShadow: OUTLINE,
         }}
       >
         {active.text}

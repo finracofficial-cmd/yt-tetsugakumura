@@ -40,8 +40,9 @@ type Props = {
 
 /**
  * 全シーン共通の額縁:
- * - 放射状グラデーション背景
- * - 常時駆動型カメラワーク（scale 1.00→1.04 の微小ズーム + 手持ちドリフト）
+ * - 放射状グラデーション背景 + ゆっくり横切る光の帯
+ * - 常時駆動型カメラワーク（微小ズーム + 手持ちドリフト + 微回転）
+ * - ナレーションの文頭ごとの「キック」（音声に同期した微小パルス）
  * - 漂う粒子 / ビネット / 下部字幕 / 黒経由のフェード
  * 画面は1フレームたりとも完全静止しない。
  */
@@ -65,11 +66,25 @@ export const SceneFrame: React.FC<Props> = ({
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
-  // 常時駆動型カメラワーク: 微小ズーム（Idle）+ 手持ちのようなドリフト
-  const idleScale = interpolate(frame, [0, durationInFrames], [1.0, 1.04]);
+  // 常時駆動型カメラワーク: 微小ズーム（Idle）+ 手持ちのようなドリフト + 微回転
+  const idleScale = interpolate(frame, [0, durationInFrames], [1.0, 1.045]);
   const dir = sceneId % 2 === 0 ? 1 : -1;
   const camX = interpolate(frame, [0, durationInFrames], [0, 14 * dir]);
   const camY = Math.cos(frame / 110) * 4;
+  const camRot = Math.sin(frame / 150 + sceneId) * 0.25;
+
+  // 文頭キック: 各セグメントの開始で 1.012 → 1.0 に減衰する微小パルス（音声同期の律動）
+  let kick = 0;
+  if (segments) {
+    for (const seg of segments) {
+      const d = frame - seg.startFrame;
+      if (d >= 0 && d < 14) kick = Math.max(kick, (1 - d / 14) ** 2);
+    }
+  }
+  const kickScale = 1 + kick * 0.012;
+
+  // ゆっくり横切る光の帯（約8秒周期の斜めのスイープ）
+  const sweepX = ((frame / (8 * 30)) % 1) * 3400 - 1200;
 
   return (
     <AbsoluteFill style={{ background: bg, overflow: "hidden" }}>
@@ -83,17 +98,33 @@ export const SceneFrame: React.FC<Props> = ({
         />
       )}
 
-      {/* コンテンツ（常時ズーム＋ドリフト、字幕領域を避ける） */}
+      {/* 光の帯: 画面を静止させないための最も低コストな常時運動 */}
+      {!plainBackdrop && (
+        <div
+          style={{
+            position: "absolute",
+            top: -300,
+            left: sweepX,
+            width: 480,
+            height: 1700,
+            background:
+              "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(220,230,245,0.035) 50%, rgba(255,255,255,0) 100%)",
+            transform: "rotate(16deg)",
+          }}
+        />
+      )}
+
+      {/* コンテンツ（常時ズーム＋ドリフト＋文頭キック、字幕領域を避ける） */}
       <AbsoluteFill
         style={{
           paddingBottom: 200,
-          transform: `translate(${camX}px, ${camY}px) scale(${idleScale})`,
+          transform: `translate(${camX}px, ${camY}px) scale(${idleScale * kickScale}) rotate(${camRot}deg)`,
         }}
       >
         {children}
       </AbsoluteFill>
 
-      <Particles seed={sceneId} />
+      <Particles seed={sceneId} count={30} />
 
       <AbsoluteFill
         style={{

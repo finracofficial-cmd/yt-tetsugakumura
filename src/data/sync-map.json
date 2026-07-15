@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 1460,
+  "totalDurationInFrames": 1465,
   "scenes": [
     {
       "id": 1,
@@ -36,8 +36,8 @@
       "id": 2,
       "startMs": 10651,
       "startFrame": 320,
-      "durationMs": 7433,
-      "durationInFrames": 223,
+      "durationMs": 7033,
+      "durationInFrames": 211,
       "audioFile": null,
       "segments": [
         {
@@ -54,10 +54,40 @@
     },
     {
       "id": 3,
-      "startMs": 18084,
-      "startFrame": 543,
-      "durationMs": 11911,
-      "durationInFrames": 358,
+      "startMs": 17684,
+      "startFrame": 531,
+      "durationMs": 5496,
+      "durationInFrames": 165,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "出生率は1.04から0.99へ、そして0.96へと細り続けている。",
+          "startFrame": 0,
+          "durationInFrames": 144
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "startMs": 23180,
+      "startFrame": 695,
+      "durationMs": 5276,
+      "durationInFrames": 159,
+      "audioFile": null,
+      "segments": [
+        {
+          "text": "100人の村が、次の世代には96人の村になり、その次はさらに細る。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "startMs": 28456,
+      "startFrame": 854,
+      "durationMs": 7055,
+      "durationInFrames": 212,
       "audioFile": null,
       "segments": [
         {
@@ -69,25 +99,15 @@
           "text": "判断と創造は人間に、反復と精密は機械に。",
           "startFrame": 101,
           "durationInFrames": 89
-        },
-        {
-          "text": "悪いのは編集者ではない。",
-          "startFrame": 203,
-          "durationInFrames": 50
-        },
-        {
-          "text": "分業を設計しない仕組みの側である。",
-          "startFrame": 265,
-          "durationInFrames": 71
         }
       ]
     },
     {
-      "id": 4,
-      "startMs": 29995,
-      "startFrame": 900,
-      "durationMs": 12509,
-      "durationInFrames": 376,
+      "id": 6,
+      "startMs": 35511,
+      "startFrame": 1065,
+      "durationMs": 7154,
+      "durationInFrames": 215,
       "audioFile": null,
       "segments": [
         {
@@ -96,26 +116,16 @@
           "durationInFrames": 59
         },
         {
-          "text": "自動化には三つの段階がある。",
-          "startFrame": 71,
-          "durationInFrames": 59
-        },
-        {
-          "text": "道具化、半自動化、そして自律化。",
-          "startFrame": 141,
-          "durationInFrames": 78
-        },
-        {
           "text": "この動画もまた、その最終段階によって組み立てられている。",
-          "startFrame": 231,
+          "startFrame": 71,
           "durationInFrames": 123
         }
       ]
     },
     {
-      "id": 5,
-      "startMs": 42504,
-      "startFrame": 1275,
+      "id": 7,
+      "startMs": 42665,
+      "startFrame": 1280,
       "durationMs": 6076,
       "durationInFrames": 183,
       "audioFile": null,

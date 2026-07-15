@@ -43,7 +43,7 @@ import {
 } from "./types";
 
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
-/** "openai"（デフォルト） | "voicevox" */
+/** "openai"（デフォルト） | "voicevox" | "elevenlabs" */
 const TTS_PROVIDER = process.env.TTS_PROVIDER || "openai";
 /** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
@@ -62,6 +62,11 @@ const TTS_INSTRUCTIONS =
 const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 /** デフォルトは青山龍星（ノーマル）= 深めの男性ナレーション向き */
 const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
+
+/** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY を設定し TTS_PROVIDER=elevenlabs で有効化） */
+const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_multilingual_v2";
+/** デフォルトは George（深く落ち着いた男性声）。Voice Library から好みのIDに差し替え可 */
+const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "JBFqnCBsd6RMkjVDRZzb";
 
 /** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
 const PAUSE_COMMA_MS = 180;
@@ -156,6 +161,33 @@ export async function voicevoxSpeech(
   return Buffer.from(await synthRes.arrayBuffer());
 }
 
+/**
+ * ElevenLabs TTS。multilingual v2 は日本語でもほぼ人間品質。
+ * 速度はAPIでは弄らず、後段のffmpeg atempoで一括適用する。
+ */
+export async function elevenLabsSpeech(
+  text: string,
+  apiKey: string,
+  voiceId: string = ELEVENLABS_VOICE_ID,
+): Promise<Buffer> {
+  const res = await fetch(
+    `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`,
+    {
+      method: "POST",
+      headers: { "xi-api-key": apiKey, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        text,
+        model_id: ELEVENLABS_MODEL,
+        voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+      }),
+    },
+  );
+  if (!res.ok) {
+    throw new Error(`ElevenLabs error ${res.status}: ${await res.text()}`);
+  }
+  return Buffer.from(await res.arrayBuffer());
+}
+
 /** public/assets/ の音響アセットの有無を検査してマニフェストを書き出す */
 export function writeAssetsManifest(): AssetsManifest {
   const manifest: AssetsManifest = {
@@ -174,11 +206,17 @@ export function writeAssetsManifest(): AssetsManifest {
 export async function generateAudio(): Promise<SyncMap> {
   const script = JSON.parse(readFileSync(SCRIPT_JSON_PATH, "utf-8")) as VideoScript;
   const openaiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
+  const elevenLabsKey = process.env.ELEVENLABS_API_KEY?.replace(/\s+/g, "");
 
   writeAssetsManifest();
 
   const openaiClient = openaiKey ? new OpenAI({ apiKey: openaiKey }) : null;
-  let ttsEnabled = TTS_PROVIDER === "voicevox" ? true : Boolean(openaiClient);
+  let ttsEnabled =
+    TTS_PROVIDER === "voicevox"
+      ? true
+      : TTS_PROVIDER === "elevenlabs"
+        ? Boolean(elevenLabsKey)
+        : Boolean(openaiClient);
 
   /** プロバイダに応じて1フラグメントを音声化する（戻り値は音声バッファと拡張子） */
   const synthesize = async (
@@ -186,6 +224,10 @@ export async function generateAudio(): Promise<SyncMap> {
   ): Promise<{ buffer: Buffer; ext: "mp3" | "wav" }> => {
     if (TTS_PROVIDER === "voicevox") {
       return { buffer: await voicevoxSpeech(text), ext: "wav" };
+    }
+    if (TTS_PROVIDER === "elevenlabs") {
+      if (!elevenLabsKey) throw new Error("ELEVENLABS_API_KEY が設定されていません。");
+      return { buffer: await elevenLabsSpeech(text, elevenLabsKey), ext: "mp3" };
     }
     if (!openaiClient) throw new Error("OPENAI_API_KEY が設定されていません。");
     const isGpt4o = TTS_MODEL.startsWith("gpt-4o");
@@ -200,20 +242,27 @@ export async function generateAudio(): Promise<SyncMap> {
     return { buffer: Buffer.from(await response.arrayBuffer()), ext: "mp3" };
   };
 
-  /** gpt-4o系のみ、wav変換時にテンポ加工を挟む（tts-1/VOICEVOXはAPI側で適用済み） */
-  const needsAtempo = TTS_PROVIDER === "openai" && TTS_MODEL.startsWith("gpt-4o");
+  /**
+   * gpt-4o系とElevenLabsは、wav変換時にffmpegでテンポ加工を挟む
+   * （tts-1/VOICEVOXはAPI側のspeed指定で適用済み）
+   */
+  const needsAtempo =
+    (TTS_PROVIDER === "openai" && TTS_MODEL.startsWith("gpt-4o")) ||
+    TTS_PROVIDER === "elevenlabs";
   const atempoArgs =
     needsAtempo && TTS_SPEED !== 1 ? ["-filter:a", `atempo=${TTS_SPEED}`] : [];
 
   if (!ttsEnabled) {
     console.warn(
-      "[generateAudio] OPENAI_API_KEY が未設定のためTTSをスキップし、推定尺で同期マップを生成します。",
+      "[generateAudio] TTSのAPIキーが未設定のためスキップし、推定尺で同期マップを生成します。",
     );
   } else {
     const desc =
       TTS_PROVIDER === "voicevox"
         ? `provider=voicevox, speaker=${VOICEVOX_SPEAKER}, speed=${TTS_SPEED}`
-        : `provider=openai, model=${TTS_MODEL}, voice=${TTS_VOICE}, speed=${TTS_SPEED}`;
+        : TTS_PROVIDER === "elevenlabs"
+          ? `provider=elevenlabs, model=${ELEVENLABS_MODEL}, voice=${ELEVENLABS_VOICE_ID}, speed=${TTS_SPEED}`
+          : `provider=openai, model=${TTS_MODEL}, voice=${TTS_VOICE}, speed=${TTS_SPEED}`;
     console.log(
       `[generateAudio] TTS音声を生成中... (${desc}, scenes=${script.scenes.length})`,
     );

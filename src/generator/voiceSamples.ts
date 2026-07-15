@@ -15,7 +15,7 @@ import { execFileSync } from "node:child_process";
 import { mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
-import { voicevoxSpeech } from "./generateAudio";
+import { elevenLabsSpeech, voicevoxSpeech } from "./generateAudio";
 
 const OUTPUT_DIR = "previews/voice-samples";
 const SPEED = Number(process.env.OPENAI_TTS_SPEED || "0.95");
@@ -37,6 +37,32 @@ const OPENAI_CANDIDATES: { model: string; voices: string[] }[] = [
 
 /** VOICEVOXの男性話者候補（/speakers から名前で解決する） */
 const VOICEVOX_CANDIDATES = ["青山龍星", "玄野武宏", "剣崎雌雄", "麒ヶ島宗麟"];
+
+/** ElevenLabsの男性・低音寄りプリメイドボイス候補（multilingual v2は日本語対応） */
+const ELEVENLABS_CANDIDATES: { name: string; voiceId: string }[] = [
+  { name: "George", voiceId: "JBFqnCBsd6RMkjVDRZzb" },
+  { name: "Daniel", voiceId: "onwK4e9ZLuTAKqWW03F9" },
+  { name: "Adam", voiceId: "pNInz6obpgDQGcFmaJgB" },
+  { name: "Brian", voiceId: "nPczCjzI2devNBz1zQrb" },
+];
+
+async function generateElevenLabsSamples(): Promise<void> {
+  const apiKey = process.env.ELEVENLABS_API_KEY?.replace(/\s+/g, "");
+  if (!apiKey) {
+    console.warn("[voiceSamples] ELEVENLABS_API_KEY 未設定のためElevenLabsサンプルをスキップ。");
+    return;
+  }
+  for (const { name, voiceId } of ELEVENLABS_CANDIDATES) {
+    const fileName = `elevenlabs--${name}--${voiceId}.mp3`;
+    try {
+      const buffer = await elevenLabsSpeech(SAMPLE_TEXT, apiKey, voiceId);
+      writeFileSync(join(OUTPUT_DIR, fileName), buffer);
+      console.log(`  OK: ${OUTPUT_DIR}/${fileName}`);
+    } catch (err) {
+      console.warn(`  失敗: ${fileName}: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+}
 
 async function generateOpenAiSamples(): Promise<void> {
   const apiKey = process.env.OPENAI_API_KEY?.replace(/\s+/g, "");
@@ -112,6 +138,7 @@ export async function generateVoiceSamples(): Promise<void> {
   console.log(`[voiceSamples] サンプル文: ${SAMPLE_TEXT}`);
   await generateOpenAiSamples();
   await generateVoicevoxSamples();
+  await generateElevenLabsSamples();
   console.log(
     "[voiceSamples] 完了。GitHub上で各mp3を再生して聴き比べ、採用する組み合わせを Repository Variables に設定してください。",
   );

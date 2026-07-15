@@ -198,6 +198,65 @@ const VIDEO_SCRIPT_SCHEMA = {
                 {
                   type: "object",
                   properties: {
+                    type: { type: "string", const: "line" },
+                    title: { type: "string", description: "グラフのタイトル" },
+                    unit: { type: "string", description: "数値の単位（%, 人, 倍 など。無ければ空文字）" },
+                    points: {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          label: { type: "string", description: "X軸ラベル（年号・時点など2〜8文字）" },
+                          value: { type: "number" },
+                        },
+                        required: ["label", "value"],
+                        additionalProperties: false,
+                      },
+                      description: "3〜6点の推移。最終点が自動で強調される",
+                    },
+                  },
+                  required: ["type", "title", "unit", "points"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "units" },
+                    total: {
+                      type: "integer",
+                      description: "ドットの総数（10〜200。例: 100人の村なら100）",
+                    },
+                    value: {
+                      type: "integer",
+                      description: "そのうち残る・該当する数。total との差分が赤く消えていく",
+                    },
+                    label: { type: "string", description: "意味の説明（20文字以内）" },
+                  },
+                  required: ["type", "total", "value", "label"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
+                    type: { type: "string", const: "table" },
+                    title: { type: "string", description: "表のタイトル" },
+                    headers: {
+                      type: "array",
+                      items: { type: "string" },
+                      description: "列見出し（2〜3列、各2〜8文字）",
+                    },
+                    rows: {
+                      type: "array",
+                      items: { type: "array", items: { type: "string" } },
+                      description: "行データ（2〜5行。各セル2〜12文字）",
+                    },
+                  },
+                  required: ["type", "title", "headers", "rows"],
+                  additionalProperties: false,
+                },
+                {
+                  type: "object",
+                  properties: {
                     type: { type: "string", const: "comparison" },
                     left_title: { type: "string" },
                     right_title: { type: "string" },

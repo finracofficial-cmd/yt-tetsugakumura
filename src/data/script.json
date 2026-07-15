@@ -25,30 +25,52 @@
     },
     {
       "id": 3,
-      "act": 3,
-      "narration": "人間と機械では、得意なことがまるで違う。判断と創造は人間に、反復と精密は機械に。悪いのは編集者ではない。分業を設計しない仕組みの側である。",
+      "act": 2,
+      "narration": "出生率は1.04から0.99へ、そして0.96へと細り続けている。",
       "visual": {
-        "type": "comparison",
-        "left_title": "人間",
-        "right_title": "機械",
-        "left_items": [
-          "判断",
-          "創造",
-          "文脈"
-        ],
-        "right_items": [
-          "反復",
-          "精密",
-          "速度"
-        ],
-        "center_label": "vs"
+        "type": "line",
+        "title": "出生率の推移（概念図）",
+        "unit": "",
+        "points": [
+          { "label": "2022", "value": 1.04 },
+          { "label": "2023", "value": 0.99 },
+          { "label": "2024", "value": 0.96 }
+        ]
       },
       "concept_color": "charcoal"
     },
     {
       "id": 4,
+      "act": 3,
+      "narration": "100人の村が、次の世代には96人の村になり、その次はさらに細る。",
+      "visual": {
+        "type": "units",
+        "total": 100,
+        "value": 96,
+        "label": "次の世代に残る人口"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 5,
+      "act": 3,
+      "narration": "人間と機械では、得意なことがまるで違う。判断と創造は人間に、反復と精密は機械に。",
+      "visual": {
+        "type": "table",
+        "title": "自動化の三段階",
+        "headers": ["段階", "主体", "人間の役割"],
+        "rows": [
+          ["道具化", "人間", "全工程"],
+          ["半自動化", "人間+機械", "判断のみ"],
+          ["自律化", "機械", "監督のみ"]
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 6,
       "act": 4,
-      "narration": "これは遠い世界の話ではない。自動化には三つの段階がある。道具化、半自動化、そして自律化。この動画もまた、その最終段階によって組み立てられている。",
+      "narration": "これは遠い世界の話ではない。この動画もまた、その最終段階によって組み立てられている。",
       "visual": {
         "type": "figure",
         "figure": "crowd",
@@ -57,7 +79,7 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 5,
+      "id": 7,
       "act": 5,
       "narration": "そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
       "visual": {

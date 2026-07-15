@@ -45,6 +45,7 @@ jobs:
         run: npm run voice-samples
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           VOICE_SAMPLE_TEXT: ${{ github.event.inputs.sample_text }}
       - name: Commit samples
         run: |
