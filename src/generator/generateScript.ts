@@ -34,6 +34,11 @@ const VIDEO_SCRIPT_SCHEMA = {
         description:
           "動画タイトル。「なぜ〜は〜なのか【学問A×学問B】」の構文に従う",
       },
+      bgm_direction: {
+        type: "string",
+        description:
+          "BGM生成AIへの音楽指示（英語1〜2文）。テーマの情動に合う暗く静かな劇伴を指定する。例: 'Dark minimal ambient underscore, slow evolving pads, sparse melancholic piano, quiet and contemplative.'",
+      },
       scenes: {
         type: "array",
         items: {
@@ -312,7 +317,7 @@ const VIDEO_SCRIPT_SCHEMA = {
         },
       },
     },
-    required: ["theme", "title", "scenes"],
+    required: ["theme", "title", "bgm_direction", "scenes"],
     additionalProperties: false,
   },
 } as const;

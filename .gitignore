@@ -7,3 +7,8 @@ dist/
 
 # 生成された音声・イラスト（Artifactsで受け渡す。リポジトリには含めない）
 public/audio/*.mp3
+
+# 自動生成されるBGM・環境音・SFX（CIで台本ごとに生成。手動音源を使う場合は git add -f で追加）
+public/assets/bgm.mp3
+public/assets/ambient-noise.mp3
+public/assets/sfx-transition.mp3

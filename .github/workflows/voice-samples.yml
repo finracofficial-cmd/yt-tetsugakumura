@@ -46,6 +46,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Voice Libraryで見つけたボイスを追加試聴: "名前=ボイスID,名前2=ID2"
+          ELEVENLABS_VOICE_IDS: ${{ vars.ELEVENLABS_VOICE_IDS }}
           VOICE_SAMPLE_TEXT: ${{ github.event.inputs.sample_text }}
       - name: Commit samples
         run: |

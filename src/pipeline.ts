@@ -11,6 +11,7 @@
  */
 import { spawnSync } from "node:child_process";
 import { generateScript, resolveTopic } from "./generator/generateScript";
+import { generateBgm } from "./generator/generateBgm";
 import { generateAudio } from "./generator/generateAudio";
 
 const OUTPUT_PATH = "out/video.mp4";
@@ -23,10 +24,13 @@ async function main(): Promise<void> {
   // 1. 台本生成
   const script = await generateScript(topic);
 
-  // 2. 音声合成（文法ベースの間の挿入）+ 完全同期マップの生成
+  // 2. BGM・環境音・SFXの生成（台本の bgm_direction に沿う。既存ファイルは優先）
+  await generateBgm();
+
+  // 3. 音声合成（文法ベースの間の挿入）+ 完全同期マップの生成
   const syncMap = await generateAudio();
 
-  // 3. レンダリング（任意）
+  // 4. レンダリング（任意）
   if (shouldRender) {
     console.log(`[pipeline] Remotion でレンダリング中... -> ${OUTPUT_PATH}`);
     const result = spawnSync(

@@ -46,13 +46,31 @@ const ELEVENLABS_CANDIDATES: { name: string; voiceId: string }[] = [
   { name: "Brian", voiceId: "nPczCjzI2devNBz1zQrb" },
 ];
 
+/**
+ * Voice Library で見つけたボイスを試聴リストに追加する。
+ * ELEVENLABS_VOICE_IDS="名前=ボイスID,名前2=ボイスID2"（名前省略可: "ボイスID,ボイスID2"）
+ * ※ コミュニティボイスはElevenLabsのサイトで「Add to My Voices」してからIDを指定すること。
+ */
+function extraElevenLabsCandidates(): { name: string; voiceId: string }[] {
+  const raw = process.env.ELEVENLABS_VOICE_IDS || "";
+  return raw
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .map((entry) => {
+      const [a, b] = entry.split("=").map((s) => s.trim());
+      return b ? { name: a, voiceId: b } : { name: a.slice(0, 8), voiceId: a };
+    });
+}
+
 async function generateElevenLabsSamples(): Promise<void> {
   const apiKey = process.env.ELEVENLABS_API_KEY?.replace(/\s+/g, "");
   if (!apiKey) {
     console.warn("[voiceSamples] ELEVENLABS_API_KEY 未設定のためElevenLabsサンプルをスキップ。");
     return;
   }
-  for (const { name, voiceId } of ELEVENLABS_CANDIDATES) {
+  const candidates = [...ELEVENLABS_CANDIDATES, ...extraElevenLabsCandidates()];
+  for (const { name, voiceId } of candidates) {
     const fileName = `elevenlabs--${name}--${voiceId}.mp3`;
     try {
       const buffer = await elevenLabsSpeech(SAMPLE_TEXT, apiKey, voiceId);

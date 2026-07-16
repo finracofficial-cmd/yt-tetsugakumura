@@ -148,7 +148,7 @@ export const MainComposition: React.FC = () => {
         outroStartFrame + fps,
         totalFrames,
       ],
-      [0.15, 0.15, 0.05, 0.05, 0.15, 0.15],
+      [0.18, 0.18, 0.07, 0.07, 0.18, 0.18],
       { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
     );
 

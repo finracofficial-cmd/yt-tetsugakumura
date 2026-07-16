@@ -167,7 +167,14 @@ export const SCRIPT_SYSTEM_PROMPT = `あなたは、哲学と学術的知見を�
 - ポジティブな説教、「明日からこうしよう」型の解決策提示。
 - 特定の実在個人への誹謗中傷。対象は常に「構造」と「傾向」であること。
 
-# 7. 出力形式
+# 7. bgm_direction（劇伴の指示）
+- 動画全体に流すBGMを音楽生成AIに指示する英語1〜2文を書く。
+- このチャンネルの基調は「暗く、静かで、思索的」。ピアノ・パッド・アンビエント系を基本とし、
+  テーマの情動（虚無・焦燥・諦観・郷愁など）に合わせてニュアンスを変える。
+- 派手なメロディ・ドラム・ボーカルは禁止。ナレーションの下敷きになる控えめな劇伴であること。
+  例: "Dark minimal ambient underscore with slow evolving synth pads and sparse melancholic felt piano. Quiet, contemplative, with a faint undercurrent of unease."
+
+# 8. 出力形式
 - 指定されたJSONスキーマに厳密に従い、JSONのみを出力する。前置き・解説・コードフェンスは不要。
 - narration内の改行は不要。1シーン1段落として書く。`;
 

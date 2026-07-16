@@ -144,6 +144,8 @@ export interface Scene {
 export interface VideoScript {
   theme: string;
   title: string;
+  /** BGM生成用の音楽指示（英語）。テーマの情動に合わせて台本AIが書く */
+  bgm_direction?: string;
   scenes: Scene[];
 }
 

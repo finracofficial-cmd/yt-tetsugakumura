@@ -83,6 +83,8 @@ jobs:
           VOICEVOX_SPEAKER: ${{ vars.VOICEVOX_SPEAKER }}
           ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          BGM_PROVIDER: ${{ vars.BGM_PROVIDER }}
+          BGM_LENGTH_MS: ${{ vars.BGM_LENGTH_MS }}
 
       - name: Render video with Remotion
         run: npx remotion render src/remotion/index.ts Main out/video.mp4
