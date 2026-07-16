@@ -74,6 +74,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
           # 以下は Settings → Secrets and variables → Actions → Variables で上書き可能
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
@@ -97,6 +98,7 @@ jobs:
             out/video.mp4
             src/data/script.json
             src/data/sync-map.json
+            public/assets/bgm-credit.txt
           retention-days: 14
 
       # レビュー用: 8秒おきのフレームと低解像度プレビューをリポジトリにコミットする。
