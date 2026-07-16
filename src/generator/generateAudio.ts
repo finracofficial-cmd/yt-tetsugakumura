@@ -43,8 +43,13 @@ import {
 } from "./types";
 
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
-/** "openai"（デフォルト） | "voicevox" | "elevenlabs" */
-const TTS_PROVIDER = process.env.TTS_PROVIDER || "openai";
+/**
+ * "openai" | "voicevox" | "elevenlabs"
+ * 未指定時は ELEVENLABS_API_KEY があれば elevenlabs、なければ openai を自動選択。
+ */
+const TTS_PROVIDER =
+  process.env.TTS_PROVIDER ||
+  (process.env.ELEVENLABS_API_KEY?.trim() ? "elevenlabs" : "openai");
 /** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "echo";
@@ -63,10 +68,14 @@ const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 /** デフォルトは青山龍星（ノーマル）= 深めの男性ナレーション向き */
 const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
 
-/** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY を設定し TTS_PROVIDER=elevenlabs で有効化） */
+/** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY の設定だけで自動有効化） */
 const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_multilingual_v2";
-/** デフォルトは George（深く落ち着いた男性声）。Voice Library から好みのIDに差し替え可 */
-const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "JBFqnCBsd6RMkjVDRZzb";
+/**
+ * 正式採用ボイス（ユーザーがVoice Libraryから選定した日本語男性ボイス）。
+ * 差し替えは Repository Variables の ELEVENLABS_VOICE_ID で。
+ * ※ Voice Libraryのボイスは、契約アカウントで「Add to My Voices」しておくこと。
+ */
+const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "ss9cJxDAEMXP4wfQ3GPr";
 
 /** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
 const PAUSE_COMMA_MS = 180;

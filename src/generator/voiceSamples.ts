@@ -38,8 +38,9 @@ const OPENAI_CANDIDATES: { model: string; voices: string[] }[] = [
 /** VOICEVOXの男性話者候補（/speakers から名前で解決する） */
 const VOICEVOX_CANDIDATES = ["青山龍星", "玄野武宏", "剣崎雌雄", "麒ヶ島宗麟"];
 
-/** ElevenLabsの男性・低音寄りプリメイドボイス候補（multilingual v2は日本語対応） */
+/** ElevenLabsのボイス候補。先頭は正式採用（Voice Libraryで選定した日本語男性ボイス） */
 const ELEVENLABS_CANDIDATES: { name: string; voiceId: string }[] = [
+  { name: "adopted-jp-male", voiceId: "ss9cJxDAEMXP4wfQ3GPr" },
   { name: "George", voiceId: "JBFqnCBsd6RMkjVDRZzb" },
   { name: "Daniel", voiceId: "onwK4e9ZLuTAKqWW03F9" },
   { name: "Adam", voiceId: "pNInz6obpgDQGcFmaJgB" },
