@@ -84,7 +84,7 @@ jobs:
               echo "::error::ELEVENLABS_API_KEY が無効です (HTTP $ESTATUS)。elevenlabs.io の API Keys で発行したキーを登録し直してください。"
               exit 1
             fi
-            VOICE_ID="${ELEVENLABS_VOICE_ID:-ss9cJxDAEMXP4wfQ3GPr}"
+            VOICE_ID="${ELEVENLABS_VOICE_ID:-xQpTJhLkPZnRFTV4mc3k}"
             VSTATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://api.elevenlabs.io/v1/voices/$VOICE_ID" \
               -H "xi-api-key: $EK")
             echo "voice check (GET /v1/voices/$VOICE_ID): HTTP $VSTATUS  (200=OK)"

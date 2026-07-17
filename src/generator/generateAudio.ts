@@ -69,13 +69,13 @@ const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
 
 /** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY の設定だけで自動有効化） */
-const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_multilingual_v2";
+const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_v3";
 /**
  * 正式採用ボイス（ユーザーがVoice Libraryから選定した日本語男性ボイス）。
  * 差し替えは Repository Variables の ELEVENLABS_VOICE_ID で。
  * ※ Voice Libraryのボイスは、契約アカウントで「Add to My Voices」しておくこと。
  */
-const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "ss9cJxDAEMXP4wfQ3GPr";
+const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "xQpTJhLkPZnRFTV4mc3k";
 
 /** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
 const PAUSE_COMMA_MS = 180;
@@ -179,6 +179,11 @@ export async function elevenLabsSpeech(
   apiKey: string,
   voiceId: string = ELEVENLABS_VOICE_ID,
 ): Promise<Buffer> {
+  // v3系はstabilityが 0.0(Creative)/0.5(Natural)/1.0(Robust) の3値のみ。
+  // ナレーションには暴れの少ない設定を選ぶ。
+  const voiceSettings = ELEVENLABS_MODEL.startsWith("eleven_v3")
+    ? { stability: 0.5 }
+    : { stability: 0.6, similarity_boost: 0.8, use_speaker_boost: true };
   const res = await fetch(
     `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`,
     {
@@ -187,8 +192,7 @@ export async function elevenLabsSpeech(
       body: JSON.stringify({
         text,
         model_id: ELEVENLABS_MODEL,
-        // ナレーション用: stabilityを高めて訛り・抑揚の暴れを抑える
-        voice_settings: { stability: 0.6, similarity_boost: 0.8, use_speaker_boost: true },
+        voice_settings: voiceSettings,
       }),
     },
   );

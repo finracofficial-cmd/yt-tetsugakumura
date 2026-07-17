@@ -40,7 +40,7 @@ const VOICEVOX_CANDIDATES = ["青山龍星", "玄野武宏", "剣崎雌雄", "�
 
 /** ElevenLabsのボイス候補。先頭は正式採用（Voice Libraryで選定した日本語男性ボイス） */
 const ELEVENLABS_CANDIDATES: { name: string; voiceId: string }[] = [
-  { name: "adopted-jp-male", voiceId: "ss9cJxDAEMXP4wfQ3GPr" },
+  { name: "adopted-jp-male", voiceId: "xQpTJhLkPZnRFTV4mc3k" },
   { name: "George", voiceId: "JBFqnCBsd6RMkjVDRZzb" },
   { name: "Daniel", voiceId: "onwK4e9ZLuTAKqWW03F9" },
   { name: "Adam", voiceId: "pNInz6obpgDQGcFmaJgB" },
