@@ -1,331 +1,365 @@
 {
-  "theme": "親しい他者の成功に対して覚える、言語化しづらい嫉妬と胸のざわつき。社会的比較と相対的地位をめぐる進化的・社会的メカニズム。",
-  "title": "なぜ親友の成功は、他人の成功よりも胸を抉るのか【進化心理学×社会学】",
-  "bgm_direction": "Dark minimal ambient underscore with slow evolving synth pads and sparse melancholic felt piano. Quiet and contemplative, carrying a faint undercurrent of envy and longing.",
+  "theme": "最も近しい親友の成功に、祝福と同時に胸がざわつくという普遍的な感情のタブーを、進化した脳と現代環境のミスマッチとして解剖する。",
+  "title": "なぜ親友の成功はこんなにも胸をざわつかせるのか【進化心理学×社会比較理論】",
+  "bgm_direction": "Dark minimal ambient underscore with slow evolving synth pads and sparse melancholic felt piano. Quiet, contemplative, with a faint undercurrent of unease.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "深夜零時、消し忘れた画面の光だけが、天井をぼんやりと照らしている。",
+      "narration": "深夜0時。スマートフォンの光だけが、暗い部屋で我々の顔を照らしている。",
       "visual": {
         "type": "dialogue",
-        "line": "また、こんな時間か"
+        "line": "おめでとう、と指が打った"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "指が止まる。親友からの結婚の報告が、通知欄に静かに灯っていた。",
+      "narration": "画面には、最も古い親友からのメッセージ。「結婚することになった」と。",
       "visual": {
         "type": "figure",
-        "figure": "notification",
-        "label": "親友からの吉報"
+        "figure": "smartphone",
+        "label": "親友からの報告"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 3,
       "act": 1,
-      "narration": "我々の指は、ためらいなく祝福のスタンプを選び取る。",
+      "narration": "我々は反射的に、祝福の言葉を打ち込む。指は、正しく動いている。",
       "visual": {
-        "type": "dialogue",
-        "line": "おめでとう🎉"
+        "type": "figure",
+        "figure": "heart",
+        "label": "祝福の言葉"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 4,
       "act": 1,
-      "narration": "だが送信した瞬間、胸のどこかが、確かに小さく軋んだ。",
+      "narration": "だが送信した直後、みぞおちの奥で、小さな何かがざわつくのだ。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "説明できない軋み"
+        "type": "dialogue",
+        "line": "なぜ、少し胸が苦しい"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "祝いたい気持ちに、嘘はない。それだけは断言できるはずだった。",
+      "narration": "それは確かに祝福だった。だが同時に、名前のつかない痛みでもあった。",
       "visual": {
-        "type": "dialogue",
-        "line": "本当に嬉しいんだ"
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "名のない痛み"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "会ったこともない有名人の成功では、こんな痛みは走らないのに。",
+      "narration": "世間は言う。親友の幸福は、我が事のように嬉しいはずだ、と。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "遠い他人の慶事"
+        "figure": "couple",
+        "label": "世間の常識"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "なぜ、遠い誰かより「親友」の成功こそが、我々を最も深く抉るのか。",
+      "narration": "だが、本当にそうだろうか。今一度、自分の胸に手を当ててほしい。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "今日の問い"
+        "figure": "person",
+        "label": "胸に手を当てる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 8,
-      "act": 2,
-      "narration": "1954年、心理学者フェスティンガーは一つの理論を提唱した。",
+      "act": 1,
+      "narration": "なぜ、最も近しい者の成功ほど、我々の胸を鋭く抉るのか。",
       "visual": {
-        "type": "stat",
-        "value": "1954年",
-        "label": "社会的比較理論の提唱"
+        "type": "figure",
+        "figure": "question",
+        "label": "なぜ近い者ほどざわつくのか"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 9,
       "act": 2,
-      "narration": "人間は自分の価値を、絶対値ではなく、他者との比較でしか測れない。",
+      "narration": "この不可解な痛みを、二つの学問が、感情を排して解剖していく。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "比較でしか測れない"
+        "figure": "thought",
+        "label": "解剖のはじまり"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 10,
       "act": 2,
-      "narration": "「自分は幸せか」という問いは、常に「誰と比べて」を隠し持っている。",
+      "narration": "かつて心理学者フェスティンガーは、人間のある性質を指摘した。",
       "visual": {
-        "type": "dialogue",
-        "line": "みんなと比べて、どうか"
+        "type": "stat",
+        "value": "1954年",
+        "label": "フェスティンガー 社会的比較理論"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 11,
       "act": 2,
-      "narration": "そして我々が物差しに使うのは、決して雲の上の存在ではない。",
+      "narration": "我々は自分の価値を、絶対的な物差しでは測れない生き物だ、と。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "準拠集団"
+        "figure": "scale",
+        "label": "絶対では測れない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 12,
       "act": 2,
-      "narration": "同じスタートラインに立っていたはずの、隣の人間だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "隣にいた者"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 13,
-      "act": 2,
-      "narration": "我々を最も抉るのは、遠い有名人ではなく、手の届く距離の成功だ。",
-      "visual": {
-        "type": "chart",
-        "title": "距離が近いほど、比較は刺さる",
-        "unit": "痛み",
-        "items": [
-          {
-            "label": "遠い有名人",
-            "value": 1
-          },
-          {
-            "label": "同業の知人",
-            "value": 3
-          },
-          {
-            "label": "親友",
-            "value": 5
-          }
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 14,
-      "act": 2,
-      "narration": "収入が増えても幸福が続かないのは、比較の基準ごと上がるからだ。",
-      "visual": {
-        "type": "line",
-        "title": "所得と幸福度",
-        "unit": "実感",
-        "points": [
-          {
-            "label": "低所得",
-            "value": 2
-          },
-          {
-            "label": "中所得",
-            "value": 3
-          },
-          {
-            "label": "高所得",
-            "value": 3.2
-          },
-          {
-            "label": "富裕層",
-            "value": 3.3
-          }
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 15,
-      "act": 2,
-      "narration": "数十万年、我々の祖先はおよそ150人の群れの中で生きてきた。",
-      "visual": {
-        "type": "stat",
-        "value": "150人",
-        "label": "ダンバー数 — 群れの上限"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 16,
-      "act": 2,
-      "narration": "その小さな群れの中の序列が、食料と生殖の機会を分配していた。",
-      "visual": {
-        "type": "figure",
-        "figure": "hierarchy",
-        "label": "序列が全てを決める"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 17,
-      "act": 2,
-      "narration": "問題は絶対的な豊かさではなく、隣より一段上か、一段下かだった。",
-      "visual": {
-        "type": "dialogue",
-        "line": "群れの、何番目か"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 18,
-      "act": 2,
-      "narration": "隣の順位を執拗に監視した個体だけが、生き延び子孫を残せた。",
-      "visual": {
-        "type": "figure",
-        "figure": "dna",
-        "label": "序列を測る本能"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 19,
-      "act": 2,
-      "narration": "その古い「相対順位センサー」は、現代の脳にもそのまま居座っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "消えないセンサー"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 20,
-      "act": 2,
-      "narration": "ある脳研究では、妬みは痛みの領域を、他人の転落は快の領域を刺激した。",
+      "narration": "自分が優れているかは、常に「誰かとの差」でしか確認できないのだ。",
       "visual": {
         "type": "comparison",
-        "left_title": "妬み",
-        "right_title": "他人の不幸",
+        "left_title": "絶対評価",
+        "right_title": "相対評価",
         "left_items": [
-          "痛みの脳領域",
-          "身を焼く"
+          "自分で完結",
+          "揺るがない"
         ],
         "right_items": [
-          "報酬系が点灯",
-          "甘美な快"
-        ],
-        "center_label": "脳内では"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 21,
-      "act": 2,
-      "narration": "つまり妬みとは、脳にとって、比喩ではなく物理的な「痛み」なのだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "妬みは痛みである"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 22,
-      "act": 3,
-      "narration": "ここまでは、我々の内側に組み込まれた古い装置の話にすぎない。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "古い装置"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 23,
-      "act": 3,
-      "narration": "本当の問題は、その装置が今、かつてない量の燃料を浴びていることだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "燃料の供給源"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 24,
-      "act": 3,
-      "narration": "サバンナの脳が比較した相手は、せいぜい150人ほどだった。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "サバンナ",
-        "right_title": "SNS",
-        "left_items": [
-          "比較相手150人",
-          "たまに会う"
-        ],
-        "right_items": [
-          "比較相手 無限",
-          "24時間表示"
+          "他人と比べる",
+          "常に揺れる"
         ],
         "center_label": "≠"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 25,
-      "act": 3,
-      "narration": "だがSNSは、数千人の「人生のハイライト」を毎日供給してくる。",
+      "id": 13,
+      "act": 2,
+      "narration": "隣人がいて初めて、我々は自分の立っている高さを知るのである。",
+      "visual": {
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "隣人という物差し"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 14,
+      "act": 2,
+      "narration": "そして比較の対象は、遠い世界の他人ではないという点が重要だ。",
       "visual": {
         "type": "figure",
         "figure": "network",
-        "label": "無限の比較対象"
+        "label": "比較の射程"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 15,
+      "act": 2,
+      "narration": "人は自分と「近い者」ほど、無意識に強く比較してしまう習性を持つ。",
+      "visual": {
+        "type": "figure",
+        "figure": "couple",
+        "label": "近い者ほど比べる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 16,
+      "act": 2,
+      "narration": "だから見知らぬ大富豪の豪遊には、さほど心は揺れないのである。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "遠い他人には無関心"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 17,
+      "act": 2,
+      "narration": "だが同期の昇進、友人の結婚には、なぜか激しく反応してしまう。",
+      "visual": {
+        "type": "figure",
+        "figure": "conflict",
+        "label": "近い者への反応"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 18,
+      "act": 2,
+      "narration": "ここで進化心理学が、より古く、より残酷な理由を差し出してくる。",
+      "visual": {
+        "type": "figure",
+        "figure": "dna",
+        "label": "古い設計図"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 19,
+      "act": 2,
+      "narration": "我々の祖先が生きた群れは、せいぜい百五十人ほどの規模だった。",
+      "visual": {
+        "type": "stat",
+        "value": "150人",
+        "label": "ダンバー数 — 脳が扱える関係の上限"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 20,
+      "act": 2,
+      "narration": "その小さな群れの中での順位が、生存と繁殖を直接左右したのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "podium",
+        "label": "順位が命を分けた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 21,
+      "act": 2,
+      "narration": "順位の高い個体ほど、多くの食料と、多くの交尾の機会を得た。",
+      "visual": {
+        "type": "figure",
+        "figure": "crown",
+        "label": "順位という資源"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 22,
+      "act": 2,
+      "narration": "だから脳は、集団内での相対的な地位に、過敏に反応するよう進化した。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "地位に反応する脳"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 23,
+      "act": 2,
+      "narration": "近しい仲間の成功とは、相対的に見れば、自分の順位の低下を意味する。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "相手が上がれば自分は下がる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 24,
+      "act": 2,
+      "narration": "脳はそれを、生存を脅かす危険信号として、あまりに正直に受け取るのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "相対的な転落"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 25,
+      "act": 3,
+      "narration": "これは道徳の話ではない。人格の問題でもない。単なる計算の話だ。",
+      "visual": {
+        "type": "figure",
+        "figure": "atom",
+        "label": "ただの計算"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 26,
       "act": 3,
-      "narration": "しかも流れてくるのは、加工され選び抜かれた成功の断片だけだ。",
+      "narration": "問題は、この古い脳が置かれた、現代という異常な環境の側にある。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "サバンナの脳",
+        "right_title": "SNSの環境",
+        "left_items": [
+          "比較相手150人",
+          "絶頂は稀"
+        ],
+        "right_items": [
+          "比較相手は無限",
+          "絶頂だけ流れる"
+        ],
+        "center_label": "→"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 27,
+      "act": 3,
+      "narration": "かつて我々が比べる相手は、村のわずかな顔ぶれだけだった。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "比較相手の激増"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 28,
+      "act": 3,
+      "narration": "だが今、我々は一日に何百人もの人生を、指先でスクロールしている。",
+      "visual": {
+        "type": "line",
+        "title": "比較対象となる他者の数",
+        "unit": "人",
+        "points": [
+          {
+            "label": "狩猟採集",
+            "value": 150
+          },
+          {
+            "label": "村落",
+            "value": 500
+          },
+          {
+            "label": "近代都市",
+            "value": 5000
+          },
+          {
+            "label": "SNS時代",
+            "value": 50000
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 29,
+      "act": 3,
+      "narration": "しかもそこに流れてくるのは、他人の人生の絶頂だけなのである。",
+      "visual": {
+        "type": "figure",
+        "figure": "echo",
+        "label": "絶頂だけの反響"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 30,
+      "act": 3,
+      "narration": "結婚、昇進、旅行。誰もが最高の瞬間だけを、切り取って差し出す。",
       "visual": {
         "type": "figure",
         "figure": "mask",
@@ -334,92 +368,75 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 27,
-      "act": 3,
-      "narration": "上ばかりを見る「上方比較」が、常態となった環境を我々は生きている。",
-      "visual": {
-        "type": "line",
-        "title": "上方比較の日常化",
-        "unit": "頻度",
-        "points": [
-          {
-            "label": "2005年",
-            "value": 20
-          },
-          {
-            "label": "2012年",
-            "value": 55
-          },
-          {
-            "label": "2019年",
-            "value": 80
-          },
-          {
-            "label": "2024年",
-            "value": 95
-          }
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 28,
-      "act": 3,
-      "narration": "そしてプラットフォームは、我々の比較本能を燃やすほど儲かる。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "ざわつきは金になる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 29,
-      "act": 3,
-      "narration": "心のざわつきは、エンゲージメントという名の収益へと変換されていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "感情を精製する工場"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 30,
-      "act": 3,
-      "narration": "皮肉にも、親密な相手ほどフィードの上位へ優先して表示される。",
-      "visual": {
-        "type": "dialogue",
-        "line": "また流れてきた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
       "id": 31,
       "act": 3,
-      "narration": "逃れたい相手が、逃れられない頻度で、繰り返し目の前に現れる。",
+      "narration": "我々は他人の総集編と、自分の日常の楽屋裏とを、比べ続けている。",
       "visual": {
         "type": "figure",
-        "figure": "notification",
-        "label": "逃げ場のない通知"
+        "figure": "screen",
+        "label": "総集編 対 楽屋裏"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 32,
       "act": 3,
-      "narration": "我々は自ら、比較から逃げられない檻の中に住みついてしまった。",
+      "narration": "勝てるはずのない試合を、二十四時間、強いられ続けているのだ。",
       "visual": {
         "type": "figure",
-        "figure": "cage",
-        "label": "自ら入った檻"
+        "figure": "cycle",
+        "label": "終わらない比較"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 33,
       "act": 3,
-      "narration": "ここに悪人はいない。あるのは、ただ精緻に組まれたシステムだけだ。",
+      "narration": "そして資本主義もまた、この相対的な渇望を燃料にして回っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "factory",
+        "label": "渇望という燃料"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 34,
+      "act": 3,
+      "narration": "どれだけ豊かになっても、隣がさらに豊かなら、決して満たされない。",
+      "visual": {
+        "type": "figure",
+        "figure": "shopping",
+        "label": "満たされない豊かさ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 35,
+      "act": 3,
+      "narration": "経済が成長しても人々の幸福感が伸びない現象は、古くから知られている。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "成長しても満たされない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 36,
+      "act": 3,
+      "narration": "我々は上り続けるのに、決して頂上に着かない階段を登らされている。",
+      "visual": {
+        "type": "figure",
+        "figure": "stairs",
+        "label": "終わらない順位争い"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 37,
+      "act": 3,
+      "narration": "ここに悪人はいない。ただ、古い脳と新しい環境の、残酷な噛み合わせがあるだけだ。",
       "visual": {
         "type": "keyword",
         "keyword": "誰も悪くない"
@@ -427,93 +444,85 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 34,
-      "act": 3,
-      "narration": "親友も、あなたも悪くない。ただ古い脳と、新しすぎる環境があるだけだ。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "石器時代の脳",
-        "right_title": "現代の環境",
-        "left_items": [
-          "150人用",
-          "相対順位で生存"
-        ],
-        "right_items": [
-          "数千人が流入",
-          "24時間比較"
-        ],
-        "center_label": "ミスマッチ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 35,
+      "id": 38,
       "act": 4,
-      "narration": "そして、これは決して、遠い誰かの心の弱さの話ではない。",
+      "narration": "そして、これは遠い誰かの、心の狭さの話ではないのである。",
       "visual": {
         "type": "figure",
         "figure": "eye",
-        "label": "鏡を向ける"
+        "label": "これは誰の話か"
       },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 36,
-      "act": 4,
-      "narration": "今この画面を見ている、あなた自身の脳の配線の話だ。",
-      "visual": {
-        "type": "dialogue",
-        "line": "なんで自分だけ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 37,
-      "act": 4,
-      "narration": "祝福を送った直後、そっと相手のプロフィールを遡って見返す。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "送信直後の指"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 38,
-      "act": 4,
-      "narration": "画面の中の充実を、自分の人生の帳尻と、こっそり引き比べる。",
-      "visual": {
-        "type": "dialogue",
-        "line": "……いいなあ"
-      },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 39,
       "act": 4,
-      "narration": "そしてその夜、寝つけぬまま、天井に向かって損得を暗算する。",
+      "narration": "今この瞬間、スマートフォンでこれを見ている、我々自身の話だ。",
       "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "眠れぬ夜の暗算"
+        "type": "dialogue",
+        "line": "また、比べてしまった"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 40,
       "act": 4,
-      "narration": "だがその痛みは、あなたが誰かを本気で近くに感じている証でもある。",
+      "narration": "深夜、他人の幸福な投稿に、我々の指が「いいね」を押していく。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "痛みは近さの証"
+        "figure": "notification",
+        "label": "重い、いいね"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 41,
       "act": 4,
-      "narration": "満たされないのは劣っているからではない。これは、あなたの話だ。",
+      "narration": "その指の、わずかな重さの正体を、我々はもう、知ってしまった。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "知ってしまった重さ"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 42,
+      "act": 4,
+      "narration": "あなたの脳にも、全く同じ回路が、確かに組み込まれているのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "isolation",
+        "label": "同じ回路"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 43,
+      "act": 4,
+      "narration": "祝福したいのに、ざわつく。その矛盾こそが、正常な人間の証である。",
+      "visual": {
+        "type": "figure",
+        "figure": "tears",
+        "label": "矛盾という証"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 44,
+      "act": 4,
+      "narration": "深夜に湧く自己嫌悪すら、数十万年前に設計された反応にすぎない。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "設計された自己嫌悪"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 45,
+      "act": 4,
+      "narration": "心が狭いのではない。ただ、あなたの脳が正直すぎるだけなのだ。",
       "visual": {
         "type": "keyword",
         "keyword": "あなたの話だ"
@@ -521,20 +530,31 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 42,
+      "id": 46,
       "act": 5,
-      "narration": "比較をやめよ、とは言わない。それは臓器を止めろと言うに等しい。",
+      "narration": "祝福と嫉妬は、同じ一つの脳から生まれる、切り離せない双子の感情だ。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "止められない天秤"
+        "figure": "candle",
+        "label": "双子の感情"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 43,
+      "id": 47,
       "act": 5,
-      "narration": "隣の芝を数えて眠れぬ夜もまた、我々が群れの生き物である証だと、そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
+      "narration": "そのざわめきを消すことはできない。ただ、その正体を知ることはできる。",
+      "visual": {
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "正体を知る"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 48,
+      "act": 5,
+      "narration": "親友の幸福にざわつく夜の理由を、そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
       "visual": {
         "type": "keyword",
         "keyword": "考えすぎる葦"

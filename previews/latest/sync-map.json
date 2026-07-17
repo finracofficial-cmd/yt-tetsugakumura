@@ -1,504 +1,599 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 6499,
+  "totalDurationInFrames": 7938,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 5275,
-      "durationInFrames": 159,
-      "audioFile": null,
+      "durationMs": 5760,
+      "durationInFrames": 173,
+      "audioFile": "audio/scene-1.mp3",
       "segments": [
         {
-          "text": "深夜零時、消し忘れた画面の光だけが、天井をぼんやりと照らしている。",
+          "text": "深夜0時。",
           "startFrame": 0,
-          "durationInFrames": 149
+          "durationInFrames": 32
+        },
+        {
+          "text": "スマートフォンの光だけが、暗い部屋で我々の顔を照らしている。",
+          "startFrame": 44,
+          "durationInFrames": 118
         }
       ]
     },
     {
       "id": 2,
-      "startMs": 5275,
-      "startFrame": 158,
-      "durationMs": 5215,
-      "durationInFrames": 157,
-      "audioFile": null,
+      "startMs": 5760,
+      "startFrame": 173,
+      "durationMs": 5568,
+      "durationInFrames": 168,
+      "audioFile": "audio/scene-2.mp3",
       "segments": [
         {
-          "text": "指が止まる。",
+          "text": "画面には、最も古い親友からのメッセージ。",
           "startFrame": 0,
-          "durationInFrames": 25
+          "durationInFrames": 97
         },
         {
-          "text": "親友からの結婚の報告が、通知欄に静かに灯っていた。",
-          "startFrame": 37,
-          "durationInFrames": 110
+          "text": "「結婚することになった」と。",
+          "startFrame": 109,
+          "durationInFrames": 47
         }
       ]
     },
     {
       "id": 3,
-      "startMs": 10490,
-      "startFrame": 315,
-      "durationMs": 3976,
-      "durationInFrames": 120,
-      "audioFile": null,
+      "startMs": 11328,
+      "startFrame": 340,
+      "durationMs": 6408,
+      "durationInFrames": 193,
+      "audioFile": "audio/scene-3.mp3",
       "segments": [
         {
-          "text": "我々の指は、ためらいなく祝福のスタンプを選び取る。",
+          "text": "我々は反射的に、祝福の言葉を打ち込む。",
           "startFrame": 0,
-          "durationInFrames": 110
+          "durationInFrames": 100
+        },
+        {
+          "text": "指は、正しく動いている。",
+          "startFrame": 112,
+          "durationInFrames": 70
         }
       ]
     },
     {
       "id": 4,
-      "startMs": 14466,
-      "startFrame": 434,
-      "durationMs": 4297,
-      "durationInFrames": 129,
-      "audioFile": null,
+      "startMs": 17736,
+      "startFrame": 532,
+      "durationMs": 5256,
+      "durationInFrames": 158,
+      "audioFile": "audio/scene-4.mp3",
       "segments": [
         {
-          "text": "だが送信した瞬間、胸のどこかが、確かに小さく軋んだ。",
+          "text": "だが送信した直後、みぞおちの奥で、小さな何かがざわつくのだ。",
           "startFrame": 0,
-          "durationInFrames": 120
+          "durationInFrames": 147
         }
       ]
     },
     {
       "id": 5,
-      "startMs": 18763,
-      "startFrame": 563,
-      "durationMs": 5076,
-      "durationInFrames": 153,
-      "audioFile": null,
+      "startMs": 22992,
+      "startFrame": 690,
+      "durationMs": 5688,
+      "durationInFrames": 171,
+      "audioFile": "audio/scene-5.mp3",
       "segments": [
         {
-          "text": "祝いたい気持ちに、嘘はない。",
+          "text": "それは確かに祝福だった。",
           "startFrame": 0,
-          "durationInFrames": 64
+          "durationInFrames": 51
         },
         {
-          "text": "それだけは断言できるはずだった。",
-          "startFrame": 76,
-          "durationInFrames": 67
+          "text": "だが同時に、名前のつかない痛みでもあった。",
+          "startFrame": 63,
+          "durationInFrames": 97
         }
       ]
     },
     {
       "id": 6,
-      "startMs": 23839,
-      "startFrame": 715,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "startMs": 28680,
+      "startFrame": 860,
+      "durationMs": 6000,
+      "durationInFrames": 180,
+      "audioFile": "audio/scene-6.mp3",
       "segments": [
         {
-          "text": "会ったこともない有名人の成功では、こんな痛みは走らないのに。",
+          "text": "世間は言う。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 37
+        },
+        {
+          "text": "親友の幸福は、我が事のように嬉しいはずだ、と。",
+          "startFrame": 49,
+          "durationInFrames": 120
         }
       ]
     },
     {
       "id": 7,
-      "startMs": 28515,
-      "startFrame": 855,
-      "durationMs": 5536,
-      "durationInFrames": 167,
-      "audioFile": null,
+      "startMs": 34680,
+      "startFrame": 1040,
+      "durationMs": 6048,
+      "durationInFrames": 182,
+      "audioFile": "audio/scene-7.mp3",
       "segments": [
         {
-          "text": "なぜ、遠い誰かより「親友」の成功こそが、我々を最も深く抉るのか。",
+          "text": "だが、本当にそうだろうか。",
           "startFrame": 0,
-          "durationInFrames": 145
+          "durationInFrames": 73
+        },
+        {
+          "text": "今一度、自分の胸に手を当ててほしい。",
+          "startFrame": 85,
+          "durationInFrames": 86
         }
       ]
     },
     {
       "id": 8,
-      "startMs": 34051,
-      "startFrame": 1022,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "startMs": 40728,
+      "startFrame": 1222,
+      "durationMs": 5688,
+      "durationInFrames": 171,
+      "audioFile": "audio/scene-8.mp3",
       "segments": [
         {
-          "text": "1954年、心理学者フェスティンガーは一つの理論を提唱した。",
+          "text": "なぜ、最も近しい者の成功ほど、我々の胸を鋭く抉るのか。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 148
         }
       ]
     },
     {
       "id": 9,
-      "startMs": 38727,
-      "startFrame": 1162,
-      "durationMs": 5136,
-      "durationInFrames": 155,
-      "audioFile": null,
+      "startMs": 46416,
+      "startFrame": 1392,
+      "durationMs": 5328,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-9.mp3",
       "segments": [
         {
-          "text": "人間は自分の価値を、絶対値ではなく、他者との比較でしか測れない。",
-          "startFrame": 0,
-          "durationInFrames": 145
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "startMs": 43863,
-      "startFrame": 1316,
-      "durationMs": 5095,
-      "durationInFrames": 153,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "「自分は幸せか」という問いは、常に「誰と比べて」を隠し持っている。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "startMs": 48958,
-      "startFrame": 1469,
-      "durationMs": 4536,
-      "durationInFrames": 137,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "そして我々が物差しに使うのは、決して雲の上の存在ではない。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "startMs": 53494,
-      "startFrame": 1605,
-      "durationMs": 3976,
-      "durationInFrames": 120,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "同じスタートラインに立っていたはずの、隣の人間だ。",
-          "startFrame": 0,
-          "durationInFrames": 110
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "startMs": 57470,
-      "startFrame": 1724,
-      "durationMs": 4996,
-      "durationInFrames": 150,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "我々を最も抉るのは、遠い有名人ではなく、手の届く距離の成功だ。",
-          "startFrame": 0,
-          "durationInFrames": 141
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "startMs": 62466,
-      "startFrame": 1874,
-      "durationMs": 4816,
-      "durationInFrames": 145,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "収入が増えても幸福が続かないのは、比較の基準ごと上がるからだ。",
-          "startFrame": 0,
-          "durationInFrames": 135
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "startMs": 67282,
-      "startFrame": 2018,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "数十万年、我々の祖先はおよそ150人の群れの中で生きてきた。",
-          "startFrame": 0,
-          "durationInFrames": 131
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "startMs": 71958,
-      "startFrame": 2159,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "その小さな群れの中の序列が、食料と生殖の機会を分配していた。",
-          "startFrame": 0,
-          "durationInFrames": 131
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "startMs": 76634,
-      "startFrame": 2299,
-      "durationMs": 4996,
-      "durationInFrames": 150,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "問題は絶対的な豊かさではなく、隣より一段上か、一段下かだった。",
-          "startFrame": 0,
-          "durationInFrames": 141
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "startMs": 81630,
-      "startFrame": 2449,
-      "durationMs": 4535,
-      "durationInFrames": 137,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "隣の順位を執拗に監視した個体だけが、生き延び子孫を残せた。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "startMs": 86165,
-      "startFrame": 2585,
-      "durationMs": 5096,
-      "durationInFrames": 153,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "その古い「相対順位センサー」は、現代の脳にもそのまま居座っている。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "startMs": 91261,
-      "startFrame": 2738,
-      "durationMs": 5416,
-      "durationInFrames": 163,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "ある脳研究では、妬みは痛みの領域を、他人の転落は快の領域を刺激した。",
-          "startFrame": 0,
-          "durationInFrames": 153
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "startMs": 96677,
-      "startFrame": 2900,
-      "durationMs": 5535,
-      "durationInFrames": 167,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "つまり妬みとは、脳にとって、比喩ではなく物理的な「痛み」なのだ。",
-          "startFrame": 0,
-          "durationInFrames": 145
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "startMs": 102212,
-      "startFrame": 3066,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "ここまでは、我々の内側に組み込まれた古い装置の話にすぎない。",
-          "startFrame": 0,
-          "durationInFrames": 131
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "startMs": 106888,
-      "startFrame": 3207,
-      "durationMs": 5275,
-      "durationInFrames": 159,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "本当の問題は、その装置が今、かつてない量の燃料を浴びていることだ。",
+          "text": "この不可解な痛みを、二つの学問が、感情を排して解剖していく。",
           "startFrame": 0,
           "durationInFrames": 149
         }
       ]
     },
     {
-      "id": 24,
-      "startMs": 112163,
-      "startFrame": 3365,
-      "durationMs": 4536,
-      "durationInFrames": 137,
-      "audioFile": null,
+      "id": 10,
+      "startMs": 51744,
+      "startFrame": 1552,
+      "durationMs": 4512,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-10.mp3",
       "segments": [
         {
-          "text": "サバンナの脳が比較した相手は、せいぜい150人ほどだった。",
+          "text": "かつて心理学者フェスティンガーは、人間のある性質を指摘した。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "startMs": 56256,
+      "startFrame": 1688,
+      "durationMs": 5304,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-11.mp3",
+      "segments": [
+        {
+          "text": "我々は自分の価値を、絶対的な物差しでは測れない生き物だ、と。",
+          "startFrame": 0,
+          "durationInFrames": 148
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "startMs": 61560,
+      "startFrame": 1847,
+      "durationMs": 5232,
+      "durationInFrames": 157,
+      "audioFile": "audio/scene-12.mp3",
+      "segments": [
+        {
+          "text": "自分が優れているかは、常に「誰かとの差」でしか確認できないのだ。",
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "startMs": 66792,
+      "startFrame": 2004,
+      "durationMs": 4608,
+      "durationInFrames": 139,
+      "audioFile": "audio/scene-13.mp3",
+      "segments": [
+        {
+          "text": "隣人がいて初めて、我々は自分の立っている高さを知るのである。",
           "startFrame": 0,
           "durationInFrames": 127
         }
       ]
     },
     {
-      "id": 25,
-      "startMs": 116699,
-      "startFrame": 3501,
-      "durationMs": 4816,
-      "durationInFrames": 145,
-      "audioFile": null,
+      "id": 14,
+      "startMs": 71400,
+      "startFrame": 2142,
+      "durationMs": 4800,
+      "durationInFrames": 144,
+      "audioFile": "audio/scene-14.mp3",
       "segments": [
         {
-          "text": "だがSNSは、数千人の「人生のハイライト」を毎日供給してくる。",
+          "text": "そして比較の対象は、遠い世界の他人ではないという点が重要だ。",
           "startFrame": 0,
-          "durationInFrames": 135
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "startMs": 76200,
+      "startFrame": 2286,
+      "durationMs": 5112,
+      "durationInFrames": 154,
+      "audioFile": "audio/scene-15.mp3",
+      "segments": [
+        {
+          "text": "人は自分と「近い者」ほど、無意識に強く比較してしまう習性を持つ。",
+          "startFrame": 0,
+          "durationInFrames": 143
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "startMs": 81312,
+      "startFrame": 2439,
+      "durationMs": 4560,
+      "durationInFrames": 137,
+      "audioFile": "audio/scene-16.mp3",
+      "segments": [
+        {
+          "text": "だから見知らぬ大富豪の豪遊には、さほど心は揺れないのである。",
+          "startFrame": 0,
+          "durationInFrames": 126
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "startMs": 85872,
+      "startFrame": 2576,
+      "durationMs": 5256,
+      "durationInFrames": 158,
+      "audioFile": "audio/scene-17.mp3",
+      "segments": [
+        {
+          "text": "だが同期の昇進、友人の結婚には、なぜか激しく反応してしまう。",
+          "startFrame": 0,
+          "durationInFrames": 147
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "startMs": 91128,
+      "startFrame": 2734,
+      "durationMs": 5400,
+      "durationInFrames": 162,
+      "audioFile": "audio/scene-18.mp3",
+      "segments": [
+        {
+          "text": "ここで進化心理学が、より古く、より残酷な理由を差し出してくる。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "startMs": 96528,
+      "startFrame": 2896,
+      "durationMs": 4656,
+      "durationInFrames": 140,
+      "audioFile": "audio/scene-19.mp3",
+      "segments": [
+        {
+          "text": "我々の祖先が生きた群れは、せいぜい百五十人ほどの規模だった。",
+          "startFrame": 0,
+          "durationInFrames": 129
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "startMs": 101184,
+      "startFrame": 3036,
+      "durationMs": 5376,
+      "durationInFrames": 162,
+      "audioFile": "audio/scene-20.mp3",
+      "segments": [
+        {
+          "text": "その小さな群れの中での順位が、生存と繁殖を直接左右したのだ。",
+          "startFrame": 0,
+          "durationInFrames": 150
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "startMs": 106560,
+      "startFrame": 3197,
+      "durationMs": 5352,
+      "durationInFrames": 161,
+      "audioFile": "audio/scene-21.mp3",
+      "segments": [
+        {
+          "text": "順位の高い個体ほど、多くの食料と、多くの交尾の機会を得た。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "startMs": 111912,
+      "startFrame": 3357,
+      "durationMs": 5736,
+      "durationInFrames": 173,
+      "audioFile": "audio/scene-22.mp3",
+      "segments": [
+        {
+          "text": "だから脳は、集団内での相対的な地位に、過敏に反応するよう進化した。",
+          "startFrame": 0,
+          "durationInFrames": 161
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "startMs": 117648,
+      "startFrame": 3529,
+      "durationMs": 5736,
+      "durationInFrames": 173,
+      "audioFile": "audio/scene-23.mp3",
+      "segments": [
+        {
+          "text": "近しい仲間の成功とは、相対的に見れば、自分の順位の低下を意味する。",
+          "startFrame": 0,
+          "durationInFrames": 161
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "startMs": 123384,
+      "startFrame": 3702,
+      "durationMs": 6240,
+      "durationInFrames": 188,
+      "audioFile": "audio/scene-24.mp3",
+      "segments": [
+        {
+          "text": "脳はそれを、生存を脅かす危険信号として、あまりに正直に受け取るのだ。",
+          "startFrame": 0,
+          "durationInFrames": 164
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "startMs": 129624,
+      "startFrame": 3889,
+      "durationMs": 5520,
+      "durationInFrames": 166,
+      "audioFile": "audio/scene-25.mp3",
+      "segments": [
+        {
+          "text": "これは道徳の話ではない。",
+          "startFrame": 0,
+          "durationInFrames": 46
+        },
+        {
+          "text": "人格の問題でもない。",
+          "startFrame": 58,
+          "durationInFrames": 42
+        },
+        {
+          "text": "単なる計算の話だ。",
+          "startFrame": 112,
+          "durationInFrames": 43
         }
       ]
     },
     {
       "id": 26,
-      "startMs": 121515,
-      "startFrame": 3645,
-      "durationMs": 4675,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "startMs": 135144,
+      "startFrame": 4054,
+      "durationMs": 5472,
+      "durationInFrames": 165,
+      "audioFile": "audio/scene-26.mp3",
       "segments": [
         {
-          "text": "しかも流れてくるのは、加工され選び抜かれた成功の断片だけだ。",
+          "text": "問題は、この古い脳が置かれた、現代という異常な環境の側にある。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 154
         }
       ]
     },
     {
       "id": 27,
-      "startMs": 126190,
-      "startFrame": 3786,
-      "durationMs": 5095,
-      "durationInFrames": 153,
-      "audioFile": null,
+      "startMs": 140616,
+      "startFrame": 4218,
+      "durationMs": 4704,
+      "durationInFrames": 142,
+      "audioFile": "audio/scene-27.mp3",
       "segments": [
         {
-          "text": "上ばかりを見る「上方比較」が、常態となった環境を我々は生きている。",
+          "text": "かつて我々が比べる相手は、村のわずかな顔ぶれだけだった。",
           "startFrame": 0,
-          "durationInFrames": 144
+          "durationInFrames": 130
         }
       ]
     },
     {
       "id": 28,
-      "startMs": 131285,
-      "startFrame": 3939,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "startMs": 145320,
+      "startFrame": 4360,
+      "durationMs": 4968,
+      "durationInFrames": 150,
+      "audioFile": "audio/scene-28.mp3",
       "segments": [
         {
-          "text": "そしてプラットフォームは、我々の比較本能を燃やすほど儲かる。",
+          "text": "だが今、我々は一日に何百人もの人生を、指先でスクロールしている。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 138
         }
       ]
     },
     {
       "id": 29,
-      "startMs": 135961,
-      "startFrame": 4079,
-      "durationMs": 5096,
-      "durationInFrames": 153,
-      "audioFile": null,
+      "startMs": 150288,
+      "startFrame": 4509,
+      "durationMs": 4608,
+      "durationInFrames": 139,
+      "audioFile": "audio/scene-29.mp3",
       "segments": [
         {
-          "text": "心のざわつきは、エンゲージメントという名の収益へと変換されていく。",
+          "text": "しかもそこに流れてくるのは、他人の人生の絶頂だけなのである。",
           "startFrame": 0,
-          "durationInFrames": 144
+          "durationInFrames": 128
         }
       ]
     },
     {
       "id": 30,
-      "startMs": 141057,
-      "startFrame": 4232,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "startMs": 154896,
+      "startFrame": 4647,
+      "durationMs": 7176,
+      "durationInFrames": 216,
+      "audioFile": "audio/scene-30.mp3",
       "segments": [
         {
-          "text": "皮肉にも、親密な相手ほどフィードの上位へ優先して表示される。",
+          "text": "結婚、昇進、旅行。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 88
+        },
+        {
+          "text": "誰もが最高の瞬間だけを、切り取って差し出す。",
+          "startFrame": 100,
+          "durationInFrames": 105
         }
       ]
     },
     {
       "id": 31,
-      "startMs": 145733,
-      "startFrame": 4372,
-      "durationMs": 4856,
-      "durationInFrames": 146,
-      "audioFile": null,
+      "startMs": 162072,
+      "startFrame": 4862,
+      "durationMs": 5760,
+      "durationInFrames": 173,
+      "audioFile": "audio/scene-31.mp3",
       "segments": [
         {
-          "text": "逃れたい相手が、逃れられない頻度で、繰り返し目の前に現れる。",
+          "text": "我々は他人の総集編と、自分の日常の楽屋裏とを、比べ続けている。",
+          "startFrame": 0,
+          "durationInFrames": 162
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "startMs": 167832,
+      "startFrame": 5035,
+      "durationMs": 5088,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-32.mp3",
+      "segments": [
+        {
+          "text": "勝てるはずのない試合を、二十四時間、強いられ続けているのだ。",
+          "startFrame": 0,
+          "durationInFrames": 142
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "startMs": 172920,
+      "startFrame": 5188,
+      "durationMs": 4944,
+      "durationInFrames": 149,
+      "audioFile": "audio/scene-33.mp3",
+      "segments": [
+        {
+          "text": "そして資本主義もまた、この相対的な渇望を燃料にして回っている。",
           "startFrame": 0,
           "durationInFrames": 137
         }
       ]
     },
     {
-      "id": 32,
-      "startMs": 150589,
-      "startFrame": 4518,
-      "durationMs": 4676,
-      "durationInFrames": 141,
-      "audioFile": null,
+      "id": 34,
+      "startMs": 177864,
+      "startFrame": 5336,
+      "durationMs": 5016,
+      "durationInFrames": 151,
+      "audioFile": "audio/scene-34.mp3",
       "segments": [
         {
-          "text": "我々は自ら、比較から逃げられない檻の中に住みついてしまった。",
+          "text": "どれだけ豊かになっても、隣がさらに豊かなら、決して満たされない。",
           "startFrame": 0,
-          "durationInFrames": 131
+          "durationInFrames": 139
         }
       ]
     },
     {
-      "id": 33,
-      "startMs": 155265,
-      "startFrame": 4658,
-      "durationMs": 5356,
-      "durationInFrames": 161,
-      "audioFile": null,
+      "id": 35,
+      "startMs": 182880,
+      "startFrame": 5486,
+      "durationMs": 5448,
+      "durationInFrames": 164,
+      "audioFile": "audio/scene-35.mp3",
+      "segments": [
+        {
+          "text": "経済が成長しても人々の幸福感が伸びない現象は、古くから知られている。",
+          "startFrame": 0,
+          "durationInFrames": 153
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "startMs": 188328,
+      "startFrame": 5650,
+      "durationMs": 4968,
+      "durationInFrames": 150,
+      "audioFile": "audio/scene-36.mp3",
+      "segments": [
+        {
+          "text": "我々は上り続けるのに、決して頂上に着かない階段を登らされている。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "startMs": 193296,
+      "startFrame": 5799,
+      "durationMs": 7176,
+      "durationInFrames": 216,
+      "audioFile": "audio/scene-37.mp3",
       "segments": [
         {
           "text": "ここに悪人はいない。",
@@ -506,178 +601,193 @@
           "durationInFrames": 42
         },
         {
-          "text": "あるのは、ただ精緻に組まれたシステムだけだ。",
+          "text": "ただ、古い脳と新しい環境の、残酷な噛み合わせがあるだけだ。",
           "startFrame": 54,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "startMs": 160621,
-      "startFrame": 4819,
-      "durationMs": 6215,
-      "durationInFrames": 187,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "親友も、あなたも悪くない。",
-          "startFrame": 0,
-          "durationInFrames": 60
-        },
-        {
-          "text": "ただ古い脳と、新しすぎる環境があるだけだ。",
-          "startFrame": 72,
-          "durationInFrames": 94
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "startMs": 166836,
-      "startFrame": 5005,
-      "durationMs": 4436,
-      "durationInFrames": 134,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "そして、これは決して、遠い誰かの心の弱さの話ではない。",
-          "startFrame": 0,
-          "durationInFrames": 124
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "startMs": 171272,
-      "startFrame": 5138,
-      "durationMs": 3976,
-      "durationInFrames": 120,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "今この画面を見ている、あなた自身の脳の配線の話だ。",
-          "startFrame": 0,
-          "durationInFrames": 110
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "startMs": 175248,
-      "startFrame": 5257,
-      "durationMs": 4536,
-      "durationInFrames": 137,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "祝福を送った直後、そっと相手のプロフィールを遡って見返す。",
-          "startFrame": 0,
-          "durationInFrames": 127
+          "durationInFrames": 138
         }
       ]
     },
     {
       "id": 38,
-      "startMs": 179784,
-      "startFrame": 5394,
-      "durationMs": 4717,
-      "durationInFrames": 142,
-      "audioFile": null,
+      "startMs": 200472,
+      "startFrame": 6014,
+      "durationMs": 5136,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-38.mp3",
       "segments": [
         {
-          "text": "画面の中の充実を、自分の人生の帳尻と、こっそり引き比べる。",
+          "text": "そして、これは遠い誰かの、心の狭さの話ではないのである。",
           "startFrame": 0,
-          "durationInFrames": 133
+          "durationInFrames": 143
         }
       ]
     },
     {
       "id": 39,
-      "startMs": 184501,
-      "startFrame": 5535,
-      "durationMs": 4716,
-      "durationInFrames": 142,
-      "audioFile": null,
+      "startMs": 205608,
+      "startFrame": 6168,
+      "durationMs": 4824,
+      "durationInFrames": 145,
+      "audioFile": "audio/scene-39.mp3",
       "segments": [
         {
-          "text": "そしてその夜、寝つけぬまま、天井に向かって損得を暗算する。",
+          "text": "今この瞬間、スマートフォンでこれを見ている、我々自身の話だ。",
           "startFrame": 0,
-          "durationInFrames": 132
+          "durationInFrames": 134
         }
       ]
     },
     {
       "id": 40,
-      "startMs": 189217,
-      "startFrame": 5677,
-      "durationMs": 4956,
+      "startMs": 210432,
+      "startFrame": 6313,
+      "durationMs": 4944,
       "durationInFrames": 149,
-      "audioFile": null,
+      "audioFile": "audio/scene-40.mp3",
       "segments": [
         {
-          "text": "だがその痛みは、あなたが誰かを本気で近くに感じている証でもある。",
+          "text": "深夜、他人の幸福な投稿に、我々の指が「いいね」を押していく。",
           "startFrame": 0,
-          "durationInFrames": 140
+          "durationInFrames": 138
         }
       ]
     },
     {
       "id": 41,
-      "startMs": 194173,
-      "startFrame": 5825,
-      "durationMs": 5615,
-      "durationInFrames": 169,
-      "audioFile": null,
+      "startMs": 215376,
+      "startFrame": 6461,
+      "durationMs": 5928,
+      "durationInFrames": 178,
+      "audioFile": "audio/scene-41.mp3",
       "segments": [
         {
-          "text": "満たされないのは劣っているからではない。",
+          "text": "その指の、わずかな重さの正体を、我々はもう、知ってしまった。",
           "startFrame": 0,
-          "durationInFrames": 84
-        },
-        {
-          "text": "これは、あなたの話だ。",
-          "startFrame": 96,
-          "durationInFrames": 52
+          "durationInFrames": 167
         }
       ]
     },
     {
       "id": 42,
-      "startMs": 199788,
-      "startFrame": 5994,
-      "durationMs": 5216,
-      "durationInFrames": 157,
-      "audioFile": null,
+      "startMs": 221304,
+      "startFrame": 6639,
+      "durationMs": 4848,
+      "durationInFrames": 146,
+      "audioFile": "audio/scene-42.mp3",
       "segments": [
         {
-          "text": "比較をやめよ、とは言わない。",
+          "text": "あなたの脳にも、全く同じ回路が、確かに組み込まれているのだ。",
           "startFrame": 0,
-          "durationInFrames": 64
-        },
-        {
-          "text": "それは臓器を止めろと言うに等しい。",
-          "startFrame": 76,
-          "durationInFrames": 71
+          "durationInFrames": 134
         }
       ]
     },
     {
       "id": 43,
-      "startMs": 205004,
-      "startFrame": 6150,
-      "durationMs": 10772,
-      "durationInFrames": 324,
-      "audioFile": null,
+      "startMs": 226152,
+      "startFrame": 6785,
+      "durationMs": 6336,
+      "durationInFrames": 191,
+      "audioFile": "audio/scene-43.mp3",
       "segments": [
         {
-          "text": "隣の芝を数えて眠れぬ夜もまた、我々が群れの生き物である証だと、そんなことを、考えすぎてみました。",
+          "text": "祝福したいのに、ざわつく。",
           "startFrame": 0,
-          "durationInFrames": 218
+          "durationInFrames": 69
+        },
+        {
+          "text": "その矛盾こそが、正常な人間の証である。",
+          "startFrame": 81,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "startMs": 232488,
+      "startFrame": 6975,
+      "durationMs": 5232,
+      "durationInFrames": 157,
+      "audioFile": "audio/scene-44.mp3",
+      "segments": [
+        {
+          "text": "深夜に湧く自己嫌悪すら、数十万年前に設計された反応にすぎない。",
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "startMs": 237720,
+      "startFrame": 7132,
+      "durationMs": 5784,
+      "durationInFrames": 174,
+      "audioFile": "audio/scene-45.mp3",
+      "segments": [
+        {
+          "text": "心が狭いのではない。",
+          "startFrame": 0,
+          "durationInFrames": 42
+        },
+        {
+          "text": "ただ、あなたの脳が正直すぎるだけなのだ。",
+          "startFrame": 54,
+          "durationInFrames": 97
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "startMs": 243504,
+      "startFrame": 7305,
+      "durationMs": 5976,
+      "durationInFrames": 180,
+      "audioFile": "audio/scene-46.mp3",
+      "segments": [
+        {
+          "text": "祝福と嫉妬は、同じ一つの脳から生まれる、切り離せない双子の感情だ。",
+          "startFrame": 0,
+          "durationInFrames": 169
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "startMs": 249480,
+      "startFrame": 7484,
+      "durationMs": 5616,
+      "durationInFrames": 169,
+      "audioFile": "audio/scene-47.mp3",
+      "segments": [
+        {
+          "text": "そのざわめきを消すことはできない。",
+          "startFrame": 0,
+          "durationInFrames": 60
+        },
+        {
+          "text": "ただ、その正体を知ることはできる。",
+          "startFrame": 72,
+          "durationInFrames": 86
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "startMs": 255096,
+      "startFrame": 7653,
+      "durationMs": 8664,
+      "durationInFrames": 260,
+      "audioFile": "audio/scene-48.mp3",
+      "segments": [
+        {
+          "text": "親友の幸福にざわつく夜の理由を、そんなことを、考えすぎてみました。",
+          "startFrame": 0,
+          "durationInFrames": 152
         },
         {
           "text": "よろしければ、チャンネル登録を。",
-          "startFrame": 230,
+          "startFrame": 164,
           "durationInFrames": 73
         }
       ]
