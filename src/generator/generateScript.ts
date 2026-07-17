@@ -55,6 +55,11 @@ const VIDEO_SCRIPT_SCHEMA = {
               type: "string",
               description: "読み上げるナレーション本文（80〜220文字、だ・である調）",
             },
+            reading: {
+              type: "string",
+              description:
+                "TTS読み上げ専用テキスト。narrationと同一の文だが、誤読しやすい漢字・熟語・固有名詞・数字＋助数詞をすべてひらがな（またはカタカナ）に開く。句読点（。、！？…）の位置と数はnarrationと完全に一致させること。例: narration「他人事ではない。」→ reading「ひとごとではない。」",
+            },
             visual: {
               description:
                 "画面構成。ナレーション内容に最も合う型を選ぶ（同じ型を3連続させない）",
@@ -312,7 +317,7 @@ const VIDEO_SCRIPT_SCHEMA = {
               description: "シーンの背景トーン",
             },
           },
-          required: ["id", "act", "narration", "visual", "concept_color"],
+          required: ["id", "act", "narration", "reading", "visual", "concept_color"],
           additionalProperties: false,
         },
       },

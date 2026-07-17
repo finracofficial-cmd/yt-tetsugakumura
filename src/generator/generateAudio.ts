@@ -187,7 +187,8 @@ export async function elevenLabsSpeech(
       body: JSON.stringify({
         text,
         model_id: ELEVENLABS_MODEL,
-        voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+        // ナレーション用: stabilityを高めて訛り・抑揚の暴れを抑える
+        voice_settings: { stability: 0.6, similarity_boost: 0.8, use_speaker_boost: true },
       }),
     },
   );
@@ -304,7 +305,12 @@ export async function generateAudio(): Promise<SyncMap> {
     const isActChange = !nextScene || nextScene.act !== scene.act;
     const tailMs = isActChange ? SCENE_TAIL_ACT_CHANGE_MS : SCENE_TAIL_MS;
 
-    const fragments = splitIntoFragments(scene.narration);
+    // TTSには読み上げ用テキスト（難読漢字をひらがなに開いた reading）を渡し、
+    // 字幕には元の narration を表示する。句読点が同じなら分割数は一致する。
+    const fragments = splitIntoFragments(scene.reading?.trim() || scene.narration);
+    const displayFragments = splitIntoFragments(scene.narration);
+    const displayTextFor = (f: number): string =>
+      displayFragments.length === fragments.length ? displayFragments[f].text : fragments[f].text;
     // 最後のフラグメントの文法ポーズはシーン末尾の余韻に置き換える
     if (fragments.length > 0) fragments[fragments.length - 1].pauseMs = tailMs;
 
@@ -333,7 +339,7 @@ export async function generateAudio(): Promise<SyncMap> {
 
           const meta = await parseFile(wavPath);
           const durationMs = Math.round((meta.format.duration ?? 0) * 1000);
-          timedFragments.push({ text: frag.text, durationMs, pauseMs: frag.pauseMs });
+          timedFragments.push({ text: displayTextFor(f), durationMs, pauseMs: frag.pauseMs });
 
           wavList.push(wavPath);
           if (frag.pauseMs > 0) wavList.push(silenceWav(frag.pauseMs));
@@ -379,9 +385,9 @@ export async function generateAudio(): Promise<SyncMap> {
     }
 
     if (!ttsEnabled || !audioFile) {
-      // 推定フォールバック
-      timedFragments = fragments.map((frag) => ({
-        text: frag.text,
+      // 推定フォールバック（尺は読み上げテキスト長から、表示は字幕テキスト）
+      timedFragments = fragments.map((frag, f) => ({
+        text: displayTextFor(f),
         durationMs: Math.round((frag.text.length / ESTIMATED_CHARS_PER_SEC) * 1000),
         pauseMs: frag.pauseMs,
       }));
