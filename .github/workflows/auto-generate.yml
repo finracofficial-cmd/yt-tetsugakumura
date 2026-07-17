@@ -46,6 +46,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
         run: |
           AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
           echo "== ANTHROPIC_API_KEY =="
@@ -66,6 +68,30 @@ jobs:
           if [ "$STATUS" != "200" ]; then
             echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
             exit 1
+          fi
+
+          EK=$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '[:space:]')
+          echo "== ELEVENLABS_API_KEY =="
+          if [ -z "$EK" ]; then
+            echo "未設定（ナレーションはOpenAI TTSにフォールバックします）"
+          else
+            echo "length : ${#EK}"
+            echo "prefix : ${EK:0:6}..."
+            ESTATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.elevenlabs.io/v1/user \
+              -H "xi-api-key: $EK")
+            echo "auth check (GET /v1/user): HTTP $ESTATUS  (200=OK, 401=キーが無効)"
+            if [ "$ESTATUS" != "200" ]; then
+              echo "::error::ELEVENLABS_API_KEY が無効です (HTTP $ESTATUS)。elevenlabs.io の API Keys で発行したキーを登録し直してください。"
+              exit 1
+            fi
+            VOICE_ID="${ELEVENLABS_VOICE_ID:-ss9cJxDAEMXP4wfQ3GPr}"
+            VSTATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://api.elevenlabs.io/v1/voices/$VOICE_ID" \
+              -H "xi-api-key: $EK")
+            echo "voice check (GET /v1/voices/$VOICE_ID): HTTP $VSTATUS  (200=OK)"
+            if [ "$VSTATUS" != "200" ]; then
+              echo "::error::ボイス $VOICE_ID がこのアカウントから使えません (HTTP $VSTATUS)。ElevenLabsのVoice Libraryでこの声のページを開き「Add to My Voices」を押してください。"
+              exit 1
+            fi
           fi
 
       - name: Generate script & audio
@@ -116,6 +142,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add previews
           git commit -m "previews: run #${{ github.run_number }} の生成結果" || echo "no changes to commit"
+          # 生成で変わった作業ツリー(src/data等)を捨ててからrebaseする（unstaged changesでの失敗防止）
+          git checkout -- . || true
           git pull --rebase origin ${{ github.ref_name }} || true
           git push
 

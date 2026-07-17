@@ -361,10 +361,17 @@ export async function generateAudio(): Promise<SyncMap> {
           `  scene ${scene.id}: ${(sceneDurationMs / 1000).toFixed(2)}s (${fragments.length}フラグメント) -> ${AUDIO_DIR}/${fileName}`,
         );
       } catch (err) {
+        const message = err instanceof Error ? err.message : String(err);
+        // キーが設定されている＝ナレーション必須の運用なので、無音で完走せず明確に失敗させる。
+        // （TTS_STRICT=false を設定した場合のみ旧来の無音フォールバックで続行）
+        if ((process.env.TTS_STRICT || "true") !== "false") {
+          throw new Error(
+            `[generateAudio] TTSに失敗しました (provider=${TTS_PROVIDER}, scene=${scene.id}): ${message}\n` +
+              `  ElevenLabsの場合の主な原因: (1) ELEVENLABS_API_KEY が無効 (2) ボイスを「Add to My Voices」していない (3) クレジット不足`,
+          );
+        }
         console.warn(
-          `[generateAudio] 警告: TTSに失敗したため、以降は無音・推定尺で続行します: ${
-            err instanceof Error ? err.message : String(err)
-          }`,
+          `[generateAudio] 警告: TTSに失敗したため、以降は無音・推定尺で続行します: ${message}`,
         );
         ttsEnabled = false;
         audioFile = null;
