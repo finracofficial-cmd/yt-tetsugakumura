@@ -1,5 +1,5 @@
 {
-  "bgm": false,
-  "noise": false,
-  "sfx": false
+  "bgm": true,
+  "noise": true,
+  "sfx": true
 }

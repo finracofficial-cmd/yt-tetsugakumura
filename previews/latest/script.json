@@ -1,362 +1,425 @@
 {
-  "theme": "無関係な他人の不倫や不祥事に対して、当事者でもない我々が過剰な怒りを燃やしてしまう「道徳的憤り」という現象",
-  "title": "なぜ我々は他人の不倫にこれほど怒るのか【進化心理学×社会学】",
+  "theme": "親しい他者の成功に対して覚える、言語化しづらい嫉妬と胸のざわつき。社会的比較と相対的地位をめぐる進化的・社会的メカニズム。",
+  "title": "なぜ親友の成功は、他人の成功よりも胸を抉るのか【進化心理学×社会学】",
+  "bgm_direction": "Dark minimal ambient underscore with slow evolving synth pads and sparse melancholic felt piano. Quiet and contemplative, carrying a faint undercurrent of envy and longing.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "平日の昼下がり。テレビの中で、コメンテーターが顔を赤らめている。",
+      "narration": "深夜零時、消し忘れた画面の光だけが、天井をぼんやりと照らしている。",
       "visual": {
         "type": "dialogue",
-        "line": "許せませんね、これは"
+        "line": "また、こんな時間か"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "話題は、会ったこともない芸能人の、たった一度の裏切りだ。",
+      "narration": "指が止まる。親友からの結婚の報告が、通知欄に静かに灯っていた。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "昼のワイドショー"
+        "figure": "notification",
+        "label": "親友からの吉報"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 3,
       "act": 1,
-      "narration": "SNSでは、見知らぬ数万人が、その男を口々に罵倒している。",
+      "narration": "我々の指は、ためらいなく祝福のスタンプを選び取る。",
       "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "見知らぬ数万人の罵倒"
+        "type": "dialogue",
+        "line": "おめでとう🎉"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 4,
       "act": 1,
-      "narration": "だが冷静に見れば、その不倫で直接傷ついた者は、ここには一人もいない。",
+      "narration": "だが送信した瞬間、胸のどこかが、確かに小さく軋んだ。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "誰も傷ついていない"
+        "figure": "heart",
+        "label": "説明できない軋み"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "それでも我々は、腹の底から突き上げてくる怒りを、抑えることができない。",
+      "narration": "祝いたい気持ちに、嘘はない。それだけは断言できるはずだった。",
       "visual": {
         "type": "dialogue",
-        "line": "なんで俺が怒ってる？"
+        "line": "本当に嬉しいんだ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "よく考えてほしい。この怒りは、一体、誰のためのものなのか。",
+      "narration": "会ったこともない有名人の成功では、こんな痛みは走らないのに。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "この怒りは誰のため"
+        "figure": "screen",
+        "label": "遠い他人の慶事"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "なぜ我々は、無関係な他人の裏切りに、これほどまで怒るのか。",
+      "narration": "なぜ、遠い誰かより「親友」の成功こそが、我々を最も深く抉るのか。",
       "visual": {
-        "type": "keyword",
-        "keyword": "他人の裏切り"
+        "type": "figure",
+        "figure": "question",
+        "label": "今日の問い"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 8,
       "act": 2,
-      "narration": "この過剰な怒りの設計図は、数十万年前に、脳の奥へ書き込まれている。",
+      "narration": "1954年、心理学者フェスティンガーは一つの理論を提唱した。",
       "visual": {
-        "type": "figure",
-        "figure": "dna",
-        "label": "数十万年前の設計図"
+        "type": "stat",
+        "value": "1954年",
+        "label": "社会的比較理論の提唱"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 9,
       "act": 2,
-      "narration": "進化の視点では、配偶者とは、奪い合われる希少な資源そのものだ。",
+      "narration": "人間は自分の価値を、絶対値ではなく、他者との比較でしか測れない。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "希少な資源"
+        "figure": "scale",
+        "label": "比較でしか測れない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 10,
       "act": 2,
-      "narration": "ゆえに人間の脳には、裏切りを検知する専用の警報装置が備わった。",
+      "narration": "「自分は幸せか」という問いは、常に「誰と比べて」を隠し持っている。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "裏切り検知の警報"
+        "type": "dialogue",
+        "line": "みんなと比べて、どうか"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 11,
       "act": 2,
-      "narration": "心理学者バスは、配偶者への欲求と嫉妬が、文化を超えて普遍的だと示した。",
+      "narration": "そして我々が物差しに使うのは、決して雲の上の存在ではない。",
       "visual": {
-        "type": "stat",
-        "value": "37の文化",
-        "label": "バスが調べた配偶者選好の普遍性"
+        "type": "figure",
+        "figure": "network",
+        "label": "準拠集団"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 12,
       "act": 2,
-      "narration": "嫉妬は、どの民族にも共通する、極めて古い感情装置なのである。",
+      "narration": "同じスタートラインに立っていたはずの、隣の人間だ。",
       "visual": {
         "type": "figure",
-        "figure": "conflict",
-        "label": "普遍的な嫉妬"
+        "figure": "queue",
+        "label": "隣にいた者"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 13,
       "act": 2,
-      "narration": "だが真に謎なのは、当事者ですらない我々が、なお怒るという事実だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "当事者でない怒り"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 14,
-      "act": 2,
-      "narration": "ここで、最後通牒ゲームという有名な実験を思い出したい。",
-      "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "最後通牒ゲーム"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 15,
-      "act": 2,
-      "narration": "二人で金を分ける。一方が配分を決め、もう一方は諾否だけを選べる。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "金を分ける"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 16,
-      "act": 2,
-      "narration": "取り分が二割を切ると、人は自分が損をしてでも、その提案を拒否する。",
-      "visual": {
-        "type": "stat",
-        "value": "2割",
-        "label": "これ以下の分配は拒否される"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 17,
-      "act": 2,
-      "narration": "経済的には非合理だ。だが人間は、不公平そのものに罰を与えたがる。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "損してでも罰する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 18,
-      "act": 2,
-      "narration": "フェールらは、この自腹を切ってでも違反者を罰する傾向を研究した。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "ルール違反者を罰する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 19,
-      "act": 2,
-      "narration": "それは「利他的懲罰」と呼ばれる、人間に組み込まれた本能である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "利他的懲罰"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 20,
-      "act": 2,
-      "narration": "裏切り者を罰する個体が多い集団ほど、協力が保たれ、生き延びてきた。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "罰する者が生き延びた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 21,
-      "act": 2,
-      "narration": "つまり我々は、他人を罰したがった者たちの、正当な子孫なのだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "dna",
-        "label": "罰したがる者の子孫"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 22,
-      "act": 3,
-      "narration": "しかしサバンナ用の掟は、現代という環境で、奇妙に暴走を始める。",
-      "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "サバンナの掟の暴走"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 23,
-      "act": 3,
-      "narration": "かつて我々が罰せた相手は、同じ村に暮らす顔見知りだけだった。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "かつての制裁",
-        "right_title": "現代の制裁",
-        "left_items": [
-          "顔見知りの村",
-          "直接の対面",
-          "逃げ場もある"
-        ],
-        "right_items": [
-          "匿名の群衆",
-          "全世界へ拡散",
-          "ワンタップ"
-        ],
-        "center_label": "→"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 24,
-      "act": 3,
-      "narration": "いま我々は、地球の裏側にいる他人さえ、指一本で罰することができる。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "地球の裏側まで"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 25,
-      "act": 3,
-      "narration": "社会学者デュルケームは、逸脱者への制裁が集団を結束させると論じた。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "逸脱者への制裁"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 26,
-      "act": 3,
-      "narration": "悪を叩くその瞬間、我々は自分が「善い側」の一員だと確認できる。",
-      "visual": {
-        "type": "figure",
-        "figure": "applause",
-        "label": "善い側の確認"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 27,
-      "act": 3,
-      "narration": "そしてメディアは、この憤りが金に変わることを、熟知している。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "怒りは金になる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 28,
-      "act": 3,
-      "narration": "怒りは、あらゆる感情の中で最も速く、遠くまで拡散していく。",
+      "narration": "我々を最も抉るのは、遠い有名人ではなく、手の届く距離の成功だ。",
       "visual": {
         "type": "chart",
-        "title": "感情別の拡散されやすさ",
-        "unit": "拡散度",
+        "title": "距離が近いほど、比較は刺さる",
+        "unit": "痛み",
         "items": [
           {
-            "label": "喜び",
-            "value": 40
+            "label": "遠い有名人",
+            "value": 1
           },
           {
-            "label": "悲しみ",
-            "value": 30
+            "label": "同業の知人",
+            "value": 3
           },
           {
-            "label": "怒り",
-            "value": 90
+            "label": "親友",
+            "value": 5
           }
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 29,
+      "id": 14,
+      "act": 2,
+      "narration": "収入が増えても幸福が続かないのは、比較の基準ごと上がるからだ。",
+      "visual": {
+        "type": "line",
+        "title": "所得と幸福度",
+        "unit": "実感",
+        "points": [
+          {
+            "label": "低所得",
+            "value": 2
+          },
+          {
+            "label": "中所得",
+            "value": 3
+          },
+          {
+            "label": "高所得",
+            "value": 3.2
+          },
+          {
+            "label": "富裕層",
+            "value": 3.3
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 15,
+      "act": 2,
+      "narration": "数十万年、我々の祖先はおよそ150人の群れの中で生きてきた。",
+      "visual": {
+        "type": "stat",
+        "value": "150人",
+        "label": "ダンバー数 — 群れの上限"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 16,
+      "act": 2,
+      "narration": "その小さな群れの中の序列が、食料と生殖の機会を分配していた。",
+      "visual": {
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "序列が全てを決める"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 17,
+      "act": 2,
+      "narration": "問題は絶対的な豊かさではなく、隣より一段上か、一段下かだった。",
+      "visual": {
+        "type": "dialogue",
+        "line": "群れの、何番目か"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 18,
+      "act": 2,
+      "narration": "隣の順位を執拗に監視した個体だけが、生き延び子孫を残せた。",
+      "visual": {
+        "type": "figure",
+        "figure": "dna",
+        "label": "序列を測る本能"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 19,
+      "act": 2,
+      "narration": "その古い「相対順位センサー」は、現代の脳にもそのまま居座っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "消えないセンサー"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 20,
+      "act": 2,
+      "narration": "ある脳研究では、妬みは痛みの領域を、他人の転落は快の領域を刺激した。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "妬み",
+        "right_title": "他人の不幸",
+        "left_items": [
+          "痛みの脳領域",
+          "身を焼く"
+        ],
+        "right_items": [
+          "報酬系が点灯",
+          "甘美な快"
+        ],
+        "center_label": "脳内では"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 21,
+      "act": 2,
+      "narration": "つまり妬みとは、脳にとって、比喩ではなく物理的な「痛み」なのだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "妬みは痛みである"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 22,
       "act": 3,
-      "narration": "我々が怒れば怒るほど、画面の向こうの広告は、静かに潤っていく。",
+      "narration": "ここまでは、我々の内側に組み込まれた古い装置の話にすぎない。",
       "visual": {
         "type": "figure",
         "figure": "cycle",
-        "label": "怒るほど潤う"
+        "label": "古い装置"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 23,
+      "act": 3,
+      "narration": "本当の問題は、その装置が今、かつてない量の燃料を浴びていることだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "燃料の供給源"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 24,
+      "act": 3,
+      "narration": "サバンナの脳が比較した相手は、せいぜい150人ほどだった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "サバンナ",
+        "right_title": "SNS",
+        "left_items": [
+          "比較相手150人",
+          "たまに会う"
+        ],
+        "right_items": [
+          "比較相手 無限",
+          "24時間表示"
+        ],
+        "center_label": "≠"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 25,
+      "act": 3,
+      "narration": "だがSNSは、数千人の「人生のハイライト」を毎日供給してくる。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "無限の比較対象"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 26,
+      "act": 3,
+      "narration": "しかも流れてくるのは、加工され選び抜かれた成功の断片だけだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "mask",
+        "label": "編集された幸福"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 27,
+      "act": 3,
+      "narration": "上ばかりを見る「上方比較」が、常態となった環境を我々は生きている。",
+      "visual": {
+        "type": "line",
+        "title": "上方比較の日常化",
+        "unit": "頻度",
+        "points": [
+          {
+            "label": "2005年",
+            "value": 20
+          },
+          {
+            "label": "2012年",
+            "value": 55
+          },
+          {
+            "label": "2019年",
+            "value": 80
+          },
+          {
+            "label": "2024年",
+            "value": 95
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 28,
+      "act": 3,
+      "narration": "そしてプラットフォームは、我々の比較本能を燃やすほど儲かる。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "ざわつきは金になる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 29,
+      "act": 3,
+      "narration": "心のざわつきは、エンゲージメントという名の収益へと変換されていく。",
+      "visual": {
+        "type": "figure",
+        "figure": "factory",
+        "label": "感情を精製する工場"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 30,
       "act": 3,
-      "narration": "正義を執行しているつもりで、我々は自分の注意を、切り売りされている。",
+      "narration": "皮肉にも、親密な相手ほどフィードの上位へ優先して表示される。",
       "visual": {
-        "type": "figure",
-        "figure": "bystander",
-        "label": "注意を売られる"
+        "type": "dialogue",
+        "line": "また流れてきた"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 31,
       "act": 3,
-      "narration": "悪人はどこにもいない。ただ、古い本能と、新しい装置があるだけだ。",
+      "narration": "逃れたい相手が、逃れられない頻度で、繰り返し目の前に現れる。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "逃げ場のない通知"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 32,
+      "act": 3,
+      "narration": "我々は自ら、比較から逃げられない檻の中に住みついてしまった。",
+      "visual": {
+        "type": "figure",
+        "figure": "cage",
+        "label": "自ら入った檻"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 33,
+      "act": 3,
+      "narration": "ここに悪人はいない。あるのは、ただ精緻に組まれたシステムだけだ。",
       "visual": {
         "type": "keyword",
         "keyword": "誰も悪くない"
@@ -364,106 +427,114 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 32,
-      "act": 4,
-      "narration": "これは、ネットの片隅で吠える、民度の低い誰かの話ではない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "自分は違う"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 33,
-      "act": 4,
-      "narration": "いまこの動画を見ている、あなた自身の脳に刻まれた回路の話である。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "あなたの脳の話"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
       "id": 34,
-      "act": 4,
-      "narration": "不倫の速報が届いた瞬間、指が勝手に記事を開いたことはないか。",
+      "act": 3,
+      "narration": "親友も、あなたも悪くない。ただ古い脳と、新しすぎる環境があるだけだ。",
       "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "指が勝手に開く"
+        "type": "comparison",
+        "left_title": "石器時代の脳",
+        "right_title": "現代の環境",
+        "left_items": [
+          "150人用",
+          "相対順位で生存"
+        ],
+        "right_items": [
+          "数千人が流入",
+          "24時間比較"
+        ],
+        "center_label": "ミスマッチ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 35,
       "act": 4,
-      "narration": "他人を裁くその一瞬、あなたの脳の報酬系は、確かに疼いている。",
+      "narration": "そして、これは決して、遠い誰かの心の弱さの話ではない。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "報酬系が疼く"
+        "figure": "eye",
+        "label": "鏡を向ける"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 36,
       "act": 4,
-      "narration": "その快感は、恋の高揚を生むのと、ほとんど同じ回路から漏れ出している。",
+      "narration": "今この画面を見ている、あなた自身の脳の配線の話だ。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "恋と同じ回路"
+        "type": "dialogue",
+        "line": "なんで自分だけ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 37,
       "act": 4,
-      "narration": "「許せない」という言葉の裏側で、我々は微かに、それを愉しんでいる。",
+      "narration": "祝福を送った直後、そっと相手のプロフィールを遡って見返す。",
       "visual": {
-        "type": "dialogue",
-        "line": "許せない、でも気持ちいい"
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "送信直後の指"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 38,
       "act": 4,
-      "narration": "正義とは、最も後ろめたさのない、娯楽の仮面なのかもしれない。",
+      "narration": "画面の中の充実を、自分の人生の帳尻と、こっそり引き比べる。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "正義という仮面"
+        "type": "dialogue",
+        "line": "……いいなあ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 39,
       "act": 4,
-      "narration": "鏡を見よ。怒りに歪んだその顔は、獲物を見つけた狩人の顔だ。",
+      "narration": "そしてその夜、寝つけぬまま、天井に向かって損得を暗算する。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "狩人の顔"
+        "figure": "anxiety",
+        "label": "眠れぬ夜の暗算"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 40,
-      "act": 5,
-      "narration": "我々は今日も、誰かの罪を薪にして、束の間の暖をとって生きている。",
+      "act": 4,
+      "narration": "だがその痛みは、あなたが誰かを本気で近くに感じている証でもある。",
       "visual": {
         "type": "figure",
-        "figure": "candle",
-        "label": "誰かの罪で暖をとる"
+        "figure": "heart",
+        "label": "痛みは近さの証"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 41,
+      "act": 4,
+      "narration": "満たされないのは劣っているからではない。これは、あなたの話だ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "あなたの話だ"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 41,
+      "id": 42,
       "act": 5,
-      "narration": "人間とは、正義の顔をして他人を狩る、考える葦である。そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
+      "narration": "比較をやめよ、とは言わない。それは臓器を止めろと言うに等しい。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "止められない天秤"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 43,
+      "act": 5,
+      "narration": "隣の芝を数えて眠れぬ夜もまた、我々が群れの生き物である証だと、そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
       "visual": {
         "type": "keyword",
         "keyword": "考えすぎる葦"
