@@ -20,6 +20,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
+import { directScript, splitIntoSentences } from "./directScript";
 import {
   SCRIPT_JSON_PATH,
   type Scene,
@@ -115,18 +116,72 @@ export function normalizeScript(raw: unknown): VideoScript {
   };
 }
 
+/** 全シーンが visual を持っているか（＝演出付け済みか） */
+function hasVisuals(scenes: unknown): boolean {
+  return (
+    Array.isArray(scenes) &&
+    scenes.length > 0 &&
+    scenes.every(
+      (s) => typeof s === "object" && s !== null && typeof (s as Record<string, unknown>).visual === "object",
+    )
+  );
+}
+
+/**
+ * 台本ソースを読み込み VideoScript を得る。
+ * - visual が全シーンに付いていれば、そのまま取り込む（Claude不使用・¥0）
+ * - ナレーションだけ（平文 / narrationのみのJSON / 文字列配列）なら、AI演出を付ける
+ */
 export async function loadScriptFromSource(source: string): Promise<VideoScript> {
   console.log(`[loadScript] 外部台本を読み込み中... source=${source}`);
   const text = await fetchRawScript(source);
-  let parsed: unknown;
+
+  let parsed: unknown = undefined;
   try {
     parsed = JSON.parse(text);
-  } catch (err) {
-    throw new Error(
-      `台本JSONのパースに失敗しました。JSONとして正しいか確認してください: ${err instanceof Error ? err.message : String(err)}`,
-    );
+  } catch {
+    parsed = undefined; // JSONでなければ平文として扱う
   }
-  const script = normalizeScript(parsed);
+
+  let script: VideoScript;
+
+  if (parsed === undefined) {
+    // 平文台本 → 文分割 → AI演出
+    const narrations = splitIntoSentences(text);
+    script = await directScript(narrations);
+  } else if (Array.isArray(parsed) && parsed.every((x) => typeof x === "string")) {
+    // 文字列配列 → AI演出
+    script = await directScript(parsed as string[]);
+  } else if (typeof parsed === "object" && parsed !== null) {
+    const obj = parsed as Record<string, unknown>;
+    const meta = {
+      title: typeof obj.title === "string" ? obj.title : undefined,
+      theme: typeof obj.theme === "string" ? obj.theme : undefined,
+      bgm_direction: typeof obj.bgm_direction === "string" ? obj.bgm_direction : undefined,
+    };
+    if (hasVisuals(obj.scenes)) {
+      // 演出付け済みの完全な台本 → そのまま取り込む（AI不使用）
+      script = normalizeScript(obj);
+    } else if (Array.isArray(obj.scenes)) {
+      // narration のみのシーン列 → AI演出
+      const narrations = (obj.scenes as unknown[]).map((s, i) => {
+        const n = (s as Record<string, unknown>)?.narration;
+        if (typeof n !== "string" || n.trim() === "") {
+          throw new Error(`scenes[${i}] に narration がありません。`);
+        }
+        return n;
+      });
+      script = await directScript(narrations, meta);
+    } else if (typeof obj.text === "string" || typeof obj.narration === "string") {
+      // { text: "全文..." } / { narration: "全文..." } → 文分割 → AI演出
+      const body = (obj.text as string) ?? (obj.narration as string);
+      script = await directScript(splitIntoSentences(body), meta);
+    } else {
+      throw new Error("台本JSONに scenes / text が見つかりません。");
+    }
+  } else {
+    throw new Error("台本の形式を認識できませんでした。");
+  }
 
   mkdirSync(dirname(SCRIPT_JSON_PATH), { recursive: true });
   writeFileSync(SCRIPT_JSON_PATH, JSON.stringify(script, null, 2) + "\n", "utf-8");

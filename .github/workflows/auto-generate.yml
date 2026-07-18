@@ -55,21 +55,21 @@ jobs:
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
           SCRIPT_GIST: ${{ github.event.inputs.script_gist }}
         run: |
-          # 台本Gistが指定されていればAI台本生成は行わないのでAnthropicキーは検証しない
+          # 台本生成でもGist台本へのAI演出付けでもAnthropicキーを使うので常に検証する。
+          # （Gistがvisual付きの完全台本ならAIは呼ばれないが、キー確認は無料なので実施）
           if [ -n "$SCRIPT_GIST" ]; then
-            echo "== 台本ソース: Gist/URL 指定あり（Claude生成をスキップ） =="
-          else
-            AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
-            echo "== ANTHROPIC_API_KEY =="
-            echo "length : ${#AK}"
-            echo "prefix : ${AK:0:12}..."
-            STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.anthropic.com/v1/models \
-              -H "x-api-key: $AK" -H "anthropic-version: 2023-06-01")
-            echo "auth check (GET /v1/models): HTTP $STATUS  (200=OK, 401=キーが無効)"
-            if [ "$STATUS" != "200" ]; then
-              echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
-              exit 1
-            fi
+            echo "== 台本ソース: Gist/URL 指定あり（visual未指定なら内容をAIが演出付け） =="
+          fi
+          AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
+          echo "== ANTHROPIC_API_KEY =="
+          echo "length : ${#AK}"
+          echo "prefix : ${AK:0:12}..."
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.anthropic.com/v1/models \
+            -H "x-api-key: $AK" -H "anthropic-version: 2023-06-01")
+          echo "auth check (GET /v1/models): HTTP $STATUS  (200=OK, 401=キーが無効)"
+          if [ "$STATUS" != "200" ]; then
+            echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
+            exit 1
           fi
 
           # TTS_PROVIDER 未指定のデフォルトは voicevox（無料・青山龍星）。
