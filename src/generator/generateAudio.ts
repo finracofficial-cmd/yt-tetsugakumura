@@ -324,13 +324,22 @@ export async function generateAudio(): Promise<SyncMap> {
 
     if (ttsEnabled) {
       try {
+        // フラグメントのTTSを並列実行（ElevenLabsの同時接続上限に配慮して4並列まで）
+        const CONCURRENCY = 4;
+        const synthesized: { buffer: Buffer; ext: "mp3" | "wav" }[] = [];
+        for (let start = 0; start < fragments.length; start += CONCURRENCY) {
+          const batch = fragments.slice(start, start + CONCURRENCY);
+          const results = await Promise.all(batch.map((frag) => synthesize(frag.text)));
+          synthesized.push(...results);
+        }
+
         const wavList: string[] = [];
         timedFragments = [];
         for (let f = 0; f < fragments.length; f++) {
           const frag = fragments[f];
           const wavPath = join(tmp, `s${scene.id}-f${f}.wav`);
 
-          const { buffer, ext } = await synthesize(frag.text);
+          const { buffer, ext } = synthesized[f];
           const rawPath = join(tmp, `s${scene.id}-f${f}-raw.${ext}`);
           writeFileSync(rawPath, buffer);
           // 全フラグメントを同一フォーマットのwavに揃えて結合可能にする（必要ならテンポ加工）

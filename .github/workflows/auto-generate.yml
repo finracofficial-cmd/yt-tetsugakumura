@@ -14,7 +14,8 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    # 20分尺: 台本生成 ~25分 + TTS ~15分 + レンダリング ~40分 + 余裕
+    timeout-minutes: 170
     services:
       # TTS_PROVIDER=voicevox のときに使う無料TTSエンジン（未使用時も起動するが無害）
       voicevox:
@@ -135,8 +136,9 @@ jobs:
           sudo apt-get install -y ffmpeg
           rm -rf previews/latest
           mkdir -p previews/latest
-          ffmpeg -y -i out/video.mp4 -vf "fps=1/8,scale=960:-1" -q:v 4 previews/latest/frame-%03d.jpg
-          ffmpeg -y -i out/video.mp4 -vf scale=640:-2 -c:v libx264 -crf 34 -preset veryfast -c:a aac -b:a 64k previews/latest/preview.mp4
+          # 20分尺: フレームは15秒おき(約80枚)、preview.mp4はGitHubの100MB制限を避けて冒頭4分のみ
+          ffmpeg -y -i out/video.mp4 -vf "fps=1/15,scale=960:-1" -q:v 4 previews/latest/frame-%03d.jpg
+          ffmpeg -y -i out/video.mp4 -t 240 -vf scale=640:-2 -c:v libx264 -crf 36 -preset veryfast -c:a aac -b:a 64k previews/latest/preview.mp4
           cp src/data/script.json src/data/sync-map.json src/data/assets.json previews/latest/
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

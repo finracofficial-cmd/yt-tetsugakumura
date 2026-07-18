@@ -342,10 +342,11 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
     `[generateScript] 台本を生成中... (model=${MODEL}, topic=${topic?.trim() || "AI自動選定"})`,
   );
 
-  // 台本は長文になるため、SDKのHTTPタイムアウトを避けてストリーミングで受け取る
+  // 20分尺の台本（200+シーン × narration+reading）は10万トークン級になるため、
+  // 出力上限をモデルの限界(128K)近くまで確保しストリーミングで受け取る
   const stream = client.messages.stream({
     model: MODEL,
-    max_tokens: 32000,
+    max_tokens: 127000,
     thinking: { type: "adaptive" },
     output_config: { format: VIDEO_SCRIPT_SCHEMA },
     system: SCRIPT_SYSTEM_PROMPT,
@@ -391,6 +392,11 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
 function validateScript(script: VideoScript): void {
   if (script.scenes.length < 5) {
     throw new Error(`シーン数が少なすぎます (${script.scenes.length})`);
+  }
+  if (script.scenes.length < 150) {
+    console.warn(
+      `[generateScript] 警告: シーン数が${script.scenes.length}で20分尺の目標(200〜250)に届いていません。動画は短めになります。`,
+    );
   }
   const acts = new Set(script.scenes.map((s) => s.act));
   for (const act of [1, 2, 3, 4, 5] as const) {
