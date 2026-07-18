@@ -188,8 +188,10 @@ export const MainComposition: React.FC = () => {
                 durationInFrames={durationInFrames}
               />
             </SceneFrame>
-            {/* L1: ナレーション */}
-            {sync?.audioFile ? <Audio src={staticFile(sync.audioFile)} /> : null}
+            {/* L1: ナレーション（BGMと重ねても割れないよう少し下げる） */}
+            {sync?.audioFile ? (
+              <Audio src={staticFile(sync.audioFile)} volume={0.9} />
+            ) : null}
             {/* L4: シーン転換のSub Bass SFX */}
             {assets.sfx ? (
               <Audio src={staticFile("assets/sfx-transition.mp3")} volume={0.12} />

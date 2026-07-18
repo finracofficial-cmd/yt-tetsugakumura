@@ -7,6 +7,7 @@
   "scripts": {
     "generate": "tsx src/pipeline.ts",
     "generate:script": "tsx src/generator/generateScript.ts",
+    "load:script": "tsx src/generator/loadScript.ts",
     "generate:bgm": "tsx src/generator/generateBgm.ts",
     "generate:audio": "tsx src/generator/generateAudio.ts",
     "voice-samples": "tsx src/generator/voiceSamples.ts",

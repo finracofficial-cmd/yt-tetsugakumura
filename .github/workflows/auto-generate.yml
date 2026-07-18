@@ -4,7 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       topic:
-        description: "動画テーマ（空欄ならAIが自動選定）"
+        description: "動画テーマ（空欄ならAIが自動選定。台本Gist指定時は無視）"
+        required: false
+        default: ""
+      script_gist:
+        description: "台本JSONのGist URL/IDまたは生JSON URL（指定時はAI台本生成をスキップ）"
         required: false
         default: ""
 
@@ -46,62 +50,75 @@ jobs:
       - name: Verify API keys
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+          TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
+          SCRIPT_GIST: ${{ github.event.inputs.script_gist }}
         run: |
-          AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
-          echo "== ANTHROPIC_API_KEY =="
-          echo "length : ${#AK}"
-          echo "prefix : ${AK:0:12}..."
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.anthropic.com/v1/models \
-            -H "x-api-key: $AK" -H "anthropic-version: 2023-06-01")
-          echo "auth check (GET /v1/models): HTTP $STATUS  (200=OK, 401=キーが無効)"
-
-          OK=$(printf '%s' "$OPENAI_API_KEY" | tr -d '[:space:]')
-          echo "== OPENAI_API_KEY =="
-          echo "length : ${#OK}"
-          echo "prefix : ${OK:0:8}..."
-          OSTATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.openai.com/v1/models \
-            -H "Authorization: Bearer $OK")
-          echo "auth check (GET /v1/models): HTTP $OSTATUS  (200=OK, 401=キーが無効)"
-
-          if [ "$STATUS" != "200" ]; then
-            echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
-            exit 1
+          # 台本Gistが指定されていればAI台本生成は行わないのでAnthropicキーは検証しない
+          if [ -n "$SCRIPT_GIST" ]; then
+            echo "== 台本ソース: Gist/URL 指定あり（Claude生成をスキップ） =="
+          else
+            AK=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
+            echo "== ANTHROPIC_API_KEY =="
+            echo "length : ${#AK}"
+            echo "prefix : ${AK:0:12}..."
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.anthropic.com/v1/models \
+              -H "x-api-key: $AK" -H "anthropic-version: 2023-06-01")
+            echo "auth check (GET /v1/models): HTTP $STATUS  (200=OK, 401=キーが無効)"
+            if [ "$STATUS" != "200" ]; then
+              echo "::error::ANTHROPIC_API_KEY が無効です (HTTP $STATUS)。console.anthropic.com の API Keys で発行した sk-ant-api03-... のキーを Secrets に登録し直してください。"
+              exit 1
+            fi
           fi
 
-          EK=$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '[:space:]')
-          echo "== ELEVENLABS_API_KEY =="
-          if [ -z "$EK" ]; then
-            echo "未設定（ナレーションはOpenAI TTSにフォールバックします）"
-          else
-            echo "length : ${#EK}"
-            echo "prefix : ${EK:0:6}..."
-            ESTATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.elevenlabs.io/v1/user \
-              -H "xi-api-key: $EK")
-            echo "auth check (GET /v1/user): HTTP $ESTATUS  (200=OK, 401=キーが無効)"
+          # TTS_PROVIDER 未指定のデフォルトは voicevox（無料・青山龍星）。
+          # elevenlabs を明示指定したときだけ ElevenLabs のキー/ボイスを検証する。
+          PROVIDER="${TTS_PROVIDER:-voicevox}"
+          echo "== TTS provider: $PROVIDER =="
+          if [ "$PROVIDER" = "elevenlabs" ]; then
+            EK=$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '[:space:]')
+            if [ -z "$EK" ]; then
+              echo "::error::TTS_PROVIDER=elevenlabs ですが ELEVENLABS_API_KEY が未設定です。"
+              exit 1
+            fi
+            ESTATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.elevenlabs.io/v1/user -H "xi-api-key: $EK")
+            echo "auth check (GET /v1/user): HTTP $ESTATUS"
             if [ "$ESTATUS" != "200" ]; then
-              echo "::error::ELEVENLABS_API_KEY が無効です (HTTP $ESTATUS)。elevenlabs.io の API Keys で発行したキーを登録し直してください。"
+              echo "::error::ELEVENLABS_API_KEY が無効です (HTTP $ESTATUS)。"
               exit 1
             fi
             VOICE_ID="${ELEVENLABS_VOICE_ID:-xQpTJhLkPZnRFTV4mc3k}"
-            VSTATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://api.elevenlabs.io/v1/voices/$VOICE_ID" \
-              -H "xi-api-key: $EK")
-            echo "voice check (GET /v1/voices/$VOICE_ID): HTTP $VSTATUS  (200=OK)"
+            VSTATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://api.elevenlabs.io/v1/voices/$VOICE_ID" -H "xi-api-key: $EK")
+            echo "voice check (GET /v1/voices/$VOICE_ID): HTTP $VSTATUS"
             if [ "$VSTATUS" != "200" ]; then
-              echo "::error::ボイス $VOICE_ID がこのアカウントから使えません (HTTP $VSTATUS)。ElevenLabsのVoice Libraryでこの声のページを開き「Add to My Voices」を押してください。"
+              echo "::error::ボイス $VOICE_ID がこのアカウントから使えません (HTTP $VSTATUS)。Voice Libraryで「Add to My Voices」を押してください。"
               exit 1
             fi
           fi
 
+      # VOICEVOXエンジン（デフォルトのTTS）が起動するまで待つ
+      - name: Wait for VOICEVOX engine
+        run: |
+          for i in $(seq 1 40); do
+            curl -sf http://127.0.0.1:50021/version && echo " VOICEVOX ready" && exit 0
+            sleep 3
+          done
+          echo "::warning::VOICEVOXエンジンが起動しませんでした（推定尺にフォールバックします）"
+
       - name: Generate script & audio
-        run: npm run generate -- --topic="${{ github.event.inputs.topic }}"
+        run: |
+          if [ -n "${{ github.event.inputs.script_gist }}" ]; then
+            npm run generate -- --gist="${{ github.event.inputs.script_gist }}"
+          else
+            npm run generate -- --topic="${{ github.event.inputs.topic }}"
+          fi
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # 以下は Settings → Secrets and variables → Actions → Variables で上書き可能
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
@@ -109,6 +126,7 @@ jobs:
           OPENAI_TTS_VOICE: ${{ vars.OPENAI_TTS_VOICE }}
           OPENAI_TTS_SPEED: ${{ vars.OPENAI_TTS_SPEED }}
           VOICEVOX_SPEAKER: ${{ vars.VOICEVOX_SPEAKER }}
+          VOICEVOX_VOLUME: ${{ vars.VOICEVOX_VOLUME }}
           ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
           ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
           BGM_PROVIDER: ${{ vars.BGM_PROVIDER }}

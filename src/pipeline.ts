@@ -11,6 +11,7 @@
  */
 import { spawnSync } from "node:child_process";
 import { generateScript, resolveTopic } from "./generator/generateScript";
+import { loadScriptFromSource, resolveScriptSource } from "./generator/loadScript";
 import { generateBgm } from "./generator/generateBgm";
 import { generateAudio } from "./generator/generateAudio";
 
@@ -18,11 +19,14 @@ const OUTPUT_PATH = "out/video.mp4";
 
 async function main(): Promise<void> {
   const topic = resolveTopic();
+  const scriptSource = resolveScriptSource();
   const shouldRender =
     process.argv.includes("--render") || process.env.RENDER === "true";
 
-  // 1. 台本生成
-  const script = await generateScript(topic);
+  // 1. 台本: Gist/URL 指定があればそれを取り込み（Claude生成をスキップ）、無ければ生成
+  const script = scriptSource
+    ? await loadScriptFromSource(scriptSource)
+    : await generateScript(topic);
 
   // 2. BGM・環境音・SFXの生成（台本の bgm_direction に沿う。既存ファイルは優先）
   await generateBgm();

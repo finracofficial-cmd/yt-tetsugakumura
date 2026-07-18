@@ -44,12 +44,10 @@ import {
 
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
 /**
- * "openai" | "voicevox" | "elevenlabs"
- * 未指定時は ELEVENLABS_API_KEY があれば elevenlabs、なければ openai を自動選択。
+ * "voicevox"（デフォルト・無料・青山龍星） | "openai" | "elevenlabs"
+ * Repository Variables の TTS_PROVIDER で切り替え可能。
  */
-const TTS_PROVIDER =
-  process.env.TTS_PROVIDER ||
-  (process.env.ELEVENLABS_API_KEY?.trim() ? "elevenlabs" : "openai");
+const TTS_PROVIDER = process.env.TTS_PROVIDER || "voicevox";
 /** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "echo";
@@ -67,6 +65,8 @@ const TTS_INSTRUCTIONS =
 const VOICEVOX_URL = process.env.VOICEVOX_URL || "http://127.0.0.1:50021";
 /** デフォルトは青山龍星（ノーマル）= 深めの男性ナレーション向き */
 const VOICEVOX_SPEAKER = Number(process.env.VOICEVOX_SPEAKER || "13");
+/** VOICEVOX音量スケール（1.0が原音。少し下げて聴きやすく） */
+const VOICEVOX_VOLUME = Number(process.env.VOICEVOX_VOLUME || "0.9");
 
 /** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY の設定だけで自動有効化） */
 const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_v3";
@@ -78,12 +78,12 @@ const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_v3";
 const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "xQpTJhLkPZnRFTV4mc3k";
 
 /** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
-const PAUSE_COMMA_MS = 180;
-const PAUSE_PERIOD_MS = 400;
-const PAUSE_ELLIPSIS_MS = 800;
-/** シーン末尾の余韻: 通常 / 幕の変わり目・最終シーン */
-const SCENE_TAIL_MS = 300;
-const SCENE_TAIL_ACT_CHANGE_MS = 700;
+const PAUSE_COMMA_MS = 160;
+const PAUSE_PERIOD_MS = 320;
+const PAUSE_ELLIPSIS_MS = 700;
+/** シーン末尾の余韻: 通常 / 幕の変わり目・最終シーン（間延び防止のため短めに） */
+const SCENE_TAIL_MS = 120;
+const SCENE_TAIL_ACT_CHANGE_MS = 450;
 /** TTSスキップ時の推定: 日本語 ≒ 6.5文字/秒 × テンポ */
 const ESTIMATED_CHARS_PER_SEC = 6.5 * TTS_SPEED;
 
@@ -158,6 +158,11 @@ export async function voicevoxSpeech(
   }
   const query = (await queryRes.json()) as Record<string, unknown>;
   query.speedScale = speedScale;
+  query.volumeScale = VOICEVOX_VOLUME;
+  // フラグメント前後の無音はエンジン側で最小化し、文法ポーズはこちらで一元管理する
+  // （シーン間の「微妙な間」を防ぐ）
+  query.prePhonemeLength = 0;
+  query.postPhonemeLength = 0.02;
 
   const synthRes = await fetch(`${VOICEVOX_URL}/synthesis?speaker=${speaker}`, {
     method: "POST",
@@ -384,9 +389,14 @@ export async function generateAudio(): Promise<SyncMap> {
         // キーが設定されている＝ナレーション必須の運用なので、無音で完走せず明確に失敗させる。
         // （TTS_STRICT=false を設定した場合のみ旧来の無音フォールバックで続行）
         if ((process.env.TTS_STRICT || "true") !== "false") {
+          const hint =
+            TTS_PROVIDER === "voicevox"
+              ? "VOICEVOXエンジンが起動しているか（CIはサービスコンテナ、ローカルは50021番）を確認してください。"
+              : TTS_PROVIDER === "elevenlabs"
+                ? "(1) ELEVENLABS_API_KEY が有効か (2) ボイスを「Add to My Voices」したか (3) クレジット残量 を確認してください。"
+                : "OPENAI_API_KEY が有効か・クレジット残量を確認してください。";
           throw new Error(
-            `[generateAudio] TTSに失敗しました (provider=${TTS_PROVIDER}, scene=${scene.id}): ${message}\n` +
-              `  ElevenLabsの場合の主な原因: (1) ELEVENLABS_API_KEY が無効 (2) ボイスを「Add to My Voices」していない (3) クレジット不足`,
+            `[generateAudio] TTSに失敗しました (provider=${TTS_PROVIDER}, scene=${scene.id}): ${message}\n  ${hint}`,
           );
         }
         console.warn(
