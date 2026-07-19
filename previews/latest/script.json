@@ -1,2551 +1,2037 @@
 {
-  "theme": "推し活という現代の消費文化が、孤立した個人の所属欲求と脳の報酬系を利用し、満たされない渇きを課金で供給し続ける構造になっていること",
-  "title": "なぜ推し活は、貢ぐほど心が渇くのか【脳科学×進化心理学】",
-  "bgm_direction": "Dark minimal ambient underscore with slow evolving synth pads and sparse melancholic felt piano. Quiet, contemplative, with a faint undercurrent of longing and unease.",
+  "theme": "（Gist台本）",
+  "title": "なぜ人は1円のポイントを追いかけるのか【行動経済学×神経科学】",
+  "bgm_direction": "A slow, dark and quiet ambient score with sparse piano notes and low drones, evoking a contemplative and faintly unsettling mood.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "ライブ会場の外、夜。物販の列が、歩道を二重に折り返している。",
-      "reading": "らいぶかいじょうのそと、よる。ぶっぱんのれつが、ほどうをにじゅうにおりかえしている。",
+      "narration": "2024年度、日本の企業が1年間に発行したポイントの総額は、野村総合研究所の推計で1兆3695億円。",
+      "reading": "にせんにじゅうよねんど、にほんのきぎょうがいちねんかんにはっこうしたポイントのそうがくは、のむらそうごうけんきゅうじょのすいけいでいっちょうさんぜんろっぴゃくきゅうじゅうごおくえん。",
       "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "終わらない物販の列"
+        "type": "stat",
+        "value": "1兆3695億円",
+        "label": "年間ポイント発行総額"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "列の中ほどで、一人がスマホの残高をじっと見つめている。",
-      "reading": "れつのなかほどで、ひとりがすまほのざんだかをじっとみつめている。",
+      "narration": "国家予算でいえば、防衛省の装備品購入費に匹敵する規模の疑似通貨が、毎年、レジの前とスマホの中で発行されている。",
+      "reading": "こっかよさんでいえば、ぼうえいしょうのそうびひんこうにゅうひにひってきするきぼのぎじつうかが、まいとし、レジのまえとスマホのなかではっこうされている。",
       "visual": {
-        "type": "dialogue",
-        "line": "今月も、全部消えた"
+        "type": "figure",
+        "figure": "money",
+        "label": "国家予算級の疑似通貨"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 3,
       "act": 1,
-      "narration": "先月の給料は、そのほとんどがグッズとチケットに変わっていた。",
-      "reading": "せんげつのきゅうりょうは、そのほとんどがぐっずとちけっとにかわっていた。",
+      "narration": "その1兆円の末端を覗いてみたい。",
+      "reading": "そのいっちょうえんのまったんをのぞいてみたい。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "給料が溶けていく"
+        "type": "keyword",
+        "keyword": "1兆円の末端"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 4,
       "act": 1,
-      "narration": "それでも彼女は言う、これが生きがいなのだ、と。",
-      "reading": "それでもかのじょはいう、これがいきがいなのだ、と。",
+      "narration": "平日の夜8時、スーパーのレジ前。",
+      "reading": "へいじつのよるはちじ、スーパーのレジまえ。",
       "visual": {
-        "type": "dialogue",
-        "line": "これが幸せなんだ"
+        "type": "figure",
+        "figure": "queue",
+        "label": "スーパーのレジ前"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "開演までの3時間、彼女はSNSの通知を何度も更新し続ける。",
-      "reading": "かいえんまでのさんじかん、かのじょはえすえぬえすのつうちをなんどもこうしんしつづける。",
+      "narration": "会計は1847円。",
+      "reading": "かいけいはせんはっぴゃくよんじゅうななえん。",
       "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "反応を待ち続ける"
+        "type": "stat",
+        "value": "1847円",
+        "label": "この日の会計"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "推し。自分の人生を照らしてくれる、たった一人の存在だ。",
-      "reading": "おし。じぶんのじんせいをてらしてくれる、たったひとりのそんざいだ。",
+      "narration": "女性がスマホを開き、決済アプリを乗り継いで、ポイントを三重取りする。",
+      "reading": "じょせいがスマホをひらき、けっさいアプリをのりついで、ポイントをさんじゅうどりする。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "人生を照らす光"
+        "figure": "smartphone",
+        "label": "ポイント三重取り"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "今、この国では推し活が空前の広がりを見せている。",
-      "reading": "いま、このくにではおしかつがくうぜんのひろがりをみせている。",
+      "narration": "共通ポイントカードの提示で9ポイント。",
+      "reading": "きょうつうポイントカードのていじできゅうポイント。",
       "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "広がる推し活"
+        "type": "stat",
+        "value": "9ポイント",
+        "label": "共通ポイントカード"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 8,
       "act": 1,
-      "narration": "その市場は年々膨張し、巨大な産業へと育っている。",
-      "reading": "そのしじょうはねんねんぼうちょうし、きょだいなさんぎょうへとそだっている。",
+      "narration": "コード決済の還元で18ポイント。",
+      "reading": "コードけっさいのかんげんでじゅうはちポイント。",
       "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "巨大化する市場"
+        "type": "stat",
+        "value": "18ポイント",
+        "label": "コード決済の還元"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 9,
       "act": 1,
-      "narration": "世間はこれを、健全な趣味と呼ぶ。",
-      "reading": "せけんはこれを、けんぜんなしゅみとよぶ。",
+      "narration": "アプリのクーポンで7ポイント。",
+      "reading": "アプリのクーポンでななポイント。",
       "visual": {
         "type": "figure",
-        "figure": "applause",
-        "label": "健全な趣味"
+        "figure": "notification",
+        "label": "クーポンで7ポイント"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 10,
       "act": 1,
-      "narration": "誰かを応援することで、人は前向きになれるのだ、と。",
-      "reading": "だれかをおうえんすることで、ひとはまえむきになれるのだ、と。",
+      "narration": "合計34ポイント。",
+      "reading": "ごうけいさんじゅうよんポイント。",
       "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "前向きになれる"
+        "type": "chart",
+        "title": "ポイント三重取り",
+        "unit": "ポイント",
+        "items": [
+          {
+            "label": "カード",
+            "value": 9
+          },
+          {
+            "label": "コード決済",
+            "value": 18
+          },
+          {
+            "label": "クーポン",
+            "value": 7
+          }
+        ]
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 11,
       "act": 1,
-      "narration": "生きる活力、日々の張り合い、同じ趣味を持つ仲間。",
-      "reading": "いきるかつりょく、ひびのはりあい、おなじしゅみをもつなかま。",
+      "narration": "34円だ。",
+      "reading": "さんじゅうよえんだ。",
       "visual": {
-        "type": "list",
-        "title": "推し活の効能とされるもの",
-        "items": [
-          "生きる活力",
-          "日々の張り合い",
-          "同じ趣味の仲間"
-        ]
+        "type": "stat",
+        "value": "34円",
+        "label": "三重取りの成果"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 12,
       "act": 1,
-      "narration": "推しがいるから、明日も働ける。",
-      "reading": "おしがいるから、あしたもはたらける。",
+      "narration": "彼女はこの34円のために、今日、帰り道を一駅分変えている。",
+      "reading": "かのじょはこのさんじゅうよえんのために、きょう、かえりみちをひとえきぶんかえている。",
       "visual": {
-        "type": "dialogue",
-        "line": "推しがいるから頑張れる"
+        "type": "figure",
+        "figure": "path",
+        "label": "帰り道を一駅変える"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 13,
       "act": 1,
-      "narration": "だが、本当にそうなのだろうか。",
-      "reading": "だが、ほんとうにそうなのだろうか。",
+      "narration": "特定のスーパーがポイント5倍の日だったからだ。",
+      "reading": "とくていのスーパーがポイントごばいのひだったからだ。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "本当にそうか"
+        "type": "stat",
+        "value": "5倍",
+        "label": "ポイント倍率の日"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 14,
-      "act": 1,
-      "narration": "思い出してほしい、あの列に並んでいた彼女の、疲れた横顔を。",
-      "reading": "おもいだしてほしい、あのれつにならんでいたかのじょの、つかれたよこがおを。",
+      "act": 2,
+      "narration": "調査会社クロス・マーケティングが2025年10月に行った消費動向調査では、普段ポイントを貯めていると答えた人は81.3パーセントにのぼった。",
+      "reading": "ちょうさがいしゃクロス・マーケティングがにせんにじゅうごねんじゅうがつにおこなったしょうひどうこうちょうさでは、ふだんポイントをためているとこたえたひとははちじゅういってんさんパーセントにのぼった。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "疲れた横顔"
+        "type": "stat",
+        "value": "81.3%",
+        "label": "普段ポイントを貯める人"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 15,
-      "act": 1,
-      "narration": "これだけ貢いでいるのに、心のどこかがいつも渇いている。",
-      "reading": "これだけみついでいるのに、こころのどこかがいつもかわいている。",
+      "act": 2,
+      "narration": "もはや一部の節約家の趣味ではない。",
+      "reading": "もはやいちぶのせつやくかのしゅみではない。",
       "visual": {
-        "type": "dialogue",
-        "line": "満たされない、なぜ"
+        "type": "keyword",
+        "keyword": "一部の趣味ではない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 16,
-      "act": 1,
-      "narration": "満たしても、満たしても、翌朝にはまた同じ渇きが戻ってくる。",
-      "reading": "みたしても、みたしても、よくあさにはまたおなじかわきがもどってくる。",
+      "act": 2,
+      "narration": "10人のうち8人が参加している、国民的な経済活動である。",
+      "reading": "じゅうにんのうちはちにんがさんかしている、こくみんてきなけいざいかつどうである。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "戻ってくる渇き"
+        "type": "units",
+        "total": 10,
+        "value": 8,
+        "label": "10人に8人が参加"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 17,
-      "act": 1,
-      "narration": "そして貢ぐ金額だけが、静かに増え続けていく。",
-      "reading": "そしてみつぐきんがくだけが、しずかにふえつづけていく。",
+      "act": 2,
+      "narration": "世間はこの光景を、主婦のけなげな節約術、あるいは庶民のささやかな知恵として、微笑ましい話で済ませる。",
+      "reading": "せけんはこのこうけいを、しゅふのけなげなせつやくじゅつ、あるいはしょみんのささやかなちえとして、ほほえましいはなしですませる。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "増え続ける支出"
+        "type": "dialogue",
+        "line": "庶民のささやかな知恵だね"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 18,
-      "act": 1,
-      "narration": "奇妙なことに、使う額と幸福感は、少しも比例していない。",
-      "reading": "きみょうなことに、つかうがくとこうふくかんは、すこしもひれいしていない。",
+      "act": 2,
+      "narration": "だが、ひとつだけ引っかかることがある。",
+      "reading": "だが、ひとつだけひっかかることがある。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "比例しない幸福"
+        "type": "keyword",
+        "keyword": "ひとつだけ引っかかる"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 19,
-      "act": 1,
-      "narration": "貢ぐほど、渇く。",
-      "reading": "みつぐほど、かわく。",
+      "act": 2,
+      "narration": "ポイ活で得られる金額は、各種の調査を平均すると月にせいぜい数百円から2000円程度。",
+      "reading": "ポイかつでえられるきんがくは、かくしゅのちょうさをへいきんするとつきにせいぜいすうひゃくえんからにせんえんていど。",
       "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "貢ぐほど渇く"
+        "type": "stat",
+        "value": "月2000円",
+        "label": "ポイ活の月収上限"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 20,
-      "act": 1,
-      "narration": "推し活を批判する声は、すでにありふれている。",
-      "reading": "おしかつをひはんするこえは、すでにありふれている。",
+      "act": 2,
+      "narration": "かけている時間で割れば、時給は数百円を下回ることも珍しくない。",
+      "reading": "かけているじかんでわれば、じきゅうはすうひゃくえんをしたまわることもめずらしくない。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "批判の声"
+        "type": "stat",
+        "value": "時給数百円",
+        "label": "時間で割った実質時給"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 21,
-      "act": 1,
-      "narration": "散財だ、依存だ、搾取だ、と。",
-      "reading": "さんざいだ、いぞんだ、さくしゅだ、と。",
+      "act": 2,
+      "narration": "最低賃金の半分にも満たない労働に、なぜ人は、それも決して貧しくない人までもが、これほど熱心に人生の時間を差し出すのか。",
+      "reading": "さいていちんぎんのはんぶんにもみたないろうどうに、なぜひとは、それもけっしてまずしくないひとまでもが、これほどねっしんにじんせいのじかんをさしだすのか。",
       "visual": {
         "type": "figure",
-        "figure": "shopping",
-        "label": "散財という非難"
+        "figure": "question",
+        "label": "なぜ時間を差し出す"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 22,
-      "act": 1,
-      "narration": "だが、この動画はそこで終わらない。",
-      "reading": "だが、このどうがはそこでおわらない。",
+      "act": 2,
+      "narration": "今日はこの奇妙な取引の中身を、行動経済学と神経科学のデータから解剖してみたい。",
+      "reading": "きょうはこのきみょうなとりひきのなかみを、こうどうけいざいがくとしんけいかがくのデータからかいぼうしてみたい。",
       "visual": {
         "type": "figure",
-        "figure": "door",
-        "label": "その先へ"
+        "figure": "brain",
+        "label": "行動経済学×神経科学"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 23,
-      "act": 1,
-      "narration": "本当に不気味なのは、最も深く貢ぐ者ほど、最も満たされていないという事実だ。",
-      "reading": "ほんとうにぶきみなのは、もっともふかくみつぐものほど、もっともみたされていないというじじつだ。",
+      "act": 2,
+      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
+      "reading": "まず、だれもがさいしょにおもいつくこたえからけんしょうしよう。",
       "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "最も貢ぐ者が最も渇く"
+        "type": "keyword",
+        "keyword": "最初の答えを検証"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 24,
-      "act": 1,
-      "narration": "勝ち組に見える者も、実は勝ってなどいない。",
-      "reading": "かちぐみにみえるものも、じつはかってなどいない。",
+      "act": 2,
+      "narration": "ポイ活とは節約であり、貧しさゆえの合理的な行動だという説明だ。",
+      "reading": "ポイかつとはせつやくであり、まずしさゆえのごうりてきなこうどうだというせつめいだ。",
       "visual": {
-        "type": "figure",
-        "figure": "trophy",
-        "label": "勝者なき勝利"
+        "type": "dialogue",
+        "line": "貧しさゆえの合理的行動だ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 25,
-      "act": 1,
-      "narration": "その渇きは、偶然ではない。設計されている。",
-      "reading": "そのかわきは、ぐうぜんではない。せっけいされている。",
+      "act": 2,
+      "narration": "この説明には、最初から計算が合わない部分がある。",
+      "reading": "このせつめいには、さいしょからけいさんがあわないぶぶんがある。",
       "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "設計された渇き"
+        "type": "keyword",
+        "keyword": "計算が合わない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 26,
-      "act": 1,
-      "narration": "しかもその設計図は、企業の会議室ではなく、我々の脳の奥深くにも刻まれている。",
-      "reading": "しかもそのせっけいずは、きぎょうのかいぎしつではなく、われわれののうのおくふかくにもきざまれている。",
+      "act": 3,
+      "narration": "本当に節約が目的なら、最も合理的な行動は、ポイントを無視して最安値の店で買うことだ。",
+      "reading": "ほんとうにせつやくがもくてきなら、もっともごうりてきなこうどうは、ポイントをむしして さいやすねのみせでかうことだ。",
       "visual": {
         "type": "figure",
-        "figure": "dna",
-        "label": "脳に刻まれた図"
+        "figure": "shopping",
+        "label": "最安値の店で買う"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 27,
-      "act": 1,
-      "narration": "数十万年かけて作られた、報酬系という古い回路の中に。",
-      "reading": "すうじゅうまんねんかけてつくられた、ほうしゅうけいというふるいかいろのなかに。",
+      "act": 3,
+      "narration": "ところが実際のポイ活はしばしば逆に動く。",
+      "reading": "ところがじっさいのポイかつはしばしばぎゃくにうごく。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "報酬系という古い回路"
+        "type": "keyword",
+        "keyword": "しばしば逆に動く"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 28,
-      "act": 1,
-      "narration": "推し活は、この回路を正確に撃ち抜くように出来ている。",
-      "reading": "おしかつは、このかいろをせいかくにうちぬくようにできている。",
+      "act": 3,
+      "narration": "ポイント5倍の日に合わせて買い物の予定を組み替える。",
+      "reading": "ポイントごばいのひにあわせてかいもののよていをくみかえる。",
       "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "回路を撃ち抜く"
+        "type": "keyword",
+        "keyword": "5倍の日に予定変更"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 29,
-      "act": 1,
-      "narration": "愛を供給する装置ではない。愛の欠乏を供給し続ける装置なのだ。",
-      "reading": "あいをきょうきゅうするそうちではない。あいのけつぼうをきょうきゅうしつづけるそうちなのだ。",
+      "act": 3,
+      "narration": "あと500円買えば次のランクに上がるからと、予定になかった商品をカゴに入れる。",
+      "reading": "あとごひゃくえんかえばつぎのランクにあがるからと、よていになかったしょうひんをカゴにいれる。",
       "visual": {
-        "type": "keyword",
-        "keyword": "欠乏の供給"
+        "type": "figure",
+        "figure": "stairs",
+        "label": "次のランクへ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 30,
-      "act": 1,
-      "narration": "今日は、この静かな渇きの正体を解剖してみたい。",
-      "reading": "きょうは、このしずかなかわきのしょうたいをかいぼうしてみたい。",
+      "act": 3,
+      "narration": "期間限定ポイントが失効するからと、欲しくもないものを探して使い切る。",
+      "reading": "きかんげんていポイントがしっこうするからと、ほしくもないものをさがしてつかいきる。",
       "visual": {
         "type": "figure",
-        "figure": "thought",
-        "label": "渇きの解剖"
+        "figure": "hourglass",
+        "label": "失効前に使い切る"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 31,
-      "act": 1,
-      "narration": "舞台は、この手のひらの中の小さな画面から始まる。",
-      "reading": "ぶたいは、このてのひらのなかのちいさながめんからはじまる。",
+      "act": 3,
+      "narration": "節約のための活動が、購買の増加と行動の変更を生んでいる。",
+      "reading": "せつやくのためのかつどうが、こうばいのぞうかとこうどうのへんこうをうんでいる。",
       "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "手のひらの舞台"
+        "type": "keyword",
+        "keyword": "節約が購買を増やす"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 32,
-      "act": 1,
-      "narration": "そこでは、会ったこともない相手と、深く繋がっている感覚が生まれる。",
-      "reading": "そこでは、あったこともないあいてと、ふかくつながっているかんかくがうまれる。",
+      "act": 3,
+      "narration": "企業がポイントに年間1兆円を投じるのは慈善事業ではない。",
+      "reading": "きぎょうがポイントにねんかんいっちょうえんをとうじるのはじぜんじぎょうではない。",
       "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "疑似的な繋がり"
+        "type": "stat",
+        "value": "1兆円",
+        "label": "企業の年間ポイント投資"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 33,
-      "act": 1,
-      "narration": "一方通行のはずの関係が、なぜか双方向に感じられてしまう。",
-      "reading": "いっぽうつうこうのはずのかんけいが、なぜかそうほうこうにかんじられてしまう。",
+      "act": 3,
+      "narration": "その投資が、値引きよりも大きな売上の変化を生むと知っているからだ。",
+      "reading": "そのとうしが、ねびきよりもおおきなうりあげのへんかをうむとしっているからだ。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "一方通行の親密さ"
+        "figure": "money",
+        "label": "値引き以上の売上変化"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 34,
-      "act": 1,
-      "narration": "なぜ、脳はこの錯覚に、これほど簡単に騙されるのか。",
-      "reading": "なぜ、のうはこのさっかくに、これほどかんたんにだまされるのか。",
+      "act": 3,
+      "narration": "考えてみて欲しい。",
+      "reading": "かんがえてみてほしい。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "なぜ騙されるのか"
+        "type": "keyword",
+        "keyword": "考えてみて欲しい"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 35,
-      "act": 1,
-      "narration": "まず、この錯覚の名前から始めよう。",
-      "reading": "まず、このさっかくのなまえからはじめよう。",
+      "act": 3,
+      "narration": "100円の値引きと100ポイントの還元は、金額としては同じはずだ。",
+      "reading": "ひゃくえんのねびきとひゃくポイントのかんげんは、きんがくとしてはおなじはずだ。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "錯覚の正体"
+        "type": "comparison",
+        "left_title": "100円の値引き",
+        "right_title": "100ポイント還元",
+        "left_items": [
+          "現金が減る",
+          "金額は同じ"
+        ],
+        "right_items": [
+          "数字が増える",
+          "金額は同じ"
+        ],
+        "center_label": "＝"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 36,
-      "act": 2,
-      "narration": "1956年、二人の社会学者ホートンとウォールが、ある概念を提唱した。",
-      "reading": "せんきゅうひゃくごじゅうろくねん、ふたりのしゃかいがくしゃほーとんとうぉーるが、あるがいねんをていしょうした。",
+      "act": 3,
+      "narration": "なのに、値引きシールを求めて帰り道を一駅変える人は少ないのに、ポイント5倍の表示は人の経路を変える。",
+      "reading": "なのに、ねびきシールをもとめてかえりみちをひとえきかえるひとはすくないのに、ポイントごばいのひょうじはひとのけいろをかえる。",
       "visual": {
-        "type": "stat",
-        "value": "1956年",
-        "label": "パラソーシャル関係が提唱された年"
+        "type": "figure",
+        "figure": "path",
+        "label": "経路を変えるのはポイント"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 37,
-      "act": 2,
-      "narration": "当時、普及し始めたテレビの視聴者を観察した結果だった。",
-      "reading": "とうじ、ふきゅうしはじめたてれびのしちょうしゃをかんさつしたけっかだった。",
+      "act": 3,
+      "narration": "この非対称は、節約という言葉では説明がつかない。",
+      "reading": "このひたいしょうは、せつやくということばではせつめいがつかない。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "テレビの視聴者"
+        "type": "keyword",
+        "keyword": "説明のつかない非対称"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 38,
-      "act": 2,
-      "narration": "画面の中の司会者は、毎晩まるで友人のように語りかけてくる。",
-      "reading": "がめんのなかのしかいしゃは、まいばんまるでゆうじんのようにかたりかけてくる。",
+      "act": 3,
+      "narration": "ここまで聞くと、話の着地点は見えた気がするだろう。",
+      "reading": "ここまできくと、はなしのちゃくちてんはみえたきがするだろう。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "語りかける他人"
+        "figure": "thought",
+        "label": "着地点が見えた?"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 39,
-      "act": 2,
-      "narration": "視聴者は、会ったこともないその人物に、友情に似た感情を抱いた。",
-      "reading": "しちょうしゃは、あったこともないそのじんぶつに、ゆうじょうににたかんじょうをいだいた。",
+      "act": 3,
+      "narration": "つまりポイ活とは、お得感に釣られた不合理な浪費なのだろうと。",
+      "reading": "つまりポイかつとは、おとくかんにつられたふごうりなろうひなのだろうと。",
       "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "友情に似た感情"
+        "type": "dialogue",
+        "line": "不合理な浪費でしょ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 40,
-      "act": 2,
-      "narration": "彼らはこれをパラソーシャル関係、疑似社会的関係と名付けた。",
-      "reading": "かれらはこれをぱらそーしゃるかんけい、ぎじしゃかいてきかんけいとなづけた。",
+      "act": 3,
+      "narration": "事実、その線でポイントの罠を解説する記事はすでに多い。",
+      "reading": "じじつ、そのせんでポイントのわなをかいせつするきじはすでにおおい。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "パラソーシャル関係"
+        "figure": "screen",
+        "label": "ポイントの罠 記事"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 41,
-      "act": 2,
-      "narration": "一方的にしか情報が流れないのに、脳はそれを本物の関係と処理してしまう。",
-      "reading": "いっぽうてきにしかじょうほうがながれないのに、のうはそれをほんもののかんけいとしょりしてしまう。",
+      "act": 3,
+      "narration": "だが、この動画はそこで終わらない。",
+      "reading": "だが、このどうがはそこでおわらない。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "本物として処理する脳"
+        "type": "keyword",
+        "keyword": "そこで終わらない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 42,
-      "act": 2,
-      "narration": "なぜ、脳はこんな単純な間違いを犯すのか。",
-      "reading": "なぜ、のうはこんなたんじゅんなまちがいをおかすのか。",
+      "act": 3,
+      "narration": "本当に興味深いのは、人間の脳が、金でも商品でもない「ポイントという中間物」それ自体を追いかけるように設計されている、という発見の方だ。",
+      "reading": "ほんとうにきょうみぶかいのは、にんげんのうが、かねでもしょうひんでもない「ポイントというちゅうかんぶつ」それじたいをおいかけるようにせっけいされている、というはっけんのほうだ。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "脳の錯誤"
+        "figure": "brain",
+        "label": "中間物を追う脳"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 43,
-      "act": 2,
-      "narration": "人類学者ロビン・ダンバーは、人間の脳が安定して維持できる関係を約150人と見積もった。",
-      "reading": "じんるいがくしゃろびん・だんばーは、にんげんののうがあんていしていじできるかんけいをやくひゃくごじゅうにんとみつもった。",
+      "act": 3,
+      "narration": "人は騙されてポイントを集めているのではない。",
+      "reading": "ひとはだまされてポイントをあつめているのではない。",
       "visual": {
-        "type": "stat",
-        "value": "150人",
-        "label": "ダンバー数 脳が扱える関係の上限"
+        "type": "keyword",
+        "keyword": "騙されてはいない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 44,
-      "act": 2,
-      "narration": "これは、我々の祖先が暮らした共同体の規模とほぼ一致する。",
-      "reading": "これは、われわれのそせんがくらしたきょうどうたいのきぼとほぼいっちする。",
+      "act": 3,
+      "narration": "脳の仕様として、集めてしまうのだ。",
+      "reading": "のうのしようとして、あつめてしまうのだ。",
       "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "150人の村"
+        "type": "keyword",
+        "keyword": "脳の仕様として集める"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 45,
-      "act": 2,
-      "narration": "人類の脳は、その150人の顔を覚えるように設計されてきた。",
-      "reading": "じんるいののうは、そのひゃくごじゅうにんのかおをおぼえるようにせっけいされてきた。",
+      "act": 3,
+      "narration": "その仕様書を開いてみよう。",
+      "reading": "そのしようしょをひらいてみよう。",
       "visual": {
         "type": "figure",
-        "figure": "dna",
-        "label": "顔を覚える設計"
+        "figure": "door",
+        "label": "仕様書を開く"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 46,
       "act": 2,
-      "narration": "繰り返し顔を見る相手は、仲間だ。脳はそう判断するように出来ている。",
-      "reading": "くりかえしかおをみるあいては、なかまだ。のうはそうはんだんするようにできている。",
+      "narration": "2003年、シカゴ大学の行動科学者クリストファー・シーらが、消費者研究の専門誌に一本の論文を発表した。",
+      "reading": "にせんさんねん、シカゴだいがくのこうどうかがくしゃクリストファー・シーらが、しょうひしゃけんきゅうのせんもんしにいっぽんのろんぶんをはっぴょうした。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "見慣れた顔は仲間"
+        "type": "stat",
+        "value": "2003年",
+        "label": "シカゴ大学の論文"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 47,
       "act": 2,
-      "narration": "だが、祖先の時代に繰り返し見る顔は、必ず本物の仲間だった。",
-      "reading": "だが、そせんのじだいにくりかえしみるかおは、かならずほんもののなかまだった。",
+      "narration": "タイトルは、媒介物の最大化。",
+      "reading": "タイトルは、ばいかいぶつのさいだいか。",
       "visual": {
-        "type": "comparison",
-        "left_title": "祖先の環境",
-        "right_title": "現代の画面",
-        "left_items": [
-          "顔見知りは仲間",
-          "数十人規模",
-          "双方向"
-        ],
-        "right_items": [
-          "顔見知りは他人",
-          "数百万人",
-          "一方通行"
-        ],
-        "center_label": "≠"
+        "type": "keyword",
+        "keyword": "媒介物の最大化"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 48,
       "act": 2,
-      "narration": "画面越しに毎日顔を見る相手を、脳は仲間と誤認する。",
-      "reading": "がめんごしにまいにちかおをみるあいてを、のうはなかまとごにんする。",
+      "narration": "実験の設計はシンプルだ。",
+      "reading": "じっけんのせっけいはシンプルだ。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "仲間という誤認"
+        "figure": "thought",
+        "label": "実験の設計"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 49,
       "act": 2,
-      "narration": "これを進化的ミスマッチと呼ぶ。",
-      "reading": "これをしんかてきみすまっちとよぶ。",
+      "narration": "参加者に2つの作業のどちらかを選ばせる。",
+      "reading": "さんかしゃにふたつのさぎょうのどちらかをえらばせる。",
       "visual": {
-        "type": "keyword",
-        "keyword": "進化的ミスマッチ"
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "2つの作業を選ぶ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 50,
       "act": 2,
-      "narration": "推しへの愛着は、この誤認の上に築かれている。",
-      "reading": "おしへのあいちゃくは、このごにんのうえにきずかれている。",
+      "narration": "短くて楽な作業と、長くて疲れる作業。",
+      "reading": "みじかくてらくなさぎょうと、ながくてつかれるさぎょう。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "誤認の上の愛着"
+        "type": "comparison",
+        "left_title": "楽な作業",
+        "right_title": "疲れる作業",
+        "left_items": [
+          "短い",
+          "楽"
+        ],
+        "right_items": [
+          "長い",
+          "疲れる"
+        ],
+        "center_label": "vs"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 51,
       "act": 2,
-      "narration": "ここで、もう一つの仕掛けが加わる。",
-      "reading": "ここで、もうひとつのしかけがくわわる。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "第二の仕掛け"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 52,
-      "act": 2,
-      "narration": "1950年代、動物行動学者ティンバーゲンが、ある鳥で奇妙な現象を見つけた。",
-      "reading": "せんきゅうひゃくごじゅうねんだい、どうぶつこうどうがくしゃてぃんばーげんが、あるとりできみょうなげんしょうをみつけた。",
-      "visual": {
-        "type": "stat",
-        "value": "1950年代",
-        "label": "超正常刺激が発見された頃"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 53,
-      "act": 2,
-      "narration": "親鳥は、自分の卵よりも、模様を誇張した巨大な偽物の卵を必死に温めた。",
-      "reading": "おやどりは、じぶんのたまごよりも、もようをこちょうしたきょだいなにせもののたまごをひっしにあたためた。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "偽の卵を選ぶ親鳥"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 54,
-      "act": 2,
-      "narration": "本物を超える刺激。彼はこれを超正常刺激と呼んだ。",
-      "reading": "ほんものをこえるしげき。かれはこれをちょうせいじょうしげきとよんだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "超正常刺激"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 55,
-      "act": 2,
-      "narration": "本能は、自然界にはありえないほど強い刺激に、より強く反応してしまう。",
-      "reading": "ほんのうは、しぜんかいにはありえないほどつよいしげきに、よりつよくはんのうしてしまう。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "誇張された刺激"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 56,
-      "act": 2,
-      "narration": "推しとは、この超正常刺激の人間版だ。",
-      "reading": "おしとは、このちょうせいじょうしげきのにんげんばんだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "人間版の超正常刺激"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 57,
-      "act": 2,
-      "narration": "完璧な容姿、常に絶やさない笑顔、決して裏切らない態度。",
-      "reading": "かんぺきなようし、つねにたやさないえがお、けっしてうらぎらないたいど。",
-      "visual": {
-        "type": "list",
-        "title": "推しに施される加工",
-        "items": [
-          "完璧な容姿",
-          "絶やさぬ笑顔",
-          "裏切らぬ態度"
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 58,
-      "act": 2,
-      "narration": "現実の恋人や友人は、こんなに都合よく振る舞ってはくれない。",
-      "reading": "げんじつのこいびとやゆうじんは、こんなにつごうよくふるまってはくれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "現実は都合が悪い"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 59,
-      "act": 2,
-      "narration": "推しが放つ愛情の信号は、現実の人間関係を軽く超えている。",
-      "reading": "おしがはなつあいじょうのしんごうは、げんじつのにんげんかんけいをかるくこえている。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "現実を超える信号"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 60,
-      "act": 2,
-      "narration": "本物の関係が、色あせて見えるほどに。",
-      "reading": "ほんもののかんけいが、いろあせてみえるほどに。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "色あせる現実"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 61,
-      "act": 2,
-      "narration": "現実の恋愛より、推しの方が満たされる、と語る者は多い。",
-      "reading": "げんじつのれんあいより、おしのほうがみたされる、とかたるものはおおい。",
-      "visual": {
-        "type": "dialogue",
-        "line": "生身より満たされる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 62,
-      "act": 2,
-      "narration": "だが、その満足はなぜ、翌朝には消えているのか。",
-      "reading": "だが、そのまんぞくはなぜ、よくあさにはきえているのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "消える満足"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 63,
-      "act": 2,
-      "narration": "答えの鍵は、報酬の与えられ方にある。",
-      "reading": "こたえのかぎは、ほうしゅうのあたえられかたにある。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "報酬の与え方"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 64,
-      "act": 2,
-      "narration": "心理学者スキナーは、レバーを押すと餌が出る箱にネズミを入れた。",
-      "reading": "しんりがくしゃすきなーは、ればーをおすとえさがでるはこにねずみをいれた。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "スキナー箱"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 65,
-      "act": 2,
-      "narration": "毎回餌が出る箱より、たまにしか出ない箱の方が、ネズミは狂ったようにレバーを押し続けた。",
-      "reading": "まいかいえさがでるはこより、たまにしかでないはこのほうが、ねずみはくるったようにればーをおしつづけた。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "毎回もらえる",
-        "right_title": "たまにもらえる",
-        "left_items": [
-          "すぐ飽きる",
-          "回数少ない"
-        ],
-        "right_items": [
-          "押し続ける",
-          "依存する"
-        ],
-        "center_label": "→"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 66,
-      "act": 2,
-      "narration": "いつ報酬が来るか分からない。これを変動比率強化という。",
-      "reading": "いつほうしゅうがくるかわからない。これをへんどうひりつきょうかという。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "変動比率強化"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 67,
-      "act": 2,
-      "narration": "あらゆる報酬の与え方の中で、これが最も強力に依存を生む。",
-      "reading": "あらゆるほうしゅうのあたえかたのなかで、これがもっともきょうりょくにいぞんをうむ。",
-      "visual": {
-        "type": "figure",
-        "figure": "addiction",
-        "label": "最強の依存装置"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 68,
-      "act": 2,
-      "narration": "スロットマシンも、ソシャゲのガチャも、この原理で出来ている。",
-      "reading": "すろっとましんも、そしゃげのがちゃも、このげんりでできている。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "スロットとガチャ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 69,
-      "act": 2,
-      "narration": "そして推し活も、まったく同じ構造を持つ。",
-      "reading": "そしておしかつも、まったくおなじこうぞうをもつ。",
-      "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "同じ構造"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 70,
-      "act": 2,
-      "narration": "握手会で目が合うか、SNSでいいねが返るか、ライブで名前を呼ばれるか。",
-      "reading": "あくしゅかいでめがあうか、えすえぬえすでいいねがかえるか、らいぶでなまえをよばれるか。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "来るか来ないか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 71,
-      "act": 2,
-      "narration": "その反応は、来るか来ないか、決して予測できない。",
-      "reading": "そのはんのうは、くるかこないか、けっしてよそくできない。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "予測できない報酬"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 72,
-      "act": 2,
-      "narration": "予測できないからこそ、人は貢ぐ手を止められなくなる。",
-      "reading": "よそくできないからこそ、ひとはみつぐてをとめられなくなる。",
-      "visual": {
-        "type": "figure",
-        "figure": "addiction",
-        "label": "止められない手"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 73,
-      "act": 2,
-      "narration": "今日は自分に気づいてくれるかもしれない、と。",
-      "reading": "きょうはじぶんにきづいてくれるかもしれない、と。",
-      "visual": {
-        "type": "dialogue",
-        "line": "今日は気づいてくれるかも"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 74,
-      "act": 2,
-      "narration": "なぜ予測できない報酬が、これほど脳を掴むのか。",
-      "reading": "なぜよそくできないほうしゅうが、これほどのうをつかむのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "脳を掴む報酬"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 75,
-      "act": 2,
-      "narration": "神経科学者シュルツが、サルの脳でその答えを見つけた。",
-      "reading": "しんけいかがくしゃしゅるつが、さるののうでそのこたえをみつけた。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "シュルツの記録"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 76,
-      "act": 2,
-      "narration": "彼はドーパミンを出す神経細胞の活動を、直接記録した。",
-      "reading": "かれはどーぱみんをだすしんけいさいぼうのかつどうを、ちょくせつきろくした。",
-      "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "ドーパミン細胞"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 77,
-      "act": 2,
-      "narration": "ドーパミンは、餌をもらった瞬間ではなく、餌を予感した瞬間に最も強く出た。",
-      "reading": "どーぱみんは、えさをもらったしゅんかんではなく、えさをよかんしたしゅんかんにもっともつよくでた。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "予感で最も出る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 78,
-      "act": 2,
-      "narration": "快楽の正体は、満足ではなく期待だったのだ。",
-      "reading": "かいらくのしょうたいは、まんぞくではなくきたいだったのだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "報酬予測誤差"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 79,
-      "act": 2,
-      "narration": "そして予想通りに報酬が来ると、ドーパミンはむしろ静まる。",
-      "reading": "そしてよそうどおりにほうしゅうがくると、どーぱみんはむしろしずまる。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "手に入ると静まる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 80,
-      "act": 2,
-      "narration": "手に入れた瞬間、快楽は急速に冷めていく。",
-      "reading": "てにいれたしゅんかん、かいらくはきゅうそくにひえていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "冷めていく快楽"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 81,
-      "act": 2,
-      "narration": "我々を動かしているのは、手に入れる喜びではない。手に入るかもしれないという予感だ。",
-      "reading": "われわれをうごかしているのは、てにいれるよろこびではない。てにはいるかもしれないというよかんだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "予感が人を動かす"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 82,
-      "act": 2,
-      "narration": "だから、決して満たされないように出来ている。",
-      "reading": "だから、けっしてみたされないようにできている。",
-      "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "満たされない設計"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 83,
-      "act": 2,
-      "narration": "推しのライブが終わった翌朝の、あの虚しさを思い出してほしい。",
-      "reading": "おしのらいぶがおわったよくあさの、あのむなしさをおもいだしてほしい。",
-      "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "翌朝の虚しさ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 84,
-      "act": 2,
-      "narration": "あれほど焦がれた瞬間が過ぎると、また次のチケットを探している。",
-      "reading": "あれほどこがれたしゅんかんがすぎると、またつぎのちけっとをさがしている。",
-      "visual": {
-        "type": "dialogue",
-        "line": "また次を探してる"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 85,
-      "act": 2,
-      "narration": "貢ぐほど渇くのは、脳がそう作られているからだ。",
-      "reading": "みつぐほどかわくのは、のうがそうつくられているからだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "満たされぬ脳"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 86,
-      "act": 2,
-      "narration": "だが、なぜ人はそもそも推しを必要とするのか。",
-      "reading": "だが、なぜひとはそもそもおしをひつようとするのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "なぜ必要とするのか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 87,
-      "act": 2,
-      "narration": "心理学者バウマイスターは、人間の最も根源的な欲求の一つを名付けた。",
-      "reading": "しんりがくしゃばうまいすたーは、にんげんのもっともこんげんてきなよっきゅうのひとつをなづけた。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "根源的な欲求"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 88,
-      "act": 2,
-      "narration": "どこかに所属し、誰かと結びつきたいという欲求だ。",
-      "reading": "どこかにしょぞくし、だれかとむすびつきたいというよっきゅうだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "所属への欲求"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 89,
-      "act": 2,
-      "narration": "この欲求が満たされないとき、脳では何が起きるのか。",
-      "reading": "このよっきゅうがみたされないとき、のうではなにがおきるのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "満たされぬ欲求"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 90,
-      "act": 2,
-      "narration": "神経科学者アイゼンバーガーは、ある実験を行った。",
-      "reading": "しんけいかがくしゃあいぜんばーがーは、あるじっけんをおこなった。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "アイゼンバーガー"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 91,
-      "act": 2,
-      "narration": "被験者に、三人でボールを投げ合うゲームをさせる。",
-      "reading": "ひけんしゃに、さんにんでぼーるをなげあうげーむをさせる。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "ボール投げの実験"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 92,
-      "act": 2,
-      "narration": "途中から、他の二人が急にその人へボールを回さなくなる。",
-      "reading": "とちゅうから、ほかのふたりがきゅうにそのひとへぼーるをまわさなくなる。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "仲間外れ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 93,
-      "act": 2,
-      "narration": "仲間外れにされたとき、脳は身体の痛みと同じ領域を活性化させた。",
-      "reading": "なかまはずれにされたとき、のうはからだのいたみとおなじりょういきをかっせいかさせた。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "痛みと同じ領域"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 94,
-      "act": 2,
-      "narration": "孤立は、比喩ではなく、文字通り痛いのだ。",
-      "reading": "こりつは、ひゆではなく、もじどおりいたいのだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "tears",
-        "label": "社会的痛み"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 95,
-      "act": 2,
-      "narration": "そして現代社会は、この孤立をかつてないほど大量に生産している。",
-      "reading": "そしてげんだいしゃかいは、このこりつをかつてないほどたいりょうにせいさんしている。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "大量生産される孤立"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 96,
-      "act": 2,
-      "narration": "都市には人が溢れているのに、繋がりは驚くほど希薄だ。",
-      "reading": "としにはひとがあふれているのに、つながりはおどろくほどきはくだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "希薄な繋がり"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 97,
-      "act": 2,
-      "narration": "地域は解体し、家族は縮み、終身雇用は消えた。",
-      "reading": "ちいきはかいたいし、かぞくはちぢみ、しゅうしんこようはきえた。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "解体する共同体"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 98,
-      "act": 2,
-      "narration": "人はかつてないほど、所属する先を失っている。",
-      "reading": "ひとはかつてないほど、しょぞくするさきをうしなっている。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "所属先の喪失"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 99,
-      "act": 2,
-      "narration": "その空いた穴に、推しはぴたりと嵌まる。",
-      "reading": "そのあいたあなに、おしはぴたりとはまる。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "穴を埋める推し"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 100,
-      "act": 2,
-      "narration": "裏切らず、いつでも会えて、痛みを与えない、理想の愛着対象として。",
-      "reading": "うらぎらず、いつでもあえて、いたみをあたえない、りそうのあいちゃくたいしょうとして。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "理想の愛着対象"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 101,
-      "act": 2,
-      "narration": "所属欲求、報酬系、超正常刺激。",
-      "reading": "しょぞくよっきゅう、ほうしゅうけい、ちょうせいじょうしげき。",
-      "visual": {
-        "type": "figure",
-        "figure": "dna",
-        "label": "三つの古い回路"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 102,
-      "act": 2,
-      "narration": "推し活は、この三つの古い回路を同時に撃ち抜くように出来ている。",
-      "reading": "おしかつは、このみっつのふるいかいろをどうじにうちぬくようにできている。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "三点同時撃ち"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 103,
-      "act": 2,
-      "narration": "では、この精巧な仕掛けは、誰が作ったのか。",
-      "reading": "では、このせいこうなしかけは、だれがつくったのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "誰が作ったのか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 104,
-      "act": 2,
-      "narration": "ここから先は、脳の話ではなく、金の話になる。",
-      "reading": "ここからさきは、のうのはなしではなく、かねのはなしになる。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "金の話へ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 105,
-      "act": 2,
-      "narration": "このゲームの元締めの、帳簿を開いてみよう。",
-      "reading": "このげーむのもとじめの、ちょうぼをひらいてみよう。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "帳簿を開く"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 106,
-      "act": 3,
-      "narration": "まず確認しておきたい。悪意を持った黒幕は、どこにもいない。",
-      "reading": "まずかくにんしておきたい。あくいをもったくろまくは、どこにもいない。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "黒幕はいない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 107,
-      "act": 3,
-      "narration": "あるのは、極めて合理的なビジネスの構造だけだ。",
-      "reading": "あるのは、きわめてごうりてきなびじねすのこうぞうだけだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "合理的な構造"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 108,
-      "act": 3,
-      "narration": "企業にとって、顧客が完全に満足してしまうことは、最悪の事態だ。",
-      "reading": "きぎょうにとって、こきゃくがかんぜんにまんぞくしてしまうことは、さいあくのじたいだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "満足は最悪の事態"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 109,
-      "act": 3,
-      "narration": "満たされた客は、もう金を払わない。",
-      "reading": "みたされたきゃくは、もうかねをはらわない。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "満足＝離脱"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 110,
-      "act": 3,
-      "narration": "だから客は、満たされる直前で、止め続けられなければならない。",
-      "reading": "だからきゃくは、みたされるちょくぜんで、とめつづけられなければならない。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "満たしてはならない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 111,
-      "act": 3,
-      "narration": "愛が届きそうで、決して届かない距離。",
-      "reading": "あいがとどきそうで、けっしてとどかないきょり。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "届かない距離"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 112,
-      "act": 3,
-      "narration": "その絶妙な距離こそ、最も収益を生む。",
-      "reading": "そのぜつみょうなきょりこそ、もっともしゅうえきをうむ。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "最も稼ぐ距離"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 113,
-      "act": 3,
-      "narration": "仕組みを見てみよう。無料で近づき、有料で少しだけ距離を縮める。",
-      "reading": "しくみをみてみよう。むりょうでちかづき、ゆうりょうですこしだけきょりをちぢめる。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "課金の階段"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 114,
-      "act": 3,
-      "narration": "無料でSNSを眺め、月額で限定の投稿を買い、高額なイベントで直接の接触を買う。",
-      "reading": "むりょうでえすえぬえすをながめ、げつがくでげんていのとうこうをかい、こうがくないべんとでちょくせつのせっしょくをかう。",
+      "narration": "報酬はアイスクリームで、楽な作業ならバニラ、疲れる作業ならピスタチオがもらえる。",
+      "reading": "ほうしゅうはアイスクリームで、らくなさぎょうならバニラ、つかれるさぎょうならピスタチオがもらえる。",
       "visual": {
         "type": "table",
-        "title": "推しに近づく課金の段階",
+        "title": "作業と報酬",
         "headers": [
-          "段階",
-          "内容"
+          "作業",
+          "アイス"
         ],
         "rows": [
           [
-            "無料",
-            "SNS閲覧"
+            "楽な作業",
+            "バニラ"
           ],
           [
-            "月額",
-            "限定投稿"
-          ],
-          [
-            "高額",
-            "直接接触"
+            "疲れる作業",
+            "ピスタチオ"
           ]
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 115,
-      "act": 3,
-      "narration": "そして、その階段に頂上は用意されていない。",
-      "reading": "そして、そのかいだんにちょうじょうはよういされていない。",
+      "id": 52,
+      "act": 2,
+      "narration": "この条件では、多くの人が楽な作業を選んだ。",
+      "reading": "このじょうけんでは、おおくのひとがらくなさぎょうをえらんだ。",
       "visual": {
         "type": "figure",
-        "figure": "stairs",
-        "label": "頂上のない階段"
+        "figure": "crowd",
+        "label": "楽な作業を選択"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 116,
-      "act": 3,
-      "narration": "握手会は数秒で終わり、また次のチケットの列に戻される。",
-      "reading": "あくしゅかいはすうびょうでおわり、またつぎのちけっとのれつにもどされる。",
+      "id": 53,
+      "act": 2,
+      "narration": "当然だろう。",
+      "reading": "とうぜんだろう。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "当然だ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 54,
+      "act": 2,
+      "narration": "ところが、ここにポイントを挟むと行動が変わる。",
+      "reading": "ところが、ここにポイントをはさむとこうどうがかわる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ポイントを挟むと"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 55,
+      "act": 2,
+      "narration": "楽な作業なら60ポイント、疲れる作業なら100ポイントがもらえ、そのポイントをアイスと交換するという建て付けにしたのだ。",
+      "reading": "らくなさぎょうならろくじゅうポイント、つかれるさぎょうならひゃくポイントがもらえ、そのポイントをアイスとこうかんするというたてつけにしたのだ。",
+      "visual": {
+        "type": "chart",
+        "title": "作業別ポイント",
+        "unit": "ポイント",
+        "items": [
+          {
+            "label": "楽な作業",
+            "value": 60
+          },
+          {
+            "label": "疲れる作業",
+            "value": 100
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 56,
+      "act": 2,
+      "narration": "もらえるアイスは先ほどと何も変わらない。",
+      "reading": "もらえるアイスはさきほどとなにもかわらない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "アイスは同じ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 57,
+      "act": 2,
+      "narration": "それでも、ポイントが介在した途端、より多くの参加者が、100ポイントを求めて疲れる作業の方を選んだ。",
+      "reading": "それでも、ポイントがかいざいしたとたん、よりおおくのさんかしゃが、ひゃくポイントをもとめてつかれるさぎょうのほうをえらんだ。",
       "visual": {
         "type": "figure",
-        "figure": "queue",
-        "label": "また列へ戻る"
+        "figure": "crowd",
+        "label": "100ポイントを選ぶ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 58,
+      "act": 2,
+      "narration": "ポイントはアイスと交換した瞬間に消える、それ自体は一円の価値もない数字だ。",
+      "reading": "ポイントはアイスとこうかんしたしゅんかんにきえる、それじたいはいちえんのかちもないすうじだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "価値ゼロの数字"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 59,
+      "act": 2,
+      "narration": "なのに人は、最終的な報酬ではなく、途中の数字が大きくなる方を選んでしまう。",
+      "reading": "なのにひとは、さいしゅうてきなほうしゅうではなく、とちゅうのすうじがおおきくなるほうをえらんでしまう。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "途中の数字を選ぶ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 60,
+      "act": 2,
+      "narration": "シーらはこの性質を、媒介物の最大化と名付けた。",
+      "reading": "シーらはこのせいしつを、ばいかいぶつのさいだいかとなづけた。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "媒介物の最大化"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 61,
+      "act": 2,
+      "narration": "なぜ、ただの数字にここまでの引力があるのか。",
+      "reading": "なぜ、ただのすうじにここまでのいんりょくがあるのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "数字の引力とは"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 62,
+      "act": 2,
+      "narration": "脳の側の記録がある。",
+      "reading": "のうのがわのきろくがある。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "脳側の記録"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 63,
+      "act": 2,
+      "narration": "2001年、スタンフォード大学の神経科学者ブライアン・クヌットソンらは、金銭報酬を待つ人間の脳をfMRIで観察し、報酬系の中枢である側坐核が最も強く活動するのは、金を受け取った瞬間ではなく、受け取れそうだと分かった瞬間、つまり期待の局面であることを示した。",
+      "reading": "にせんいちねん、スタンフォードだいがくのしんけいかがくしゃブライアン・クヌットソンらは、きんせんほうしゅうをまつにんげんののうをエフエムアールアイでかんさつし、ほうしゅうけいのちゅうすうであるそくざかくがもっともつよくかつどうするのは、かねをうけとったしゅんかんではなく、うけとれそうだとわかったしゅんかん、つまりきたいのきょくめんであることをしめした。",
+      "visual": {
+        "type": "stat",
+        "value": "2001年",
+        "label": "スタンフォード大学 fMRI研究"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 64,
+      "act": 2,
+      "narration": "獲得の予感そのものが、脳にとっての報酬なのだ。",
+      "reading": "かくとくのよかんそのものが、のうにとってのほうしゅうなのだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "予感こそ報酬"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 65,
+      "act": 3,
+      "narration": "ポイントはこの仕様と完璧に噛み合う。",
+      "reading": "ポイントはこのしようとかんぺきにかみあう。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "仕様と噛み合う"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 66,
+      "act": 3,
+      "narration": "残高という数字は、まだ使っていない、これから何かと交換できるという期待の状態を、永遠に保存する装置だからだ。",
+      "reading": "ざんだかというすうじは、まだつかっていない、これからなにかとこうかんできるというきたいのじょうたいを、えいえんにほぞんするそうちだからだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "期待を保存する残高"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 67,
+      "act": 3,
+      "narration": "使えば消えるが、貯めている限り、期待は減らない。",
+      "reading": "つかえばきえるが、ためているかぎり、きたいはへらない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "貯める限り期待は減らない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 68,
+      "act": 3,
+      "narration": "ポイ活の快楽の中心が、使う瞬間ではなく貯まっていく過程にある理由が、ここにある。",
+      "reading": "ポイかつのかいらくのちゅうしんが、つかうしゅんかんではなくたまっていくかていにあるりゆうが、ここにある。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "快楽は貯まる過程に"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 69,
+      "act": 3,
+      "narration": "そして、貯める行為そのものを加速させる仕掛けも、すでに解明されている。",
+      "reading": "そして、ためるこういそのものをかそくさせるしかけも、すでにかいめいされている。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "加速させる仕掛け"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 70,
+      "act": 2,
+      "narration": "2006年、コロンビア大学のラン・キベッツらが、大学構内のカフェで現場実験を行った。",
+      "reading": "にせんろくねん、コロンビアだいがくのランキベッツらが、だいがくこうないのカフェでげんばじっけんをおこなった。",
+      "visual": {
+        "type": "stat",
+        "value": "2006年",
+        "label": "コロンビア大学 カフェ実験"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 71,
+      "act": 2,
+      "narration": "コーヒーのスタンプカードを配り、客の来店間隔を記録したのだ。",
+      "reading": "コーヒーのスタンプカードをくばり、きゃくのらいてんかんかくをきろくしたのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "来店間隔を記録"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 72,
+      "act": 2,
+      "narration": "結果、客は無料の一杯というゴールに近づくほど来店の間隔を縮めた。",
+      "reading": "けっか、きゃくはむりょうのいっぱいというゴールにちかづくほどらいてんのかんかくをちぢめた。",
+      "visual": {
+        "type": "figure",
+        "figure": "target",
+        "label": "ゴールに近づくほど加速"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 73,
+      "act": 2,
+      "narration": "最初のスタンプから最後のスタンプまでの間に、購入ペースはおよそ2割速くなっていた。",
+      "reading": "さいしょのスタンプからさいごのスタンプまでのあいだに、こうにゅうペースはおよそにわりはやくなっていた。",
+      "visual": {
+        "type": "stat",
+        "value": "約2割",
+        "label": "購入ペースの加速"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 74,
+      "act": 3,
+      "narration": "さらに巧妙なのは次の発見だ。",
+      "reading": "さらにこうみょうなのはつぎのはっけんだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "さらに巧妙な発見"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 75,
+      "act": 3,
+      "narration": "10個で満了のカードを渡す代わりに、12個満了のカードに最初から2個のスタンプを押して渡す。",
+      "reading": "じゅっこでまんりょうのカードをわたすかわりに、じゅうにこまんりょうのカードにさいしょからにこのスタンプをおしてわたす。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "10個満了カード",
+        "right_title": "12個満了+2個",
+        "left_items": [
+          "ゼロから開始",
+          "残り10個"
+        ],
+        "right_items": [
+          "2個押印済み",
+          "残り10個"
+        ],
+        "center_label": "実質同じ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 76,
+      "act": 3,
+      "narration": "必要な購入回数はどちらも10回で、完全に同じだ。",
+      "reading": "ひつようなこうにゅうかいすうはどちらもじゅっかいで、かんぜんにおなじだ。",
+      "visual": {
+        "type": "stat",
+        "value": "10回",
+        "label": "必要な購入回数は同じ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 77,
+      "act": 3,
+      "narration": "ところが、2個押されたカードを受け取った客は平均12.7日でカードを埋め、まっさらなカードの客は15.6日かかった。",
+      "reading": "ところが、にこおされたカードをうけとったきゃくはへいきんじゅうにてんななにちでカードをうめ、まっさらなカードのきゃくはじゅうごてんろくにちかかった。",
+      "visual": {
+        "type": "chart",
+        "title": "カードを埋めるまでの日数",
+        "unit": "日",
+        "items": [
+          {
+            "label": "2個押印済み",
+            "value": 12.7
+          },
+          {
+            "label": "まっさら",
+            "value": 15.6
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 78,
+      "act": 3,
+      "narration": "進んでいるという錯覚だけで、人は3日速く歩く。",
+      "reading": "すすんでいるというさっかくだけで、ひとはみっかはやくあるく。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "錯覚だけで3日速く"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 79,
+      "act": 4,
+      "narration": "あなたのスマホのアプリに表示される、あと少しで次のランクという進捗バー。",
+      "reading": "あなたのスマホのアプリにひょうじされる、あとすこしでつぎのランクというしんちょくバー。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "あと少しで次のランク"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 80,
+      "act": 4,
+      "narration": "あの棒グラフは、この実験の商業実装である。",
+      "reading": "あのぼうグラフは、このじっけんのしょうぎょうじっそうである。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "実験の商業実装"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 81,
+      "act": 3,
+      "narration": "昼休みのオフィスを想像して欲しい。",
+      "reading": "ひるやすみのオフィスをそうぞうしてほしい。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "昼休みのオフィス"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 82,
+      "act": 3,
+      "narration": "デスクで弁当を食べながら、男性がスマホの画面をタップしている。",
+      "reading": "デスクでべんとうをたべながら、だんせいがスマホのがめんをタップしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "画面をタップ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 83,
+      "act": 3,
+      "narration": "毎日引けるポイントくじだ。",
+      "reading": "まいにちひけるポイントくじだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "毎日のポイントくじ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 84,
+      "act": 3,
+      "narration": "ルーレットが回り、止まる。",
+      "reading": "ルーレットがまわり、とまる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ルーレットが止まる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 85,
+      "act": 3,
+      "narration": "1ポイント。",
+      "reading": "いちポイント。",
+      "visual": {
+        "type": "stat",
+        "value": "1ポイント",
+        "label": "今日の当たり"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 86,
+      "act": 3,
+      "narration": "1円である。",
+      "reading": "いちえんである。",
+      "visual": {
+        "type": "stat",
+        "value": "1円",
+        "label": "その価値"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 87,
+      "act": 3,
+      "narration": "彼はため息もつかずアプリを閉じ、明日もまた開く。",
+      "reading": "かれはためいきもつかずアプリをとじ、あしたもまたひらく。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "明日もまた開く"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 88,
+      "act": 3,
+      "narration": "この30秒の儀式を彼が365日続けて得るのは、数百円だ。",
+      "reading": "このさんじゅうびょうのぎしきをかれがさんびゃくろくじゅうごにちつづけてえるのは、すうひゃくえんだ。",
+      "visual": {
+        "type": "stat",
+        "value": "数百円",
+        "label": "365日続けて得る額"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 89,
+      "act": 3,
+      "narration": "だが彼の脳の側坐核にとっては、365回の期待と365回の答え合わせが供給されている。",
+      "reading": "だがかれののうのそくざかくにとっては、さんびゃくろくじゅうごかいのきたいとさんびゃくろくじゅうごかいのこたえあわせがきょうきゅうされている。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "365回の期待"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 90,
+      "act": 3,
+      "narration": "では、この取引の反対側、ポイントを発行している側の帳簿はどうなっているのか。",
+      "reading": "では、このとりひきのはんたいがわ、ポイントをはっこうしているがわのちょうぼはどうなっているのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "発行側の帳簿"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 91,
+      "act": 3,
+      "narration": "ここを開くと、ポイントの正体がもうひとつの顔を見せる。",
+      "reading": "ここをひらくと、ポイントのしょうたいがもうひとつのかおをみせる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "もうひとつの顔"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 92,
+      "act": 2,
+      "narration": "2020年、コロナ禍で経営危機に陥ったユナイテッド航空が、資金調達のために前代未聞の資料を公開した。",
+      "reading": "にせんにじゅうねん、コロナかでけいえいききにおちいったユナイテッドこうくうが、しきんちょうたつのためにぜんだいみもんのしりょうをこうかいした。",
+      "visual": {
+        "type": "stat",
+        "value": "2020年",
+        "label": "ユナイテッド航空の開示"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 93,
+      "act": 2,
+      "narration": "マイレージ事業を担保に50億ドルを借りるため、その事業の中身を開示したのだ。",
+      "reading": "マイレージじぎょうをたんぽにごじゅうおくドルをかりるため、そのじぎょうのなかみをかいじしたのだ。",
+      "visual": {
+        "type": "stat",
+        "value": "50億ドル",
+        "label": "マイレージを担保に借入"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 94,
+      "act": 2,
+      "narration": "明らかになった数字は市場を驚かせた。",
+      "reading": "あきらかになったすうじはしじょうをおどろかせた。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "市場を驚かせた数字"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 95,
+      "act": 2,
+      "narration": "マイレージ部門の査定額は219億ドル。",
+      "reading": "マイレージぶもんのさていがくはにひゃくじゅうきゅうおくドル。",
+      "visual": {
+        "type": "stat",
+        "value": "219億ドル",
+        "label": "マイレージ部門の査定額"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 96,
+      "act": 2,
+      "narration": "当時、航空事業そのものを含む会社全体の株式時価総額を上回る評価である。",
+      "reading": "とうじ、こうくうじぎょうそのものをふくむかいしゃぜんたいのかぶしきじかそうがくをうわまわるひょうかである。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "マイレージ部門",
+        "right_title": "会社全体",
+        "left_items": [
+          "査定額219億ドル",
+          "最も価値ある資産"
+        ],
+        "right_items": [
+          "株式時価総額",
+          "飛行機を含む"
+        ],
+        "center_label": ">"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 97,
+      "act": 3,
+      "narration": "飛行機を飛ばす会社の中で、最も価値のある資産は、飛行機ではなくポイントだった。",
+      "reading": "ひこうきをとばすかいしゃのなかで、もっともかちのあるしさんは、ひこうきではなくポイントだった。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "最も価値ある資産はポイント"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 98,
+      "act": 3,
+      "narration": "しかも2019年にマイルの販売で得た53億ドルのうち、約7割は乗客からではなく、クレジットカード会社などの提携企業がマイルを仕入れるために払った金だった。",
+      "reading": "しかもにせんじゅうきゅうねんにマイルのはんばいでえたごじゅうさんおくドルのうち、やくななわりはじょうきゃくからではなく、クレジットカードがいしゃなどのていけいきぎょうがマイルをしいれるためにはらったかねだった。",
+      "visual": {
+        "type": "stat",
+        "value": "約7割",
+        "label": "提携企業が払った割合"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 99,
+      "act": 3,
+      "narration": "ポイントとは、企業間で売買される立派な商品なのだ。",
+      "reading": "ポイントとは、きぎょうかんでばいばいされるりっぱなしょうひんなのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "企業間で売買される商品"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 100,
+      "act": 3,
+      "narration": "そして同社の年次報告書には、もうひとつ静かな数字が載っている。",
+      "reading": "そしてどうしゃのねんじほうこくしょには、もうひとつしずかなすうじがのっている。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "もうひとつの静かな数字"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 101,
+      "act": 3,
+      "narration": "発行されたマイルのうち、約14パーセントは一度も使われないまま消える。",
+      "reading": "はっこうされたマイルのうち、やくじゅうよんパーセントはいちどもつかわれないままきえる。",
+      "visual": {
+        "type": "units",
+        "total": 100,
+        "value": 14,
+        "label": "一度も使われず消えるマイル％"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 102,
+      "act": 3,
+      "narration": "会計の世界でブレーケージ、日本語にすれば失効益と呼ばれるこの部分は、商品もサービスも提供せずに確定する利益になる。",
+      "reading": "かいけいのせかいでブレーケージ、にほんごにすればしっこうえきとよばれるこのぶぶんは、しょうひんもサービスもていきょうせずにかくていするりえきになる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "失効益（ブレーケージ）"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 103,
+      "act": 4,
+      "narration": "あなたが貯めたまま忘れているポイントは、発行企業の決算書の中では、支払わずに済んだ負債として、静かに雪のように積もっている。",
+      "reading": "あなたがためたままわすれているポイントは、はっこうきぎょうのけっさんしょのなかでは、しはらわずにすんだふさいとして、しずかにゆきのようにつもっている。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "支払わずに済んだ負債"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 104,
+      "act": 3,
+      "narration": "ただし、これは企業が悪質だという単純な話ではない。",
+      "reading": "ただし、これはきぎょうがあくしつだというたんじゅんなはなしではない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "悪質という話ではない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 105,
+      "act": 3,
+      "narration": "企業の帳簿でポイントは負債として計上され、経理部門はその重さに頭を抱えている。",
+      "reading": "きぎょうのちょうぼでポイントはふさいとしてけいじょうされ、けいりぶもんはそのおもさにあたまをかかえている。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "負債の重さに悩む経理"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 106,
+      "act": 3,
+      "narration": "企業側にも、一度始めたポイント競争から降りられないという事情がある。",
+      "reading": "きぎょうがわにも、いちどはじめたポイントきょうそうからおりられないというじじょうがある。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "降りられない競争"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 107,
+      "act": 3,
+      "narration": "問うべきはむしろ、なぜ企業はこれほどのコストを払ってまで、現金の値引きではなくポイントを配るのかの方だ。",
+      "reading": "とうべきはむしろ、なぜきぎょうはこれほどのコストをはらってまで、げんきんのねびきではなくポイントをくばるのかのほうだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "問うべきはむしろ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 108,
+      "act": 3,
+      "narration": "答えは、ポイントが金では買えないものを買っているからだ。",
+      "reading": "こたえは、ポイントがかねではかえないものをかっているからだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "金では買えないものを買う"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 109,
+      "act": 3,
+      "narration": "あなたの来店の習慣。",
+      "reading": "あなたのらいてんのしゅうかん。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "来店の習慣"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 110,
+      "act": 3,
+      "narration": "あなたの購買データ。",
+      "reading": "あなたのこうばいデータ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "あなたの購買データ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 111,
+      "act": 3,
+      "narration": "そして、貯まった残高が惜しくて他社に移れないという、静かな囲い込み。",
+      "reading": "そして、たまったざんだかがおしくてたしゃにうつれないという、しずかなかこいこみ。",
+      "visual": {
+        "type": "figure",
+        "figure": "chains",
+        "label": "静かな囲い込み"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 112,
+      "act": 3,
+      "narration": "日本の通信会社や巨大ECが、経済圏という言葉を使って自社ポイントの陣地を競っているのは、ポイントが、顧客の生活の動線そのものを買い取る通貨だからである。",
+      "reading": "にほんのつうしんがいしゃやきょだいイーシーが、けいざいけんということばをつかってじしゃポイントのじんちをきそっているのは、ポイントが、こきゃくのせいかつのどうせんそのものをかいとるつうかだからである。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "経済圏という陣地"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 113,
+      "act": 3,
+      "narration": "では、その通貨の原資として顧客が差し出しているものは、突き詰めると何なのか。",
+      "reading": "では、そのつうかのげんしとしてこきゃくがさしだしているものは、つきつめるとなんなのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "顧客の原資とは"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 114,
+      "act": 3,
+      "narration": "一番大きな原資は、金ではない。",
+      "reading": "いちばんおおきなげんしは、かねではない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "金ではない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 115,
+      "act": 3,
+      "narration": "時間だ。",
+      "reading": "じかんだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "時間だ"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 116,
+      "act": 3,
+      "narration": "そして人間の脳は、時間の勘定が驚くほど苦手にできている。",
+      "reading": "そしてにんげんのうは、じかんのかんじょうがおどろくほどにがてにできている。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "時間の勘定が苦手な脳"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 117,
-      "act": 3,
-      "narration": "近づいたと感じた次の瞬間、また同じ距離に引き戻される。",
-      "reading": "ちかづいたとかんじたつぎのしゅんかん、またおなじきょりにひきもどされる。",
+      "act": 2,
+      "narration": "2005年、ペンシルベニア大学のギャル・ザウバーマンとジョン・リンチが、時間と金の心理的な扱いの差を一連の実験で検証した。",
+      "reading": "にせんごねん、ペンシルベニアだいがくのギャル・ザウバーマンとジョン・リンチが、じかんとかねのしんりてきなあつかいのさをいちれんのじっけんでけんしょうした。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "設計された反復"
+        "type": "stat",
+        "value": "2005年",
+        "label": "ペンシルベニア大学の実験"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 118,
-      "act": 3,
-      "narration": "グッズ、チケット、遠征、投げ銭。出費の名目は、無限に増殖する。",
-      "reading": "ぐっず、ちけっと、えんせい、なげせん。しゅっぴのめいもくは、むげんにぞうしょくする。",
+      "act": 2,
+      "narration": "人は将来の自分について、金は今と同じくらい足りないままだと予測するのに、時間だけは、来月になればもっと余裕があるはずだと考える傾向を示した。",
+      "reading": "ひとはしょうらいのじぶんについて、かねはいまとおなじくらいたりないままだとよそくするのに、じかんだけは、らいげつになればもっとよゆうがあるはずだとかんがえるけいこうをしめした。",
       "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "増殖する出費"
+        "type": "comparison",
+        "left_title": "お金の予測",
+        "right_title": "時間の予測",
+        "left_items": [
+          "将来も足りない",
+          "今と同じ"
+        ],
+        "right_items": [
+          "来月は余裕がある",
+          "増える気がする"
+        ],
+        "center_label": "≠"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 119,
-      "act": 3,
-      "narration": "そのすべてに、限定という魔法の言葉が添えられる。",
-      "reading": "そのすべてに、げんていというまほうのことばがそえられる。",
+      "act": 2,
+      "narration": "時間は常に、あとで増える気がする資源なのだ。",
+      "reading": "じかんはつねに、あとでふえるきがするしげんなのだ。",
       "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "限定という魔法"
+        "type": "keyword",
+        "keyword": "あとで増える気がする時間"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 120,
       "act": 3,
-      "narration": "今買わなければ、二度と手に入らない。",
-      "reading": "いまかわなければ、にどとてにはいらない。",
+      "narration": "だから人は、1000円の出費には身構えるのに、20分の作業は気前よく差し出す。",
+      "reading": "だからひとは、せんえんのしゅっぴにはみがまえるのに、にじゅっぷんのさぎょうはきまえよくさしだす。",
       "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "今買わねば消える"
+        "type": "comparison",
+        "left_title": "1000円の出費",
+        "right_title": "20分の作業",
+        "left_items": [
+          "身構える",
+          "惜しむ"
+        ],
+        "right_items": [
+          "気前よく",
+          "差し出す"
+        ],
+        "center_label": "vs"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 121,
       "act": 3,
-      "narration": "これは、人間の損失回避という本能を突いている。",
-      "reading": "これは、にんげんのそんしつかいひというほんのうをついている。",
+      "narration": "ポイントサイトのアンケートに20分答えて30円。",
+      "reading": "ポイントサイトのアンケートににじゅっぷんこたえてさんじゅうえん。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "損失回避を突く"
+        "type": "stat",
+        "value": "30円",
+        "label": "20分のアンケート報酬"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 122,
       "act": 3,
-      "narration": "行動経済学者カーネマンが明らかにした、人間の癖だ。",
-      "reading": "こうどうけいざいがくしゃかーねまんがあきらかにした、にんげんのくせだ。",
+      "narration": "この交換が成立し続けるのは、差し出す側の帳簿で、20分がほぼゼロ円として計上されているからである。",
+      "reading": "このこうかんがせいりつしつづけるのは、さしだすがわのちょうぼで、にじゅっぷんがほぼゼロえんとしてけいじょうされているからである。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "カーネマンの発見"
+        "type": "keyword",
+        "keyword": "時間はゼロ円計上"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 123,
       "act": 3,
-      "narration": "人は、何かを得る喜びより、失う痛みを、およそ二倍強く感じる。",
-      "reading": "ひとは、なにかをえるよろこびより、うしなういたみを、およそにばいつよくかんじる。",
+      "narration": "だが実際の相場は逆を向いている。",
+      "reading": "だがじっさいのそうばはぎゃくをむいている。",
       "visual": {
-        "type": "comparison",
-        "left_title": "得る喜び",
-        "right_title": "失う痛み",
-        "left_items": [
-          "満足は薄い",
-          "すぐ慣れる"
-        ],
-        "right_items": [
-          "痛みは強い",
-          "約二倍重い"
-        ],
-        "center_label": "＜"
+        "type": "keyword",
+        "keyword": "相場は逆を向く"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 124,
-      "act": 3,
-      "narration": "限定商法は、この損失の恐怖を金に換える技術だ。",
-      "reading": "げんていしょうほうは、このそんしつのきょうふをかねにかえるぎじゅつだ。",
+      "act": 2,
+      "narration": "2017年、当時ブリティッシュコロンビア大学のアシュリー・ウィランズらが、米国科学アカデミー紀要に発表した研究がある。",
+      "reading": "にせんじゅうななねん、とうじブリティッシュコロンビアだいがくのアシュリー・ウィランズらが、べいこくかがくアカデミーきようにはっぴょうしたけんきゅうがある。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "損失回避"
+        "type": "stat",
+        "value": "2017年",
+        "label": "ブリティッシュコロンビア大学の研究"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 125,
-      "act": 3,
-      "narration": "さらに、推しの数そのものが、たえず供給され続ける。",
-      "reading": "さらに、おしのかずそのものが、たえずきょうきゅうされつづける。",
+      "act": 2,
+      "narration": "アメリカ、カナダ、オランダ、デンマークの成人約6000人を調査したところ、家事代行や時短サービスなど、金を払って時間を買っている人は、そうでない人より人生の満足度が一貫して高かった。",
+      "reading": "アメリカ、カナダ、オランダ、デンマークのせいじんやくろくせんにんをちょうさしたところ、かじだいこうやじたんサービスなど、かねをはらってじかんをかっているひとは、そうでないひとよりじんせいのまんぞくどがいっかんしてたかかった。",
       "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "供給され続ける推し"
+        "type": "stat",
+        "value": "約6000人",
+        "label": "4か国の成人を調査"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 126,
-      "act": 3,
-      "narration": "一人が卒業しても、すぐに新しい推しが送り込まれてくる。",
-      "reading": "ひとりがそつぎょうしても、すぐにあたらしいおしがおくりこまれてくる。",
+      "act": 2,
+      "narration": "所得の水準を揃えても、この差は消えなかった。",
+      "reading": "しょとくのすいじゅんをそろえても、このさはきえなかった。",
       "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "次々と新しい推し"
+        "type": "keyword",
+        "keyword": "所得を揃えても消えない差"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 127,
       "act": 3,
-      "narration": "棚は、決して空にならないように補充され続ける。",
-      "reading": "たなは、けっしてからにならないようにほじゅうされつづける。",
+      "narration": "幸福の研究が示す望ましい取引は、金を払って時間を買うことだ。",
+      "reading": "こうふくのけんきゅうがしめすのぞましいとりひきは、かねをはらってじかんをかうことだ。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "空にならない棚"
+        "type": "keyword",
+        "keyword": "金で時間を買う"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 128,
       "act": 3,
-      "narration": "だが、なぜこれほど多くの人が、この棚に群がるのか。",
-      "reading": "だが、なぜこれほどおおくのひとが、このたなにむらがるのか。",
+      "narration": "ポイ活は、その正確な逆取引である。",
+      "reading": "ポイかつは、そのせいかくなぎゃくとりひきである。",
       "visual": {
         "type": "figure",
-        "figure": "crowd",
-        "label": "棚に群がる人々"
+        "figure": "cycle",
+        "label": "正確な逆取引"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 129,
       "act": 3,
-      "narration": "ここで、企業の帳簿の下に横たわる、もっと深い構造が見えてくる。",
-      "reading": "ここで、きぎょうのちょうぼのしたによこたわる、もっとふかいこうぞうがみえてくる。",
+      "narration": "時間を払って、金の形をした数字を買っている。",
+      "reading": "じかんをはらって、かねのかたちをしたすうじをかっている。",
       "visual": {
         "type": "figure",
-        "figure": "city",
-        "label": "より深い構造"
+        "figure": "scale",
+        "label": "時間で数字を買う"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 130,
       "act": 3,
-      "narration": "推し活が売っているのは、モノではない。孤立を埋める所属感だ。",
-      "reading": "おしかつがうっているのは、ものではない。こりつをうめるしょぞくかんだ。",
+      "narration": "なぜ脳は、この逆取引を快楽として処理してしまうのか。",
+      "reading": "なぜのうは、このぎゃくとりひきをかいらくとしてしょりしてしまうのか。",
       "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "売られる所属感"
+        "type": "keyword",
+        "keyword": "逆取引が快楽になる謎"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 131,
       "act": 3,
-      "narration": "そして、その孤立を大量に生み出しているのは、社会そのものだ。",
-      "reading": "そして、そのこりつをたいりょうにうみだしているのは、しゃかいそのものだ。",
+      "narration": "カメラを最大まで引いてみる。",
+      "reading": "カメラをさいだいまでひいてみる。",
       "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "孤立を生む社会"
+        "type": "keyword",
+        "keyword": "カメラを最大まで引く"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 132,
       "act": 3,
-      "narration": "長時間労働、不安定な雇用、擦り減る人間関係。",
-      "reading": "ちょうじかんろうどう、ふあんていなこよう、すりへるにんげんかんけい。",
+      "narration": "人類の脳は数十万年の狩猟採集の中で設計された。",
+      "reading": "じんるいののうはすうじゅうまんねんのしゅりょうさいしゅうのなかでせっけいされた。",
       "visual": {
         "type": "figure",
-        "figure": "stairs",
-        "label": "擦り減る日々"
+        "figure": "evolution",
+        "label": "数十万年の狩猟採集"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 133,
       "act": 3,
-      "narration": "人々は、生身の関係を育てる時間も気力も奪われている。",
-      "reading": "ひとびとは、なまみのかんけいをそだてるじかんもきりょくもうばわれている。",
+      "narration": "その世界では、木の実をひとつ多く集めること、獲物の痕跡を見逃さないことが、そのまま生存の確率だった。",
+      "reading": "そのせかいでは、きのみをひとつおおくあつめること、えもののこんせきをみのがさないことが、そのまませいぞんのかくりつだった。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "奪われる時間"
+        "figure": "tree",
+        "label": "木の実ひとつが生存"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 134,
       "act": 3,
-      "narration": "生身の恋愛や友情は、手間がかかり、傷つくリスクがある。",
-      "reading": "なまみのれんあいやゆうじょうは、てまがかかり、きずつくりすくがある。",
+      "narration": "目に見える獲得の機会を素通りすることに、脳は不快の信号を出すように作られている。",
+      "reading": "めにみえるかくとくのきかいをすどおりすることに、のうはふかいのしんごうをだすようにつくられている。",
       "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "傷つくリスク"
+        "type": "keyword",
+        "keyword": "獲得を逃すと不快"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 135,
       "act": 3,
-      "narration": "一方、推しは、スマホ一つで、傷つかずに愛着を得られる。",
-      "reading": "いっぽう、おしは、すまほひとつで、きずつかずにあいちゃくをえられる。",
+      "narration": "一方で、時間はどうか。",
+      "reading": "いっぽうで、じかんはどうか。",
       "visual": {
         "type": "figure",
-        "figure": "smartphone",
-        "label": "傷つかない愛着"
+        "figure": "question",
+        "label": "時間はどうか"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 136,
       "act": 3,
-      "narration": "リスクの高い生身の関係と、安全で手軽な疑似的関係。脳は、後者を選びやすい。",
-      "reading": "りすくのたかいなまみのかんけいと、あんぜんでてがるなぎじてきかんけい。のうは、こうしゃをえらびやすい。",
+      "narration": "祖先の環境に、締め切りも時給も存在しない。",
+      "reading": "そせんのかんきょうに、しめきりもじきゅうもそんざいしない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "生身の関係",
-        "right_title": "推しとの関係",
-        "left_items": [
-          "傷つく",
-          "裏切られる",
-          "手間"
-        ],
-        "right_items": [
-          "安全",
-          "裏切らない",
-          "手軽"
-        ],
-        "center_label": "vs"
+        "type": "keyword",
+        "keyword": "締め切りも時給もない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 137,
       "act": 3,
-      "narration": "傷つかない代わりに、決して満たされない檻を、自ら選ぶ。",
-      "reading": "きずつかないかわりに、けっしてみたされないおりを、みずからえらぶ。",
+      "narration": "時間を資源として計算する回路を、脳は持たないまま現代に来てしまった。",
+      "reading": "じかんをしげんとしてけいさんするかいろを、のうはもたないままげんだいにきてしまった。",
       "visual": {
-        "type": "keyword",
-        "keyword": "自己家畜化"
+        "type": "figure",
+        "figure": "city",
+        "label": "回路を持たず現代へ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 138,
-      "act": 3,
-      "narration": "これを、我々は自己家畜化と呼びたい。",
-      "reading": "これを、われわれはじこかちくかとよびたい。",
+      "act": 4,
+      "narration": "そこにスマホが現れた。",
+      "reading": "そこにスマホがあらわれた。",
       "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "自ら選ぶ檻"
+        "type": "keyword",
+        "keyword": "そこにスマホが現れた"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 139,
-      "act": 3,
-      "narration": "孤立という需要と、疑似的な所属という供給が、完璧に噛み合う。",
-      "reading": "こりつというじゅようと、ぎじてきなしょぞくというきょうきゅうが、かんぺきにかみあう。",
+      "act": 4,
+      "narration": "獲得の機会を、ルーレットとスタンプと進捗バーの形で、1日に何十回も目の前に差し出す装置だ。",
+      "reading": "かくとくのきかいを、ルーレットとスタンプとしんちょくバーのかたちで、いちにちになんじゅっかいもめのまえにさしだすそうちだ。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "噛み合う需給"
+        "figure": "notification",
+        "label": "1日何十回の獲得機会"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 140,
-      "act": 3,
-      "narration": "そこに巨大な市場が生まれるのは、必然だった。",
-      "reading": "そこにきょだいなしじょうがうまれるのは、ひつぜんだった。",
+      "act": 4,
+      "narration": "採集本能は毎回律儀に発火する。",
+      "reading": "さいしゅうほんのうはまいかいりちぎにはっかする。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "必然の市場"
+        "figure": "brain",
+        "label": "採集本能が発火"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 141,
-      "act": 3,
-      "narration": "では、この関係のもう一方、供給する側の人間はどうなのか。",
-      "reading": "では、このかんけいのもういっぽう、きょうきゅうするがわのにんげんはどうなのか。",
+      "act": 4,
+      "narration": "摘み取るのは木の実ではなく、1ポイントという数字だが、脳の古い部分にその区別はつかない。",
+      "reading": "つみとるのはきのみではなく、いちポイントというすうじだが、のうのふるいぶぶんにそのくべつはつかない。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "供給する側は"
+        "type": "comparison",
+        "left_title": "木の実",
+        "right_title": "1ポイント",
+        "left_items": [
+          "祖先の食料",
+          "採集の対象"
+        ],
+        "right_items": [
+          "ただの数字",
+          "現代の獲得"
+        ],
+        "center_label": "脳には同じ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 142,
-      "act": 3,
-      "narration": "愛情の信号を演じ続ける側もまた、この構造に縛られている。",
-      "reading": "あいじょうのしんごうをえんじつづけるがわもまた、このこうぞうにしばられている。",
+      "act": 4,
+      "narration": "ポイ活が節約合理性で説明できないのは当然だった。",
+      "reading": "ポイかつがせつやくごうりせいでせつめいできないのはとうぜんだった。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "演じ続ける側"
+        "type": "keyword",
+        "keyword": "節約では説明できない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 143,
-      "act": 3,
-      "narration": "常に笑顔を、常に完璧を要求され、擦り切れていく者は少なくない。",
-      "reading": "つねにえがおを、つねにかんぺきをようきゅうされ、すりきれていくものはすくなくない。",
+      "act": 4,
+      "narration": "あれは経済活動の顔をした、採集行動なのだ。",
+      "reading": "あれはけいざいかつどうのかおをした、さいしゅうこうどうなのだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "正体は採集行動"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 144,
+      "act": 5,
+      "narration": "ここまでの道のりを振り返ろう。",
+      "reading": "ここまでのみちのりをふりかえろう。",
       "visual": {
         "type": "figure",
-        "figure": "candle",
-        "label": "擦り切れる供給者"
+        "figure": "path",
+        "label": "道のりを振り返る"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 144,
-      "act": 3,
-      "narration": "貢ぐ側も、貢がれる側も、この構造の中では誰も勝っていない。",
-      "reading": "みつぐがわも、みつがれるがわも、このこうぞうのなかではだれもかっていない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "誰も勝っていない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 145,
-      "act": 3,
-      "narration": "悪人はどこにもいない。ただ、システムだけがある。",
-      "reading": "あくにんはどこにもいない。ただ、しすてむだけがある。",
+      "act": 5,
+      "narration": "データは、ポイ活の実収入が時給数百円に届かないこと、それでも10人に8人が参加していることを示した。",
+      "reading": "データは、ポイかつのじつしゅうにゅうがじきゅうすうひゃくえんにとどかないこと、それでもじゅうにんにはちにんがさんかしていることをしめした。",
       "visual": {
-        "type": "figure",
-        "figure": "chains",
-        "label": "システムだけがある"
+        "type": "units",
+        "total": 10,
+        "value": 8,
+        "label": "10人に8人が参加"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 146,
-      "act": 3,
-      "narration": "そのシステムは、30万年前の脳の設計図を、正確に利用している。",
-      "reading": "そのしすてむは、さんじゅうまんねんまえののうのせっけいずを、せいかくにりようしている。",
+      "act": 5,
+      "narration": "行動経済学は、人が最終的な報酬ではなく途中の数字そのものを最大化してしまう仕様と、進んでいる錯覚だけで足が速くなる仕組みを描き出した。",
+      "reading": "こうどうけいざいがくは、ひとがさいしゅうてきなほうしゅうではなくとちゅうのすうじそのものをさいだいかしてしまうしようと、すすんでいるさっかくだけであしがはやくなるしくみをえがきだした。",
       "visual": {
         "type": "figure",
-        "figure": "dna",
-        "label": "30万年前の設計図"
+        "figure": "brain",
+        "label": "途中の数字を最大化"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 147,
-      "act": 3,
-      "narration": "顔見知りが必ず仲間だった、150人の村は、もうどこにもない。",
-      "reading": "かおみしりがかならずなかまだった、ひゃくごじゅうにんのむらは、もうどこにもない。",
+      "act": 5,
+      "narration": "帳簿は、ポイントが企業間で売買される商品であり、失効という名の利益であり、顧客の生活動線を買い取る通貨であることを映した。",
+      "reading": "ちょうぼは、ポイントがきぎょうかんでばいばいされるしょうひんであり、しっこうというなのりえきであり、こきゃくのせいかつどうせんをかいとるつうかであることをうつした。",
       "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "消えた村"
+        "type": "list",
+        "title": "帳簿が映したもの",
+        "items": [
+          "企業間で売買される商品",
+          "失効という名の利益",
+          "動線を買い取る通貨"
+        ]
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 148,
-      "act": 3,
-      "narration": "あるのは、無数の他人の顔が、仲間のふりをして流れてくる画面だけだ。",
-      "reading": "あるのは、むすうのたにんのかおが、なかまのふりをしてながれてくるがめんだけだ。",
+      "act": 5,
+      "narration": "そして時間の研究は、幸福な人々が金で時間を買う一方で、ポイ活がその正反対の交換であることを突きつけた。",
+      "reading": "そしてじかんのけんきゅうは、こうふくなひとびとがかねでじかんをかういっぽうで、ポイかつがそのせいはんたいのこうかんであることをつきつけた。",
       "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "仲間のふりをする画面"
+        "type": "comparison",
+        "left_title": "幸福な人々",
+        "right_title": "ポイ活",
+        "left_items": [
+          "金で時間を買う",
+          "満足度が高い"
+        ],
+        "right_items": [
+          "時間で数字を買う",
+          "正反対の交換"
+        ],
+        "center_label": "正反対"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 149,
-      "act": 3,
-      "narration": "そして脳は、その偽物の仲間に、本物の愛着を注いでしまう。",
-      "reading": "そしてのうは、そのにせもののなかまに、ほんもののあいちゃくをそそいでしまう。",
+      "act": 5,
+      "narration": "ポイ活は、節約ではない。",
+      "reading": "ポイかつは、せつやくではない。",
       "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "偽物への本物の愛着"
+        "type": "keyword",
+        "keyword": "節約ではない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 150,
-      "act": 3,
-      "narration": "これは、道徳の話ではない。単なる、計算の話だ。",
-      "reading": "これは、どうとくのはなしではない。たんなる、けいさんのはなしだ。",
+      "act": 5,
+      "narration": "人生で最も希少で、最も取り返しのつかない資源である時間を、最も目に見えやすい資源である数字に両替する取引だ。",
+      "reading": "じんせいでもっともきしょうで、もっともとりかえしのつかないしげんであるじかんを、もっともめにみえやすいしげんであるすうじにりょうがえするとりひきだ。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "計算の話"
+        "figure": "hourglass",
+        "label": "時間を数字に両替"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 151,
-      "act": 3,
-      "narration": "孤立が深まるほど、市場は潤う。",
-      "reading": "こりつがふかまるほど、しじょうはうるおう。",
+      "act": 5,
+      "narration": "そしてその両替所の手数料は、決して表示されない。",
+      "reading": "そしてそのりょうがえじょのてすうりょうは、けっしてひょうじされない。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "孤立で潤う市場"
+        "type": "keyword",
+        "keyword": "表示されない手数料"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 152,
-      "act": 3,
-      "narration": "そして満たされない客ほど、長く金を払い続ける。",
-      "reading": "そしてみたされないきゃくほど、ながくかねをはらいつづける。",
+      "act": 5,
+      "narration": "最後に、ひとつだけ。",
+      "reading": "さいごに、ひとつだけ。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "満たされぬ客ほど払う"
+        "type": "keyword",
+        "keyword": "最後に、ひとつだけ"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 153,
-      "act": 3,
-      "narration": "推し活とは、満足ではなく、欠乏を売る商売なのだ。",
-      "reading": "おしかつとは、まんぞくではなく、けつぼうをうるしょうばいなのだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "欠乏を売る商売"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 154,
-      "act": 3,
-      "narration": "だが、と多くの人は思っただろう。",
-      "reading": "だが、とおおくのひとはおもっただろう。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "だが、と"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 155,
-      "act": 3,
-      "narration": "自分は推し活などしていない、これは他人事だ、と。",
-      "reading": "じぶんはおしかつなどしていない、これはひとごとだ、と。",
-      "visual": {
-        "type": "dialogue",
-        "line": "自分には関係ない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 156,
-      "act": 3,
-      "narration": "ここまでの話を、あなたはおそらく、遠い世界の話として聞いていた。",
-      "reading": "ここまでのはなしを、あなたはおそらく、とおいせかいのはなしとしてきいていた。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "遠い世界の話"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 157,
-      "act": 3,
-      "narration": "では、今あなたがこの動画を見ている、その手の中の画面を見てほしい。",
-      "reading": "では、いまあなたがこのどうがをみている、そのてのなかのがめんをみてほしい。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "手の中の画面"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 158,
-      "act": 3,
-      "narration": "そこで動いている回路は、あの物販の列と、まったく同じものだ。",
-      "reading": "そこでうごいているかいろは、あのぶっぱんのれつと、まったくおなじものだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "同じ回路"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 159,
-      "act": 3,
-      "narration": "規模もリスクも違う。だが、脳の中で動く仕組みは、寸分違わない。",
-      "reading": "きぼもりすくもちがう。だが、のうのなかでうごくしくみは、すんぶんたがわない。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "寸分違わぬ仕組み"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 160,
-      "act": 3,
-      "narration": "これは、あなたの話だ。",
-      "reading": "これは、あなたのはなしだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "あなたの話だ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 161,
-      "act": 4,
-      "narration": "深夜、ベッドの中で、あなたの親指は画面を上へ上へと滑らせている。",
-      "reading": "しんや、べっどのなかで、あなたのおやゆびはがめんをうえへうえへとすべらせている。",
+      "act": 5,
+      "narration": "この動画を、あなたはもしかすると倍速で見ていないだろうか。",
+      "reading": "このどうがを、あなたはもしかするとばいそくでみていないだろうか。",
       "visual": {
         "type": "figure",
         "figure": "smartphone",
-        "label": "深夜のスクロール"
+        "label": "倍速で見ていないか"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 154,
+      "act": 5,
+      "narration": "浮かせた10分で、別の動画をもう一本見るために。",
+      "reading": "うかせたじゅっぷんで、べつのどうがをもういっぽんみるために。",
+      "visual": {
+        "type": "stat",
+        "value": "10分",
+        "label": "倍速で浮かせた時間"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 155,
+      "act": 5,
+      "narration": "歩数、いいねの数、再生回数、フォロワー、そして貯まったポイント。",
+      "reading": "ほすう、いいねのかず、さいせいかいすう、フォロワー、そしてたまったポイント。",
+      "visual": {
+        "type": "list",
+        "title": "増えていく数字",
+        "items": [
+          "歩数",
+          "いいねの数",
+          "再生回数",
+          "フォロワー",
+          "ポイント"
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 156,
+      "act": 5,
+      "narration": "私たちの生活は、増えていく数字を眺める小さな窓で埋め尽くされている。",
+      "reading": "わたしたちのせいかつは、ふえていくすうじをながめるちいさなまどでうめつくされている。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "数字を眺める小さな窓"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 157,
+      "act": 5,
+      "narration": "もし今日どこかで、数字がひとつ増えるのを見て、ほんの少しだけ満たされた瞬間があったなら、それはあなたの中でも、あの採集の回路が今日も律儀に働いている証拠かもしれない。",
+      "reading": "もしきょうどこかで、すうじがひとつふえるのをみて、ほんのすこしだけみたされたしゅんかんがあったなら、それはあなたのなかでも、あのさいしゅうのかいろがきょうもりちぎにはたらいているしょうこかもしれない。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "採集の回路が今日も働く"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 158,
+      "act": 5,
+      "narration": "ちなみに、画面の下の登録ボタンを押すと、私のチャンネルの数字がひとつ増える。",
+      "reading": "ちなみに、がめんのしたのとうろくボタンをおすと、わたしのチャンネルのすうじがひとつふえる。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "登録で数字が増える"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 159,
+      "act": 5,
+      "narration": "私もまた、同じゲームの中で数字を集めているひとりだ。",
+      "reading": "わたしもまた、おなじゲームのなかですうじをあつめているひとりだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "私も数字を集めるひとり"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 160,
+      "act": 5,
+      "narration": "仕組みを知った上で、それでもこの採集に付き合う価値があると思っていただけたなら、押していただけると嬉しいです。",
+      "reading": "しくみをしったうえで、それでもこのさいしゅうにつきあうかちがあるとおもっていただけたなら、おしていただけるとうれしいです。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "それでも付き合う価値"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 161,
+      "act": 5,
+      "narration": "そんなことを、また考えすぎてしまいました。",
+      "reading": "そんなことを、またかんがえすぎてしまいました。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "また考えすぎた"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 162,
-      "act": 4,
-      "narration": "もう見るものはないのに、指だけが止まらない。",
-      "reading": "もうみるものはないのに、ゆびだけがとまらない。",
+      "act": 5,
+      "narration": "よろしければ高評価もお願いします。",
+      "reading": "よろしければこうひょうかもおねがいします。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "止まらない指"
+        "type": "keyword",
+        "keyword": "高評価もお願いします"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 163,
-      "act": 4,
-      "narration": "次のスクロールに、面白い何かがあるかもしれない。",
-      "reading": "つぎのすくろーるに、おもしろいなにかがあるかもしれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "次があるかも"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 164,
-      "act": 4,
-      "narration": "その予感が、あなたの親指を、明け方まで縛りつける。",
-      "reading": "そのよかんが、あなたのおやゆびを、あけがたまでしばりつける。",
-      "visual": {
-        "type": "figure",
-        "figure": "addiction",
-        "label": "明け方まで縛る予感"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 165,
-      "act": 4,
-      "narration": "あなたが投稿した写真に、いくついいねが付いたか。",
-      "reading": "あなたがとうこうしたしゃしんに、いくついいねがついたか。",
-      "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "いくついいねか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 166,
-      "act": 4,
-      "narration": "何度もアプリを開いては、その数字を確かめてしまう。",
-      "reading": "なんどもあぷりをひらいては、そのすうじをたしかめてしまう。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "数字を確かめる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 167,
-      "act": 4,
-      "narration": "いいねの通知は、ドーパミンを出す変動比率の報酬そのものだ。",
-      "reading": "いいねのつうちは、どーぱみんをだすへんどうひりつのほうしゅうそのものだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "addiction",
-        "label": "いいねという報酬"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 168,
-      "act": 4,
-      "narration": "あなたは今、あの物販の列と同じ回路を、無料で回されている。",
-      "reading": "あなたはいま、あのぶっぱんのれつとおなじかいろを、むりょうでまわされている。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "無料の報酬回路"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 169,
-      "act": 4,
-      "narration": "あなたがフォローする、会ったこともないインフルエンサー。",
-      "reading": "あなたがふぉろーする、あったこともないいんふるえんさー。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "会ったこともない相手"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 170,
-      "act": 4,
-      "narration": "毎日その投稿を見るうち、まるで友人のように感じてはいないか。",
-      "reading": "まいにちそのとうこうをみるうち、まるでゆうじんのようにかんじてはいないか。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "友人のように"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 171,
-      "act": 4,
-      "narration": "それこそが、パラソーシャル関係だ。",
-      "reading": "それこそが、ぱらそーしゃるかんけいだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "パラソーシャル関係"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 172,
-      "act": 4,
-      "narration": "あなたも、脳の古い誤認の上に、日々を生きている。",
-      "reading": "あなたも、のうのふるいごにんのうえに、ひびをいきている。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "誤認の上の日々"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 173,
-      "act": 4,
-      "narration": "あるいは、恋愛を思い出してみてほしい。",
-      "reading": "あるいは、れんあいをおもいだしてみてほしい。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "恋愛を思い出す"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 174,
-      "act": 4,
-      "narration": "別れたはずなのに、なぜかまた同じタイプの相手を選んでいる。",
-      "reading": "わかれたはずなのに、なぜかまたおなじたいぷのあいてをえらんでいる。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "また同じタイプ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 175,
-      "act": 4,
-      "narration": "傷つくと分かっている関係に、また引き寄せられていく。",
-      "reading": "きずつくとわかっているかんけいに、またひきよせられていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "chains",
-        "label": "引き寄せられる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 176,
-      "act": 4,
-      "narration": "予測できない相手ほど、頭から離れなくなる。",
-      "reading": "よそくできないあいてほど、あたまからはなれなくなる。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "頭から離れない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 177,
-      "act": 4,
-      "narration": "連絡が来るか来ないか分からない相手に、最も強く縛られる。",
-      "reading": "れんらくがくるかこないかわからないあいてに、もっともつよくしばられる。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "予測できない相手"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 178,
-      "act": 4,
-      "narration": "あるいは、合わないと分かっている職場を、なぜか離れられない。",
-      "reading": "あるいは、あわないとわかっているしょくばを、なぜかはなれられない。",
-      "visual": {
-        "type": "figure",
-        "figure": "stairs",
-        "label": "離れられない職場"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 179,
-      "act": 4,
-      "narration": "次こそ報われるかもしれない、という予感が、足を止めさせる。",
-      "reading": "つぎこそむくわれるかもしれない、というよかんが、あしをとめさせる。",
-      "visual": {
-        "type": "figure",
-        "figure": "mountain",
-        "label": "次こそという予感"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 180,
-      "act": 4,
-      "narration": "あなたもまた、満たされない檻を、自ら選び続けている。",
-      "reading": "あなたもまた、みたされないおりを、みずからえらびつづけている。",
-      "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "自ら選ぶ檻"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 181,
-      "act": 4,
-      "narration": "買えば満たされると思って買ったものが、翌日にはもう色あせている。",
-      "reading": "かえばみたされるとおもってかったものが、よくじつにはもういろあせている。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "色あせる買い物"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 182,
-      "act": 4,
-      "narration": "手に入れた瞬間、快楽が冷めるのは、あなたの脳でも同じだ。",
-      "reading": "てにいれたしゅんかん、かいらくがひえるのは、あなたののうでもおなじだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "冷める快楽"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 183,
-      "act": 4,
-      "narration": "だからまた、次の何かを求めて、走り続けることになる。",
-      "reading": "だからまた、つぎのなにかをもとめて、はしりつづけることになる。",
-      "visual": {
-        "type": "figure",
-        "figure": "stairs",
-        "label": "走り続ける"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 184,
-      "act": 4,
-      "narration": "心理学は、この終わらない走りを、快楽のトレッドミルと呼ぶ。",
-      "reading": "しんりがくは、このおわらないはしりを、かいらくのとれっどみるとよぶ。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "快楽のトレッドミル"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 185,
-      "act": 4,
-      "narration": "推し活をする者を、あなたは笑えるだろうか。",
-      "reading": "おしかつをするものを、あなたはわらえるだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "笑えるだろうか"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 186,
-      "act": 4,
-      "narration": "対象が推しか、いいねか、恋人か、仕事か、消費か。",
-      "reading": "たいしょうがおしか、いいねか、こいびとか、しごとか、しょうひか。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "対象が違うだけ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 187,
-      "act": 4,
-      "narration": "名前が違うだけで、動いている回路は、たった一つだ。",
-      "reading": "なまえがちがうだけで、うごいているかいろは、たったひとつだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "回路はたった一つ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 188,
-      "act": 4,
-      "narration": "そしてその根には、いつも同じ孤立が横たわっている。",
-      "reading": "そしてそのねには、いつもおなじこりつがよこたわっている。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "根にある孤立"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 189,
-      "act": 4,
-      "narration": "誰かと繋がりたい。どこかに所属したい。痛みを避けたい。",
-      "reading": "だれかとつながりたい。どこかにしょぞくしたい。いたみをさけたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "三つの願い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 190,
-      "act": 4,
-      "narration": "その願いは、あまりに人間的で、あまりに古い。",
-      "reading": "そのねがいは、あまりににんげんてきで、あまりにふるい。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "古い願い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 191,
-      "act": 4,
-      "narration": "30万年前のサバンナで、我々の祖先を生き延びさせた願いだ。",
-      "reading": "さんじゅうまんねんまえのさばんなで、われわれのそせんをいきのびさせたねがいだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "dna",
-        "label": "祖先を生かした願い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 192,
-      "act": 4,
-      "narration": "その古い願いを、現代の市場は、正確に刈り取っていく。",
-      "reading": "そのふるいねがいを、げんだいのしじょうは、せいかくにかりとっていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "刈り取られる願い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 193,
-      "act": 4,
-      "narration": "あなたが今夜も画面をスクロールするたびに、その刈り取りは続いている。",
-      "reading": "あなたがこんやもがめんをすくろーるするたびに、そのかりとりはつづいている。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "続く刈り取り"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 194,
-      "act": 4,
-      "narration": "自分は大丈夫だと思う者ほど、深く嵌まっている。",
-      "reading": "じぶんはだいじょうぶだとおもうものほど、ふかくはまっている。",
-      "visual": {
-        "type": "dialogue",
-        "line": "自分は大丈夫だ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 195,
-      "act": 4,
-      "narration": "では、我々はこの回路から、逃れられるのか。",
-      "reading": "では、われわれはこのかいろから、のがれられるのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "逃れられるのか"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 196,
-      "act": 4,
-      "narration": "おそらく、完全には逃れられない。回路そのものを消すことは出来ない。",
-      "reading": "おそらく、かんぜんにはのがれられない。かいろそのものをけすことはできない。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "消せない回路"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 197,
-      "act": 4,
-      "narration": "だが、その回路が動いていると気づくことは、出来る。",
-      "reading": "だが、そのかいろがうごいているときづくことは、できる。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "気づくことはできる"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 198,
-      "act": 4,
-      "narration": "渇きが来たとき、これは脳の古い癖だ、と一歩引いて眺めること。",
-      "reading": "かわきがきたとき、これはのうのふるいくせだ、といっぽひいてながめること。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "一歩引いて眺める"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 199,
-      "act": 4,
-      "narration": "それだけで、檻の格子が、少しだけ見えるようになる。",
-      "reading": "それだけで、おりのこうしが、すこしだけみえるようになる。",
+      "act": 5,
+      "narration": "それでは次の動画で、またお会いしましょう。",
+      "reading": "それではつぎのどうがで、またおあいしましょう。",
       "visual": {
         "type": "figure",
         "figure": "door",
-        "label": "見えてくる格子"
+        "label": "また次の動画で"
       },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 200,
-      "act": 4,
-      "narration": "檻から出られなくても、檻を見ることは出来る。",
-      "reading": "おりからでられなくても、おりをみることはできる。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "檻は見える"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 201,
-      "act": 5,
-      "narration": "振り返ってみよう。",
-      "reading": "ふりかえってみよう。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "回収する"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 202,
-      "act": 5,
-      "narration": "ホートンとウォールのパラソーシャル関係は、脳が一方通行の相手を仲間と誤認することを示した。",
-      "reading": "ほーとんとうぉーるのぱらそーしゃるかんけいは、のうがいっぽうつうこうのあいてをなかまとごにんすることをしめした。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "仲間という誤認"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 203,
-      "act": 5,
-      "narration": "スキナーとシュルツは、予測できない報酬こそが人を最も強く縛ることを明らかにした。",
-      "reading": "すきなーとしゅるつは、よそくできないほうしゅうこそがひとをもっともつよくしばることをあきらかにした。",
-      "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "予測できない報酬"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 204,
-      "act": 5,
-      "narration": "アイゼンバーガーは、孤立が身体の痛みと同じ場所を灼くことを突きつけた。",
-      "reading": "あいぜんばーがーは、こりつがからだのいたみとおなじばしょをやくことをつきつけた。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "孤立という痛み"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 205,
-      "act": 5,
-      "narration": "推し活は、愛を供給する装置ではない。",
-      "reading": "おしかつは、あいをきょうきゅうするそうちではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "欠乏を売る装置"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 206,
-      "act": 5,
-      "narration": "もっと近づけるかもしれない、という欠乏を、課金で途切れなく供給し続ける仕組みだ。",
-      "reading": "もっとちかづけるかもしれない、というけつぼうを、かきんでとぎれなくきょうきゅうしつづけるしくみだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "途切れない欠乏"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 207,
-      "act": 5,
-      "narration": "祖先が暮らした150人の村は、もうどこにもない。あるのは、満たされないように設計された、光る棚だけだ。",
-      "reading": "そせんがくらしたひゃくごじゅうにんのむらは、もうどこにもない。あるのは、みたされないようにせっけいされた、ひかるたなだけだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "光る棚だけが残る"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 208,
-      "act": 5,
-      "narration": "そんなことを、考えすぎてみました。よろしければ、チャンネル登録と高評価をお願いします。それでは、次の動画でまたお会いしましょう。",
-      "reading": "そんなことを、かんがえすぎてみました。よろしければ、ちゃんねるとうろくとこうひょうかをおねがいします。それでは、つぎのどうがでまたおあいしましょう。",
-      "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "考えすぎる葦"
-      },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     }
   ]
 }
