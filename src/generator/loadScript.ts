@@ -46,28 +46,60 @@ async function fetchRawScript(source: string): Promise<string> {
     return await res.text();
   }
 
-  // それ以外は Gist ID を抽出して Gist API から取得
+  // それ以外は Gist ID（と可能ならユーザー名）を抽出して Gist から取得
   const idMatch = src.match(/([0-9a-f]{20,})/i) || src.match(/([0-9a-f]{7,})\/?$/i);
   const gistId = idMatch ? idMatch[1] : src.replace(/\/+$/, "").split("/").pop();
   if (!gistId) throw new Error(`Gist ID を特定できませんでした: ${source}`);
+  // フルURL（https://gist.github.com/<user>/<id>）ならユーザー名も取る（rawフォールバック用）
+  const userMatch = src.match(/gist\.github\.com\/([^/]+)\/[0-9a-f]{7,}/i);
+  const gistUser = userMatch ? userMatch[1] : undefined;
 
-  const headers: Record<string, string> = { Accept: "application/vnd.github+json" };
-  const token = process.env.GITHUB_TOKEN?.replace(/\s+/g, "");
-  if (token) headers.Authorization = `Bearer ${token}`;
+  // シークレットGist用のPAT（任意）。公開Gistは認証なしで取得できる。
+  // ※ ActionsのGITHUB_TOKEN(リポジトリ用)はgistエンドポイントで403になるため使わない。
+  const token = process.env.GIST_TOKEN?.replace(/\s+/g, "");
 
-  const res = await fetch(`https://api.github.com/gists/${gistId}`, { headers });
-  if (!res.ok) throw new Error(`Gist API の取得に失敗しました (${res.status}): gist=${gistId}`);
-  const data = (await res.json()) as GistResponse;
-  const files = Object.values(data.files ?? {});
-  if (files.length === 0) throw new Error(`Gist ${gistId} にファイルがありません。`);
+  // 1) Gist API（公開Gistは認証不要。トークンがあればシークレットGistも取れる）
+  const apiHeaders: Record<string, string> = { Accept: "application/vnd.github+json" };
+  if (token) apiHeaders.Authorization = `Bearer ${token}`;
+  const apiRes = await fetch(`https://api.github.com/gists/${gistId}`, { headers: apiHeaders });
+  if (apiRes.ok) {
+    const data = (await apiRes.json()) as GistResponse;
+    const files = Object.values(data.files ?? {});
+    if (files.length === 0) throw new Error(`Gist ${gistId} にファイルがありません。`);
+    const pick =
+      files.find((f) => /script/i.test(f.filename) && /\.json$/i.test(f.filename)) ||
+      files.find((f) => /\.json$/i.test(f.filename)) ||
+      files.find((f) => f.language === "JSON") ||
+      files[0];
+    return pick.content;
+  }
 
-  // script を含む .json → 任意の .json → 先頭ファイル の優先順で選ぶ
-  const pick =
-    files.find((f) => /script/i.test(f.filename) && /\.json$/i.test(f.filename)) ||
-    files.find((f) => /\.json$/i.test(f.filename)) ||
-    files.find((f) => f.language === "JSON") ||
-    files[0];
-  return pick.content;
+  // 2) フォールバック: raw エンドポイント（単一ファイルの公開Gist向け）
+  //    ユーザー名付き（.../<user>/<id>/raw）が最も確実。無ければ id のみでも試す。
+  const rawUrls = [
+    gistUser ? `https://gist.github.com/${gistUser}/${gistId}/raw` : undefined,
+    `https://gist.github.com/${gistId}/raw`,
+  ].filter((u): u is string => Boolean(u));
+  let lastRawStatus = 0;
+  for (const url of rawUrls) {
+    const rawRes = await fetch(url, {
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      redirect: "follow",
+    });
+    lastRawStatus = rawRes.status;
+    if (rawRes.ok) return await rawRes.text();
+  }
+
+  // どちらも失敗
+  const hint =
+    apiRes.status === 404
+      ? "Gistが見つかりません。URL/IDが正しいか、シークレットGistなら GIST_TOKEN（gistスコープのPAT）を Secrets に登録してください。"
+      : apiRes.status === 403
+        ? "アクセスが拒否されました。Gistを公開(public)にするか、シークレットGistなら GIST_TOKEN を登録してください。"
+        : "Gistの取得に失敗しました。";
+  throw new Error(
+    `Gist取得に失敗 (API:${apiRes.status} / raw:${lastRawStatus}) gist=${gistId}。${hint}`,
+  );
 }
 
 /** 手書き・簡易JSONを VideoScript として正規化し、欠損を補完する */

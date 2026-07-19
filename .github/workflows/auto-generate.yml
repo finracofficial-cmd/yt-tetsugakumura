@@ -118,7 +118,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           FREESOUND_API_KEY: ${{ secrets.FREESOUND_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # シークレットGistを使う場合のみ: gistスコープのPATを Secrets に GIST_TOKEN として登録
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
           # 以下は Settings → Secrets and variables → Actions → Variables で上書き可能
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
