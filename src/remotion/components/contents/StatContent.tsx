@@ -1,6 +1,7 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { SERIF_FONT } from "../SceneFrame";
 import { CUBIC_OUT } from "../../easing";
+import { safeInterpolate } from "../../safeInterpolate";
 
 type Props = {
   value: string;
@@ -22,8 +23,8 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  // シーン全体でごく緩やかに拡大し続ける
-  const slowGrow = interpolate(frame, [36, durationInFrames], [1, 1.06], {
+  // シーン全体でごく緩やかに拡大し続ける（短尺シーンでも範囲が潰れないよう safe版）
+  const slowGrow = safeInterpolate(frame, [36, durationInFrames], [1, 1.06], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });

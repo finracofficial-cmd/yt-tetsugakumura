@@ -418,13 +418,18 @@ export async function generateAudio(): Promise<SyncMap> {
       audioFile = null;
     }
 
+    // 短すぎるシーンは映像アニメーションが破綻する（interpolateの範囲が潰れる）ため
+    // 最低尺を確保する。音声が短い場合は末尾に少し余韻（静止）が入るだけ。
+    const MIN_SCENE_FRAMES = 60; // 2秒
+    sceneDurationMs = Math.max(sceneDurationMs, Math.ceil((MIN_SCENE_FRAMES / FPS) * 1000));
+
     const segments: SyncSegment[] = groupIntoSegments(timedFragments).map((seg) => ({
       text: seg.text,
       startFrame: Math.round((seg.startMs / 1000) * FPS),
       durationInFrames: Math.max(1, Math.round((seg.durationMs / 1000) * FPS)),
     }));
 
-    const durationInFrames = Math.ceil((sceneDurationMs / 1000) * FPS);
+    const durationInFrames = Math.max(MIN_SCENE_FRAMES, Math.ceil((sceneDurationMs / 1000) * FPS));
     sceneSyncs.push({
       id: scene.id,
       startMs: globalMs,

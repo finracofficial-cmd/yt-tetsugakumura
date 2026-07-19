@@ -1,6 +1,7 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Subtitle } from "./Subtitle";
 import { Particles } from "./Particles";
+import { safeInterpolate } from "../safeInterpolate";
 import type { SyncSegment } from "../../generator/types";
 
 /**
@@ -59,7 +60,7 @@ export const SceneFrame: React.FC<Props> = ({
   const bg = BACKGROUND[conceptColor] ?? BACKGROUND["charcoal"];
   const accent = ACCENT[conceptColor] ?? ACCENT["charcoal"];
 
-  const fadeInOut = interpolate(
+  const fadeInOut = safeInterpolate(
     frame,
     [0, 12, durationInFrames - 12, durationInFrames],
     [1, 0, 0, 1],

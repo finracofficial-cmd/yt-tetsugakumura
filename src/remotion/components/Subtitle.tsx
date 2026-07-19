@@ -1,4 +1,5 @@
-import { interpolate, useCurrentFrame } from "remotion";
+import { useCurrentFrame } from "remotion";
+import { safeInterpolate } from "../safeInterpolate";
 import type { SyncSegment } from "../../generator/types";
 
 /** 字幕は本文と違い視認性最優先: 太ゴシック + 黒縁取り（参考チャンネルと同スタイル） */
@@ -98,7 +99,7 @@ export const Subtitle: React.FC<Props> = ({
   if (!active) return null;
 
   const fade = 6;
-  const opacity = interpolate(
+  const opacity = safeInterpolate(
     frame,
     [active.from, active.from + fade, active.to - fade, active.to],
     [0, 1, 1, 0],
