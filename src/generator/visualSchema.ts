@@ -12,11 +12,11 @@ export const FIGURE_KINDS_ENUM = [
   "podium", "contract", "shopping", "crown",
   "clock", "hourglass", "candle", "tree", "seed", "path", "door", "mountain",
   "smartphone", "notification", "screen", "camera", "network", "echo",
-  "dna", "atom", "evolution", "arrowUp", "arrowDown", "cycle", "crossroad", "question",
+  "dna", "atom", "evolution", "arrowUp", "arrowDown", "cycle", "crossroad", "question", "village",
 ] as const;
 
 const FIGURE_DESC =
-  "ナレーションの中心イメージに最も近い動くピクトグラム。person:個人 crowd:群衆・競争 couple:二者関係 family:家族 handshake:協力・契約 conflict:対立 isolation:孤立 hierarchy:階層・格差 queue:行列・順番待ち blame:非難 applause:賞賛 leader:扇動者と追従 bystander:傍観・同調圧力 brain:本能・報酬系 heart:恋愛・喪失 mask:建前・ペルソナ eye:視線・監視 anxiety:不安・思考のループ lightbulb:気づき addiction:依存 thought:思索 tears:悲しみ dream:夢・眠り money:金・資本 city:都市・夜 factory:労働・大量生産 scale:比較・天秤 gavel:裁き・法 stairs:徒労・出世 cage:不自由・家畜化 chains:束縛 target:目標・的 trophy:勝利 podium:順位・競争 contract:契約・規則 shopping:消費 crown:権力 clock:時間 hourglass:有限の時間 candle:儚さ・死 tree:成長・自然 seed:芽生え・可能性 path:人生の道 door:選択・機会 mountain:困難・目標 smartphone:SNS notification:通知・いいね screen:情報・メディア camera:監視 network:繋がり・アルゴリズム echo:エコーチェンバー dna:遺伝子・進化 atom:科学・物質 evolution:進化 arrowUp:上昇・成長 arrowDown:下落・衰退 cycle:循環・反復 crossroad:岐路・分岐 question:問い・謎";
+  "ナレーションの中心イメージに最も近い動くピクトグラム。person:個人 crowd:群衆・競争 couple:二者関係 family:家族 handshake:協力・契約 conflict:対立 isolation:孤立 hierarchy:階層・格差 queue:行列・順番待ち blame:非難 applause:賞賛 leader:扇動者と追従 bystander:傍観・同調圧力 brain:本能・報酬系 heart:恋愛・喪失 mask:建前・ペルソナ eye:視線・監視 anxiety:不安・思考のループ lightbulb:気づき addiction:依存 thought:思索 tears:悲しみ dream:夢・眠り money:金・資本 city:都市・夜 factory:労働・大量生産 scale:比較・天秤 gavel:裁き・法 stairs:徒労・出世 cage:不自由・家畜化 chains:束縛 target:目標・的 trophy:勝利 podium:順位・競争 contract:契約・規則 shopping:消費 crown:権力 clock:時間 hourglass:有限の時間 candle:儚さ・死 tree:成長・自然 seed:芽生え・可能性 path:人生の道 door:選択・機会 mountain:困難・目標 smartphone:SNS notification:通知・いいね screen:情報・メディア camera:監視 network:繋がり・アルゴリズム echo:エコーチェンバー dna:遺伝子・進化 atom:科学・物質 evolution:進化 arrowUp:上昇・成長 arrowDown:下落・衰退 cycle:循環・反復 crossroad:岐路・分岐 question:問い・謎 village:村・地方・共同体・郷愁（明トーン向けの情景）";
 
 /** visual プロパティの値（description + anyOf の10型） */
 export const VISUAL_SCHEMA = {
@@ -71,16 +71,19 @@ export const VISUAL_SCHEMA = {
           items: {
             type: "object",
             properties: {
-              label: { type: "string", description: "項目名（2〜8文字）" },
+              label: { type: "string", description: "項目名（2〜10文字）" },
               value: { type: "number" },
             },
             required: ["label", "value"],
             additionalProperties: false,
           },
-          description: "2〜6本の棒",
+          description: "2〜6本の横棒",
         },
+        subtitle: { type: "string", description: "出典・調査名の注記（例: 「青森県『県外へ転出した理由』調査」。無ければ空文字）" },
+        highlight: { type: "integer", description: "強調する項目のindex(0始まり)。話の核心の項目をアンバー色で強調する。強調不要なら-1" },
+        annotation: { type: "string", description: "下部の注釈ボックス。「説明 + 数値」形式（例: 「進学で出た若者は 46.4% ≒ 2人に1人」）。無ければ空文字" },
       },
-      required: ["type", "title", "unit", "items"],
+      required: ["type", "title", "unit", "items", "subtitle", "highlight", "annotation"],
       additionalProperties: false,
     },
     {
@@ -160,6 +163,7 @@ export const VISUAL_SCHEMA = {
 
 export const CONCEPT_COLOR_SCHEMA = {
   type: "string",
-  enum: ["dark-navy", "charcoal", "pitch-black"],
-  description: "シーンの背景トーン（情景=dark-navy データ=charcoal 断定・結び=pitch-black）",
+  enum: ["dark-navy", "charcoal", "pitch-black", "daylight", "dusk", "warm"],
+  description:
+    "シーンの背景トーン。暗: dark-navy(思索) charcoal(データ) pitch-black(断定・結び) / 明: daylight(昼の情景・日常) dusk(夕暮れ・郷愁) warm(人の営み・回想)。明トーンを全体の2〜3割混ぜて画面に呼吸を作る。第1幕の情景や人の暮らしの描写は明トーンが効果的",
 } as const;

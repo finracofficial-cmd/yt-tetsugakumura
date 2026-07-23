@@ -65,7 +65,7 @@ export const UnitsContent: React.FC<Props> = ({ total, value, label }) => {
         <div style={{ opacity: titleIn, display: "flex", alignItems: "baseline", gap: 14 }}>
           <span
             style={{
-              color: "rgba(240, 238, 230, 0.97)",
+              color: "var(--ink, rgba(240, 238, 230, 0.97))",
               fontFamily: SERIF_FONT,
               fontSize: 120,
               fontWeight: 700,
@@ -75,7 +75,7 @@ export const UnitsContent: React.FC<Props> = ({ total, value, label }) => {
           >
             {counted}
           </span>
-          <span style={{ color: "rgba(200, 200, 195, 0.65)", fontFamily: SERIF_FONT, fontSize: 44 }}>
+          <span style={{ color: "var(--ink-soft, rgba(200, 200, 195, 0.65))", fontFamily: SERIF_FONT, fontSize: 44 }}>
             / {safeTotal}
           </span>
         </div>
@@ -133,7 +133,7 @@ export const UnitsContent: React.FC<Props> = ({ total, value, label }) => {
         <div
           style={{
             opacity: titleIn,
-            color: "rgba(215, 215, 210, 0.88)",
+            color: "var(--ink-soft, rgba(215, 215, 210, 0.88))",
             fontFamily: SERIF_FONT,
             fontSize: 36,
             letterSpacing: "0.14em",

@@ -1,112 +1,76 @@
 {
-  "theme": "サンプル台本（パイプライン実行時に上書きされます）",
-  "title": "なぜ我々は動画を自動生成するのか【怠惰×工学】",
+  "theme": "検証",
+  "title": "新表現の検証",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "深夜2時。モニターの光だけが部屋を照らしている。男はまだ、動画を編集している。だが、本当にそれは人間の仕事なのだろうか。",
+      "narration": "どこにでもある、静かな村だった。",
       "visual": {
-        "type": "dialogue",
-        "line": "まだ終わらない"
+        "type": "figure",
+        "figure": "village",
+        "label": "ふるさと"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 2,
-      "act": 2,
-      "narration": "人間の集中力には限界がある。認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
+      "act": 1,
+      "narration": "夕暮れには、誰もが家に帰った。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "釣り合わない天秤"
+        "figure": "crowd",
+        "label": "終わらない椅子取りゲーム"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 3,
       "act": 2,
-      "narration": "出生率は1.04から0.99へ、そして0.96へと細り続けている。",
+      "narration": "若者たちが地元を出た理由は、仕事だけではなかった。",
       "visual": {
-        "type": "line",
-        "title": "出生率の推移（概念図）",
-        "unit": "",
-        "points": [
+        "type": "chart",
+        "title": "なぜ地元を出た?",
+        "subtitle": "青森県「県外へ転出した理由」調査 — 就職で地元を出た若者",
+        "unit": "%",
+        "items": [
           {
-            "label": "2022",
-            "value": 1.04
+            "label": "県外に働きたい職場があった",
+            "value": 45.1
           },
           {
-            "label": "2023",
-            "value": 0.99
+            "label": "親元を離れて暮らしたかった",
+            "value": 35.2
           },
           {
-            "label": "2024",
-            "value": 0.96
+            "label": "都会で暮らしたかった",
+            "value": 35.2
+          },
+          {
+            "label": "仕事以外に楽しめる機会",
+            "value": 32.4
           }
-        ]
+        ],
+        "highlight": 1,
+        "annotation": "進学で地元を出た若者は「親元を離れたい」 46.4% ≒ 2人に1人"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 4,
       "act": 3,
-      "narration": "100人の村が、次の世代には96人の村になり、その次はさらに細る。",
+      "narration": "暖かい記憶ほど、あとから重くなる。",
       "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 96,
-        "label": "次の世代に残る人口"
+        "type": "stat",
+        "value": "46.4%",
+        "label": "親元を離れたかった若者"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 5,
-      "act": 3,
-      "narration": "人間と機械では、得意なことがまるで違う。判断と創造は人間に、反復と精密は機械に。",
-      "visual": {
-        "type": "table",
-        "title": "自動化の三段階",
-        "headers": [
-          "段階",
-          "主体",
-          "人間の役割"
-        ],
-        "rows": [
-          [
-            "道具化",
-            "人間",
-            "全工程"
-          ],
-          [
-            "半自動化",
-            "人間+機械",
-            "判断のみ"
-          ],
-          [
-            "自律化",
-            "機械",
-            "監督のみ"
-          ]
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 6,
-      "act": 4,
-      "narration": "これは遠い世界の話ではない。この動画もまた、その最終段階によって組み立てられている。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "終わらない椅子取りゲーム"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 7,
       "act": 5,
-      "narration": "そんなことを、考えすぎてみました。よろしければ、チャンネル登録を。",
+      "narration": "そんなことを、考えすぎてみました。",
       "visual": {
         "type": "keyword",
         "keyword": "考えすぎる"

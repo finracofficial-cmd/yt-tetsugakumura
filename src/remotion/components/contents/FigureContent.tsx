@@ -90,7 +90,7 @@ export const FigureContent: React.FC<Props> = ({ figure, label }) => {
                 style={{
                   opacity: chIn,
                   transform: `translateY(${(1 - chIn) * 18}px)`,
-                  color: "rgba(238, 238, 232, 0.92)",
+                  color: "var(--ink, rgba(238, 238, 232, 0.92))",
                   fontFamily: SERIF_FONT,
                   fontSize: 46,
                   fontWeight: 500,

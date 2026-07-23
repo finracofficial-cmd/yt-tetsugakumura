@@ -65,7 +65,7 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
         style={{
           opacity: valueOpacity,
           transform: `scale(${valueScale * slowGrow})`,
-          color: "rgba(240, 238, 228, 0.96)",
+          color: "var(--ink, rgba(240, 238, 228, 0.96))",
           fontFamily: SERIF_FONT,
           fontSize: value.length > 6 ? 150 : 200,
           fontWeight: 600,
@@ -81,7 +81,7 @@ export const StatContent: React.FC<Props> = ({ value, label, durationInFrames })
           opacity: labelOpacity,
           transform: `translateY(${labelY}px)`,
           marginTop: 36,
-          color: "rgba(220, 220, 214, 0.85)",
+          color: "var(--ink-soft, rgba(220, 220, 214, 0.85))",
           fontFamily: SERIF_FONT,
           fontSize: 44,
           letterSpacing: "0.12em",

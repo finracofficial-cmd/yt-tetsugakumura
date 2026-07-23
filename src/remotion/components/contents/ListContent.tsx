@@ -28,7 +28,7 @@ export const ListContent: React.FC<Props> = ({ title, items }) => {
         <div
           style={{
             opacity: titleOpacity,
-            color: "rgba(240, 238, 230, 0.95)",
+            color: "var(--ink, rgba(240, 238, 230, 0.95))",
             fontFamily: SERIF_FONT,
             fontSize: 60,
             fontWeight: 600,
@@ -79,7 +79,7 @@ export const ListContent: React.FC<Props> = ({ title, items }) => {
                 />
                 <div
                   style={{
-                    color: "rgba(235, 235, 229, 0.93)",
+                    color: "var(--ink, rgba(235, 235, 229, 0.93))",
                     fontFamily: SERIF_FONT,
                     fontSize: 52,
                     fontWeight: 500,

@@ -146,7 +146,7 @@ export const KeywordContent: React.FC<Props> = ({
         <div
           style={{
             display: "flex",
-            color: "rgba(238, 238, 232, 0.94)",
+            color: "var(--ink, rgba(238, 238, 232, 0.94))",
             fontFamily: SERIF_FONT,
             fontSize,
             fontWeight: 500,

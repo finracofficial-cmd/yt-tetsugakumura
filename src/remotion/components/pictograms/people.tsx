@@ -78,6 +78,31 @@ export const peoplePictos: PictoTable = {
             <div style={{ width: 10, height: 30, backgroundColor: WOOD }} />
           </div>
         </div>
+        {/* シーン後半: 中央と人々を結ぶ関係線が浮かび上がる（段階演出） */}
+        {t > 3.6 &&
+          Array.from({ length: N }).map((_, i) => {
+            const angle = (i / N) * Math.PI * 2 + t * 0.5;
+            const dx = Math.cos(angle) * 300;
+            const dy = Math.sin(angle) * 110 - 40;
+            const len = Math.hypot(dx, dy);
+            const deg = (Math.atan2(dy, dx) * 180) / Math.PI;
+            const lineIn = Math.min(1, Math.max(0, (t - 3.6 - i * 0.15) / 0.8));
+            if (lineIn <= 0) return null;
+            return (
+              <div
+                key={`line-${i}`}
+                style={{
+                  position: "absolute",
+                  left: 450,
+                  top: 250,
+                  width: len * lineIn,
+                  borderTop: "2px dashed rgba(255,255,255,0.35)",
+                  transformOrigin: "left center",
+                  transform: `rotate(${deg}deg)`,
+                }}
+              />
+            );
+          })}
         {Array.from({ length: N }).map((_, i) => {
           const angle = (i / N) * Math.PI * 2 + t * 0.5;
           const x = 450 + Math.cos(angle) * 300;

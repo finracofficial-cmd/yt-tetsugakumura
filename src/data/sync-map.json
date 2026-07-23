@@ -1,144 +1,79 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 1394,
+  "totalDurationInFrames": 462,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 10121,
-      "durationInFrames": 304,
+      "durationMs": 2518,
+      "durationInFrames": 76,
       "audioFile": null,
       "segments": [
         {
-          "text": "深夜2時。",
+          "text": "どこにでもある、静かな村だった。",
           "startFrame": 0,
-          "durationInFrames": 21
-        },
-        {
-          "text": "モニターの光だけが部屋を照らしている。",
-          "startFrame": 31,
-          "durationInFrames": 80
-        },
-        {
-          "text": "男はまだ、動画を編集している。",
-          "startFrame": 120,
-          "durationInFrames": 68
-        },
-        {
-          "text": "だが、本当にそれは人間の仕事なのだろうか。",
-          "startFrame": 197,
-          "durationInFrames": 93
+          "durationInFrames": 72
         }
       ]
     },
     {
       "id": 2,
-      "startMs": 10121,
-      "startFrame": 304,
-      "durationMs": 6753,
-      "durationInFrames": 203,
+      "startMs": 2518,
+      "startFrame": 76,
+      "durationMs": 2708,
+      "durationInFrames": 82,
       "audioFile": null,
       "segments": [
         {
-          "text": "人間の集中力には限界がある。",
+          "text": "夕暮れには、誰もが家に帰った。",
           "startFrame": 0,
-          "durationInFrames": 59
-        },
-        {
-          "text": "認知資源は有限であり、反復作業はそれを静かに削り取っていく。",
-          "startFrame": 68,
-          "durationInFrames": 131
+          "durationInFrames": 68
         }
       ]
     },
     {
       "id": 3,
-      "startMs": 16874,
-      "startFrame": 506,
-      "durationMs": 5226,
-      "durationInFrames": 157,
+      "startMs": 5226,
+      "startFrame": 157,
+      "durationMs": 4106,
+      "durationInFrames": 124,
       "audioFile": null,
       "segments": [
         {
-          "text": "出生率は1.04から0.99へ、そして0.96へと細り続けている。",
+          "text": "若者たちが地元を出た理由は、仕事だけではなかった。",
           "startFrame": 0,
-          "durationInFrames": 143
+          "durationInFrames": 110
         }
       ]
     },
     {
       "id": 4,
-      "startMs": 22100,
-      "startFrame": 663,
-      "durationMs": 5056,
-      "durationInFrames": 152,
+      "startMs": 9332,
+      "startFrame": 280,
+      "durationMs": 2988,
+      "durationInFrames": 90,
       "audioFile": null,
       "segments": [
         {
-          "text": "100人の村が、次の世代には96人の村になり、その次はさらに細る。",
+          "text": "暖かい記憶ほど、あとから重くなる。",
           "startFrame": 0,
-          "durationInFrames": 148
+          "durationInFrames": 76
         }
       ]
     },
     {
       "id": 5,
-      "startMs": 27156,
-      "startFrame": 815,
-      "durationMs": 6685,
-      "durationInFrames": 201,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "人間と機械では、得意なことがまるで違う。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        },
-        {
-          "text": "判断と創造は人間に、反復と精密は機械に。",
-          "startFrame": 98,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "startMs": 33841,
-      "startFrame": 1015,
-      "durationMs": 6804,
-      "durationInFrames": 205,
-      "audioFile": null,
-      "segments": [
-        {
-          "text": "これは遠い世界の話ではない。",
-          "startFrame": 0,
-          "durationInFrames": 59
-        },
-        {
-          "text": "この動画もまた、その最終段階によって組み立てられている。",
-          "startFrame": 68,
-          "durationInFrames": 122
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "startMs": 40645,
-      "startFrame": 1219,
-      "durationMs": 5706,
-      "durationInFrames": 172,
+      "startMs": 12320,
+      "startFrame": 370,
+      "durationMs": 2988,
+      "durationInFrames": 90,
       "audioFile": null,
       "segments": [
         {
           "text": "そんなことを、考えすぎてみました。",
           "startFrame": 0,
           "durationInFrames": 76
-        },
-        {
-          "text": "よろしければ、チャンネル登録を。",
-          "startFrame": 86,
-          "durationInFrames": 72
         }
       ]
     }

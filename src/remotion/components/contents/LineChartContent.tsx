@@ -115,8 +115,8 @@ export const LineChartContent: React.FC<Props> = ({ title, unit, points }) => {
         <div style={{ position: "relative", width: W, height: H }}>
           <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
             {/* 軸 */}
-            <line x1={PAD_X - 20} y1={H - PAD_Y + 14} x2={W - PAD_X + 30} y2={H - PAD_Y + 14} stroke="rgba(255,255,255,0.25)" strokeWidth={1.5} />
-            <line x1={PAD_X - 20} y1={PAD_Y - 20} x2={PAD_X - 20} y2={H - PAD_Y + 14} stroke="rgba(255,255,255,0.18)" strokeWidth={1.5} />
+            <line x1={PAD_X - 20} y1={H - PAD_Y + 14} x2={W - PAD_X + 30} y2={H - PAD_Y + 14} stroke="var(--ink-line, rgba(255,255,255,0.25))" strokeWidth={1.5} />
+            <line x1={PAD_X - 20} y1={PAD_Y - 20} x2={PAD_X - 20} y2={H - PAD_Y + 14} stroke="var(--ink-line, rgba(255,255,255,0.18))" strokeWidth={1.5} />
             {/* 初期値の破線（基準線） */}
             <line
               x1={PAD_X - 10}
@@ -210,7 +210,7 @@ export const LineChartContent: React.FC<Props> = ({ title, unit, points }) => {
                     width: 180,
                     textAlign: "center",
                     opacity: pop,
-                    color: "rgba(210, 210, 205, 0.8)",
+                    color: "var(--ink-soft, rgba(210, 210, 205, 0.8))",
                     fontFamily: SERIF_FONT,
                     fontSize: 28,
                     letterSpacing: "0.05em",
@@ -227,7 +227,7 @@ export const LineChartContent: React.FC<Props> = ({ title, unit, points }) => {
         <div
           style={{
             opacity: titleIn,
-            color: "rgba(215, 215, 210, 0.85)",
+            color: "var(--ink-soft, rgba(215, 215, 210, 0.85))",
             fontFamily: SERIF_FONT,
             fontSize: 34,
             letterSpacing: "0.14em",

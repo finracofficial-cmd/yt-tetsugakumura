@@ -4,7 +4,13 @@
  * Remotion 側は両方を import して動画を組み立てる。
  */
 
-export type ConceptColor = "dark-navy" | "charcoal" | "pitch-black";
+export type ConceptColor =
+  | "dark-navy"
+  | "charcoal"
+  | "pitch-black"
+  | "daylight" // 明るい昼空。情景描写・日常・導入に
+  | "dusk" // 夕暮れのグラデーション。郷愁・物語的な場面に
+  | "warm"; // 暖色の薄明かり。人の営み・回想に
 
 /** 黄金の5幕構成における幕番号 */
 export type Act = 1 | 2 | 3 | 4 | 5;
@@ -79,7 +85,9 @@ export type FigureKind =
   | "arrowDown"
   | "cycle"
   | "crossroad"
-  | "question";
+  | "question"
+  // 情景
+  | "village";
 
 /**
  * シーンの画面構成の型。台本AIがナレーション内容に応じて選択する。
@@ -104,6 +112,12 @@ export type Visual =
       title: string;
       unit: string;
       items: { label: string; value: number }[];
+      /** 出典・調査名などの注記（タイトル下に小さく表示） */
+      subtitle?: string;
+      /** 強調する項目のindex（アンバー色+太字表示。省略時は強調なし） */
+      highlight?: number;
+      /** 下部の注釈ボックス（「46.4% ≒ 2人に1人」のような補足。省略可） */
+      annotation?: string;
     }
   | {
       type: "line";

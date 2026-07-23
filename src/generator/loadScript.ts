@@ -133,10 +133,11 @@ export function normalizeScript(raw: unknown): VideoScript {
       narration: sc.narration,
       reading: typeof sc.reading === "string" ? sc.reading : undefined,
       visual: sc.visual as Scene["visual"],
-      concept_color:
-        sc.concept_color === "dark-navy" || sc.concept_color === "charcoal" || sc.concept_color === "pitch-black"
-          ? sc.concept_color
-          : "charcoal",
+      concept_color: (["dark-navy", "charcoal", "pitch-black", "daylight", "dusk", "warm"] as const).includes(
+        sc.concept_color as Scene["concept_color"],
+      )
+        ? (sc.concept_color as Scene["concept_color"])
+        : "charcoal",
     };
   });
 

@@ -44,10 +44,13 @@ import {
 
 // 環境変数はGitHub Actionsから空文字で渡ることがあるため || でデフォルトに落とす
 /**
- * "voicevox"（デフォルト・無料・青山龍星） | "openai" | "elevenlabs"
- * Repository Variables の TTS_PROVIDER で切り替え可能。
+ * "elevenlabs" | "voicevox" | "openai"
+ * 既定: ELEVENLABS_API_KEY があれば elevenlabs（v3 × DAISUKE）、なければ voicevox（青山龍星）。
+ * Repository Variables の TTS_PROVIDER で明示切り替えも可能。
  */
-const TTS_PROVIDER = process.env.TTS_PROVIDER || "voicevox";
+const TTS_PROVIDER =
+  process.env.TTS_PROVIDER ||
+  (process.env.ELEVENLABS_API_KEY?.trim() ? "elevenlabs" : "voicevox");
 /** 正式採用: gpt-4o-mini-tts × echo（話し方指示が効く4o系 + 落ち着いた男性声） */
 const TTS_MODEL = process.env.OPENAI_TTS_MODEL || "gpt-4o-mini-tts";
 const TTS_VOICE = process.env.OPENAI_TTS_VOICE || "echo";

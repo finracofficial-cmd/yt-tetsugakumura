@@ -72,12 +72,14 @@ jobs:
             exit 1
           fi
 
-          # TTS_PROVIDER 未指定のデフォルトは voicevox（無料・青山龍星）。
-          # elevenlabs を明示指定したときだけ ElevenLabs のキー/ボイスを検証する。
-          PROVIDER="${TTS_PROVIDER:-voicevox}"
+          # TTS_PROVIDER 未指定時: ELEVENLABS_API_KEY があれば elevenlabs（v3×DAISUKE）、なければ voicevox。
+          EK=$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '[:space:]')
+          PROVIDER="${TTS_PROVIDER:-}"
+          if [ -z "$PROVIDER" ]; then
+            if [ -n "$EK" ]; then PROVIDER="elevenlabs"; else PROVIDER="voicevox"; fi
+          fi
           echo "== TTS provider: $PROVIDER =="
           if [ "$PROVIDER" = "elevenlabs" ]; then
-            EK=$(printf '%s' "$ELEVENLABS_API_KEY" | tr -d '[:space:]')
             if [ -z "$EK" ]; then
               echo "::error::TTS_PROVIDER=elevenlabs ですが ELEVENLABS_API_KEY が未設定です。"
               exit 1

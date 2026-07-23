@@ -65,6 +65,9 @@ const SceneContent: React.FC<{
           title={visual.title}
           unit={visual.unit}
           items={visual.items}
+          subtitle={visual.subtitle}
+          highlight={visual.highlight}
+          annotation={visual.annotation}
           durationInFrames={durationInFrames}
         />
       );

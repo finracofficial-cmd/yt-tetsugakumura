@@ -508,6 +508,52 @@ export const societyPictos: PictoTable = {
     );
   },
 
+  // 村。丘と家並み。窓が順に灯り、木々が揺れ、鳥が横切る（明トーン向けの情景）
+  village: ({ frame, fps }) => {
+    const t = frame / fps;
+    const houses = [
+      { x: 40, s: 1.0 }, { x: 200, s: 0.85 }, { x: 340, s: 1.1 },
+      { x: 520, s: 0.9 }, { x: 660, s: 1.0 }, { x: 820, s: 0.8 },
+    ];
+    return (
+      <div style={{ position: "relative", width: 960, height: 480, overflow: "hidden" }}>
+        {/* 丘 */}
+        <div style={{ position: "absolute", left: -100, bottom: 90, width: 700, height: 340, borderRadius: "50%", backgroundColor: "rgba(110, 160, 105, 0.55)" }} />
+        <div style={{ position: "absolute", right: -140, bottom: 70, width: 800, height: 380, borderRadius: "50%", backgroundColor: "rgba(95, 145, 92, 0.65)" }} />
+        {/* 木々（風で揺れる） */}
+        {[130, 610, 760, 880].map((x, i) => (
+          <div key={i} style={{ position: "absolute", left: x, bottom: 170, transformOrigin: "bottom center", transform: `rotate(${Math.sin(t * 1.2 + i) * 2.5}deg)` }}>
+            <div style={{ width: 54, height: 54, borderRadius: "50%", backgroundColor: "rgba(70, 120, 72, 0.9)" }} />
+            <div style={{ width: 10, height: 26, backgroundColor: "rgba(100, 75, 50, 0.9)", margin: "0 auto" }} />
+          </div>
+        ))}
+        {/* 鳥（ときどき横切る） */}
+        {[0, 1].map((i) => {
+          const p = loop(t, 9, i * 4.5);
+          return (
+            <div key={i} style={{ position: "absolute", left: p * 1100 - 80, top: 50 + i * 40 + Math.sin(t * 6 + i) * 8, fontSize: 22, color: "rgba(40, 50, 60, 0.7)", transform: "scaleX(-1)" }}>
+              ⌵
+            </div>
+          );
+        })}
+        {/* 家並み */}
+        {houses.map((h, i) => {
+          const lit = osc(t, 3.5, i * 0.9) > 0.45;
+          return (
+            <div key={i} style={{ position: "absolute", left: h.x, bottom: 40, transform: `scale(${h.s})`, transformOrigin: "bottom center" }}>
+              <div style={{ width: 0, height: 0, borderLeft: "78px solid transparent", borderRight: "78px solid transparent", borderBottom: "58px solid rgba(52, 62, 80, 0.96)", marginLeft: -8 }} />
+              <div style={{ width: 140, height: 96, backgroundColor: "rgba(96, 72, 56, 0.96)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <div style={{ width: 62, height: 46, borderRadius: 4, backgroundColor: lit ? "rgba(255, 216, 140, 0.95)" : "rgba(50, 44, 40, 0.9)", boxShadow: lit ? "0 0 24px rgba(255, 205, 120, 0.5)" : "none" }} />
+              </div>
+            </div>
+          );
+        })}
+        {/* 地面 */}
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 44, backgroundColor: "rgba(85, 70, 58, 0.85)" }} />
+      </div>
+    );
+  },
+
   // 王冠。空の玉座の上で回転し輝く
   crown: ({ frame, fps }) => {
     const t = frame / fps;
