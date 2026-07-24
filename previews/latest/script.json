@@ -1,7 +1,7 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ人は高さに数千万円を払うのか【比較社会学×都市経済学】",
-  "bgm_direction": "A dark, quiet and minimal piano drone with subtle low strings, slowly building tension like an intellectual thriller.",
+  "title": "なぜ人は高い階を買うのか【比較社会学×都市経済学】",
+  "bgm_direction": "A dark, quiet cinematic score with sparse piano and low drones, slowly building a sense of unease and quiet revelation.",
   "scenes": [
     {
       "id": 1,
@@ -13,17 +13,17 @@
         "value": "39分の10",
         "label": "税制に刻まれた分数"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 2,
       "act": 1,
       "narration": "2018年度から、20階建て以上のマンションの固定資産税を計算するとき、1階を100として、1階上がるごとにこの39分の10、およそ0.256を加算していくことになった。",
-      "reading": "にせんじゅうはちねんどから、にじゅっかいだていじょうのマンションのこていしさんぜいをけいさんするとき、いっかいをひゃくとして、いっかいあがるごとにこのさんじゅうきゅうぶんのじゅう、およそれいてんにごろくをかさんしていくことになった。",
+      "reading": "にせんじゅうはちねんどから、にじっかいだていじょうのマンションのこていしさんぜいをけいさんするとき、いっかいをひゃくとして、いっかいあがるごとにこのさんじゅうきゅうぶんのじゅう、およそれいてんにごろくをかさんしていくことになった。",
       "visual": {
-        "type": "figure",
-        "figure": "hierarchy",
-        "label": "1階ごとに+0.256"
+        "type": "stat",
+        "value": "×0.256/階",
+        "label": "1階ごとの加算率"
       },
       "concept_color": "charcoal"
     },
@@ -31,13 +31,13 @@
       "id": 3,
       "act": 1,
       "narration": "50階なら112.5641。",
-      "reading": "ごじゅっかいならひゃくじゅうにてんごろくよんいち。",
+      "reading": "ごじっかいなら、ひゃくじゅうにてんごろくよんいち。",
       "visual": {
         "type": "stat",
         "value": "112.5641",
         "label": "50階の補正率"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 4,
@@ -45,11 +45,20 @@
       "narration": "同じ広さ、同じ間取りでも、上の階に住む人ほど税額が高くなる。",
       "reading": "おなじひろさ、おなじまどりでも、うえのかいにすむひとほどぜいがくがたかくなる。",
       "visual": {
-        "type": "figure",
-        "figure": "stairs",
-        "label": "高いほど高い税"
+        "type": "comparison",
+        "left_title": "同じ部屋",
+        "right_title": "違う階",
+        "left_items": [
+          "同じ広さ",
+          "同じ間取り"
+        ],
+        "right_items": [
+          "高い税額",
+          "低い税額"
+        ],
+        "center_label": "税額が変わる"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 5,
@@ -60,67 +69,98 @@
         "type": "keyword",
         "keyword": "高さへの課税"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 6,
-      "act": 1,
+      "act": 2,
       "narration": "2025年、東京23区の新築分譲マンションの平均価格は1億3613万円だった。",
       "reading": "にせんにじゅうごねん、とうきょうにじゅうさんくのしんちくぶんじょうマンションのへいきんかかくはいちおくさんぜんろっぴゃくじゅうさんまんえんだった。",
       "visual": {
         "type": "stat",
         "value": "1億3613万円",
-        "label": "東京23区 新築平均"
+        "label": "東京23区 新築平均価格"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 7,
-      "act": 1,
+      "act": 2,
       "narration": "都心6区に限れば1億9503万円。",
       "reading": "としんろっくにかぎればいちおくきゅうせんごひゃくさんまんえん。",
       "visual": {
-        "type": "stat",
-        "value": "1億9503万円",
-        "label": "都心6区の平均"
+        "type": "chart",
+        "title": "新築分譲マンション 平均価格",
+        "unit": "万円",
+        "items": [
+          {
+            "label": "23区平均",
+            "value": 13613
+          },
+          {
+            "label": "都心6区",
+            "value": 19503
+          }
+        ],
+        "subtitle": "2025年 首都圏",
+        "highlight": 1,
+        "annotation": "都心6区は約2億円 1億9503万円"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 8,
-      "act": 1,
+      "act": 2,
       "narration": "1億円を超えるいわゆる億ションは、この1年で5669戸が供給された。",
-      "reading": "いちおくえんをこえるいわゆるおくションは、このいちねんでごせんろっぴゃくろくじゅうきゅうこがきょうきゅうされた。",
+      "reading": "いちおくえんをこえるいわゆるおくションは、このいちねんでごせんろっぴゃくろくじゅうこがきょうきゅうされた。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "億ション 5669戸"
+        "type": "stat",
+        "value": "5669戸",
+        "label": "1年で供給された億ション"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 9,
-      "act": 1,
+      "act": 2,
       "narration": "一方で首都圏全体の新規供給戸数は2万1962戸。",
       "reading": "いっぽうでしゅとけんぜんたいのしんききょうきゅうこすうはにまんせんきゅうひゃくろくじゅうにこ。",
       "visual": {
-        "type": "stat",
-        "value": "2万1962戸",
-        "label": "首都圏の新規供給"
+        "type": "line",
+        "title": "首都圏 新規供給戸数の推移",
+        "unit": "戸",
+        "points": [
+          {
+            "label": "1990年頃",
+            "value": 88000
+          },
+          {
+            "label": "2000年頃",
+            "value": 95000
+          },
+          {
+            "label": "2015年頃",
+            "value": 40000
+          },
+          {
+            "label": "2024年",
+            "value": 21962
+          }
+        ]
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 10,
-      "act": 1,
+      "act": 2,
       "narration": "統計を取り始めた1973年以来、最も少ない数字である。",
       "reading": "とうけいをとりはじめたせんきゅうひゃくななじゅうさんねんいらい、もっともすくないすうじである。",
       "visual": {
         "type": "stat",
-        "value": "1973年以来",
-        "label": "過去最少の供給"
+        "value": "1973年",
+        "label": "統計開始以来 最少"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 11,
@@ -128,8 +168,8 @@
       "narration": "世間はこの光景を、タワマンマウントと呼んで笑い話にして済ませる。",
       "reading": "せけんはこのこうけいを、タワマンマウントとよんでわらいばなしにしてすませる。",
       "visual": {
-        "type": "dialogue",
-        "line": "何階に住んでるの？"
+        "type": "keyword",
+        "keyword": "タワマンマウント"
       },
       "concept_color": "daylight"
     },
@@ -139,9 +179,8 @@
       "narration": "何階に住んでいるかで人を測る、少し滑稽な人たちの話として。",
       "reading": "なんがいにすんでいるかでひとをはかる、すこしこっけいなひとたちのはなしとして。",
       "visual": {
-        "type": "figure",
-        "figure": "hierarchy",
-        "label": "階で人を測る"
+        "type": "dialogue",
+        "line": "何階に住んでるの?"
       },
       "concept_color": "daylight"
     },
@@ -165,7 +204,7 @@
         "type": "keyword",
         "keyword": "同じ建物"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 15,
@@ -174,7 +213,7 @@
       "reading": "おなじエントランス、おなじかんりがいしゃ、おなじまどり。",
       "visual": {
         "type": "list",
-        "title": "共通するもの",
+        "title": "同じもの",
         "items": [
           "同じエントランス",
           "同じ管理会社",
@@ -190,7 +229,7 @@
       "reading": "ちがうのはじめんからのたかさだけである。",
       "visual": {
         "type": "keyword",
-        "keyword": "違いは高さだけ"
+        "keyword": "高さだけが違う"
       },
       "concept_color": "dark-navy"
     },
@@ -201,10 +240,10 @@
       "reading": "そのちがいにすうせんまんえんのねだんがつき、しかもこうにゅうしてすみはじめたあとも、じゅうにんはうえのかいをみあげることをやめない。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "上を見上げ続ける"
+        "figure": "hierarchy",
+        "label": "高さに数千万円"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 18,
@@ -212,10 +251,10 @@
       "narration": "買った瞬間に満たされて終わる買い物では、どうやらないらしい。",
       "reading": "かったしゅんかんにみたされておわるかいものでは、どうやらないらしい。",
       "visual": {
-        "type": "dialogue",
-        "line": "まだ足りない…"
+        "type": "keyword",
+        "keyword": "終わらない買い物"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 19,
@@ -225,7 +264,7 @@
       "visual": {
         "type": "figure",
         "figure": "question",
-        "label": "差額の正体"
+        "label": "何への差額か"
       },
       "concept_color": "dark-navy"
     },
@@ -236,9 +275,9 @@
       "reading": "きょうはそのねふだのなかみを、ひかくしゃかいがくととしけいざいがくのデータからかいぼうしてみたい。",
       "visual": {
         "type": "keyword",
-        "keyword": "値札の解剖"
+        "keyword": "値札を解剖する"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 21,
@@ -246,11 +285,10 @@
       "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
       "reading": "まず、だれもがさいしょにおもいつくこたえからけんしょうしよう。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "最初の答え"
+        "type": "keyword",
+        "keyword": "眺望説を検証"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 22,
@@ -259,7 +297,7 @@
       "reading": "ちょうぼうにかねをはらっているのだ、というせつめいである。",
       "visual": {
         "type": "dialogue",
-        "line": "眺めにお金を払う"
+        "line": "眺めにお金を払うのさ"
       },
       "concept_color": "daylight"
     },
@@ -269,10 +307,11 @@
       "narration": "不動産の価格分析において、眺望や日照が価格に反映されること自体は繰り返し確認されている。",
       "reading": "ふどうさんのかかくぶんせきにおいて、ちょうぼうやにっしょうがかかくにはんえいされることじたいはくりかえしかくにんされている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "眺望は価格に効く"
+        "type": "figure",
+        "figure": "city",
+        "label": "眺望は価格に反映"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 24,
@@ -282,7 +321,7 @@
       "visual": {
         "type": "figure",
         "figure": "eye",
-        "label": "窓の外の商品"
+        "label": "窓の外の景色"
       },
       "concept_color": "daylight"
     },
@@ -293,7 +332,7 @@
       "reading": "だがちょうぼうというしょうひんには、けっていてきなじゃくてんがある。",
       "visual": {
         "type": "keyword",
-        "keyword": "決定的な弱点"
+        "keyword": "眺望の弱点"
       },
       "concept_color": "dark-navy"
     },
@@ -303,10 +342,11 @@
       "narration": "人間が最も早く慣れてしまう種類の財だということだ。",
       "reading": "にんげんがもっともはやくなれてしまうしゅるいのざいだということだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "最も早く慣れる財"
+        "type": "figure",
+        "figure": "brain",
+        "label": "慣れてしまう財"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 27,
@@ -316,9 +356,9 @@
       "visual": {
         "type": "stat",
         "value": "1978年",
-        "label": "ブリックマンの調査"
+        "label": "ブリックマンらの調査"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 28,
@@ -326,42 +366,37 @@
       "narration": "対象は3つの群である。",
       "reading": "たいしょうはみっつのぐんである。",
       "visual": {
-        "type": "list",
-        "title": "3つの群",
-        "items": [
-          "宝くじ当選者",
-          "一般の対照群",
-          "事故で麻痺の群"
-        ]
+        "type": "keyword",
+        "keyword": "3つの群"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 29,
       "act": 2,
       "narration": "高額の宝くじ当選者22人、一般の対照群22人、そして事故で麻痺が残った29人。",
-      "reading": "こうがくのたからくじとうせんしゃにじゅうににん、いっぱんのたいしょうぐんにじゅうににん、そしてじこでまひがのこったにじゅうきゅうにん。",
+      "reading": "こうがくのたからくじとうせんしゃにじゅうにん、いっぱんのたいしょうぐんにじゅうにん、そしてじこでまひがのこったにじゅうきゅうにん。",
       "visual": {
-        "type": "chart",
-        "title": "調査対象の人数",
-        "unit": "人",
-        "items": [
-          {
-            "label": "宝くじ当選者",
-            "value": 22
-          },
-          {
-            "label": "対照群",
-            "value": 22
-          },
-          {
-            "label": "麻痺群",
-            "value": 29
-          }
+        "type": "table",
+        "title": "3つの群",
+        "headers": [
+          "群",
+          "人数"
         ],
-        "subtitle": "ブリックマンら 1978",
-        "highlight": 0,
-        "annotation": "当選者 22人を追跡"
+        "rows": [
+          [
+            "宝くじ当選者",
+            "22人"
+          ],
+          [
+            "対照群",
+            "22人"
+          ],
+          [
+            "麻痺が残った人",
+            "29人"
+          ]
+        ]
       },
       "concept_color": "charcoal"
     },
@@ -373,9 +408,9 @@
       "visual": {
         "type": "figure",
         "figure": "arrowUp",
-        "label": "満足度は高い"
+        "label": "当選者の満足度"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 31,
@@ -383,8 +418,9 @@
       "narration": "ところが、朝食や友人との会話といった日常の些細な出来事から得る喜びを尋ねると、当選者は対照群よりむしろ低い値を答えたのだ。",
       "reading": "ところが、ちょうしょくやゆうじんとのかいわといったにちじょうのささいなできごとからえるよろこびをたずねると、とうせんしゃはたいしょうぐんよりむしろひくいあたいをこたえたのだ。",
       "visual": {
-        "type": "dialogue",
-        "line": "朝食がつまらない"
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "日常の喜びは低下"
       },
       "concept_color": "charcoal"
     },
@@ -408,103 +444,110 @@
         "type": "keyword",
         "keyword": "快楽適応"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 34,
-      "act": 2,
+      "act": 3,
       "narration": "想像してみて欲しい。",
       "reading": "そうぞうしてみてほしい。",
       "visual": {
         "type": "keyword",
-        "keyword": "想像してみる"
+        "keyword": "想像してほしい"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 35,
-      "act": 2,
+      "act": 3,
       "narration": "入居して3週間目の平日、午後8時。",
       "reading": "にゅうきょしてさんしゅうかんめのへいじつ、ごごはちじ。",
       "visual": {
-        "type": "stat",
-        "value": "午後8時",
-        "label": "入居3週間目の夜"
+        "type": "keyword",
+        "keyword": "入居3週間目の夜"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 36,
-      "act": 2,
+      "act": 3,
       "narration": "ガラスの前に立っている時間は、1日に1分もない。",
       "reading": "ガラスのまえにたっているじかんは、いちにちにいっぷんもない。",
       "visual": {
         "type": "stat",
         "value": "1分未満",
-        "label": "窓辺に立つ時間"
+        "label": "窓辺に立つ時間/日"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 37,
-      "act": 2,
+      "act": 3,
       "narration": "夜景は毎日同じ夜景だ。",
       "reading": "やけいはまいにちおなじやけいだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "毎日同じ夜景"
+        "type": "figure",
+        "figure": "city",
+        "label": "毎日同じ夜景"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 38,
-      "act": 2,
+      "act": 3,
       "narration": "カーテンは、たいてい閉まっている。",
       "reading": "カーテンは、たいていしまっている。",
       "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "閉じたカーテン"
+        "type": "keyword",
+        "keyword": "閉じたカーテン"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 39,
-      "act": 2,
+      "act": 3,
       "narration": "それでも価格差は消えない。",
       "reading": "それでもかかくさはきえない。",
       "visual": {
         "type": "keyword",
-        "keyword": "価格差は残る"
+        "keyword": "消えない価格差"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 40,
-      "act": 2,
+      "act": 3,
       "narration": "中古市場に出しても、階数によるプレミアムは維持される。",
       "reading": "ちゅうこしじょうにだしても、かいすうによるプレミアムはいじされる。",
       "visual": {
         "type": "figure",
         "figure": "money",
-        "label": "中古でも維持"
+        "label": "維持されるプレミアム"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 41,
-      "act": 2,
+      "act": 3,
       "narration": "住人が景色に慣れきった後も、値札のほうは慣れないのだ。",
       "reading": "じゅうにんがけしきになれきったあとも、ねふだのほうはなれないのだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "値札は慣れない"
+        "type": "comparison",
+        "left_title": "住人",
+        "right_title": "値札",
+        "left_items": [
+          "景色に慣れる"
+        ],
+        "right_items": [
+          "慣れない"
+        ],
+        "center_label": "≠"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 42,
-      "act": 2,
+      "act": 3,
       "narration": "ということは、値段がついているのは景色ではない。",
       "reading": "ということは、ねだんがついているのはけしきではない。",
       "visual": {
@@ -515,61 +558,59 @@
     },
     {
       "id": 43,
-      "act": 2,
+      "act": 3,
       "narration": "ここまで聞くと、話の着地点は見えた気がするだろう。",
       "reading": "ここまできくと、はなしのちゃくちてんはみえたきがするだろう。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "着地点は見えた?"
+        "type": "keyword",
+        "keyword": "見えた結論?"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 44,
-      "act": 2,
+      "act": 3,
       "narration": "つまり見栄なのだろうと。",
       "reading": "つまりみえなのだろうと。",
       "visual": {
-        "type": "dialogue",
-        "line": "どうせ見栄でしょ"
+        "type": "keyword",
+        "keyword": "見栄だろう"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 45,
-      "act": 2,
+      "act": 3,
       "narration": "他人に自慢するために高い階を買っているのだと。",
       "reading": "たにんにじまんするためにたかいかいをかっているのだと。",
       "visual": {
-        "type": "figure",
-        "figure": "applause",
-        "label": "自慢のための階"
+        "type": "dialogue",
+        "line": "自慢したいだけでしょ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 46,
-      "act": 2,
+      "act": 3,
       "narration": "事実、その線で説明する記事はすでに多い。",
       "reading": "じじつ、そのせんでせつめいするきじはすでにおおい。",
       "visual": {
         "type": "figure",
         "figure": "screen",
-        "label": "よくある記事"
+        "label": "よくある解説"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 47,
-      "act": 2,
+      "act": 3,
       "narration": "だが、この動画はそこで終わらない。",
       "reading": "だが、このどうがはそこでおわらない。",
       "visual": {
         "type": "keyword",
-        "keyword": "ここで終わらない"
+        "keyword": "話はここから"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 48,
@@ -585,19 +626,19 @@
     },
     {
       "id": 49,
-      "act": 3,
+      "act": 2,
       "narration": "では人間の脳は、隣人の位置というものを、どう処理しているのだろうか。",
       "reading": "ではにんげんのうは、りんじんのいちというものを、どうしょりしているのだろうか。",
       "visual": {
         "type": "figure",
         "figure": "brain",
-        "label": "脳と隣人の位置"
+        "label": "隣人の位置の処理"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 50,
-      "act": 3,
+      "act": 2,
       "narration": "2005年、経済学の主要誌クォータリー・ジャーナル・オブ・エコノミクスに、エルゾ・ラットマーの論文が載った。",
       "reading": "にせんごねん、けいざいがくのしゅようしクォータリー・ジャーナル・オブ・エコノミクスに、エルゾ・ラットマーのろんぶんがのった。",
       "visual": {
@@ -605,45 +646,46 @@
         "value": "2005年",
         "label": "ラットマーの論文"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 51,
-      "act": 3,
+      "act": 2,
       "narration": "全米の世帯を追跡したパネル調査に、居住地域の平均所得を突き合わせた研究である。",
       "reading": "ぜんべいのせたいをついせきしたパネルちょうさに、きょじゅうちいきのへいきんしょとくをつきあわせたけんきゅうである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "隣人所得を突合"
+        "type": "figure",
+        "figure": "network",
+        "label": "近隣所得の照合"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 52,
-      "act": 3,
+      "act": 2,
       "narration": "結果はこうだ。",
       "reading": "けっかはこうだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "結果はこうだ"
+        "keyword": "結果"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 53,
-      "act": 3,
+      "act": 2,
       "narration": "本人の所得を統計的に一定にしたうえで、近隣住民の平均所得が高い地域に住む人ほど、自己申告の幸福度が低かった。",
       "reading": "ほんにんのしょとくをとうけいてきにいっていにしたうえで、きんりんじゅうみんのへいきんしょとくがたかいちいきにすむひとほど、じこしんこくのこうふくどがひくかった。",
       "visual": {
         "type": "figure",
         "figure": "arrowDown",
-        "label": "隣人が豊かだと不幸"
+        "label": "隣人が豊かだと幸福度↓"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 54,
-      "act": 3,
+      "act": 2,
       "narration": "論文の題は、マイナスとしての隣人、という。",
       "reading": "ろんぶんのだいは、マイナスとしてのりんじん、という。",
       "visual": {
@@ -654,41 +696,40 @@
     },
     {
       "id": 55,
-      "act": 3,
+      "act": 2,
       "narration": "自分の懐は一円も減っていない。",
       "reading": "じぶんのふところはいちえんもへっていない。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "収入は変わらない"
+        "type": "keyword",
+        "keyword": "懐は減らない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 56,
-      "act": 3,
+      "act": 2,
       "narration": "減っているのは、周囲との差だけだ。",
       "reading": "へっているのは、しゅういとのさだけだ。",
       "visual": {
         "type": "keyword",
         "keyword": "減るのは差だけ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 57,
-      "act": 3,
+      "act": 2,
       "narration": "この非合理は、直接尋ねても同じ形で出てくる。",
       "reading": "このひごうりは、ちょくせつたずねてもおなじかたちででてくる。",
       "visual": {
         "type": "keyword",
-        "keyword": "非合理な選好"
+        "keyword": "同じ非合理"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 58,
-      "act": 3,
+      "act": 2,
       "narration": "1998年、サラ・ソルニックとデイヴィッド・ヘメンウェイが、ハーバード公衆衛生大学院の学生と職員に二択を出した。",
       "reading": "せんきゅうひゃくきゅうじゅうはちねん、サラ・ソルニックとデイヴィッド・ヘメンウェイが、ハーバードこうしゅうえいせいだいがくいんのがくせいとしょくいんににたくをだした。",
       "visual": {
@@ -700,7 +741,7 @@
     },
     {
       "id": 59,
-      "act": 3,
+      "act": 2,
       "narration": "Aの世界では、あなたの年収は5万ドル、周囲の人は2万5000ドル。",
       "reading": "エーのせかいでは、あなたのねんしゅうはごまんドル、しゅういのひとはにまんごせんドル。",
       "visual": {
@@ -708,18 +749,18 @@
         "left_title": "あなた",
         "right_title": "周囲",
         "left_items": [
-          "5万ドル"
+          "年収5万ドル"
         ],
         "right_items": [
-          "2万5000ドル"
+          "2万5千ドル"
         ],
-        "center_label": "A"
+        "center_label": "Aの世界"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 60,
-      "act": 3,
+      "act": 2,
       "narration": "Bの世界では、あなたは10万ドル、周囲は20万ドル。",
       "reading": "ビーのせかいでは、あなたはじゅうまんドル、しゅういはにじゅうまんドル。",
       "visual": {
@@ -727,98 +768,98 @@
         "left_title": "あなた",
         "right_title": "周囲",
         "left_items": [
-          "10万ドル"
+          "年収10万ドル"
         ],
         "right_items": [
           "20万ドル"
         ],
-        "center_label": "B"
+        "center_label": "Bの世界"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 61,
-      "act": 3,
+      "act": 2,
       "narration": "物価はどちらも同じと説明されている。",
       "reading": "ぶっかはどちらもおなじとせつめいされている。",
       "visual": {
         "type": "keyword",
         "keyword": "物価は同じ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 62,
-      "act": 3,
+      "act": 2,
       "narration": "合理的に考えればBを選ぶべきだ。",
       "reading": "ごうりてきにかんがえればビーをえらぶべきだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "合理ならB"
+        "keyword": "合理的にはB"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 63,
-      "act": 3,
+      "act": 2,
       "narration": "購買力が倍なのだから。",
       "reading": "こうばいりょくがばいなのだから。",
       "visual": {
-        "type": "keyword",
-        "keyword": "購買力は2倍"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 64,
-      "act": 3,
-      "narration": "ところが、およそ半数がAを選んだ。",
-      "reading": "ところが、およそはんすうがエーをえらんだ。",
-      "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 50,
-        "label": "約半数がAを選んだ"
+        "type": "stat",
+        "value": "×2",
+        "label": "Bの購買力"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 65,
-      "act": 3,
-      "narration": "実質的な豊かさを半分捨ててでも、順位が上である世界を選ぶ人間が、半数いたということになる。",
-      "reading": "じっしつてきなゆたかさをはんぶんすててでも、じゅんいがうえであるせかいをえらぶにんげんが、はんすういたということになる。",
+      "id": 64,
+      "act": 2,
+      "narration": "ところが、およそ半数がAを選んだ。",
+      "reading": "ところが、およそはんすうがエーをえらんだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "豊かさより順位"
+        "type": "stat",
+        "value": "約50%",
+        "label": "Aを選んだ人"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 66,
-      "act": 3,
-      "narration": "さらに精密な実験がある。",
-      "reading": "さらにせいみつなじっけんがある。",
+      "id": 65,
+      "act": 2,
+      "narration": "実質的な豊かさを半分捨ててでも、順位が上である世界を選ぶ人間が、半数いたということになる。",
+      "reading": "じっしつてきなゆたかさをはんぶんすててでも、じゅんいがうえであるせかいをえらぶにんげんが、はんすういたということになる。",
       "visual": {
         "type": "keyword",
-        "keyword": "さらに精密な実験"
+        "keyword": "順位を選ぶ半数"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 66,
+      "act": 2,
+      "narration": "さらに精密な実験がある。",
+      "reading": "さらにせいみつなじっけんがある。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "さらなる実験"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 67,
-      "act": 3,
+      "act": 2,
       "narration": "カリフォルニア大学の職員給与は、州法によりウェブ上で公開されている。",
       "reading": "カリフォルニアだいがくのしょくいんきゅうよは、しゅうほうによりウェブじょうでこうかいされている。",
       "visual": {
         "type": "figure",
         "figure": "screen",
-        "label": "給与が公開"
+        "label": "給与のウェブ公開"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 68,
-      "act": 3,
+      "act": 2,
       "narration": "2008年、デイヴィッド・カードらの研究チームは、大学の職員を無作為に二つに分け、片方にだけそのサイトの存在を知らせた。",
       "reading": "にせんはちねん、デイヴィッド・カードらのけんきゅうチームは、だいがくのしょくいんをむさくいにふたつにわけ、かたほうにだけそのサイトのそんざいをしらせた。",
       "visual": {
@@ -826,67 +867,68 @@
         "value": "2008年",
         "label": "カードらの実験"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 69,
-      "act": 3,
+      "act": 2,
       "narration": "数日後、職務満足度を調査する。",
       "reading": "すうじつご、しょくむまんぞくどをちょうさする。",
       "visual": {
-        "type": "keyword",
-        "keyword": "数日後の調査"
+        "type": "figure",
+        "figure": "question",
+        "label": "満足度調査"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 70,
-      "act": 3,
+      "act": 2,
       "narration": "結果は、きれいに非対称だった。",
       "reading": "けっかは、きれいにひたいしょうだった。",
       "visual": {
         "type": "keyword",
         "keyword": "きれいな非対称"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 71,
-      "act": 3,
+      "act": 2,
       "narration": "自分の給与が同職種の中央値より低いと知った職員は、満足度が下がり、転職を考える割合が上がった。",
       "reading": "じぶんのきゅうよがどうしょくしゅのちゅうおうちよりひくいとしったしょくいんは、まんぞくどがさがり、てんしょくをかんがえるわりあいがあがった。",
       "visual": {
         "type": "figure",
         "figure": "arrowDown",
-        "label": "下と知ると転職検討"
+        "label": "低いと知ると不満↑"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 72,
-      "act": 3,
+      "act": 2,
       "narration": "中央値より高かった職員には、目立った変化がなかった。",
       "reading": "ちゅうおうちよりたかかったしょくいんには、めだったへんかがなかった。",
       "visual": {
         "type": "keyword",
-        "keyword": "上側は変化なし"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 73,
-      "act": 3,
-      "narration": "上を知ることは効く。",
-      "reading": "うえをしることはきく。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "上を知ると効く"
+        "keyword": "高い側は無変化"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 73,
+      "act": 2,
+      "narration": "上を知ることは効く。",
+      "reading": "うえをしることはきく。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "上は効く"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 74,
-      "act": 3,
+      "act": 2,
       "narration": "下を知ることは、ほとんど効かない。",
       "reading": "したをしることは、ほとんどきかない。",
       "visual": {
@@ -905,7 +947,7 @@
         "figure": "city",
         "label": "もう一度眺める"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 76,
@@ -915,9 +957,9 @@
       "visual": {
         "type": "figure",
         "figure": "mask",
-        "label": "隣人の所得は不可視"
+        "label": "見えない隣人の所得"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 77,
@@ -926,9 +968,9 @@
       "reading": "ねんしゅうはめいしにかいていないし、ちょきんがくがげんかんにけいじされているわけでもない。",
       "visual": {
         "type": "keyword",
-        "keyword": "見えない年収"
+        "keyword": "見えない豊かさ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 78,
@@ -938,9 +980,9 @@
       "visual": {
         "type": "figure",
         "figure": "hierarchy",
-        "label": "順位を整数に変換"
+        "label": "順位を全員に配布"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 79,
@@ -949,9 +991,9 @@
       "reading": "しかも、そのすうじはボタンとしてかべにうめこまれている。",
       "visual": {
         "type": "keyword",
-        "keyword": "壁のボタン"
+        "keyword": "壁に埋まった順位"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 80,
@@ -959,11 +1001,10 @@
       "narration": "火曜の朝7時40分、エレベーターホール。",
       "reading": "かようのあさしちじよんじゅっぷん、エレベーターホール。",
       "visual": {
-        "type": "stat",
-        "value": "7:40",
-        "label": "火曜の朝のホール"
+        "type": "keyword",
+        "keyword": "火曜 朝7時40分"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 81,
@@ -975,7 +1016,7 @@
         "figure": "couple",
         "label": "二人の乗客"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 82,
@@ -983,10 +1024,11 @@
       "narration": "先に伸びた手が43を押す。",
       "reading": "さきにのびたてがよんじゅうさんをおす。",
       "visual": {
-        "type": "keyword",
-        "keyword": "43を押す手"
+        "type": "stat",
+        "value": "43",
+        "label": "先に押された階"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 83,
@@ -994,10 +1036,11 @@
       "narration": "もうひとりの指は18で止まる。",
       "reading": "もうひとりのゆびはじゅうはちでとまる。",
       "visual": {
-        "type": "keyword",
-        "keyword": "18で止まる指"
+        "type": "stat",
+        "value": "18",
+        "label": "もう一人の階"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 84,
@@ -1005,9 +1048,8 @@
       "narration": "会話はない。",
       "reading": "かいわはない。",
       "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "沈黙"
+        "type": "keyword",
+        "keyword": "沈黙"
       },
       "concept_color": "dark-navy"
     },
@@ -1015,11 +1057,11 @@
       "id": 85,
       "act": 3,
       "narration": "18階までの十数秒間、二人の間にあるのは25という差だけだ。",
-      "reading": "じゅうはちかいまでのじゅうすうびょうかん、ふたりのあいだにあるのはにじゅうごというさだけだ。",
+      "reading": "じゅうはっかいまでのじゅうすうびょうかん、ふたりのあいだにあるのはにじゅうごというさだけだ。",
       "visual": {
         "type": "stat",
         "value": "25",
-        "label": "二人の間の差"
+        "label": "二人の差"
       },
       "concept_color": "pitch-black"
     },
@@ -1030,7 +1072,7 @@
       "reading": "そしてぼうとうのぶんすうが、ここにせつぞくする。",
       "visual": {
         "type": "keyword",
-        "keyword": "分数が接続する"
+        "keyword": "分数が繋がる"
       },
       "concept_color": "dark-navy"
     },
@@ -1042,7 +1084,7 @@
       "visual": {
         "type": "figure",
         "figure": "stairs",
-        "label": "1階ごとに+0.256"
+        "label": "1階ごと +0.256"
       },
       "concept_color": "charcoal"
     },
@@ -1050,11 +1092,11 @@
       "id": 88,
       "act": 3,
       "narration": "50階は112.5641。",
-      "reading": "ごじゅっかいはひゃくじゅうにてんごろくよんいち。",
+      "reading": "ごじっかいはひゃくじゅうにてんごろくよんいち。",
       "visual": {
         "type": "stat",
         "value": "112.5641",
-        "label": "50階の課税指標"
+        "label": "50階の補正率"
       },
       "concept_color": "charcoal"
     },
@@ -1064,11 +1106,10 @@
       "narration": "行政がこの補正率を導入したということは、制度が、高さは価値であると公式に認定したことを意味する。",
       "reading": "ぎょうせいがこのほせいりつをどうにゅうしたということは、せいどが、たかさはかちであるとこうしきにんていしたことをいみする。",
       "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "高さ＝価値の公認"
+        "type": "keyword",
+        "keyword": "高さは価値と認定"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 90,
@@ -1076,10 +1117,11 @@
       "narration": "住人が見栄を張るかどうかとは無関係に、序列は課税台帳の中にまで刻まれている。",
       "reading": "じゅうにんがみえをはるかどうかとはむかんけいに、じょれつはかぜいだいちょうのなかにまできざまれている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "台帳の中の序列"
+        "type": "figure",
+        "figure": "gavel",
+        "label": "台帳に刻まれた序列"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "warm"
     },
     {
       "id": 91,
@@ -1088,7 +1130,7 @@
       "reading": "では、そのじょれつをせっけいし、ねふだをつけてうっているがわのちょうぼは、どうなっているのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "question",
+        "figure": "money",
         "label": "売る側の帳簿"
       },
       "concept_color": "dark-navy"
@@ -1102,7 +1144,7 @@
         "type": "keyword",
         "keyword": "奇妙な商品"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 93,
@@ -1111,10 +1153,10 @@
       "reading": "タワーマンションのこうぞうは、ほぼおなじまどりをじょうげにつみあげたものだ。",
       "visual": {
         "type": "figure",
-        "figure": "hierarchy",
-        "label": "同じ間取りの積層"
+        "figure": "factory",
+        "label": "積み上げる間取り"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 94,
@@ -1122,8 +1164,9 @@
       "narration": "上階の建設コストが下階より高いのは事実である。",
       "reading": "じょうかいのけんせつコストがかかいよりたかいのはじじつである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "上階はコスト高"
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "上階のコスト増"
       },
       "concept_color": "charcoal"
     },
@@ -1134,13 +1177,13 @@
       "reading": "しざいをたかくあげるひようがかかり、ふうあつにたえるこうぞうもいる。",
       "visual": {
         "type": "list",
-        "title": "上階のコスト",
+        "title": "上階のコスト要因",
         "items": [
-          "資材を揚げる費用",
+          "資材を高く揚げる費用",
           "風圧に耐える構造"
         ]
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 96,
@@ -1148,8 +1191,16 @@
       "narration": "だが、階が上がるごとに数百万円ずつ上がっていく価格差の大半は、その原価差に対応していない。",
       "reading": "だが、かいがあがるごとにすうひゃくまんえんずつあがっていくかかくさのたいはんは、そのげんかさにたいおうしていない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "原価では説明不能"
+        "type": "comparison",
+        "left_title": "価格差",
+        "right_title": "原価差",
+        "left_items": [
+          "数百万円/階"
+        ],
+        "right_items": [
+          "ごくわずか"
+        ],
+        "center_label": "≠"
       },
       "concept_color": "dark-navy"
     },
@@ -1161,7 +1212,7 @@
       "visual": {
         "type": "figure",
         "figure": "hierarchy",
-        "label": "物語で階層化"
+        "label": "高さで階層化"
       },
       "concept_color": "dark-navy"
     },
@@ -1171,10 +1222,11 @@
       "narration": "棚の並べ方を変えるだけで単価が変わる商品というのは、そう多くない。",
       "reading": "たなのならべかたをかえるだけでたんかがかわるしょうひんというのは、そうおおくない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "並べ方で変わる単価"
+        "type": "figure",
+        "figure": "shopping",
+        "label": "棚で変わる単価"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 99,
@@ -1183,7 +1235,7 @@
       "reading": "ただし、このどうがでつたえたいのは、デベロッパーがふとうにつりあげているというたんじゅんなはなしではない。",
       "visual": {
         "type": "keyword",
-        "keyword": "単純な悪玉論ではない"
+        "keyword": "単純な話ではない"
       },
       "concept_color": "dark-navy"
     },
@@ -1195,9 +1247,9 @@
       "visual": {
         "type": "figure",
         "figure": "arrowUp",
-        "label": "建設費も上昇"
+        "label": "上がり続けるコスト"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 101,
@@ -1206,8 +1258,8 @@
       "reading": "しゅとけんのきょうきゅうこすうがせんきゅうひゃくななじゅうさんねんいらいさいしょうのにまんせんきゅうひゃくろくじゅうにこまでおちたのは、もうけるためにしぼったからというより、うれるかかくたいにしょうひんをよせたけっかとして、おくションだけがのこったからだ。",
       "visual": {
         "type": "stat",
-        "value": "2万1962戸",
-        "label": "億ションだけが残る"
+        "value": "21962戸",
+        "label": "最少の供給戸数"
       },
       "concept_color": "charcoal"
     },
@@ -1228,57 +1280,58 @@
       "narration": "一方、買った側の帳簿には、購入価格には書かれていない行がある。",
       "reading": "いっぽう、かったがわのちょうぼには、こうにゅうかかくにはかかれていないぎょうがある。",
       "visual": {
-        "type": "keyword",
-        "keyword": "隠れた行"
+        "type": "figure",
+        "figure": "contract",
+        "label": "見えない行"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 104,
-      "act": 3,
+      "act": 2,
       "narration": "国土交通省の令和5年度マンション総合調査によれば、修繕積立金の平均額は1戸あたり月に1万3054円。",
       "reading": "こくどこうつうしょうのれいわごねんどマンションそうごうちょうさによれば、しゅうぜんつみたてきんのへいきんがくはいっこあたりつきにいちまんさんぜんごじゅうよえん。",
       "visual": {
         "type": "stat",
-        "value": "1万3054円",
-        "label": "修繕積立金の平均"
+        "value": "13054円",
+        "label": "修繕積立金の平均(月)"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 105,
-      "act": 3,
+      "act": 2,
       "narration": "ただしこれは全国の全マンションの平均だ。",
       "reading": "ただしこれはぜんこくのぜんマンションのへいきんだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "あくまで全国平均"
+        "keyword": "全国平均の話"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 106,
-      "act": 3,
+      "act": 2,
       "narration": "同じ国交省のガイドラインでは、20階以上の高層マンションの目安は1平方メートルあたり月338円とされている。",
-      "reading": "おなじこっこうしょうのガイドラインでは、にじゅっかいいじょうのこうそうマンションのめやすはいちへいほうメートルあたりつきさんびゃくさんじゅうはちえんとされている。",
+      "reading": "おなじこっこうしょうのガイドラインでは、にじっかいいじょうのこうそうマンションのめやすはいちへいほうメートルあたりつきさんびゃくさんじゅうはちえんとされている。",
       "visual": {
         "type": "stat",
         "value": "338円/㎡",
-        "label": "高層の月額目安"
+        "label": "高層の積立目安(月)"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 107,
-      "act": 3,
+      "act": 2,
       "narration": "70平方メートルなら月に2万3660円。",
       "reading": "ななじゅうへいほうメートルならつきににまんさんぜんろっぴゃくろくじゅうえん。",
       "visual": {
         "type": "stat",
-        "value": "2万3660円",
-        "label": "70㎡の月額"
+        "value": "23660円",
+        "label": "70㎡での月額"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 108,
@@ -1286,14 +1339,15 @@
       "narration": "タワーは外壁の修繕に特殊な足場やゴンドラを要し、工事の単価そのものが上がるからだ。",
       "reading": "タワーはがいへきのしゅうぜんにとくしゅなあしばやゴンドラをようし、こうじのたんかそのものがあがるからだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "高い工事単価"
+        "type": "figure",
+        "figure": "money",
+        "label": "高い工事単価"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 109,
-      "act": 3,
+      "act": 2,
       "narration": "そして同じ調査には、もう一つの数字がある。",
       "reading": "そしておなじちょうさには、もうひとつのすうじがある。",
       "visual": {
@@ -1304,27 +1358,27 @@
     },
     {
       "id": 110,
-      "act": 3,
+      "act": 2,
       "narration": "長期修繕計画上の必要額に対して、現在の積立額が不足しているマンションは36.6パーセント。",
       "reading": "ちょうきしゅうぜんけいかくじょうのひつようがくにたいして、げんざいのつみたてがくがふそくしているマンションはさんじゅうろくてんろくパーセント。",
       "visual": {
         "type": "stat",
         "value": "36.6%",
-        "label": "積立が不足している"
+        "label": "積立が不足するマンション"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 111,
-      "act": 3,
+      "act": 2,
       "narration": "そのうち、20パーセントを超えて不足しているものが11.7パーセントある。",
-      "reading": "そのうち、にじゅっパーセントをこえてふそくしているものがじゅういってんななパーセントある。",
+      "reading": "そのうち、にじっパーセントをこえてふそくしているものがじゅういってんななパーセントある。",
       "visual": {
         "type": "stat",
         "value": "11.7%",
         "label": "20%超の不足"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 112,
@@ -1332,11 +1386,10 @@
       "narration": "日曜の午後2時、管理組合の総会を想像してみて欲しい。",
       "reading": "にちようのごごにじ、かんりくみあいのそうかいをそうぞうしてみてほしい。",
       "visual": {
-        "type": "stat",
-        "value": "午後2時",
-        "label": "日曜の管理組合総会"
+        "type": "keyword",
+        "keyword": "日曜 午後2時 総会"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 113,
@@ -1345,9 +1398,9 @@
       "reading": "ぎあんはしゅうぜんつみたてきんのねあげだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "議案は値上げ"
+        "keyword": "議案:値上げ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 114,
@@ -1356,10 +1409,10 @@
       "reading": "かいじょうのいすははんぶんほどうまっている。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
+        "figure": "crowd",
         "label": "半分空いた席"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 115,
@@ -1368,10 +1421,10 @@
       "reading": "とうしもくてきでかい、ちんたいにだしているくぶんしょゆうしゃのせきはあいていて、つくえのうえにはいにんじょうがつまれている。",
       "visual": {
         "type": "figure",
-        "figure": "bystander",
-        "label": "不在の所有者"
+        "figure": "isolation",
+        "label": "空席と委任状"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 116,
@@ -1380,9 +1433,9 @@
       "reading": "さんせいすればまいつきのししゅつがふえる。",
       "visual": {
         "type": "keyword",
-        "keyword": "賛成すれば負担増"
+        "keyword": "賛成=支出増"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 117,
@@ -1391,7 +1444,7 @@
       "reading": "はんたいすれば、じゅうすうねんごのこうじができない。",
       "visual": {
         "type": "keyword",
-        "keyword": "反対すれば工事不能"
+        "keyword": "反対=工事不能"
       },
       "concept_color": "dark-navy"
     },
@@ -1402,23 +1455,21 @@
       "reading": "このたてものには、じょうげのじょれつだけでなく、すんでいるひとともっているだけのひとという、もういっぽんのせんがはしっている。",
       "visual": {
         "type": "comparison",
-        "left_title": "住んでいる人",
+        "left_title": "住む人",
         "right_title": "持つだけの人",
         "left_items": [
-          "日々の暮らし",
-          "負担を背負う"
+          "毎月の負担"
         ],
         "right_items": [
-          "投資目的",
-          "委任状で不在"
+          "委任状で欠席"
         ],
-        "center_label": "≠"
+        "center_label": "vs"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "warm"
     },
     {
       "id": 119,
-      "act": 3,
+      "act": 2,
       "narration": "そもそも人間は、なぜ高さという一本の軸に、これほど反応してしまうのだろうか。",
       "reading": "そもそもにんげんは、なぜたかさといういっぽんのじくに、これほどはんのうしてしまうのだろうか。",
       "visual": {
@@ -1430,23 +1481,23 @@
     },
     {
       "id": 120,
-      "act": 3,
+      "act": 2,
       "narration": "高さは、文明が最初に発明した序列の可視化装置である。",
       "reading": "たかさは、ぶんめいがさいしょにはつめいしたじょれつのかしかそうちである。",
       "visual": {
         "type": "keyword",
         "keyword": "序列の可視化装置"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 121,
-      "act": 3,
+      "act": 2,
       "narration": "メソポタミアのジッグラト、ギザのピラミッド、ゴシックの尖塔、城の天守。",
       "reading": "メソポタミアのジッグラト、ギザのピラミッド、ゴシックのせんとう、しろのてんしゅ。",
       "visual": {
         "type": "list",
-        "title": "歴史の高み",
+        "title": "高さの系譜",
         "items": [
           "ジッグラト",
           "ピラミッド",
@@ -1458,54 +1509,54 @@
     },
     {
       "id": 122,
-      "act": 3,
+      "act": 2,
       "narration": "時代も宗教も違うのに、配置だけは同じだ。",
       "reading": "じだいもしゅうきょうもちがうのに、はいちだけはおなじだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "配置だけは同じ"
+        "keyword": "同じ配置"
       },
-      "concept_color": "dusk"
+      "concept_color": "charcoal"
     },
     {
       "id": 123,
-      "act": 3,
+      "act": 2,
       "narration": "高い場所を占める者が、下を見下ろす。",
       "reading": "たかいばしょをしめるものが、したをみおろす。",
       "visual": {
         "type": "figure",
-        "figure": "hierarchy",
-        "label": "上が下を見下ろす"
+        "figure": "crown",
+        "label": "高みから見下ろす"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 124,
-      "act": 3,
+      "act": 2,
       "narration": "その都市で最も高い建物が誰のものかを見れば、その時代に最も強い者が誰かが分かる。",
       "reading": "そのとしでもっともたかいたてものがだれのものかをみれば、そのじだいにもっともつよいものがだれかがわかる。",
       "visual": {
         "type": "figure",
-        "figure": "crown",
-        "label": "最も高い者が最強"
+        "figure": "city",
+        "label": "最も高い建物"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 125,
-      "act": 3,
+      "act": 2,
       "narration": "神殿から王宮へ、王宮から企業のオフィスへ、そして今、その最上部は住宅になっている。",
       "reading": "しんでんからおうきゅうへ、おうきゅうからきぎょうのオフィスへ、そしていま、そのさいじょうぶはじゅうたくになっている。",
       "visual": {
         "type": "figure",
-        "figure": "stairs",
-        "label": "神殿から住宅へ"
+        "figure": "evolution",
+        "label": "最上部の変遷"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 126,
-      "act": 3,
+      "act": 2,
       "narration": "1899年、ソースティン・ヴェブレンは有閑階級の理論の中で、顕示的消費という概念を提示した。",
       "reading": "せんはっぴゃくきゅうじゅうきゅうねん、ソースティン・ヴェブレンはゆうかんかいきゅうのりろんのなかで、けんじてきしょうひというがいねんをていじした。",
       "visual": {
@@ -1517,29 +1568,30 @@
     },
     {
       "id": 127,
-      "act": 3,
+      "act": 2,
       "narration": "財はその効用のためではなく、それを支払える能力を示すために消費されるという指摘だ。",
       "reading": "ざいはそのこうようのためではなく、それをしはらえるのうりょくをしめすためにしょうひされるというしてきだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "支払える能力の誇示"
+        "keyword": "顕示的消費"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 128,
-      "act": 3,
+      "act": 2,
       "narration": "ただしヴェブレンの時代、顕示には物が必要だった。",
       "reading": "ただしヴェブレンのじだい、けんじにはものがひつようだった。",
       "visual": {
-        "type": "keyword",
-        "keyword": "顕示には物が要る"
+        "type": "figure",
+        "figure": "shopping",
+        "label": "顕示には物が要った"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 129,
-      "act": 3,
+      "act": 2,
       "narration": "馬車、銀器、召使い。",
       "reading": "ばしゃ、ぎんき、めしつかい。",
       "visual": {
@@ -1555,53 +1607,52 @@
     },
     {
       "id": 130,
-      "act": 3,
+      "act": 2,
       "narration": "見せなければ意味がない。",
       "reading": "みせなければいみがない。",
       "visual": {
         "type": "keyword",
         "keyword": "見せねば無意味"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 131,
-      "act": 3,
+      "act": 2,
       "narration": "ところが住所と階数は、口頭で伝わり、名刺に印字され、配達伝票と登記簿に残る。",
       "reading": "ところがじゅうしょとかいすうは、こうとうでつたわり、めいしにいんじされ、はいたつでんぴょうととうきぼにのこる。",
       "visual": {
         "type": "figure",
         "figure": "contract",
-        "label": "住所は残り続ける"
+        "label": "残る住所と階数"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 132,
-      "act": 3,
+      "act": 2,
       "narration": "持ち歩く必要のない、極めて効率の良い顕示財である。",
       "reading": "もちあるくひつようのない、きわめてこうりつのよいけんじざいである。",
       "visual": {
         "type": "keyword",
-        "keyword": "効率的な顕示財"
+        "keyword": "究極の顕示財"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 133,
-      "act": 3,
+      "act": 2,
       "narration": "では、その高さは、支払った分だけ何かを返してくれるのか。",
       "reading": "では、そのたかさは、しはらったぶんだけなにかをかえしてくれるのか。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "高さは報いるか"
+        "type": "keyword",
+        "keyword": "高さは報いるか"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 134,
-      "act": 3,
+      "act": 2,
       "narration": "2016年、カナダ医師会雑誌に、イアン・ドレナンらの研究が掲載された。",
       "reading": "にせんじゅうろくねん、カナダいしかいざっしに、イアン・ドレナンらのけんきゅうがけいさいされた。",
       "visual": {
@@ -1613,42 +1664,39 @@
     },
     {
       "id": 135,
-      "act": 3,
+      "act": 2,
       "narration": "トロント市と隣接するピール地域で、2007年1月から2012年12月までに私邸で発生した院外心停止7842件を分析したものだ。",
       "reading": "トロントしとりんせつするピールちいきで、にせんななねんいちがつからにせんじゅうにねんじゅうにがつまでにしていではっせいしたいんがいしんていしななせんはっぴゃくよんじゅうにけんをぶんせきしたものだ。",
       "visual": {
         "type": "stat",
         "value": "7842件",
-        "label": "院外心停止を分析"
+        "label": "分析した院外心停止"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 136,
-      "act": 3,
+      "act": 2,
       "narration": "全体で、退院まで生存したのは3.8パーセント。",
       "reading": "ぜんたいで、たいいんまでせいぞんしたのはさんてんはちパーセント。",
       "visual": {
-        "type": "stat",
-        "value": "3.8%",
-        "label": "全体の生存率"
+        "type": "units",
+        "total": 100,
+        "value": 4,
+        "label": "退院まで生存(全体3.8%)"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 137,
-      "act": 3,
+      "act": 2,
       "narration": "3階未満では4.2パーセント、3階以上では2.6パーセント。",
-      "reading": "さんかいみまんではよんてんにパーセント、さんかいいじょうではにてんろくパーセント。",
+      "reading": "さんがいみまんではよんてんにパーセント、さんがいいじょうではにてんろくパーセント。",
       "visual": {
         "type": "chart",
-        "title": "階数別の生存率",
+        "title": "院外心停止からの生存率",
         "unit": "%",
         "items": [
-          {
-            "label": "全体",
-            "value": 3.8
-          },
           {
             "label": "3階未満",
             "value": 4.2
@@ -1658,48 +1706,46 @@
             "value": 2.6
           }
         ],
-        "subtitle": "カナダ 院外心停止の分析",
-        "highlight": 2,
-        "annotation": "3階以上で生存率が低下 2.6%"
+        "subtitle": "トロント・ピール地域の分析",
+        "highlight": 1,
+        "annotation": "3階以上で生存率は 2.6%に低下"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 138,
-      "act": 3,
+      "act": 2,
       "narration": "さらに階ごとに追うと、16階より上での生存率は0.9パーセントだった。",
       "reading": "さらにかいごとにおうと、じゅうろっかいよりうえでのせいぞんりつはれいてんきゅうパーセントだった。",
       "visual": {
         "type": "stat",
         "value": "0.9%",
-        "label": "16階より上の生存率"
+        "label": "16階超の生存率"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 139,
-      "act": 3,
+      "act": 2,
       "narration": "216件のうち、生き延びたのは2人。",
-      "reading": "にひゃくじゅうろっけんのうち、いきのびたのはふたり。",
+      "reading": "にひゃくじゅうろくけんのうち、いきのびたのはふたり。",
       "visual": {
-        "type": "units",
-        "total": 216,
-        "value": 2,
-        "label": "216件中 生存は2人"
+        "type": "stat",
+        "value": "2人",
+        "label": "216件中の生存者"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 140,
-      "act": 3,
+      "act": 2,
       "narration": "25階より上で起きた30件については、生存者はひとりもいなかった。",
-      "reading": "にじゅうごかいよりうえでおきたさんじゅっけんについては、せいぞんしゃはひとりもいなかった。",
+      "reading": "にじゅうごかいよりうえでおきたさんじっけんについては、せいぞんしゃはひとりもいなかった。",
       "visual": {
-        "type": "stat",
-        "value": "0人",
-        "label": "25階以上30件の生存"
+        "type": "keyword",
+        "keyword": "生存者はゼロ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 141,
@@ -1718,9 +1764,8 @@
       "narration": "時間だ。",
       "reading": "じかんだ。",
       "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "時間だ"
+        "type": "keyword",
+        "keyword": "時間だ"
       },
       "concept_color": "pitch-black"
     },
@@ -1731,24 +1776,24 @@
       "reading": "オートロックのかいじょう、エレベーターのまちじかん、ながいきょうようろうか。",
       "visual": {
         "type": "list",
-        "title": "失われる時間",
+        "title": "奪われる時間",
         "items": [
-          "オートロック解錠",
+          "オートロックの解錠",
           "エレベーター待ち",
           "長い共用廊下"
         ]
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 144,
       "act": 3,
       "narration": "救急隊が患者の身体に手を触れるまでの数分間が、下の階より確実に長くなる。",
-      "reading": "きゅうきゅうたいがかんじゃのしんたいにてをふれるまでのすうふんかんが、したのかいよりかくじつにながくなる。",
+      "reading": "きゅうきゅうたいがかんじゃのからだにてをふれるまでのすうふんかんが、したのかいよりかくじつにながくなる。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "救命までが延びる"
+        "figure": "clock",
+        "label": "処置までの数分"
       },
       "concept_color": "pitch-black"
     },
@@ -1770,9 +1815,8 @@
       "narration": "川崎市の武蔵小杉で、47階建てのタワーマンションの地下にあった電気設備が浸水し、建物全体が停電した。",
       "reading": "かわさきしのむさしこすぎで、よんじゅうななかいだてのタワーマンションのちかにあったでんきせつびがしんすいし、たてものぜんたいがていでんした。",
       "visual": {
-        "type": "figure",
-        "figure": "city",
-        "label": "武蔵小杉の停電"
+        "type": "keyword",
+        "keyword": "地下浸水で全館停電"
       },
       "concept_color": "dark-navy"
     },
@@ -1790,7 +1834,7 @@
           "簡易トイレ配布"
         ]
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 148,
@@ -1799,9 +1843,9 @@
       "reading": "エレベーターはうごかない。",
       "visual": {
         "type": "keyword",
-        "keyword": "エレベーター停止"
+        "keyword": "動かない箱"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 149,
@@ -1810,10 +1854,10 @@
       "reading": "じゅうがつじゅうさんにちのみめい、よんじゅっかいだいのじゅうこから、じゅうにんがかいちゅうでんとうをもってひじょうかいだんをおりていく。",
       "visual": {
         "type": "figure",
-        "figure": "stairs",
-        "label": "40階から階段を降りる"
+        "figure": "person",
+        "label": "階段を降りる住人"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 150,
@@ -1822,7 +1866,7 @@
       "reading": "いちだんずつ、じぶんがはらったたかさを、あしではらいもどしていく。",
       "visual": {
         "type": "keyword",
-        "keyword": "脚で払い戻す高さ"
+        "keyword": "高さを払い戻す"
       },
       "concept_color": "pitch-black"
     },
@@ -1843,9 +1887,16 @@
       "narration": "地上の水が上がった瞬間、それは資産から負債に変わる。",
       "reading": "ちじょうのみずがあがったしゅんかん、それはしさんからふさいにかわる。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "資産から負債へ"
+        "type": "comparison",
+        "left_title": "資産",
+        "right_title": "負債",
+        "left_items": [
+          "地上が無事なら"
+        ],
+        "right_items": [
+          "水が上がれば"
+        ],
+        "center_label": "→"
       },
       "concept_color": "pitch-black"
     },
@@ -1857,24 +1908,24 @@
       "visual": {
         "type": "figure",
         "figure": "question",
-        "label": "差額は何の値段か"
+        "label": "何の値段か"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 154,
-      "act": 4,
+      "act": 5,
       "narration": "ここまでの道のりを振り返ろう。",
       "reading": "ここまでのみちのりをふりかえろう。",
       "visual": {
         "type": "keyword",
-        "keyword": "道のりを振り返る"
+        "keyword": "振り返る"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 155,
-      "act": 4,
+      "act": 5,
       "narration": "都市経済学のデータは、同じ建物の中で高さだけが値段になっている市場の姿を示した。",
       "reading": "としけいざいがくのデータは、おなじたてもののなかでたかさだけがねだんになっているしじょうのすがたをしめした。",
       "visual": {
@@ -1885,99 +1936,96 @@
     },
     {
       "id": 156,
-      "act": 4,
+      "act": 5,
       "narration": "快楽適応の研究は、その眺望に人間が数週間で慣れてしまうことを描き出した。",
       "reading": "かいらくてきおうのけんきゅうは、そのちょうぼうににんげんがすうしゅうかんでなれてしまうことをえがきだした。",
       "visual": {
         "type": "keyword",
         "keyword": "数週間で慣れる"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 157,
-      "act": 4,
+      "act": 5,
       "narration": "比較の実験は、上を知ることだけが人の満足を削るという非対称を明らかにした。",
       "reading": "ひかくのじっけんは、うえをしることだけがひとのまんぞくをけずるというひたいしょうをあきらかにした。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "上だけが効く"
+        "type": "keyword",
+        "keyword": "上だけが効く"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 158,
-      "act": 4,
+      "act": 5,
       "narration": "帳簿は、原価に対応しない価格差と、36.6パーセントという積立不足の数字を映していた。",
       "reading": "ちょうぼは、げんかにたいおうしないかかくさと、さんじゅうろくてんろくパーセントというつみたてぶそくのすうじをうつしていた。",
       "visual": {
         "type": "stat",
         "value": "36.6%",
-        "label": "積立不足という帳簿"
+        "label": "積立不足のマンション"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 159,
-      "act": 4,
+      "act": 5,
       "narration": "文明史は、高さが常に序列の可視化装置であり続けたことを教えた。",
       "reading": "ぶんめいしは、たかさがつねにじょれつのかしかそうちでありつづけたことをおしえた。",
       "visual": {
-        "type": "figure",
-        "figure": "hierarchy",
-        "label": "高さは常に序列"
+        "type": "keyword",
+        "keyword": "序列の可視化"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 160,
-      "act": 4,
+      "act": 5,
       "narration": "そして救急の記録は、その高さが、最後の数分間には味方をしないことを突きつけた。",
       "reading": "そしてきゅうきゅうのきろくは、そのたかさが、さいごのすうふんかんにはみかたをしないことをつきつけた。",
       "visual": {
         "type": "keyword",
-        "keyword": "最後の数分は敵"
+        "keyword": "最後に味方しない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 161,
-      "act": 4,
+      "act": 5,
       "narration": "タワーマンションは、眺望を売っているのではない。",
       "reading": "タワーマンションは、ちょうぼうをうっているのではない。",
       "visual": {
         "type": "keyword",
         "keyword": "眺望ではない"
       },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 162,
-      "act": 4,
-      "narration": "自分が何番目かという情報を、階数という整数に変換し、住所の形で毎日供給し続ける仕組みだ。",
-      "reading": "じぶんがなんばんめかというじょうほうを、かいすうというせいすうにへんかんし、じゅうしょのかたちでまいにちきょうきゅうしつづけるしくみだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "hierarchy",
-        "label": "順位を毎日供給"
-      },
       "concept_color": "dark-navy"
     },
     {
+      "id": 162,
+      "act": 5,
+      "narration": "自分が何番目かという情報を、階数という整数に変換し、住所の形で毎日供給し続ける仕組みだ。",
+      "reading": "じぶんがなんばんめかというじょうほうを、かいすうというせいすうにへんかんし、じゅうしょのかたちでまいにちきょうきゅうしつづけるしくみだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "順位を配る仕組み"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 163,
-      "act": 4,
+      "act": 5,
       "narration": "買った瞬間に順位が確定するのではない。",
       "reading": "かったしゅんかんにじゅんいがかくていするのではない。",
       "visual": {
         "type": "keyword",
-        "keyword": "買って終わりでない"
+        "keyword": "確定ではない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 164,
-      "act": 4,
+      "act": 5,
       "narration": "買った瞬間から、その順位が毎朝エレベーターの中で更新され続ける。",
       "reading": "かったしゅんかんから、そのじゅんいがまいあさエレベーターのなかでこうしんされつづける。",
       "visual": {
@@ -1985,97 +2033,97 @@
         "figure": "cycle",
         "label": "毎朝更新される順位"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 165,
-      "act": 4,
+      "act": 5,
       "narration": "上を見上げるのをやめられないのは、住人の性格の問題ではなく、そういう設計だからである。",
       "reading": "うえをみあげるのをやめられないのは、じゅうにんのせいかくのもんだいではなく、そういうせっけいだからである。",
       "visual": {
         "type": "keyword",
-        "keyword": "性格でなく設計"
+        "keyword": "そういう設計"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 166,
-      "act": 5,
+      "act": 4,
       "narration": "最後に、ひとつだけ。",
       "reading": "さいごに、ひとつだけ。",
       "visual": {
         "type": "keyword",
         "keyword": "最後にひとつ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 167,
-      "act": 5,
+      "act": 4,
       "narration": "この動画を見ている間、あなたは何を感じていただろうか。",
       "reading": "このどうがをみているあいだ、あなたはなにをかんじていただろうか。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "あなたは何を感じた"
+        "figure": "eye",
+        "label": "あなたは何を感じたか"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 168,
-      "act": 5,
+      "act": 4,
       "narration": "もし、自分には関係のない世界の話だと思ったなら、少しだけ思い出してみて欲しい。",
       "reading": "もし、じぶんにはかんけいのないせかいのはなしだとおもったなら、すこしだけおもいだしてみてほしい。",
       "visual": {
-        "type": "dialogue",
-        "line": "自分には関係ない?"
+        "type": "keyword",
+        "keyword": "本当に無関係か"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 169,
-      "act": 5,
+      "act": 4,
       "narration": "SNSに流れてきた、高い場所から撮られた窓の写真。",
       "reading": "エスエヌエスにながれてきた、たかいばしょからとられたまどのしゃしん。",
       "visual": {
         "type": "figure",
         "figure": "smartphone",
-        "label": "高所からの窓の写真"
+        "label": "窓の写真"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 170,
-      "act": 5,
+      "act": 4,
       "narration": "同期の年収を知ってしまった日の帰り道。",
       "reading": "どうきのねんしゅうをしってしまったひのかえりみち。",
       "visual": {
         "type": "figure",
-        "figure": "path",
+        "figure": "person",
         "label": "年収を知った帰り道"
       },
       "concept_color": "dusk"
     },
     {
       "id": 171,
-      "act": 5,
+      "act": 4,
       "narration": "あの39分の10という分数は、コンクリートの中だけに書かれているのではない。",
       "reading": "あのさんじゅうきゅうぶんのじゅうというぶんすうは、コンクリートのなかだけにかかれているのではない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "コンクリートの外にも"
+        "type": "stat",
+        "value": "39分の10",
+        "label": "分数はどこにある"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 172,
-      "act": 5,
+      "act": 4,
       "narration": "順位を見上げる仕組みのほうは、住んでいる高さに関係なく、とっくにあなたの中に組み込まれている。",
       "reading": "じゅんいをみあげるしくみのほうは、すんでいるたかさにかんけいなく、とっくにあなたのなかにくみこまれている。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "あなたの中の仕組み"
+        "type": "keyword",
+        "keyword": "あなたの中の仕組み"
       },
       "concept_color": "pitch-black"
     },
@@ -2087,9 +2135,9 @@
       "visual": {
         "type": "figure",
         "figure": "arrowUp",
-        "label": "登録者数も縦の数字"
+        "label": "積み上がる登録者数"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 174,
@@ -2098,9 +2146,9 @@
       "reading": "しくみをぜんぶしったうえで、それでもおすかちがあるとおもっていただけたなら。",
       "visual": {
         "type": "keyword",
-        "keyword": "知った上で押す"
+        "keyword": "それでも押す価値"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 175,
@@ -2108,10 +2156,10 @@
       "narration": "そんなことを、また考えすぎてしまいました。",
       "reading": "そんなことを、またかんがえすぎてしまいました。",
       "visual": {
-        "type": "dialogue",
-        "line": "また考えすぎました"
+        "type": "keyword",
+        "keyword": "また考えすぎました"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 176,
@@ -2119,8 +2167,9 @@
       "narration": "よろしければチャンネル登録と高評価をお願いします。",
       "reading": "よろしければチャンネルとうろくとこうひょうかをおねがいします。",
       "visual": {
-        "type": "keyword",
-        "keyword": "登録と高評価を"
+        "type": "figure",
+        "figure": "notification",
+        "label": "登録と高評価"
       },
       "concept_color": "warm"
     },

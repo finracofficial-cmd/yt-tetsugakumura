@@ -1,206 +1,206 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 28784,
+  "totalDurationInFrames": 30900,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 6480,
-      "durationInFrames": 195,
+      "durationMs": 6200,
+      "durationInFrames": 186,
       "audioFile": "audio/scene-1.mp3",
       "segments": [
         {
           "text": "日本の税制の中に、39分の10という分数が書き込まれている。",
           "startFrame": 0,
-          "durationInFrames": 189
+          "durationInFrames": 182
         }
       ]
     },
     {
       "id": 2,
-      "startMs": 6480,
-      "startFrame": 194,
-      "durationMs": 13896,
-      "durationInFrames": 417,
+      "startMs": 6200,
+      "startFrame": 186,
+      "durationMs": 16200,
+      "durationInFrames": 486,
       "audioFile": "audio/scene-2.mp3",
       "segments": [
         {
           "text": "2018年度から、20階建て以上のマンションの固定資産税を計算するとき、1階を100として、1階上がるごとにこの39分の10、およそ0.256を加算していくことになった。",
           "startFrame": 0,
-          "durationInFrames": 411
+          "durationInFrames": 482
         }
       ]
     },
     {
       "id": 3,
-      "startMs": 20376,
-      "startFrame": 611,
-      "durationMs": 4200,
-      "durationInFrames": 126,
+      "startMs": 22400,
+      "startFrame": 672,
+      "durationMs": 4520,
+      "durationInFrames": 136,
       "audioFile": "audio/scene-3.mp3",
       "segments": [
         {
           "text": "50階なら112.5641。",
           "startFrame": 0,
-          "durationInFrames": 120
+          "durationInFrames": 132
         }
       ]
     },
     {
       "id": 4,
-      "startMs": 24576,
-      "startFrame": 737,
-      "durationMs": 5832,
-      "durationInFrames": 175,
+      "startMs": 26920,
+      "startFrame": 808,
+      "durationMs": 6760,
+      "durationInFrames": 203,
       "audioFile": "audio/scene-4.mp3",
       "segments": [
         {
           "text": "同じ広さ、同じ間取りでも、上の階に住む人ほど税額が高くなる。",
           "startFrame": 0,
-          "durationInFrames": 170
+          "durationInFrames": 199
         }
       ]
     },
     {
       "id": 5,
-      "startMs": 30408,
-      "startFrame": 912,
-      "durationMs": 5880,
-      "durationInFrames": 177,
+      "startMs": 33680,
+      "startFrame": 1011,
+      "durationMs": 4530,
+      "durationInFrames": 136,
       "audioFile": "audio/scene-5.mp3",
       "segments": [
         {
           "text": "国が、地面からの高さそのものに課税の根拠を与えたということだ。",
           "startFrame": 0,
-          "durationInFrames": 171
+          "durationInFrames": 122
         }
       ]
     },
     {
       "id": 6,
-      "startMs": 36288,
-      "startFrame": 1089,
-      "durationMs": 11280,
-      "durationInFrames": 339,
+      "startMs": 38210,
+      "startFrame": 1147,
+      "durationMs": 11720,
+      "durationInFrames": 352,
       "audioFile": "audio/scene-6.mp3",
       "segments": [
         {
           "text": "2025年、東京23区の新築分譲マンションの平均価格は1億3613万円だった。",
           "startFrame": 0,
-          "durationInFrames": 333
+          "durationInFrames": 348
         }
       ]
     },
     {
       "id": 7,
-      "startMs": 47568,
-      "startFrame": 1427,
-      "durationMs": 3888,
+      "startMs": 49930,
+      "startFrame": 1499,
+      "durationMs": 3880,
       "durationInFrames": 117,
       "audioFile": "audio/scene-7.mp3",
       "segments": [
         {
           "text": "都心6区に限れば1億9503万円。",
           "startFrame": 0,
-          "durationInFrames": 111
+          "durationInFrames": 113
         }
       ]
     },
     {
       "id": 8,
-      "startMs": 51456,
-      "startFrame": 1544,
-      "durationMs": 8064,
-      "durationInFrames": 242,
+      "startMs": 53810,
+      "startFrame": 1616,
+      "durationMs": 6200,
+      "durationInFrames": 186,
       "audioFile": "audio/scene-8.mp3",
       "segments": [
         {
           "text": "1億円を超えるいわゆる億ションは、この1年で5669戸が供給された。",
           "startFrame": 0,
-          "durationInFrames": 236
+          "durationInFrames": 182
         }
       ]
     },
     {
       "id": 9,
-      "startMs": 59520,
-      "startFrame": 1786,
-      "durationMs": 5856,
-      "durationInFrames": 176,
+      "startMs": 60010,
+      "startFrame": 1802,
+      "durationMs": 7320,
+      "durationInFrames": 220,
       "audioFile": "audio/scene-9.mp3",
       "segments": [
         {
           "text": "一方で首都圏全体の新規供給戸数は2万1962戸。",
           "startFrame": 0,
-          "durationInFrames": 170
+          "durationInFrames": 216
         }
       ]
     },
     {
       "id": 10,
-      "startMs": 65376,
-      "startFrame": 1961,
-      "durationMs": 5232,
-      "durationInFrames": 157,
+      "startMs": 67330,
+      "startFrame": 2022,
+      "durationMs": 6290,
+      "durationInFrames": 189,
       "audioFile": "audio/scene-10.mp3",
       "segments": [
         {
           "text": "統計を取り始めた1973年以来、最も少ない数字である。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "startMs": 73620,
+      "startFrame": 2211,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-11.mp3",
+      "segments": [
+        {
+          "text": "世間はこの光景を、タワマンマウントと呼んで笑い話にして済ませる。",
           "startFrame": 0,
           "durationInFrames": 151
         }
       ]
     },
     {
-      "id": 11,
-      "startMs": 70608,
-      "startFrame": 2118,
-      "durationMs": 5520,
-      "durationInFrames": 166,
-      "audioFile": "audio/scene-11.mp3",
-      "segments": [
-        {
-          "text": "世間はこの光景を、タワマンマウントと呼んで笑い話にして済ませる。",
-          "startFrame": 0,
-          "durationInFrames": 160
-        }
-      ]
-    },
-    {
       "id": 12,
-      "startMs": 76128,
-      "startFrame": 2284,
-      "durationMs": 5160,
-      "durationInFrames": 155,
+      "startMs": 78780,
+      "startFrame": 2366,
+      "durationMs": 5240,
+      "durationInFrames": 158,
       "audioFile": "audio/scene-12.mp3",
       "segments": [
         {
           "text": "何階に住んでいるかで人を測る、少し滑稽な人たちの話として。",
           "startFrame": 0,
-          "durationInFrames": 149
+          "durationInFrames": 154
         }
       ]
     },
     {
       "id": 13,
-      "startMs": 81288,
-      "startFrame": 2439,
-      "durationMs": 3768,
-      "durationInFrames": 114,
+      "startMs": 84020,
+      "startFrame": 2524,
+      "durationMs": 2040,
+      "durationInFrames": 62,
       "audioFile": "audio/scene-13.mp3",
       "segments": [
         {
           "text": "だが、ひとつだけ引っかかることがある。",
           "startFrame": 0,
-          "durationInFrames": 108
+          "durationInFrames": 58
         }
       ]
     },
     {
       "id": 14,
-      "startMs": 85056,
-      "startFrame": 2552,
+      "startMs": 86060,
+      "startFrame": 2586,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-14.mp3",
@@ -208,299 +208,299 @@
         {
           "text": "同じ建物だ。",
           "startFrame": 0,
-          "durationInFrames": 35
+          "durationInFrames": 36
         }
       ]
     },
     {
       "id": 15,
-      "startMs": 87056,
-      "startFrame": 2612,
-      "durationMs": 3696,
-      "durationInFrames": 111,
+      "startMs": 88060,
+      "startFrame": 2646,
+      "durationMs": 4440,
+      "durationInFrames": 134,
       "audioFile": "audio/scene-15.mp3",
       "segments": [
         {
           "text": "同じエントランス、同じ管理会社、同じ間取り。",
           "startFrame": 0,
-          "durationInFrames": 106
+          "durationInFrames": 130
         }
       ]
     },
     {
       "id": 16,
-      "startMs": 90752,
-      "startFrame": 2723,
-      "durationMs": 2736,
-      "durationInFrames": 83,
+      "startMs": 92500,
+      "startFrame": 2780,
+      "durationMs": 2600,
+      "durationInFrames": 78,
       "audioFile": "audio/scene-16.mp3",
       "segments": [
         {
           "text": "違うのは地面からの高さだけである。",
           "startFrame": 0,
-          "durationInFrames": 77
+          "durationInFrames": 74
         }
       ]
     },
     {
       "id": 17,
-      "startMs": 93488,
-      "startFrame": 2805,
-      "durationMs": 9768,
-      "durationInFrames": 294,
+      "startMs": 95100,
+      "startFrame": 2858,
+      "durationMs": 11480,
+      "durationInFrames": 345,
       "audioFile": "audio/scene-17.mp3",
       "segments": [
         {
           "text": "その違いに数千万円の値段がつき、しかも購入して住み始めた後も、住人は上の階を見上げることをやめない。",
           "startFrame": 0,
-          "durationInFrames": 287
+          "durationInFrames": 341
         }
       ]
     },
     {
       "id": 18,
-      "startMs": 103256,
-      "startFrame": 3098,
-      "durationMs": 3864,
-      "durationInFrames": 116,
+      "startMs": 106580,
+      "startFrame": 3203,
+      "durationMs": 3960,
+      "durationInFrames": 119,
       "audioFile": "audio/scene-18.mp3",
       "segments": [
         {
           "text": "買った瞬間に満たされて終わる買い物では、どうやらないらしい。",
           "startFrame": 0,
-          "durationInFrames": 110
+          "durationInFrames": 115
         }
       ]
     },
     {
       "id": 19,
-      "startMs": 107120,
-      "startFrame": 3214,
-      "durationMs": 4128,
-      "durationInFrames": 124,
+      "startMs": 110540,
+      "startFrame": 3322,
+      "durationMs": 4530,
+      "durationInFrames": 136,
       "audioFile": "audio/scene-19.mp3",
       "segments": [
         {
           "text": "人は一体、何に対してその差額を払っているのか。",
           "startFrame": 0,
-          "durationInFrames": 108
+          "durationInFrames": 122
         }
       ]
     },
     {
       "id": 20,
-      "startMs": 111248,
-      "startFrame": 3337,
-      "durationMs": 6456,
-      "durationInFrames": 194,
+      "startMs": 115070,
+      "startFrame": 3458,
+      "durationMs": 7000,
+      "durationInFrames": 210,
       "audioFile": "audio/scene-20.mp3",
       "segments": [
         {
           "text": "今日はその値札の中身を、比較社会学と都市経済学のデータから解剖してみたい。",
           "startFrame": 0,
-          "durationInFrames": 188
+          "durationInFrames": 206
         }
       ]
     },
     {
       "id": 21,
-      "startMs": 117704,
-      "startFrame": 3531,
-      "durationMs": 4560,
-      "durationInFrames": 137,
+      "startMs": 122070,
+      "startFrame": 3668,
+      "durationMs": 3880,
+      "durationInFrames": 117,
       "audioFile": "audio/scene-21.mp3",
       "segments": [
         {
           "text": "まず、誰もが最初に思いつく答えから検証しよう。",
           "startFrame": 0,
-          "durationInFrames": 132
+          "durationInFrames": 113
         }
       ]
     },
     {
       "id": 22,
-      "startMs": 122264,
-      "startFrame": 3668,
-      "durationMs": 3264,
-      "durationInFrames": 98,
+      "startMs": 125950,
+      "startFrame": 3785,
+      "durationMs": 3080,
+      "durationInFrames": 93,
       "audioFile": "audio/scene-22.mp3",
       "segments": [
         {
           "text": "眺望に金を払っているのだ、という説明である。",
           "startFrame": 0,
-          "durationInFrames": 92
+          "durationInFrames": 89
         }
       ]
     },
     {
       "id": 23,
-      "startMs": 125528,
-      "startFrame": 3766,
-      "durationMs": 8736,
-      "durationInFrames": 263,
+      "startMs": 129030,
+      "startFrame": 3878,
+      "durationMs": 8600,
+      "durationInFrames": 258,
       "audioFile": "audio/scene-23.mp3",
       "segments": [
         {
           "text": "不動産の価格分析において、眺望や日照が価格に反映されること自体は繰り返し確認されている。",
           "startFrame": 0,
-          "durationInFrames": 256
+          "durationInFrames": 254
         }
       ]
     },
     {
       "id": 24,
-      "startMs": 134264,
-      "startFrame": 4028,
-      "durationMs": 4416,
-      "durationInFrames": 133,
+      "startMs": 137630,
+      "startFrame": 4136,
+      "durationMs": 4280,
+      "durationInFrames": 129,
       "audioFile": "audio/scene-24.mp3",
       "segments": [
         {
           "text": "窓の外に何が見えるかは、確かに商品の一部だ。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "startMs": 138680,
-      "startFrame": 4160,
-      "durationMs": 4560,
-      "durationInFrames": 137,
-      "audioFile": "audio/scene-25.mp3",
-      "segments": [
-        {
-          "text": "だが眺望という商品には、決定的な弱点がある。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "startMs": 143240,
-      "startFrame": 4297,
-      "durationMs": 4320,
-      "durationInFrames": 130,
-      "audioFile": "audio/scene-26.mp3",
-      "segments": [
-        {
-          "text": "人間が最も早く慣れてしまう種類の財だということだ。",
           "startFrame": 0,
           "durationInFrames": 125
         }
       ]
     },
     {
+      "id": 25,
+      "startMs": 141910,
+      "startFrame": 4265,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-25.mp3",
+      "segments": [
+        {
+          "text": "だが眺望という商品には、決定的な弱点がある。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "startMs": 145630,
+      "startFrame": 4377,
+      "durationMs": 3880,
+      "durationInFrames": 117,
+      "audioFile": "audio/scene-26.mp3",
+      "segments": [
+        {
+          "text": "人間が最も早く慣れてしまう種類の財だということだ。",
+          "startFrame": 0,
+          "durationInFrames": 113
+        }
+      ]
+    },
+    {
       "id": 27,
-      "startMs": 147560,
-      "startFrame": 4427,
-      "durationMs": 8304,
-      "durationInFrames": 250,
+      "startMs": 149510,
+      "startFrame": 4494,
+      "durationMs": 7960,
+      "durationInFrames": 239,
       "audioFile": "audio/scene-27.mp3",
       "segments": [
         {
           "text": "1978年、ノースウェスタン大学のフィリップ・ブリックマンらが、心理学の歴史に残る調査を行った。",
           "startFrame": 0,
-          "durationInFrames": 244
+          "durationInFrames": 235
         }
       ]
     },
     {
       "id": 28,
-      "startMs": 155864,
-      "startFrame": 4676,
-      "durationMs": 2208,
-      "durationInFrames": 67,
+      "startMs": 157470,
+      "startFrame": 4733,
+      "durationMs": 2000,
+      "durationInFrames": 60,
       "audioFile": "audio/scene-28.mp3",
       "segments": [
         {
           "text": "対象は3つの群である。",
           "startFrame": 0,
-          "durationInFrames": 61
+          "durationInFrames": 46
         }
       ]
     },
     {
       "id": 29,
-      "startMs": 158072,
-      "startFrame": 4742,
-      "durationMs": 9096,
-      "durationInFrames": 273,
+      "startMs": 159470,
+      "startFrame": 4793,
+      "durationMs": 12280,
+      "durationInFrames": 369,
       "audioFile": "audio/scene-29.mp3",
       "segments": [
         {
           "text": "高額の宝くじ当選者22人、一般の対照群22人、そして事故で麻痺が残った29人。",
           "startFrame": 0,
-          "durationInFrames": 268
+          "durationInFrames": 365
         }
       ]
     },
     {
       "id": 30,
-      "startMs": 167168,
-      "startFrame": 5015,
-      "durationMs": 4776,
-      "durationInFrames": 144,
+      "startMs": 171750,
+      "startFrame": 5162,
+      "durationMs": 7000,
+      "durationInFrames": 210,
       "audioFile": "audio/scene-30.mp3",
       "segments": [
         {
           "text": "当選者は当然、人生の満足度を高く申告した。",
           "startFrame": 0,
-          "durationInFrames": 138
+          "durationInFrames": 206
         }
       ]
     },
     {
       "id": 31,
-      "startMs": 171944,
-      "startFrame": 5158,
-      "durationMs": 12744,
-      "durationInFrames": 383,
+      "startMs": 178750,
+      "startFrame": 5372,
+      "durationMs": 11880,
+      "durationInFrames": 357,
       "audioFile": "audio/scene-31.mp3",
       "segments": [
         {
           "text": "ところが、朝食や友人との会話といった日常の些細な出来事から得る喜びを尋ねると、当選者は対照群よりむしろ低い値を答えたのだ。",
           "startFrame": 0,
-          "durationInFrames": 377
+          "durationInFrames": 353
         }
       ]
     },
     {
       "id": 32,
-      "startMs": 184688,
-      "startFrame": 5541,
-      "durationMs": 5664,
-      "durationInFrames": 170,
+      "startMs": 190630,
+      "startFrame": 5729,
+      "durationMs": 5400,
+      "durationInFrames": 162,
       "audioFile": "audio/scene-32.mp3",
       "segments": [
         {
           "text": "強い刺激は基準値を引き上げ、その基準はやがて日常になる。",
           "startFrame": 0,
-          "durationInFrames": 164
+          "durationInFrames": 158
         }
       ]
     },
     {
       "id": 33,
-      "startMs": 190352,
-      "startFrame": 5711,
-      "durationMs": 2592,
-      "durationInFrames": 78,
+      "startMs": 196030,
+      "startFrame": 5891,
+      "durationMs": 2690,
+      "durationInFrames": 81,
       "audioFile": "audio/scene-33.mp3",
       "segments": [
         {
           "text": "快楽適応と呼ばれる現象である。",
           "startFrame": 0,
-          "durationInFrames": 72
+          "durationInFrames": 67
         }
       ]
     },
     {
       "id": 34,
-      "startMs": 192944,
-      "startFrame": 5788,
+      "startMs": 198720,
+      "startFrame": 5972,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-34.mp3",
@@ -508,74 +508,74 @@
         {
           "text": "想像してみて欲しい。",
           "startFrame": 0,
-          "durationInFrames": 35
+          "durationInFrames": 50
         }
       ]
     },
     {
       "id": 35,
-      "startMs": 194944,
-      "startFrame": 5848,
-      "durationMs": 3408,
-      "durationInFrames": 103,
+      "startMs": 200720,
+      "startFrame": 6032,
+      "durationMs": 3640,
+      "durationInFrames": 110,
       "audioFile": "audio/scene-35.mp3",
       "segments": [
         {
           "text": "入居して3週間目の平日、午後8時。",
           "startFrame": 0,
-          "durationInFrames": 97
+          "durationInFrames": 106
         }
       ]
     },
     {
       "id": 36,
-      "startMs": 198352,
-      "startFrame": 5951,
-      "durationMs": 3552,
-      "durationInFrames": 107,
+      "startMs": 204360,
+      "startFrame": 6142,
+      "durationMs": 4440,
+      "durationInFrames": 134,
       "audioFile": "audio/scene-36.mp3",
       "segments": [
         {
           "text": "ガラスの前に立っている時間は、1日に1分もない。",
           "startFrame": 0,
-          "durationInFrames": 101
+          "durationInFrames": 130
         }
       ]
     },
     {
       "id": 37,
-      "startMs": 201904,
-      "startFrame": 6057,
-      "durationMs": 2520,
-      "durationInFrames": 76,
+      "startMs": 208800,
+      "startFrame": 6276,
+      "durationMs": 2280,
+      "durationInFrames": 69,
       "audioFile": "audio/scene-37.mp3",
       "segments": [
         {
           "text": "夜景は毎日同じ夜景だ。",
           "startFrame": 0,
-          "durationInFrames": 70
+          "durationInFrames": 65
         }
       ]
     },
     {
       "id": 38,
-      "startMs": 204424,
-      "startFrame": 6133,
-      "durationMs": 2544,
-      "durationInFrames": 77,
+      "startMs": 211080,
+      "startFrame": 6345,
+      "durationMs": 2040,
+      "durationInFrames": 62,
       "audioFile": "audio/scene-38.mp3",
       "segments": [
         {
           "text": "カーテンは、たいてい閉まっている。",
           "startFrame": 0,
-          "durationInFrames": 71
+          "durationInFrames": 58
         }
       ]
     },
     {
       "id": 39,
-      "startMs": 206968,
-      "startFrame": 6209,
+      "startMs": 213120,
+      "startFrame": 6407,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-39.mp3",
@@ -583,74 +583,74 @@
         {
           "text": "それでも価格差は消えない。",
           "startFrame": 0,
-          "durationInFrames": 48
+          "durationInFrames": 50
         }
       ]
     },
     {
       "id": 40,
-      "startMs": 208968,
-      "startFrame": 6269,
-      "durationMs": 3936,
-      "durationInFrames": 119,
+      "startMs": 215120,
+      "startFrame": 6467,
+      "durationMs": 4760,
+      "durationInFrames": 143,
       "audioFile": "audio/scene-40.mp3",
       "segments": [
         {
           "text": "中古市場に出しても、階数によるプレミアムは維持される。",
           "startFrame": 0,
-          "durationInFrames": 113
+          "durationInFrames": 139
         }
       ]
     },
     {
       "id": 41,
-      "startMs": 212904,
-      "startFrame": 6387,
-      "durationMs": 3912,
-      "durationInFrames": 118,
+      "startMs": 219880,
+      "startFrame": 6610,
+      "durationMs": 4760,
+      "durationInFrames": 143,
       "audioFile": "audio/scene-41.mp3",
       "segments": [
         {
           "text": "住人が景色に慣れきった後も、値札のほうは慣れないのだ。",
           "startFrame": 0,
-          "durationInFrames": 112
+          "durationInFrames": 139
         }
       ]
     },
     {
       "id": 42,
-      "startMs": 216816,
-      "startFrame": 6504,
-      "durationMs": 3912,
-      "durationInFrames": 118,
+      "startMs": 224640,
+      "startFrame": 6753,
+      "durationMs": 3720,
+      "durationInFrames": 112,
       "audioFile": "audio/scene-42.mp3",
       "segments": [
         {
           "text": "ということは、値段がついているのは景色ではない。",
           "startFrame": 0,
-          "durationInFrames": 112
+          "durationInFrames": 108
         }
       ]
     },
     {
       "id": 43,
-      "startMs": 220728,
-      "startFrame": 6622,
-      "durationMs": 4488,
-      "durationInFrames": 135,
+      "startMs": 228360,
+      "startFrame": 6865,
+      "durationMs": 3720,
+      "durationInFrames": 112,
       "audioFile": "audio/scene-43.mp3",
       "segments": [
         {
           "text": "ここまで聞くと、話の着地点は見えた気がするだろう。",
           "startFrame": 0,
-          "durationInFrames": 129
+          "durationInFrames": 108
         }
       ]
     },
     {
       "id": 44,
-      "startMs": 225216,
-      "startFrame": 6756,
+      "startMs": 232080,
+      "startFrame": 6977,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-44.mp3",
@@ -658,119 +658,119 @@
         {
           "text": "つまり見栄なのだろうと。",
           "startFrame": 0,
-          "durationInFrames": 35
+          "durationInFrames": 43
         }
       ]
     },
     {
       "id": 45,
-      "startMs": 227216,
-      "startFrame": 6816,
-      "durationMs": 3816,
-      "durationInFrames": 115,
+      "startMs": 234080,
+      "startFrame": 7037,
+      "durationMs": 3720,
+      "durationInFrames": 112,
       "audioFile": "audio/scene-45.mp3",
       "segments": [
         {
           "text": "他人に自慢するために高い階を買っているのだと。",
           "startFrame": 0,
-          "durationInFrames": 109
+          "durationInFrames": 108
         }
       ]
     },
     {
       "id": 46,
-      "startMs": 231032,
-      "startFrame": 6931,
-      "durationMs": 4488,
-      "durationInFrames": 135,
+      "startMs": 237800,
+      "startFrame": 7149,
+      "durationMs": 6440,
+      "durationInFrames": 194,
       "audioFile": "audio/scene-46.mp3",
       "segments": [
         {
           "text": "事実、その線で説明する記事はすでに多い。",
           "startFrame": 0,
-          "durationInFrames": 130
+          "durationInFrames": 190
         }
       ]
     },
     {
       "id": 47,
-      "startMs": 235520,
-      "startFrame": 7066,
-      "durationMs": 4248,
-      "durationInFrames": 128,
+      "startMs": 244240,
+      "startFrame": 7343,
+      "durationMs": 2200,
+      "durationInFrames": 66,
       "audioFile": "audio/scene-47.mp3",
       "segments": [
         {
           "text": "だが、この動画はそこで終わらない。",
           "startFrame": 0,
-          "durationInFrames": 112
+          "durationInFrames": 62
         }
       ]
     },
     {
       "id": 48,
-      "startMs": 239768,
-      "startFrame": 7193,
-      "durationMs": 11112,
-      "durationInFrames": 334,
+      "startMs": 246440,
+      "startFrame": 7409,
+      "durationMs": 11250,
+      "durationInFrames": 338,
       "audioFile": "audio/scene-48.mp3",
       "segments": [
         {
           "text": "本当に興味深いのは、この建物が、住人が誰にも自慢しなくても、毎日自動的に順位を表示し続ける装置になっているという点だ。",
           "startFrame": 0,
-          "durationInFrames": 328
+          "durationInFrames": 324
         }
       ]
     },
     {
       "id": 49,
-      "startMs": 250880,
-      "startFrame": 7526,
-      "durationMs": 5256,
-      "durationInFrames": 158,
+      "startMs": 257690,
+      "startFrame": 7747,
+      "durationMs": 8200,
+      "durationInFrames": 246,
       "audioFile": "audio/scene-49.mp3",
       "segments": [
         {
           "text": "では人間の脳は、隣人の位置というものを、どう処理しているのだろうか。",
           "startFrame": 0,
-          "durationInFrames": 152
+          "durationInFrames": 242
         }
       ]
     },
     {
       "id": 50,
-      "startMs": 256136,
-      "startFrame": 7684,
-      "durationMs": 6912,
-      "durationInFrames": 208,
+      "startMs": 265890,
+      "startFrame": 7993,
+      "durationMs": 7320,
+      "durationInFrames": 220,
       "audioFile": "audio/scene-50.mp3",
       "segments": [
         {
           "text": "2005年、経済学の主要誌クォータリー・ジャーナル・オブ・エコノミクスに、エルゾ・ラットマーの論文が載った。",
           "startFrame": 0,
-          "durationInFrames": 202
+          "durationInFrames": 216
         }
       ]
     },
     {
       "id": 51,
-      "startMs": 263048,
-      "startFrame": 7891,
-      "durationMs": 6744,
-      "durationInFrames": 203,
+      "startMs": 273210,
+      "startFrame": 8213,
+      "durationMs": 8600,
+      "durationInFrames": 258,
       "audioFile": "audio/scene-51.mp3",
       "segments": [
         {
           "text": "全米の世帯を追跡したパネル調査に、居住地域の平均所得を突き合わせた研究である。",
           "startFrame": 0,
-          "durationInFrames": 197
+          "durationInFrames": 254
         }
       ]
     },
     {
       "id": 52,
-      "startMs": 269792,
-      "startFrame": 8094,
+      "startMs": 281810,
+      "startFrame": 8471,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-52.mp3",
@@ -778,46 +778,46 @@
         {
           "text": "結果はこうだ。",
           "startFrame": 0,
-          "durationInFrames": 26
+          "durationInFrames": 34
         }
       ]
     },
     {
       "id": 53,
-      "startMs": 271792,
-      "startFrame": 8154,
-      "durationMs": 12360,
-      "durationInFrames": 371,
+      "startMs": 283810,
+      "startFrame": 8531,
+      "durationMs": 12120,
+      "durationInFrames": 364,
       "audioFile": "audio/scene-53.mp3",
       "segments": [
         {
           "text": "本人の所得を統計的に一定にしたうえで、近隣住民の平均所得が高い地域に住む人ほど、自己申告の幸福度が低かった。",
           "startFrame": 0,
-          "durationInFrames": 366
+          "durationInFrames": 360
         }
       ]
     },
     {
       "id": 54,
-      "startMs": 284152,
-      "startFrame": 8525,
-      "durationMs": 4872,
-      "durationInFrames": 147,
+      "startMs": 295930,
+      "startFrame": 8895,
+      "durationMs": 3960,
+      "durationInFrames": 119,
       "audioFile": "audio/scene-54.mp3",
       "segments": [
         {
           "text": "論文の題は、マイナスとしての隣人、という。",
           "startFrame": 0,
-          "durationInFrames": 141
+          "durationInFrames": 115
         }
       ]
     },
     {
       "id": 55,
-      "startMs": 289024,
-      "startFrame": 8671,
-      "durationMs": 3312,
-      "durationInFrames": 100,
+      "startMs": 299890,
+      "startFrame": 9014,
+      "durationMs": 3240,
+      "durationInFrames": 98,
       "audioFile": "audio/scene-55.mp3",
       "segments": [
         {
@@ -829,85 +829,85 @@
     },
     {
       "id": 56,
-      "startMs": 292336,
-      "startFrame": 8770,
-      "durationMs": 2808,
-      "durationInFrames": 85,
+      "startMs": 303130,
+      "startFrame": 9112,
+      "durationMs": 2520,
+      "durationInFrames": 76,
       "audioFile": "audio/scene-56.mp3",
       "segments": [
         {
           "text": "減っているのは、周囲との差だけだ。",
           "startFrame": 0,
-          "durationInFrames": 79
+          "durationInFrames": 72
         }
       ]
     },
     {
       "id": 57,
-      "startMs": 295144,
-      "startFrame": 8854,
-      "durationMs": 4056,
-      "durationInFrames": 122,
+      "startMs": 305650,
+      "startFrame": 9188,
+      "durationMs": 5640,
+      "durationInFrames": 170,
       "audioFile": "audio/scene-57.mp3",
       "segments": [
         {
           "text": "この非合理は、直接尋ねても同じ形で出てくる。",
           "startFrame": 0,
-          "durationInFrames": 116
+          "durationInFrames": 166
         }
       ]
     },
     {
       "id": 58,
-      "startMs": 299200,
-      "startFrame": 8976,
-      "durationMs": 8952,
-      "durationInFrames": 269,
+      "startMs": 311290,
+      "startFrame": 9358,
+      "durationMs": 8840,
+      "durationInFrames": 266,
       "audioFile": "audio/scene-58.mp3",
       "segments": [
         {
           "text": "1998年、サラ・ソルニックとデイヴィッド・ヘメンウェイが、ハーバード公衆衛生大学院の学生と職員に二択を出した。",
           "startFrame": 0,
-          "durationInFrames": 263
+          "durationInFrames": 262
         }
       ]
     },
     {
       "id": 59,
-      "startMs": 308152,
-      "startFrame": 9245,
-      "durationMs": 5328,
-      "durationInFrames": 160,
+      "startMs": 320130,
+      "startFrame": 9624,
+      "durationMs": 6360,
+      "durationInFrames": 191,
       "audioFile": "audio/scene-59.mp3",
       "segments": [
         {
           "text": "Aの世界では、あなたの年収は5万ドル、周囲の人は2万5000ドル。",
           "startFrame": 0,
-          "durationInFrames": 155
+          "durationInFrames": 187
         }
       ]
     },
     {
       "id": 60,
-      "startMs": 313480,
-      "startFrame": 9404,
-      "durationMs": 4656,
-      "durationInFrames": 140,
+      "startMs": 326490,
+      "startFrame": 9815,
+      "durationMs": 5400,
+      "durationInFrames": 162,
       "audioFile": "audio/scene-60.mp3",
       "segments": [
         {
           "text": "Bの世界では、あなたは10万ドル、周囲は20万ドル。",
           "startFrame": 0,
-          "durationInFrames": 135
+          "durationInFrames": 158
         }
       ]
     },
     {
       "id": 61,
-      "startMs": 318136,
-      "startFrame": 9544,
-      "durationMs": 2736,
-      "durationInFrames": 83,
+      "startMs": 331890,
+      "startFrame": 9977,
+      "durationMs": 2680,
+      "durationInFrames": 81,
       "audioFile": "audio/scene-61.mp3",
       "segments": [
         {
@@ -919,310 +919,310 @@
     },
     {
       "id": 62,
-      "startMs": 320872,
-      "startFrame": 9626,
-      "durationMs": 2664,
-      "durationInFrames": 80,
+      "startMs": 334570,
+      "startFrame": 10058,
+      "durationMs": 3480,
+      "durationInFrames": 105,
       "audioFile": "audio/scene-62.mp3",
       "segments": [
         {
           "text": "合理的に考えればBを選ぶべきだ。",
           "startFrame": 0,
-          "durationInFrames": 74
+          "durationInFrames": 101
         }
       ]
     },
     {
       "id": 63,
-      "startMs": 323536,
-      "startFrame": 9706,
-      "durationMs": 2304,
-      "durationInFrames": 70,
+      "startMs": 338050,
+      "startFrame": 10163,
+      "durationMs": 2280,
+      "durationInFrames": 69,
       "audioFile": "audio/scene-63.mp3",
       "segments": [
         {
           "text": "購買力が倍なのだから。",
           "startFrame": 0,
-          "durationInFrames": 64
+          "durationInFrames": 65
         }
       ]
     },
     {
       "id": 64,
-      "startMs": 325840,
-      "startFrame": 9775,
-      "durationMs": 2976,
-      "durationInFrames": 90,
+      "startMs": 340330,
+      "startFrame": 10232,
+      "durationMs": 3320,
+      "durationInFrames": 100,
       "audioFile": "audio/scene-64.mp3",
       "segments": [
         {
           "text": "ところが、およそ半数がAを選んだ。",
           "startFrame": 0,
-          "durationInFrames": 84
+          "durationInFrames": 96
         }
       ]
     },
     {
       "id": 65,
-      "startMs": 328816,
-      "startFrame": 9864,
-      "durationMs": 8376,
-      "durationInFrames": 252,
+      "startMs": 343650,
+      "startFrame": 10332,
+      "durationMs": 7640,
+      "durationInFrames": 230,
       "audioFile": "audio/scene-65.mp3",
       "segments": [
         {
           "text": "実質的な豊かさを半分捨ててでも、順位が上である世界を選ぶ人間が、半数いたということになる。",
           "startFrame": 0,
-          "durationInFrames": 246
+          "durationInFrames": 226
         }
       ]
     },
     {
       "id": 66,
-      "startMs": 337192,
-      "startFrame": 10116,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 351290,
+      "startFrame": 10562,
+      "durationMs": 2040,
+      "durationInFrames": 62,
       "audioFile": "audio/scene-66.mp3",
       "segments": [
         {
           "text": "さらに精密な実験がある。",
           "startFrame": 0,
-          "durationInFrames": 48
+          "durationInFrames": 58
         }
       ]
     },
     {
       "id": 67,
-      "startMs": 339192,
-      "startFrame": 10176,
-      "durationMs": 5232,
-      "durationInFrames": 157,
+      "startMs": 353330,
+      "startFrame": 10624,
+      "durationMs": 5000,
+      "durationInFrames": 150,
       "audioFile": "audio/scene-67.mp3",
       "segments": [
         {
           "text": "カリフォルニア大学の職員給与は、州法によりウェブ上で公開されている。",
           "startFrame": 0,
-          "durationInFrames": 152
+          "durationInFrames": 146
         }
       ]
     },
     {
       "id": 68,
-      "startMs": 344424,
-      "startFrame": 10333,
-      "durationMs": 10176,
+      "startMs": 358330,
+      "startFrame": 10774,
+      "durationMs": 10200,
       "durationInFrames": 306,
       "audioFile": "audio/scene-68.mp3",
       "segments": [
         {
           "text": "2008年、デイヴィッド・カードらの研究チームは、大学の職員を無作為に二つに分け、片方にだけそのサイトの存在を知らせた。",
           "startFrame": 0,
-          "durationInFrames": 300
+          "durationInFrames": 302
         }
       ]
     },
     {
       "id": 69,
-      "startMs": 354600,
-      "startFrame": 10638,
-      "durationMs": 2832,
-      "durationInFrames": 85,
+      "startMs": 368530,
+      "startFrame": 11080,
+      "durationMs": 3400,
+      "durationInFrames": 102,
       "audioFile": "audio/scene-69.mp3",
       "segments": [
         {
           "text": "数日後、職務満足度を調査する。",
           "startFrame": 0,
-          "durationInFrames": 80
+          "durationInFrames": 98
         }
       ]
     },
     {
       "id": 70,
-      "startMs": 357432,
-      "startFrame": 10723,
-      "durationMs": 3024,
-      "durationInFrames": 91,
+      "startMs": 371930,
+      "startFrame": 11182,
+      "durationMs": 2600,
+      "durationInFrames": 78,
       "audioFile": "audio/scene-70.mp3",
       "segments": [
         {
           "text": "結果は、きれいに非対称だった。",
           "startFrame": 0,
-          "durationInFrames": 86
+          "durationInFrames": 74
         }
       ]
     },
     {
       "id": 71,
-      "startMs": 360456,
-      "startFrame": 10814,
-      "durationMs": 8160,
-      "durationInFrames": 245,
+      "startMs": 374530,
+      "startFrame": 11260,
+      "durationMs": 9480,
+      "durationInFrames": 285,
       "audioFile": "audio/scene-71.mp3",
       "segments": [
         {
           "text": "自分の給与が同職種の中央値より低いと知った職員は、満足度が下がり、転職を考える割合が上がった。",
           "startFrame": 0,
-          "durationInFrames": 239
+          "durationInFrames": 281
         }
       ]
     },
     {
       "id": 72,
-      "startMs": 368616,
-      "startFrame": 11058,
-      "durationMs": 4128,
-      "durationInFrames": 124,
+      "startMs": 384010,
+      "startFrame": 11545,
+      "durationMs": 4760,
+      "durationInFrames": 143,
       "audioFile": "audio/scene-72.mp3",
       "segments": [
         {
           "text": "中央値より高かった職員には、目立った変化がなかった。",
           "startFrame": 0,
-          "durationInFrames": 118
+          "durationInFrames": 139
         }
       ]
     },
     {
       "id": 73,
-      "startMs": 372744,
-      "startFrame": 11182,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 388770,
+      "startFrame": 11688,
+      "durationMs": 3160,
+      "durationInFrames": 95,
       "audioFile": "audio/scene-73.mp3",
       "segments": [
         {
           "text": "上を知ることは効く。",
           "startFrame": 0,
-          "durationInFrames": 41
+          "durationInFrames": 91
         }
       ]
     },
     {
       "id": 74,
-      "startMs": 374744,
-      "startFrame": 11242,
-      "durationMs": 2400,
-      "durationInFrames": 72,
+      "startMs": 391930,
+      "startFrame": 11783,
+      "durationMs": 2530,
+      "durationInFrames": 76,
       "audioFile": "audio/scene-74.mp3",
       "segments": [
         {
           "text": "下を知ることは、ほとんど効かない。",
           "startFrame": 0,
-          "durationInFrames": 66
+          "durationInFrames": 62
         }
       ]
     },
     {
       "id": 75,
-      "startMs": 377144,
-      "startFrame": 11314,
-      "durationMs": 4920,
-      "durationInFrames": 148,
+      "startMs": 394460,
+      "startFrame": 11859,
+      "durationMs": 4600,
+      "durationInFrames": 138,
       "audioFile": "audio/scene-75.mp3",
       "segments": [
         {
           "text": "ここでタワーマンションという建築物を、もう一度眺めてみて欲しい。",
           "startFrame": 0,
-          "durationInFrames": 143
+          "durationInFrames": 134
         }
       ]
     },
     {
       "id": 76,
-      "startMs": 382064,
-      "startFrame": 11462,
-      "durationMs": 3480,
-      "durationInFrames": 105,
+      "startMs": 399060,
+      "startFrame": 11997,
+      "durationMs": 5800,
+      "durationInFrames": 174,
       "audioFile": "audio/scene-76.mp3",
       "segments": [
         {
           "text": "通常、隣人の所得は見えない。",
           "startFrame": 0,
-          "durationInFrames": 99
+          "durationInFrames": 170
         }
       ]
     },
     {
       "id": 77,
-      "startMs": 385544,
-      "startFrame": 11566,
-      "durationMs": 5376,
-      "durationInFrames": 162,
+      "startMs": 404860,
+      "startFrame": 12171,
+      "durationMs": 5240,
+      "durationInFrames": 158,
       "audioFile": "audio/scene-77.mp3",
       "segments": [
         {
           "text": "年収は名刺に書いていないし、貯金額が玄関に掲示されているわけでもない。",
           "startFrame": 0,
-          "durationInFrames": 156
+          "durationInFrames": 154
         }
       ]
     },
     {
       "id": 78,
-      "startMs": 390920,
-      "startFrame": 11728,
-      "durationMs": 9792,
+      "startMs": 410100,
+      "startFrame": 12329,
+      "durationMs": 9800,
       "durationInFrames": 294,
       "audioFile": "audio/scene-78.mp3",
       "segments": [
         {
           "text": "ところがこの建物は、その見えないはずの順位を、階数という一次元の整数に変換し、全住民に一つずつ配布してしまう。",
           "startFrame": 0,
-          "durationInFrames": 288
+          "durationInFrames": 290
         }
       ]
     },
     {
       "id": 79,
-      "startMs": 400712,
-      "startFrame": 12021,
-      "durationMs": 4056,
-      "durationInFrames": 122,
+      "startMs": 419900,
+      "startFrame": 12623,
+      "durationMs": 3720,
+      "durationInFrames": 112,
       "audioFile": "audio/scene-79.mp3",
       "segments": [
         {
           "text": "しかも、その数字はボタンとして壁に埋め込まれている。",
           "startFrame": 0,
-          "durationInFrames": 116
+          "durationInFrames": 108
         }
       ]
     },
     {
       "id": 80,
-      "startMs": 404768,
-      "startFrame": 12143,
-      "durationMs": 3840,
-      "durationInFrames": 116,
+      "startMs": 423620,
+      "startFrame": 12735,
+      "durationMs": 7000,
+      "durationInFrames": 210,
       "audioFile": "audio/scene-80.mp3",
       "segments": [
         {
           "text": "火曜の朝7時40分、エレベーターホール。",
           "startFrame": 0,
-          "durationInFrames": 110
+          "durationInFrames": 206
         }
       ]
     },
     {
       "id": 81,
-      "startMs": 408608,
-      "startFrame": 12258,
-      "durationMs": 2808,
-      "durationInFrames": 85,
+      "startMs": 430620,
+      "startFrame": 12945,
+      "durationMs": 2840,
+      "durationInFrames": 86,
       "audioFile": "audio/scene-81.mp3",
       "segments": [
         {
           "text": "同じようなスーツの男が二人乗り合わせる。",
           "startFrame": 0,
-          "durationInFrames": 79
+          "durationInFrames": 82
         }
       ]
     },
     {
       "id": 82,
-      "startMs": 411416,
-      "startFrame": 12342,
-      "durationMs": 2736,
-      "durationInFrames": 83,
+      "startMs": 433460,
+      "startFrame": 13031,
+      "durationMs": 2680,
+      "durationInFrames": 81,
       "audioFile": "audio/scene-82.mp3",
       "segments": [
         {
@@ -1234,23 +1234,23 @@
     },
     {
       "id": 83,
-      "startMs": 414152,
-      "startFrame": 12425,
-      "durationMs": 3384,
-      "durationInFrames": 102,
+      "startMs": 436140,
+      "startFrame": 13112,
+      "durationMs": 3000,
+      "durationInFrames": 90,
       "audioFile": "audio/scene-83.mp3",
       "segments": [
         {
           "text": "もうひとりの指は18で止まる。",
           "startFrame": 0,
-          "durationInFrames": 96
+          "durationInFrames": 86
         }
       ]
     },
     {
       "id": 84,
-      "startMs": 417536,
-      "startFrame": 12526,
+      "startMs": 439140,
+      "startFrame": 13202,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-84.mp3",
@@ -1258,689 +1258,689 @@
         {
           "text": "会話はない。",
           "startFrame": 0,
-          "durationInFrames": 50
+          "durationInFrames": 26
         }
       ]
     },
     {
       "id": 85,
-      "startMs": 419536,
-      "startFrame": 12586,
-      "durationMs": 6480,
-      "durationInFrames": 195,
+      "startMs": 441140,
+      "startFrame": 13262,
+      "durationMs": 6520,
+      "durationInFrames": 196,
       "audioFile": "audio/scene-85.mp3",
       "segments": [
         {
           "text": "18階までの十数秒間、二人の間にあるのは25という差だけだ。",
           "startFrame": 0,
-          "durationInFrames": 189
+          "durationInFrames": 192
         }
       ]
     },
     {
       "id": 86,
-      "startMs": 426016,
-      "startFrame": 12780,
-      "durationMs": 3600,
-      "durationInFrames": 108,
+      "startMs": 447660,
+      "startFrame": 13458,
+      "durationMs": 3720,
+      "durationInFrames": 112,
       "audioFile": "audio/scene-86.mp3",
       "segments": [
         {
           "text": "そして冒頭の分数が、ここに接続する。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 87,
-      "startMs": 429616,
-      "startFrame": 12888,
-      "durationMs": 4656,
-      "durationInFrames": 140,
-      "audioFile": "audio/scene-87.mp3",
-      "segments": [
-        {
-          "text": "1階を100として、1階ごとに0.256を加える。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "startMs": 434272,
-      "startFrame": 13028,
-      "durationMs": 3168,
-      "durationInFrames": 96,
-      "audioFile": "audio/scene-88.mp3",
-      "segments": [
-        {
-          "text": "50階は112.5641。",
-          "startFrame": 0,
-          "durationInFrames": 90
-        }
-      ]
-    },
-    {
-      "id": 89,
-      "startMs": 437440,
-      "startFrame": 13123,
-      "durationMs": 8808,
-      "durationInFrames": 265,
-      "audioFile": "audio/scene-89.mp3",
-      "segments": [
-        {
-          "text": "行政がこの補正率を導入したということは、制度が、高さは価値であると公式に認定したことを意味する。",
-          "startFrame": 0,
-          "durationInFrames": 259
-        }
-      ]
-    },
-    {
-      "id": 90,
-      "startMs": 446248,
-      "startFrame": 13387,
-      "durationMs": 6696,
-      "durationInFrames": 201,
-      "audioFile": "audio/scene-90.mp3",
-      "segments": [
-        {
-          "text": "住人が見栄を張るかどうかとは無関係に、序列は課税台帳の中にまで刻まれている。",
-          "startFrame": 0,
-          "durationInFrames": 195
-        }
-      ]
-    },
-    {
-      "id": 91,
-      "startMs": 452944,
-      "startFrame": 13588,
-      "durationMs": 7512,
-      "durationInFrames": 226,
-      "audioFile": "audio/scene-91.mp3",
-      "segments": [
-        {
-          "text": "では、その序列を設計し、値札をつけて売っている側の帳簿は、どうなっているのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 220
-        }
-      ]
-    },
-    {
-      "id": 92,
-      "startMs": 460456,
-      "startFrame": 13814,
-      "durationMs": 6552,
-      "durationInFrames": 197,
-      "audioFile": "audio/scene-92.mp3",
-      "segments": [
-        {
-          "text": "供給側から見ると、階数という商品は、少し奇妙な性質を持っている。",
-          "startFrame": 0,
-          "durationInFrames": 191
-        }
-      ]
-    },
-    {
-      "id": 93,
-      "startMs": 467008,
-      "startFrame": 14010,
-      "durationMs": 4800,
-      "durationInFrames": 144,
-      "audioFile": "audio/scene-93.mp3",
-      "segments": [
-        {
-          "text": "タワーマンションの構造は、ほぼ同じ間取りを上下に積み上げたものだ。",
-          "startFrame": 0,
-          "durationInFrames": 139
-        }
-      ]
-    },
-    {
-      "id": 94,
-      "startMs": 471808,
-      "startFrame": 14154,
-      "durationMs": 6144,
-      "durationInFrames": 185,
-      "audioFile": "audio/scene-94.mp3",
-      "segments": [
-        {
-          "text": "上階の建設コストが下階より高いのは事実である。",
-          "startFrame": 0,
-          "durationInFrames": 179
-        }
-      ]
-    },
-    {
-      "id": 95,
-      "startMs": 477952,
-      "startFrame": 14339,
-      "durationMs": 4488,
-      "durationInFrames": 135,
-      "audioFile": "audio/scene-95.mp3",
-      "segments": [
-        {
-          "text": "資材を高く揚げる費用がかかり、風圧に耐える構造も要る。",
-          "startFrame": 0,
-          "durationInFrames": 129
-        }
-      ]
-    },
-    {
-      "id": 96,
-      "startMs": 482440,
-      "startFrame": 14473,
-      "durationMs": 10200,
-      "durationInFrames": 306,
-      "audioFile": "audio/scene-96.mp3",
-      "segments": [
-        {
-          "text": "だが、階が上がるごとに数百万円ずつ上がっていく価格差の大半は、その原価差に対応していない。",
-          "startFrame": 0,
-          "durationInFrames": 300
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "startMs": 492640,
-      "startFrame": 14779,
-      "durationMs": 6624,
-      "durationInFrames": 199,
-      "audioFile": "audio/scene-97.mp3",
-      "segments": [
-        {
-          "text": "ほぼ同一の商品を、高さという物語によって階層化し、上に行くほど高く売る。",
-          "startFrame": 0,
-          "durationInFrames": 193
-        }
-      ]
-    },
-    {
-      "id": 98,
-      "startMs": 499264,
-      "startFrame": 14978,
-      "durationMs": 5160,
-      "durationInFrames": 155,
-      "audioFile": "audio/scene-98.mp3",
-      "segments": [
-        {
-          "text": "棚の並べ方を変えるだけで単価が変わる商品というのは、そう多くない。",
-          "startFrame": 0,
-          "durationInFrames": 149
-        }
-      ]
-    },
-    {
-      "id": 99,
-      "startMs": 504424,
-      "startFrame": 15133,
-      "durationMs": 6720,
-      "durationInFrames": 202,
-      "audioFile": "audio/scene-99.mp3",
-      "segments": [
-        {
-          "text": "ただし、この動画で伝えたいのは、デベロッパーが不当に吊り上げているという単純な話ではない。",
-          "startFrame": 0,
-          "durationInFrames": 196
-        }
-      ]
-    },
-    {
-      "id": 100,
-      "startMs": 511144,
-      "startFrame": 15334,
-      "durationMs": 4248,
-      "durationInFrames": 128,
-      "audioFile": "audio/scene-100.mp3",
-      "segments": [
-        {
-          "text": "建設費も人件費も用地の取得費も上がり続けている。",
-          "startFrame": 0,
-          "durationInFrames": 122
-        }
-      ]
-    },
-    {
-      "id": 101,
-      "startMs": 515392,
-      "startFrame": 15462,
-      "durationMs": 16632,
-      "durationInFrames": 499,
-      "audioFile": "audio/scene-101.mp3",
-      "segments": [
-        {
-          "text": "首都圏の供給戸数が1973年以来最少の2万1962戸まで落ちたのは、儲けるために絞ったからというより、売れる価格帯に商品を寄せた結果として、億ションだけが残ったからだ。",
-          "startFrame": 0,
-          "durationInFrames": 493
-        }
-      ]
-    },
-    {
-      "id": 102,
-      "startMs": 532024,
-      "startFrame": 15961,
-      "durationMs": 3192,
-      "durationInFrames": 96,
-      "audioFile": "audio/scene-102.mp3",
-      "segments": [
-        {
-          "text": "売る側もまた、同じ構造の中に立っている。",
-          "startFrame": 0,
-          "durationInFrames": 90
-        }
-      ]
-    },
-    {
-      "id": 103,
-      "startMs": 535216,
-      "startFrame": 16056,
-      "durationMs": 5088,
-      "durationInFrames": 153,
-      "audioFile": "audio/scene-103.mp3",
-      "segments": [
-        {
-          "text": "一方、買った側の帳簿には、購入価格には書かれていない行がある。",
-          "startFrame": 0,
-          "durationInFrames": 147
-        }
-      ]
-    },
-    {
-      "id": 104,
-      "startMs": 540304,
-      "startFrame": 16209,
-      "durationMs": 12936,
-      "durationInFrames": 389,
-      "audioFile": "audio/scene-104.mp3",
-      "segments": [
-        {
-          "text": "国土交通省の令和5年度マンション総合調査によれば、修繕積立金の平均額は1戸あたり月に1万3054円。",
-          "startFrame": 0,
-          "durationInFrames": 383
-        }
-      ]
-    },
-    {
-      "id": 105,
-      "startMs": 553240,
-      "startFrame": 16597,
-      "durationMs": 3456,
-      "durationInFrames": 104,
-      "audioFile": "audio/scene-105.mp3",
-      "segments": [
-        {
-          "text": "ただしこれは全国の全マンションの平均だ。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 106,
-      "startMs": 556696,
-      "startFrame": 16701,
-      "durationMs": 9672,
-      "durationInFrames": 291,
-      "audioFile": "audio/scene-106.mp3",
-      "segments": [
-        {
-          "text": "同じ国交省のガイドラインでは、20階以上の高層マンションの目安は1平方メートルあたり月338円とされている。",
-          "startFrame": 0,
-          "durationInFrames": 285
-        }
-      ]
-    },
-    {
-      "id": 107,
-      "startMs": 566368,
-      "startFrame": 16991,
-      "durationMs": 5208,
-      "durationInFrames": 157,
-      "audioFile": "audio/scene-107.mp3",
-      "segments": [
-        {
-          "text": "70平方メートルなら月に2万3660円。",
-          "startFrame": 0,
-          "durationInFrames": 151
-        }
-      ]
-    },
-    {
-      "id": 108,
-      "startMs": 571576,
-      "startFrame": 17147,
-      "durationMs": 7176,
-      "durationInFrames": 216,
-      "audioFile": "audio/scene-108.mp3",
-      "segments": [
-        {
-          "text": "タワーは外壁の修繕に特殊な足場やゴンドラを要し、工事の単価そのものが上がるからだ。",
-          "startFrame": 0,
-          "durationInFrames": 210
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "startMs": 578752,
-      "startFrame": 17363,
-      "durationMs": 3336,
-      "durationInFrames": 101,
-      "audioFile": "audio/scene-109.mp3",
-      "segments": [
-        {
-          "text": "そして同じ調査には、もう一つの数字がある。",
-          "startFrame": 0,
-          "durationInFrames": 95
-        }
-      ]
-    },
-    {
-      "id": 110,
-      "startMs": 582088,
-      "startFrame": 17463,
-      "durationMs": 8064,
-      "durationInFrames": 242,
-      "audioFile": "audio/scene-110.mp3",
-      "segments": [
-        {
-          "text": "長期修繕計画上の必要額に対して、現在の積立額が不足しているマンションは36.6パーセント。",
-          "startFrame": 0,
-          "durationInFrames": 237
-        }
-      ]
-    },
-    {
-      "id": 111,
-      "startMs": 590152,
-      "startFrame": 17705,
-      "durationMs": 5952,
-      "durationInFrames": 179,
-      "audioFile": "audio/scene-111.mp3",
-      "segments": [
-        {
-          "text": "そのうち、20パーセントを超えて不足しているものが11.7パーセントある。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 112,
-      "startMs": 596104,
-      "startFrame": 17883,
-      "durationMs": 5280,
-      "durationInFrames": 159,
-      "audioFile": "audio/scene-112.mp3",
-      "segments": [
-        {
-          "text": "日曜の午後2時、管理組合の総会を想像してみて欲しい。",
-          "startFrame": 0,
-          "durationInFrames": 153
-        }
-      ]
-    },
-    {
-      "id": 113,
-      "startMs": 601384,
-      "startFrame": 18042,
-      "durationMs": 2736,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-113.mp3",
-      "segments": [
-        {
-          "text": "議案は修繕積立金の値上げだ。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 114,
-      "startMs": 604120,
-      "startFrame": 18124,
-      "durationMs": 2592,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-114.mp3",
-      "segments": [
-        {
-          "text": "会場の椅子は半分ほど埋まっている。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 115,
-      "startMs": 606712,
-      "startFrame": 18201,
-      "durationMs": 8448,
-      "durationInFrames": 254,
-      "audioFile": "audio/scene-115.mp3",
-      "segments": [
-        {
-          "text": "投資目的で買い、賃貸に出している区分所有者の席は空いていて、机の上には委任状が積まれている。",
-          "startFrame": 0,
-          "durationInFrames": 248
-        }
-      ]
-    },
-    {
-      "id": 116,
-      "startMs": 615160,
-      "startFrame": 18455,
-      "durationMs": 2736,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-116.mp3",
-      "segments": [
-        {
-          "text": "賛成すれば毎月の支出が増える。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 117,
-      "startMs": 617896,
-      "startFrame": 18537,
-      "durationMs": 3408,
-      "durationInFrames": 103,
-      "audioFile": "audio/scene-117.mp3",
-      "segments": [
-        {
-          "text": "反対すれば、十数年後の工事ができない。",
-          "startFrame": 0,
-          "durationInFrames": 97
-        }
-      ]
-    },
-    {
-      "id": 118,
-      "startMs": 621304,
-      "startFrame": 18639,
-      "durationMs": 8688,
-      "durationInFrames": 261,
-      "audioFile": "audio/scene-118.mp3",
-      "segments": [
-        {
-          "text": "この建物には、上下の序列だけでなく、住んでいる人と持っているだけの人という、もう一本の線が走っている。",
-          "startFrame": 0,
-          "durationInFrames": 255
-        }
-      ]
-    },
-    {
-      "id": 119,
-      "startMs": 629992,
-      "startFrame": 18900,
-      "durationMs": 5832,
-      "durationInFrames": 175,
-      "audioFile": "audio/scene-119.mp3",
-      "segments": [
-        {
-          "text": "そもそも人間は、なぜ高さという一本の軸に、これほど反応してしまうのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 169
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "startMs": 635824,
-      "startFrame": 19075,
-      "durationMs": 5064,
-      "durationInFrames": 152,
-      "audioFile": "audio/scene-120.mp3",
-      "segments": [
-        {
-          "text": "高さは、文明が最初に発明した序列の可視化装置である。",
-          "startFrame": 0,
-          "durationInFrames": 147
-        }
-      ]
-    },
-    {
-      "id": 121,
-      "startMs": 640888,
-      "startFrame": 19227,
-      "durationMs": 5472,
-      "durationInFrames": 165,
-      "audioFile": "audio/scene-121.mp3",
-      "segments": [
-        {
-          "text": "メソポタミアのジッグラト、ギザのピラミッド、ゴシックの尖塔、城の天守。",
-          "startFrame": 0,
-          "durationInFrames": 159
-        }
-      ]
-    },
-    {
-      "id": 122,
-      "startMs": 646360,
-      "startFrame": 19391,
-      "durationMs": 3696,
-      "durationInFrames": 111,
-      "audioFile": "audio/scene-122.mp3",
-      "segments": [
-        {
-          "text": "時代も宗教も違うのに、配置だけは同じだ。",
-          "startFrame": 0,
-          "durationInFrames": 105
-        }
-      ]
-    },
-    {
-      "id": 123,
-      "startMs": 650056,
-      "startFrame": 19502,
-      "durationMs": 2760,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-123.mp3",
-      "segments": [
-        {
-          "text": "高い場所を占める者が、下を見下ろす。",
-          "startFrame": 0,
-          "durationInFrames": 78
-        }
-      ]
-    },
-    {
-      "id": 124,
-      "startMs": 652816,
-      "startFrame": 19584,
-      "durationMs": 7560,
-      "durationInFrames": 227,
-      "audioFile": "audio/scene-124.mp3",
-      "segments": [
-        {
-          "text": "その都市で最も高い建物が誰のものかを見れば、その時代に最も強い者が誰かが分かる。",
-          "startFrame": 0,
-          "durationInFrames": 222
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "startMs": 660376,
-      "startFrame": 19811,
-      "durationMs": 7080,
-      "durationInFrames": 213,
-      "audioFile": "audio/scene-125.mp3",
-      "segments": [
-        {
-          "text": "神殿から王宮へ、王宮から企業のオフィスへ、そして今、その最上部は住宅になっている。",
-          "startFrame": 0,
-          "durationInFrames": 207
-        }
-      ]
-    },
-    {
-      "id": 126,
-      "startMs": 667456,
-      "startFrame": 20024,
-      "durationMs": 8424,
-      "durationInFrames": 253,
-      "audioFile": "audio/scene-126.mp3",
-      "segments": [
-        {
-          "text": "1899年、ソースティン・ヴェブレンは有閑階級の理論の中で、顕示的消費という概念を提示した。",
-          "startFrame": 0,
-          "durationInFrames": 248
-        }
-      ]
-    },
-    {
-      "id": 127,
-      "startMs": 675880,
-      "startFrame": 20276,
-      "durationMs": 6600,
-      "durationInFrames": 198,
-      "audioFile": "audio/scene-127.mp3",
-      "segments": [
-        {
-          "text": "財はその効用のためではなく、それを支払える能力を示すために消費されるという指摘だ。",
-          "startFrame": 0,
-          "durationInFrames": 193
-        }
-      ]
-    },
-    {
-      "id": 128,
-      "startMs": 682480,
-      "startFrame": 20474,
-      "durationMs": 3792,
-      "durationInFrames": 114,
-      "audioFile": "audio/scene-128.mp3",
-      "segments": [
-        {
-          "text": "ただしヴェブレンの時代、顕示には物が必要だった。",
           "startFrame": 0,
           "durationInFrames": 108
         }
       ]
     },
     {
+      "id": 87,
+      "startMs": 451380,
+      "startFrame": 13570,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-87.mp3",
+      "segments": [
+        {
+          "text": "1階を100として、1階ごとに0.256を加える。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "startMs": 455900,
+      "startFrame": 13706,
+      "durationMs": 4040,
+      "durationInFrames": 122,
+      "audioFile": "audio/scene-88.mp3",
+      "segments": [
+        {
+          "text": "50階は112.5641。",
+          "startFrame": 0,
+          "durationInFrames": 118
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "startMs": 459940,
+      "startFrame": 13828,
+      "durationMs": 8840,
+      "durationInFrames": 266,
+      "audioFile": "audio/scene-89.mp3",
+      "segments": [
+        {
+          "text": "行政がこの補正率を導入したということは、制度が、高さは価値であると公式に認定したことを意味する。",
+          "startFrame": 0,
+          "durationInFrames": 262
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "startMs": 468780,
+      "startFrame": 14094,
+      "durationMs": 6680,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-90.mp3",
+      "segments": [
+        {
+          "text": "住人が見栄を張るかどうかとは無関係に、序列は課税台帳の中にまで刻まれている。",
+          "startFrame": 0,
+          "durationInFrames": 197
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "startMs": 475460,
+      "startFrame": 14295,
+      "durationMs": 6680,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-91.mp3",
+      "segments": [
+        {
+          "text": "では、その序列を設計し、値札をつけて売っている側の帳簿は、どうなっているのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 197
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "startMs": 482140,
+      "startFrame": 14496,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-92.mp3",
+      "segments": [
+        {
+          "text": "供給側から見ると、階数という商品は、少し奇妙な性質を持っている。",
+          "startFrame": 0,
+          "durationInFrames": 168
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "startMs": 487860,
+      "startFrame": 14668,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-93.mp3",
+      "segments": [
+        {
+          "text": "タワーマンションの構造は、ほぼ同じ間取りを上下に積み上げたものだ。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "startMs": 492460,
+      "startFrame": 14806,
+      "durationMs": 6760,
+      "durationInFrames": 203,
+      "audioFile": "audio/scene-94.mp3",
+      "segments": [
+        {
+          "text": "上階の建設コストが下階より高いのは事実である。",
+          "startFrame": 0,
+          "durationInFrames": 199
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "startMs": 499220,
+      "startFrame": 15009,
+      "durationMs": 5560,
+      "durationInFrames": 167,
+      "audioFile": "audio/scene-95.mp3",
+      "segments": [
+        {
+          "text": "資材を高く揚げる費用がかかり、風圧に耐える構造も要る。",
+          "startFrame": 0,
+          "durationInFrames": 163
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "startMs": 504780,
+      "startFrame": 15176,
+      "durationMs": 9320,
+      "durationInFrames": 280,
+      "audioFile": "audio/scene-96.mp3",
+      "segments": [
+        {
+          "text": "だが、階が上がるごとに数百万円ずつ上がっていく価格差の大半は、その原価差に対応していない。",
+          "startFrame": 0,
+          "durationInFrames": 276
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "startMs": 514100,
+      "startFrame": 15456,
+      "durationMs": 7560,
+      "durationInFrames": 227,
+      "audioFile": "audio/scene-97.mp3",
+      "segments": [
+        {
+          "text": "ほぼ同一の商品を、高さという物語によって階層化し、上に行くほど高く売る。",
+          "startFrame": 0,
+          "durationInFrames": 223
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "startMs": 521660,
+      "startFrame": 15683,
+      "durationMs": 10040,
+      "durationInFrames": 302,
+      "audioFile": "audio/scene-98.mp3",
+      "segments": [
+        {
+          "text": "棚の並べ方を変えるだけで単価が変わる商品というのは、そう多くない。",
+          "startFrame": 0,
+          "durationInFrames": 298
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "startMs": 531700,
+      "startFrame": 15985,
+      "durationMs": 7160,
+      "durationInFrames": 215,
+      "audioFile": "audio/scene-99.mp3",
+      "segments": [
+        {
+          "text": "ただし、この動画で伝えたいのは、デベロッパーが不当に吊り上げているという単純な話ではない。",
+          "startFrame": 0,
+          "durationInFrames": 211
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "startMs": 538860,
+      "startFrame": 16200,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-100.mp3",
+      "segments": [
+        {
+          "text": "建設費も人件費も用地の取得費も上がり続けている。",
+          "startFrame": 0,
+          "durationInFrames": 168
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "startMs": 544580,
+      "startFrame": 16372,
+      "durationMs": 19240,
+      "durationInFrames": 578,
+      "audioFile": "audio/scene-101.mp3",
+      "segments": [
+        {
+          "text": "首都圏の供給戸数が1973年以来最少の2万1962戸まで落ちたのは、儲けるために絞ったからというより、売れる価格帯に商品を寄せた結果として、億ションだけが残ったからだ。",
+          "startFrame": 0,
+          "durationInFrames": 574
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "startMs": 563820,
+      "startFrame": 16950,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-102.mp3",
+      "segments": [
+        {
+          "text": "売る側もまた、同じ構造の中に立っている。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "startMs": 567140,
+      "startFrame": 17050,
+      "durationMs": 5090,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-103.mp3",
+      "segments": [
+        {
+          "text": "一方、買った側の帳簿には、購入価格には書かれていない行がある。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "startMs": 572230,
+      "startFrame": 17203,
+      "durationMs": 13080,
+      "durationInFrames": 393,
+      "audioFile": "audio/scene-104.mp3",
+      "segments": [
+        {
+          "text": "国土交通省の令和5年度マンション総合調査によれば、修繕積立金の平均額は1戸あたり月に1万3054円。",
+          "startFrame": 0,
+          "durationInFrames": 389
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "startMs": 585310,
+      "startFrame": 17596,
+      "durationMs": 4200,
+      "durationInFrames": 126,
+      "audioFile": "audio/scene-105.mp3",
+      "segments": [
+        {
+          "text": "ただしこれは全国の全マンションの平均だ。",
+          "startFrame": 0,
+          "durationInFrames": 122
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "startMs": 589510,
+      "startFrame": 17722,
+      "durationMs": 11320,
+      "durationInFrames": 340,
+      "audioFile": "audio/scene-106.mp3",
+      "segments": [
+        {
+          "text": "同じ国交省のガイドラインでは、20階以上の高層マンションの目安は1平方メートルあたり月338円とされている。",
+          "startFrame": 0,
+          "durationInFrames": 336
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "startMs": 600830,
+      "startFrame": 18062,
+      "durationMs": 6290,
+      "durationInFrames": 189,
+      "audioFile": "audio/scene-107.mp3",
+      "segments": [
+        {
+          "text": "70平方メートルなら月に2万3660円。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "startMs": 607120,
+      "startFrame": 18251,
+      "durationMs": 8450,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-108.mp3",
+      "segments": [
+        {
+          "text": "タワーは外壁の修繕に特殊な足場やゴンドラを要し、工事の単価そのものが上がるからだ。",
+          "startFrame": 0,
+          "durationInFrames": 240
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "startMs": 615570,
+      "startFrame": 18505,
+      "durationMs": 3080,
+      "durationInFrames": 93,
+      "audioFile": "audio/scene-109.mp3",
+      "segments": [
+        {
+          "text": "そして同じ調査には、もう一つの数字がある。",
+          "startFrame": 0,
+          "durationInFrames": 89
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "startMs": 618650,
+      "startFrame": 18598,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-110.mp3",
+      "segments": [
+        {
+          "text": "長期修繕計画上の必要額に対して、現在の積立額が不足しているマンションは36.6パーセント。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "startMs": 627090,
+      "startFrame": 18852,
+      "durationMs": 6130,
+      "durationInFrames": 184,
+      "audioFile": "audio/scene-111.mp3",
+      "segments": [
+        {
+          "text": "そのうち、20パーセントを超えて不足しているものが11.7パーセントある。",
+          "startFrame": 0,
+          "durationInFrames": 170
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "startMs": 633220,
+      "startFrame": 19036,
+      "durationMs": 5480,
+      "durationInFrames": 165,
+      "audioFile": "audio/scene-112.mp3",
+      "segments": [
+        {
+          "text": "日曜の午後2時、管理組合の総会を想像してみて欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 161
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "startMs": 638700,
+      "startFrame": 19201,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-113.mp3",
+      "segments": [
+        {
+          "text": "議案は修繕積立金の値上げだ。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "startMs": 641460,
+      "startFrame": 19284,
+      "durationMs": 2440,
+      "durationInFrames": 74,
+      "audioFile": "audio/scene-114.mp3",
+      "segments": [
+        {
+          "text": "会場の椅子は半分ほど埋まっている。",
+          "startFrame": 0,
+          "durationInFrames": 70
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "startMs": 643900,
+      "startFrame": 19358,
+      "durationMs": 8760,
+      "durationInFrames": 263,
+      "audioFile": "audio/scene-115.mp3",
+      "segments": [
+        {
+          "text": "投資目的で買い、賃貸に出している区分所有者の席は空いていて、机の上には委任状が積まれている。",
+          "startFrame": 0,
+          "durationInFrames": 259
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "startMs": 652660,
+      "startFrame": 19621,
+      "durationMs": 3080,
+      "durationInFrames": 93,
+      "audioFile": "audio/scene-116.mp3",
+      "segments": [
+        {
+          "text": "賛成すれば毎月の支出が増える。",
+          "startFrame": 0,
+          "durationInFrames": 89
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "startMs": 655740,
+      "startFrame": 19714,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-117.mp3",
+      "segments": [
+        {
+          "text": "反対すれば、十数年後の工事ができない。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "startMs": 660020,
+      "startFrame": 19843,
+      "durationMs": 11090,
+      "durationInFrames": 333,
+      "audioFile": "audio/scene-118.mp3",
+      "segments": [
+        {
+          "text": "この建物には、上下の序列だけでなく、住んでいる人と持っているだけの人という、もう一本の線が走っている。",
+          "startFrame": 0,
+          "durationInFrames": 319
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "startMs": 671110,
+      "startFrame": 20176,
+      "durationMs": 6840,
+      "durationInFrames": 206,
+      "audioFile": "audio/scene-119.mp3",
+      "segments": [
+        {
+          "text": "そもそも人間は、なぜ高さという一本の軸に、これほど反応してしまうのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 202
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "startMs": 677950,
+      "startFrame": 20382,
+      "durationMs": 5320,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-120.mp3",
+      "segments": [
+        {
+          "text": "高さは、文明が最初に発明した序列の可視化装置である。",
+          "startFrame": 0,
+          "durationInFrames": 156
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "startMs": 683270,
+      "startFrame": 20542,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-121.mp3",
+      "segments": [
+        {
+          "text": "メソポタミアのジッグラト、ギザのピラミッド、ゴシックの尖塔、城の天守。",
+          "startFrame": 0,
+          "durationInFrames": 254
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "startMs": 691870,
+      "startFrame": 20800,
+      "durationMs": 3800,
+      "durationInFrames": 114,
+      "audioFile": "audio/scene-122.mp3",
+      "segments": [
+        {
+          "text": "時代も宗教も違うのに、配置だけは同じだ。",
+          "startFrame": 0,
+          "durationInFrames": 110
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "startMs": 695670,
+      "startFrame": 20914,
+      "durationMs": 3080,
+      "durationInFrames": 93,
+      "audioFile": "audio/scene-123.mp3",
+      "segments": [
+        {
+          "text": "高い場所を占める者が、下を見下ろす。",
+          "startFrame": 0,
+          "durationInFrames": 89
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "startMs": 698750,
+      "startFrame": 21007,
+      "durationMs": 8200,
+      "durationInFrames": 246,
+      "audioFile": "audio/scene-124.mp3",
+      "segments": [
+        {
+          "text": "その都市で最も高い建物が誰のものかを見れば、その時代に最も強い者が誰かが分かる。",
+          "startFrame": 0,
+          "durationInFrames": 242
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "startMs": 706950,
+      "startFrame": 21253,
+      "durationMs": 7160,
+      "durationInFrames": 215,
+      "audioFile": "audio/scene-125.mp3",
+      "segments": [
+        {
+          "text": "神殿から王宮へ、王宮から企業のオフィスへ、そして今、その最上部は住宅になっている。",
+          "startFrame": 0,
+          "durationInFrames": 211
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "startMs": 714110,
+      "startFrame": 21468,
+      "durationMs": 8360,
+      "durationInFrames": 251,
+      "audioFile": "audio/scene-126.mp3",
+      "segments": [
+        {
+          "text": "1899年、ソースティン・ヴェブレンは有閑階級の理論の中で、顕示的消費という概念を提示した。",
+          "startFrame": 0,
+          "durationInFrames": 247
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "startMs": 722470,
+      "startFrame": 21719,
+      "durationMs": 6840,
+      "durationInFrames": 206,
+      "audioFile": "audio/scene-127.mp3",
+      "segments": [
+        {
+          "text": "財はその効用のためではなく、それを支払える能力を示すために消費されるという指摘だ。",
+          "startFrame": 0,
+          "durationInFrames": 202
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "startMs": 729310,
+      "startFrame": 21925,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-128.mp3",
+      "segments": [
+        {
+          "text": "ただしヴェブレンの時代、顕示には物が必要だった。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
       "id": 129,
-      "startMs": 686272,
-      "startFrame": 20588,
-      "durationMs": 3288,
-      "durationInFrames": 99,
+      "startMs": 733910,
+      "startFrame": 22063,
+      "durationMs": 2760,
+      "durationInFrames": 83,
       "audioFile": "audio/scene-129.mp3",
       "segments": [
         {
           "text": "馬車、銀器、召使い。",
           "startFrame": 0,
-          "durationInFrames": 93
+          "durationInFrames": 79
         }
       ]
     },
     {
       "id": 130,
-      "startMs": 689560,
-      "startFrame": 20687,
+      "startMs": 736670,
+      "startFrame": 22146,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-130.mp3",
@@ -1954,263 +1954,263 @@
     },
     {
       "id": 131,
-      "startMs": 691560,
-      "startFrame": 20747,
-      "durationMs": 6936,
-      "durationInFrames": 209,
+      "startMs": 738670,
+      "startFrame": 22206,
+      "durationMs": 7880,
+      "durationInFrames": 237,
       "audioFile": "audio/scene-131.mp3",
       "segments": [
         {
           "text": "ところが住所と階数は、口頭で伝わり、名刺に印字され、配達伝票と登記簿に残る。",
           "startFrame": 0,
-          "durationInFrames": 203
+          "durationInFrames": 233
         }
       ]
     },
     {
       "id": 132,
-      "startMs": 698496,
-      "startFrame": 20955,
-      "durationMs": 4440,
-      "durationInFrames": 134,
+      "startMs": 746550,
+      "startFrame": 22443,
+      "durationMs": 4760,
+      "durationInFrames": 143,
       "audioFile": "audio/scene-132.mp3",
       "segments": [
         {
           "text": "持ち歩く必要のない、極めて効率の良い顕示財である。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 133,
-      "startMs": 702936,
-      "startFrame": 21088,
-      "durationMs": 6480,
-      "durationInFrames": 195,
-      "audioFile": "audio/scene-133.mp3",
-      "segments": [
-        {
-          "text": "では、その高さは、支払った分だけ何かを返してくれるのか。",
-          "startFrame": 0,
-          "durationInFrames": 189
-        }
-      ]
-    },
-    {
-      "id": 134,
-      "startMs": 709416,
-      "startFrame": 21282,
-      "durationMs": 5976,
-      "durationInFrames": 180,
-      "audioFile": "audio/scene-134.mp3",
-      "segments": [
-        {
-          "text": "2016年、カナダ医師会雑誌に、イアン・ドレナンらの研究が掲載された。",
-          "startFrame": 0,
-          "durationInFrames": 174
-        }
-      ]
-    },
-    {
-      "id": 135,
-      "startMs": 715392,
-      "startFrame": 21462,
-      "durationMs": 15936,
-      "durationInFrames": 479,
-      "audioFile": "audio/scene-135.mp3",
-      "segments": [
-        {
-          "text": "トロント市と隣接するピール地域で、2007年1月から2012年12月までに私邸で発生した院外心停止7842件を分析したものだ。",
-          "startFrame": 0,
-          "durationInFrames": 472
-        }
-      ]
-    },
-    {
-      "id": 136,
-      "startMs": 731328,
-      "startFrame": 21940,
-      "durationMs": 4872,
-      "durationInFrames": 147,
-      "audioFile": "audio/scene-136.mp3",
-      "segments": [
-        {
-          "text": "全体で、退院まで生存したのは3.8パーセント。",
-          "startFrame": 0,
-          "durationInFrames": 140
-        }
-      ]
-    },
-    {
-      "id": 137,
-      "startMs": 736200,
-      "startFrame": 22086,
-      "durationMs": 5664,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-137.mp3",
-      "segments": [
-        {
-          "text": "3階未満では4.2パーセント、3階以上では2.6パーセント。",
-          "startFrame": 0,
-          "durationInFrames": 164
-        }
-      ]
-    },
-    {
-      "id": 138,
-      "startMs": 741864,
-      "startFrame": 22256,
-      "durationMs": 5664,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-138.mp3",
-      "segments": [
-        {
-          "text": "さらに階ごとに追うと、16階より上での生存率は0.9パーセントだった。",
-          "startFrame": 0,
-          "durationInFrames": 165
-        }
-      ]
-    },
-    {
-      "id": 139,
-      "startMs": 747528,
-      "startFrame": 22426,
-      "durationMs": 3264,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-139.mp3",
-      "segments": [
-        {
-          "text": "216件のうち、生き延びたのは2人。",
-          "startFrame": 0,
-          "durationInFrames": 93
-        }
-      ]
-    },
-    {
-      "id": 140,
-      "startMs": 750792,
-      "startFrame": 22524,
-      "durationMs": 5808,
-      "durationInFrames": 175,
-      "audioFile": "audio/scene-140.mp3",
-      "segments": [
-        {
-          "text": "25階より上で起きた30件については、生存者はひとりもいなかった。",
-          "startFrame": 0,
-          "durationInFrames": 169
-        }
-      ]
-    },
-    {
-      "id": 141,
-      "startMs": 756600,
-      "startFrame": 22698,
-      "durationMs": 2448,
-      "durationInFrames": 74,
-      "audioFile": "audio/scene-141.mp3",
-      "segments": [
-        {
-          "text": "理由は建物の頑丈さではない。",
-          "startFrame": 0,
-          "durationInFrames": 68
-        }
-      ]
-    },
-    {
-      "id": 142,
-      "startMs": 759048,
-      "startFrame": 22771,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-142.mp3",
-      "segments": [
-        {
-          "text": "時間だ。",
-          "startFrame": 0,
-          "durationInFrames": 54
-        }
-      ]
-    },
-    {
-      "id": 143,
-      "startMs": 761048,
-      "startFrame": 22831,
-      "durationMs": 4824,
-      "durationInFrames": 145,
-      "audioFile": "audio/scene-143.mp3",
-      "segments": [
-        {
-          "text": "オートロックの解錠、エレベーターの待ち時間、長い共用廊下。",
           "startFrame": 0,
           "durationInFrames": 139
         }
       ]
     },
     {
-      "id": 144,
-      "startMs": 765872,
-      "startFrame": 22976,
-      "durationMs": 7200,
-      "durationInFrames": 216,
-      "audioFile": "audio/scene-144.mp3",
+      "id": 133,
+      "startMs": 751310,
+      "startFrame": 22586,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-133.mp3",
       "segments": [
         {
-          "text": "救急隊が患者の身体に手を触れるまでの数分間が、下の階より確実に長くなる。",
+          "text": "では、その高さは、支払った分だけ何かを返してくれるのか。",
           "startFrame": 0,
-          "durationInFrames": 211
+          "durationInFrames": 149
         }
       ]
     },
     {
-      "id": 145,
-      "startMs": 773072,
-      "startFrame": 23192,
-      "durationMs": 4008,
-      "durationInFrames": 121,
-      "audioFile": "audio/scene-145.mp3",
+      "id": 134,
+      "startMs": 756390,
+      "startFrame": 22739,
+      "durationMs": 8120,
+      "durationInFrames": 244,
+      "audioFile": "audio/scene-134.mp3",
       "segments": [
         {
-          "text": "2019年10月、台風19号。",
+          "text": "2016年、カナダ医師会雑誌に、イアン・ドレナンらの研究が掲載された。",
+          "startFrame": 0,
+          "durationInFrames": 240
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "startMs": 764510,
+      "startFrame": 22983,
+      "durationMs": 18600,
+      "durationInFrames": 558,
+      "audioFile": "audio/scene-135.mp3",
+      "segments": [
+        {
+          "text": "トロント市と隣接するピール地域で、2007年1月から2012年12月までに私邸で発生した院外心停止7842件を分析したものだ。",
+          "startFrame": 0,
+          "durationInFrames": 554
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "startMs": 783110,
+      "startFrame": 23541,
+      "durationMs": 4120,
+      "durationInFrames": 124,
+      "audioFile": "audio/scene-136.mp3",
+      "segments": [
+        {
+          "text": "全体で、退院まで生存したのは3.8パーセント。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "startMs": 787230,
+      "startFrame": 23665,
+      "durationMs": 5320,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-137.mp3",
+      "segments": [
+        {
+          "text": "3階未満では4.2パーセント、3階以上では2.6パーセント。",
+          "startFrame": 0,
+          "durationInFrames": 156
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "startMs": 792550,
+      "startFrame": 23825,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-138.mp3",
+      "segments": [
+        {
+          "text": "さらに階ごとに追うと、16階より上での生存率は0.9パーセントだった。",
+          "startFrame": 0,
+          "durationInFrames": 254
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "startMs": 801150,
+      "startFrame": 24083,
+      "durationMs": 3240,
+      "durationInFrames": 98,
+      "audioFile": "audio/scene-139.mp3",
+      "segments": [
+        {
+          "text": "216件のうち、生き延びたのは2人。",
+          "startFrame": 0,
+          "durationInFrames": 94
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "startMs": 804390,
+      "startFrame": 24181,
+      "durationMs": 6690,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-140.mp3",
+      "segments": [
+        {
+          "text": "25階より上で起きた30件については、生存者はひとりもいなかった。",
+          "startFrame": 0,
+          "durationInFrames": 187
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "startMs": 811080,
+      "startFrame": 24382,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-141.mp3",
+      "segments": [
+        {
+          "text": "理由は建物の頑丈さではない。",
           "startFrame": 0,
           "durationInFrames": 115
         }
       ]
     },
     {
+      "id": 142,
+      "startMs": 815040,
+      "startFrame": 24501,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-142.mp3",
+      "segments": [
+        {
+          "text": "時間だ。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "startMs": 817800,
+      "startFrame": 24584,
+      "durationMs": 5240,
+      "durationInFrames": 158,
+      "audioFile": "audio/scene-143.mp3",
+      "segments": [
+        {
+          "text": "オートロックの解錠、エレベーターの待ち時間、長い共用廊下。",
+          "startFrame": 0,
+          "durationInFrames": 154
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "startMs": 823040,
+      "startFrame": 24742,
+      "durationMs": 8680,
+      "durationInFrames": 261,
+      "audioFile": "audio/scene-144.mp3",
+      "segments": [
+        {
+          "text": "救急隊が患者の身体に手を触れるまでの数分間が、下の階より確実に長くなる。",
+          "startFrame": 0,
+          "durationInFrames": 257
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "startMs": 831720,
+      "startFrame": 25003,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-145.mp3",
+      "segments": [
+        {
+          "text": "2019年10月、台風19号。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
       "id": 146,
-      "startMs": 777080,
-      "startFrame": 23312,
-      "durationMs": 10200,
-      "durationInFrames": 306,
+      "startMs": 835440,
+      "startFrame": 25115,
+      "durationMs": 11320,
+      "durationInFrames": 340,
       "audioFile": "audio/scene-146.mp3",
       "segments": [
         {
           "text": "川崎市の武蔵小杉で、47階建てのタワーマンションの地下にあった電気設備が浸水し、建物全体が停電した。",
           "startFrame": 0,
-          "durationInFrames": 301
+          "durationInFrames": 336
         }
       ]
     },
     {
       "id": 147,
-      "startMs": 787280,
-      "startFrame": 23618,
-      "durationMs": 6264,
-      "durationInFrames": 188,
+      "startMs": 846760,
+      "startFrame": 25455,
+      "durationMs": 7960,
+      "durationInFrames": 239,
       "audioFile": "audio/scene-147.mp3",
       "segments": [
         {
           "text": "断水し、排水ポンプが止まり、住戸には飲料水とともに簡易トイレが配られた。",
           "startFrame": 0,
-          "durationInFrames": 182
+          "durationInFrames": 235
         }
       ]
     },
     {
       "id": 148,
-      "startMs": 793544,
-      "startFrame": 23806,
+      "startMs": 854720,
+      "startFrame": 25694,
       "durationMs": 2000,
       "durationInFrames": 60,
       "audioFile": "audio/scene-148.mp3",
@@ -2218,374 +2218,374 @@
         {
           "text": "エレベーターは動かない。",
           "startFrame": 0,
-          "durationInFrames": 44
+          "durationInFrames": 55
         }
       ]
     },
     {
       "id": 149,
-      "startMs": 795544,
-      "startFrame": 23866,
-      "durationMs": 8904,
-      "durationInFrames": 268,
+      "startMs": 856720,
+      "startFrame": 25754,
+      "durationMs": 11640,
+      "durationInFrames": 350,
       "audioFile": "audio/scene-149.mp3",
       "segments": [
         {
           "text": "10月13日の未明、40階台の住戸から、住人が懐中電灯を持って非常階段を降りていく。",
           "startFrame": 0,
-          "durationInFrames": 261
+          "durationInFrames": 346
         }
       ]
     },
     {
       "id": 150,
-      "startMs": 804448,
-      "startFrame": 24133,
-      "durationMs": 4512,
-      "durationInFrames": 136,
+      "startMs": 868360,
+      "startFrame": 26104,
+      "durationMs": 4680,
+      "durationInFrames": 141,
       "audioFile": "audio/scene-150.mp3",
       "segments": [
         {
           "text": "一段ずつ、自分が払った高さを、脚で払い戻していく。",
           "startFrame": 0,
-          "durationInFrames": 130
+          "durationInFrames": 137
         }
       ]
     },
     {
       "id": 151,
-      "startMs": 808960,
-      "startFrame": 24269,
-      "durationMs": 3192,
-      "durationInFrames": 96,
+      "startMs": 873040,
+      "startFrame": 26245,
+      "durationMs": 3080,
+      "durationInFrames": 93,
       "audioFile": "audio/scene-151.mp3",
       "segments": [
         {
           "text": "高さは、地上のインフラに完全に依存している。",
           "startFrame": 0,
-          "durationInFrames": 90
+          "durationInFrames": 89
         }
       ]
     },
     {
       "id": 152,
-      "startMs": 812152,
-      "startFrame": 24365,
-      "durationMs": 4248,
-      "durationInFrames": 128,
+      "startMs": 876120,
+      "startFrame": 26338,
+      "durationMs": 5090,
+      "durationInFrames": 153,
       "audioFile": "audio/scene-152.mp3",
       "segments": [
         {
           "text": "地上の水が上がった瞬間、それは資産から負債に変わる。",
           "startFrame": 0,
-          "durationInFrames": 112
+          "durationInFrames": 139
         }
       ]
     },
     {
       "id": 153,
-      "startMs": 816400,
-      "startFrame": 24492,
-      "durationMs": 6192,
-      "durationInFrames": 186,
+      "startMs": 881210,
+      "startFrame": 26491,
+      "durationMs": 5490,
+      "durationInFrames": 165,
       "audioFile": "audio/scene-153.mp3",
       "segments": [
         {
           "text": "では、あの数千万円の差額は、結局のところ何の値段だったのだろうか。",
           "startFrame": 0,
-          "durationInFrames": 181
+          "durationInFrames": 151
         }
       ]
     },
     {
       "id": 154,
-      "startMs": 822592,
-      "startFrame": 24678,
-      "durationMs": 2520,
-      "durationInFrames": 76,
+      "startMs": 886700,
+      "startFrame": 26656,
+      "durationMs": 2760,
+      "durationInFrames": 83,
       "audioFile": "audio/scene-154.mp3",
       "segments": [
         {
           "text": "ここまでの道のりを振り返ろう。",
           "startFrame": 0,
-          "durationInFrames": 70
+          "durationInFrames": 79
         }
       ]
     },
     {
       "id": 155,
-      "startMs": 825112,
-      "startFrame": 24753,
-      "durationMs": 7560,
-      "durationInFrames": 227,
+      "startMs": 889460,
+      "startFrame": 26739,
+      "durationMs": 6920,
+      "durationInFrames": 208,
       "audioFile": "audio/scene-155.mp3",
       "segments": [
         {
           "text": "都市経済学のデータは、同じ建物の中で高さだけが値段になっている市場の姿を示した。",
           "startFrame": 0,
-          "durationInFrames": 221
+          "durationInFrames": 204
         }
       ]
     },
     {
       "id": 156,
-      "startMs": 832672,
-      "startFrame": 24980,
-      "durationMs": 7848,
-      "durationInFrames": 236,
+      "startMs": 896380,
+      "startFrame": 26947,
+      "durationMs": 6520,
+      "durationInFrames": 196,
       "audioFile": "audio/scene-156.mp3",
       "segments": [
         {
           "text": "快楽適応の研究は、その眺望に人間が数週間で慣れてしまうことを描き出した。",
           "startFrame": 0,
-          "durationInFrames": 230
+          "durationInFrames": 192
         }
       ]
     },
     {
       "id": 157,
-      "startMs": 840520,
-      "startFrame": 25216,
-      "durationMs": 7848,
-      "durationInFrames": 236,
+      "startMs": 902900,
+      "startFrame": 27143,
+      "durationMs": 7560,
+      "durationInFrames": 227,
       "audioFile": "audio/scene-157.mp3",
       "segments": [
         {
           "text": "比較の実験は、上を知ることだけが人の満足を削るという非対称を明らかにした。",
           "startFrame": 0,
-          "durationInFrames": 230
+          "durationInFrames": 223
         }
       ]
     },
     {
       "id": 158,
-      "startMs": 848368,
-      "startFrame": 25451,
-      "durationMs": 10128,
-      "durationInFrames": 304,
+      "startMs": 910460,
+      "startFrame": 27370,
+      "durationMs": 9320,
+      "durationInFrames": 280,
       "audioFile": "audio/scene-158.mp3",
       "segments": [
         {
           "text": "帳簿は、原価に対応しない価格差と、36.6パーセントという積立不足の数字を映していた。",
-          "startFrame": 0,
-          "durationInFrames": 298
-        }
-      ]
-    },
-    {
-      "id": 159,
-      "startMs": 858496,
-      "startFrame": 25755,
-      "durationMs": 6840,
-      "durationInFrames": 206,
-      "audioFile": "audio/scene-159.mp3",
-      "segments": [
-        {
-          "text": "文明史は、高さが常に序列の可視化装置であり続けたことを教えた。",
-          "startFrame": 0,
-          "durationInFrames": 200
-        }
-      ]
-    },
-    {
-      "id": 160,
-      "startMs": 865336,
-      "startFrame": 25960,
-      "durationMs": 7152,
-      "durationInFrames": 215,
-      "audioFile": "audio/scene-160.mp3",
-      "segments": [
-        {
-          "text": "そして救急の記録は、その高さが、最後の数分間には味方をしないことを突きつけた。",
-          "startFrame": 0,
-          "durationInFrames": 209
-        }
-      ]
-    },
-    {
-      "id": 161,
-      "startMs": 872488,
-      "startFrame": 26175,
-      "durationMs": 3120,
-      "durationInFrames": 94,
-      "audioFile": "audio/scene-161.mp3",
-      "segments": [
-        {
-          "text": "タワーマンションは、眺望を売っているのではない。",
-          "startFrame": 0,
-          "durationInFrames": 88
-        }
-      ]
-    },
-    {
-      "id": 162,
-      "startMs": 875608,
-      "startFrame": 26268,
-      "durationMs": 9384,
-      "durationInFrames": 282,
-      "audioFile": "audio/scene-162.mp3",
-      "segments": [
-        {
-          "text": "自分が何番目かという情報を、階数という整数に変換し、住所の形で毎日供給し続ける仕組みだ。",
           "startFrame": 0,
           "durationInFrames": 276
         }
       ]
     },
     {
-      "id": 163,
-      "startMs": 884992,
-      "startFrame": 26550,
-      "durationMs": 3384,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-163.mp3",
+      "id": 159,
+      "startMs": 919780,
+      "startFrame": 27650,
+      "durationMs": 6040,
+      "durationInFrames": 182,
+      "audioFile": "audio/scene-159.mp3",
       "segments": [
         {
-          "text": "買った瞬間に順位が確定するのではない。",
+          "text": "文明史は、高さが常に序列の可視化装置であり続けたことを教えた。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "startMs": 925820,
+      "startFrame": 27832,
+      "durationMs": 8040,
+      "durationInFrames": 242,
+      "audioFile": "audio/scene-160.mp3",
+      "segments": [
+        {
+          "text": "そして救急の記録は、その高さが、最後の数分間には味方をしないことを突きつけた。",
+          "startFrame": 0,
+          "durationInFrames": 238
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "startMs": 933860,
+      "startFrame": 28074,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-161.mp3",
+      "segments": [
+        {
+          "text": "タワーマンションは、眺望を売っているのではない。",
           "startFrame": 0,
           "durationInFrames": 96
         }
       ]
     },
     {
+      "id": 162,
+      "startMs": 937180,
+      "startFrame": 28174,
+      "durationMs": 10040,
+      "durationInFrames": 302,
+      "audioFile": "audio/scene-162.mp3",
+      "segments": [
+        {
+          "text": "自分が何番目かという情報を、階数という整数に変換し、住所の形で毎日供給し続ける仕組みだ。",
+          "startFrame": 0,
+          "durationInFrames": 298
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "startMs": 947220,
+      "startFrame": 28476,
+      "durationMs": 4360,
+      "durationInFrames": 131,
+      "audioFile": "audio/scene-163.mp3",
+      "segments": [
+        {
+          "text": "買った瞬間に順位が確定するのではない。",
+          "startFrame": 0,
+          "durationInFrames": 127
+        }
+      ]
+    },
+    {
       "id": 164,
-      "startMs": 888376,
-      "startFrame": 26651,
-      "durationMs": 5736,
-      "durationInFrames": 173,
+      "startMs": 951580,
+      "startFrame": 28607,
+      "durationMs": 7000,
+      "durationInFrames": 210,
       "audioFile": "audio/scene-164.mp3",
       "segments": [
         {
           "text": "買った瞬間から、その順位が毎朝エレベーターの中で更新され続ける。",
-          "startFrame": 0,
-          "durationInFrames": 167
-        }
-      ]
-    },
-    {
-      "id": 165,
-      "startMs": 894112,
-      "startFrame": 26823,
-      "durationMs": 7176,
-      "durationInFrames": 216,
-      "audioFile": "audio/scene-165.mp3",
-      "segments": [
-        {
-          "text": "上を見上げるのをやめられないのは、住人の性格の問題ではなく、そういう設計だからである。",
-          "startFrame": 0,
-          "durationInFrames": 200
-        }
-      ]
-    },
-    {
-      "id": 166,
-      "startMs": 901288,
-      "startFrame": 27039,
-      "durationMs": 2088,
-      "durationInFrames": 63,
-      "audioFile": "audio/scene-166.mp3",
-      "segments": [
-        {
-          "text": "最後に、ひとつだけ。",
-          "startFrame": 0,
-          "durationInFrames": 57
-        }
-      ]
-    },
-    {
-      "id": 167,
-      "startMs": 903376,
-      "startFrame": 27101,
-      "durationMs": 4056,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-167.mp3",
-      "segments": [
-        {
-          "text": "この動画を見ている間、あなたは何を感じていただろうか。",
-          "startFrame": 0,
-          "durationInFrames": 116
-        }
-      ]
-    },
-    {
-      "id": 168,
-      "startMs": 907432,
-      "startFrame": 27223,
-      "durationMs": 6072,
-      "durationInFrames": 183,
-      "audioFile": "audio/scene-168.mp3",
-      "segments": [
-        {
-          "text": "もし、自分には関係のない世界の話だと思ったなら、少しだけ思い出してみて欲しい。",
-          "startFrame": 0,
-          "durationInFrames": 177
-        }
-      ]
-    },
-    {
-      "id": 169,
-      "startMs": 913504,
-      "startFrame": 27405,
-      "durationMs": 5160,
-      "durationInFrames": 155,
-      "audioFile": "audio/scene-169.mp3",
-      "segments": [
-        {
-          "text": "SNSに流れてきた、高い場所から撮られた窓の写真。",
-          "startFrame": 0,
-          "durationInFrames": 149
-        }
-      ]
-    },
-    {
-      "id": 170,
-      "startMs": 918664,
-      "startFrame": 27560,
-      "durationMs": 3024,
-      "durationInFrames": 91,
-      "audioFile": "audio/scene-170.mp3",
-      "segments": [
-        {
-          "text": "同期の年収を知ってしまった日の帰り道。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 171,
-      "startMs": 921688,
-      "startFrame": 27651,
-      "durationMs": 7056,
-      "durationInFrames": 212,
-      "audioFile": "audio/scene-171.mp3",
-      "segments": [
-        {
-          "text": "あの39分の10という分数は、コンクリートの中だけに書かれているのではない。",
           "startFrame": 0,
           "durationInFrames": 206
         }
       ]
     },
     {
+      "id": 165,
+      "startMs": 958580,
+      "startFrame": 28817,
+      "durationMs": 8530,
+      "durationInFrames": 256,
+      "audioFile": "audio/scene-165.mp3",
+      "segments": [
+        {
+          "text": "上を見上げるのをやめられないのは、住人の性格の問題ではなく、そういう設計だからである。",
+          "startFrame": 0,
+          "durationInFrames": 242
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "startMs": 967110,
+      "startFrame": 29073,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-166.mp3",
+      "segments": [
+        {
+          "text": "最後に、ひとつだけ。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "startMs": 970750,
+      "startFrame": 29183,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-167.mp3",
+      "segments": [
+        {
+          "text": "この動画を見ている間、あなたは何を感じていただろうか。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "startMs": 975830,
+      "startFrame": 29336,
+      "durationMs": 7320,
+      "durationInFrames": 220,
+      "audioFile": "audio/scene-168.mp3",
+      "segments": [
+        {
+          "text": "もし、自分には関係のない世界の話だと思ったなら、少しだけ思い出してみて欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 216
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "startMs": 983150,
+      "startFrame": 29556,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-169.mp3",
+      "segments": [
+        {
+          "text": "SNSに流れてきた、高い場所から撮られた窓の写真。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "startMs": 987670,
+      "startFrame": 29692,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-170.mp3",
+      "segments": [
+        {
+          "text": "同期の年収を知ってしまった日の帰り道。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "startMs": 991070,
+      "startFrame": 29794,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-171.mp3",
+      "segments": [
+        {
+          "text": "あの39分の10という分数は、コンクリートの中だけに書かれているのではない。",
+          "startFrame": 0,
+          "durationInFrames": 168
+        }
+      ]
+    },
+    {
       "id": 172,
-      "startMs": 928744,
-      "startFrame": 27862,
-      "durationMs": 7752,
-      "durationInFrames": 233,
+      "startMs": 996790,
+      "startFrame": 29966,
+      "durationMs": 9490,
+      "durationInFrames": 285,
       "audioFile": "audio/scene-172.mp3",
       "segments": [
         {
           "text": "順位を見上げる仕組みのほうは、住んでいる高さに関係なく、とっくにあなたの中に組み込まれている。",
           "startFrame": 0,
-          "durationInFrames": 227
+          "durationInFrames": 271
         }
       ]
     },
     {
       "id": 173,
-      "startMs": 936496,
-      "startFrame": 28095,
+      "startMs": 1006280,
+      "startFrame": 30251,
       "durationMs": 5160,
       "durationInFrames": 155,
       "audioFile": "audio/scene-173.mp3",
@@ -2593,67 +2593,67 @@
         {
           "text": "チャンネル登録者数もまた、縦に積み上がっていく数字のひとつだ。",
           "startFrame": 0,
-          "durationInFrames": 149
+          "durationInFrames": 151
         }
       ]
     },
     {
       "id": 174,
-      "startMs": 941656,
-      "startFrame": 28250,
-      "durationMs": 4584,
+      "startMs": 1011440,
+      "startFrame": 30406,
+      "durationMs": 4600,
       "durationInFrames": 138,
       "audioFile": "audio/scene-174.mp3",
       "segments": [
         {
           "text": "仕組みを全部知った上で、それでも押す価値があると思っていただけたなら。",
           "startFrame": 0,
-          "durationInFrames": 132
+          "durationInFrames": 134
         }
       ]
     },
     {
       "id": 175,
-      "startMs": 946240,
-      "startFrame": 28387,
-      "durationMs": 3240,
-      "durationInFrames": 98,
+      "startMs": 1016040,
+      "startFrame": 30544,
+      "durationMs": 3880,
+      "durationInFrames": 117,
       "audioFile": "audio/scene-175.mp3",
       "segments": [
         {
           "text": "そんなことを、また考えすぎてしまいました。",
           "startFrame": 0,
-          "durationInFrames": 92
+          "durationInFrames": 113
         }
       ]
     },
     {
       "id": 176,
-      "startMs": 949480,
-      "startFrame": 28484,
-      "durationMs": 4056,
-      "durationInFrames": 122,
+      "startMs": 1019920,
+      "startFrame": 30661,
+      "durationMs": 5080,
+      "durationInFrames": 153,
       "audioFile": "audio/scene-176.mp3",
       "segments": [
         {
           "text": "よろしければチャンネル登録と高評価をお願いします。",
           "startFrame": 0,
-          "durationInFrames": 116
+          "durationInFrames": 149
         }
       ]
     },
     {
       "id": 177,
-      "startMs": 953536,
-      "startFrame": 28606,
-      "durationMs": 3432,
-      "durationInFrames": 103,
+      "startMs": 1025000,
+      "startFrame": 30814,
+      "durationMs": 2850,
+      "durationInFrames": 86,
       "audioFile": "audio/scene-177.mp3",
       "segments": [
         {
           "text": "それでは次の動画で、またお会いしましょう。",
           "startFrame": 0,
-          "durationInFrames": 88
+          "durationInFrames": 72
         }
       ]
     }
