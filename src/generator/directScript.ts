@@ -11,6 +11,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { DIRECTOR_SYSTEM_PROMPT } from "./prompts";
 import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
+import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
 import type { Scene, VideoScript, Visual } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -145,11 +146,14 @@ ${numbered}`;
     };
   });
 
+  // 図解・アニメ比率を7割以上に底上げ（keyword＝文字だけを減らす）
+  const enriched = enforceVisualRichness(scenes);
   // 背景トーンの明暗バランスを機械的に保証（LLM任せだと「ずっと暗い」になりがちなため）
-  const balanced = enforceToneVariety(scenes);
+  const balanced = enforceToneVariety(enriched);
   console.log(
     `[directScript] 完了: ${balanced.length}シーン / タイトル: ${meta.title || parsed.title}`,
   );
+  console.log(`[directScript] 画面構成: ${summarizeVisuals(balanced)}`);
   console.log(`[directScript] 背景トーン: ${summarizeTones(balanced)}`);
   return {
     theme: meta.theme ?? "（Gist台本）",

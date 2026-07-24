@@ -38,6 +38,7 @@ import {
   type AssetsManifest,
   type SceneSync,
   type SyncMap,
+  type Scene,
   type SyncSegment,
   type VideoScript,
 } from "./types";
@@ -87,6 +88,30 @@ const PAUSE_ELLIPSIS_MS = 700;
 /** シーン末尾の余韻: 通常 / 幕の変わり目・最終シーン（間延び防止のため短めに） */
 const SCENE_TAIL_MS = 120;
 const SCENE_TAIL_ACT_CHANGE_MS = 450;
+
+/**
+ * 読み上げに渡すテキストをプロバイダごとに選ぶ。
+ *
+ * ここが「片言」の主因だった。ElevenLabs V3 のような自然音声モデルは
+ * 漢字仮名交じりの自然文（narration）を渡すと、単語境界や数値を正しく解釈して
+ * ElevenLabs公式サイトと同じ滑らかな抑揚で読む。
+ * 一方、全ひらがなの reading（例: 「にほんのぜいせいのなかに…」）を渡すと、
+ * 単語境界が失われ、数値も「ひゃくじゅうにてんごろくよんいち」のように
+ * 一字ずつ棒読みになり、片言に聞こえる。
+ *
+ * よって:
+ *   - VOICEVOX     … reading（かな）を優先（読み間違いを防げる）
+ *   - ElevenLabs/OpenAI … 自然文の narration をそのまま渡す（reading は使わない）
+ */
+function speakTextFor(scene: Scene): string {
+  if (TTS_PROVIDER === "voicevox") {
+    return (scene.reading?.trim() || scene.narration).trim();
+  }
+  return scene.narration.trim();
+}
+
+/** 音声のサンプルレート。自然音声は44.1kHzで公式サイト品質を保ち、VOICEVOXは24kHz。 */
+const AUDIO_SR = TTS_PROVIDER === "voicevox" ? 24000 : 44100;
 /** TTSスキップ時の推定: 日本語 ≒ 6.5文字/秒 × テンポ */
 const ESTIMATED_CHARS_PER_SEC = 6.5 * TTS_SPEED;
 
@@ -310,7 +335,7 @@ export async function generateAudio(): Promise<SyncMap> {
     const path = join(tmp, `silence-${ms}.wav`);
     ffmpeg([
       "-f", "lavfi",
-      "-i", "anullsrc=r=24000:cl=mono",
+      "-i", `anullsrc=r=${AUDIO_SR}:cl=mono`,
       "-t", String(ms / 1000),
       "-c:a", "pcm_s16le",
       path,
@@ -336,7 +361,7 @@ export async function generateAudio(): Promise<SyncMap> {
       const batch = script.scenes.slice(start, start + CONCURRENCY);
       const results = await Promise.all(
         batch.map(async (scene, k) => {
-          const speakText = (scene.reading?.trim() || scene.narration).trim();
+          const speakText = speakTextFor(scene);
           try {
             return { idx: start + k, result: await synthesize(speakText) };
           } catch (err) {
@@ -377,7 +402,7 @@ export async function generateAudio(): Promise<SyncMap> {
     const nextScene = script.scenes[i + 1];
     const isActChange = !nextScene || nextScene.act !== scene.act;
     const tailMs = isActChange ? SCENE_TAIL_ACT_CHANGE_MS : SCENE_TAIL_MS;
-    const speakText = (scene.reading?.trim() || scene.narration).trim();
+    const speakText = speakTextFor(scene);
 
     let audioFile: string | null = null;
     let speakingMs = 0;
@@ -388,7 +413,7 @@ export async function generateAudio(): Promise<SyncMap> {
       writeFileSync(rawPath, synth.buffer);
       const bodyWav = join(tmp, `s${scene.id}-body.wav`);
       // atempoは必要なプロバイダのみ。ElevenLabsは自然さ優先で既定では速度を弄らない。
-      ffmpeg(["-i", rawPath, ...atempoArgs, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", bodyWav]);
+      ffmpeg(["-i", rawPath, ...atempoArgs, "-ar", String(AUDIO_SR), "-ac", "1", "-c:a", "pcm_s16le", bodyWav]);
       speakingMs = Math.round(((await parseFile(bodyWav)).format.duration ?? 0) * 1000);
 
       // 末尾の余韻（静止）を足してシーンmp3に
