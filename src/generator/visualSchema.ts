@@ -165,5 +165,5 @@ export const CONCEPT_COLOR_SCHEMA = {
   type: "string",
   enum: ["dark-navy", "charcoal", "pitch-black", "daylight", "dusk", "warm"],
   description:
-    "シーンの背景トーン。暗: dark-navy(思索) charcoal(データ) pitch-black(断定・結び) / 明: daylight(昼の情景・日常) dusk(夕暮れ・郷愁) warm(人の営み・回想)。明トーンを全体の2〜3割混ぜて画面に呼吸を作る。第1幕の情景や人の暮らしの描写は明トーンが効果的",
+    "シーンの背景トーン。暗: dark-navy(夜・思索) charcoal(データ) pitch-black(断定・結び) / 明: daylight(昼の情景・日常) dusk(夕暮れ・郷愁) warm(人の営み・回想)。【重要】明トーンを全体の3〜4割使う。第1幕の情景・導入、人の暮らし・過去・日常の描写は必ず明トーン。同じトーンを4シーン以上連続させず、明暗を数シーンごとに切り替えて画面に呼吸を作る。ずっと暗いのは最大の失敗",
 } as const;

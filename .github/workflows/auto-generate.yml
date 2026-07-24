@@ -90,7 +90,7 @@ jobs:
               echo "::error::ELEVENLABS_API_KEY が無効です (HTTP $ESTATUS)。"
               exit 1
             fi
-            VOICE_ID="${ELEVENLABS_VOICE_ID:-xQpTJhLkPZnRFTV4mc3k}"
+            VOICE_ID="${ELEVENLABS_VOICE_ID:-ss9cJxDAEMXP4wfQ3GPr}"
             VSTATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://api.elevenlabs.io/v1/voices/$VOICE_ID" -H "xi-api-key: $EK")
             echo "voice check (GET /v1/voices/$VOICE_ID): HTTP $VSTATUS"
             if [ "$VSTATUS" != "200" ]; then

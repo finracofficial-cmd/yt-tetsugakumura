@@ -74,11 +74,11 @@ const VOICEVOX_VOLUME = Number(process.env.VOICEVOX_VOLUME || "0.9");
 /** ElevenLabs設定（ほぼ人間品質。ELEVENLABS_API_KEY の設定だけで自動有効化） */
 const ELEVENLABS_MODEL = process.env.ELEVENLABS_MODEL || "eleven_v3";
 /**
- * 正式採用ボイス（ユーザーがVoice Libraryから選定した日本語男性ボイス）。
+ * 正式採用ボイス（日本語男性ボイス DAISUKE / V3向け）。
  * 差し替えは Repository Variables の ELEVENLABS_VOICE_ID で。
  * ※ Voice Libraryのボイスは、契約アカウントで「Add to My Voices」しておくこと。
  */
-const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "xQpTJhLkPZnRFTV4mc3k";
+const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "ss9cJxDAEMXP4wfQ3GPr";
 
 /** 文法ポーズ（ミリ秒）。テンポ重視で短めに設定 */
 const PAUSE_COMMA_MS = 160;
@@ -93,6 +93,15 @@ const ESTIMATED_CHARS_PER_SEC = 6.5 * TTS_SPEED;
 interface Fragment {
   text: string;
   pauseMs: number;
+}
+
+/** 字幕表示用に文（。！？…）単位で分割する。区切れなければ全体を1文として返す */
+export function splitDisplaySentences(text: string): string[] {
+  const parts = text
+    .split(/(?<=[。！？]|…+)/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+  return parts.length > 0 ? parts : [text.trim()];
 }
 
 /** ナレーションを句読点で分割し、それぞれの後に入れるポーズを決める */
@@ -265,14 +274,16 @@ export async function generateAudio(): Promise<SyncMap> {
   };
 
   /**
-   * gpt-4o系とElevenLabsは、wav変換時にffmpegでテンポ加工を挟む
-   * （tts-1/VOICEVOXはAPI側のspeed指定で適用済み）
+   * gpt-4o系のみ、wav変換時にffmpegでテンポ加工を挟む（tts-1/VOICEVOXはAPI側で適用済み）。
+   * ElevenLabsは自然さ最優先のため既定では速度を変えない（ELEVENLABS_SPEED で任意に指定可）。
    */
-  const needsAtempo =
-    (TTS_PROVIDER === "openai" && TTS_MODEL.startsWith("gpt-4o")) ||
-    TTS_PROVIDER === "elevenlabs";
+  const elevenSpeed = Number(process.env.ELEVENLABS_SPEED || "1");
+  const needsAtempo = TTS_PROVIDER === "openai" && TTS_MODEL.startsWith("gpt-4o");
+  const atempoSpeed = TTS_PROVIDER === "elevenlabs" ? elevenSpeed : TTS_SPEED;
   const atempoArgs =
-    needsAtempo && TTS_SPEED !== 1 ? ["-filter:a", `atempo=${TTS_SPEED}`] : [];
+    (needsAtempo || (TTS_PROVIDER === "elevenlabs" && elevenSpeed !== 1)) && atempoSpeed !== 1
+      ? ["-filter:a", `atempo=${atempoSpeed}`]
+      : [];
 
   if (!ttsEnabled) {
     console.warn(
@@ -308,6 +319,51 @@ export async function generateAudio(): Promise<SyncMap> {
     return path;
   };
 
+  const MIN_SCENE_FRAMES = 60; // 2秒。短尺シーンで映像アニメが破綻しないための下限
+
+  // ── フェーズ1: 各シーンの「文全体」を1回のTTS呼び出しで合成する ──
+  //   フラグメント分割はしない。自然音声(ElevenLabs等)は文脈で抑揚を作るので、
+  //   細切れに送ると片言になる。VOICEVOXも文全体を渡せば句読点で自然に間を取る。
+  //   合成はシーンをまたいで並列実行し、20分尺でも時間を抑える。
+  const CONCURRENCY = TTS_PROVIDER === "elevenlabs" ? 4 : 6;
+  const synthResults: ({ buffer: Buffer; ext: "mp3" | "wav" } | null)[] = new Array(
+    script.scenes.length,
+  ).fill(null);
+
+  if (ttsEnabled) {
+    let firstError: string | null = null;
+    for (let start = 0; start < script.scenes.length; start += CONCURRENCY) {
+      const batch = script.scenes.slice(start, start + CONCURRENCY);
+      const results = await Promise.all(
+        batch.map(async (scene, k) => {
+          const speakText = (scene.reading?.trim() || scene.narration).trim();
+          try {
+            return { idx: start + k, result: await synthesize(speakText) };
+          } catch (err) {
+            if (!firstError) firstError = err instanceof Error ? err.message : String(err);
+            return { idx: start + k, result: null };
+          }
+        }),
+      );
+      for (const r of results) synthResults[r.idx] = r.result;
+      if (firstError) break;
+    }
+    if (firstError) {
+      if ((process.env.TTS_STRICT || "true") !== "false") {
+        const hint =
+          TTS_PROVIDER === "voicevox"
+            ? "VOICEVOXエンジンが起動しているか（CIはサービスコンテナ、ローカルは50021番）を確認してください。"
+            : TTS_PROVIDER === "elevenlabs"
+              ? "(1) ELEVENLABS_API_KEY が有効か (2) ボイスを「Add to My Voices」したか (3) クレジット残量 を確認してください。"
+              : "OPENAI_API_KEY が有効か・クレジット残量を確認してください。";
+        throw new Error(`[generateAudio] TTSに失敗しました (provider=${TTS_PROVIDER}): ${firstError}\n  ${hint}`);
+      }
+      console.warn(`[generateAudio] 警告: TTSに失敗したため無音・推定尺で続行します: ${firstError}`);
+      ttsEnabled = false;
+    }
+  }
+
+  // ── フェーズ2: 尺の測定・末尾余韻の付与・字幕セグメント算出（順次） ──
   const sceneSyncs: SceneSync[] = [];
   let globalMs = 0;
 
@@ -316,121 +372,54 @@ export async function generateAudio(): Promise<SyncMap> {
     const nextScene = script.scenes[i + 1];
     const isActChange = !nextScene || nextScene.act !== scene.act;
     const tailMs = isActChange ? SCENE_TAIL_ACT_CHANGE_MS : SCENE_TAIL_MS;
-
-    // TTSには読み上げ用テキスト（難読漢字をひらがなに開いた reading）を渡し、
-    // 字幕には元の narration を表示する。句読点が同じなら分割数は一致する。
-    const fragments = splitIntoFragments(scene.reading?.trim() || scene.narration);
-    const displayFragments = splitIntoFragments(scene.narration);
-    const displayTextFor = (f: number): string =>
-      displayFragments.length === fragments.length ? displayFragments[f].text : fragments[f].text;
-    // 最後のフラグメントの文法ポーズはシーン末尾の余韻に置き換える
-    if (fragments.length > 0) fragments[fragments.length - 1].pauseMs = tailMs;
+    const speakText = (scene.reading?.trim() || scene.narration).trim();
 
     let audioFile: string | null = null;
-    let timedFragments: { text: string; durationMs: number; pauseMs: number }[] = [];
-    let sceneDurationMs = 0;
+    let speakingMs = 0;
 
-    if (ttsEnabled) {
-      try {
-        // フラグメントのTTSを並列実行（ElevenLabsの同時接続上限に配慮して4並列まで）
-        const CONCURRENCY = 4;
-        const synthesized: { buffer: Buffer; ext: "mp3" | "wav" }[] = [];
-        for (let start = 0; start < fragments.length; start += CONCURRENCY) {
-          const batch = fragments.slice(start, start + CONCURRENCY);
-          const results = await Promise.all(batch.map((frag) => synthesize(frag.text)));
-          synthesized.push(...results);
-        }
+    const synth = synthResults[i];
+    if (ttsEnabled && synth) {
+      const rawPath = join(tmp, `s${scene.id}-raw.${synth.ext}`);
+      writeFileSync(rawPath, synth.buffer);
+      const bodyWav = join(tmp, `s${scene.id}-body.wav`);
+      // atempoは必要なプロバイダのみ。ElevenLabsは自然さ優先で既定では速度を弄らない。
+      ffmpeg(["-i", rawPath, ...atempoArgs, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", bodyWav]);
+      speakingMs = Math.round(((await parseFile(bodyWav)).format.duration ?? 0) * 1000);
 
-        const wavList: string[] = [];
-        timedFragments = [];
-        for (let f = 0; f < fragments.length; f++) {
-          const frag = fragments[f];
-          const wavPath = join(tmp, `s${scene.id}-f${f}.wav`);
-
-          const { buffer, ext } = synthesized[f];
-          const rawPath = join(tmp, `s${scene.id}-f${f}-raw.${ext}`);
-          writeFileSync(rawPath, buffer);
-          // 全フラグメントを同一フォーマットのwavに揃えて結合可能にする（必要ならテンポ加工）
-          ffmpeg([
-            "-i", rawPath,
-            ...atempoArgs,
-            "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
-            wavPath,
-          ]);
-
-          const meta = await parseFile(wavPath);
-          const durationMs = Math.round((meta.format.duration ?? 0) * 1000);
-          timedFragments.push({ text: displayTextFor(f), durationMs, pauseMs: frag.pauseMs });
-
-          wavList.push(wavPath);
-          if (frag.pauseMs > 0) wavList.push(silenceWav(frag.pauseMs));
-        }
-
-        // concatデマルチプレクサで結合し、シーンのmp3にエンコード
-        const listPath = join(tmp, `s${scene.id}-list.txt`);
-        writeFileSync(
-          listPath,
-          wavList.map((p) => `file '${p.replace(/'/g, "'\\''")}'`).join("\n") + "\n",
-        );
-        const sceneWav = join(tmp, `s${scene.id}.wav`);
-        ffmpeg(["-f", "concat", "-safe", "0", "-i", listPath, "-c:a", "pcm_s16le", sceneWav]);
-
-        const fileName = `scene-${scene.id}.mp3`;
-        ffmpeg(["-i", sceneWav, "-c:a", "libmp3lame", "-b:a", "160k", join(AUDIO_DIR, fileName)]);
-        audioFile = `audio/${fileName}`;
-
-        const finalMeta = await parseFile(join(AUDIO_DIR, fileName));
-        sceneDurationMs = Math.round(
-          (finalMeta.format.duration ?? 0) * 1000 ||
-            timedFragments.reduce((s, x) => s + x.durationMs + x.pauseMs, 0),
-        );
-        console.log(
-          `  scene ${scene.id}: ${(sceneDurationMs / 1000).toFixed(2)}s (${fragments.length}フラグメント) -> ${AUDIO_DIR}/${fileName}`,
-        );
-      } catch (err) {
-        const message = err instanceof Error ? err.message : String(err);
-        // キーが設定されている＝ナレーション必須の運用なので、無音で完走せず明確に失敗させる。
-        // （TTS_STRICT=false を設定した場合のみ旧来の無音フォールバックで続行）
-        if ((process.env.TTS_STRICT || "true") !== "false") {
-          const hint =
-            TTS_PROVIDER === "voicevox"
-              ? "VOICEVOXエンジンが起動しているか（CIはサービスコンテナ、ローカルは50021番）を確認してください。"
-              : TTS_PROVIDER === "elevenlabs"
-                ? "(1) ELEVENLABS_API_KEY が有効か (2) ボイスを「Add to My Voices」したか (3) クレジット残量 を確認してください。"
-                : "OPENAI_API_KEY が有効か・クレジット残量を確認してください。";
-          throw new Error(
-            `[generateAudio] TTSに失敗しました (provider=${TTS_PROVIDER}, scene=${scene.id}): ${message}\n  ${hint}`,
-          );
-        }
-        console.warn(
-          `[generateAudio] 警告: TTSに失敗したため、以降は無音・推定尺で続行します: ${message}`,
-        );
-        ttsEnabled = false;
-        audioFile = null;
-      }
-    }
-
-    if (!ttsEnabled || !audioFile) {
-      // 推定フォールバック（尺は読み上げテキスト長から、表示は字幕テキスト）
-      timedFragments = fragments.map((frag, f) => ({
-        text: displayTextFor(f),
-        durationMs: Math.round((frag.text.length / ESTIMATED_CHARS_PER_SEC) * 1000),
-        pauseMs: frag.pauseMs,
-      }));
-      sceneDurationMs = timedFragments.reduce((s, x) => s + x.durationMs + x.pauseMs, 0);
+      // 末尾の余韻（静止）を足してシーンmp3に
+      const wavList = [bodyWav];
+      if (tailMs > 0) wavList.push(silenceWav(tailMs));
+      const listPath = join(tmp, `s${scene.id}-list.txt`);
+      writeFileSync(listPath, wavList.map((p) => `file '${p.replace(/'/g, "'\\''")}'`).join("\n") + "\n");
+      const sceneWav = join(tmp, `s${scene.id}.wav`);
+      ffmpeg(["-f", "concat", "-safe", "0", "-i", listPath, "-c:a", "pcm_s16le", sceneWav]);
+      const fileName = `scene-${scene.id}.mp3`;
+      ffmpeg(["-i", sceneWav, "-c:a", "libmp3lame", "-b:a", "160k", join(AUDIO_DIR, fileName)]);
+      audioFile = `audio/${fileName}`;
+    } else {
+      // 推定フォールバック
+      speakingMs = Math.round((speakText.length / ESTIMATED_CHARS_PER_SEC) * 1000);
       audioFile = null;
     }
 
-    // 短すぎるシーンは映像アニメーションが破綻する（interpolateの範囲が潰れる）ため
-    // 最低尺を確保する。音声が短い場合は末尾に少し余韻（静止）が入るだけ。
-    const MIN_SCENE_FRAMES = 60; // 2秒
+    // シーン尺 = 発話 + 末尾余韻（最低尺を保証）
+    let sceneDurationMs = speakingMs + tailMs;
     sceneDurationMs = Math.max(sceneDurationMs, Math.ceil((MIN_SCENE_FRAMES / FPS) * 1000));
 
-    const segments: SyncSegment[] = groupIntoSegments(timedFragments).map((seg) => ({
-      text: seg.text,
-      startFrame: Math.round((seg.startMs / 1000) * FPS),
-      durationInFrames: Math.max(1, Math.round((seg.durationMs / 1000) * FPS)),
-    }));
+    // 字幕セグメント: narrationを文単位に分け、発話時間を文字数比で配分する
+    const sentences = splitDisplaySentences(scene.narration);
+    const totalChars = sentences.reduce((s, x) => s + x.length, 0) || 1;
+    let cursorMs = 0;
+    const segments: SyncSegment[] = sentences.map((text) => {
+      const dur = (text.length / totalChars) * speakingMs;
+      const seg: SyncSegment = {
+        text,
+        startFrame: Math.round((cursorMs / 1000) * FPS),
+        durationInFrames: Math.max(1, Math.round((dur / 1000) * FPS)),
+      };
+      cursorMs += dur;
+      return seg;
+    });
 
     const durationInFrames = Math.max(MIN_SCENE_FRAMES, Math.ceil((sceneDurationMs / 1000) * FPS));
     sceneSyncs.push({
