@@ -54,8 +54,8 @@ type Props = {
  * - 放射状グラデーション背景 + ゆっくり横切る光の帯
  * - 常時駆動型カメラワーク（微小ズーム + 手持ちドリフト + 微回転）
  * - ナレーションの文頭ごとの「キック」（音声に同期した微小パルス）
- * - 漂う粒子 / ビネット / 下部字幕 / 黒経由のフェード
- * 画面は1フレームたりとも完全静止しない。
+ * - 漂う粒子 / ビネット / 下部字幕 / コンテンツの短いフェード（背景は暗転させない）
+ * 画面は1フレームたりとも完全静止せず、シーン転換で真っ黒を経由しない。
  */
 export const SceneFrame: React.FC<Props> = ({
   sceneId,
@@ -71,10 +71,13 @@ export const SceneFrame: React.FC<Props> = ({
   const accent = ACCENT[conceptColor] ?? ACCENT["charcoal"];
   const bright = isBrightTone(conceptColor);
 
-  const fadeInOut = safeInterpolate(
+  // コンテンツ（ピクトグラム/図/文字）だけを短くフェードで出し入れする。
+  // 背景グラデーションは常に不透明のまま残すので、シーン転換で
+  // 「真っ黒」を経由しない（＝暗転の点滅が起きない）。
+  const contentReveal = safeInterpolate(
     frame,
-    [0, 12, durationInFrames - 12, durationInFrames],
-    [1, 0, 0, 1],
+    [0, 9, durationInFrames - 9, durationInFrames],
+    [0, 1, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
@@ -177,6 +180,7 @@ export const SceneFrame: React.FC<Props> = ({
       <AbsoluteFill
         style={{
           paddingBottom: 200,
+          opacity: contentReveal,
           transform: `translate(${camX}px, ${camY}px) scale(${idleScale * kickScale}) rotate(${camRot}deg)`,
           ["--ink" as never]: bright ? "rgba(30, 36, 48, 0.94)" : "rgba(240, 238, 230, 0.95)",
           ["--ink-soft" as never]: bright ? "rgba(45, 52, 68, 0.75)" : "rgba(215, 215, 210, 0.85)",
@@ -200,10 +204,6 @@ export const SceneFrame: React.FC<Props> = ({
         narration={narration}
         durationInFrames={durationInFrames}
         segments={segments}
-      />
-
-      <AbsoluteFill
-        style={{ backgroundColor: "#000", opacity: fadeInOut, pointerEvents: "none" }}
       />
     </AbsoluteFill>
   );

@@ -366,6 +366,11 @@ export async function generateAudio(): Promise<SyncMap> {
   // ── フェーズ2: 尺の測定・末尾余韻の付与・字幕セグメント算出（順次） ──
   const sceneSyncs: SceneSync[] = [];
   let globalMs = 0;
+  // フレーム上の配置は「フレーム数の積み上げ」で行う。
+  // startFrame を globalMs から丸めて別々に求めると、totalDurationInFrames
+  // （durationInFrames の合計）とズレて、シーン間や末尾に真っ黒な数フレームが
+  // 生じる。cursorFrame で連続配置し、シーンを隙間なく敷き詰める。
+  let cursorFrame = 0;
 
   for (let i = 0; i < script.scenes.length; i++) {
     const scene = script.scenes[i];
@@ -425,13 +430,14 @@ export async function generateAudio(): Promise<SyncMap> {
     sceneSyncs.push({
       id: scene.id,
       startMs: globalMs,
-      startFrame: Math.round((globalMs / 1000) * FPS),
+      startFrame: cursorFrame,
       durationMs: sceneDurationMs,
       durationInFrames,
       audioFile,
       segments,
     });
     globalMs += sceneDurationMs;
+    cursorFrame += durationInFrames; // 次シーンは前シーンの直後から（隙間ゼロ）
   }
 
   rmSync(tmp, { recursive: true, force: true });

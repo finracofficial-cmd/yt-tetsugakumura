@@ -13,6 +13,7 @@ import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
 import { SCRIPT_SYSTEM_PROMPT, buildUserPrompt } from "./prompts";
 import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
+import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { SCRIPT_JSON_PATH, type VideoScript } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -121,6 +122,9 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
   const script = JSON.parse(text) as VideoScript;
   validateScript(script);
 
+  // 背景トーンの明暗バランスを機械的に保証（LLM任せだと「ずっと暗い」になりがちなため）
+  script.scenes = enforceToneVariety(script.scenes);
+
   mkdirSync(dirname(SCRIPT_JSON_PATH), { recursive: true });
   writeFileSync(SCRIPT_JSON_PATH, JSON.stringify(script, null, 2) + "\n", "utf-8");
 
@@ -128,6 +132,7 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
   console.log(`[generateScript] 完了: ${SCRIPT_JSON_PATH}`);
   console.log(`  タイトル: ${script.title}`);
   console.log(`  シーン数: ${script.scenes.length} / ナレーション合計: ${totalChars}文字`);
+  console.log(`  背景トーン: ${summarizeTones(script.scenes)}`);
   console.log(
     `  トークン: in=${message.usage.input_tokens} out=${message.usage.output_tokens}`,
   );

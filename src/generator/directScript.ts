@@ -10,6 +10,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { DIRECTOR_SYSTEM_PROMPT } from "./prompts";
 import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
+import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import type { Scene, VideoScript, Visual } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -144,13 +145,16 @@ ${numbered}`;
     };
   });
 
+  // 背景トーンの明暗バランスを機械的に保証（LLM任せだと「ずっと暗い」になりがちなため）
+  const balanced = enforceToneVariety(scenes);
   console.log(
-    `[directScript] 完了: ${scenes.length}シーン / タイトル: ${meta.title || parsed.title}`,
+    `[directScript] 完了: ${balanced.length}シーン / タイトル: ${meta.title || parsed.title}`,
   );
+  console.log(`[directScript] 背景トーン: ${summarizeTones(balanced)}`);
   return {
     theme: meta.theme ?? "（Gist台本）",
     title: meta.title || parsed.title || "無題",
     bgm_direction: meta.bgm_direction || parsed.bgm_direction,
-    scenes,
+    scenes: balanced,
   };
 }
