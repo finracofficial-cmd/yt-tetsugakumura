@@ -46,6 +46,57 @@ export function coerceFigure(raw: unknown, label: string, seq: number): FigureKi
   return pickPictogram(label || s, seq);
 }
 
+/** 描画側が実装している visual の型（これ以外は不正として弾く） */
+const VALID_TYPES = new Set([
+  "keyword", "figure", "dialogue", "stat", "chart", "line", "units",
+  "table", "comparison", "list", "columns", "balance", "donut", "pyramid",
+]);
+
+/**
+ * モデルが書いた visual（JSON文字列 or オブジェクト）を Visual に変換する。
+ *
+ * 構造化出力の文法上限を避けるため visual は自由文字列で受け取っている。
+ * その代わりここが最後の砦になるので、壊れていても**絶対に例外を投げず**、
+ * そのシーンだけ意味の近いピクトグラムにフォールバックする
+ * （1シーンの失敗でチャンク全体・動画全体を落とさないため）。
+ *
+ * @param raw   モデルの出力（JSON文字列を想定。オブジェクトでも受ける）
+ * @param hint  フォールバック時に意味を推定するための文（ナレーション本文）
+ */
+export function parseVisual(raw: unknown, hint: string, seq: number): Visual {
+  let obj: unknown = raw;
+
+  if (typeof raw === "string") {
+    const text = raw.trim();
+    try {
+      obj = JSON.parse(text);
+    } catch {
+      // ```json ... ``` で包まれている / 前後に説明が付いている場合を救済
+      const m = text.match(/\{[\s\S]*\}/);
+      if (m) {
+        try {
+          obj = JSON.parse(m[0]);
+        } catch {
+          obj = null;
+        }
+      } else {
+        obj = null;
+      }
+    }
+  }
+
+  if (
+    obj &&
+    typeof obj === "object" &&
+    VALID_TYPES.has(String((obj as Record<string, unknown>).type))
+  ) {
+    return sanitizeVisual(obj as Visual, seq).visual;
+  }
+
+  // 解釈できなかった → ナレーションの意味から動くピクトグラムを当てる
+  return { type: "figure", figure: pickPictogram(hint, seq), label: "" };
+}
+
 /** visual 1件を検証・補正する */
 function sanitizeVisual(visual: Visual, seq: number): { visual: Visual; fixed: boolean } {
   switch (visual.type) {

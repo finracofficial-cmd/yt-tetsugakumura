@@ -18,7 +18,48 @@ export const FIGURE_KINDS_ENUM = [
 const FIGURE_DESC =
   "ナレーションの中心イメージに最も近い動くピクトグラム。**必ず次の60種のキー名をそのまま使うこと（他の語を書かない）。**person:個人 crowd:群衆・競争 couple:二者関係 family:家族 handshake:協力・契約 conflict:対立 isolation:孤立 hierarchy:階層・格差 queue:行列・順番待ち blame:非難 applause:賞賛 leader:扇動者と追従 bystander:傍観・同調圧力 brain:本能・報酬系 heart:恋愛・喪失 mask:建前・ペルソナ eye:視線・監視 anxiety:不安・思考のループ lightbulb:気づき addiction:依存 thought:思索 tears:悲しみ dream:夢・眠り money:金・資本 city:都市・夜 factory:労働・大量生産 scale:比較・天秤 gavel:裁き・法 stairs:徒労・出世 cage:不自由・家畜化 chains:束縛 target:目標・的 trophy:勝利 podium:順位・競争 contract:契約・規則 shopping:消費 crown:権力 clock:時間 hourglass:有限の時間 candle:儚さ・死 tree:成長・自然 seed:芽生え・可能性 path:人生の道 door:選択・機会 mountain:困難・目標 smartphone:SNS notification:通知・いいね screen:情報・メディア camera:監視 network:繋がり・アルゴリズム echo:エコーチェンバー dna:遺伝子・進化 atom:科学・物質 evolution:進化 arrowUp:上昇・成長 arrowDown:下落・衰退 cycle:循環・反復 crossroad:岐路・分岐 question:問い・謎 village:村・地方・共同体・郷愁（明トーン向けの情景）";
 
-/** visual プロパティの値（description + anyOf の10型） */
+/**
+ * visual を「JSON文字列」として書かせるスキーマ。
+ *
+ * 【なぜ文字列なのか】
+ * 構造化出力にはコンパイル済み文法のサイズ上限があり、14種の判別共用体
+ * （合計80プロパティ）を渡すと 400 "compiled grammar is too large" で
+ * 生成が丸ごと失敗する。図解型を増やすたびに上限に近づく設計は破綻するため、
+ * visual だけを自由文字列にして文法から外し、形の検証はコード側
+ * （sanitizeScenes.ts の parseVisual）で行う。
+ *
+ * これにより:
+ *   - 文法は act(5) / concept_color(6) だけになり、上限の心配が消える
+ *   - directions 配列の「個数」は構造化出力が保証し続けるので、
+ *     シーンとの対応ズレは起きない（ここが崩れると全体が破綻する）
+ *   - 1シーンのJSONが壊れても、そのシーンだけフォールバックすれば済む
+ */
+export const VISUAL_JSON_FIELD = {
+  type: "string",
+  description: `画面構成を「1行のJSON」で書く。次のいずれか1つの形にすること（余計なキーを足さない）。
+{"type":"keyword","keyword":"2〜10文字の概念の核"}
+{"type":"figure","figure":"<下記60種のキー名>","label":"2〜12文字"}
+{"type":"dialogue","line":"セリフ・内心"}
+{"type":"stat","value":"150人","label":"数値の意味","context":"左上の文脈タグ(不要なら空文字)","unit":"単位だけ分離(不要なら空文字)","axis":{"label":"30年間(不要なら空文字)","ticks":["1995","2005","2015","2025"]}}
+{"type":"chart","title":"","subtitle":"出典(不要なら空文字)","unit":"%","items":[{"label":"項目","value":12.3}],"highlight":0,"annotation":"補足(不要なら空文字)"}
+{"type":"line","title":"","unit":"","points":[{"label":"2020","value":10}]}
+{"type":"units","total":100,"value":96,"label":"100人中96人"}
+{"type":"table","title":"","headers":["列1","列2"],"rows":[["a","b"]]}
+{"type":"comparison","left_title":"","right_title":"","left_items":["a"],"right_items":["b"],"center_label":"対比の軸"}
+{"type":"list","title":"","items":["項目1","項目2"]}
+{"type":"columns","title":"価値の逆転","left":{"label":"選び手","value":"0.50","level":0.35},"right":{"label":"被選手","value":"-0.50","level":0.85},"note":"逆転(不要なら空文字)"}
+{"type":"balance","title":"","left_label":"個人の努力","right_label":"環境の恩恵","tilt":0.7,"note":"95%(不要なら空文字)"}
+{"type":"donut","title":"","percent":7,"label":"到達した人","rest_label":"届かなかった人"}
+{"type":"pyramid","title":"","tiers":[{"label":"頂点","note":"ごく少数(不要なら空文字)"},{"label":"中位","note":""},{"label":"底辺","note":""}]}
+※ columns は left.level と right.level に必ず差をつける（傾きが意味になる）。
+※ balance の tilt は -1.0〜1.0。donut の percent は 0〜100。pyramid の tiers は2〜4段。
+※ ${FIGURE_DESC}`,
+} as const;
+
+/**
+ * 参照用の完全なvisualスキーマ（判別共用体）。
+ * ※ 文法サイズの都合でAPIリクエストには使わない。型の一覧と説明の正本として残す。
+ */
 export const VISUAL_SCHEMA = {
   description: "画面構成。ナレーション内容に最も合う型を選ぶ（同じ型を3連続させない）",
   anyOf: [

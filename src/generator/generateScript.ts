@@ -12,10 +12,10 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
 import { SCRIPT_SYSTEM_PROMPT, buildUserPrompt } from "./prompts";
-import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
+import { VISUAL_JSON_FIELD, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
-import { sanitizeScenes } from "./sanitizeScenes";
+import { sanitizeScenes, parseVisual } from "./sanitizeScenes";
 import { SCRIPT_JSON_PATH, type VideoScript } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -64,7 +64,7 @@ const VIDEO_SCRIPT_SCHEMA = {
               description:
                 "TTS読み上げ専用テキスト。narrationと同一の文だが、誤読しやすい漢字・熟語・固有名詞・数字＋助数詞をすべてひらがな（またはカタカナ）に開く。句読点（。、！？…）の位置と数はnarrationと完全に一致させること。例: narration「他人事ではない。」→ reading「ひとごとではない。」",
             },
-            visual: VISUAL_SCHEMA,
+            visual: VISUAL_JSON_FIELD,
             concept_color: CONCEPT_COLOR_SCHEMA,
           },
           required: ["id", "act", "narration", "reading", "visual", "concept_color"],
@@ -124,7 +124,11 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
   const script = JSON.parse(text) as VideoScript;
   validateScript(script);
 
-  // figure名など、スキーマで縛らなくなった値をコード側で検証・補正する
+  // visualはJSON文字列で来る（文法上限回避）。まずVisualへ変換してから検証・補正する
+  script.scenes = script.scenes.map((s, i) => ({
+    ...s,
+    visual: parseVisual(s.visual as unknown, s.narration, i),
+  }));
   script.scenes = sanitizeScenes(script.scenes);
   // 図解・アニメ比率を7割以上に底上げ（LLM任せだとkeyword＝文字だけが増えがち）
   script.scenes = enforceVisualRichness(script.scenes);

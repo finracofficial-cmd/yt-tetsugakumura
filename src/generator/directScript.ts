@@ -9,10 +9,10 @@
  */
 import Anthropic from "@anthropic-ai/sdk";
 import { DIRECTOR_SYSTEM_PROMPT } from "./prompts";
-import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
+import { VISUAL_JSON_FIELD, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
-import { sanitizeScenes } from "./sanitizeScenes";
+import { sanitizeScenes, parseVisual } from "./sanitizeScenes";
 import type { Scene, VideoScript, Visual } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -57,7 +57,7 @@ function buildDirectionSchema(withReading: boolean) {
       enum: [1, 2, 3, 4, 5],
       description: "幕番号。物語の位置から推定（1:情景フック 2:解剖 3:構造 4:反転 5:結び）",
     },
-    visual: VISUAL_SCHEMA,
+    visual: VISUAL_JSON_FIELD,
     concept_color: CONCEPT_COLOR_SCHEMA,
   };
   const required = ["act", "visual", "concept_color"];
@@ -102,7 +102,8 @@ function buildDirectionSchema(withReading: boolean) {
 interface Direction {
   act: 1 | 2 | 3 | 4 | 5;
   reading?: string;
-  visual: Visual;
+  /** モデルは visual を JSON文字列で書く（文法上限回避）。parseVisualで解釈する */
+  visual: string;
   concept_color: Scene["concept_color"];
 }
 
@@ -235,7 +236,7 @@ ${numbered}`;
         while (d.res.directions.length < want) {
           d.res.directions.push({
             act: 1,
-            visual: { type: "keyword", keyword: "…" },
+            visual: '{"type":"keyword","keyword":"…"}',
             concept_color: "charcoal",
           });
         }
@@ -261,7 +262,8 @@ ${numbered}`;
   const scenes: Scene[] = narrations.map((narration, i) => {
     const d = dirs[i];
     // 演出が欠けたシーンは keyword で穏当にフォールバック
-    const visual: Visual = d?.visual ?? { type: "keyword", keyword: "…" };
+    // visualはJSON文字列で来る。壊れていてもここで安全にVisualへ変換する
+    const visual: Visual = parseVisual(d?.visual, narration, i);
     return {
       id: i + 1,
       act: d?.act ?? (i === narrations.length - 1 ? 5 : 1),
