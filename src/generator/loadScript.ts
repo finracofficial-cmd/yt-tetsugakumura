@@ -21,6 +21,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
 import { directScript, splitIntoSentences } from "./directScript";
+import { sanitizeScenes } from "./sanitizeScenes";
 import {
   SCRIPT_JSON_PATH,
   type Scene,
@@ -145,7 +146,9 @@ export function normalizeScript(raw: unknown): VideoScript {
     theme: typeof obj.theme === "string" ? obj.theme : "（Gist台本）",
     title: typeof obj.title === "string" ? obj.title : "無題",
     bgm_direction: typeof obj.bgm_direction === "string" ? obj.bgm_direction : undefined,
-    scenes,
+    // 手書き台本でも figure名の打ち間違いや範囲外の数値を補正する
+    // （そのままだと描画が空になったり図が破綻するため）
+    scenes: sanitizeScenes(scenes),
   };
 }
 

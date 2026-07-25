@@ -12,6 +12,7 @@ import { DIRECTOR_SYSTEM_PROMPT } from "./prompts";
 import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
+import { sanitizeScenes } from "./sanitizeScenes";
 import type { Scene, VideoScript, Visual } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -151,15 +152,31 @@ act は全体${total}シーン中の位置から判断せよ（序盤=1、終盤
 
 ${numbered}`;
 
-    const stream = client.messages.stream({
-      model: MODEL,
-      max_tokens: CHUNK_MAX_TOKENS,
-      thinking: { type: "adaptive" },
-      output_config: { format: schema },
-      system: DIRECTOR_SYSTEM_PROMPT,
-      messages: [{ role: "user", content: userPrompt }],
-    });
-    const message = await stream.finalMessage();
+    let message;
+    try {
+      const stream = client.messages.stream({
+        model: MODEL,
+        max_tokens: CHUNK_MAX_TOKENS,
+        thinking: { type: "adaptive" },
+        output_config: { format: schema },
+        system: DIRECTOR_SYSTEM_PROMPT,
+        messages: [{ role: "user", content: userPrompt }],
+      });
+      message = await stream.finalMessage();
+    } catch (err) {
+      // 構造化出力のスキーマが複雑すぎると 400 で丸ごと失敗する。
+      // 生のスタックトレースだと原因が分からないので、対処法を示して落とす。
+      const msg = err instanceof Error ? err.message : String(err);
+      if (/compiled grammar is too large|grammar/i.test(msg)) {
+        throw new Error(
+          "[directScript] visualスキーマが複雑すぎて構造化出力の上限を超えました。" +
+            "src/generator/visualSchema.ts の図解型を減らすか、enum（列挙）をやめて" +
+            "descriptionでの指定に変え、sanitizeScenes.ts 側で検証してください。\n  " +
+            msg,
+        );
+      }
+      throw err;
+    }
 
     if (message.stop_reason === "max_tokens") {
       if (slice.length <= 2 || depth >= 4) {
@@ -255,8 +272,10 @@ ${numbered}`;
     };
   });
 
+  // figure名など、スキーマで縛らなくなった値をコード側で検証・補正する
+  const sanitized = sanitizeScenes(scenes);
   // 図解・アニメ比率を7割以上に底上げ（keyword＝文字だけを減らす）
-  const enriched = enforceVisualRichness(scenes);
+  const enriched = enforceVisualRichness(sanitized);
   // 背景トーンの明暗バランスを機械的に保証（LLM任せだと「ずっと暗い」になりがちなため）
   const balanced = enforceToneVariety(enriched);
   console.log(

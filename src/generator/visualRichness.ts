@@ -118,7 +118,7 @@ const ABSTRACT_FALLBACK: FigureKind[] = [
 ];
 
 /** キーワード文から最適なピクトグラム種を選ぶ（決定論的） */
-function pickPictogram(keyword: string, fallbackSeq: number): FigureKind {
+export function pickPictogram(keyword: string, fallbackSeq: number): FigureKind {
   for (const { re, kind } of KEYWORD_MAP) {
     if (re.test(keyword)) return kind;
   }

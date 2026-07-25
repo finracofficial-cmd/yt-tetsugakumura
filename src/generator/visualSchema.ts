@@ -16,7 +16,7 @@ export const FIGURE_KINDS_ENUM = [
 ] as const;
 
 const FIGURE_DESC =
-  "ナレーションの中心イメージに最も近い動くピクトグラム。person:個人 crowd:群衆・競争 couple:二者関係 family:家族 handshake:協力・契約 conflict:対立 isolation:孤立 hierarchy:階層・格差 queue:行列・順番待ち blame:非難 applause:賞賛 leader:扇動者と追従 bystander:傍観・同調圧力 brain:本能・報酬系 heart:恋愛・喪失 mask:建前・ペルソナ eye:視線・監視 anxiety:不安・思考のループ lightbulb:気づき addiction:依存 thought:思索 tears:悲しみ dream:夢・眠り money:金・資本 city:都市・夜 factory:労働・大量生産 scale:比較・天秤 gavel:裁き・法 stairs:徒労・出世 cage:不自由・家畜化 chains:束縛 target:目標・的 trophy:勝利 podium:順位・競争 contract:契約・規則 shopping:消費 crown:権力 clock:時間 hourglass:有限の時間 candle:儚さ・死 tree:成長・自然 seed:芽生え・可能性 path:人生の道 door:選択・機会 mountain:困難・目標 smartphone:SNS notification:通知・いいね screen:情報・メディア camera:監視 network:繋がり・アルゴリズム echo:エコーチェンバー dna:遺伝子・進化 atom:科学・物質 evolution:進化 arrowUp:上昇・成長 arrowDown:下落・衰退 cycle:循環・反復 crossroad:岐路・分岐 question:問い・謎 village:村・地方・共同体・郷愁（明トーン向けの情景）";
+  "ナレーションの中心イメージに最も近い動くピクトグラム。**必ず次の60種のキー名をそのまま使うこと（他の語を書かない）。**person:個人 crowd:群衆・競争 couple:二者関係 family:家族 handshake:協力・契約 conflict:対立 isolation:孤立 hierarchy:階層・格差 queue:行列・順番待ち blame:非難 applause:賞賛 leader:扇動者と追従 bystander:傍観・同調圧力 brain:本能・報酬系 heart:恋愛・喪失 mask:建前・ペルソナ eye:視線・監視 anxiety:不安・思考のループ lightbulb:気づき addiction:依存 thought:思索 tears:悲しみ dream:夢・眠り money:金・資本 city:都市・夜 factory:労働・大量生産 scale:比較・天秤 gavel:裁き・法 stairs:徒労・出世 cage:不自由・家畜化 chains:束縛 target:目標・的 trophy:勝利 podium:順位・競争 contract:契約・規則 shopping:消費 crown:権力 clock:時間 hourglass:有限の時間 candle:儚さ・死 tree:成長・自然 seed:芽生え・可能性 path:人生の道 door:選択・機会 mountain:困難・目標 smartphone:SNS notification:通知・いいね screen:情報・メディア camera:監視 network:繋がり・アルゴリズム echo:エコーチェンバー dna:遺伝子・進化 atom:科学・物質 evolution:進化 arrowUp:上昇・成長 arrowDown:下落・衰退 cycle:循環・反復 crossroad:岐路・分岐 question:問い・謎 village:村・地方・共同体・郷愁（明トーン向けの情景）";
 
 /** visual プロパティの値（description + anyOf の10型） */
 export const VISUAL_SCHEMA = {
@@ -35,7 +35,11 @@ export const VISUAL_SCHEMA = {
       type: "object",
       properties: {
         type: { type: "string", const: "figure" },
-        figure: { type: "string", enum: FIGURE_KINDS_ENUM, description: FIGURE_DESC },
+        // ここは enum にしない。60種のenumは構造化出力のコンパイル済み文法を
+        // 肥大させ、図解型を増やした際に "compiled grammar is too large" (400) で
+        // 生成が丸ごと失敗した。種類の一覧は description で示し、
+        // 実際の妥当性は sanitizeScenes() がコード側で検証・補正する。
+        figure: { type: "string", description: FIGURE_DESC },
         label: { type: "string", description: "画面下部に添える短い言葉（2〜12文字）" },
       },
       required: ["type", "figure", "label"],

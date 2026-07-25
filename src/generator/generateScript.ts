@@ -15,6 +15,7 @@ import { SCRIPT_SYSTEM_PROMPT, buildUserPrompt } from "./prompts";
 import { VISUAL_SCHEMA, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
+import { sanitizeScenes } from "./sanitizeScenes";
 import { SCRIPT_JSON_PATH, type VideoScript } from "./types";
 
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-8";
@@ -123,6 +124,8 @@ export async function generateScript(topic?: string): Promise<VideoScript> {
   const script = JSON.parse(text) as VideoScript;
   validateScript(script);
 
+  // figure名など、スキーマで縛らなくなった値をコード側で検証・補正する
+  script.scenes = sanitizeScenes(script.scenes);
   // 図解・アニメ比率を7割以上に底上げ（LLM任せだとkeyword＝文字だけが増えがち）
   script.scenes = enforceVisualRichness(script.scenes);
   // 背景トーンの明暗バランスを機械的に保証（LLM任せだと「ずっと暗い」になりがちなため）
