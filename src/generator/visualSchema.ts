@@ -40,7 +40,10 @@ export const VISUAL_JSON_FIELD = {
 {"type":"keyword","keyword":"2〜10文字の概念の核"}
 {"type":"figure","figure":"<下記60種のキー名>","label":"2〜12文字"}
 {"type":"dialogue","line":"セリフ・内心"}
-{"type":"stat","value":"150人","label":"数値の意味","context":"左上の文脈タグ(不要なら空文字)","unit":"単位だけ分離(不要なら空文字)","axis":{"label":"30年間(不要なら空文字)","ticks":["1995","2005","2015","2025"]}}
+{"type":"stat","value":"3兆円","label":"数値の意味","context":"左上の文脈タグ(不要なら空文字)","unit":"","axis":{"label":"30年間(不要なら空文字)","ticks":["1995","2005","2015","2025"]}}
+　└ value は**ナレーション中の数値と単位をそのまま写す**。桁を絶対に落とさない（「3兆円」を「3円」や「3億円」にしない）。
+　└ unit は value に単位を書かなかったときだけ使う。value に単位を含めたら unit は空文字にする（両方に書かない）。
+　└ 年号は "2018年" のようにカンマを入れずに書く（"2,018年" は誤り）。
 {"type":"chart","title":"","subtitle":"出典(不要なら空文字)","unit":"%","items":[{"label":"項目","value":12.3}],"highlight":0,"annotation":"補足(不要なら空文字)"}
 {"type":"line","title":"","unit":"","points":[{"label":"2020","value":10}]}
 {"type":"units","total":100,"value":96,"label":"100人中96人"}

@@ -7,6 +7,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { SceneFrame } from "./components/SceneFrame";
+import { safeInterpolate } from "./safeInterpolate";
 import { KeywordContent } from "./components/contents/KeywordContent";
 import { StatContent } from "./components/contents/StatContent";
 import { ComparisonContent } from "./components/contents/ComparisonContent";
@@ -229,9 +230,13 @@ export const MainComposition: React.FC = () => {
   const outroStartFrame = lastScene ? lastScene.startFrame : totalFrames - 5 * fps;
   const introEndFrame = 5 * fps;
 
-  /** L2: イントロ/アウトロで浮き上がる動的ダッキング */
+  /**
+   * L2: イントロ/アウトロで浮き上がる動的ダッキング。
+   * 短い動画では outroStartFrame が introEndFrame+fps より手前に来て
+   * 補間点が逆転しクラッシュするため、safeInterpolate で単調増加に補正する。
+   */
   const bgmVolume = (f: number): number =>
-    interpolate(
+    safeInterpolate(
       f,
       [
         0,

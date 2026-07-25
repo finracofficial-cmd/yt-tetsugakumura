@@ -40,6 +40,20 @@ export const StatContent: React.FC<Props> = ({
     const [, prefix, numStr, suffix] = match;
     const target = parseFloat(numStr.replace(/,/g, ""));
     const decimals = numStr.includes(".") ? numStr.split(".")[1].length : 0;
+
+    // 単位は value の末尾を正とし、unit が足りない分だけ補う。
+    // 以前は unit があると value の末尾を捨てていたため、
+    // value="3兆円" + unit="円" で「兆」が消えて「3円」と表示されていた。
+    const fromValue = suffix.trim();
+    const explicit = (unit ?? "").trim();
+    displayUnit =
+      explicit && !fromValue.endsWith(explicit) ? `${fromValue}${explicit}` : fromValue || explicit;
+
+    // 年号に桁区切りを入れない（"2018年" が "2,018年" になるのを防ぐ）。
+    // 元の表記にカンマがある場合と、1万以上の数量のときだけ桁区切りする。
+    const isYear = fromValue.startsWith("年");
+    const useGrouping = !isYear && (numStr.includes(",") || target >= 10000);
+
     const progress = interpolate(frame, [8, 52], [0, 1], {
       easing: CUBIC_OUT,
       extrapolateLeft: "clamp",
@@ -48,9 +62,9 @@ export const StatContent: React.FC<Props> = ({
     const formatted = (target * progress).toLocaleString("ja-JP", {
       minimumFractionDigits: decimals,
       maximumFractionDigits: decimals,
+      useGrouping,
     });
     displayValue = `${prefix}${formatted}`;
-    if (!unit) displayUnit = suffix;
   }
 
   const ctxReveal = revealAt(frame, 0.04, durationInFrames);
