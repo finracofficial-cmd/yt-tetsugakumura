@@ -21,8 +21,12 @@ const DARK: ConceptColor[] = ["dark-navy", "charcoal", "pitch-black"];
 
 const isBright = (t: ConceptColor): boolean => BRIGHT.includes(t);
 
-/** 明トーンの目標比率（全体に対して）。「3〜4割」の下限に寄せて 0.38。 */
-const BRIGHT_TARGET_RATIO = 0.38;
+/**
+ * 明トーンの目標比率（全体に対して）。
+ * 参照チャンネル3本の実測では明トーンは約10%しかない（映像スタイルガイド §1-1）。
+ * 以前0.38に設定していたのは誤りで、実物より遥かに明るくなっていた。
+ */
+const BRIGHT_TARGET_RATIO = 0.1;
 /** 同一トーンの許容連続数（これを超えたら分断する） */
 const MAX_RUN = 3;
 
@@ -36,19 +40,35 @@ export function enforceToneVariety(scenes: Scene[]): Scene[] {
 
   const tones: ConceptColor[] = scenes.map((s) => s.concept_color);
 
-  // 1) 明トーンが目標比率に満たなければ、暗トーンのシーンを等間隔で明トーンに昇格。
+  // 1) 明トーンの数を目標に寄せる。少なければ昇格、多すぎれば暗トーンへ戻す。
+  //    参照チャンネルは9割が暗トーンなので、明トーンの「出しすぎ」も失敗になる。
   const target = Math.round(n * BRIGHT_TARGET_RATIO);
   const brightCount = tones.filter(isBright).length;
-  if (brightCount < target) {
-    const darkIdx = tones
-      .map((t, i) => (isBright(t) ? -1 : i))
-      .filter((i) => i >= 0);
-    const need = Math.min(target - brightCount, darkIdx.length);
-    for (let k = 0; k < need; k++) {
-      // 等間隔サンプリング（Math.random不使用・決定論的）
-      const pick = darkIdx[Math.floor(((k + 0.5) / need) * darkIdx.length)];
-      tones[pick] = BRIGHT[k % BRIGHT.length];
+
+  /** poolから等間隔にcount件を選ぶ（Math.random不使用・決定論的） */
+  const takeSpread = (pool: number[], count: number): number[] => {
+    const take = Math.min(count, pool.length);
+    const out: number[] = [];
+    for (let k = 0; k < take; k++) {
+      out.push(pool[Math.floor(((k + 0.5) / take) * pool.length)]);
     }
+    return out;
+  };
+
+  if (brightCount < target) {
+    const darkIdx = tones.map((t, i) => (isBright(t) ? -1 : i)).filter((i) => i >= 0);
+    takeSpread(darkIdx, target - brightCount).forEach((pick, k) => {
+      tones[pick] = BRIGHT[k % BRIGHT.length];
+    });
+  } else if (brightCount > target) {
+    // 明トーンが過剰。等間隔に選んだ分だけ残し、それ以外を暗トーンへ戻す。
+    const brightIdx = tones.map((t, i) => (isBright(t) ? i : -1)).filter((i) => i >= 0);
+    const keep = new Set(takeSpread(brightIdx, target));
+    brightIdx
+      .filter((i) => !keep.has(i))
+      .forEach((i, k) => {
+        tones[i] = DARK[k % DARK.length];
+      });
   }
 
   // 2) 同一トーンが MAX_RUN を超えて連続したら、対照的な系統へ差し替えて分断。

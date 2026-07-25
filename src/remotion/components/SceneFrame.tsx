@@ -1,29 +1,24 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Subtitle } from "./Subtitle";
 import { Particles } from "./Particles";
+import { Backdrop } from "./Backdrop";
 import { safeInterpolate } from "../safeInterpolate";
+import { revealAt } from "../reveal";
+import { paletteVars, type ThemePalette } from "../theme";
 import type { SyncSegment } from "../../generator/types";
 
 /**
- * concept_color → 背景。暗トーン3種＋明トーン3種。
- * 暗: 幕が進むごとに暗く。明: 情景・日常・郷愁の場面で画面に呼吸を作る。
+ * concept_color → 背景の明暗トーン。
+ * 参照チャンネルは全編の約9割が暗トーン。明トーンは日常・対比の場面に限定される。
+ * 色そのものはテーマパレット（theme.ts）から供給し、ここでは「暗さの度合い」だけを決める。
  */
-const BACKGROUND: Record<string, string> = {
-  "dark-navy": "radial-gradient(circle at center, #1a1f2c 0%, #090b0f 100%)",
-  charcoal: "radial-gradient(circle at center, #222222 0%, #0d0d0d 100%)",
-  "pitch-black": "radial-gradient(circle at center, #141414 0%, #050505 100%)",
-  daylight: "linear-gradient(180deg, #7ab3d9 0%, #a8cde4 55%, #cfe3ec 100%)",
-  dusk: "linear-gradient(180deg, #3a3153 0%, #6b4a66 45%, #c97b52 85%, #e8a05c 100%)",
-  warm: "linear-gradient(180deg, #4a3d45 0%, #6e5449 55%, #93705a 100%)",
-};
-
-const ACCENT: Record<string, string> = {
-  "dark-navy": "rgba(120, 160, 210, 0.30)",
-  charcoal: "rgba(200, 200, 195, 0.22)",
-  "pitch-black": "rgba(180, 60, 60, 0.28)",
-  daylight: "rgba(255, 252, 240, 0.5)",
-  dusk: "rgba(255, 190, 130, 0.35)",
-  warm: "rgba(255, 214, 160, 0.3)",
+const TONE_OVERLAY: Record<string, string> = {
+  "dark-navy": "rgba(10, 13, 22, 0.55)",
+  charcoal: "rgba(14, 14, 16, 0.62)",
+  "pitch-black": "rgba(4, 4, 6, 0.74)",
+  daylight: "rgba(220, 234, 244, 0.86)",
+  dusk: "rgba(120, 74, 96, 0.42)",
+  warm: "rgba(120, 92, 70, 0.44)",
 };
 
 /** 明トーンの背景か（文字色・ビネットの強さを切り替える） */
@@ -42,6 +37,12 @@ type Props = {
   conceptColor: string;
   narration: string;
   durationInFrames: number;
+  /** テーマ由来のカラーパレット（動画1本を通して固定） */
+  palette: ThemePalette;
+  /** 左上の章タグ（例: "Ch3・構造"）。幕が変わる箇所で渡す */
+  chapterTag?: string;
+  /** 上部中央の概念ラベル（例: "統計的差別"）。概念の切り替わりで渡す */
+  headingLabel?: string;
   /** 音声実測に基づく文単位の字幕同期（あれば優先） */
   segments?: SyncSegment[];
   /** 全画面イラスト系のシーンでは背景光を消す */
@@ -51,7 +52,8 @@ type Props = {
 
 /**
  * 全シーン共通の額縁:
- * - 放射状グラデーション背景 + ゆっくり横切る光の帯
+ * - 情景レイヤー背景（空/遠景/中景/床）＋体積光＋ヘイズ
+ * - 左上の章タグ / 上部中央の概念ラベル / 四隅のコーナーマーク
  * - 常時駆動型カメラワーク（微小ズーム + 手持ちドリフト + 微回転）
  * - ナレーションの文頭ごとの「キック」（音声に同期した微小パルス）
  * - 漂う粒子 / ビネット / 下部字幕 / コンテンツの短いフェード（背景は暗転させない）
@@ -62,18 +64,19 @@ export const SceneFrame: React.FC<Props> = ({
   conceptColor,
   narration,
   durationInFrames,
+  palette,
+  chapterTag,
+  headingLabel,
   segments,
   plainBackdrop = false,
   children,
 }) => {
   const frame = useCurrentFrame();
-  const bg = BACKGROUND[conceptColor] ?? BACKGROUND["charcoal"];
-  const accent = ACCENT[conceptColor] ?? ACCENT["charcoal"];
   const bright = isBrightTone(conceptColor);
+  const toneOverlay = TONE_OVERLAY[conceptColor] ?? TONE_OVERLAY.charcoal;
 
-  // コンテンツ（ピクトグラム/図/文字）だけを短くフェードで出し入れする。
-  // 背景グラデーションは常に不透明のまま残すので、シーン転換で
-  // 「真っ黒」を経由しない（＝暗転の点滅が起きない）。
+  // コンテンツだけを短くフェードで出し入れする。背景は常に不透明のまま残すので、
+  // シーン転換で「真っ黒」を経由しない（＝暗転の点滅が起きない）。
   const contentReveal = safeInterpolate(
     frame,
     [0, 9, durationInFrames - 9, durationInFrames],
@@ -120,71 +123,48 @@ export const SceneFrame: React.FC<Props> = ({
   }
   const kickScale = 1 + kick * 0.012;
 
-  // ゆっくり横切る光の帯（約8秒周期の斜めのスイープ）
-  const sweepX = ((frame / (8 * 30)) % 1) * 3400 - 1200;
+  const ink = bright ? "rgba(28, 34, 46, 0.95)" : "rgba(242, 240, 232, 0.96)";
+  const inkSoft = bright ? "rgba(45, 52, 68, 0.75)" : "rgba(216, 216, 210, 0.85)";
+  const outline = bright ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.8)";
+
+  // 章タグ・見出しは少し遅れて出す
+  const tagReveal = revealAt(frame, 0.03, durationInFrames);
+  const headingReveal = revealAt(frame, 0.07, durationInFrames);
 
   return (
-    <AbsoluteFill style={{ background: bg, overflow: "hidden" }}>
+    <AbsoluteFill
+      style={{
+        background: `linear-gradient(180deg, ${palette.skyTop} 0%, ${palette.skyBottom} 100%)`,
+        overflow: "hidden",
+        ...paletteVars(palette),
+        ["--ink" as never]: ink,
+        ["--ink-soft" as never]: inkSoft,
+        ["--ink-line" as never]: bright ? "rgba(30, 36, 48, 0.35)" : "rgba(255, 255, 255, 0.25)",
+      }}
+    >
+      {/* 情景レイヤー（空/遠景/中景/床）＋体積光＋ヘイズ */}
+      <Backdrop sceneId={sceneId} palette={palette} bright={bright} plain={plainBackdrop} />
+
+      {/* concept_color による明暗トーンの調整。情景の上に薄く掛ける */}
+      <AbsoluteFill style={{ background: toneOverlay }} />
+
+      {/* 主役を浮かせる中央のグロー */}
       {!plainBackdrop && (
         <AbsoluteFill
           style={{
             transform: `scale(${idleScale * 1.05})`,
-            background: `radial-gradient(ellipse at 50% 42%, ${accent} 0%, rgba(0,0,0,0) 55%)`,
-            opacity: 0.45,
+            background: `radial-gradient(ellipse at 50% 46%, ${palette.accentSoft} 0%, rgba(0,0,0,0) 52%)`,
+            opacity: bright ? 0.14 : 0.2,
           }}
         />
       )}
 
-      {/* 光の帯: 画面を静止させないための最も低コストな常時運動 */}
-      {!plainBackdrop && (
-        <div
-          style={{
-            position: "absolute",
-            top: -300,
-            left: sweepX,
-            width: 480,
-            height: 1700,
-            background:
-              "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(220,230,245,0.035) 50%, rgba(255,255,255,0) 100%)",
-            transform: "rotate(16deg)",
-          }}
-        />
-      )}
-
-      {/* 明トーン: ゆっくり流れる雲（背景の常時モーション） */}
-      {bright &&
-        !plainBackdrop &&
-        [0, 1, 2].map((i) => {
-          const speed = 0.25 + i * 0.12;
-          const cw = 420 + i * 160;
-          const x = ((frame * speed + i * 700) % (1920 + cw)) - cw;
-          return (
-            <div
-              key={i}
-              style={{
-                position: "absolute",
-                left: x,
-                top: 24 + i * 78,
-                width: cw,
-                height: 90 + i * 24,
-                borderRadius: 999,
-                background: "rgba(255,255,255,0.22)",
-                filter: "blur(18px)",
-              }}
-            />
-          );
-        })}
-
-      {/* コンテンツ（常時ズーム＋ドリフト＋文頭キック、字幕領域を避ける）
-          --ink 系のCSS変数で、明トーンでは文字色が自動で濃色に切り替わる */}
+      {/* コンテンツ（常時ズーム＋ドリフト＋文頭キック、字幕領域を避ける） */}
       <AbsoluteFill
         style={{
           paddingBottom: 200,
           opacity: contentReveal,
           transform: `translate(${camX}px, ${camY}px) scale(${idleScale * kickScale}) rotate(${camRot}deg)`,
-          ["--ink" as never]: bright ? "rgba(30, 36, 48, 0.94)" : "rgba(240, 238, 230, 0.95)",
-          ["--ink-soft" as never]: bright ? "rgba(45, 52, 68, 0.75)" : "rgba(215, 215, 210, 0.85)",
-          ["--ink-line" as never]: bright ? "rgba(30, 36, 48, 0.35)" : "rgba(255, 255, 255, 0.25)",
         }}
       >
         {children}
@@ -192,11 +172,81 @@ export const SceneFrame: React.FC<Props> = ({
 
       <Particles seed={sceneId} count={bright ? 14 : 30} />
 
+      {/* 四隅のコーナーマーク（記録文書・ビューファインダーの質感） */}
+      {[
+        { top: 34, left: 40, bt: 2, bl: 2 },
+        { top: 34, right: 40, bt: 2, br: 2 },
+        { bottom: 34, left: 40, bb: 2, bl: 2 },
+        { bottom: 34, right: 40, bb: 2, br: 2 },
+      ].map((c, i) => (
+        <div
+          key={i}
+          style={{
+            position: "absolute",
+            top: c.top,
+            left: c.left,
+            right: c.right,
+            bottom: c.bottom,
+            width: 26,
+            height: 26,
+            borderTop: c.bt ? `2px solid ${ink}` : undefined,
+            borderBottom: c.bb ? `2px solid ${ink}` : undefined,
+            borderLeft: c.bl ? `2px solid ${ink}` : undefined,
+            borderRight: c.br ? `2px solid ${ink}` : undefined,
+            opacity: 0.22,
+          }}
+        />
+      ))}
+
+      {/* 左上の章タグ */}
+      {chapterTag && (
+        <div
+          style={{
+            position: "absolute",
+            top: 62,
+            left: 78,
+            opacity: tagReveal * 0.85,
+            fontFamily: SERIF_FONT,
+            fontSize: 25,
+            letterSpacing: 3,
+            color: ink,
+            textShadow: `0 2px 8px ${outline}`,
+          }}
+        >
+          {chapterTag}
+        </div>
+      )}
+
+      {/* 上部中央の概念ラベル（飾り罫つき） */}
+      {headingLabel && (
+        <div
+          style={{
+            position: "absolute",
+            top: 74,
+            left: 0,
+            right: 0,
+            textAlign: "center",
+            opacity: headingReveal,
+            fontFamily: SERIF_FONT,
+            fontSize: 40,
+            fontWeight: 600,
+            letterSpacing: 8,
+            color: ink,
+            textShadow: `0 2px 10px ${outline}`,
+          }}
+        >
+          <span style={{ opacity: 0.5, marginRight: 22 }}>─</span>
+          {headingLabel}
+          <span style={{ opacity: 0.5, marginLeft: 22 }}>─</span>
+        </div>
+      )}
+
+      {/* ビネット */}
       <AbsoluteFill
         style={{
           background: bright
             ? "radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(30,30,50,0.22) 100%)"
-            : "radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)",
+            : "radial-gradient(ellipse at center, rgba(0,0,0,0) 52%, rgba(0,0,0,0.62) 100%)",
         }}
       />
 

@@ -1,6 +1,8 @@
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { SERIF_FONT } from "../SceneFrame";
 import { CUBIC_OUT } from "../../easing";
+import { revealAt, revealProgress } from "../../reveal";
+import { safeInterpolate } from "../../safeInterpolate";
 
 type Item = { label: string; value: number };
 
@@ -10,20 +12,35 @@ type Props = {
   items: Item[];
   /** 出典・調査名など（タイトル下に小さく） */
   subtitle?: string;
-  /** 強調する項目のindex（アンバー表示）。省略時は強調なし */
+  /** 強調する項目のindex（金色＋大きな値）。省略時は強調なし */
   highlight?: number;
   /** 下部の注釈ボックス（例: 「46.4% ≒ 2人に1人」） */
   annotation?: string;
   durationInFrames: number;
 };
 
-const BAR_AREA_W = 520; // バー本体の最大幅
-const LABEL_W = 520;
+const LABEL_W = 300; // ラベルは棒の「外側左」に置く
+const TRACK_W = 900; // トラック（薄い全幅バー）の幅
+const ROW_H = 92;
+
+/** 軸の上限をキリのいい値に切り上げる */
+function niceCeil(v: number): number {
+  if (v <= 0) return 1;
+  const exp = Math.floor(Math.log10(v));
+  const base = 10 ** exp;
+  const n = v / base;
+  const step = n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10;
+  return step * base;
+}
 
 /**
- * 横棒グラフ。参考チャンネル準拠のリッチ表示:
- * タイトル + 出典 + グリッド線つき軸 + 値ラベル + 強調バー(アンバー) +
- * 最大値の「最多」タグ + 下部の注釈ボックス。
+ * 横棒グラフ（参照チャンネルの決定版レイアウト）。
+ * docs/reference-style/frames-2/tile2_G_hbar_countries.png を基準に:
+ *   - ラベルは棒の外側左
+ *   - 各行に薄いトラックを敷き、その中を値バーが満たす
+ *   - 強調行だけ金グラデ＋大きな白文字の値、他はスティールブルー＋小さめの値
+ *   - 下端に目盛り軸
+ *   - 行が1本ずつ増える（段階的reveal）
  */
 export const ChartContent: React.FC<Props> = ({
   title,
@@ -32,241 +49,223 @@ export const ChartContent: React.FC<Props> = ({
   subtitle,
   highlight,
   annotation,
+  durationInFrames,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
   if (items.length === 0) return null;
+
   const maxValue = Math.max(...items.map((i) => i.value));
-  const maxIndex = items.findIndex((i) => i.value === maxValue);
-  // 軸の上限: 最大値を少し超えるキリのいい値
   const axisMax = niceCeil(maxValue);
   const TICKS = 5;
 
-  const titleIn = interpolate(frame, [0, 16], [0, 1], {
-    easing: CUBIC_OUT,
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  const titleIn = revealAt(frame, 0.02, durationInFrames);
+  const axisIn = revealAt(frame, 0.1, durationInFrames);
+  const annoIn = revealAt(frame, 0.62, durationInFrames);
 
   const fmt = (v: number): string =>
-    Number.isInteger(v) ? v.toLocaleString("ja-JP") : v.toFixed(1);
+    Number.isInteger(v) ? v.toLocaleString("ja-JP") : v.toFixed(2);
 
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         {/* タイトル + 出典 */}
-        <div style={{ opacity: titleIn, transform: `translateY(${(1 - titleIn) * -16}px)`, textAlign: "center" }}>
+        <div
+          style={{
+            opacity: titleIn,
+            transform: `translateY(${(1 - titleIn) * -14}px)`,
+            textAlign: "center",
+            marginBottom: 30,
+          }}
+        >
           <div
             style={{
-              color: "var(--ink, rgba(240, 238, 230, 0.96))",
+              color: "var(--ink, rgba(242,240,232,0.96))",
               fontFamily: SERIF_FONT,
-              fontSize: 54,
-              fontWeight: 700,
-              letterSpacing: "0.1em",
+              fontSize: 40,
+              letterSpacing: "0.08em",
             }}
           >
             {title}
           </div>
-          {subtitle ? (
+          {subtitle && (
             <div
               style={{
                 marginTop: 8,
-                color: "var(--ink-soft, rgba(210, 210, 205, 0.75))",
+                color: "var(--ink-soft, rgba(220,220,214,0.65))",
                 fontFamily: SERIF_FONT,
-                fontSize: 26,
-                letterSpacing: "0.06em",
+                fontSize: 23,
+                letterSpacing: "0.05em",
               }}
             >
               {subtitle}
             </div>
-          ) : null}
+          )}
         </div>
 
-        {/* グラフ本体 */}
-        <div style={{ position: "relative", width: LABEL_W + BAR_AREA_W + 220, marginTop: 18 }}>
-          {/* グリッド線（縦） */}
-          {Array.from({ length: TICKS + 1 }).map((_, t) => (
-            <div
-              key={t}
-              style={{
-                position: "absolute",
-                left: LABEL_W + (t / TICKS) * BAR_AREA_W,
-                top: -6,
-                bottom: 34,
-                width: 1,
-                backgroundColor: "var(--ink-line, rgba(255,255,255,0.14))",
-                opacity: t === 0 ? 0.9 : 0.45,
-              }}
-            />
-          ))}
+        {/* 行 */}
+        <div style={{ position: "relative" }}>
+          {items.map((item, i) => {
+            const rowIn = revealProgress(frame, i, items.length, durationInFrames, {
+              start: 0.12,
+              end: 0.58,
+            });
+            // バーの伸長はイージングをかけて床から伸びる感じに
+            const grow = safeInterpolate(rowIn, [0, 1], [0, 1], {
+              easing: CUBIC_OUT,
+              extrapolateLeft: "clamp",
+              extrapolateRight: "clamp",
+            });
+            const isHi = highlight === i;
+            const w = (item.value / axisMax) * TRACK_W * grow;
 
-          {/* バー行 */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 18, paddingBottom: 44 }}>
-            {items.map((item, i) => {
-              const isHi = highlight === i;
-              const isMax = i === maxIndex;
-              const grow = spring({ frame: frame - 14 - i * 8, fps, config: { damping: 15, mass: 0.6 } });
-              const w = (item.value / axisMax) * BAR_AREA_W * grow;
-              const countUp = interpolate(frame, [14 + i * 8, 50 + i * 8], [0, item.value], {
-                easing: CUBIC_OUT,
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              });
-              const rowH = isHi ? 64 : 52;
-              return (
-                <div key={i} style={{ display: "flex", alignItems: "center", height: rowH, opacity: Math.min(1, grow * 1.4) }}>
-                  {/* 項目ラベル */}
+            return (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: ROW_H,
+                  opacity: rowIn,
+                  transform: `translateY(${(1 - rowIn) * 12}px)`,
+                }}
+              >
+                {/* ラベル（棒の外側左） */}
+                <div
+                  style={{
+                    width: LABEL_W,
+                    textAlign: "right",
+                    paddingRight: 26,
+                    color: isHi
+                      ? "var(--ink, rgba(242,240,232,0.96))"
+                      : "var(--ink-soft, rgba(220,220,214,0.78))",
+                    fontFamily: SERIF_FONT,
+                    fontSize: isHi ? 34 : 30,
+                    letterSpacing: "0.06em",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {item.label}
+                </div>
+
+                {/* トラック＋値バー */}
+                <div
+                  style={{
+                    width: TRACK_W,
+                    height: isHi ? 44 : 34,
+                    background: "rgba(255,255,255,0.07)",
+                    border: "1px solid rgba(255,255,255,0.09)",
+                    position: "relative",
+                  }}
+                >
                   <div
                     style={{
-                      width: LABEL_W - 24,
-                      paddingRight: 24,
-                      textAlign: "right",
-                      color: "var(--ink, rgba(235, 235, 229, 0.94))",
+                      position: "absolute",
+                      left: 0,
+                      top: 0,
+                      bottom: 0,
+                      width: w,
+                      background: isHi
+                        ? "linear-gradient(90deg, rgba(232,181,99,0.35) 0%, var(--accent, #e8b563) 100%)"
+                        : "linear-gradient(90deg, rgba(74,107,138,0.3) 0%, var(--muted, #4a6b8a) 100%)",
+                      boxShadow: isHi ? "0 0 26px var(--accent, #e8b563)" : "none",
+                    }}
+                  />
+                  {/* 値ラベル: 強調行は大きな白文字でバーの右端に */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: w + 16,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      color: isHi
+                        ? "var(--ink, rgba(255,255,255,0.98))"
+                        : "var(--ink-soft, rgba(220,220,214,0.8))",
                       fontFamily: SERIF_FONT,
-                      fontSize: isHi ? 32 : 28,
-                      fontWeight: isHi ? 700 : 400,
-                      letterSpacing: "0.04em",
+                      fontSize: isHi ? 46 : 30,
+                      fontWeight: isHi ? 700 : 500,
                       whiteSpace: "nowrap",
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
+                      fontVariantNumeric: "tabular-nums",
+                      opacity: rowIn,
+                      textShadow: isHi ? "0 2px 14px rgba(0,0,0,0.7)" : "none",
                     }}
                   >
-                    {item.label}
+                    {fmt(item.value)}
                   </div>
-                  {/* バー */}
-                  <div style={{ position: "relative", width: BAR_AREA_W, height: isHi ? 44 : 34 }}>
-                    <div
-                      style={{
-                        position: "absolute",
-                        left: 0,
-                        top: 0,
-                        width: Math.max(0, w),
-                        height: "100%",
-                        borderRadius: 6,
-                        background: isHi
-                          ? "linear-gradient(180deg, rgba(255,205,110,0.98), rgba(230,165,70,0.98))"
-                          : "linear-gradient(180deg, rgba(90,130,190,0.92), rgba(60,95,150,0.92))",
-                        boxShadow: isHi ? "0 0 30px rgba(255,195,100,0.35)" : "none",
-                      }}
-                    />
-                  </div>
-                  {/* 値 + 最多タグ */}
-                  <div style={{ display: "flex", alignItems: "center", gap: 12, marginLeft: 16, whiteSpace: "nowrap" }}>
-                    <span
-                      style={{
-                        color: "var(--ink, rgba(240, 238, 230, 0.96))",
-                        fontFamily: SERIF_FONT,
-                        fontSize: isHi ? 44 : 30,
-                        fontWeight: isHi ? 700 : 500,
-                        fontVariantNumeric: "tabular-nums",
-                      }}
-                    >
-                      {fmt(countUp)}
-                      {unit}
-                    </span>
-                    {isMax && !isHi ? (
-                      <span
-                        style={{
-                          backgroundColor: "rgba(235, 235, 230, 0.92)",
-                          color: "#1c2230",
-                          borderRadius: 6,
-                          padding: "3px 12px",
-                          fontFamily: SERIF_FONT,
-                          fontSize: 22,
-                          fontWeight: 700,
-                          opacity: grow,
-                        }}
-                      >
-                        最多
-                      </span>
-                    ) : null}
+                </div>
+              </div>
+            );
+          })}
+
+          {/* 目盛り軸 */}
+          <div
+            style={{
+              marginLeft: LABEL_W,
+              width: TRACK_W,
+              marginTop: 14,
+              opacity: axisIn,
+              position: "relative",
+              height: 74,
+              borderTop: "1px solid var(--ink-line, rgba(255,255,255,0.22))",
+            }}
+          >
+            {Array.from({ length: TICKS + 1 }, (_, i) => {
+              const x = (i / TICKS) * 100;
+              return (
+                <div key={i} style={{ position: "absolute", left: `${x}%`, top: 0 }}>
+                  <div style={{ width: 1, height: 8, background: "rgba(255,255,255,0.22)" }} />
+                  <div
+                    style={{
+                      marginTop: 6,
+                      transform: "translateX(-50%)",
+                      color: "var(--ink-soft, rgba(220,220,214,0.6))",
+                      fontFamily: SERIF_FONT,
+                      fontSize: 20,
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {fmt((axisMax * i) / TICKS)}
                   </div>
                 </div>
               );
             })}
-          </div>
-
-          {/* 軸目盛 */}
-          <div style={{ position: "absolute", left: LABEL_W, bottom: 0, width: BAR_AREA_W }}>
-            {Array.from({ length: TICKS + 1 }).map((_, t) => (
-              <span
-                key={t}
-                style={{
-                  position: "absolute",
-                  left: (t / TICKS) * BAR_AREA_W - 30,
-                  width: 60,
-                  textAlign: "center",
-                  color: "var(--ink-soft, rgba(210, 210, 205, 0.7))",
-                  fontFamily: SERIF_FONT,
-                  fontSize: 24,
-                  fontVariantNumeric: "tabular-nums",
-                }}
-              >
-                {fmt((axisMax / TICKS) * t)}
-                {unit}
-              </span>
-            ))}
+            {/* 単位は目盛りラベルの下に置く（最右の目盛りと重ならないように） */}
+            <div
+              style={{
+                position: "absolute",
+                right: 0,
+                top: 44,
+                color: "var(--ink-soft, rgba(220,220,214,0.55))",
+                fontFamily: SERIF_FONT,
+                fontSize: 20,
+              }}
+            >
+              {unit}
+            </div>
           </div>
         </div>
 
-        {/* 注釈ボックス */}
-        {annotation ? <Annotation text={annotation} frame={frame} fps={fps} /> : null}
+        {/* 下部の注釈ボックス */}
+        {annotation && (
+          <div
+            style={{
+              marginTop: 34,
+              opacity: annoIn,
+              transform: `translateY(${(1 - annoIn) * 12}px)`,
+              padding: "16px 34px",
+              border: "1px solid var(--ink-line, rgba(255,255,255,0.22))",
+              background: "rgba(0,0,0,0.28)",
+              color: "var(--ink, rgba(242,240,232,0.94))",
+              fontFamily: SERIF_FONT,
+              fontSize: 32,
+              letterSpacing: "0.06em",
+            }}
+          >
+            {annotation}
+          </div>
+        )}
       </div>
     </AbsoluteFill>
   );
 };
-
-/** 下部の注釈ボックス。「説明 数値」の形なら数値部分を大きくアンバーで表示 */
-const Annotation: React.FC<{ text: string; frame: number; fps: number }> = ({ frame, fps, text }) => {
-  const appear = spring({ frame: frame - 55, fps, config: { damping: 14, mass: 0.7 } });
-  // 末尾の数値・比喩部分（例: "46.4% ≒ 2人に1人"）を強調表示するため分割を試みる
-  const m = text.match(/^(.*?)([\d.,]+[%％倍人円年]?\s*[≒=→].*|[\d.,]+[%％倍人円年]?)$/);
-  const [desc, big] = m ? [m[1].trim(), m[2].trim()] : [text, ""];
-  return (
-    <div
-      style={{
-        marginTop: 20,
-        opacity: appear,
-        transform: `translateY(${(1 - appear) * 30}px)`,
-        display: "flex",
-        alignItems: "center",
-        gap: 28,
-        backgroundColor: "rgba(18, 22, 32, 0.92)",
-        border: "2px solid rgba(255, 195, 100, 0.75)",
-        borderRadius: 10,
-        padding: "18px 38px",
-        boxShadow: "0 10px 50px rgba(0,0,0,0.35)",
-      }}
-    >
-      {desc ? (
-        <span style={{ color: "rgba(238, 238, 232, 0.95)", fontFamily: SERIF_FONT, fontSize: 30, letterSpacing: "0.04em" }}>
-          {desc}
-        </span>
-      ) : null}
-      {big ? (
-        <span
-          style={{
-            color: "rgba(255, 200, 110, 0.98)",
-            fontFamily: SERIF_FONT,
-            fontSize: 52,
-            fontWeight: 700,
-            fontVariantNumeric: "tabular-nums",
-          }}
-        >
-          {big}
-        </span>
-      ) : null}
-    </div>
-  );
-};
-
-/** 最大値の少し上のキリのいい軸上限を返す（32→40, 46.4→50, 120→150 など） */
-function niceCeil(v: number): number {
-  if (v <= 0) return 1;
-  const mag = Math.pow(10, Math.floor(Math.log10(v)));
-  for (const m of [1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10]) {
-    if (v <= m * mag) return m * mag;
-  }
-  return 10 * mag;
-}

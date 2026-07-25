@@ -1,5 +1,5 @@
 import { Composition } from "remotion";
-import { MainComposition } from "./MainComposition";
+import { MainComposition, END_CARD_FRAMES } from "./MainComposition";
 import { PictogramGrid } from "./PictogramGrid";
 import syncMap from "../data/sync-map.json";
 
@@ -9,7 +9,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Main"
         component={MainComposition}
-        durationInFrames={syncMap.totalDurationInFrames}
+        // 本編＋エンドカード
+        durationInFrames={syncMap.totalDurationInFrames + END_CARD_FRAMES}
         fps={syncMap.fps}
         width={1920}
         height={1080}

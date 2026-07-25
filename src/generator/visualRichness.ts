@@ -25,6 +25,10 @@ const RICH_TYPES = new Set<Visual["type"]>([
   "table",
   "comparison",
   "list",
+  "columns",
+  "balance",
+  "donut",
+  "pyramid",
 ]);
 
 const isRich = (v: Visual): boolean => RICH_TYPES.has(v.type);

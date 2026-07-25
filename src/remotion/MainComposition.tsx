@@ -17,6 +17,12 @@ import { TableContent } from "./components/contents/TableContent";
 import { ListContent } from "./components/contents/ListContent";
 import { DialogueContent } from "./components/contents/DialogueContent";
 import { FigureContent } from "./components/contents/FigureContent";
+import { ColumnsContent } from "./components/contents/ColumnsContent";
+import { BalanceContent } from "./components/contents/BalanceContent";
+import { DonutContent } from "./components/contents/DonutContent";
+import { PyramidContent } from "./components/contents/PyramidContent";
+import { EndCard } from "./components/EndCard";
+import { getPalette } from "./theme";
 import type { AssetsManifest, Scene, SyncMap, Visual } from "../generator/types";
 import scriptJson from "../data/script.json";
 import syncMapJson from "../data/sync-map.json";
@@ -25,6 +31,18 @@ import assetsJson from "../data/assets.json";
 const scenes = scriptJson.scenes as unknown as Scene[];
 const syncMap = syncMapJson as SyncMap;
 const assets = assetsJson as AssetsManifest;
+
+/**
+ * テーマ由来のカラーパレット（動画1本を通して固定）。
+ * 参照チャンネルは構造は共通のまま、配色だけがテーマから決まる。
+ */
+const palette = getPalette(
+  (scriptJson as { theme?: string }).theme ?? "",
+  (scriptJson as { title?: string }).title ?? "",
+);
+
+/** エンドカードの長さ（フレーム）。最終シーンの後に続けて出す */
+export const END_CARD_FRAMES = 5 * 30;
 
 /** シーン型に応じたコンテンツを描画する */
 const SceneContent: React.FC<{
@@ -56,6 +74,9 @@ const SceneContent: React.FC<{
         <StatContent
           value={visual.value}
           label={visual.label}
+          context={visual.context || undefined}
+          unit={visual.unit || undefined}
+          axis={visual.axis && visual.axis.ticks?.length ? visual.axis : undefined}
           durationInFrames={durationInFrames}
         />
       );
@@ -117,10 +138,79 @@ const SceneContent: React.FC<{
           durationInFrames={durationInFrames}
         />
       );
+    // 以下4型のタイトルは額縁側の見出しラベル（headingFor）が表示するため、
+    // コンテンツ側には渡さない（二重表示の防止）。
+    case "columns":
+      return (
+        <ColumnsContent
+          left={visual.left}
+          right={visual.right}
+          note={visual.note || undefined}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "balance":
+      return (
+        <BalanceContent
+          leftLabel={visual.left_label}
+          rightLabel={visual.right_label}
+          tilt={visual.tilt}
+          note={visual.note || undefined}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "donut":
+      return (
+        <DonutContent
+          percent={visual.percent}
+          label={visual.label}
+          restLabel={visual.rest_label || undefined}
+          durationInFrames={durationInFrames}
+        />
+      );
+    case "pyramid":
+      return (
+        <PyramidContent tiers={visual.tiers} durationInFrames={durationInFrames} />
+      );
     default:
       return null;
   }
 };
+
+/** 幕番号 → 章タグの表示名 */
+const ACT_NAMES: Record<number, string> = {
+  1: "情景",
+  2: "解剖",
+  3: "構造",
+  4: "反転",
+  5: "結び",
+};
+
+/** そのシーンで章タグを出すか（幕が変わる最初のシーンだけ） */
+function chapterTagFor(index: number): string | undefined {
+  const scene = scenes[index];
+  const prev = scenes[index - 1];
+  if (prev && prev.act === scene.act) return undefined;
+  return `Ch${scene.act}・${ACT_NAMES[scene.act] ?? ""}`;
+}
+
+/**
+ * 上部中央の概念ラベル。図解系シーンのタイトルを額縁側に出して、
+ * 参照チャンネルの「見出し＋主舞台」の2段構えを作る。
+ */
+function headingFor(visual: Visual): string | undefined {
+  switch (visual.type) {
+    case "columns":
+    case "balance":
+    case "donut":
+    case "pyramid":
+      return visual.title || undefined;
+    case "comparison":
+      return visual.center_label || undefined;
+    default:
+      return undefined;
+  }
+}
 
 /**
  * script.json（台本）と sync-map.json（音声実測の完全同期マップ）を読み込み、
@@ -166,7 +256,7 @@ export const MainComposition: React.FC = () => {
         <Audio loop src={staticFile("assets/ambient-noise.mp3")} volume={0.02} />
       ) : null}
 
-      {scenes.map((scene) => {
+      {scenes.map((scene, index) => {
         const sync = syncMap.scenes.find((t) => t.id === scene.id);
         const durationInFrames = sync?.durationInFrames ?? 150;
         const from = sync?.startFrame ?? 0;
@@ -183,6 +273,9 @@ export const MainComposition: React.FC = () => {
               conceptColor={scene.concept_color}
               narration={scene.narration}
               durationInFrames={durationInFrames}
+              palette={palette}
+              chapterTag={chapterTagFor(index)}
+              headingLabel={headingFor(scene.visual)}
               segments={sync?.segments}
             >
               <SceneContent
@@ -202,6 +295,15 @@ export const MainComposition: React.FC = () => {
           </Sequence>
         );
       })}
+
+      {/* エンドカード（参照チャンネル3本共通の意匠） */}
+      <Sequence
+        from={syncMap.totalDurationInFrames}
+        durationInFrames={END_CARD_FRAMES}
+        name="EndCard"
+      >
+        <EndCard channelName="考えすぎる葦" durationInFrames={END_CARD_FRAMES} />
+      </Sequence>
     </AbsoluteFill>
   );
 };

@@ -106,7 +106,17 @@ export type Visual =
   | { type: "keyword"; keyword: string }
   | { type: "figure"; figure: FigureKind; label: string }
   | { type: "dialogue"; line: string }
-  | { type: "stat"; value: string; label: string }
+  | {
+      type: "stat";
+      value: string;
+      label: string;
+      /** 左上の文脈タグ（例: "1995→2025"） */
+      context?: string;
+      /** 単位（例: "件"）。数値と別文字で大きさを変えて置く */
+      unit?: string;
+      /** 補助の目盛り軸（例: 年号の並び）。数値の下に細く敷く */
+      axis?: { label?: string; ticks: string[] };
+    }
   | {
       type: "chart";
       title: string;
@@ -140,7 +150,38 @@ export type Visual =
       right_items: string[];
       center_label: string;
     }
-  | { type: "list"; title: string; items: string[] };
+  | { type: "list"; title: string; items: string[] }
+  | {
+      /** 光る柱2本を線で結び、傾きで関係の逆転を見せる */
+      type: "columns";
+      title?: string;
+      left: { label: string; value: string; level: number };
+      right: { label: string; value: string; level: number };
+      note?: string;
+    }
+  | {
+      /** 天秤。tiltは -1(左に傾く)〜+1(右に傾く) */
+      type: "balance";
+      title?: string;
+      left_label: string;
+      right_label: string;
+      tilt: number;
+      note?: string;
+    }
+  | {
+      /** ドーナツ（リング）チャート */
+      type: "donut";
+      title?: string;
+      percent: number;
+      label: string;
+      rest_label?: string;
+    }
+  | {
+      /** ピラミッド（階層・栄養段階）。tiersは頂点から順に */
+      type: "pyramid";
+      title?: string;
+      tiers: { label: string; note?: string }[];
+    };
 
 export interface Scene {
   /** 1始まりの連番 */

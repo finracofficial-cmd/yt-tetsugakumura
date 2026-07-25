@@ -56,8 +56,30 @@ export const VISUAL_SCHEMA = {
         type: { type: "string", const: "stat" },
         value: { type: "string", description: "大きく表示する数値・年号（例: 150人, 1971年）" },
         label: { type: "string", description: "数値の意味の説明（20文字以内）" },
+        context: {
+          type: "string",
+          description: "左上に小さく置く文脈タグ（例: 1995→2025, 全国調査2021）。無ければ空文字",
+        },
+        unit: {
+          type: "string",
+          description: "単位だけを分離して別の大きさで置く（例: 件, 人, %）。無ければ空文字",
+        },
+        axis: {
+          type: "object",
+          description: "数値の下に敷く補助の目盛り軸。時間推移や範囲を示すときだけ使う",
+          properties: {
+            label: { type: "string", description: "軸の説明（例: 30年間）。無ければ空文字" },
+            ticks: {
+              type: "array",
+              items: { type: "string" },
+              description: "目盛りのラベル（例: 1995,2005,2015,2025）。3〜7個。使わないなら空配列",
+            },
+          },
+          required: ["label", "ticks"],
+          additionalProperties: false,
+        },
       },
-      required: ["type", "value", "label"],
+      required: ["type", "value", "label", "context", "unit", "axis"],
       additionalProperties: false,
     },
     {
@@ -158,6 +180,91 @@ export const VISUAL_SCHEMA = {
       required: ["type", "title", "items"],
       additionalProperties: false,
     },
+    {
+      type: "object",
+      description:
+        "光る柱2本を線で結び、傾きで2つの立場の関係（とくに逆転）を見せる。参照チャンネルの看板図解",
+      properties: {
+        type: { type: "string", const: "columns" },
+        title: { type: "string", description: "図解のタイトル（例: 価値の逆転）" },
+        left: {
+          type: "object",
+          properties: {
+            label: { type: "string", description: "左の柱の名前（2〜8文字）" },
+            value: { type: "string", description: "左の値（例: 0.50, 高い）" },
+            level: { type: "number", description: "高さ 0.0(低い)〜1.0(高い)" },
+          },
+          required: ["label", "value", "level"],
+          additionalProperties: false,
+        },
+        right: {
+          type: "object",
+          properties: {
+            label: { type: "string", description: "右の柱の名前（2〜8文字）" },
+            value: { type: "string", description: "右の値" },
+            level: { type: "number", description: "高さ 0.0〜1.0。leftと差をつけて傾きを作る" },
+          },
+          required: ["label", "value", "level"],
+          additionalProperties: false,
+        },
+        note: { type: "string", description: "線に添える短い注記（例: 逆転）。無ければ空文字" },
+      },
+      required: ["type", "title", "left", "right", "note"],
+      additionalProperties: false,
+    },
+    {
+      type: "object",
+      description: "天秤。2つの価値の釣り合い/不均衡を物理的に見せる",
+      properties: {
+        type: { type: "string", const: "balance" },
+        title: { type: "string", description: "図解のタイトル" },
+        left_label: { type: "string", description: "左の皿に載るもの（2〜8文字）" },
+        right_label: { type: "string", description: "右の皿に載るもの（2〜8文字）" },
+        tilt: {
+          type: "number",
+          description: "傾き -1.0(左に大きく傾く)〜1.0(右に大きく傾く)。0は釣り合い",
+        },
+        note: { type: "string", description: "傾きに添える数値・注記（例: 95%）。無ければ空文字" },
+      },
+      required: ["type", "title", "left_label", "right_label", "tilt", "note"],
+      additionalProperties: false,
+    },
+    {
+      type: "object",
+      description: "ドーナツ（リング）チャート。1つの割合を中央の大きな%で見せる",
+      properties: {
+        type: { type: "string", const: "donut" },
+        title: { type: "string", description: "図解のタイトル" },
+        percent: { type: "number", description: "主役の割合 0〜100" },
+        label: { type: "string", description: "主役側の説明（2〜12文字）" },
+        rest_label: { type: "string", description: "残り側の説明。無ければ空文字" },
+      },
+      required: ["type", "title", "percent", "label", "rest_label"],
+      additionalProperties: false,
+    },
+    {
+      type: "object",
+      description: "ピラミッド。階層・栄養段階・構造の上下関係を見せる",
+      properties: {
+        type: { type: "string", const: "pyramid" },
+        title: { type: "string", description: "図解のタイトル" },
+        tiers: {
+          type: "array",
+          description: "頂点から順に3〜4段",
+          items: {
+            type: "object",
+            properties: {
+              label: { type: "string", description: "その段の名前（2〜10文字）" },
+              note: { type: "string", description: "右に添える補足。無ければ空文字" },
+            },
+            required: ["label", "note"],
+            additionalProperties: false,
+          },
+        },
+      },
+      required: ["type", "title", "tiers"],
+      additionalProperties: false,
+    },
   ],
 } as const;
 
@@ -165,5 +272,5 @@ export const CONCEPT_COLOR_SCHEMA = {
   type: "string",
   enum: ["dark-navy", "charcoal", "pitch-black", "daylight", "dusk", "warm"],
   description:
-    "シーンの背景トーン。暗: dark-navy(夜・思索) charcoal(データ) pitch-black(断定・結び) / 明: daylight(昼の情景・日常) dusk(夕暮れ・郷愁) warm(人の営み・回想)。【重要】明トーンを全体の3〜4割使う。第1幕の情景・導入、人の暮らし・過去・日常の描写は必ず明トーン。同じトーンを4シーン以上連続させず、明暗を数シーンごとに切り替えて画面に呼吸を作る。ずっと暗いのは最大の失敗",
+    "シーンの背景トーン。暗: dark-navy(夜・思索) charcoal(データ) pitch-black(断定・結び) / 明: daylight(昼の情景・日常) dusk(夕暮れ・郷愁) warm(人の営み・回想)。【重要】この動画は「夜の劇場」であり、9割は暗トーンで作る。明トーンは全体の1割程度、日常の情景や強い対比を作る場面だけに絞って使う。暗トーン内では dark-navy / charcoal / pitch-black を混ぜ、同じトーンを4シーン以上連続させないこと",
 } as const;
