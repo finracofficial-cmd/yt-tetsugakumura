@@ -25,54 +25,90 @@ export function splitIntoSentences(text: string): string[] {
     .filter((s) => s.length > 0);
 }
 
-/** 各シーンの演出（narrationは含めない） */
-const DIRECTION_SCHEMA = {
-  type: "json_schema",
-  schema: {
-    type: "object",
-    properties: {
-      title: {
-        type: "string",
-        description: "動画タイトル。台本の内容から「なぜ〜なのか【学問A×学問B】」構文で付ける",
-      },
-      bgm_direction: {
-        type: "string",
-        description: "BGM生成AIへの音楽指示（英語1〜2文、暗く静かな劇伴）",
-      },
-      directions: {
-        type: "array",
-        description: "各シーンの演出。入力の文と同じ順序・同じ個数で返す",
-        items: {
-          type: "object",
-          properties: {
-            act: {
-              type: "integer",
-              enum: [1, 2, 3, 4, 5],
-              description: "幕番号。物語の位置から推定（1:情景フック 2:解剖 3:構造 4:反転 5:結び）",
-            },
-            reading: {
-              type: "string",
-              description:
-                "この文のTTS読み上げ専用テキスト。誤読しやすい漢字・数字＋助数詞・年号をひらがな/カタカナに開く。句読点の位置と数は元の文と一致させる",
-            },
-            visual: VISUAL_SCHEMA,
-            concept_color: CONCEPT_COLOR_SCHEMA,
+/**
+ * reading（かな）が必要かどうか。
+ * ElevenLabs/OpenAI は漢字仮名交じりの自然文をそのまま読ませる方が自然なので
+ * reading を使わない（generateAudio の speakTextFor と同じ判定）。
+ * 不要なときは生成させないことで出力トークンを大幅に節約し、
+ * 「出力がトークン上限で途切れる」失敗も起きにくくする。
+ */
+const NEEDS_READING =
+  (process.env.TTS_PROVIDER ||
+    (process.env.ELEVENLABS_API_KEY?.replace(/\s+/g, "") ? "elevenlabs" : "voicevox")) ===
+  "voicevox";
+
+/**
+ * 1回のAPI呼び出しで演出を付けるシーン数。
+ * 200シーン超を一度に投げると、図解型(chart/table/comparison)のJSONが大きいため
+ * 出力がトークン上限を超えて丸ごと失敗する。小さく分けて確実に通す。
+ */
+const CHUNK_SIZE = Math.max(5, Number(process.env.DIRECT_CHUNK_SIZE || "35"));
+/** チャンクの並列実行数（レート制限とのバランス） */
+const CHUNK_CONCURRENCY = Math.max(1, Number(process.env.DIRECT_CONCURRENCY || "3"));
+/** 1チャンクあたりの出力上限 */
+const CHUNK_MAX_TOKENS = 32000;
+
+/** 各シーンの演出（narrationは含めない）。readingの要否でスキーマを組み立てる */
+function buildDirectionSchema(withReading: boolean) {
+  const itemProps: Record<string, unknown> = {
+    act: {
+      type: "integer",
+      enum: [1, 2, 3, 4, 5],
+      description: "幕番号。物語の位置から推定（1:情景フック 2:解剖 3:構造 4:反転 5:結び）",
+    },
+    visual: VISUAL_SCHEMA,
+    concept_color: CONCEPT_COLOR_SCHEMA,
+  };
+  const required = ["act", "visual", "concept_color"];
+  if (withReading) {
+    itemProps.reading = {
+      type: "string",
+      description:
+        "この文のTTS読み上げ専用テキスト。誤読しやすい漢字・数字＋助数詞・年号をひらがな/カタカナに開く。句読点の位置と数は元の文と一致させる",
+    };
+    required.splice(1, 0, "reading");
+  }
+  return {
+    type: "json_schema" as const,
+    schema: {
+      type: "object",
+      properties: {
+        title: {
+          type: "string",
+          description: "動画タイトル。台本の内容から「なぜ〜なのか【学問A×学問B】」構文で付ける",
+        },
+        bgm_direction: {
+          type: "string",
+          description: "BGM生成AIへの音楽指示（英語1〜2文、暗く静かな劇伴）",
+        },
+        directions: {
+          type: "array",
+          description: "各シーンの演出。入力の文と同じ順序・同じ個数で返す",
+          items: {
+            type: "object",
+            properties: itemProps,
+            required,
+            additionalProperties: false,
           },
-          required: ["act", "reading", "visual", "concept_color"],
-          additionalProperties: false,
         },
       },
+      required: ["title", "bgm_direction", "directions"],
+      additionalProperties: false,
     },
-    required: ["title", "bgm_direction", "directions"],
-    additionalProperties: false,
-  },
-} as const;
+  };
+}
 
 interface Direction {
   act: 1 | 2 | 3 | 4 | 5;
-  reading: string;
+  reading?: string;
   visual: Visual;
   concept_color: Scene["concept_color"];
+}
+
+interface ChunkResult {
+  title: string;
+  bgm_direction: string;
+  directions: Direction[];
 }
 
 /**
@@ -93,39 +129,112 @@ export async function directScript(
   }
 
   const client = new Anthropic({ apiKey });
-  console.log(
-    `[directScript] ${narrations.length}シーンに演出を付与中... (model=${MODEL})`,
-  );
+  const schema = buildDirectionSchema(NEEDS_READING);
+  const total = narrations.length;
 
-  const numbered = narrations.map((n, i) => `${i + 1}. ${n}`).join("\n");
-  const userPrompt = `以下は動画のナレーションである。1行が1シーン（合計${narrations.length}シーン）。
-各シーンに、内容に最も合う visual・reading・act・concept_color を割り当てよ。
-**ナレーション本文は絶対に変更・要約・追加・削除しない。** directions 配列は必ず${narrations.length}個、同じ順序で返すこと。
+  /**
+   * 1チャンク分の演出を取得する。
+   * 出力がトークン上限で途切れた場合は、そのチャンクを半分に割って再帰的に処理し、
+   * 全体を落とさずに必ず完走させる。
+   */
+  const runChunk = async (
+    slice: string[],
+    globalStart: number,
+    depth = 0,
+  ): Promise<ChunkResult> => {
+    const numbered = slice.map((n, i) => `${globalStart + i + 1}. ${n}`).join("\n");
+    const userPrompt = `以下は動画のナレーションの一部である。1行が1シーン。
+これは全${total}シーンのうち ${globalStart + 1}〜${globalStart + slice.length} 番目（このまとまりで${slice.length}シーン）。
+各シーンに、内容に最も合う visual・${NEEDS_READING ? "reading・" : ""}act・concept_color を割り当てよ。
+**ナレーション本文は絶対に変更・要約・追加・削除しない。** directions 配列は必ず${slice.length}個、同じ順序で返すこと。
+act は全体${total}シーン中の位置から判断せよ（序盤=1、終盤=5）。
 
 ${numbered}`;
 
-  const stream = client.messages.stream({
-    model: MODEL,
-    max_tokens: 64000,
-    thinking: { type: "adaptive" },
-    output_config: { format: DIRECTION_SCHEMA },
-    system: DIRECTOR_SYSTEM_PROMPT,
-    messages: [{ role: "user", content: userPrompt }],
-  });
-  const message = await stream.finalMessage();
+    const stream = client.messages.stream({
+      model: MODEL,
+      max_tokens: CHUNK_MAX_TOKENS,
+      thinking: { type: "adaptive" },
+      output_config: { format: schema },
+      system: DIRECTOR_SYSTEM_PROMPT,
+      messages: [{ role: "user", content: userPrompt }],
+    });
+    const message = await stream.finalMessage();
 
-  if (message.stop_reason === "max_tokens") {
-    throw new Error("[directScript] 出力がトークン上限で途切れました。台本を分割してください。");
-  }
-  const text = message.content.find((b) => b.type === "text")?.text;
-  if (!text) throw new Error("[directScript] 応答にテキストがありません。");
+    if (message.stop_reason === "max_tokens") {
+      if (slice.length <= 2 || depth >= 4) {
+        throw new Error(
+          `[directScript] シーン${globalStart + 1}付近で出力がトークン上限に達しました。DIRECT_CHUNK_SIZE を小さくして再実行してください。`,
+        );
+      }
+      const half = Math.ceil(slice.length / 2);
+      console.warn(
+        `[directScript] シーン${globalStart + 1}〜${globalStart + slice.length}が上限超過。${half}件ずつに分割して再試行します。`,
+      );
+      const a = await runChunk(slice.slice(0, half), globalStart, depth + 1);
+      const b = await runChunk(slice.slice(half), globalStart + half, depth + 1);
+      return {
+        title: a.title || b.title,
+        bgm_direction: a.bgm_direction || b.bgm_direction,
+        directions: [...a.directions, ...b.directions],
+      };
+    }
 
-  const parsed = JSON.parse(text) as {
-    title: string;
-    bgm_direction: string;
-    directions: Direction[];
+    const text = message.content.find((b) => b.type === "text")?.text;
+    if (!text) throw new Error("[directScript] 応答にテキストがありません。");
+    const parsed = JSON.parse(text) as ChunkResult;
+    return {
+      title: parsed.title ?? "",
+      bgm_direction: parsed.bgm_direction ?? "",
+      directions: parsed.directions ?? [],
+    };
   };
-  const dirs = parsed.directions ?? [];
+
+  // シーンをチャンクに分割し、並列数を絞って処理する
+  const chunks: { slice: string[]; start: number }[] = [];
+  for (let i = 0; i < total; i += CHUNK_SIZE) {
+    chunks.push({ slice: narrations.slice(i, i + CHUNK_SIZE), start: i });
+  }
+  console.log(
+    `[directScript] ${total}シーンに演出を付与中... (model=${MODEL}, ${chunks.length}チャンク×最大${CHUNK_SIZE}シーン, 並列${CHUNK_CONCURRENCY}, reading=${NEEDS_READING ? "あり" : "なし(自然文で読み上げ)"})`,
+  );
+
+  const results: ChunkResult[] = new Array(chunks.length);
+  for (let i = 0; i < chunks.length; i += CHUNK_CONCURRENCY) {
+    const batch = chunks.slice(i, i + CHUNK_CONCURRENCY);
+    const done = await Promise.all(
+      batch.map(async (c, k) => ({ idx: i + k, res: await runChunk(c.slice, c.start) })),
+    );
+    for (const d of done) {
+      // チャンクが要求数と違う個数を返すと、以降のシーンとの対応が全てズレる。
+      // チャンク単位で長さを合わせ、ズレを局所化する（不足分は後段でfigureに補完）。
+      const want = chunks[d.idx].slice.length;
+      const got = d.res.directions.length;
+      if (got !== want) {
+        console.warn(
+          `[directScript] 警告: チャンク${d.idx + 1}の演出数が${got}件（要求${want}件）。長さを揃えます。`,
+        );
+        d.res.directions = d.res.directions.slice(0, want);
+        while (d.res.directions.length < want) {
+          d.res.directions.push({
+            act: 1,
+            visual: { type: "keyword", keyword: "…" },
+            concept_color: "charcoal",
+          });
+        }
+      }
+      results[d.idx] = d.res;
+    }
+    console.log(
+      `[directScript] 進捗: ${Math.min(i + CHUNK_CONCURRENCY, chunks.length)}/${chunks.length}チャンク完了`,
+    );
+  }
+
+  const dirs = results.flatMap((r) => r.directions);
+  const parsed = {
+    title: results.find((r) => r.title)?.title ?? "",
+    bgm_direction: results.find((r) => r.bgm_direction)?.bgm_direction ?? "",
+  };
   if (dirs.length !== narrations.length) {
     console.warn(
       `[directScript] 警告: 演出数(${dirs.length})とシーン数(${narrations.length})が不一致。可能な範囲で対応付けます。`,
