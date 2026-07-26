@@ -2,7 +2,6 @@ import {
   AbsoluteFill,
   Audio,
   Sequence,
-  interpolate,
   staticFile,
   useVideoConfig,
 } from "remotion";
@@ -44,6 +43,22 @@ const palette = getPalette(
 
 /** エンドカードの長さ（フレーム）。最終シーンの後に続けて出す */
 export const END_CARD_FRAMES = 5 * 30;
+
+/**
+ * 音量設計（あくまでナレーションが主役、BGMは「うっすら聞こえる」位置）。
+ *
+ * ナレーションは -18 LUFS 正規化 × NARRATION_VOLUME 0.9(-0.9dB) ≒ -19 LUFS。
+ * BGMは generateBgm の loudnorm で -23 LUFS に統一されているので、
+ *   実効 LUFS = -23 + 20*log10(volume)
+ * 語りの下で邪魔にならず、それでも存在は分かる差は約20dB。
+ *   BGM_BED  0.16 → -15.9dB → 約 -38.9 LUFS（ナレーション比 -20dB）
+ *   BGM_LIFT 0.28 → -11.1dB → 約 -34.1 LUFS（ナレーションが無いイントロ/アウトロ用）
+ */
+const NARRATION_VOLUME = 0.9;
+/** 本編中のBGM。ナレーションの約20dB下 */
+const BGM_BED = 0.16;
+/** イントロ/アウトロでBGMだけが鳴る区間 */
+const BGM_LIFT = 0.28;
 
 /** シーン型に応じたコンテンツを描画する */
 const SceneContent: React.FC<{
@@ -218,8 +233,8 @@ function headingFor(visual: Visual): string | undefined {
  * シーンを <Sequence> でつなぎ合わせる。
  *
  * 音響は4レイヤー構成:
- *   L1 ナレーション（シーンごと, volume 1.0）
- *   L2 ミニマル・アンビエントBGM（イントロ/アウトロで 0.15、平常時 0.05）
+ *   L1 ナレーション（シーンごと, volume 0.9 — 常に主役）
+ *   L2 BGM（イントロ/アウトロで BGM_LIFT、本編は BGM_BED でうっすら）
  *   L3 質感環境ノイズ（全編ループ, volume 0.02 — 完全な無音を作らない)
  *   L4 シーン転換のSub Bass SFX（各シーン先頭, volume 0.12）
  */
@@ -246,7 +261,7 @@ export const MainComposition: React.FC = () => {
         outroStartFrame + fps,
         totalFrames,
       ],
-      [0.18, 0.18, 0.07, 0.07, 0.18, 0.18],
+      [BGM_LIFT, BGM_LIFT, BGM_BED, BGM_BED, BGM_LIFT, BGM_LIFT],
       { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
     );
 
@@ -291,7 +306,7 @@ export const MainComposition: React.FC = () => {
             </SceneFrame>
             {/* L1: ナレーション（BGMと重ねても割れないよう少し下げる） */}
             {sync?.audioFile ? (
-              <Audio src={staticFile(sync.audioFile)} volume={0.9} />
+              <Audio src={staticFile(sync.audioFile)} volume={NARRATION_VOLUME} />
             ) : null}
             {/* L4: シーン転換のSub Bass SFX */}
             {assets.sfx ? (

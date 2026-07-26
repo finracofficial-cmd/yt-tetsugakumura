@@ -3,6 +3,8 @@
  *
  * 台本(script.json)の bgm_direction（テーマに合わせた英語の音楽指示）をもとに、
  * 優先順で以下のプロバイダからBGMを用意する:
+ *   0. リポジトリ同梱の指定曲 assets/bgm/main.mp3: チャンネルの固定BGM。
+ *      存在すればこれを最優先で使う（テーマによらず毎回同じ曲になる）。
  *   1. Freesound.org（FREESOUND_API_KEY があれば）: CC0ライセンスの実物のアンビエント曲を
  *      検索してダウンロード。完全無料・クレジット表記不要。
  *   2. ElevenLabs Music（ELEVENLABS_API_KEY があれば）: 台本に沿ったBGMをAI生成。
@@ -24,6 +26,13 @@ const FFMPEG = process.env.FFMPEG_PATH ?? "ffmpeg";
 const BGM_PROVIDER = process.env.BGM_PROVIDER || "";
 /** ElevenLabs Music で生成するBGMの長さ（ミリ秒）。ループ再生されるので90秒で十分 */
 const BGM_LENGTH_MS = Number(process.env.BGM_LENGTH_MS || "90000");
+
+/**
+ * チャンネル固定BGMの原盤（リポジトリ管理下）。
+ * ループ継ぎ目が出ないよう、末尾のフェードアウトを切り落として
+ * 冒頭とクロスフェードさせた「ループ完結型」の音源を置いている。
+ */
+const MANUAL_BGM_SRC = join("assets", "bgm", "main.mp3");
 
 const BGM_PATH = join(ASSETS_DIR, "bgm.mp3");
 const BGM_CREDIT_PATH = join(ASSETS_DIR, "bgm-credit.txt");
@@ -101,13 +110,21 @@ async function freesoundBgm(
   return { buffer: Buffer.from(await dl.arrayBuffer()), credit };
 }
 
-/** ダウンロードした曲をBGM向けに整音する（ラウドネス統一 + ループ用フェード） */
-function normalizeBgm(rawPath: string, outPath: string): void {
+/**
+ * 曲をBGM向けに整音する（ラウドネス -23 LUFS に統一）。
+ *
+ * fade=true のときだけ前後2秒のフェードを付ける。
+ * ループ完結型の音源（MANUAL_BGM_SRC）にフェードを付けると
+ * ループのたびに2秒の音量落ちが周期的に発生してしまうため、
+ * そちらでは必ず fade=false を使う。
+ */
+function normalizeBgm(rawPath: string, outPath: string, fade: boolean): void {
+  const filters = ["loudnorm=I=-23:TP=-2.0:LRA=11"];
+  if (fade) filters.push("afade=t=in:d=2", "areverse", "afade=t=in:d=2", "areverse");
   execFileSync(FFMPEG, [
     "-hide_banner", "-loglevel", "error", "-y",
     "-i", rawPath,
-    "-af",
-    "loudnorm=I=-23:TP=-2.0:LRA=11,afade=t=in:d=2,areverse,afade=t=in:d=2,areverse",
+    "-af", filters.join(","),
     "-c:a", "libmp3lame", "-b:a", "160k",
     outPath,
   ]);
@@ -199,6 +216,20 @@ export async function generateBgm(): Promise<void> {
     return;
   }
 
+  // 0. チャンネル固定BGM（リポジトリ同梱）。あれば検索も生成もせずこれを使う。
+  if (existsSync(MANUAL_BGM_SRC) && BGM_PROVIDER !== "freesound" && BGM_PROVIDER !== "elevenlabs" && BGM_PROVIDER !== "procedural") {
+    try {
+      normalizeBgm(MANUAL_BGM_SRC, BGM_PATH, false);
+      writeFileSync(BGM_CREDIT_PATH, `BGM: チャンネル指定曲 (${MANUAL_BGM_SRC})\n`);
+      console.log(`[generateBgm] 完了（チャンネル指定曲）: ${MANUAL_BGM_SRC} → ${BGM_PATH}`);
+      return;
+    } catch (err) {
+      console.warn(
+        `[generateBgm] 指定曲の整音に失敗したため次のプロバイダへ: ${err instanceof Error ? err.message : String(err)}`,
+      );
+    }
+  }
+
   // 台本の音楽指示を読む（無ければ既定の暗いアンビエント）
   let direction = DEFAULT_DIRECTION;
   let theme = "";
@@ -223,7 +254,7 @@ export async function generateBgm(): Promise<void> {
       const { buffer, credit } = await freesoundBgm(freesoundKey, direction, title || theme);
       const rawPath = join(ASSETS_DIR, ".bgm-raw.mp3");
       writeFileSync(rawPath, buffer);
-      normalizeBgm(rawPath, BGM_PATH);
+      normalizeBgm(rawPath, BGM_PATH, true);
       rmSync(rawPath);
       writeFileSync(BGM_CREDIT_PATH, credit + "\n");
       console.log(`[generateBgm] 完了（Freesound）: ${BGM_PATH}`);
