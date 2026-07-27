@@ -51,6 +51,15 @@ export const VISUAL_JSON_FIELD = {
 {"type":"balance","title":"","left_label":"個人の努力","right_label":"環境の恩恵","tilt":0.7,"note":"95%(不要なら空文字)"}
 {"type":"donut","title":"","percent":7,"label":"到達した人","rest_label":"届かなかった人"}
 {"type":"pyramid","title":"","tiers":[{"label":"頂点","note":"ごく少数(不要なら空文字)"},{"label":"中位","note":""},{"label":"底辺","note":""}]}
+{"type":"scenery","place":"village","people":5,"caption":"上部に置く一言(不要なら空文字)"}
+{"type":"orbs","title":"","items":[{"label":"ヒト","value":163,"display":"１６３億"},{"label":"ゾウ","value":56,"display":"５６億"}],"shafts":false}
+{"type":"verdict","caption":"小さな注記(不要なら空文字)","statement":"才能ある人 = 測ってもらえた人","note":"小さな補足(不要なら空文字)"}
+※ scenery は**図解を出さず場の空気だけを見せる全画面の情景**。place は
+　village(夜の村) / city(都市の窓) / room(和室) / hall(広間) / field(夕焼けの草原) / sea(海中) / forest(森) の7種のみ。
+　people は0〜12。**暗い図解が続いたら数シーンおきに必ず1枚挟むこと**（呼吸を作る）。
+※ orbs は数量を**球の大きさ**で見せる型。2〜3項。value は数量（比が大きさになる）、
+　display は球の中に出す表記（"１６３億" のように全角も可）。3項の概念対比なら shafts:true で光の柱を落とす。
+※ verdict は**主張を額装する結論カード**。終盤の断定に使う。statement に " = " を入れると等号だけが強調される。
 ※ columns は left.level と right.level に必ず差をつける（傾きが意味になる）。
 ※ balance の tilt は -1.0〜1.0。donut の percent は 0〜100。pyramid の tiers は2〜4段。
 ※ ${FIGURE_DESC}`,

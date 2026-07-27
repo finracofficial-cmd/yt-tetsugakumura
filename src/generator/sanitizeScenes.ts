@@ -10,6 +10,7 @@
  * （スキーマの minimum/maximum も文法を膨らませるため使わない）。
  */
 import { FIGURE_KINDS_ENUM } from "./visualSchema";
+import { SCENERY_PLACES } from "./types";
 import { pickPictogram } from "./visualRichness";
 import type { FigureKind, Scene, Visual } from "./types";
 
@@ -50,6 +51,7 @@ export function coerceFigure(raw: unknown, label: string, seq: number): FigureKi
 const VALID_TYPES = new Set([
   "keyword", "figure", "dialogue", "stat", "chart", "line", "units",
   "table", "comparison", "list", "columns", "balance", "donut", "pyramid",
+  "scenery", "orbs", "verdict",
 ]);
 
 /**
@@ -135,6 +137,39 @@ function sanitizeVisual(visual: Visual, seq: number): { visual: Visual; fixed: b
       const trimmed = tiers.slice(0, 4);
       while (trimmed.length < 2) trimmed.push({ label: "…", note: "" });
       return { visual: { ...visual, tiers: trimmed }, fixed: true };
+    }
+    case "scenery": {
+      // place は列挙にないと描けないので、未知なら village に落とす
+      const okPlace = SCENERY_PLACES.includes(visual.place);
+      const people = Math.max(0, Math.min(12, Math.round(visual.people ?? 0)));
+      if (okPlace && people === (visual.people ?? 0)) return { visual, fixed: false };
+      return {
+        visual: { ...visual, place: okPlace ? visual.place : "village", people },
+        fixed: true,
+      };
+    }
+    case "orbs": {
+      // 球は2〜3個。値が0以下だと半径が潰れるので最小値を与える
+      const items = (visual.items ?? [])
+        .filter((it) => it && typeof it.label === "string")
+        .slice(0, 3)
+        .map((it) => ({
+          ...it,
+          value: Number.isFinite(it.value) && it.value > 0 ? it.value : 1,
+        }));
+      if (items.length >= 2 && items.length === visual.items?.length) {
+        const same = items.every((it, i) => it.value === visual.items[i].value);
+        if (same) return { visual, fixed: false };
+      }
+      while (items.length < 2) items.push({ label: "…", value: 1 });
+      return { visual: { ...visual, items }, fixed: true };
+    }
+    case "verdict": {
+      // 主張が空だとカードが空箱になる
+      if (typeof visual.statement === "string" && visual.statement.trim().length > 0) {
+        return { visual, fixed: false };
+      }
+      return { visual: { ...visual, statement: "…" }, fixed: true };
     }
     default:
       return { visual, fixed: false };

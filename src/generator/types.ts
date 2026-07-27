@@ -181,7 +181,64 @@ export type Visual =
       type: "pyramid";
       title?: string;
       tiers: { label: string; note?: string }[];
+    }
+  | {
+      /**
+       * 全画面の情景（レジスターA）。図解を出さず、その場の空気だけを見せる。
+       * 参照チャンネルは暗いデータ画が続いた後にこれを挟んで呼吸を作る
+       * （映像スタイルガイド §1-3）。
+       */
+      type: "scenery";
+      place: SceneryPlace;
+      /** 画面に置く人の数（0〜12）。0なら無人の情景 */
+      people?: number;
+      /** 上部に小さく置く一言（省略可） */
+      caption?: string;
+    }
+  | {
+      /**
+       * 発光する球（レジスターC）。数量を球の「大きさ」で示す。
+       * 棒グラフより情緒があり、2〜3項の比較に使う（映像スタイルガイド §6）。
+       */
+      type: "orbs";
+      title?: string;
+      items: { label: string; value: number; /** 球の中に出す表示文字。省略時はvalue */ display?: string }[];
+      /** 各球の真上から光の柱を落とすか */
+      shafts?: boolean;
+    }
+  | {
+      /**
+       * 結論カード。細い角丸の枠に「注記／主張／補足」の3段を入れる。
+       * 参照チャンネルは終盤に必ずこれを置いて主張を額装する（映像スタイルガイド §5-C）。
+       */
+      type: "verdict";
+      /** 枠の中の最上段。小さく字間広めのグレー（例: 1971-2021 SMPY・半世紀追跡） */
+      caption?: string;
+      /** 主張の本文。"A = B" のように = を含めると = だけアンバーになる */
+      statement: string;
+      /** 枠の中の最下段。小さなグレーの補足 */
+      note?: string;
     };
+
+/** scenery で描ける場所の種類 */
+export type SceneryPlace =
+  | "village"
+  | "city"
+  | "room"
+  | "hall"
+  | "field"
+  | "sea"
+  | "forest";
+
+export const SCENERY_PLACES: SceneryPlace[] = [
+  "village",
+  "city",
+  "room",
+  "hall",
+  "field",
+  "sea",
+  "forest",
+];
 
 export interface Scene {
   /** 1始まりの連番 */

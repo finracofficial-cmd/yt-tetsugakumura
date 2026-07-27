@@ -21,6 +21,9 @@ import { ColumnsContent } from "./components/contents/ColumnsContent";
 import { BalanceContent } from "./components/contents/BalanceContent";
 import { DonutContent } from "./components/contents/DonutContent";
 import { PyramidContent } from "./components/contents/PyramidContent";
+import { SceneryContent } from "./components/contents/SceneryContent";
+import { OrbsContent } from "./components/contents/OrbsContent";
+import { VerdictContent } from "./components/contents/VerdictContent";
 import { EndCard } from "./components/EndCard";
 import { getPalette } from "./theme";
 import type { AssetsManifest, Scene, SyncMap, Visual } from "../generator/types";
@@ -188,6 +191,34 @@ const SceneContent: React.FC<{
       return (
         <PyramidContent tiers={visual.tiers} durationInFrames={durationInFrames} />
       );
+    case "scenery":
+      return (
+        <SceneryContent
+          place={visual.place}
+          people={visual.people ?? 0}
+          caption={visual.caption || undefined}
+          durationInFrames={durationInFrames}
+          sceneId={sceneId}
+        />
+      );
+    case "orbs":
+      return (
+        <OrbsContent
+          items={visual.items}
+          shafts={visual.shafts ?? false}
+          durationInFrames={durationInFrames}
+          sceneId={sceneId}
+        />
+      );
+    case "verdict":
+      return (
+        <VerdictContent
+          caption={visual.caption || undefined}
+          statement={visual.statement}
+          note={visual.note || undefined}
+          durationInFrames={durationInFrames}
+        />
+      );
     default:
       return null;
   }
@@ -223,9 +254,20 @@ function headingFor(visual: Visual): string | undefined {
       return visual.title || undefined;
     case "comparison":
       return visual.center_label || undefined;
+    case "orbs":
+      return visual.title || undefined;
     default:
       return undefined;
   }
+}
+
+/**
+ * 情景（scenery）は「全画面の絵」そのものが主役なので、
+ * 額縁側の背景・中央グロー・パーティクルを重ねると濁る。
+ * 参照チャンネルの情景コマも装飾が一切ない（映像スタイルガイド §1-3）。
+ */
+function isFullBleed(visual: Visual): boolean {
+  return visual.type === "scenery";
 }
 
 /**
@@ -297,6 +339,7 @@ export const MainComposition: React.FC = () => {
               chapterTag={chapterTagFor(index)}
               headingLabel={headingFor(scene.visual)}
               segments={sync?.segments}
+              plainBackdrop={isFullBleed(scene.visual)}
             >
               <SceneContent
                 visual={scene.visual}

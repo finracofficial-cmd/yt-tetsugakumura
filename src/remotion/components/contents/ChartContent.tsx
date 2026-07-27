@@ -6,6 +6,14 @@ import { safeInterpolate } from "../../safeInterpolate";
 
 type Item = { label: string; value: number };
 
+/**
+ * 項目ごとの棒の色（映像スタイルガイド §6）。
+ * 参照チャンネルの棒グラフは、非強調の棒も項目ごとに別の色を持つ
+ * （努力と才能18研究 26%: 紫・サーモン・緑・青灰・灰の5本）。
+ * 単一のスティールブルーで塗ると実物より単調になる。
+ */
+const ITEM_COLORS = ["#7e6ba8", "#c97f6b", "#5f9268", "#4a6b8a", "#8a8f99"];
+
 type Props = {
   title: string;
   unit: string;
@@ -166,9 +174,12 @@ export const ChartContent: React.FC<Props> = ({
                       top: 0,
                       bottom: 0,
                       width: w,
+                      // 非強調行は項目ごとに色を変える。参照チャンネルの棒は
+                      // 単一色＋強調1本ではなく、項目ごとに別の色を持っている
+                      // （映像スタイルガイド §6「縦棒グラフは項目ごとに色を変える」）。
                       background: isHi
                         ? "linear-gradient(90deg, rgba(232,181,99,0.35) 0%, var(--accent, #e8b563) 100%)"
-                        : "linear-gradient(90deg, rgba(74,107,138,0.3) 0%, var(--muted, #4a6b8a) 100%)",
+                        : `linear-gradient(90deg, ${ITEM_COLORS[i % ITEM_COLORS.length]}55 0%, ${ITEM_COLORS[i % ITEM_COLORS.length]} 100%)`,
                       boxShadow: isHi ? "0 0 26px var(--accent, #e8b563)" : "none",
                     }}
                   />
