@@ -15,18 +15,13 @@
  *    あくまで AI が付けたトーン（generateScript / directScript）を整えるためのもの。
  */
 import type { ConceptColor, Scene } from "./types";
+// 実測値は styleMetrics.ts が唯一の正。ここで数字を直書きしない。
+import { BRIGHT_TARGET_RATIO } from "./styleMetrics";
 
 const BRIGHT: ConceptColor[] = ["daylight", "dusk", "warm"];
 const DARK: ConceptColor[] = ["dark-navy", "charcoal", "pitch-black"];
 
 const isBright = (t: ConceptColor): boolean => BRIGHT.includes(t);
-
-/**
- * 明トーンの目標比率（全体に対して）。
- * 参照チャンネル3本の実測では明トーンは約10%しかない（映像スタイルガイド §1-1）。
- * 以前0.38に設定していたのは誤りで、実物より遥かに明るくなっていた。
- */
-const BRIGHT_TARGET_RATIO = 0.1;
 /** 同一トーンの許容連続数（これを超えたら分断する） */
 const MAX_RUN = 3;
 
