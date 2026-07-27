@@ -1,4294 +1,3319 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 44465,
+  "totalDurationInFrames": 35836,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 5000,
-      "durationInFrames": 150,
+      "durationMs": 5010,
+      "durationInFrames": 151,
       "audioFile": "audio/scene-1.mp3",
       "segments": [
         {
-          "text": "定価を守らせることは、日本の法律では、原則として違法である。",
+          "text": "港区女子と呼ばれる人たちは、あの街でほとんど財布を開かない。",
           "startFrame": 0,
-          "durationInFrames": 146
+          "durationInFrames": 137
         }
       ]
     },
     {
       "id": 2,
-      "startMs": 5000,
-      "startFrame": 150,
-      "durationMs": 8850,
-      "durationInFrames": 266,
+      "startMs": 5010,
+      "startFrame": 151,
+      "durationMs": 7640,
+      "durationInFrames": 230,
       "audioFile": "audio/scene-2.mp3",
       "segments": [
         {
-          "text": "独占禁止法は、メーカーが小売店に販売価格を指示し、それを守らせる行為を、不公正な取引方法として禁じている。",
+          "text": "2025年、ある調査会社が、前の年に初めてデートをした男女1148人に尋ねている。",
           "startFrame": 0,
-          "durationInFrames": 252
+          "durationInFrames": 226
         }
       ]
     },
     {
       "id": 3,
-      "startMs": 13850,
-      "startFrame": 416,
-      "durationMs": 3400,
-      "durationInFrames": 102,
+      "startMs": 12650,
+      "startFrame": 381,
+      "durationMs": 6440,
+      "durationInFrames": 194,
       "audioFile": "audio/scene-3.mp3",
       "segments": [
         {
-          "text": "例外として認められているのは、6品目しかない。",
+          "text": "自分が多めに支払った、あるいは全額払ったと答えた男性は72.4パーセント。",
           "startFrame": 0,
-          "durationInFrames": 98
+          "durationInFrames": 190
         }
       ]
     },
     {
       "id": 4,
-      "startMs": 17250,
-      "startFrame": 518,
-      "durationMs": 5320,
-      "durationInFrames": 160,
+      "startMs": 19090,
+      "startFrame": 575,
+      "durationMs": 8290,
+      "durationInFrames": 249,
       "audioFile": "audio/scene-4.mp3",
       "segments": [
         {
-          "text": "書籍、雑誌、新聞、レコード盤、音楽用テープ、音楽用CD。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "startMs": 22570,
-      "startFrame": 678,
-      "durationMs": 5880,
-      "durationInFrames": 177,
-      "audioFile": "audio/scene-5.mp3",
-      "segments": [
-        {
-          "text": "1953年の法改正で決まった、著作物再販制度と呼ばれる仕組みだ。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "startMs": 28450,
-      "startFrame": 855,
-      "durationMs": 9320,
-      "durationInFrames": 280,
-      "audioFile": "audio/scene-6.mp3",
-      "segments": [
-        {
-          "text": "かつては化粧品も対象だったが1977年に外され、それ以外の指定も1997年に全廃された。",
-          "startFrame": 0,
-          "durationInFrames": 276
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "startMs": 37770,
-      "startFrame": 1135,
-      "durationMs": 9400,
-      "durationInFrames": 282,
-      "audioFile": "audio/scene-7.mp3",
-      "segments": [
-        {
-          "text": "つまり、あなたが定価だと思って眺めている家電やゲーム機の値札は、法的にはただの希望であって、誰ひとり守る義務を負っていない。",
-          "startFrame": 0,
-          "durationInFrames": 278
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "startMs": 47170,
-      "startFrame": 1417,
-      "durationMs": 6600,
-      "durationInFrames": 198,
-      "audioFile": "audio/scene-8.mp3",
-      "segments": [
-        {
-          "text": "2025年、日本のライブ・エンタテインメント市場は8564億円に達した。",
-          "startFrame": 0,
-          "durationInFrames": 194
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "startMs": 53770,
-      "startFrame": 1615,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-9.mp3",
-      "segments": [
-        {
-          "text": "動員は9223万人。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "startMs": 56850,
-      "startFrame": 1708,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-10.mp3",
-      "segments": [
-        {
-          "text": "公演回数は10万820回。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "startMs": 59690,
-      "startFrame": 1794,
-      "durationMs": 6600,
-      "durationInFrames": 198,
-      "audioFile": "audio/scene-11.mp3",
-      "segments": [
-        {
-          "text": "動員ひとりあたりの単価は9286円で、前年より4.5パーセント上がっている。",
-          "startFrame": 0,
-          "durationInFrames": 194
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "startMs": 66290,
-      "startFrame": 1992,
-      "durationMs": 8200,
-      "durationInFrames": 246,
-      "audioFile": "audio/scene-12.mp3",
-      "segments": [
-        {
-          "text": "一方で、一度売られた物がもう一度売られるリユース市場は、2024年に3兆2628億円。",
-          "startFrame": 0,
-          "durationInFrames": 242
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "startMs": 74490,
-      "startFrame": 2238,
-      "durationMs": 2610,
-      "durationInFrames": 79,
-      "audioFile": "audio/scene-13.mp3",
-      "segments": [
-        {
-          "text": "15年連続で拡大を続けている。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "startMs": 77100,
-      "startFrame": 2317,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-14.mp3",
-      "segments": [
-        {
-          "text": "定価で売られた物が、定価ではない値段で、もう一度売られていく。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "startMs": 81700,
-      "startFrame": 2455,
-      "durationMs": 8040,
-      "durationInFrames": 242,
-      "audioFile": "audio/scene-15.mp3",
-      "segments": [
-        {
-          "text": "世間はこの二つ目の売り場を転売ヤーと呼び、モラルの低い人間がやる小銭稼ぎとして、笑い話にして済ませる。",
-          "startFrame": 0,
-          "durationInFrames": 238
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "startMs": 89740,
-      "startFrame": 2697,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-16.mp3",
-      "segments": [
-        {
-          "text": "だが、ひとつだけ引っかかることがある。",
-          "startFrame": 0,
-          "durationInFrames": 55
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "startMs": 91740,
-      "startFrame": 2757,
-      "durationMs": 5480,
-      "durationInFrames": 165,
-      "audioFile": "audio/scene-17.mp3",
-      "segments": [
-        {
-          "text": "安く買って高く売るという行為そのものは、この社会のいたるところで行われている。",
-          "startFrame": 0,
-          "durationInFrames": 161
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "startMs": 97220,
-      "startFrame": 2922,
-      "durationMs": 7480,
-      "durationInFrames": 225,
-      "audioFile": "audio/scene-18.mp3",
-      "segments": [
-        {
-          "text": "商社がやれば仲介と呼ばれ、株でやれば投資と呼ばれ、不動産でやれば資産運用と呼ばれる。",
-          "startFrame": 0,
-          "durationInFrames": 221
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "startMs": 104700,
-      "startFrame": 3147,
-      "durationMs": 7080,
-      "durationInFrames": 213,
-      "audioFile": "audio/scene-19.mp3",
-      "segments": [
-        {
-          "text": "中古車販売店が仕入れ値の倍で売っても、誰も店の前に集まって怒鳴らない。",
-          "startFrame": 0,
-          "durationInFrames": 209
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "startMs": 111780,
-      "startFrame": 3360,
-      "durationMs": 7320,
-      "durationInFrames": 220,
-      "audioFile": "audio/scene-20.mp3",
-      "segments": [
-        {
-          "text": "構造はまったく同じなのに、チケットとスニーカーとゲーム機のときだけ、人は本気で腹を立てる。",
-          "startFrame": 0,
-          "durationInFrames": 216
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "startMs": 119100,
-      "startFrame": 3580,
-      "durationMs": 8360,
-      "durationInFrames": 251,
-      "audioFile": "audio/scene-21.mp3",
-      "segments": [
-        {
-          "text": "しかも、定価を超えた値段で取引が成立しているという事実は、その定価が需要に対して安すぎたという意味でもある。",
-          "startFrame": 0,
-          "durationInFrames": 247
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "startMs": 127460,
-      "startFrame": 3831,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-22.mp3",
-      "segments": [
-        {
-          "text": "人は一体、何に怒っているのか。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "startMs": 130460,
-      "startFrame": 3921,
-      "durationMs": 9320,
-      "durationInFrames": 280,
-      "audioFile": "audio/scene-23.mp3",
-      "segments": [
-        {
-          "text": "今日はその定価という値札の中身を、市場設計と社会心理学のデータから解剖してみたい。",
-          "startFrame": 0,
-          "durationInFrames": 276
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "startMs": 139780,
-      "startFrame": 4201,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-24.mp3",
-      "segments": [
-        {
-          "text": "まず、誰もが最初に思いつく答えから検証しよう。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "startMs": 143180,
-      "startFrame": 4303,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-25.mp3",
-      "segments": [
-        {
-          "text": "転売ヤーという悪い人間がいるから値段が吊り上がるのだ、という説明である。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "startMs": 148100,
-      "startFrame": 4451,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-26.mp3",
-      "segments": [
-        {
-          "text": "確かに、それは事実の一部だ。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "startMs": 150620,
-      "startFrame": 4527,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-27.mp3",
-      "segments": [
-        {
-          "text": "買い占めは実在するし、被害も実在する。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "startMs": 154020,
-      "startFrame": 4629,
-      "durationMs": 2760,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-28.mp3",
-      "segments": [
-        {
-          "text": "だがこの説明には決定的な弱点がある。",
-          "startFrame": 0,
-          "durationInFrames": 79
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "startMs": 156780,
-      "startFrame": 4712,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-29.mp3",
-      "segments": [
-        {
-          "text": "悪人を取り締まれば市場は消えるはずなのに、消えないのだ。",
-          "startFrame": 0,
-          "durationInFrames": 130
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "startMs": 161220,
-      "startFrame": 4846,
-      "durationMs": 5560,
-      "durationInFrames": 167,
-      "audioFile": "audio/scene-30.mp3",
-      "segments": [
-        {
-          "text": "2019年6月14日、チケット不正転売禁止法が施行された。",
-          "startFrame": 0,
-          "durationInFrames": 163
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "startMs": 166780,
-      "startFrame": 5013,
-      "durationMs": 5880,
-      "durationInFrames": 177,
-      "audioFile": "audio/scene-31.mp3",
-      "segments": [
-        {
-          "text": "業として定価を超える価格で転売すれば、1年以下の懲役か100万円以下の罰金。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "startMs": 172660,
-      "startFrame": 5190,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-32.mp3",
-      "segments": [
-        {
-          "text": "それから7年が経つ。",
-          "startFrame": 0,
-          "durationInFrames": 41
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "startMs": 174660,
-      "startFrame": 5250,
-      "durationMs": 2530,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-33.mp3",
-      "segments": [
-        {
-          "text": "市場は、いまも動いている。",
-          "startFrame": 0,
-          "durationInFrames": 62
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "startMs": 177190,
-      "startFrame": 5326,
-      "durationMs": 6840,
-      "durationInFrames": 206,
-      "audioFile": "audio/scene-34.mp3",
-      "segments": [
-        {
-          "text": "1986年、アメリカ経済学会の学術誌に一本の論文が載った。",
-          "startFrame": 0,
-          "durationInFrames": 202
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "startMs": 184030,
-      "startFrame": 5532,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-35.mp3",
-      "segments": [
-        {
-          "text": "著者はダニエル・カーネマン、ジャック・クネッチ、リチャード・セイラー。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "startMs": 188550,
-      "startFrame": 5668,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-36.mp3",
-      "segments": [
-        {
-          "text": "三人は電話調査で、市民にこんな場面を読み上げ、評価を求めた。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "startMs": 193150,
-      "startFrame": 5806,
-      "durationMs": 4680,
-      "durationInFrames": 141,
-      "audioFile": "audio/scene-37.mp3",
-      "segments": [
-        {
-          "text": "ある金物店が、雪かき用のシャベルを15ドルで売っている。",
-          "startFrame": 0,
-          "durationInFrames": 137
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "startMs": 197830,
-      "startFrame": 5947,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-38.mp3",
-      "segments": [
-        {
-          "text": "大雪の翌朝、店はその値段を20ドルに上げた。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "startMs": 202430,
-      "startFrame": 6085,
-      "durationMs": 10280,
-      "durationInFrames": 309,
-      "audioFile": "audio/scene-39.mp3",
-      "segments": [
-        {
-          "text": "この行為を、非常に不公正、不公正、許容できる、完全に公正の四段階で評価してほしい。",
-          "startFrame": 0,
-          "durationInFrames": 305
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "startMs": 212710,
-      "startFrame": 6394,
-      "durationMs": 6040,
-      "durationInFrames": 182,
-      "audioFile": "audio/scene-40.mp3",
-      "segments": [
-        {
-          "text": "結果、82パーセントの回答者が、不公正あるいは非常に不公正を選んだ。",
-          "startFrame": 0,
-          "durationInFrames": 178
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "startMs": 218750,
-      "startFrame": 6576,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-41.mp3",
-      "segments": [
-        {
-          "text": "需要が増えたから値上げをする。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "startMs": 221110,
-      "startFrame": 6647,
-      "durationMs": 3800,
-      "durationInFrames": 114,
-      "audioFile": "audio/scene-42.mp3",
-      "segments": [
-        {
-          "text": "経済学の教科書では、これは市場の正常な働きだ。",
-          "startFrame": 0,
-          "durationInFrames": 110
-        }
-      ]
-    },
-    {
-      "id": 43,
-      "startMs": 224910,
-      "startFrame": 6761,
-      "durationMs": 3160,
-      "durationInFrames": 95,
-      "audioFile": "audio/scene-43.mp3",
-      "segments": [
-        {
-          "text": "だが街に住む人間にとって、それは罪だった。",
-          "startFrame": 0,
-          "durationInFrames": 91
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "startMs": 228070,
-      "startFrame": 6856,
-      "durationMs": 5080,
-      "durationInFrames": 153,
-      "audioFile": "audio/scene-44.mp3",
-      "segments": [
-        {
-          "text": "なぜ人は、需要に応じた値上げを罪だと感じてしまうのか。",
-          "startFrame": 0,
-          "durationInFrames": 149
-        }
-      ]
-    },
-    {
-      "id": 45,
-      "startMs": 233150,
-      "startFrame": 7009,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-45.mp3",
-      "segments": [
-        {
-          "text": "同じ頃、セイラーは別の調査を行っている。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "startMs": 236230,
-      "startFrame": 7102,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-46.mp3",
-      "segments": [
-        {
-          "text": "回答者にこう想像させるのだ。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "startMs": 238270,
-      "startFrame": 7164,
-      "durationMs": 2120,
-      "durationInFrames": 64,
-      "audioFile": "audio/scene-47.mp3",
-      "segments": [
-        {
-          "text": "あなたは暑い日のビーチに寝ている。",
-          "startFrame": 0,
-          "durationInFrames": 60
-        }
-      ]
-    },
-    {
-      "id": 48,
-      "startMs": 240390,
-      "startFrame": 7228,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-48.mp3",
-      "segments": [
-        {
-          "text": "飲み物は氷水しかない。",
-          "startFrame": 0,
-          "durationInFrames": 50
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "startMs": 242390,
-      "startFrame": 7288,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-49.mp3",
-      "segments": [
-        {
-          "text": "この一時間、冷えたビールのことばかり考えている。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 50,
-      "startMs": 245870,
-      "startFrame": 7393,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-50.mp3",
-      "segments": [
-        {
-          "text": "連れが電話をかけに立ち、ついでにビールを買ってきてやろうと言う。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 51,
-      "startMs": 249510,
-      "startFrame": 7503,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-51.mp3",
-      "segments": [
-        {
-          "text": "買える店は近くに一軒だけだ。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "startMs": 251870,
-      "startFrame": 7574,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-52.mp3",
-      "segments": [
-        {
-          "text": "いくらまでなら出すか、と聞かれる。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 53,
-      "startMs": 254390,
-      "startFrame": 7650,
-      "durationMs": 8600,
-      "durationInFrames": 258,
-      "audioFile": "audio/scene-53.mp3",
-      "segments": [
-        {
-          "text": "その一軒が高級リゾートホテルだと告げられたグループの回答は、中央値で2ドル65セント。",
-          "startFrame": 0,
-          "durationInFrames": 254
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "startMs": 262990,
-      "startFrame": 7908,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-54.mp3",
-      "segments": [
-        {
-          "text": "小さくて古びた雑貨店だと告げられたグループは、1ドル50セントだった。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 55,
-      "startMs": 267910,
-      "startFrame": 8056,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-55.mp3",
-      "segments": [
-        {
-          "text": "ビールの銘柄は同じ。",
-          "startFrame": 0,
-          "durationInFrames": 53
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "startMs": 269910,
-      "startFrame": 8116,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-56.mp3",
-      "segments": [
-        {
-          "text": "飲む場所も同じビーチ。",
-          "startFrame": 0,
-          "durationInFrames": 43
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "startMs": 271910,
-      "startFrame": 8176,
-      "durationMs": 3240,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-57.mp3",
-      "segments": [
-        {
-          "text": "冷たさも味も、一滴たりとも変わらない。",
-          "startFrame": 0,
-          "durationInFrames": 94
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "startMs": 275150,
-      "startFrame": 8274,
-      "durationMs": 2680,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-58.mp3",
-      "segments": [
-        {
-          "text": "変わったのは、誰が売っているかだけである。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "startMs": 277830,
-      "startFrame": 8355,
-      "durationMs": 5650,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-59.mp3",
-      "segments": [
-        {
-          "text": "それだけで、払える金額が1.8倍動いた。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "startMs": 283480,
-      "startFrame": 8525,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-60.mp3",
-      "segments": [
-        {
-          "text": "セイラーはこれを取引効用と名付けた。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 61,
-      "startMs": 286000,
-      "startFrame": 8601,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-61.mp3",
-      "segments": [
-        {
-          "text": "人が値段を判断するとき、脳は商品を見ていない。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "startMs": 289640,
-      "startFrame": 8711,
-      "durationMs": 4280,
-      "durationInFrames": 129,
-      "audioFile": "audio/scene-62.mp3",
-      "segments": [
-        {
-          "text": "売り手が誰で、その人物にその値段を付ける資格があるかを見ている。",
-          "startFrame": 0,
-          "durationInFrames": 125
-        }
-      ]
-    },
-    {
-      "id": 63,
-      "startMs": 293920,
-      "startFrame": 8840,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-63.mp3",
-      "segments": [
-        {
-          "text": "土曜の朝9時58分を想像してみて欲しい。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 64,
-      "startMs": 297800,
-      "startFrame": 8957,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-64.mp3",
-      "segments": [
-        {
-          "text": "郊外の量販店の駐車場に、まだ開いていない自動ドアへ向かって列ができている。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 65,
-      "startMs": 303120,
-      "startFrame": 9117,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-65.mp3",
-      "segments": [
-        {
-          "text": "先頭から数えて11人目の男が、スマートフォンの画面を下にスワイプし続けている。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 66,
-      "startMs": 308760,
-      "startFrame": 9287,
-      "durationMs": 2760,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-66.mp3",
-      "segments": [
-        {
-          "text": "開いているのはフリマアプリの相場画面だ。",
-          "startFrame": 0,
-          "durationInFrames": 79
-        }
-      ]
-    },
-    {
-      "id": 67,
-      "startMs": 311520,
-      "startFrame": 9370,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-67.mp3",
-      "segments": [
-        {
-          "text": "今日ここで買える箱の、昨夜の落札価格が並んでいる。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 68,
-      "startMs": 315080,
-      "startFrame": 9477,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-68.mp3",
-      "segments": [
-        {
-          "text": "定価のおよそ1.7倍。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 69,
-      "startMs": 317440,
-      "startFrame": 9548,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-69.mp3",
-      "segments": [
-        {
-          "text": "12人目は、幼い息子の手を握って立っている。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 70,
-      "startMs": 320760,
-      "startFrame": 9648,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-70.mp3",
-      "segments": [
-        {
-          "text": "二人が並んでいるのは、同じ一本の列だ。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "startMs": 323680,
-      "startFrame": 9736,
-      "durationMs": 2280,
-      "durationInFrames": 69,
-      "audioFile": "audio/scene-71.mp3",
-      "segments": [
-        {
-          "text": "それでも、市場は消えない。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 72,
-      "startMs": 325960,
-      "startFrame": 9805,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-72.mp3",
-      "segments": [
-        {
-          "text": "取り締まっても、憎んでも、翌週にはまた同じ値段がついている。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 73,
-      "startMs": 330320,
-      "startFrame": 9936,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-73.mp3",
-      "segments": [
-        {
-          "text": "ということは、値段が付いているのは商品ではないということだ。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 74,
-      "startMs": 334680,
-      "startFrame": 10067,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-74.mp3",
-      "segments": [
-        {
-          "text": "手に入らないという事実の方に、値段が付いている。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 75,
-      "startMs": 338560,
-      "startFrame": 10184,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-75.mp3",
-      "segments": [
-        {
-          "text": "ここまで聞くと、話の着地点は見えた気がするだろう。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 76,
-      "startMs": 342200,
-      "startFrame": 10294,
-      "durationMs": 6840,
-      "durationInFrames": 206,
-      "audioFile": "audio/scene-76.mp3",
-      "segments": [
-        {
-          "text": "つまり、悪いのは転売する側ではなく、需要に対して安すぎる値段を付けたまま動かない売り手の方なのだろうと。",
-          "startFrame": 0,
-          "durationInFrames": 202
-        }
-      ]
-    },
-    {
-      "id": 77,
-      "startMs": 349040,
-      "startFrame": 10500,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-77.mp3",
-      "segments": [
-        {
-          "text": "事実、その線で説明する記事も動画も、すでに多い。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 78,
-      "startMs": 353000,
-      "startFrame": 10619,
-      "durationMs": 2680,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-78.mp3",
-      "segments": [
-        {
-          "text": "だが、この動画はそこで終わらない。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 79,
-      "startMs": 355680,
-      "startFrame": 10700,
-      "durationMs": 8360,
-      "durationInFrames": 251,
-      "audioFile": "audio/scene-79.mp3",
-      "segments": [
-        {
-          "text": "本当に興味深いのは、その正しいはずの経済学が、200年以上にわたって、この怒りだけをうまく説明できずに来たことの方だ。",
-          "startFrame": 0,
-          "durationInFrames": 247
-        }
-      ]
-    },
-    {
-      "id": 80,
-      "startMs": 364040,
-      "startFrame": 10951,
-      "durationMs": 7720,
-      "durationInFrames": 232,
-      "audioFile": "audio/scene-80.mp3",
-      "segments": [
-        {
-          "text": "自分が損をしてでも他人を罰したいという衝動は、合理的な経済人の設計図のどこにも書かれていない。",
-          "startFrame": 0,
-          "durationInFrames": 228
-        }
-      ]
-    },
-    {
-      "id": 81,
-      "startMs": 371760,
-      "startFrame": 11183,
-      "durationMs": 3730,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-81.mp3",
-      "segments": [
-        {
-          "text": "では、その衝動は、いったいどこから来たのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 82,
-      "startMs": 375490,
-      "startFrame": 11295,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-82.mp3",
-      "segments": [
-        {
-          "text": "2002年1月、科学誌ネイチャーに、経済学の前提を揺さぶる論文が載った。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 83,
-      "startMs": 381130,
-      "startFrame": 11465,
-      "durationMs": 5800,
-      "durationInFrames": 174,
-      "audioFile": "audio/scene-83.mp3",
-      "segments": [
-        {
-          "text": "著者はチューリッヒ大学のエルンスト・フェールと、ザンクトガレン大学のシモン・ゲヒター。",
-          "startFrame": 0,
-          "durationInFrames": 170
-        }
-      ]
-    },
-    {
-      "id": 84,
-      "startMs": 386930,
-      "startFrame": 11639,
-      "durationMs": 8760,
-      "durationInFrames": 263,
-      "audioFile": "audio/scene-84.mp3",
-      "segments": [
-        {
-          "text": "二人は被験者を4人一組にし、ひとりに20単位の元手を渡して、共同事業にいくら出すかを同時に決めさせた。",
-          "startFrame": 0,
-          "durationInFrames": 259
-        }
-      ]
-    },
-    {
-      "id": 85,
-      "startMs": 395690,
-      "startFrame": 11902,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-85.mp3",
-      "segments": [
-        {
-          "text": "集まった金は1.6倍になって、出資額に関係なく全員に等分される。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 86,
-      "startMs": 401330,
-      "startFrame": 12072,
-      "durationMs": 7800,
-      "durationInFrames": 234,
-      "audioFile": "audio/scene-86.mp3",
-      "segments": [
-        {
-          "text": "全員が全額出せば全員が得をするが、自分ひとりが出さずに済ませれば、その人間が一番得をする。",
-          "startFrame": 0,
-          "durationInFrames": 230
-        }
-      ]
-    },
-    {
-      "id": 87,
-      "startMs": 409130,
-      "startFrame": 12306,
-      "durationMs": 2280,
-      "durationInFrames": 69,
-      "audioFile": "audio/scene-87.mp3",
-      "segments": [
-        {
-          "text": "ここまでは古典的な実験だ。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "startMs": 411410,
-      "startFrame": 12375,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-88.mp3",
-      "segments": [
-        {
-          "text": "二人が加えたのは、次の一手である。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 89,
-      "startMs": 413930,
-      "startFrame": 12451,
-      "durationMs": 5560,
-      "durationInFrames": 167,
-      "audioFile": "audio/scene-89.mp3",
-      "segments": [
-        {
-          "text": "各自の出資額を公開したあと、自腹を切って他人の取り分を削る権利を与えた。",
-          "startFrame": 0,
-          "durationInFrames": 163
-        }
-      ]
-    },
-    {
-      "id": 90,
-      "startMs": 419490,
-      "startFrame": 12618,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-90.mp3",
-      "segments": [
-        {
-          "text": "1単位払えば、相手の取り分が3単位減る。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 91,
-      "startMs": 422970,
-      "startFrame": 12723,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-91.mp3",
-      "segments": [
-        {
-          "text": "払った側には、一円の見返りもない。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 92,
-      "startMs": 425490,
-      "startFrame": 12799,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-92.mp3",
-      "segments": [
-        {
-          "text": "結果はこうだった。",
-          "startFrame": 0,
-          "durationInFrames": 29
-        }
-      ]
-    },
-    {
-      "id": 93,
-      "startMs": 427490,
-      "startFrame": 12859,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-93.mp3",
-      "segments": [
-        {
-          "text": "6回の試行のあいだに、罰は合計1270回行われた。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 94,
-      "startMs": 432410,
-      "startFrame": 13007,
-      "durationMs": 6360,
-      "durationInFrames": 191,
-      "audioFile": "audio/scene-94.mp3",
-      "segments": [
-        {
-          "text": "被験者の84.3パーセントが、少なくとも一度は自腹を切って他人を罰している。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 95,
-      "startMs": 438770,
-      "startFrame": 13198,
-      "durationMs": 8360,
-      "durationInFrames": 251,
-      "audioFile": "audio/scene-95.mp3",
-      "segments": [
-        {
-          "text": "しかも罰の74.2パーセントは、平均以上に出した人間が、平均以下しか出さなかった人間に向けて放ったものだった。",
-          "startFrame": 0,
-          "durationInFrames": 247
-        }
-      ]
-    },
-    {
-      "id": 96,
-      "startMs": 447130,
-      "startFrame": 13449,
-      "durationMs": 3730,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-96.mp3",
-      "segments": [
-        {
-          "text": "相手とは二度と同じ組にならないと知らされていてもだ。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "startMs": 450860,
-      "startFrame": 13561,
-      "durationMs": 2440,
-      "durationInFrames": 74,
-      "audioFile": "audio/scene-97.mp3",
-      "segments": [
-        {
-          "text": "見返りはない。",
-          "startFrame": 0,
-          "durationInFrames": 70
-        }
-      ]
-    },
-    {
-      "id": 98,
-      "startMs": 453300,
-      "startFrame": 13635,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-98.mp3",
-      "segments": [
-        {
-          "text": "評判も立たない。",
-          "startFrame": 0,
-          "durationInFrames": 34
-        }
-      ]
-    },
-    {
-      "id": 99,
-      "startMs": 455300,
-      "startFrame": 13695,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-99.mp3",
-      "segments": [
-        {
-          "text": "それでも人は払う。",
-          "startFrame": 0,
-          "durationInFrames": 41
-        }
-      ]
-    },
-    {
-      "id": 100,
-      "startMs": 457300,
-      "startFrame": 13755,
-      "durationMs": 8680,
-      "durationInFrames": 261,
-      "audioFile": "audio/scene-100.mp3",
-      "segments": [
-        {
-          "text": "フェールとゲヒターはこれを利他的懲罰と呼び、その引き金は計算ではなく怒りという感情そのものだと結論づけた。",
-          "startFrame": 0,
-          "durationInFrames": 257
-        }
-      ]
-    },
-    {
-      "id": 101,
-      "startMs": 465980,
-      "startFrame": 14016,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-101.mp3",
-      "segments": [
-        {
-          "text": "罰は、人間にとってコストではない。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 102,
-      "startMs": 469060,
-      "startFrame": 14109,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-102.mp3",
-      "segments": [
-        {
-          "text": "金を払ってでも実行したい、目的の側だったのである。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 103,
-      "startMs": 473020,
-      "startFrame": 14228,
-      "durationMs": 4210,
-      "durationInFrames": 127,
-      "audioFile": "audio/scene-103.mp3",
-      "segments": [
-        {
-          "text": "この非合理は、条件を変えても同じ形で現れる。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 104,
-      "startMs": 477230,
-      "startFrame": 14355,
-      "durationMs": 7880,
-      "durationInFrames": 237,
-      "audioFile": "audio/scene-104.mp3",
-      "segments": [
-        {
-          "text": "1982年、ドイツの経済学者ヴェルナー・ギュートらが考案した最後通牒ゲームがある。",
-          "startFrame": 0,
-          "durationInFrames": 233
-        }
-      ]
-    },
-    {
-      "id": 105,
-      "startMs": 485110,
-      "startFrame": 14592,
-      "durationMs": 9480,
-      "durationInFrames": 285,
-      "audioFile": "audio/scene-105.mp3",
-      "segments": [
-        {
-          "text": "提案者が一定額の分け方を提案し、応答者が受け入れれば両者はその通りに受け取るが、拒否すれば両者ともゼロになる。",
-          "startFrame": 0,
-          "durationInFrames": 281
-        }
-      ]
-    },
-    {
-      "id": 106,
-      "startMs": 494590,
-      "startFrame": 14877,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-106.mp3",
-      "segments": [
-        {
-          "text": "合理的に考えれば、応答者は1円でも受け取るべきだ。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 107,
-      "startMs": 498070,
-      "startFrame": 14982,
-      "durationMs": 6520,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-107.mp3",
-      "segments": [
-        {
-          "text": "ところが実際には、全体のおよそ2割を下回る提案は、かなりの割合で拒否される。",
-          "startFrame": 0,
-          "durationInFrames": 192
-        }
-      ]
-    },
-    {
-      "id": 108,
-      "startMs": 504590,
-      "startFrame": 15178,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-108.mp3",
-      "segments": [
-        {
-          "text": "自分の取り分をゼロにしてでも、不公正な分配を成立させない。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "startMs": 508950,
-      "startFrame": 15309,
-      "durationMs": 4680,
-      "durationInFrames": 141,
-      "audioFile": "audio/scene-109.mp3",
-      "segments": [
-        {
-          "text": "この傾向は各地で繰り返し確認され、金額を跳ね上げても消えなかった。",
-          "startFrame": 0,
-          "durationInFrames": 137
-        }
-      ]
-    },
-    {
-      "id": 110,
-      "startMs": 513630,
-      "startFrame": 15450,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-110.mp3",
-      "segments": [
-        {
-          "text": "ではその怒りは、値上げの幅に反応しているのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 111,
-      "startMs": 517510,
-      "startFrame": 15567,
-      "durationMs": 3160,
-      "durationInFrames": 95,
-      "audioFile": "audio/scene-111.mp3",
-      "segments": [
-        {
-          "text": "カーネマンらの同じ論文には、続きがある。",
-          "startFrame": 0,
-          "durationInFrames": 91
-        }
-      ]
-    },
-    {
-      "id": 112,
-      "startMs": 520670,
-      "startFrame": 15662,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-112.mp3",
-      "segments": [
-        {
-          "text": "三人は値上げの理由を変えて、同じように評価を求めている。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 113,
-      "startMs": 524150,
-      "startFrame": 15767,
-      "durationMs": 5080,
-      "durationInFrames": 153,
-      "audioFile": "audio/scene-113.mp3",
-      "segments": [
-        {
-          "text": "仕入れ値が上がったことを理由にした値上げは、多くの人が公正だと答えた。",
-          "startFrame": 0,
-          "durationInFrames": 149
-        }
-      ]
-    },
-    {
-      "id": 114,
-      "startMs": 529230,
-      "startFrame": 15920,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-114.mp3",
-      "segments": [
-        {
-          "text": "利益が脅かされている企業が価格を上げることも、賃金を下げることも、許容された。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 115,
-      "startMs": 535670,
-      "startFrame": 16114,
-      "durationMs": 4530,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-115.mp3",
-      "segments": [
-        {
-          "text": "一方で、需要が増えたことに乗じた値上げは、拒絶された。",
-          "startFrame": 0,
-          "durationInFrames": 122
-        }
-      ]
-    },
-    {
-      "id": 116,
-      "startMs": 540200,
-      "startFrame": 16250,
-      "durationMs": 6360,
-      "durationInFrames": 191,
-      "audioFile": "audio/scene-116.mp3",
-      "segments": [
-        {
-          "text": "三人はこれを、売り手と買い手それぞれの取り分に関する二重の権利と呼んだ。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 117,
-      "startMs": 546560,
-      "startFrame": 16441,
-      "durationMs": 2680,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-117.mp3",
-      "segments": [
-        {
-          "text": "判定されているのは値上げの幅ではない。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 118,
-      "startMs": 549240,
-      "startFrame": 16522,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-118.mp3",
-      "segments": [
-        {
-          "text": "値上げの理由の方だ。",
-          "startFrame": 0,
-          "durationInFrames": 41
-        }
-      ]
-    },
-    {
-      "id": 119,
-      "startMs": 551240,
-      "startFrame": 16582,
-      "durationMs": 6840,
-      "durationInFrames": 206,
-      "audioFile": "audio/scene-119.mp3",
-      "segments": [
-        {
-          "text": "同じ100円でも、原価が上がったからだと言えば通り、欲しがる人が増えたからだと言えば通らない。",
-          "startFrame": 0,
-          "durationInFrames": 202
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "startMs": 558080,
-      "startFrame": 16788,
-      "durationMs": 4210,
-      "durationInFrames": 127,
-      "audioFile": "audio/scene-120.mp3",
-      "segments": [
-        {
-          "text": "この非対称は、人間に固有のものなのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 121,
-      "startMs": 562290,
-      "startFrame": 16915,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-121.mp3",
-      "segments": [
-        {
-          "text": "ここで、一見まったく関係のない研究を持ち出したい。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 122,
-      "startMs": 565930,
-      "startFrame": 17025,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-122.mp3",
-      "segments": [
-        {
-          "text": "2003年9月、同じくネイチャーに載った論文だ。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 123,
-      "startMs": 569250,
-      "startFrame": 17125,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-123.mp3",
-      "segments": [
-        {
-          "text": "著者はエモリー大学のサラ・ブロスナンとフランス・ドゥ・ヴァール。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 124,
-      "startMs": 573210,
-      "startFrame": 17244,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-124.mp3",
-      "segments": [
-        {
-          "text": "実験台に乗ったのは、10頭のフサオマキザルである。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "startMs": 576690,
-      "startFrame": 17349,
-      "durationMs": 7400,
-      "durationInFrames": 222,
-      "audioFile": "audio/scene-125.mp3",
-      "segments": [
-        {
-          "text": "二頭を隣り合わせのケージに入れ、小石を実験者の手に返すと餌がもらえる、という取引を覚えさせる。",
-          "startFrame": 0,
-          "durationInFrames": 218
-        }
-      ]
-    },
-    {
-      "id": 126,
-      "startMs": 584090,
-      "startFrame": 17571,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-126.mp3",
-      "segments": [
-        {
-          "text": "報酬はキュウリの薄切りだ。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 127,
-      "startMs": 586130,
-      "startFrame": 17633,
-      "durationMs": 6760,
-      "durationInFrames": 203,
-      "audioFile": "audio/scene-127.mp3",
-      "segments": [
-        {
-          "text": "二年分の予備実験で、サルたちが95パーセント以上の確率で素直に小石を返すことは分かっていた。",
-          "startFrame": 0,
-          "durationInFrames": 199
-        }
-      ]
-    },
-    {
-      "id": 128,
-      "startMs": 592890,
-      "startFrame": 17836,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-128.mp3",
-      "segments": [
-        {
-          "text": "ここで実験者は、片方にだけブドウを渡し始める。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 129,
-      "startMs": 596290,
-      "startFrame": 17938,
-      "durationMs": 2610,
-      "durationInFrames": 79,
-      "audioFile": "audio/scene-129.mp3",
-      "segments": [
-        {
-          "text": "ブドウはキュウリよりはるかに好まれる。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 130,
-      "startMs": 598900,
-      "startFrame": 18017,
-      "durationMs": 7320,
-      "durationInFrames": 220,
-      "audioFile": "audio/scene-130.mp3",
-      "segments": [
-        {
-          "text": "隣が同じ仕事でブドウを受け取っているのを見た瞬間、もう一方のサルは小石を返さなくなった。",
-          "startFrame": 0,
-          "durationInFrames": 216
-        }
-      ]
-    },
-    {
-      "id": 131,
-      "startMs": 606220,
-      "startFrame": 18237,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-131.mp3",
-      "segments": [
-        {
-          "text": "差し出されたキュウリを、実験者に投げ返す個体もいた。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 132,
-      "startMs": 609780,
-      "startFrame": 18344,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-132.mp3",
-      "segments": [
-        {
-          "text": "取引の条件は、何ひとつ変わっていない。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 133,
-      "startMs": 612700,
-      "startFrame": 18432,
-      "durationMs": 3010,
-      "durationInFrames": 91,
-      "audioFile": "audio/scene-133.mp3",
-      "segments": [
-        {
-          "text": "変わったのは、隣の取り分だけである。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 134,
-      "startMs": 615710,
-      "startFrame": 18523,
-      "durationMs": 2120,
-      "durationInFrames": 64,
-      "audioFile": "audio/scene-134.mp3",
-      "segments": [
-        {
-          "text": "ただし、この研究には反論もある。",
-          "startFrame": 0,
-          "durationInFrames": 60
-        }
-      ]
-    },
-    {
-      "id": 135,
-      "startMs": 617830,
-      "startFrame": 18587,
-      "durationMs": 14450,
-      "durationInFrames": 434,
-      "audioFile": "audio/scene-135.mp3",
-      "segments": [
-        {
-          "text": "2006年には、同じ手続きで再現を試みたうえで、サルの拒否は不公平への反応ではなく、目の前にブドウがあるのに自分は手に入らないという苛立ちで説明できる、と主張した論文が出ている。",
-          "startFrame": 0,
-          "durationInFrames": 420
-        }
-      ]
-    },
-    {
-      "id": 136,
-      "startMs": 632280,
-      "startFrame": 19021,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-136.mp3",
-      "segments": [
-        {
-          "text": "議論はいまも続いており、決着はついていない。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 137,
-      "startMs": 635280,
-      "startFrame": 19111,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-137.mp3",
-      "segments": [
-        {
-          "text": "それでも、ひとつだけ言えることがある。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 138,
-      "startMs": 638120,
-      "startFrame": 19197,
-      "durationMs": 11880,
-      "durationInFrames": 357,
-      "audioFile": "audio/scene-138.mp3",
-      "segments": [
-        {
-          "text": "同じ仕事に違う値段が付いた瞬間、それを見て取引そのものを降りる回路は、少なくとも人間が発明したものではないかもしれない、ということだ。",
-          "startFrame": 0,
-          "durationInFrames": 353
-        }
-      ]
-    },
-    {
-      "id": 139,
-      "startMs": 650000,
-      "startFrame": 19554,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-139.mp3",
-      "segments": [
-        {
-          "text": "そしてその回路の正面に、転売という行為は立っている。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 140,
-      "startMs": 653880,
-      "startFrame": 19671,
-      "durationMs": 3170,
-      "durationInFrames": 96,
-      "audioFile": "audio/scene-140.mp3",
-      "segments": [
-        {
-          "text": "深夜11時40分。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 141,
-      "startMs": 657050,
-      "startFrame": 19767,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-141.mp3",
-      "segments": [
-        {
-          "text": "仕事帰りの女性が、電車の吊り革を握ったまま画面を見ている。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 142,
-      "startMs": 661970,
-      "startFrame": 19915,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-142.mp3",
-      "segments": [
-        {
-          "text": "半年前から通知を待っていた公演は、落選だった。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 143,
-      "startMs": 665930,
-      "startFrame": 20034,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-143.mp3",
-      "segments": [
-        {
-          "text": "同じ会場の座席が、いま画面の中で、6万8000円で売られている。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 144,
-      "startMs": 671570,
-      "startFrame": 20204,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-144.mp3",
-      "segments": [
-        {
-          "text": "定価は9800円。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 145,
-      "startMs": 674890,
-      "startFrame": 20304,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-145.mp3",
-      "segments": [
-        {
-          "text": "指はスクロールを止めない。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 146,
-      "startMs": 676930,
-      "startFrame": 20366,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-146.mp3",
-      "segments": [
-        {
-          "text": "買うためではない。",
-          "startFrame": 0,
-          "durationInFrames": 29
-        }
-      ]
-    },
-    {
-      "id": 147,
-      "startMs": 678930,
-      "startFrame": 20426,
-      "durationMs": 3330,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-147.mp3",
-      "segments": [
-        {
-          "text": "出品者のアカウント名を、覚えるためだ。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 148,
-      "startMs": 682260,
-      "startFrame": 20526,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-148.mp3",
-      "segments": [
-        {
-          "text": "ここで、冒頭の話に戻りたい。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 149,
-      "startMs": 685100,
-      "startFrame": 20612,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-149.mp3",
-      "segments": [
-        {
-          "text": "この国で、メーカーが定価を守らせることを法的に許されているのは、6品目だけだった。",
-          "startFrame": 0,
-          "durationInFrames": 185
-        }
-      ]
-    },
-    {
-      "id": 150,
-      "startMs": 691380,
-      "startFrame": 20801,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-150.mp3",
-      "segments": [
-        {
-          "text": "書籍、雑誌、新聞、レコード盤、音楽用テープ、音楽用CD。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 151,
-      "startMs": 697020,
-      "startFrame": 20971,
-      "durationMs": 6370,
-      "durationInFrames": 192,
-      "audioFile": "audio/scene-151.mp3",
-      "segments": [
-        {
-          "text": "1953年に決まったこの例外は、文化を守るためだと説明されてきた。",
-          "startFrame": 0,
-          "durationInFrames": 178
-        }
-      ]
-    },
-    {
-      "id": 152,
-      "startMs": 703390,
-      "startFrame": 21163,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-152.mp3",
-      "segments": [
-        {
-          "text": "裏を返せば、それ以外のすべての商品について、法は値段を自由に動かせと命じている。",
-          "startFrame": 0,
-          "durationInFrames": 185
-        }
-      ]
-    },
-    {
-      "id": 153,
-      "startMs": 709670,
-      "startFrame": 21352,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-153.mp3",
-      "segments": [
-        {
-          "text": "定価を守れという要求は、法律の要求ではない。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 154,
-      "startMs": 713230,
-      "startFrame": 21459,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-154.mp3",
-      "segments": [
-        {
-          "text": "人間の側から出ている要求だ。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 155,
-      "startMs": 715270,
-      "startFrame": 21521,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-155.mp3",
-      "segments": [
-        {
-          "text": "では、その要求を毎日受け取っている売り手の帳簿は、どうなっているのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 156,
-      "startMs": 720590,
-      "startFrame": 21681,
-      "durationMs": 5000,
-      "durationInFrames": 150,
-      "audioFile": "audio/scene-156.mp3",
-      "segments": [
-        {
-          "text": "供給側から見ると、チケットという商品は、少し奇妙な性質を持っている。",
-          "startFrame": 0,
-          "durationInFrames": 146
-        }
-      ]
-    },
-    {
-      "id": 157,
-      "startMs": 725590,
-      "startFrame": 21831,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-157.mp3",
-      "segments": [
-        {
-          "text": "座席の原価は、公演が始まる前にほぼ確定している。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 158,
-      "startMs": 729550,
-      "startFrame": 21950,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-158.mp3",
-      "segments": [
-        {
-          "text": "会場費、機材、人件費。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 159,
-      "startMs": 732150,
-      "startFrame": 22028,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-159.mp3",
-      "segments": [
-        {
-          "text": "何枚売れようと総額は大きく動かない。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 160,
-      "startMs": 734990,
-      "startFrame": 22114,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-160.mp3",
-      "segments": [
-        {
-          "text": "そのうえ、席の数は物理的に増やせない。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 161,
-      "startMs": 737590,
-      "startFrame": 22192,
-      "durationMs": 8440,
-      "durationInFrames": 254,
-      "audioFile": "audio/scene-161.mp3",
-      "segments": [
-        {
-          "text": "原価がほぼ固定で、供給が絶対に増やせない商品は、理屈の上では需要に合わせていくらでも値上げできるはずだ。",
-          "startFrame": 0,
-          "durationInFrames": 250
-        }
-      ]
-    },
-    {
-      "id": 162,
-      "startMs": 746030,
-      "startFrame": 22446,
-      "durationMs": 6210,
-      "durationInFrames": 187,
-      "audioFile": "audio/scene-162.mp3",
-      "segments": [
-        {
-          "text": "にもかかわらず、興行主の多くは値上げしない。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 163,
-      "startMs": 752240,
-      "startFrame": 22633,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-163.mp3",
-      "segments": [
-        {
-          "text": "2025年の動員ひとりあたりの単価は9286円。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 164,
-      "startMs": 757560,
-      "startFrame": 22793,
-      "durationMs": 6690,
-      "durationInFrames": 201,
-      "audioFile": "audio/scene-164.mp3",
-      "segments": [
-        {
-          "text": "前年より4.5パーセント上がってはいるが、二次流通で付く値段の上がり方とは桁がひとつ違う。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 165,
-      "startMs": 764250,
-      "startFrame": 22994,
-      "durationMs": 3410,
-      "durationInFrames": 103,
-      "audioFile": "audio/scene-165.mp3",
-      "segments": [
-        {
-          "text": "売り手は、自分の手で天井を作っている。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 166,
-      "startMs": 767660,
-      "startFrame": 23097,
-      "durationMs": 5560,
-      "durationInFrames": 167,
-      "audioFile": "audio/scene-166.mp3",
-      "segments": [
-        {
-          "text": "ただし、この動画で伝えたいのは、興行主が怠慢だという単純な話ではない。",
-          "startFrame": 0,
-          "durationInFrames": 163
-        }
-      ]
-    },
-    {
-      "id": 167,
-      "startMs": 773220,
-      "startFrame": 23264,
-      "durationMs": 7400,
-      "durationInFrames": 222,
-      "audioFile": "audio/scene-167.mp3",
-      "segments": [
-        {
-          "text": "1991年、シカゴ大学のゲイリー・ベッカーが、政治経済学ジャーナルに短い論文を書いている。",
-          "startFrame": 0,
-          "durationInFrames": 218
-        }
-      ]
-    },
-    {
-      "id": 168,
-      "startMs": 780620,
-      "startFrame": 23486,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-168.mp3",
-      "segments": [
-        {
-          "text": "人気のレストランや劇場やスポーツ興行が、行列ができているのに値上げしないのはなぜか。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 169,
-      "startMs": 787060,
-      "startFrame": 23680,
-      "durationMs": 2930,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-169.mp3",
-      "segments": [
-        {
-          "text": "ベッカーの答えはこうだ。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 170,
-      "startMs": 789990,
-      "startFrame": 23768,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-170.mp3",
-      "segments": [
-        {
-          "text": "この種の商品では、ある人の需要が他人の需要に依存している。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 171,
-      "startMs": 794910,
-      "startFrame": 23916,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-171.mp3",
-      "segments": [
-        {
-          "text": "満席であること自体が、商品の一部なのだ。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 172,
-      "startMs": 798550,
-      "startFrame": 24026,
-      "durationMs": 4680,
-      "durationInFrames": 141,
-      "audioFile": "audio/scene-172.mp3",
-      "segments": [
-        {
-          "text": "値上げして席を埋め残せば、増えた売上以上のものを失う。",
-          "startFrame": 0,
-          "durationInFrames": 137
-        }
-      ]
-    },
-    {
-      "id": 173,
-      "startMs": 803230,
-      "startFrame": 24167,
-      "durationMs": 3800,
-      "durationInFrames": 114,
-      "audioFile": "audio/scene-173.mp3",
-      "segments": [
-        {
-          "text": "売り手が定価を守っているのは、道徳心からだけではない。",
-          "startFrame": 0,
-          "durationInFrames": 110
-        }
-      ]
-    },
-    {
-      "id": 174,
-      "startMs": 807030,
-      "startFrame": 24281,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-174.mp3",
-      "segments": [
-        {
-          "text": "計算の結果でもある。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 175,
-      "startMs": 810750,
-      "startFrame": 24393,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-175.mp3",
-      "segments": [
-        {
-          "text": "そして、この構造の上に、誰も語らない収益の線が一本走っている。",
-          "startFrame": 0,
-          "durationInFrames": 158
-        }
-      ]
-    },
-    {
-      "id": 176,
-      "startMs": 816150,
-      "startFrame": 24555,
-      "durationMs": 11000,
-      "durationInFrames": 330,
-      "audioFile": "audio/scene-176.mp3",
-      "segments": [
-        {
-          "text": "2025年9月17日、アメリカの連邦取引委員会と7つの州が、ライブネイションとその子会社チケットマスターを提訴した。",
-          "startFrame": 0,
-          "durationInFrames": 326
-        }
-      ]
-    },
-    {
-      "id": 177,
-      "startMs": 827150,
-      "startFrame": 24885,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-177.mp3",
-      "segments": [
-        {
-          "text": "訴状の中心にあるのは、トリプルディップ、三度すくうと訳せる言葉だ。",
-          "startFrame": 0,
-          "durationInFrames": 185
-        }
-      ]
-    },
-    {
-      "id": 178,
-      "startMs": 833430,
-      "startFrame": 25074,
-      "durationMs": 4040,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-178.mp3",
-      "segments": [
-        {
-          "text": "転売業者が一次流通でチケットを買うとき、手数料が取れる。",
-          "startFrame": 0,
-          "durationInFrames": 118
-        }
-      ]
-    },
-    {
-      "id": 179,
-      "startMs": 837470,
-      "startFrame": 25196,
-      "durationMs": 5720,
-      "durationInFrames": 172,
-      "audioFile": "audio/scene-179.mp3",
-      "segments": [
-        {
-          "text": "その業者が同じプラットフォームに転売を出すとき、また手数料が取れる。",
-          "startFrame": 0,
-          "durationInFrames": 168
-        }
-      ]
-    },
-    {
-      "id": 180,
-      "startMs": 843190,
-      "startFrame": 25368,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-180.mp3",
-      "segments": [
-        {
-          "text": "そのチケットをファンが買うとき、三度目の手数料が取れる。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 181,
-      "startMs": 847150,
-      "startFrame": 25487,
-      "durationMs": 7480,
-      "durationInFrames": 225,
-      "audioFile": "audio/scene-181.mp3",
-      "segments": [
-        {
-          "text": "つまりこのプラットフォームにとって、転売業者は敵ではなく、最も収益効率の高い顧客だったことになる。",
-          "startFrame": 0,
-          "durationInFrames": 221
-        }
-      ]
-    },
-    {
-      "id": 182,
-      "startMs": 854630,
-      "startFrame": 25712,
-      "durationMs": 7240,
-      "durationInFrames": 218,
-      "audioFile": "audio/scene-182.mp3",
-      "segments": [
-        {
-          "text": "訴状によれば、二次流通の手数料収入は2019年から2024年までで37億ドル。",
-          "startFrame": 0,
-          "durationInFrames": 214
-        }
-      ]
-    },
-    {
-      "id": 183,
-      "startMs": 861870,
-      "startFrame": 25930,
-      "durationMs": 12360,
-      "durationInFrames": 371,
-      "audioFile": "audio/scene-183.mp3",
-      "segments": [
-        {
-          "text": "社内の点検では、たった5つの業者が6345のアカウントを保有し、2594公演のチケットを24万6407枚集めていたとされる。",
-          "startFrame": 0,
-          "durationInFrames": 367
-        }
-      ]
-    },
-    {
-      "id": 184,
-      "startMs": 874230,
-      "startFrame": 26301,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-184.mp3",
-      "segments": [
-        {
-          "text": "ひとり4枚までという上限は、購入画面に表示されていた。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 185,
-      "startMs": 878590,
-      "startFrame": 26432,
-      "durationMs": 7320,
-      "durationInFrames": 220,
-      "audioFile": "audio/scene-185.mp3",
-      "segments": [
-        {
-          "text": "ある幹部の社内メールには、方針として見て見ぬふりをする、と書かれていたと訴状は述べる。",
-          "startFrame": 0,
-          "durationInFrames": 216
-        }
-      ]
-    },
-    {
-      "id": 186,
-      "startMs": 885910,
-      "startFrame": 26652,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-186.mp3",
-      "segments": [
-        {
-          "text": "2021年、第三者による本人確認の導入は見送られた。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 187,
-      "startMs": 891230,
-      "startFrame": 26812,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-187.mp3",
-      "segments": [
-        {
-          "text": "理由は、効きすぎるからだったとされる。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 188,
-      "startMs": 893830,
-      "startFrame": 26890,
-      "durationMs": 3170,
-      "durationInFrames": 96,
-      "audioFile": "audio/scene-188.mp3",
-      "segments": [
-        {
-          "text": "同社は、これらの主張を強く否定している。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 189,
-      "startMs": 897000,
-      "startFrame": 26986,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-189.mp3",
-      "segments": [
-        {
-          "text": "この構造の請求書は、買う側に回ってくる。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 190,
-      "startMs": 900000,
-      "startFrame": 27076,
-      "durationMs": 8040,
-      "durationInFrames": 242,
-      "audioFile": "audio/scene-190.mp3",
-      "segments": [
-        {
-          "text": "同じ訴状によれば、表示価格に上乗せされる必須手数料は、価格の24パーセントから44パーセントに達する。",
-          "startFrame": 0,
-          "durationInFrames": 238
-        }
-      ]
-    },
-    {
-      "id": 191,
-      "startMs": 908040,
-      "startFrame": 27318,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-191.mp3",
-      "segments": [
-        {
-          "text": "日本でも、支払っているのは金だけではない。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 192,
-      "startMs": 910960,
-      "startFrame": 27406,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-192.mp3",
-      "segments": [
-        {
-          "text": "抽選への申し込み、本人確認、同行者の事前登録、当日の身分証提示。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 193,
-      "startMs": 917400,
-      "startFrame": 27600,
-      "durationMs": 8920,
-      "durationInFrames": 268,
-      "audioFile": "audio/scene-193.mp3",
-      "segments": [
-        {
-          "text": "2025年の国内公演回数は10万820回、動員は9223万人だった。",
-          "startFrame": 0,
-          "durationInFrames": 264
-        }
-      ]
-    },
-    {
-      "id": 194,
-      "startMs": 926320,
-      "startFrame": 27868,
-      "durationMs": 6520,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-194.mp3",
-      "segments": [
-        {
-          "text": "そのほぼ全員が、席にたどり着くまでに、値札のどこにも書かれていない時間と手間を払っている。",
-          "startFrame": 0,
-          "durationInFrames": 192
-        }
-      ]
-    },
-    {
-      "id": 195,
-      "startMs": 932840,
-      "startFrame": 28064,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-195.mp3",
-      "segments": [
-        {
-          "text": "定価を守るという約束は、無料では守れない。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 196,
-      "startMs": 936400,
-      "startFrame": 28171,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-196.mp3",
-      "segments": [
-        {
-          "text": "そして、同じ市場には、もうひとつの数字がある。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 197,
-      "startMs": 939880,
-      "startFrame": 28276,
-      "durationMs": 7400,
-      "durationInFrames": 222,
-      "audioFile": "audio/scene-197.mp3",
-      "segments": [
-        {
-          "text": "国内のリユース市場は2024年に3兆2628億円、15年連続で拡大した。",
-          "startFrame": 0,
-          "durationInFrames": 218
-        }
-      ]
-    },
-    {
-      "id": 198,
-      "startMs": 947280,
-      "startFrame": 28498,
-      "durationMs": 9480,
-      "durationInFrames": 285,
-      "audioFile": "audio/scene-198.mp3",
-      "segments": [
-        {
-          "text": "あるフリマアプリの推計では、家庭に眠ったままの持ち物を金額に換算すると、総額はおよそ216兆円になるという。",
-          "startFrame": 0,
-          "durationInFrames": 281
-        }
-      ]
-    },
-    {
-      "id": 199,
-      "startMs": 956760,
-      "startFrame": 28783,
-      "durationMs": 7810,
-      "durationInFrames": 235,
-      "audioFile": "audio/scene-199.mp3",
-      "segments": [
-        {
-          "text": "私たちは転売を憎みながら、自分の持ち物を売るための市場を、毎年少しずつ大きくしている。",
-          "startFrame": 0,
-          "durationInFrames": 221
-        }
-      ]
-    },
-    {
-      "id": 200,
-      "startMs": 964570,
-      "startFrame": 29018,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-200.mp3",
-      "segments": [
-        {
-          "text": "金曜の午後4時を想像してみて欲しい。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 201,
-      "startMs": 967410,
-      "startFrame": 29104,
-      "durationMs": 10680,
-      "durationInFrames": 321,
-      "audioFile": "audio/scene-201.mp3",
-      "segments": [
-        {
-          "text": "都内のアリーナの通用口の裏で、当日券を諦めた男が二人、少し離れて別々にスマートフォンを見ている。",
-          "startFrame": 0,
-          "durationInFrames": 317
-        }
-      ]
-    },
-    {
-      "id": 202,
-      "startMs": 978090,
-      "startFrame": 29425,
-      "durationMs": 4040,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-202.mp3",
-      "segments": [
-        {
-          "text": "片方は、開演2時間前に値が崩れるのを待っている。",
-          "startFrame": 0,
-          "durationInFrames": 118
-        }
-      ]
-    },
-    {
-      "id": 203,
-      "startMs": 982130,
-      "startFrame": 29547,
-      "durationMs": 4120,
-      "durationInFrames": 124,
-      "audioFile": "audio/scene-203.mp3",
-      "segments": [
-        {
-          "text": "もう片方は、値が崩れる前に売り抜けるのを待っている。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 204,
-      "startMs": 986250,
-      "startFrame": 29671,
-      "durationMs": 3010,
-      "durationInFrames": 91,
-      "audioFile": "audio/scene-204.mp3",
-      "segments": [
-        {
-          "text": "二人が見つめているのは、同じ一枚の座席だ。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 205,
-      "startMs": 989260,
-      "startFrame": 29762,
-      "durationMs": 3160,
-      "durationInFrames": 95,
-      "audioFile": "audio/scene-205.mp3",
-      "segments": [
-        {
-          "text": "この構造には、もう一本の線が走っている。",
-          "startFrame": 0,
-          "durationInFrames": 91
-        }
-      ]
-    },
-    {
-      "id": 206,
-      "startMs": 992420,
-      "startFrame": 29857,
-      "durationMs": 2370,
-      "durationInFrames": 72,
-      "audioFile": "audio/scene-206.mp3",
-      "segments": [
-        {
-          "text": "国家である。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 207,
-      "startMs": 994790,
-      "startFrame": 29929,
-      "durationMs": 6600,
-      "durationInFrames": 198,
-      "audioFile": "audio/scene-207.mp3",
-      "segments": [
-        {
-          "text": "では、値段を誰が決めていいのかという問題を、人類はこれまでどう処理してきたのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 194
-        }
-      ]
-    },
-    {
-      "id": 208,
-      "startMs": 1001390,
-      "startFrame": 30127,
-      "durationMs": 6520,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-208.mp3",
-      "segments": [
-        {
-          "text": "そもそも人間は、なぜ値段が動くという、ただそれだけのことに、これほど反応してしまうのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 192
-        }
-      ]
-    },
-    {
-      "id": 209,
-      "startMs": 1007910,
-      "startFrame": 30323,
-      "durationMs": 9560,
-      "durationInFrames": 287,
-      "audioFile": "audio/scene-209.mp3",
-      "segments": [
-        {
-          "text": "13世紀、トマス・アクィナスは神学大全の中で、物には正しい値段があり、それを超えて売る者は罪を犯していると書いた。",
-          "startFrame": 0,
-          "durationInFrames": 283
-        }
-      ]
-    },
-    {
-      "id": 210,
-      "startMs": 1017470,
-      "startFrame": 30610,
-      "durationMs": 6770,
-      "durationInFrames": 204,
-      "audioFile": "audio/scene-210.mp3",
-      "segments": [
-        {
-          "text": "イスラム法には、生活必需品を買い占めて値を吊り上げる行為を戒める規範が古くからある。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 211,
-      "startMs": 1024240,
-      "startFrame": 30814,
-      "durationMs": 4280,
-      "durationInFrames": 129,
-      "audioFile": "audio/scene-211.mp3",
-      "segments": [
-        {
-          "text": "江戸では、米を買い占めた商家の店先が打ちこわされた。",
-          "startFrame": 0,
-          "durationInFrames": 125
-        }
-      ]
-    },
-    {
-      "id": 212,
-      "startMs": 1028520,
-      "startFrame": 30943,
-      "durationMs": 5240,
-      "durationInFrames": 158,
-      "audioFile": "audio/scene-212.mp3",
-      "segments": [
-        {
-          "text": "1787年には、江戸市中で大規模な打ちこわしが起きている。",
-          "startFrame": 0,
-          "durationInFrames": 154
-        }
-      ]
-    },
-    {
-      "id": 213,
-      "startMs": 1033760,
-      "startFrame": 31101,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-213.mp3",
-      "segments": [
-        {
-          "text": "時代も、宗教も、統治の形も違う。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 214,
-      "startMs": 1037400,
-      "startFrame": 31211,
-      "durationMs": 4840,
-      "durationInFrames": 146,
-      "audioFile": "audio/scene-214.mp3",
-      "segments": [
-        {
-          "text": "それなのに、罰される人間の職業だけは、驚くほど同じだ。",
-          "startFrame": 0,
-          "durationInFrames": 142
-        }
-      ]
-    },
-    {
-      "id": 215,
-      "startMs": 1042240,
-      "startFrame": 31357,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-215.mp3",
-      "segments": [
-        {
-          "text": "安く買い、高く売った者である。",
-          "startFrame": 0,
-          "durationInFrames": 53
-        }
-      ]
-    },
-    {
-      "id": 216,
-      "startMs": 1044240,
-      "startFrame": 31417,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-216.mp3",
-      "segments": [
-        {
-          "text": "ところが、である。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 217,
-      "startMs": 1046600,
-      "startFrame": 31488,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-217.mp3",
-      "segments": [
-        {
-          "text": "実は歴史のほとんどの期間、値段は固定されていなかった。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 218,
-      "startMs": 1050480,
-      "startFrame": 31605,
-      "durationMs": 3160,
-      "durationInFrames": 95,
-      "audioFile": "audio/scene-218.mp3",
-      "segments": [
-        {
-          "text": "値札という物体が、そもそも存在しなかった。",
-          "startFrame": 0,
-          "durationInFrames": 91
-        }
-      ]
-    },
-    {
-      "id": 219,
-      "startMs": 1053640,
-      "startFrame": 31700,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-219.mp3",
-      "segments": [
-        {
-          "text": "客の顔を見て、身なりを見て、急いでいるかどうかを見て、そのつど値が決まる。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 220,
-      "startMs": 1060080,
-      "startFrame": 31894,
-      "durationMs": 5560,
-      "durationInFrames": 167,
-      "audioFile": "audio/scene-220.mp3",
-      "segments": [
-        {
-          "text": "いまも世界の多くの市場に残っているあの光景の方が、人類の標準だった。",
-          "startFrame": 0,
-          "durationInFrames": 163
-        }
-      ]
-    },
-    {
-      "id": 221,
-      "startMs": 1065640,
-      "startFrame": 32061,
-      "durationMs": 2440,
-      "durationInFrames": 74,
-      "audioFile": "audio/scene-221.mp3",
-      "segments": [
-        {
-          "text": "それを崩したのは、正義感ではない。",
-          "startFrame": 0,
-          "durationInFrames": 70
-        }
-      ]
-    },
-    {
-      "id": 222,
-      "startMs": 1068080,
-      "startFrame": 32135,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-222.mp3",
-      "segments": [
-        {
-          "text": "事務作業である。",
-          "startFrame": 0,
-          "durationInFrames": 31
-        }
-      ]
-    },
-    {
-      "id": 223,
-      "startMs": 1070080,
-      "startFrame": 32195,
-      "durationMs": 11720,
-      "durationInFrames": 352,
-      "audioFile": "audio/scene-223.mp3",
-      "segments": [
-        {
-          "text": "1673年8月、伊勢松坂から出てきた52歳の商人、三井高利が、江戸本町一丁目に呉服店の越後屋を開いた。",
-          "startFrame": 0,
-          "durationInFrames": 348
-        }
-      ]
-    },
-    {
-      "id": 224,
-      "startMs": 1081800,
-      "startFrame": 32547,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-224.mp3",
-      "segments": [
-        {
-          "text": "掲げた看板が、現銀掛け値なし。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 225,
-      "startMs": 1084640,
-      "startFrame": 32633,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-225.mp3",
-      "segments": [
-        {
-          "text": "掛け値とは、値切られることを見越して最初に高く言っておく金額のことだ。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 226,
-      "startMs": 1089960,
-      "startFrame": 32793,
-      "durationMs": 6360,
-      "durationInFrames": 191,
-      "audioFile": "audio/scene-226.mp3",
-      "segments": [
-        {
-          "text": "高利はそれを捨て、商品に正札を付け、値段交渉そのものを店から追放した。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 227,
-      "startMs": 1096320,
-      "startFrame": 32984,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-227.mp3",
-      "segments": [
-        {
-          "text": "理由は明快である。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 228,
-      "startMs": 1098680,
-      "startFrame": 33055,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-228.mp3",
-      "segments": [
-        {
-          "text": "一人ずつ交渉している限り、店員は一人ずつしか客をさばけない。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 229,
-      "startMs": 1103280,
-      "startFrame": 33193,
-      "durationMs": 3250,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-229.mp3",
-      "segments": [
-        {
-          "text": "交渉をやめれば、大勢を同時にさばける。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 230,
-      "startMs": 1106530,
-      "startFrame": 33291,
-      "durationMs": 10770,
-      "durationInFrames": 324,
-      "audioFile": "audio/scene-230.mp3",
-      "segments": [
-        {
-          "text": "それから188年後の1861年、フィラデルフィアで、ジョン・ワナメーカーという二十代の青年が、同じことを始めた。",
-          "startFrame": 0,
-          "durationInFrames": 310
-        }
-      ]
-    },
-    {
-      "id": 231,
-      "startMs": 1117300,
-      "startFrame": 33615,
-      "durationMs": 5720,
-      "durationInFrames": 172,
-      "audioFile": "audio/scene-231.mp3",
-      "segments": [
-        {
-          "text": "すべての商品に値札を付け、ひとつの値段、そして返品可能、と掲げた。",
-          "startFrame": 0,
-          "durationInFrames": 168
-        }
-      ]
-    },
-    {
-      "id": 232,
-      "startMs": 1123020,
-      "startFrame": 33787,
-      "durationMs": 9080,
-      "durationInFrames": 273,
-      "audioFile": "audio/scene-232.mp3",
-      "segments": [
-        {
-          "text": "彼はそれを、神の前で人が平等なら、値段の前でも平等であるべきだからだと説明した。",
-          "startFrame": 0,
-          "durationInFrames": 269
-        }
-      ]
-    },
-    {
-      "id": 233,
-      "startMs": 1132100,
-      "startFrame": 34060,
-      "durationMs": 6040,
-      "durationInFrames": 182,
-      "audioFile": "audio/scene-233.mp3",
-      "segments": [
-        {
-          "text": "もっとも、固定価格そのものは、それ以前からクエーカーの商人たちが実践していたとも言われる。",
-          "startFrame": 0,
-          "durationInFrames": 178
-        }
-      ]
-    },
-    {
-      "id": 234,
-      "startMs": 1138140,
-      "startFrame": 34242,
-      "durationMs": 14920,
-      "durationInFrames": 448,
-      "audioFile": "audio/scene-234.mp3",
-      "segments": [
-        {
-          "text": "いずれにせよ、我々が正しい値段と呼び、破られると本気で腹を立てているあの約束は、たかだか350年ほど前に、大量の客を効率よくさばきたかった商人が発明した、事務手続きにすぎない。",
-          "startFrame": 0,
-          "durationInFrames": 444
-        }
-      ]
-    },
-    {
-      "id": 235,
-      "startMs": 1153060,
-      "startFrame": 34690,
-      "durationMs": 3650,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-235.mp3",
-      "segments": [
-        {
-          "text": "では、なぜ事務手続きが道徳になったのか。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 236,
-      "startMs": 1156710,
-      "startFrame": 34800,
-      "durationMs": 8920,
-      "durationInFrames": 268,
-      "audioFile": "audio/scene-236.mp3",
-      "segments": [
-        {
-          "text": "2007年、経済学者のアルヴィン・ロスが、経済展望ジャーナルに、市場の制約としての嫌悪感という論文を発表している。",
-          "startFrame": 0,
-          "durationInFrames": 264
-        }
-      ]
-    },
-    {
-      "id": 237,
-      "startMs": 1165630,
-      "startFrame": 35068,
-      "durationMs": 9650,
-      "durationInFrames": 290,
-      "audioFile": "audio/scene-237.mp3",
-      "segments": [
-        {
-          "text": "ロスがそこに並べたのは、当事者双方が合意していて、双方に利益があり、それでも社会が法で禁じている取引の一覧だった。",
-          "startFrame": 0,
-          "durationInFrames": 276
-        }
-      ]
-    },
-    {
-      "id": 238,
-      "startMs": 1175280,
-      "startFrame": 35358,
-      "durationMs": 2610,
-      "durationInFrames": 79,
-      "audioFile": "audio/scene-238.mp3",
-      "segments": [
-        {
-          "text": "臓器の売買。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 239,
-      "startMs": 1177890,
-      "startFrame": 35437,
-      "durationMs": 5810,
-      "durationInFrames": 175,
-      "audioFile": "audio/scene-239.mp3",
-      "segments": [
-        {
-          "text": "フランスでは小人投げが禁じられ、カリフォルニアでは馬肉の販売が禁じられた。",
-          "startFrame": 0,
-          "durationInFrames": 161
-        }
-      ]
-    },
-    {
-      "id": 240,
-      "startMs": 1183700,
-      "startFrame": 35612,
-      "durationMs": 5640,
-      "durationInFrames": 170,
-      "audioFile": "audio/scene-240.mp3",
-      "segments": [
-        {
-          "text": "経済学的には何の問題もない取引が、嫌悪感というただ一つの理由で消えていく。",
-          "startFrame": 0,
-          "durationInFrames": 166
-        }
-      ]
-    },
-    {
-      "id": 241,
-      "startMs": 1189340,
-      "startFrame": 35782,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-241.mp3",
-      "segments": [
-        {
-          "text": "ロスの結論はこうだ。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 242,
-      "startMs": 1191380,
-      "startFrame": 35844,
-      "durationMs": 3800,
-      "durationInFrames": 114,
-      "audioFile": "audio/scene-242.mp3",
-      "segments": [
-        {
-          "text": "市場が何を扱えるかを決めているのは効率ではない。",
-          "startFrame": 0,
-          "durationInFrames": 110
-        }
-      ]
-    },
-    {
-      "id": 243,
-      "startMs": 1195180,
-      "startFrame": 35958,
-      "durationMs": 3160,
-      "durationInFrames": 95,
-      "audioFile": "audio/scene-243.mp3",
-      "segments": [
-        {
-          "text": "人々がそれに耐えられるかどうかである。",
-          "startFrame": 0,
-          "durationInFrames": 91
-        }
-      ]
-    },
-    {
-      "id": 244,
-      "startMs": 1198340,
-      "startFrame": 36053,
-      "durationMs": 8760,
-      "durationInFrames": 263,
-      "audioFile": "audio/scene-244.mp3",
-      "segments": [
-        {
-          "text": "定価は、その耐えられる範囲を示す線として、350年かけて、事務の側から道徳の側へ引っ越した。",
-          "startFrame": 0,
-          "durationInFrames": 259
-        }
-      ]
-    },
-    {
-      "id": 245,
-      "startMs": 1207100,
-      "startFrame": 36316,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-245.mp3",
-      "segments": [
-        {
-          "text": "では、その線を守ることは、支払った分だけ何かを返してくれるのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 158
-        }
-      ]
-    },
-    {
-      "id": 246,
-      "startMs": 1212500,
-      "startFrame": 36478,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-246.mp3",
-      "segments": [
-        {
-          "text": "値段で配ることを禁じたなら、別の何かで配らなければならない。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 247,
-      "startMs": 1217100,
-      "startFrame": 36616,
-      "durationMs": 4610,
-      "durationInFrames": 139,
-      "audioFile": "audio/scene-247.mp3",
-      "segments": [
-        {
-          "text": "使われるのは、時間と、運と、手間だ。",
-          "startFrame": 0,
-          "durationInFrames": 125
-        }
-      ]
-    },
-    {
-      "id": 248,
-      "startMs": 1221710,
-      "startFrame": 36755,
-      "durationMs": 14200,
-      "durationInFrames": 426,
-      "audioFile": "audio/scene-248.mp3",
-      "segments": [
-        {
-          "text": "2025年、国内のライブ市場の動員は9223万人、公演回数は10万820回、1公演あたりの平均動員は915人だった。",
-          "startFrame": 0,
-          "durationInFrames": 422
-        }
-      ]
-    },
-    {
-      "id": 249,
-      "startMs": 1235910,
-      "startFrame": 37181,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-249.mp3",
-      "segments": [
-        {
-          "text": "注目すべきは伸び方の差である。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 250,
-      "startMs": 1238270,
-      "startFrame": 37252,
-      "durationMs": 7170,
-      "durationInFrames": 216,
-      "audioFile": "audio/scene-250.mp3",
-      "segments": [
-        {
-          "text": "市場規模は12.6パーセント伸びたのに対し、公演回数の伸びは6.0パーセントにとどまった。",
-          "startFrame": 0,
-          "durationInFrames": 202
-        }
-      ]
-    },
-    {
-      "id": 251,
-      "startMs": 1245440,
-      "startFrame": 37468,
-      "durationMs": 5010,
-      "durationInFrames": 151,
-      "audioFile": "audio/scene-251.mp3",
-      "segments": [
-        {
-          "text": "増えているのは公演の数ではなく、一公演あたりの規模と単価の方だ。",
-          "startFrame": 0,
-          "durationInFrames": 137
-        }
-      ]
-    },
-    {
-      "id": 252,
-      "startMs": 1250450,
-      "startFrame": 37619,
-      "durationMs": 20850,
-      "durationInFrames": 626,
-      "audioFile": "audio/scene-252.mp3",
-      "segments": [
-        {
-          "text": "調査を行ったぴあ総研は、同じ発表の中で、舞台技術者の不足、施設の老朽化、中規模ホールの不足を挙げ、限られた人材と施設を効率的に使うために、大規模公演と人気コンテンツへの集中が進んでいると書いている。",
-          "startFrame": 0,
-          "durationInFrames": 612
-        }
-      ]
-    },
-    {
-      "id": 253,
-      "startMs": 1271300,
-      "startFrame": 38245,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-253.mp3",
-      "segments": [
-        {
-          "text": "理由は、転売業者が席を奪っているからではない。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 254,
-      "startMs": 1274700,
-      "startFrame": 38347,
-      "durationMs": 7890,
-      "durationInFrames": 237,
-      "audioFile": "audio/scene-254.mp3",
-      "segments": [
-        {
-          "text": "定価という上限が動かせない以上、供給側が増やせるのは席の値段ではなく、席の集中度の方だからだ。",
-          "startFrame": 0,
-          "durationInFrames": 223
-        }
-      ]
-    },
-    {
-      "id": 255,
-      "startMs": 1282590,
-      "startFrame": 38584,
-      "durationMs": 8120,
-      "durationInFrames": 244,
-      "audioFile": "audio/scene-255.mp3",
-      "segments": [
-        {
-          "text": "2026年3月、ライブネイションはアメリカ司法省などとの間で、2億8000万ドルの和解に合意した。",
-          "startFrame": 0,
-          "durationInFrames": 240
-        }
-      ]
-    },
-    {
-      "id": 256,
-      "startMs": 1290710,
-      "startFrame": 38828,
-      "durationMs": 6360,
-      "durationInFrames": 191,
-      "audioFile": "audio/scene-256.mp3",
-      "segments": [
-        {
-          "text": "一部の会場でサービス手数料に上限を設けることが、条件のひとつだった。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 257,
-      "startMs": 1297070,
-      "startFrame": 39019,
-      "durationMs": 5080,
-      "durationInFrames": 153,
-      "audioFile": "audio/scene-257.mp3",
-      "segments": [
-        {
-          "text": "だが33の州とコロンビア特別区は和解に応じず、裁判を続けた。",
-          "startFrame": 0,
-          "durationInFrames": 149
-        }
-      ]
-    },
-    {
-      "id": 258,
-      "startMs": 1302150,
-      "startFrame": 39172,
-      "durationMs": 15160,
-      "durationInFrames": 455,
-      "audioFile": "audio/scene-258.mp3",
-      "segments": [
-        {
-          "text": "そして2026年4月15日、マンハッタンの連邦地裁で、陪審は4日間の評議のすえ、同社が独占として振る舞い、チケット購入者から過大に徴収していたと認定した。",
-          "startFrame": 0,
-          "durationInFrames": 451
-        }
-      ]
-    },
-    {
-      "id": 259,
-      "startMs": 1317310,
-      "startFrame": 39627,
-      "durationMs": 3970,
-      "durationInFrames": 120,
-      "audioFile": "audio/scene-259.mp3",
-      "segments": [
-        {
-          "text": "同社は、これで終わりではない、控訴すると表明している。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 260,
-      "startMs": 1321280,
-      "startFrame": 39747,
-      "durationMs": 7080,
-      "durationInFrames": 213,
-      "audioFile": "audio/scene-260.mp3",
-      "segments": [
-        {
-          "text": "評決が出たその日も、同社のサイトでは、翌月の公演のチケットが、いつも通りの手順で売られていた。",
-          "startFrame": 0,
-          "durationInFrames": 209
-        }
-      ]
-    },
-    {
-      "id": 261,
-      "startMs": 1328360,
-      "startFrame": 39960,
-      "durationMs": 4200,
-      "durationInFrames": 126,
-      "audioFile": "audio/scene-261.mp3",
-      "segments": [
-        {
-          "text": "定価という約束は、供給を増やせる商品でだけ機能する。",
-          "startFrame": 0,
-          "durationInFrames": 122
-        }
-      ]
-    },
-    {
-      "id": 262,
-      "startMs": 1332560,
-      "startFrame": 40086,
-      "durationMs": 7890,
-      "durationInFrames": 237,
-      "audioFile": "audio/scene-262.mp3",
-      "segments": [
-        {
-          "text": "増やせない商品に定価を課した瞬間、それは公正の装置から、行列と抽選を生む装置に変わる。",
-          "startFrame": 0,
-          "durationInFrames": 223
-        }
-      ]
-    },
-    {
-      "id": 263,
-      "startMs": 1340450,
-      "startFrame": 40323,
-      "durationMs": 4050,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-263.mp3",
-      "segments": [
-        {
-          "text": "では、その行列に並んでいるのは、いったい誰なのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 264,
-      "startMs": 1344500,
-      "startFrame": 40445,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-264.mp3",
-      "segments": [
-        {
-          "text": "ここまでの道のりを振り返ろう。",
-          "startFrame": 0,
-          "durationInFrames": 55
-        }
-      ]
-    },
-    {
-      "id": 265,
-      "startMs": 1346500,
-      "startFrame": 40505,
-      "durationMs": 10360,
-      "durationInFrames": 311,
-      "audioFile": "audio/scene-265.mp3",
-      "segments": [
-        {
-          "text": "行動経済学は、需要に乗じた値上げを82パーセントの人間が罪と判定し、判定されているのが幅ではなく理由であることを示した。",
-          "startFrame": 0,
-          "durationInFrames": 307
-        }
-      ]
-    },
-    {
-      "id": 266,
-      "startMs": 1356860,
-      "startFrame": 40816,
-      "durationMs": 12920,
-      "durationInFrames": 388,
-      "audioFile": "audio/scene-266.mp3",
-      "segments": [
-        {
-          "text": "取引効用の研究は、同じビールの値段が売り手によって1.8倍動くこと、つまり我々が見ているのは商品ではなく売り手の資格であることを描き出した。",
-          "startFrame": 0,
-          "durationInFrames": 384
-        }
-      ]
-    },
-    {
-      "id": 267,
-      "startMs": 1369780,
-      "startFrame": 41204,
-      "durationMs": 9560,
-      "durationInFrames": 287,
-      "audioFile": "audio/scene-267.mp3",
-      "segments": [
-        {
-          "text": "実験経済学は、人間が自腹を切ってでも他人を罰し、その引き金が計算ではなく怒りであることを突きつけた。",
-          "startFrame": 0,
-          "durationInFrames": 283
-        }
-      ]
-    },
-    {
-      "id": 268,
-      "startMs": 1379340,
-      "startFrame": 41491,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-268.mp3",
-      "segments": [
-        {
-          "text": "霊長類の研究は、その回路が人間だけの発明ではないかもしれないと示唆した。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 269,
-      "startMs": 1384660,
-      "startFrame": 41651,
-      "durationMs": 7960,
-      "durationInFrames": 239,
-      "audioFile": "audio/scene-269.mp3",
-      "segments": [
-        {
-          "text": "帳簿は、転売を憎む舞台のちょうど裏側で、転売そのものが三重の手数料源になっていたことを映していた。",
+          "text": "一方、相手が多めに払ってくれた、あるいは全額払ってくれたと答えた女性は57.6パーセントだった。",
           "startFrame": 0,
           "durationInFrames": 235
         }
       ]
     },
     {
-      "id": 270,
-      "startMs": 1392620,
-      "startFrame": 41890,
-      "durationMs": 10600,
-      "durationInFrames": 318,
-      "audioFile": "audio/scene-270.mp3",
+      "id": 5,
+      "startMs": 27380,
+      "startFrame": 824,
+      "durationMs": 2770,
+      "durationInFrames": 84,
+      "audioFile": "audio/scene-5.mp3",
       "segments": [
         {
-          "text": "そして文明史は、我々が守れと叫んでいる定価が、350年前に事務作業を減らしたかった商人の発明であることを教えた。",
+          "text": "同じ夜の、同じ会計のはずである。",
           "startFrame": 0,
-          "durationInFrames": 314
+          "durationInFrames": 70
         }
       ]
     },
     {
-      "id": 271,
-      "startMs": 1403220,
-      "startFrame": 42208,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-271.mp3",
-      "segments": [
-        {
-          "text": "定価とは、正しい値段のことではない。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 272,
-      "startMs": 1405820,
-      "startFrame": 42286,
+      "id": 6,
+      "startMs": 30150,
+      "startFrame": 908,
       "durationMs": 3160,
       "durationInFrames": 95,
-      "audioFile": "audio/scene-272.mp3",
+      "audioFile": "audio/scene-6.mp3",
       "segments": [
         {
-          "text": "誰が値上げしていいかを決める、社会の許可証だ。",
+          "text": "それなのに、14.8ポイントの差が開いている。",
           "startFrame": 0,
           "durationInFrames": 91
         }
       ]
     },
     {
-      "id": 273,
-      "startMs": 1408980,
-      "startFrame": 42381,
-      "durationMs": 6600,
-      "durationInFrames": 198,
-      "audioFile": "audio/scene-273.mp3",
+      "id": 7,
+      "startMs": 33310,
+      "startFrame": 1003,
+      "durationMs": 2280,
+      "durationInFrames": 69,
+      "audioFile": "audio/scene-7.mp3",
       "segments": [
         {
-          "text": "同じ値上げでも、原価が上がったからだと言えば通り、欲しがる人が増えたからだと言えば通らない。",
+          "text": "規模の話もしておく。",
           "startFrame": 0,
-          "durationInFrames": 194
+          "durationInFrames": 65
         }
       ]
     },
     {
-      "id": 274,
-      "startMs": 1415580,
-      "startFrame": 42579,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-274.mp3",
+      "id": 8,
+      "startMs": 35590,
+      "startFrame": 1072,
+      "durationMs": 20040,
+      "durationInFrames": 602,
+      "audioFile": "audio/scene-8.mp3",
       "segments": [
         {
-          "text": "転売する者が憎まれているのは、高く売ったからではない。",
+          "text": "国税庁の会社標本調査によれば、日本の法人が交際費等として計上した金額は、令和4年度分が3兆5820億円、令和5年度分が4兆1841億円、令和6年度分が4兆4139億円。",
           "startFrame": 0,
-          "durationInFrames": 108
+          "durationInFrames": 598
         }
       ]
     },
     {
-      "id": 275,
-      "startMs": 1419300,
-      "startFrame": 42691,
+      "id": 9,
+      "startMs": 55630,
+      "startFrame": 1674,
+      "durationMs": 6130,
+      "durationInFrames": 184,
+      "audioFile": "audio/scene-9.mp3",
+      "segments": [
+        {
+          "text": "2年続けて増えており、令和5年度の伸びは16.8パーセントに達した。",
+          "startFrame": 0,
+          "durationInFrames": 170
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "startMs": 61760,
+      "startFrame": 1858,
+      "durationMs": 2920,
+      "durationInFrames": 88,
+      "audioFile": "audio/scene-10.mp3",
+      "segments": [
+        {
+          "text": "世間はこれを、たかりと呼んで笑う。",
+          "startFrame": 0,
+          "durationInFrames": 84
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "startMs": 64680,
+      "startFrame": 1946,
       "durationMs": 5160,
       "durationInFrames": 155,
-      "audioFile": "audio/scene-275.mp3",
+      "audioFile": "audio/scene-11.mp3",
       "segments": [
         {
-          "text": "その許可証を持たないまま、値段を付ける側の椅子に座ったからだ。",
+          "text": "奢られて当然という顔をした女たちの話として消費され、それで終わる。",
           "startFrame": 0,
           "durationInFrames": 151
         }
       ]
     },
     {
-      "id": 276,
-      "startMs": 1424460,
-      "startFrame": 42846,
+      "id": 12,
+      "startMs": 69840,
+      "startFrame": 2101,
+      "durationMs": 4200,
+      "durationInFrames": 126,
+      "audioFile": "audio/scene-12.mp3",
+      "segments": [
+        {
+          "text": "誰も、その席で何と何が交換されたのかを数えない。",
+          "startFrame": 0,
+          "durationInFrames": 122
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "startMs": 74040,
+      "startFrame": 2227,
       "durationMs": 2000,
       "durationInFrames": 60,
-      "audioFile": "audio/scene-276.mp3",
+      "audioFile": "audio/scene-13.mp3",
       "segments": [
         {
-          "text": "最後に、ひとつだけ。",
+          "text": "だが、ひとつだけ引っかかることがある。",
           "startFrame": 0,
-          "durationInFrames": 29
+          "durationInFrames": 53
         }
       ]
     },
     {
-      "id": 277,
-      "startMs": 1426460,
-      "startFrame": 42906,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-277.mp3",
+      "id": 14,
+      "startMs": 76040,
+      "startFrame": 2287,
+      "durationMs": 3970,
+      "durationInFrames": 120,
+      "audioFile": "audio/scene-14.mp3",
       "segments": [
         {
-          "text": "この動画を見ているあいだ、あなたは何を感じていただろうか。",
+          "text": "人間は、返さない相手を許さない生き物だ。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "startMs": 80010,
+      "startFrame": 2407,
+      "durationMs": 6290,
+      "durationInFrames": 189,
+      "audioFile": "audio/scene-15.mp3",
+      "segments": [
+        {
+          "text": "自分が損をしてでも、ただ乗りする者を罰することが、実験で繰り返し確かめられている。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "startMs": 86300,
+      "startFrame": 2596,
+      "durationMs": 2600,
+      "durationInFrames": 78,
+      "audioFile": "audio/scene-16.mp3",
+      "segments": [
+        {
+          "text": "それなのに、この関係は一晩で終わらない。",
+          "startFrame": 0,
+          "durationInFrames": 74
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "startMs": 88900,
+      "startFrame": 2674,
+      "durationMs": 4440,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-17.mp3",
+      "segments": [
+        {
+          "text": "同じ顔ぶれで、何か月も、何年も続いていく。",
           "startFrame": 0,
           "durationInFrames": 130
         }
       ]
     },
     {
-      "id": 278,
-      "startMs": 1430900,
-      "startFrame": 43040,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-278.mp3",
+      "id": 18,
+      "startMs": 93340,
+      "startFrame": 2808,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-18.mp3",
       "segments": [
         {
-          "text": "買ったときより高い値段でフリマアプリに出したことのある人は、少なくないはずだ。",
+          "text": "返していないのなら、彼女たちはとっくに排除されているはずなのだ。",
           "startFrame": 0,
-          "durationInFrames": 132
+          "durationInFrames": 125
         }
       ]
     },
     {
-      "id": 279,
-      "startMs": 1435420,
-      "startFrame": 43176,
-      "durationMs": 10280,
-      "durationInFrames": 309,
-      "audioFile": "audio/scene-279.mp3",
+      "id": 19,
+      "startMs": 97620,
+      "startFrame": 2937,
+      "durationMs": 3010,
+      "durationInFrames": 91,
+      "audioFile": "audio/scene-19.mp3",
       "segments": [
         {
-          "text": "数年前に買った時計の相場や、値上がりした株や、住んでいる家の査定額を、一度も嬉しいと思わなかった人は、もっと少ないだろう。",
+          "text": "では、彼女たちは何を払っているのか。",
           "startFrame": 0,
-          "durationInFrames": 305
+          "durationInFrames": 77
         }
       ]
     },
     {
-      "id": 280,
-      "startMs": 1445700,
-      "startFrame": 43485,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-280.mp3",
+      "id": 20,
+      "startMs": 100630,
+      "startFrame": 3028,
+      "durationMs": 6360,
+      "durationInFrames": 191,
+      "audioFile": "audio/scene-20.mp3",
       "segments": [
         {
-          "text": "あの喜びと、転売への怒りは、同じ一枚の値札の表と裏である。",
+          "text": "今日はその見えない会計を、互恵性の進化と人類の経済史から解剖してみたい。",
           "startFrame": 0,
-          "durationInFrames": 185
+          "durationInFrames": 187
         }
       ]
     },
     {
-      "id": 281,
-      "startMs": 1451980,
-      "startFrame": 43674,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-281.mp3",
+      "id": 21,
+      "startMs": 106990,
+      "startFrame": 3219,
+      "durationMs": 3000,
+      "durationInFrames": 90,
+      "audioFile": "audio/scene-21.mp3",
       "segments": [
         {
-          "text": "違うのは、値段を付けているのが自分か、他人かだけだ。",
+          "text": "まず、誰もが最初に思いつく答えから検証しよう。",
           "startFrame": 0,
-          "durationInFrames": 130
+          "durationInFrames": 86
         }
       ]
     },
     {
-      "id": 282,
-      "startMs": 1456420,
-      "startFrame": 43808,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-282.mp3",
+      "id": 22,
+      "startMs": 109990,
+      "startFrame": 3309,
+      "durationMs": 4200,
+      "durationInFrames": 126,
+      "audioFile": "audio/scene-22.mp3",
       "segments": [
         {
-          "text": "この動画の下にある登録ボタンもまた、値段の付いていない取引のひとつだ。",
+          "text": "若さと容姿そのものが対価なのだ、という説明である。",
           "startFrame": 0,
-          "durationInFrames": 144
+          "durationInFrames": 122
         }
       ]
     },
     {
-      "id": 283,
-      "startMs": 1461340,
-      "startFrame": 43956,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-283.mp3",
+      "id": 23,
+      "startMs": 114190,
+      "startFrame": 3435,
+      "durationMs": 4370,
+      "durationInFrames": 132,
+      "audioFile": "audio/scene-23.mp3",
       "segments": [
         {
-          "text": "仕組みを全部知った上で、それでも押す価値があると思っていただけたなら、押していただけると嬉しいです。",
+          "text": "確かに、容姿に市場価格がつくことは否定しにくい。",
           "startFrame": 0,
-          "durationInFrames": 185
+          "durationInFrames": 118
         }
       ]
     },
     {
-      "id": 284,
-      "startMs": 1467620,
-      "startFrame": 44145,
-      "durationMs": 3480,
+      "id": 24,
+      "startMs": 118560,
+      "startFrame": 3567,
+      "durationMs": 2920,
+      "durationInFrames": 88,
+      "audioFile": "audio/scene-24.mp3",
+      "segments": [
+        {
+          "text": "だが、この説明には決定的な弱点がある。",
+          "startFrame": 0,
+          "durationInFrames": 84
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "startMs": 121480,
+      "startFrame": 3655,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-25.mp3",
+      "segments": [
+        {
+          "text": "容姿が対価なら、支払いは一回で完結するはずだ。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "startMs": 124800,
+      "startFrame": 3755,
+      "durationMs": 2200,
+      "durationInFrames": 66,
+      "audioFile": "audio/scene-26.mp3",
+      "segments": [
+        {
+          "text": "買った、受け取った、終わり。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "startMs": 127000,
+      "startFrame": 3821,
+      "durationMs": 4760,
+      "durationInFrames": 143,
+      "audioFile": "audio/scene-27.mp3",
+      "segments": [
+        {
+          "text": "ところが実際に起きているのは、同じ相手との関係が続くことのほうである。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "startMs": 131760,
+      "startFrame": 3964,
+      "durationMs": 3730,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-28.mp3",
+      "segments": [
+        {
+          "text": "一回きりの取引では、継続を説明できない。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "startMs": 135490,
+      "startFrame": 4076,
+      "durationMs": 10600,
+      "durationInFrames": 318,
+      "audioFile": "audio/scene-29.mp3",
+      "segments": [
+        {
+          "text": "1971年、生物学者のロバート・トリヴァースが、血縁関係のない個体どうしがなぜ助け合えるのかを説明する論文を発表した。",
+          "startFrame": 0,
+          "durationInFrames": 314
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "startMs": 146090,
+      "startFrame": 4394,
+      "durationMs": 3000,
+      "durationInFrames": 90,
+      "audioFile": "audio/scene-30.mp3",
+      "segments": [
+        {
+          "text": "互恵的利他主義と呼ばれる考え方である。",
+          "startFrame": 0,
+          "durationInFrames": 86
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "startMs": 149090,
+      "startFrame": 4484,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-31.mp3",
+      "segments": [
+        {
+          "text": "いまコストを払って相手を助け、あとで返してもらう。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "startMs": 153370,
+      "startFrame": 4613,
+      "durationMs": 3490,
       "durationInFrames": 105,
-      "audioFile": "audio/scene-284.mp3",
+      "audioFile": "audio/scene-32.mp3",
       "segments": [
         {
-          "text": "そんなことを、また考えすぎてしまいました。",
+          "text": "この取引が成立するには条件がひとつある。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "startMs": 156860,
+      "startFrame": 4718,
+      "durationMs": 4450,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-33.mp3",
+      "segments": [
+        {
+          "text": "裏切り者を検出し、記憶し、次から排除できることだ。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "startMs": 161310,
+      "startFrame": 4852,
+      "durationMs": 3810,
+      "durationInFrames": 115,
+      "audioFile": "audio/scene-34.mp3",
+      "segments": [
+        {
+          "text": "トリヴァースが強調したのは、この検出装置のほうだった。",
           "startFrame": 0,
           "durationInFrames": 101
         }
       ]
     },
     {
-      "id": 285,
-      "startMs": 1471100,
-      "startFrame": 44250,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-285.mp3",
+      "id": 35,
+      "startMs": 165120,
+      "startFrame": 4967,
+      "durationMs": 7570,
+      "durationInFrames": 228,
+      "audioFile": "audio/scene-35.mp3",
       "segments": [
         {
-          "text": "よろしければチャンネル登録と高評価をお願いします。",
+          "text": "人間の脳には、誰が返して誰が返さなかったかを覚えておくための、専用の帳簿が積まれている。",
+          "startFrame": 0,
+          "durationInFrames": 214
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "startMs": 172690,
+      "startFrame": 5195,
+      "durationMs": 4920,
+      "durationInFrames": 148,
+      "audioFile": "audio/scene-36.mp3",
+      "segments": [
+        {
+          "text": "その帳簿が実際にどう使われるかを、実験で目に見える形にした研究がある。",
+          "startFrame": 0,
+          "durationInFrames": 144
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "startMs": 177610,
+      "startFrame": 5343,
+      "durationMs": 8120,
+      "durationInFrames": 244,
+      "audioFile": "audio/scene-37.mp3",
+      "segments": [
+        {
+          "text": "2002年、経済学者のエルンスト・フェールとシモン・ゲヒターが、ネイチャー誌の第415巻に発表した論文だ。",
+          "startFrame": 0,
+          "durationInFrames": 240
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "startMs": 185730,
+      "startFrame": 5587,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-38.mp3",
+      "segments": [
+        {
+          "text": "手順はこうである。",
+          "startFrame": 0,
+          "durationInFrames": 41
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "startMs": 187730,
+      "startFrame": 5647,
+      "durationMs": 4120,
+      "durationInFrames": 124,
+      "audioFile": "audio/scene-39.mp3",
+      "segments": [
+        {
+          "text": "見知らぬ者どうしを4人一組にし、各自に元手を渡す。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "startMs": 191850,
+      "startFrame": 5771,
+      "durationMs": 4200,
+      "durationInFrames": 126,
+      "audioFile": "audio/scene-40.mp3",
+      "segments": [
+        {
+          "text": "共通の箱に入れた額は増えて全員に等分される。",
+          "startFrame": 0,
+          "durationInFrames": 122
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "startMs": 196050,
+      "startFrame": 5897,
+      "durationMs": 7240,
+      "durationInFrames": 218,
+      "audioFile": "audio/scene-41.mp3",
+      "segments": [
+        {
+          "text": "全員が全額を入れれば全員が得をするが、自分だけ入れずに他人の分を受け取れば、もっと得をする。",
+          "startFrame": 0,
+          "durationInFrames": 214
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "startMs": 203290,
+      "startFrame": 6115,
+      "durationMs": 2840,
+      "durationInFrames": 86,
+      "audioFile": "audio/scene-42.mp3",
+      "segments": [
+        {
+          "text": "匿名で、二度と会わない相手との取引だ。",
+          "startFrame": 0,
+          "durationInFrames": 82
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "startMs": 206130,
+      "startFrame": 6201,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-43.mp3",
+      "segments": [
+        {
+          "text": "予想どおり、回を重ねるごとに投入額は下がっていった。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "startMs": 210410,
+      "startFrame": 6330,
+      "durationMs": 3240,
+      "durationInFrames": 98,
+      "audioFile": "audio/scene-44.mp3",
+      "segments": [
+        {
+          "text": "ところが二人は、ここに条件をひとつ足す。",
+          "startFrame": 0,
+          "durationInFrames": 94
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "startMs": 213650,
+      "startFrame": 6428,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-45.mp3",
+      "segments": [
+        {
+          "text": "自分の取り分を減らしてでも、ただ乗りした相手に罰を与えられるようにしたのだ。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "startMs": 218810,
+      "startFrame": 6583,
+      "durationMs": 2680,
+      "durationInFrames": 81,
+      "audioFile": "audio/scene-46.mp3",
+      "segments": [
+        {
+          "text": "罰しても自分には一円も戻らない。",
+          "startFrame": 0,
+          "durationInFrames": 77
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "startMs": 221490,
+      "startFrame": 6664,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-47.mp3",
+      "segments": [
+        {
+          "text": "それでも被験者たちは、次々と自腹を切って罰した。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "startMs": 224890,
+      "startFrame": 6766,
+      "durationMs": 4610,
+      "durationInFrames": 139,
+      "audioFile": "audio/scene-48.mp3",
+      "segments": [
+        {
+          "text": "そして投入額は跳ね上がり、高い水準のまま維持された。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "startMs": 229500,
+      "startFrame": 6905,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-49.mp3",
+      "segments": [
+        {
+          "text": "金曜の午前1時すぎ、西麻布の交差点を想像してみて欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "startMs": 234100,
+      "startFrame": 7043,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-50.mp3",
+      "segments": [
+        {
+          "text": "ビルの2階の店から、6人が出てくる。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "startMs": 236860,
+      "startFrame": 7126,
+      "durationMs": 4360,
+      "durationInFrames": 131,
+      "audioFile": "audio/scene-51.mp3",
+      "segments": [
+        {
+          "text": "会計を済ませたのは、最後に階段を降りてきた男性ひとりだ。",
+          "startFrame": 0,
+          "durationInFrames": 127
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "startMs": 241220,
+      "startFrame": 7257,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-52.mp3",
+      "segments": [
+        {
+          "text": "伝票を見た者は誰もいない。",
+          "startFrame": 0,
+          "durationInFrames": 53
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "startMs": 243220,
+      "startFrame": 7317,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-53.mp3",
+      "segments": [
+        {
+          "text": "歩道でタクシーが2台止まり、4人が乗り込んで消える。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "startMs": 246620,
+      "startFrame": 7419,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-54.mp3",
+      "segments": [
+        {
+          "text": "残ったふたりは、まだ次の店の話をしている。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "startMs": 250340,
+      "startFrame": 7531,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-55.mp3",
+      "segments": [
+        {
+          "text": "それでも、この集まりは来週も開かれる。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "startMs": 253100,
+      "startFrame": 7614,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-56.mp3",
+      "segments": [
+        {
+          "text": "誰も排除されていない。",
+          "startFrame": 0,
+          "durationInFrames": 50
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "startMs": 255100,
+      "startFrame": 7674,
+      "durationMs": 5960,
+      "durationInFrames": 179,
+      "audioFile": "audio/scene-57.mp3",
+      "segments": [
+        {
+          "text": "ということは、フェールとゲヒターが観察した罰は、この場では発動していないということになる。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "startMs": 261060,
+      "startFrame": 7853,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-58.mp3",
+      "segments": [
+        {
+          "text": "返っていないのではない。",
+          "startFrame": 0,
+          "durationInFrames": 41
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "startMs": 263060,
+      "startFrame": 7913,
+      "durationMs": 3000,
+      "durationInFrames": 90,
+      "audioFile": "audio/scene-59.mp3",
+      "segments": [
+        {
+          "text": "我々が数えていないのだ。",
+          "startFrame": 0,
+          "durationInFrames": 86
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "startMs": 266060,
+      "startFrame": 8003,
+      "durationMs": 3800,
+      "durationInFrames": 114,
+      "audioFile": "audio/scene-60.mp3",
+      "segments": [
+        {
+          "text": "ここまで聞くと、話の着地点は見えた気がするだろう。",
+          "startFrame": 0,
+          "durationInFrames": 110
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "startMs": 269860,
+      "startFrame": 8117,
+      "durationMs": 3480,
+      "durationInFrames": 105,
+      "audioFile": "audio/scene-61.mp3",
+      "segments": [
+        {
+          "text": "つまり体か、あるいは将来の結婚が対価なのだろうと。",
+          "startFrame": 0,
+          "durationInFrames": 101
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "startMs": 273340,
+      "startFrame": 8222,
+      "durationMs": 3080,
+      "durationInFrames": 93,
+      "audioFile": "audio/scene-62.mp3",
+      "segments": [
+        {
+          "text": "事実、その線で語られる記事はすでに多い。",
+          "startFrame": 0,
+          "durationInFrames": 89
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "startMs": 276420,
+      "startFrame": 8315,
+      "durationMs": 2520,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-63.mp3",
+      "segments": [
+        {
+          "text": "だが、この動画はそこで終わらない。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "startMs": 278940,
+      "startFrame": 8391,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-64.mp3",
+      "segments": [
+        {
+          "text": "本当に興味深いのは、支払いの向きというものが、人類の歴史のなかで何度も逆さまになってきたという事実のほうだ。",
+          "startFrame": 0,
+          "durationInFrames": 254
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "startMs": 287540,
+      "startFrame": 8649,
+      "durationMs": 3800,
+      "durationInFrames": 114,
+      "audioFile": "audio/scene-65.mp3",
+      "segments": [
+        {
+          "text": "金は、いつから男から女へ流れるようになったのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 110
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "startMs": 291340,
+      "startFrame": 8763,
+      "durationMs": 8840,
+      "durationInFrames": 266,
+      "audioFile": "audio/scene-66.mp3",
+      "segments": [
+        {
+          "text": "1964年、社会学者のピーター・ブラウが、人間関係を交換として記述する枠組みを整理した。",
+          "startFrame": 0,
+          "durationInFrames": 262
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "startMs": 300180,
+      "startFrame": 9029,
+      "durationMs": 5560,
+      "durationInFrames": 167,
+      "audioFile": "audio/scene-67.mp3",
+      "segments": [
+        {
+          "text": "ブラウが重視したのは、交換される二つのものが同じ通貨である必要はない、という一点である。",
+          "startFrame": 0,
+          "durationInFrames": 163
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "startMs": 305740,
+      "startFrame": 9196,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-68.mp3",
+      "segments": [
+        {
+          "text": "片方が金を出し、もう片方が地位や注目や同席を出す。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "startMs": 310820,
+      "startFrame": 9349,
+      "durationMs": 5640,
+      "durationInFrames": 170,
+      "audioFile": "audio/scene-69.mp3",
+      "segments": [
+        {
+          "text": "この非対称な交換には、支払い量を比べるための共通の物差しが存在しない。",
+          "startFrame": 0,
+          "durationInFrames": 166
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "startMs": 316460,
+      "startFrame": 9519,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-70.mp3",
+      "segments": [
+        {
+          "text": "だから外から見ると、片方だけが払っているように見える。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "startMs": 320020,
+      "startFrame": 9626,
+      "durationMs": 4440,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-71.mp3",
+      "segments": [
+        {
+          "text": "同じ非対称を、経済学は世界地図の規模で確かめている。",
+          "startFrame": 0,
+          "durationInFrames": 130
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "startMs": 324460,
+      "startFrame": 9760,
+      "durationMs": 12200,
+      "durationInFrames": 366,
+      "audioFile": "audio/scene-72.mp3",
+      "segments": [
+        {
+          "text": "2007年、ブリティッシュ・コロンビア大学のシワン・アンダーソンが、婚姻のときに動く金を整理した論文を、ジャーナル・オブ・エコノミック・パースペクティブズ誌に発表した。",
+          "startFrame": 0,
+          "durationInFrames": 362
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "startMs": 336660,
+      "startFrame": 10126,
+      "durationMs": 2040,
+      "durationInFrames": 62,
+      "audioFile": "audio/scene-73.mp3",
+      "segments": [
+        {
+          "text": "婚資には二つの型がある。",
+          "startFrame": 0,
+          "durationInFrames": 58
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "startMs": 338700,
+      "startFrame": 10188,
+      "durationMs": 10680,
+      "durationInFrames": 321,
+      "audioFile": "audio/scene-74.mp3",
+      "segments": [
+        {
+          "text": "花婿の側が花嫁の側に払うブライドプライスと、花嫁の側が花婿の側に払うダウリー、つまり持参金である。",
+          "startFrame": 0,
+          "durationInFrames": 317
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "startMs": 349380,
+      "startFrame": 10509,
+      "durationMs": 10440,
+      "durationInFrames": 314,
+      "audioFile": "audio/scene-75.mp3",
+      "segments": [
+        {
+          "text": "マードックの民族誌アトラスに収められた1167の前工業社会のうち、およそ3分の2でブライドプライスが行われていた。",
+          "startFrame": 0,
+          "durationInFrames": 310
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "startMs": 359820,
+      "startFrame": 10823,
+      "durationMs": 2680,
+      "durationInFrames": 81,
+      "audioFile": "audio/scene-76.mp3",
+      "segments": [
+        {
+          "text": "額も小さくない。",
+          "startFrame": 0,
+          "durationInFrames": 77
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "startMs": 362500,
+      "startFrame": 10904,
+      "durationMs": 4120,
+      "durationInFrames": 124,
+      "audioFile": "audio/scene-77.mp3",
+      "segments": [
+        {
+          "text": "地域によっては、世帯の年収の4倍から6倍に達する。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "startMs": 366620,
+      "startFrame": 11028,
+      "durationMs": 3080,
+      "durationInFrames": 93,
+      "audioFile": "audio/scene-78.mp3",
+      "segments": [
+        {
+          "text": "では、なぜ一部の社会だけが逆向きになったのか。",
+          "startFrame": 0,
+          "durationInFrames": 89
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "startMs": 369700,
+      "startFrame": 11121,
+      "durationMs": 9800,
+      "durationInFrames": 294,
+      "audioFile": "audio/scene-79.mp3",
+      "segments": [
+        {
+          "text": "2013年、アルベルト・アレシナ、パオラ・ジュリアーノ、ネイサン・ナンの三人が、クオータリー・ジャーナル・オブ・エコノミクス誌に手がかりを出した。",
+          "startFrame": 0,
+          "durationInFrames": 290
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "startMs": 379500,
+      "startFrame": 11415,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-80.mp3",
+      "segments": [
+        {
+          "text": "着目したのは、鋤である。",
+          "startFrame": 0,
+          "durationInFrames": 48
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "startMs": 381500,
+      "startFrame": 11475,
+      "durationMs": 7240,
+      "durationInFrames": 218,
+      "audioFile": "audio/scene-81.mp3",
+      "segments": [
+        {
+          "text": "鍬で耕す農業は女性も担えるが、鋤は上半身の力と大型家畜の扱いを要求する。",
+          "startFrame": 0,
+          "durationInFrames": 214
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "startMs": 388740,
+      "startFrame": 11693,
+      "durationMs": 9400,
+      "durationInFrames": 282,
+      "audioFile": "audio/scene-82.mp3",
+      "segments": [
+        {
+          "text": "三人は、その土地が鋤向きの作物に適しているかという地理条件を使い、祖先が鋤を使っていた集団を特定した。",
+          "startFrame": 0,
+          "durationInFrames": 278
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "startMs": 398140,
+      "startFrame": 11975,
+      "durationMs": 7320,
+      "durationInFrames": 220,
+      "audioFile": "audio/scene-83.mp3",
+      "segments": [
+        {
+          "text": "結果、鋤の社会の子孫は、現代でも女性の労働参加率が低く、性役割に保守的な意識を持っていた。",
+          "startFrame": 0,
+          "durationInFrames": 216
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "startMs": 405460,
+      "startFrame": 12195,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-84.mp3",
+      "segments": [
+        {
+          "text": "移民として別の国へ移り住んだあとでも、その傾向は残っていた。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "startMs": 409980,
+      "startFrame": 12331,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-85.mp3",
+      "segments": [
+        {
+          "text": "ここで、人間から遠く離れた場所の話をさせて欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "startMs": 414580,
+      "startFrame": 12469,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-86.mp3",
+      "segments": [
+        {
+          "text": "アジサシという海鳥がいる。",
+          "startFrame": 0,
+          "durationInFrames": 53
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "startMs": 416580,
+      "startFrame": 12529,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-87.mp3",
+      "segments": [
+        {
+          "text": "繁殖期になると、オスは海で魚をとり、それをメスのもとへ運び続ける。",
+          "startFrame": 0,
+          "durationInFrames": 168
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "startMs": 422300,
+      "startFrame": 12701,
+      "durationMs": 6520,
+      "durationInFrames": 196,
+      "audioFile": "audio/scene-88.mp3",
+      "segments": [
+        {
+          "text": "求愛給餌と呼ばれる行動で、産卵の直前の数日間、メスはほとんど自分で餌をとらない。",
+          "startFrame": 0,
+          "durationInFrames": 192
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "startMs": 428820,
+      "startFrame": 12897,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-89.mp3",
+      "segments": [
+        {
+          "text": "口にしているのは、オスが運んできた魚だけになる。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "startMs": 432380,
+      "startFrame": 13004,
+      "durationMs": 11640,
+      "durationInFrames": 350,
+      "audioFile": "audio/scene-90.mp3",
+      "segments": [
+        {
+          "text": "1973年、鳥類学者のイアン・ニスベットが、ネイチャー誌の第241巻141ページに、この行動を測った論文を発表した。",
+          "startFrame": 0,
+          "durationInFrames": 346
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "startMs": 444020,
+      "startFrame": 13354,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-91.mp3",
+      "segments": [
+        {
+          "text": "オスがどれだけ運んだかを記録し、そのあとメスが産んだ卵の大きさと、その後の繁殖の成功を突き合わせたのである。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "startMs": 452460,
+      "startFrame": 13608,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-92.mp3",
+      "segments": [
+        {
+          "text": "よく運んだつがいほど、卵は大きく、巣立つ雛は多かった。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "startMs": 457540,
+      "startFrame": 13761,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-93.mp3",
+      "segments": [
+        {
+          "text": "ここで見誤ってはならないのは、どちらが払っているかである。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "startMs": 461500,
+      "startFrame": 13880,
+      "durationMs": 2200,
+      "durationInFrames": 66,
+      "audioFile": "audio/scene-94.mp3",
+      "segments": [
+        {
+          "text": "メスは魚を一匹も返していない。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "startMs": 463700,
+      "startFrame": 13946,
+      "durationMs": 2840,
+      "durationInFrames": 86,
+      "audioFile": "audio/scene-95.mp3",
+      "segments": [
+        {
+          "text": "だがメスは、その魚を卵に変えている。",
+          "startFrame": 0,
+          "durationInFrames": 82
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "startMs": 466540,
+      "startFrame": 14032,
+      "durationMs": 3880,
+      "durationInFrames": 117,
+      "audioFile": "audio/scene-96.mp3",
+      "segments": [
+        {
+          "text": "卵は、この生き物にとって最も高価な支出だ。",
           "startFrame": 0,
           "durationInFrames": 113
         }
       ]
     },
     {
-      "id": 286,
-      "startMs": 1474980,
-      "startFrame": 44367,
-      "durationMs": 3250,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-286.mp3",
+      "id": 97,
+      "startMs": 470420,
+      "startFrame": 14149,
+      "durationMs": 5090,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-97.mp3",
+      "segments": [
+        {
+          "text": "運ばれた魚は無償の贈り物ではなく、原材料の仕入れだった。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "startMs": 475510,
+      "startFrame": 14302,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-98.mp3",
+      "segments": [
+        {
+          "text": "ここで、あの席をもう一度眺めてみて欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "startMs": 478910,
+      "startFrame": 14404,
+      "durationMs": 8200,
+      "durationInFrames": 246,
+      "audioFile": "audio/scene-99.mp3",
+      "segments": [
+        {
+          "text": "テーブルの上に載っているのは料理と酒だが、その席が成立するために必要だったものは、それだけではない。",
+          "startFrame": 0,
+          "durationInFrames": 242
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "startMs": 487110,
+      "startFrame": 14650,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-100.mp3",
+      "segments": [
+        {
+          "text": "予定を空けること。",
+          "startFrame": 0,
+          "durationInFrames": 38
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "startMs": 489110,
+      "startFrame": 14710,
+      "durationMs": 2200,
+      "durationInFrames": 66,
+      "audioFile": "audio/scene-101.mp3",
+      "segments": [
+        {
+          "text": "着ていくものを用意すること。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "startMs": 491310,
+      "startFrame": 14776,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-102.mp3",
+      "segments": [
+        {
+          "text": "移動すること。",
+          "startFrame": 0,
+          "durationInFrames": 36
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "startMs": 493310,
+      "startFrame": 14836,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-103.mp3",
+      "segments": [
+        {
+          "text": "そして、その場に華があるという状態を保ち続けること。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "startMs": 496870,
+      "startFrame": 14943,
+      "durationMs": 3480,
+      "durationInFrames": 105,
+      "audioFile": "audio/scene-104.mp3",
+      "segments": [
+        {
+          "text": "伝票に印字されるのは、このうち一項目だけである。",
+          "startFrame": 0,
+          "durationInFrames": 101
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "startMs": 500350,
+      "startFrame": 15048,
+      "durationMs": 3890,
+      "durationInFrames": 117,
+      "audioFile": "audio/scene-105.mp3",
+      "segments": [
+        {
+          "text": "午前2時40分、タクシーの後部座席。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "startMs": 504240,
+      "startFrame": 15165,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-106.mp3",
+      "segments": [
+        {
+          "text": "スマートフォンの画面に、決済の通知が並んでいる。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "startMs": 507880,
+      "startFrame": 15275,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-107.mp3",
+      "segments": [
+        {
+          "text": "美容室、ネイル、洋服のサブスク。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "startMs": 511280,
+      "startFrame": 15377,
+      "durationMs": 3880,
+      "durationInFrames": 117,
+      "audioFile": "audio/scene-108.mp3",
+      "segments": [
+        {
+          "text": "合計は、今夜の会計とほとんど同じ額だ。",
+          "startFrame": 0,
+          "durationInFrames": 113
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "startMs": 515160,
+      "startFrame": 15494,
+      "durationMs": 4210,
+      "durationInFrames": 127,
+      "audioFile": "audio/scene-109.mp3",
+      "segments": [
+        {
+          "text": "窓の外を、まだ明かりの落ちていないビルが流れていく。",
+          "startFrame": 0,
+          "durationInFrames": 113
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "startMs": 519370,
+      "startFrame": 15621,
+      "durationMs": 2360,
+      "durationInFrames": 71,
+      "audioFile": "audio/scene-110.mp3",
+      "segments": [
+        {
+          "text": "冒頭の14.8ポイントに戻ろう。",
+          "startFrame": 0,
+          "durationInFrames": 67
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "startMs": 521730,
+      "startFrame": 15692,
+      "durationMs": 8370,
+      "durationInFrames": 252,
+      "audioFile": "audio/scene-111.mp3",
+      "segments": [
+        {
+          "text": "男性の72.4パーセントが多めに払ったと答え、そう認識している女性は57.6パーセントしかいなかった。",
+          "startFrame": 0,
+          "durationInFrames": 238
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "startMs": 530100,
+      "startFrame": 15944,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-112.mp3",
+      "segments": [
+        {
+          "text": "この差は、記憶違いでも見栄でもない可能性が高い。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "startMs": 533740,
+      "startFrame": 16054,
+      "durationMs": 5800,
+      "durationInFrames": 174,
+      "audioFile": "audio/scene-113.mp3",
+      "segments": [
+        {
+          "text": "払った側は自分の支出だけを数え、払われた側は自分の支出も数えている。",
+          "startFrame": 0,
+          "durationInFrames": 170
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "startMs": 539540,
+      "startFrame": 16228,
+      "durationMs": 4840,
+      "durationInFrames": 146,
+      "audioFile": "audio/scene-114.mp3",
+      "segments": [
+        {
+          "text": "ではその夜、金は実際にどこからどこへ流れていたのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 142
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "startMs": 544380,
+      "startFrame": 16374,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-115.mp3",
+      "segments": [
+        {
+          "text": "供給する側から見ると、この夜の会計は少し奇妙な構造をしている。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "startMs": 548980,
+      "startFrame": 16512,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-116.mp3",
+      "segments": [
+        {
+          "text": "会員制のラウンジでは、料金は時間で売られる。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "startMs": 552380,
+      "startFrame": 16614,
+      "durationMs": 7160,
+      "durationInFrames": 215,
+      "audioFile": "audio/scene-117.mp3",
+      "segments": [
+        {
+          "text": "テーブルにつく人数と滞在した時間の掛け算で額が決まり、飲まれた酒はその一部でしかない。",
+          "startFrame": 0,
+          "durationInFrames": 211
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "startMs": 559540,
+      "startFrame": 16829,
+      "durationMs": 6120,
+      "durationInFrames": 184,
+      "audioFile": "audio/scene-118.mp3",
+      "segments": [
+        {
+          "text": "ボトルの仕入れ値と提供価格の差は確かに大きいが、店の利益の芯はそこではない。",
+          "startFrame": 0,
+          "durationInFrames": 180
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "startMs": 565660,
+      "startFrame": 17013,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-119.mp3",
+      "segments": [
+        {
+          "text": "芯にあるのは、その場に人がいるという状態そのものだ。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "startMs": 569620,
+      "startFrame": 17132,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-120.mp3",
+      "segments": [
+        {
+          "text": "仕入れ原価という概念が存在しない商品を、時間で切り分けて売っている。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "startMs": 574700,
+      "startFrame": 17285,
+      "durationMs": 6840,
+      "durationInFrames": 206,
+      "audioFile": "audio/scene-121.mp3",
+      "segments": [
+        {
+          "text": "ただし、この動画で伝えたいのは、店が悪質だとか、彼女たちがずるいという単純な話ではない。",
+          "startFrame": 0,
+          "durationInFrames": 202
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "startMs": 581540,
+      "startFrame": 17491,
+      "durationMs": 8280,
+      "durationInFrames": 249,
+      "audioFile": "audio/scene-122.mp3",
+      "segments": [
+        {
+          "text": "店は需要のある場所に商品を置いているに過ぎず、払う側も払われる側も、その夜に得たいものを得ている。",
+          "startFrame": 0,
+          "durationInFrames": 245
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "startMs": 589820,
+      "startFrame": 17740,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-123.mp3",
+      "segments": [
+        {
+          "text": "誰かが誰かを騙してこの配置ができたわけではない。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "startMs": 593140,
+      "startFrame": 17840,
+      "durationMs": 7560,
+      "durationInFrames": 227,
+      "audioFile": "audio/scene-124.mp3",
+      "segments": [
+        {
+          "text": "だとすれば問うべきは、なぜこの支払いの向きが、これほど安定して一方向を向き続けるのかのほうだ。",
+          "startFrame": 0,
+          "durationInFrames": 223
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "startMs": 600700,
+      "startFrame": 18067,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-125.mp3",
+      "segments": [
+        {
+          "text": "その安定を、外側から支えている仕組みがある。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "startMs": 604100,
+      "startFrame": 18169,
+      "durationMs": 2850,
+      "durationInFrames": 86,
+      "audioFile": "audio/scene-126.mp3",
+      "segments": [
+        {
+          "text": "税である。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "startMs": 606950,
+      "startFrame": 18255,
+      "durationMs": 9720,
+      "durationInFrames": 292,
+      "audioFile": "audio/scene-127.mp3",
+      "segments": [
+        {
+          "text": "日本の法人が交際費等として計上した4兆4139億円は、その全額が企業の持ち出しになるわけではない。",
+          "startFrame": 0,
+          "durationInFrames": 288
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "startMs": 616670,
+      "startFrame": 18547,
+      "durationMs": 10840,
+      "durationInFrames": 326,
+      "audioFile": "audio/scene-128.mp3",
+      "segments": [
+        {
+          "text": "中小企業なら年800万円まで、大企業でも接待飲食費の50パーセントが、法人税を計算するときの損金として認められる。",
+          "startFrame": 0,
+          "durationInFrames": 322
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "startMs": 627510,
+      "startFrame": 18873,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-129.mp3",
+      "segments": [
+        {
+          "text": "そして2024年4月1日、この制度が緩められた。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "startMs": 632030,
+      "startFrame": 19009,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-130.mp3",
+      "segments": [
+        {
+          "text": "交際費等の範囲から除外される飲食費の基準が、参加者ひとりあたり5000円以下から1万円以下へ引き上げられたのである。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "startMs": 640470,
+      "startFrame": 19263,
+      "durationMs": 6610,
+      "durationInFrames": 199,
+      "audioFile": "audio/scene-131.mp3",
+      "segments": [
+        {
+          "text": "適用は2027年3月31日までに開始する事業年度まで延長された。",
+          "startFrame": 0,
+          "durationInFrames": 185
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "startMs": 647080,
+      "startFrame": 19462,
+      "durationMs": 5000,
+      "durationInFrames": 150,
+      "audioFile": "audio/scene-132.mp3",
+      "segments": [
+        {
+          "text": "ひとり1万円の食事なら、交際費の枠を使わずに落とせるようになったということだ。",
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "startMs": 652080,
+      "startFrame": 19612,
+      "durationMs": 2850,
+      "durationInFrames": 86,
+      "audioFile": "audio/scene-133.mp3",
+      "segments": [
+        {
+          "text": "冒頭の数字を思い出して欲しい。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "startMs": 654930,
+      "startFrame": 19698,
+      "durationMs": 7330,
+      "durationInFrames": 220,
+      "audioFile": "audio/scene-134.mp3",
+      "segments": [
+        {
+          "text": "交際費の総額は令和5年度に16.8パーセント増え、令和6年度もさらに増えている。",
+          "startFrame": 0,
+          "durationInFrames": 206
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "startMs": 662260,
+      "startFrame": 19918,
+      "durationMs": 6120,
+      "durationInFrames": 184,
+      "audioFile": "audio/scene-135.mp3",
+      "segments": [
+        {
+          "text": "あの夜の会計の一部は、払った本人の財布からではなく、法人の口座から出ている。",
+          "startFrame": 0,
+          "durationInFrames": 180
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "startMs": 668380,
+      "startFrame": 20102,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-136.mp3",
+      "segments": [
+        {
+          "text": "そしてその一部は、税という形で、社会の側が負担している。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "startMs": 672900,
+      "startFrame": 20238,
+      "durationMs": 2680,
+      "durationInFrames": 81,
+      "audioFile": "audio/scene-137.mp3",
+      "segments": [
+        {
+          "text": "一方、払われた側の帳簿はどうなっているか。",
+          "startFrame": 0,
+          "durationInFrames": 77
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "startMs": 675580,
+      "startFrame": 20319,
+      "durationMs": 4370,
+      "durationInFrames": 132,
+      "audioFile": "audio/scene-138.mp3",
+      "segments": [
+        {
+          "text": "同じ調査の年代別の内訳が、静かな数字を出している。",
+          "startFrame": 0,
+          "durationInFrames": 118
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "startMs": 679950,
+      "startFrame": 20451,
+      "durationMs": 13320,
+      "durationInFrames": 400,
+      "audioFile": "audio/scene-139.mp3",
+      "segments": [
+        {
+          "text": "デートの予算が5000円未満だと答えた割合は、男性では20代の17.8パーセントから、30代で16パーセント、40代では13.3パーセントへと下がっていく。",
+          "startFrame": 0,
+          "durationInFrames": 396
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "startMs": 693270,
+      "startFrame": 20851,
+      "durationMs": 15650,
+      "durationInFrames": 470,
+      "audioFile": "audio/scene-140.mp3",
+      "segments": [
+        {
+          "text": "ところが女性では、20代の25.4パーセントから、30代で29.5パーセント、40代では38パーセントへと、逆に上がっていく。",
+          "startFrame": 0,
+          "durationInFrames": 456
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "startMs": 708920,
+      "startFrame": 21321,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-141.mp3",
+      "segments": [
+        {
+          "text": "年齢が上がるほど、男性は多く出し、女性は少なく出す。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "startMs": 712880,
+      "startFrame": 21440,
+      "durationMs": 4680,
+      "durationInFrames": 141,
+      "audioFile": "audio/scene-142.mp3",
+      "segments": [
+        {
+          "text": "非対称は、時間とともに縮まるのではなく、開いていく。",
+          "startFrame": 0,
+          "durationInFrames": 137
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "startMs": 717560,
+      "startFrame": 21581,
+      "durationMs": 3570,
+      "durationInFrames": 108,
+      "audioFile": "audio/scene-143.mp3",
+      "segments": [
+        {
+          "text": "そして同じ調査には、もうひとつの数字がある。",
+          "startFrame": 0,
+          "durationInFrames": 94
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "startMs": 721130,
+      "startFrame": 21689,
+      "durationMs": 8770,
+      "durationInFrames": 264,
+      "audioFile": "audio/scene-144.mp3",
+      "segments": [
+        {
+          "text": "多めに払ったと答えた男性の72.4パーセントと、払ってもらったと答えた女性の57.6パーセント。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "startMs": 729900,
+      "startFrame": 21953,
+      "durationMs": 4050,
+      "durationInFrames": 122,
+      "audioFile": "audio/scene-145.mp3",
+      "segments": [
+        {
+          "text": "同じ夜を、ふたりが別々の帳簿に記録している。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "startMs": 733950,
+      "startFrame": 22075,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-146.mp3",
+      "segments": [
+        {
+          "text": "土曜の午後3時、美容室の鏡の前。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "startMs": 737910,
+      "startFrame": 22194,
+      "durationMs": 5560,
+      "durationInFrames": 167,
+      "audioFile": "audio/scene-147.mp3",
+      "segments": [
+        {
+          "text": "担当者が、次の予約は3週間後でいいかと聞く。",
+          "startFrame": 0,
+          "durationInFrames": 163
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "startMs": 743470,
+      "startFrame": 22361,
+      "durationMs": 5090,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-148.mp3",
+      "segments": [
+        {
+          "text": "彼女は、来週の金曜までにもう一度来たいと答える。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "startMs": 748560,
+      "startFrame": 22514,
+      "durationMs": 3000,
+      "durationInFrames": 90,
+      "audioFile": "audio/scene-149.mp3",
+      "segments": [
+        {
+          "text": "この構造には、もう一本の線が走っている。",
+          "startFrame": 0,
+          "durationInFrames": 86
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "startMs": 751560,
+      "startFrame": 22604,
+      "durationMs": 7240,
+      "durationInFrames": 218,
+      "audioFile": "audio/scene-150.mp3",
+      "segments": [
+        {
+          "text": "夜の会計に載らない支出は、昼の側で発生していて、そちらの伝票を見る人間は誰もいない。",
+          "startFrame": 0,
+          "durationInFrames": 214
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "startMs": 758800,
+      "startFrame": 22822,
+      "durationMs": 7880,
+      "durationInFrames": 237,
+      "audioFile": "audio/scene-151.mp3",
+      "segments": [
+        {
+          "text": "そもそも人間は、いつから、どちらが払うかを決めるようになったのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 233
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "startMs": 766680,
+      "startFrame": 23059,
+      "durationMs": 6040,
+      "durationInFrames": 182,
+      "audioFile": "audio/scene-152.mp3",
+      "segments": [
+        {
+          "text": "そもそも人間は、いつから婚姻や求愛に、金を伴わせるようになったのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "startMs": 772720,
+      "startFrame": 23241,
+      "durationMs": 7640,
+      "durationInFrames": 230,
+      "audioFile": "audio/scene-153.mp3",
+      "segments": [
+        {
+          "text": "婚姻のときに金や家畜や布が動く慣行は、ひとつの文明の思いつきではなかった。",
+          "startFrame": 0,
+          "durationInFrames": 226
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "startMs": 780360,
+      "startFrame": 23471,
+      "durationMs": 10200,
+      "durationInFrames": 306,
+      "audioFile": "audio/scene-154.mp3",
+      "segments": [
+        {
+          "text": "サハラ以南のアフリカでは家畜が花嫁の家へ渡り、南アジアでは現金と金製品が花婿の家へ渡る。",
+          "startFrame": 0,
+          "durationInFrames": 302
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "startMs": 790560,
+      "startFrame": 23777,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-155.mp3",
+      "segments": [
+        {
+          "text": "中世ヨーロッパの貴族層は持参金で領地そのものを動かし、日本では結納金が男の側から差し出される。",
+          "startFrame": 0,
+          "durationInFrames": 254
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "startMs": 799160,
+      "startFrame": 24035,
+      "durationMs": 5490,
+      "durationInFrames": 165,
+      "audioFile": "audio/scene-156.mp3",
+      "segments": [
+        {
+          "text": "向きも中身も違うのに、金が動くという一点だけが、どこでも同じだ。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "startMs": 804650,
+      "startFrame": 24200,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-157.mp3",
+      "segments": [
+        {
+          "text": "ところが、である。",
+          "startFrame": 0,
+          "durationInFrames": 48
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "startMs": 806650,
+      "startFrame": 24260,
+      "durationMs": 6370,
+      "durationInFrames": 192,
+      "audioFile": "audio/scene-158.mp3",
+      "segments": [
+        {
+          "text": "実は歴史のほとんどの期間、多数派だったのは、男の側が払う形のほうだった。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "startMs": 813020,
+      "startFrame": 24452,
+      "durationMs": 12450,
+      "durationInFrames": 374,
+      "audioFile": "audio/scene-159.mp3",
+      "segments": [
+        {
+          "text": "アンダーソンが整理したマードックの民族誌アトラスでは、1167の前工業社会のうち、およそ3分の2でブライドプライスが行われている。",
+          "startFrame": 0,
+          "durationInFrames": 360
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "startMs": 825470,
+      "startFrame": 24826,
+      "durationMs": 4120,
+      "durationInFrames": 124,
+      "audioFile": "audio/scene-160.mp3",
+      "segments": [
+        {
+          "text": "花婿の家が、花嫁の家に家畜や現金を渡す。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "startMs": 829590,
+      "startFrame": 24950,
+      "durationMs": 5000,
+      "durationInFrames": 150,
+      "audioFile": "audio/scene-161.mp3",
+      "segments": [
+        {
+          "text": "つまり男が払うのは、現代の甘やかしでも日本の悪癖でもない。",
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "startMs": 834590,
+      "startFrame": 25100,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-162.mp3",
+      "segments": [
+        {
+          "text": "人類の標準だったのだ。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "startMs": 838150,
+      "startFrame": 25207,
+      "durationMs": 3160,
+      "durationInFrames": 95,
+      "audioFile": "audio/scene-163.mp3",
+      "segments": [
+        {
+          "text": "では、逆向きの持参金はなぜ生まれたのか。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "startMs": 841310,
+      "startFrame": 25302,
+      "durationMs": 2120,
+      "durationInFrames": 64,
+      "audioFile": "audio/scene-164.mp3",
+      "segments": [
+        {
+          "text": "ここで鋤の話が効いてくる。",
+          "startFrame": 0,
+          "durationInFrames": 60
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "startMs": 843430,
+      "startFrame": 25366,
+      "durationMs": 8520,
+      "durationInFrames": 256,
+      "audioFile": "audio/scene-165.mp3",
+      "segments": [
+        {
+          "text": "鍬で耕す農業では、女性は男性とほぼ同じだけ働ける。",
+          "startFrame": 0,
+          "durationInFrames": 252
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "startMs": 851950,
+      "startFrame": 25622,
+      "durationMs": 6680,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-166.mp3",
+      "segments": [
+        {
+          "text": "花嫁は労働力であり、その労働力を失う実家に対して、花婿の側が対価を払った。",
+          "startFrame": 0,
+          "durationInFrames": 197
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "startMs": 858630,
+      "startFrame": 25823,
+      "durationMs": 9960,
+      "durationInFrames": 299,
+      "audioFile": "audio/scene-167.mp3",
+      "segments": [
+        {
+          "text": "ところが鋤が入ると、農作業は上半身の力と大型家畜の扱いを要求するようになり、女性の農業労働の価値が相対的に下がる。",
+          "startFrame": 0,
+          "durationInFrames": 295
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "startMs": 868590,
+      "startFrame": 26122,
+      "durationMs": 6280,
+      "durationInFrames": 189,
+      "audioFile": "audio/scene-168.mp3",
+      "segments": [
+        {
+          "text": "労働力ではなく扶養される存在として数えられたとき、支払いの向きは反転する。",
+          "startFrame": 0,
+          "durationInFrames": 185
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "startMs": 874870,
+      "startFrame": 26311,
+      "durationMs": 4690,
+      "durationInFrames": 141,
+      "audioFile": "audio/scene-169.mp3",
+      "segments": [
+        {
+          "text": "花嫁の側が、引き受けてもらうために払う側へ回るのだ。",
+          "startFrame": 0,
+          "durationInFrames": 127
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "startMs": 879560,
+      "startFrame": 26452,
+      "durationMs": 5800,
+      "durationInFrames": 174,
+      "audioFile": "audio/scene-170.mp3",
+      "segments": [
+        {
+          "text": "1961年、インドは持参金禁止法を制定し、この流れを止めようとした。",
+          "startFrame": 0,
+          "durationInFrames": 170
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "startMs": 885360,
+      "startFrame": 26626,
+      "durationMs": 9890,
+      "durationInFrames": 297,
+      "audioFile": "audio/scene-171.mp3",
+      "segments": [
+        {
+          "text": "1984年と1986年の改正で刑は重くなり、最低の懲役は2年から5年へ引き上げられている。",
+          "startFrame": 0,
+          "durationInFrames": 283
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "startMs": 895250,
+      "startFrame": 26923,
+      "durationMs": 7090,
+      "durationInFrames": 213,
+      "audioFile": "audio/scene-172.mp3",
+      "segments": [
+        {
+          "text": "それでも慣行は消えず、地域によっては婚資が世帯年収の4倍から6倍に達したままだ。",
+          "startFrame": 0,
+          "durationInFrames": 199
+        }
+      ]
+    },
+    {
+      "id": 173,
+      "startMs": 902340,
+      "startFrame": 27136,
+      "durationMs": 3160,
+      "durationInFrames": 95,
+      "audioFile": "audio/scene-173.mp3",
+      "segments": [
+        {
+          "text": "つまり、どちらが払うかに自然な正解はない。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "startMs": 905500,
+      "startFrame": 27231,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-174.mp3",
+      "segments": [
+        {
+          "text": "その場で、どちらの差し出すものに値札がついていないかが、支払いの向きを決めている。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "startMs": 910660,
+      "startFrame": 27386,
+      "durationMs": 3570,
+      "durationInFrames": 108,
+      "audioFile": "audio/scene-175.mp3",
+      "segments": [
+        {
+          "text": "では、値札のつかない側は、なぜ弱くならないのか。",
+          "startFrame": 0,
+          "durationInFrames": 94
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "startMs": 914230,
+      "startFrame": 27494,
+      "durationMs": 10520,
+      "durationInFrames": 316,
+      "audioFile": "audio/scene-176.mp3",
+      "segments": [
+        {
+          "text": "1925年、人類学者のマルセル・モースは、世界中の贈与を比較して、贈り物には三つの義務がついて回ることを示した。",
+          "startFrame": 0,
+          "durationInFrames": 312
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "startMs": 924750,
+      "startFrame": 27810,
+      "durationMs": 4360,
+      "durationInFrames": 131,
+      "audioFile": "audio/scene-177.mp3",
+      "segments": [
+        {
+          "text": "与える義務、受け取る義務、そして返す義務である。",
+          "startFrame": 0,
+          "durationInFrames": 127
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "startMs": 929110,
+      "startFrame": 27941,
+      "durationMs": 3160,
+      "durationInFrames": 95,
+      "audioFile": "audio/scene-178.mp3",
+      "segments": [
+        {
+          "text": "返礼のない贈与というものは存在しない。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "startMs": 932270,
+      "startFrame": 28036,
+      "durationMs": 5640,
+      "durationInFrames": 170,
+      "audioFile": "audio/scene-179.mp3",
+      "segments": [
+        {
+          "text": "返せない相手に一方的に与え続ける行為は、贈与ではなく、序列の宣言になる。",
+          "startFrame": 0,
+          "durationInFrames": 166
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "startMs": 937910,
+      "startFrame": 28206,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-180.mp3",
+      "segments": [
+        {
+          "text": "だから受け取る側は、必ず何かを返している。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "startMs": 941550,
+      "startFrame": 28316,
+      "durationMs": 7640,
+      "durationInFrames": 230,
+      "audioFile": "audio/scene-181.mp3",
+      "segments": [
+        {
+          "text": "ザハヴィの言い方を借りれば、払うこと自体が信号であり、返すこと自体もまた信号なのだ。",
+          "startFrame": 0,
+          "durationInFrames": 226
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "startMs": 949190,
+      "startFrame": 28546,
+      "durationMs": 5400,
+      "durationInFrames": 162,
+      "audioFile": "audio/scene-182.mp3",
+      "segments": [
+        {
+          "text": "では、その交換は、支払った分だけ何かを返してくれるのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 158
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "startMs": 954590,
+      "startFrame": 28708,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-183.mp3",
+      "segments": [
+        {
+          "text": "アンダーソンの整理は、婚資が膨らんだ社会で何が起きたかも記録している。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "startMs": 959190,
+      "startFrame": 28846,
+      "durationMs": 9800,
+      "durationInFrames": 294,
+      "audioFile": "audio/scene-184.mp3",
+      "segments": [
+        {
+          "text": "持参金の額が世帯年収の4倍から6倍に達する地域では、娘が生まれること自体が、家計の将来の負債として数えられるようになった。",
+          "startFrame": 0,
+          "durationInFrames": 290
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "startMs": 968990,
+      "startFrame": 29140,
+      "durationMs": 5560,
+      "durationInFrames": 167,
+      "audioFile": "audio/scene-185.mp3",
+      "segments": [
+        {
+          "text": "生まれたその日に、十数年後の支払い予定が確定してしまうからである。",
+          "startFrame": 0,
+          "durationInFrames": 163
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "startMs": 974550,
+      "startFrame": 29307,
+      "durationMs": 13160,
+      "durationInFrames": 395,
+      "audioFile": "audio/scene-186.mp3",
+      "segments": [
+        {
+          "text": "インドでは2005年、結婚から7年以内に女性が不自然な死に方をし、持参金をめぐる嫌がらせが立証された場合に、その死の背景を推定する規定が法律に置かれた。",
+          "startFrame": 0,
+          "durationInFrames": 391
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "startMs": 987710,
+      "startFrame": 29702,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-187.mp3",
+      "segments": [
+        {
+          "text": "国家が個別の事情を調べる前から推定を働かせなければならないほど、支払いの非対称は人を追い詰めてきた。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "startMs": 996150,
+      "startFrame": 29956,
+      "durationMs": 2520,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-188.mp3",
+      "segments": [
+        {
+          "text": "理由は、金額の大きさではない。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "startMs": 998670,
+      "startFrame": 30032,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-189.mp3",
+      "segments": [
+        {
+          "text": "値札のつかない側が、自分の支出を自分でも数えられなくなることだ。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "startMs": 1007110,
+      "startFrame": 30286,
+      "durationMs": 3160,
+      "durationInFrames": 95,
+      "audioFile": "audio/scene-190.mp3",
+      "segments": [
+        {
+          "text": "数えられないものは、交渉の材料にならない。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "startMs": 1010270,
+      "startFrame": 30381,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-191.mp3",
+      "segments": [
+        {
+          "text": "1961年5月、インド議会は持参金禁止法を可決した。",
+          "startFrame": 0,
+          "durationInFrames": 168
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "startMs": 1015990,
+      "startFrame": 30553,
+      "durationMs": 7400,
+      "durationInFrames": 222,
+      "audioFile": "audio/scene-192.mp3",
+      "segments": [
+        {
+          "text": "法律の第2条は、持参金を、婚姻に関連して一方の当事者から他方へ渡される財産と定義している。",
+          "startFrame": 0,
+          "durationInFrames": 218
+        }
+      ]
+    },
+    {
+      "id": 193,
+      "startMs": 1023390,
+      "startFrame": 30775,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-193.mp3",
+      "segments": [
+        {
+          "text": "渡すことも、受け取ることも、要求することも罰の対象になった。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "startMs": 1028550,
+      "startFrame": 30930,
+      "durationMs": 2440,
+      "durationInFrames": 74,
+      "audioFile": "audio/scene-194.mp3",
+      "segments": [
+        {
+          "text": "可決から60年以上が過ぎている。",
+          "startFrame": 0,
+          "durationInFrames": 70
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "startMs": 1030990,
+      "startFrame": 31004,
+      "durationMs": 9730,
+      "durationInFrames": 292,
+      "audioFile": "audio/scene-195.mp3",
+      "segments": [
+        {
+          "text": "それでもいまなお、結婚式の前の晩に、どこかの家の台所で、小さな秤が電球の下に出されている。",
+          "startFrame": 0,
+          "durationInFrames": 278
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "startMs": 1040720,
+      "startFrame": 31296,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-196.mp3",
+      "segments": [
+        {
+          "text": "支払いの非対称は、額の問題ではない。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "startMs": 1043480,
+      "startFrame": 31379,
+      "durationMs": 7160,
+      "durationInFrames": 215,
+      "audioFile": "audio/scene-197.mp3",
+      "segments": [
+        {
+          "text": "片方の支出だけが伝票に載る状態が続くと、載らない側の支出は、やがて本人からも見えなくなる。",
+          "startFrame": 0,
+          "durationInFrames": 211
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "startMs": 1050640,
+      "startFrame": 31594,
+      "durationMs": 7890,
+      "durationInFrames": 237,
+      "audioFile": "audio/scene-198.mp3",
+      "segments": [
+        {
+          "text": "では我々は、自分が毎日何を払っているのかを、どこまで数えられているのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 223
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "startMs": 1058530,
+      "startFrame": 31831,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-199.mp3",
+      "segments": [
+        {
+          "text": "ここまでの道のりを振り返ろう。",
+          "startFrame": 0,
+          "durationInFrames": 50
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "startMs": 1060530,
+      "startFrame": 31891,
+      "durationMs": 7480,
+      "durationInFrames": 225,
+      "audioFile": "audio/scene-200.mp3",
+      "segments": [
+        {
+          "text": "進化生物学は、返さない者を人間が必ず検出し、記憶し、排除することを示した。",
+          "startFrame": 0,
+          "durationInFrames": 221
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "startMs": 1068010,
+      "startFrame": 32116,
+      "durationMs": 7960,
+      "durationInFrames": 239,
+      "audioFile": "audio/scene-201.mp3",
+      "segments": [
+        {
+          "text": "ネイチャー誌の実験は、自分の取り分を減らしてでもただ乗りを罰する性質が我々に備わっていることを描き出した。",
+          "startFrame": 0,
+          "durationInFrames": 235
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "startMs": 1075970,
+      "startFrame": 32355,
+      "durationMs": 6520,
+      "durationInFrames": 196,
+      "audioFile": "audio/scene-202.mp3",
+      "segments": [
+        {
+          "text": "社会学は、交換される二つのものが同じ通貨である必要はないという一点を教えた。",
+          "startFrame": 0,
+          "durationInFrames": 192
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "startMs": 1082490,
+      "startFrame": 32551,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-203.mp3",
+      "segments": [
+        {
+          "text": "動物行動学は、アジサシのメスが魚を一匹も返さないまま、卵という最も高価な支出をしていたことを見せた。",
+          "startFrame": 0,
+          "durationInFrames": 254
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "startMs": 1091090,
+      "startFrame": 32809,
+      "durationMs": 13640,
+      "durationInFrames": 410,
+      "audioFile": "audio/scene-204.mp3",
+      "segments": [
+        {
+          "text": "帳簿は、4兆4139億円の交際費と、2024年に1万円へ引き上げられた基準を並べ、あの夜の会計に社会が混ざっていることを映していた。",
+          "startFrame": 0,
+          "durationInFrames": 406
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "startMs": 1104730,
+      "startFrame": 33219,
+      "durationMs": 6360,
+      "durationInFrames": 191,
+      "audioFile": "audio/scene-205.mp3",
+      "segments": [
+        {
+          "text": "そして人類経済史は、支払いの向きが鋤ひとつで反転してきた事実を突きつけた。",
+          "startFrame": 0,
+          "durationInFrames": 187
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "startMs": 1111090,
+      "startFrame": 33410,
+      "durationMs": 2200,
+      "durationInFrames": 66,
+      "audioFile": "audio/scene-206.mp3",
+      "segments": [
+        {
+          "text": "奢りとは、無償の贈与ではない。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "startMs": 1113290,
+      "startFrame": 33476,
+      "durationMs": 6760,
+      "durationInFrames": 203,
+      "audioFile": "audio/scene-207.mp3",
+      "segments": [
+        {
+          "text": "支払いが一方向にしか見えないとき、それはもう一方の通貨に値札がついていないだけである。",
+          "startFrame": 0,
+          "durationInFrames": 199
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "startMs": 1120050,
+      "startFrame": 33679,
+      "durationMs": 2360,
+      "durationInFrames": 71,
+      "audioFile": "audio/scene-208.mp3",
+      "segments": [
+        {
+          "text": "港区女子が払っていないのではない。",
+          "startFrame": 0,
+          "durationInFrames": 67
+        }
+      ]
+    },
+    {
+      "id": 209,
+      "startMs": 1122410,
+      "startFrame": 33750,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-209.mp3",
+      "segments": [
+        {
+          "text": "彼女たちの支出には、領収書が発行されないのだ。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "startMs": 1125970,
+      "startFrame": 33857,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-210.mp3",
+      "segments": [
+        {
+          "text": "そして領収書の出ない支出は、やがて払った本人からも見えなくなる。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 211,
+      "startMs": 1130570,
+      "startFrame": 33995,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-211.mp3",
+      "segments": [
+        {
+          "text": "最後に、ひとつだけ。",
+          "startFrame": 0,
+          "durationInFrames": 43
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "startMs": 1132570,
+      "startFrame": 34055,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-212.mp3",
+      "segments": [
+        {
+          "text": "この動画を見ているあいだ、あなたは何を感じていただろうか。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "startMs": 1137730,
+      "startFrame": 34210,
+      "durationMs": 10440,
+      "durationInFrames": 314,
+      "audioFile": "audio/scene-213.mp3",
+      "segments": [
+        {
+          "text": "誰かに食事を奢ったあと、その相手が次に何をしてくれるかを、心のどこかで数えていたことはないだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 310
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "startMs": 1148170,
+      "startFrame": 34524,
+      "durationMs": 8360,
+      "durationInFrames": 251,
+      "audioFile": "audio/scene-214.mp3",
+      "segments": [
+        {
+          "text": "逆に、奢られた帰り道に、今日は自分が場を持たせたのだと思ったことはないだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 247
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "startMs": 1156530,
+      "startFrame": 34775,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-215.mp3",
+      "segments": [
+        {
+          "text": "あの計算は、六本木の交差点にだけ設置されている装置ではない。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "startMs": 1160810,
+      "startFrame": 34904,
+      "durationMs": 4840,
+      "durationInFrames": 146,
+      "audioFile": "audio/scene-216.mp3",
+      "segments": [
+        {
+          "text": "伝票の出ない帳簿は、あなたの側でも毎日つけられている。",
+          "startFrame": 0,
+          "durationInFrames": 142
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "startMs": 1165650,
+      "startFrame": 35050,
+      "durationMs": 7720,
+      "durationInFrames": 232,
+      "audioFile": "audio/scene-217.mp3",
+      "segments": [
+        {
+          "text": "この動画を見て少し賢くなった気がしたなら、その感覚もまた、あなたが今日受け取った何かです。",
+          "startFrame": 0,
+          "durationInFrames": 228
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "startMs": 1173370,
+      "startFrame": 35282,
+      "durationMs": 8040,
+      "durationInFrames": 242,
+      "audioFile": "audio/scene-218.mp3",
+      "segments": [
+        {
+          "text": "返す方法のひとつが画面の下にありますが、押すかどうかは、仕組みを全部知った上で決めていただければと思います。",
+          "startFrame": 0,
+          "durationInFrames": 238
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "startMs": 1181410,
+      "startFrame": 35524,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-219.mp3",
+      "segments": [
+        {
+          "text": "そんなことまで、また解剖してしまいました。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "startMs": 1184810,
+      "startFrame": 35626,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-220.mp3",
+      "segments": [
+        {
+          "text": "よろしければチャンネル登録と高評価をお願いします。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "startMs": 1188770,
+      "startFrame": 35745,
+      "durationMs": 3010,
+      "durationInFrames": 91,
+      "audioFile": "audio/scene-221.mp3",
       "segments": [
         {
           "text": "それでは次の動画で、またお会いしましょう。",
           "startFrame": 0,
-          "durationInFrames": 84
+          "durationInFrames": 77
         }
       ]
     }

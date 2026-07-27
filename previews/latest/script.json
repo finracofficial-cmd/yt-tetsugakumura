@@ -1,126 +1,82 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ転売に人は本気で怒るのか【市場設計×社会心理学】",
-  "bgm_direction": "A dark, quiet cinematic drone with subtle tension, sparse piano notes echoing in an empty hall, restrained and contemplative.",
+  "title": "なぜ港区女子は財布を開かないのか【進化生物学×経済史】",
+  "bgm_direction": "A dark, quiet cinematic underscore with sparse piano and low sustained strings, tense and contemplative, like a nocturnal investigation.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "定価を守らせることは、日本の法律では、原則として違法である。",
+      "narration": "港区女子と呼ばれる人たちは、あの街でほとんど財布を開かない。",
       "visual": {
         "type": "figure",
-        "figure": "gavel",
-        "label": "定価遵守は原則違法"
+        "figure": "money",
+        "label": "財布を開かない街"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
-      "act": 1,
-      "narration": "独占禁止法は、メーカーが小売店に販売価格を指示し、それを守らせる行為を、不公正な取引方法として禁じている。",
+      "act": 2,
+      "narration": "2025年、ある調査会社が、前の年に初めてデートをした男女1148人に尋ねている。",
       "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "独占禁止法の禁止"
+        "type": "stat",
+        "value": "1148人",
+        "label": "初デートを調査",
+        "context": "2025年 調査会社",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 3,
       "act": 2,
-      "narration": "例外として認められているのは、6品目しかない。",
+      "narration": "自分が多めに支払った、あるいは全額払ったと答えた男性は72.4パーセント。",
       "visual": {
-        "type": "stat",
-        "value": "6品目",
-        "label": "例外として認められた対象",
-        "context": "著作物再販制度",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "donut",
+        "title": "多めに/全額払った男性",
+        "percent": 72,
+        "label": "払った男性 72.4%",
+        "rest_label": "それ以外"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 4,
       "act": 2,
-      "narration": "書籍、雑誌、新聞、レコード盤、音楽用テープ、音楽用CD。",
+      "narration": "一方、相手が多めに払ってくれた、あるいは全額払ってくれたと答えた女性は57.6パーセントだった。",
       "visual": {
-        "type": "list",
-        "title": "再販が認められる6品目",
-        "items": [
-          "書籍",
-          "雑誌",
-          "新聞",
-          "レコード盤",
-          "音楽用テープ",
-          "音楽用CD"
-        ]
+        "type": "donut",
+        "title": "払ってもらった女性",
+        "percent": 58,
+        "label": "払われた女性 57.6%",
+        "rest_label": "それ以外"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 5,
-      "act": 2,
-      "narration": "1953年の法改正で決まった、著作物再販制度と呼ばれる仕組みだ。",
+      "act": 1,
+      "narration": "同じ夜の、同じ会計のはずである。",
       "visual": {
-        "type": "stat",
-        "value": "1953年",
-        "label": "著作物再販制度が定まった年",
-        "context": "法改正",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "keyword",
+        "keyword": "同じ夜、同じ会計"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 2,
-      "narration": "かつては化粧品も対象だったが1977年に外され、それ以外の指定も1997年に全廃された。",
-      "visual": {
-        "type": "table",
-        "title": "指定の変遷",
-        "headers": [
-          "年",
-          "できごと"
-        ],
-        "rows": [
-          [
-            "1977年",
-            "化粧品が外れる"
-          ],
-          [
-            "1997年",
-            "その他の指定を全廃"
-          ]
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 7,
-      "act": 2,
-      "narration": "つまり、あなたが定価だと思って眺めている家電やゲーム機の値札は、法的にはただの希望であって、誰ひとり守る義務を負っていない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "定価はただの希望"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 8,
-      "act": 2,
-      "narration": "2025年、日本のライブ・エンタテインメント市場は8564億円に達した。",
+      "narration": "それなのに、14.8ポイントの差が開いている。",
       "visual": {
         "type": "stat",
-        "value": "8564億円",
-        "label": "日本のライブ市場規模",
-        "context": "2025年",
-        "unit": "円",
+        "value": "14.8ポイント",
+        "label": "男女で開いた差",
+        "context": "同じ会計のはず",
+        "unit": "",
         "axis": {
           "label": "",
           "ticks": []
@@ -129,15 +85,53 @@
       "concept_color": "charcoal"
     },
     {
+      "id": 7,
+      "act": 2,
+      "narration": "規模の話もしておく。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "規模の話"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 8,
+      "act": 2,
+      "narration": "国税庁の会社標本調査によれば、日本の法人が交際費等として計上した金額は、令和4年度分が3兆5820億円、令和5年度分が4兆1841億円、令和6年度分が4兆4139億円。",
+      "visual": {
+        "type": "chart",
+        "title": "法人の交際費等",
+        "subtitle": "国税庁 会社標本調査",
+        "unit": "億円",
+        "items": [
+          {
+            "label": "令和4年度",
+            "value": 35820
+          },
+          {
+            "label": "令和5年度",
+            "value": 41841
+          },
+          {
+            "label": "令和6年度",
+            "value": 44139
+          }
+        ],
+        "highlight": 2,
+        "annotation": "3年連続で膨張 4兆4139億円"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 9,
       "act": 2,
-      "narration": "動員は9223万人。",
+      "narration": "2年続けて増えており、令和5年度の伸びは16.8パーセントに達した。",
       "visual": {
         "type": "stat",
-        "value": "9223万人",
-        "label": "年間の動員数",
-        "context": "ライブ市場",
-        "unit": "人",
+        "value": "16.8%",
+        "label": "令和5年度の伸び",
+        "context": "2年続けて増加",
+        "unit": "",
         "axis": {
           "label": "",
           "ticks": []
@@ -147,281 +141,219 @@
     },
     {
       "id": 10,
-      "act": 2,
-      "narration": "公演回数は10万820回。",
+      "act": 3,
+      "narration": "世間はこれを、たかりと呼んで笑う。",
       "visual": {
-        "type": "stat",
-        "value": "10万820回",
-        "label": "年間の公演回数",
-        "context": "",
-        "unit": "回",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "blame",
+        "label": "たかりと笑う世間"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 11,
-      "act": 2,
-      "narration": "動員ひとりあたりの単価は9286円で、前年より4.5パーセント上がっている。",
+      "act": 3,
+      "narration": "奢られて当然という顔をした女たちの話として消費され、それで終わる。",
       "visual": {
-        "type": "stat",
-        "value": "9286円",
-        "label": "動員ひとりあたり単価",
-        "context": "前年比",
-        "unit": "円",
-        "axis": {
-          "label": "+4.5%",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "mask",
+        "label": "奢られて当然の顔"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 12,
-      "act": 2,
-      "narration": "一方で、一度売られた物がもう一度売られるリユース市場は、2024年に3兆2628億円。",
-      "visual": {
-        "type": "stat",
-        "value": "3兆2628億円",
-        "label": "リユース市場規模",
-        "context": "2024年",
-        "unit": "円",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 13,
-      "act": 2,
-      "narration": "15年連続で拡大を続けている。",
+      "act": 3,
+      "narration": "誰も、その席で何と何が交換されたのかを数えない。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "15年連続の拡大"
+        "figure": "question",
+        "label": "何と何が交換された"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 14,
-      "act": 3,
-      "narration": "定価で売られた物が、定価ではない値段で、もう一度売られていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "もう一度売られる物"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 15,
-      "act": 3,
-      "narration": "世間はこの二つ目の売り場を転売ヤーと呼び、モラルの低い人間がやる小銭稼ぎとして、笑い話にして済ませる。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "転売ヤーへの嘲笑"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 16,
+      "id": 13,
       "act": 3,
       "narration": "だが、ひとつだけ引っかかることがある。",
       "visual": {
         "type": "figure",
-        "figure": "question",
+        "figure": "lightbulb",
         "label": "引っかかること"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 14,
+      "act": 3,
+      "narration": "人間は、返さない相手を許さない生き物だ。",
+      "visual": {
+        "type": "figure",
+        "figure": "conflict",
+        "label": "返さぬ者を許さない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 15,
+      "act": 2,
+      "narration": "自分が損をしてでも、ただ乗りする者を罰することが、実験で繰り返し確かめられている。",
+      "visual": {
+        "type": "figure",
+        "figure": "blame",
+        "label": "損してでも罰する"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 16,
+      "act": 3,
+      "narration": "それなのに、この関係は一晩で終わらない。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "一晩で終わらない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 17,
       "act": 3,
-      "narration": "安く買って高く売るという行為そのものは、この社会のいたるところで行われている。",
+      "narration": "同じ顔ぶれで、何か月も、何年も続いていく。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "安く買って高く売る"
+        "figure": "cycle",
+        "label": "何年も続く関係"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 18,
       "act": 3,
-      "narration": "商社がやれば仲介と呼ばれ、株でやれば投資と呼ばれ、不動産でやれば資産運用と呼ばれる。",
+      "narration": "返していないのなら、彼女たちはとっくに排除されているはずなのだ。",
       "visual": {
-        "type": "table",
-        "title": "同じ行為の別の名前",
-        "headers": [
-          "分野",
-          "呼び名"
-        ],
-        "rows": [
-          [
-            "商社",
-            "仲介"
-          ],
-          [
-            "株",
-            "投資"
-          ],
-          [
-            "不動産",
-            "資産運用"
-          ]
-        ]
+        "type": "figure",
+        "figure": "isolation",
+        "label": "本来なら排除される"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 19,
       "act": 3,
-      "narration": "中古車販売店が仕入れ値の倍で売っても、誰も店の前に集まって怒鳴らない。",
+      "narration": "では、彼女たちは何を払っているのか。",
       "visual": {
         "type": "figure",
-        "figure": "shopping",
-        "label": "中古車は仕入れの倍でも平然"
+        "figure": "question",
+        "label": "何を払っているのか"
       },
-      "concept_color": "daylight"
+      "concept_color": "dark-navy"
     },
     {
       "id": 20,
-      "act": 3,
-      "narration": "構造はまったく同じなのに、チケットとスニーカーとゲーム機のときだけ、人は本気で腹を立てる。",
+      "act": 2,
+      "narration": "今日はその見えない会計を、互恵性の進化と人類の経済史から解剖してみたい。",
       "visual": {
-        "type": "comparison",
-        "left_title": "許される",
-        "right_title": "怒られる",
-        "left_items": [
-          "商社",
-          "株",
-          "不動産",
-          "中古車"
-        ],
-        "right_items": [
-          "チケット",
-          "スニーカー",
-          "ゲーム機"
-        ],
-        "center_label": "構造は同じ"
+        "type": "keyword",
+        "keyword": "見えない会計を解剖"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 21,
-      "act": 3,
-      "narration": "しかも、定価を超えた値段で取引が成立しているという事実は、その定価が需要に対して安すぎたという意味でもある。",
+      "act": 2,
+      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
       "visual": {
-        "type": "balance",
-        "title": "定価と需要",
-        "left_label": "定価",
-        "right_label": "本当の需要",
-        "tilt": 0.7,
-        "note": "定価が安すぎた"
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "最初の答えを検証"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 22,
-      "act": 3,
-      "narration": "人は一体、何に怒っているのか。",
+      "act": 2,
+      "narration": "若さと容姿そのものが対価なのだ、という説明である。",
       "visual": {
-        "type": "keyword",
-        "keyword": "人は何に怒るのか"
+        "type": "figure",
+        "figure": "person",
+        "label": "若さと容姿が対価"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "daylight"
     },
     {
       "id": 23,
-      "act": 3,
-      "narration": "今日はその定価という値札の中身を、市場設計と社会心理学のデータから解剖してみたい。",
+      "act": 2,
+      "narration": "確かに、容姿に市場価格がつくことは否定しにくい。",
       "visual": {
         "type": "figure",
         "figure": "scale",
-        "label": "市場設計と社会心理学で解剖"
+        "label": "容姿に市場価格"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 24,
       "act": 3,
-      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
+      "narration": "だが、この説明には決定的な弱点がある。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "最初の答えを検証"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 25,
-      "act": 3,
-      "narration": "転売ヤーという悪い人間がいるから値段が吊り上がるのだ、という説明である。",
-      "visual": {
-        "type": "dialogue",
-        "line": "悪い転売ヤーがいるから値が吊り上がる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 26,
-      "act": 3,
-      "narration": "確かに、それは事実の一部だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "それは事実の一部"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 27,
-      "act": 3,
-      "narration": "買い占めは実在するし、被害も実在する。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "買い占めも被害も実在する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 28,
-      "act": 3,
-      "narration": "だがこの説明には決定的な弱点がある。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "決定的な弱点"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 29,
-      "act": 3,
-      "narration": "悪人を取り締まれば市場は消えるはずなのに、消えないのだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "取り締まっても消えない"
+        "type": "keyword",
+        "keyword": "決定的な弱点"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 30,
+      "id": 25,
       "act": 3,
-      "narration": "2019年6月14日、チケット不正転売禁止法が施行された。",
+      "narration": "容姿が対価なら、支払いは一回で完結するはずだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "contract",
+        "label": "一回で完結する取引"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 26,
+      "act": 3,
+      "narration": "買った、受け取った、終わり。",
+      "visual": {
+        "type": "figure",
+        "figure": "shopping",
+        "label": "買った、終わり"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 27,
+      "act": 3,
+      "narration": "ところが実際に起きているのは、同じ相手との関係が続くことのほうである。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "続いていく関係"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 28,
+      "act": 3,
+      "narration": "一回きりの取引では、継続を説明できない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "継続を説明できない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 29,
+      "act": 2,
+      "narration": "1971年、生物学者のロバート・トリヴァースが、血縁関係のない個体どうしがなぜ助け合えるのかを説明する論文を発表した。",
       "visual": {
         "type": "stat",
-        "value": "2019年6月14日",
-        "label": "チケット不正転売禁止法 施行",
-        "context": "",
+        "value": "1971年",
+        "label": "トリヴァースの論文",
+        "context": "血縁なき助け合い",
         "unit": "",
         "axis": {
           "label": "",
@@ -431,1196 +363,958 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 31,
-      "act": 3,
-      "narration": "業として定価を超える価格で転売すれば、1年以下の懲役か100万円以下の罰金。",
+      "id": 30,
+      "act": 2,
+      "narration": "互恵的利他主義と呼ばれる考え方である。",
       "visual": {
-        "type": "table",
-        "title": "不正転売の罰則",
-        "headers": [
-          "種類",
-          "上限"
-        ],
-        "rows": [
-          [
-            "懲役",
-            "1年以下"
-          ],
-          [
-            "罰金",
-            "100万円以下"
-          ]
-        ]
+        "type": "keyword",
+        "keyword": "互恵的利他主義"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 31,
+      "act": 2,
+      "narration": "いまコストを払って相手を助け、あとで返してもらう。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "払い、あとで返す"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 32,
-      "act": 3,
-      "narration": "それから7年が経つ。",
+      "act": 2,
+      "narration": "この取引が成立するには条件がひとつある。",
       "visual": {
-        "type": "stat",
-        "value": "7年",
-        "label": "施行からの歳月",
-        "context": "",
-        "unit": "年",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "question",
+        "label": "条件はひとつ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 33,
       "act": 3,
-      "narration": "市場は、いまも動いている。",
+      "narration": "裏切り者を検出し、記憶し、次から排除できることだ。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "市場はいまも動く"
+        "type": "list",
+        "title": "取引成立の条件",
+        "items": [
+          "裏切り者を検出する",
+          "記憶する",
+          "次から排除する"
+        ]
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 34,
       "act": 2,
-      "narration": "1986年、アメリカ経済学会の学術誌に一本の論文が載った。",
+      "narration": "トリヴァースが強調したのは、この検出装置のほうだった。",
       "visual": {
-        "type": "stat",
-        "value": "1986年",
-        "label": "アメリカ経済学会誌に載った論文",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "eye",
+        "label": "検出装置のほう"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 35,
-      "act": 2,
-      "narration": "著者はダニエル・カーネマン、ジャック・クネッチ、リチャード・セイラー。",
+      "act": 3,
+      "narration": "人間の脳には、誰が返して誰が返さなかったかを覚えておくための、専用の帳簿が積まれている。",
       "visual": {
-        "type": "list",
-        "title": "論文の著者",
-        "items": [
-          "ダニエル・カーネマン",
-          "ジャック・クネッチ",
-          "リチャード・セイラー"
-        ]
+        "type": "figure",
+        "figure": "brain",
+        "label": "脳に積まれた帳簿"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 36,
       "act": 2,
-      "narration": "三人は電話調査で、市民にこんな場面を読み上げ、評価を求めた。",
+      "narration": "その帳簿が実際にどう使われるかを、実験で目に見える形にした研究がある。",
       "visual": {
         "type": "figure",
-        "figure": "smartphone",
-        "label": "電話調査"
+        "figure": "eye",
+        "label": "実験で可視化する"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 37,
       "act": 2,
-      "narration": "ある金物店が、雪かき用のシャベルを15ドルで売っている。",
+      "narration": "2002年、経済学者のエルンスト・フェールとシモン・ゲヒターが、ネイチャー誌の第415巻に発表した論文だ。",
       "visual": {
         "type": "stat",
-        "value": "15ドル",
-        "label": "シャベルの値段",
-        "context": "ある金物店",
+        "value": "2002年",
+        "label": "ネイチャー掲載",
+        "context": "フェール&ゲヒター",
         "unit": "",
         "axis": {
-          "label": "",
+          "label": "第415巻",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 38,
       "act": 2,
-      "narration": "大雪の翌朝、店はその値段を20ドルに上げた。",
+      "narration": "手順はこうである。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "20ドルに値上げ"
+        "type": "keyword",
+        "keyword": "実験の手順"
       },
-      "concept_color": "daylight"
+      "concept_color": "dark-navy"
     },
     {
       "id": 39,
       "act": 2,
-      "narration": "この行為を、非常に不公正、不公正、許容できる、完全に公正の四段階で評価してほしい。",
+      "narration": "見知らぬ者どうしを4人一組にし、各自に元手を渡す。",
       "visual": {
-        "type": "table",
-        "title": "評価の四段階",
-        "headers": [
-          "段階",
-          "評価"
-        ],
-        "rows": [
-          [
-            "1",
-            "非常に不公正"
-          ],
-          [
-            "2",
-            "不公正"
-          ],
-          [
-            "3",
-            "許容できる"
-          ],
-          [
-            "4",
-            "完全に公正"
-          ]
-        ]
+        "type": "figure",
+        "figure": "crowd",
+        "label": "見知らぬ者4人一組"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 40,
       "act": 2,
-      "narration": "結果、82パーセントの回答者が、不公正あるいは非常に不公正を選んだ。",
+      "narration": "共通の箱に入れた額は増えて全員に等分される。",
       "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 82,
-        "label": "不公正と評価",
-        "rest_label": "公正と評価"
+        "type": "figure",
+        "figure": "cycle",
+        "label": "箱の額が増え等分"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 41,
       "act": 2,
-      "narration": "需要が増えたから値上げをする。",
+      "narration": "全員が全額を入れれば全員が得をするが、自分だけ入れずに他人の分を受け取れば、もっと得をする。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "需要増で値上げ"
+        "type": "comparison",
+        "left_title": "協力",
+        "right_title": "ただ乗り",
+        "left_items": [
+          "全員が全額入れる",
+          "全員が得をする"
+        ],
+        "right_items": [
+          "自分だけ入れない",
+          "もっと得をする"
+        ],
+        "center_label": "得の非対称"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 42,
       "act": 2,
-      "narration": "経済学の教科書では、これは市場の正常な働きだ。",
+      "narration": "匿名で、二度と会わない相手との取引だ。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "市場の正常な働き"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 43,
-      "act": 2,
-      "narration": "だが街に住む人間にとって、それは罪だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "それは罪だった"
+        "figure": "mask",
+        "label": "匿名・二度と会わない"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 43,
+      "act": 2,
+      "narration": "予想どおり、回を重ねるごとに投入額は下がっていった。",
+      "visual": {
+        "type": "line",
+        "title": "投入額の推移",
+        "unit": "",
+        "points": [
+          {
+            "label": "1回目",
+            "value": 100
+          },
+          {
+            "label": "中盤",
+            "value": 60
+          },
+          {
+            "label": "終盤",
+            "value": 30
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 44,
       "act": 2,
-      "narration": "なぜ人は、需要に応じた値上げを罪だと感じてしまうのか。",
+      "narration": "ところが二人は、ここに条件をひとつ足す。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "なぜ罪と感じる?"
+        "figure": "lightbulb",
+        "label": "条件を一つ足す"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 45,
       "act": 2,
-      "narration": "同じ頃、セイラーは別の調査を行っている。",
+      "narration": "自分の取り分を減らしてでも、ただ乗りした相手に罰を与えられるようにしたのだ。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "セイラーの別調査"
+        "figure": "gavel",
+        "label": "自腹で罰を与える"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 46,
       "act": 2,
-      "narration": "回答者にこう想像させるのだ。",
+      "narration": "罰しても自分には一円も戻らない。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "こう想像させる"
+        "type": "stat",
+        "value": "0円",
+        "label": "罰の見返り",
+        "context": "罰しても",
+        "unit": ""
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 47,
       "act": 2,
-      "narration": "あなたは暑い日のビーチに寝ている。",
+      "narration": "それでも被験者たちは、次々と自腹を切って罰した。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "暑い日のビーチ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 48,
-      "act": 2,
-      "narration": "飲み物は氷水しかない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "飲み物は氷水だけ"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 49,
-      "act": 2,
-      "narration": "この一時間、冷えたビールのことばかり考えている。",
-      "visual": {
-        "type": "figure",
-        "figure": "addiction",
-        "label": "冷えたビールへの渇望"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 50,
-      "act": 2,
-      "narration": "連れが電話をかけに立ち、ついでにビールを買ってきてやろうと言う。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "連れが買ってくると言う"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 51,
-      "act": 2,
-      "narration": "買える店は近くに一軒だけだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "買える店は一軒だけ"
+        "figure": "blame",
+        "label": "次々と自腹で罰"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 52,
+      "id": 48,
       "act": 2,
-      "narration": "いくらまでなら出すか、と聞かれる。",
+      "narration": "そして投入額は跳ね上がり、高い水準のまま維持された。",
       "visual": {
-        "type": "dialogue",
-        "line": "いくらまでなら出す?"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 53,
-      "act": 2,
-      "narration": "その一軒が高級リゾートホテルだと告げられたグループの回答は、中央値で2ドル65セント。",
-      "visual": {
-        "type": "stat",
-        "value": "2.65ドル",
-        "label": "高級リゾートホテル",
-        "context": "中央値",
+        "type": "line",
+        "title": "投入額の跳ね上がり",
         "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "points": [
+          {
+            "label": "罰導入前",
+            "value": 30
+          },
+          {
+            "label": "導入後",
+            "value": 80
+          },
+          {
+            "label": "維持",
+            "value": 85
+          }
+        ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 54,
-      "act": 2,
-      "narration": "小さくて古びた雑貨店だと告げられたグループは、1ドル50セントだった。",
+      "id": 49,
+      "act": 3,
+      "narration": "金曜の午前1時すぎ、西麻布の交差点を想像してみて欲しい。",
       "visual": {
-        "type": "columns",
-        "title": "同じビールの価格差",
-        "left": {
-          "label": "リゾートホテル",
-          "value": "2.65ドル",
-          "level": 0.85
-        },
-        "right": {
-          "label": "古びた雑貨店",
-          "value": "1.50ドル",
-          "level": 0.4
-        },
-        "note": "売り手で変わる"
+        "type": "figure",
+        "figure": "city",
+        "label": "午前1時の交差点"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 50,
+      "act": 3,
+      "narration": "ビルの2階の店から、6人が出てくる。",
+      "visual": {
+        "type": "figure",
+        "figure": "crowd",
+        "label": "店から6人出てくる"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 55,
-      "act": 2,
-      "narration": "ビールの銘柄は同じ。",
+      "id": 51,
+      "act": 3,
+      "narration": "会計を済ませたのは、最後に階段を降りてきた男性ひとりだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "銘柄は同じ"
+        "type": "figure",
+        "figure": "money",
+        "label": "会計は男性ひとり"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 52,
+      "act": 3,
+      "narration": "伝票を見た者は誰もいない。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "伝票を見た者はいない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 53,
+      "act": 3,
+      "narration": "歩道でタクシーが2台止まり、4人が乗り込んで消える。",
+      "visual": {
+        "type": "figure",
+        "figure": "city",
+        "label": "タクシーに4人"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 54,
+      "act": 3,
+      "narration": "残ったふたりは、まだ次の店の話をしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "couple",
+        "label": "残ったふたり"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 55,
+      "act": 3,
+      "narration": "それでも、この集まりは来週も開かれる。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "来週も開かれる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 56,
-      "act": 2,
-      "narration": "飲む場所も同じビーチ。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "同じビーチで飲む"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 57,
-      "act": 2,
-      "narration": "冷たさも味も、一滴たりとも変わらない。",
+      "act": 3,
+      "narration": "誰も排除されていない。",
       "visual": {
         "type": "keyword",
-        "keyword": "一滴も変わらない"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 58,
-      "act": 2,
-      "narration": "変わったのは、誰が売っているかだけである。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "誰が売っているか"
+        "keyword": "誰も排除されない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 59,
-      "act": 2,
-      "narration": "それだけで、払える金額が1.8倍動いた。",
+      "id": 57,
+      "act": 3,
+      "narration": "ということは、フェールとゲヒターが観察した罰は、この場では発動していないということになる。",
       "visual": {
-        "type": "stat",
-        "value": "1.8倍",
-        "label": "払える金額の差",
-        "context": "売り手が違うだけで",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "gavel",
+        "label": "罰は発動していない"
       },
       "concept_color": "charcoal"
+    },
+    {
+      "id": 58,
+      "act": 3,
+      "narration": "返っていないのではない。",
+      "visual": {
+        "type": "dialogue",
+        "line": "返っていないのではない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 59,
+      "act": 3,
+      "narration": "我々が数えていないのだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "数えていないだけ"
+      },
+      "concept_color": "pitch-black"
     },
     {
       "id": 60,
       "act": 3,
-      "narration": "セイラーはこれを取引効用と名付けた。",
+      "narration": "ここまで聞くと、話の着地点は見えた気がするだろう。",
       "visual": {
-        "type": "keyword",
-        "keyword": "取引効用"
+        "type": "figure",
+        "figure": "path",
+        "label": "見えた気がする着地点"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 61,
       "act": 3,
-      "narration": "人が値段を判断するとき、脳は商品を見ていない。",
+      "narration": "つまり体か、あるいは将来の結婚が対価なのだろうと。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "脳は商品を見ていない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 62,
-      "act": 3,
-      "narration": "売り手が誰で、その人物にその値段を付ける資格があるかを見ている。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "売り手の資格を見る"
+        "type": "comparison",
+        "left_title": "対価の候補",
+        "right_title": "対価の候補",
+        "left_items": [
+          "体"
+        ],
+        "right_items": [
+          "将来の結婚"
+        ],
+        "center_label": "対価とは"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 63,
+      "id": 62,
       "act": 3,
-      "narration": "土曜の朝9時58分を想像してみて欲しい。",
+      "narration": "事実、その線で語られる記事はすでに多い。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "土曜の朝9時58分"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 64,
-      "act": 3,
-      "narration": "郊外の量販店の駐車場に、まだ開いていない自動ドアへ向かって列ができている。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "開店前の列"
+        "figure": "screen",
+        "label": "その線の記事は多い"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 65,
+      "id": 63,
       "act": 3,
-      "narration": "先頭から数えて11人目の男が、スマートフォンの画面を下にスワイプし続けている。",
+      "narration": "だが、この動画はそこで終わらない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ここで終わらない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 64,
+      "act": 3,
+      "narration": "本当に興味深いのは、支払いの向きというものが、人類の歴史のなかで何度も逆さまになってきたという事実のほうだ。",
       "visual": {
         "type": "figure",
-        "figure": "smartphone",
-        "label": "11人目の男"
+        "figure": "cycle",
+        "label": "支払いの向きの逆転"
       },
-      "concept_color": "daylight"
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 65,
+      "act": 3,
+      "narration": "金は、いつから男から女へ流れるようになったのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "金は男から女へ"
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 66,
       "act": 3,
-      "narration": "開いているのはフリマアプリの相場画面だ。",
+      "narration": "1964年、社会学者のピーター・ブラウが、人間関係を交換として記述する枠組みを整理した。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "フリマアプリの相場"
+        "type": "stat",
+        "value": "1964年",
+        "label": "交換の枠組み",
+        "context": "社会学者ブラウ",
+        "unit": ""
       },
       "concept_color": "charcoal"
     },
     {
       "id": 67,
       "act": 3,
-      "narration": "今日ここで買える箱の、昨夜の落札価格が並んでいる。",
+      "narration": "ブラウが重視したのは、交換される二つのものが同じ通貨である必要はない、という一点である。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "昨夜の落札価格"
+        "figure": "handshake",
+        "label": "同じ通貨でなくていい"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 68,
       "act": 3,
-      "narration": "定価のおよそ1.7倍。",
+      "narration": "片方が金を出し、もう片方が地位や注目や同席を出す。",
       "visual": {
-        "type": "stat",
-        "value": "1.7倍",
-        "label": "定価との比",
-        "context": "落札価格",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "comparison",
+        "left_title": "片方",
+        "right_title": "もう片方",
+        "left_items": [
+          "金"
+        ],
+        "right_items": [
+          "地位",
+          "注目",
+          "同席"
+        ],
+        "center_label": "交換される二つ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 69,
       "act": 3,
-      "narration": "12人目は、幼い息子の手を握って立っている。",
+      "narration": "この非対称な交換には、支払い量を比べるための共通の物差しが存在しない。",
       "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "息子の手を握る12人目"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 70,
-      "act": 3,
-      "narration": "二人が並んでいるのは、同じ一本の列だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "同じ一本の列"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 71,
-      "act": 3,
-      "narration": "それでも、市場は消えない。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "消えない市場"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 72,
-      "act": 3,
-      "narration": "取り締まっても、憎んでも、翌週にはまた同じ値段がついている。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "また同じ値段"
+        "type": "balance",
+        "title": "非対称な交換",
+        "left_label": "金",
+        "right_label": "地位・注目",
+        "tilt": 0.6,
+        "note": "共通の物差しなし"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 73,
+      "id": 70,
       "act": 3,
-      "narration": "ということは、値段が付いているのは商品ではないということだ。",
+      "narration": "だから外から見ると、片方だけが払っているように見える。",
       "visual": {
-        "type": "keyword",
-        "keyword": "値がつくのは商品ではない"
+        "type": "figure",
+        "figure": "eye",
+        "label": "片方だけ払って見える"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 74,
+      "id": 71,
       "act": 3,
-      "narration": "手に入らないという事実の方に、値段が付いている。",
+      "narration": "同じ非対称を、経済学は世界地図の規模で確かめている。",
       "visual": {
         "type": "figure",
-        "figure": "target",
-        "label": "手に入らないことに値がつく"
+        "figure": "scale",
+        "label": "経済学が測る非対称"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 72,
+      "act": 3,
+      "narration": "2007年、ブリティッシュ・コロンビア大学のシワン・アンダーソンが、婚姻のときに動く金を整理した論文を、ジャーナル・オブ・エコノミック・パースペクティブズ誌に発表した。",
+      "visual": {
+        "type": "stat",
+        "value": "2007年",
+        "label": "アンダーソンの論文",
+        "context": "婚姻で動く金",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 73,
+      "act": 3,
+      "narration": "婚資には二つの型がある。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "婚資＝動く金"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 74,
+      "act": 3,
+      "narration": "花婿の側が花嫁の側に払うブライドプライスと、花嫁の側が花婿の側に払うダウリー、つまり持参金である。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "ブライドプライス",
+        "right_title": "ダウリー",
+        "left_items": [
+          "花婿→花嫁"
+        ],
+        "right_items": [
+          "花嫁→花婿"
+        ],
+        "center_label": "支払いの向き"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 75,
       "act": 3,
-      "narration": "ここまで聞くと、話の着地点は見えた気がするだろう。",
+      "narration": "マードックの民族誌アトラスに収められた1167の前工業社会のうち、およそ3分の2でブライドプライスが行われていた。",
       "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "見えた着地点"
+        "type": "donut",
+        "title": "1167の前工業社会のうち",
+        "percent": 67,
+        "label": "ブライドプライスの社会",
+        "rest_label": "その他"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
       "id": 76,
       "act": 3,
-      "narration": "つまり、悪いのは転売する側ではなく、需要に対して安すぎる値段を付けたまま動かない売り手の方なのだろうと。",
+      "narration": "額も小さくない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "悪者とされる側",
-        "right_title": "本当の原因",
-        "left_items": [
-          "転売する側"
-        ],
-        "right_items": [
-          "安すぎる値段の売り手"
-        ],
-        "center_label": "通説の構図"
+        "type": "figure",
+        "figure": "money",
+        "label": "額は小さくない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 77,
       "act": 3,
-      "narration": "事実、その線で説明する記事も動画も、すでに多い。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "同じ説明の記事と動画"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 78,
-      "act": 3,
-      "narration": "だが、この動画はそこで終わらない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "だが、そこで終わらない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 79,
-      "act": 3,
-      "narration": "本当に興味深いのは、その正しいはずの経済学が、200年以上にわたって、この怒りだけをうまく説明できずに来たことの方だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "200年説明できない怒り"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 80,
-      "act": 3,
-      "narration": "自分が損をしてでも他人を罰したいという衝動は、合理的な経済人の設計図のどこにも書かれていない。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "設計図にない衝動"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 81,
-      "act": 3,
-      "narration": "では、その衝動は、いったいどこから来たのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "衝動はどこから来たのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 82,
-      "act": 2,
-      "narration": "2002年1月、科学誌ネイチャーに、経済学の前提を揺さぶる論文が載った。",
+      "narration": "地域によっては、世帯の年収の4倍から6倍に達する。",
       "visual": {
         "type": "stat",
-        "value": "2002年1月",
-        "label": "ネイチャー掲載の論文",
-        "context": "経済学の前提を揺さぶる",
+        "value": "4〜6倍",
+        "label": "世帯年収に対する婚資",
+        "context": "地域による",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 78,
+      "act": 3,
+      "narration": "では、なぜ一部の社会だけが逆向きになったのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "なぜ逆向きに?"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 79,
+      "act": 3,
+      "narration": "2013年、アルベルト・アレシナ、パオラ・ジュリアーノ、ネイサン・ナンの三人が、クオータリー・ジャーナル・オブ・エコノミクス誌に手がかりを出した。",
+      "visual": {
+        "type": "stat",
+        "value": "2013年",
+        "label": "アレシナら3名の論文",
+        "context": "QJE誌",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 80,
+      "act": 3,
+      "narration": "着目したのは、鋤である。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "鋤（すき）"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 81,
+      "act": 3,
+      "narration": "鍬で耕す農業は女性も担えるが、鋤は上半身の力と大型家畜の扱いを要求する。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "鍬",
+        "right_title": "鋤",
+        "left_items": [
+          "女性も担える"
+        ],
+        "right_items": [
+          "上半身の力",
+          "大型家畜"
+        ],
+        "center_label": "農具と労働"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 82,
+      "act": 3,
+      "narration": "三人は、その土地が鋤向きの作物に適しているかという地理条件を使い、祖先が鋤を使っていた集団を特定した。",
+      "visual": {
+        "type": "figure",
+        "figure": "dna",
+        "label": "祖先が鋤を使った集団"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 83,
-      "act": 2,
-      "narration": "著者はチューリッヒ大学のエルンスト・フェールと、ザンクトガレン大学のシモン・ゲヒター。",
+      "act": 3,
+      "narration": "結果、鋤の社会の子孫は、現代でも女性の労働参加率が低く、性役割に保守的な意識を持っていた。",
       "visual": {
-        "type": "table",
-        "title": "著者",
-        "headers": [
-          "研究者",
-          "所属"
-        ],
-        "rows": [
-          [
-            "エルンスト・フェール",
-            "チューリッヒ大学"
-          ],
-          [
-            "シモン・ゲヒター",
-            "ザンクトガレン大学"
-          ]
-        ]
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "保守的な性役割の継承"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 84,
-      "act": 2,
-      "narration": "二人は被験者を4人一組にし、ひとりに20単位の元手を渡して、共同事業にいくら出すかを同時に決めさせた。",
+      "act": 3,
+      "narration": "移民として別の国へ移り住んだあとでも、その傾向は残っていた。",
       "visual": {
-        "type": "stat",
-        "value": "20単位",
-        "label": "4人一組の元手",
-        "context": "共同事業への出資額を同時決定",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "path",
+        "label": "移民後も残る傾向"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 85,
-      "act": 2,
-      "narration": "集まった金は1.6倍になって、出資額に関係なく全員に等分される。",
+      "act": 3,
+      "narration": "ここで、人間から遠く離れた場所の話をさせて欲しい。",
       "visual": {
-        "type": "stat",
-        "value": "1.6倍",
-        "label": "集めた金は増えて等分",
-        "context": "出資額に関係なく全員へ",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "keyword",
+        "keyword": "遠く離れた場所へ"
       },
-      "concept_color": "daylight"
+      "concept_color": "charcoal"
     },
     {
       "id": 86,
-      "act": 2,
-      "narration": "全員が全額出せば全員が得をするが、自分ひとりが出さずに済ませれば、その人間が一番得をする。",
+      "act": 3,
+      "narration": "アジサシという海鳥がいる。",
       "visual": {
-        "type": "comparison",
-        "left_title": "全員が全額出す",
-        "right_title": "自分だけ出さない",
-        "left_items": [
-          "全員が得をする"
-        ],
-        "right_items": [
-          "その人が一番得をする"
-        ],
-        "center_label": "ジレンマ"
+        "type": "keyword",
+        "keyword": "海鳥アジサシ"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 87,
-      "act": 2,
-      "narration": "ここまでは古典的な実験だ。",
+      "act": 3,
+      "narration": "繁殖期になると、オスは海で魚をとり、それをメスのもとへ運び続ける。",
       "visual": {
-        "type": "keyword",
-        "keyword": "ここまでは古典的な実験"
+        "type": "figure",
+        "figure": "couple",
+        "label": "オスがメスへ魚を運ぶ"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 88,
+      "act": 3,
+      "narration": "求愛給餌と呼ばれる行動で、産卵の直前の数日間、メスはほとんど自分で餌をとらない。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "求愛給餌"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 88,
-      "act": 2,
-      "narration": "二人が加えたのは、次の一手である。",
+      "id": 89,
+      "act": 3,
+      "narration": "口にしているのは、オスが運んできた魚だけになる。",
       "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "加えた次の一手"
+        "type": "keyword",
+        "keyword": "口にするのは魚だけ"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 89,
-      "act": 2,
-      "narration": "各自の出資額を公開したあと、自腹を切って他人の取り分を削る権利を与えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "自腹で他人の取り分を削る権利"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
       "id": 90,
-      "act": 2,
-      "narration": "1単位払えば、相手の取り分が3単位減る。",
+      "act": 3,
+      "narration": "1973年、鳥類学者のイアン・ニスベットが、ネイチャー誌の第241巻141ページに、この行動を測った論文を発表した。",
       "visual": {
         "type": "stat",
-        "value": "1:3",
-        "label": "1単位払えば相手は3単位減る",
-        "context": "罰のコスト構造",
+        "value": "1973年",
+        "label": "ニスベットの論文",
+        "context": "ネイチャー誌 第241巻141ページ",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 91,
-      "act": 2,
-      "narration": "払った側には、一円の見返りもない。",
+      "act": 3,
+      "narration": "オスがどれだけ運んだかを記録し、そのあとメスが産んだ卵の大きさと、その後の繁殖の成功を突き合わせたのである。",
       "visual": {
         "type": "figure",
-        "figure": "blame",
-        "label": "払う側に見返りゼロ"
+        "figure": "scale",
+        "label": "運搬量と繁殖成功を照合"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 92,
+      "act": 3,
+      "narration": "よく運んだつがいほど、卵は大きく、巣立つ雛は多かった。",
+      "visual": {
+        "type": "chart",
+        "title": "運搬量と繁殖成功",
+        "subtitle": "",
+        "unit": "",
+        "items": [
+          {
+            "label": "よく運んだつがい",
+            "value": 100
+          },
+          {
+            "label": "あまり運ばない",
+            "value": 55
+          }
+        ],
+        "highlight": 0,
+        "annotation": "卵は大きく、雛は多い"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 93,
+      "act": 3,
+      "narration": "ここで見誤ってはならないのは、どちらが払っているかである。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "どちらが払っているのか"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 92,
-      "act": 2,
-      "narration": "結果はこうだった。",
+      "id": 94,
+      "act": 3,
+      "narration": "メスは魚を一匹も返していない。",
       "visual": {
         "type": "keyword",
-        "keyword": "結果はこうだった"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 93,
-      "act": 2,
-      "narration": "6回の試行のあいだに、罰は合計1270回行われた。",
-      "visual": {
-        "type": "stat",
-        "value": "1270回",
-        "label": "6回の試行で行われた罰",
-        "context": "合計の罰の回数",
-        "unit": "回",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 94,
-      "act": 2,
-      "narration": "被験者の84.3パーセントが、少なくとも一度は自腹を切って他人を罰している。",
-      "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 84,
-        "label": "100人中84人が自腹で罰した"
+        "keyword": "メスは一匹も返さない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 95,
-      "act": 2,
-      "narration": "しかも罰の74.2パーセントは、平均以上に出した人間が、平均以下しか出さなかった人間に向けて放ったものだった。",
-      "visual": {
-        "type": "chart",
-        "title": "罰の方向",
-        "subtitle": "フェール&ゲヒター 2002",
-        "unit": "%",
-        "items": [
-          {
-            "label": "多く出した人→少なく出した人",
-            "value": 74.2
-          },
-          {
-            "label": "その他",
-            "value": 25.8
-          }
-        ],
-        "highlight": 0,
-        "annotation": "罰の大半は協力者から非協力者へ 74.2%"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 96,
-      "act": 2,
-      "narration": "相手とは二度と同じ組にならないと知らされていてもだ。",
+      "act": 3,
+      "narration": "だがメスは、その魚を卵に変えている。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": "二度と同じ組にならない相手"
+        "figure": "seed",
+        "label": "魚を卵に変える"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 97,
-      "act": 4,
-      "narration": "見返りはない。",
+      "id": 96,
+      "act": 3,
+      "narration": "卵は、この生き物にとって最も高価な支出だ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "見返りはない"
+        "type": "figure",
+        "figure": "money",
+        "label": "卵＝最も高価な支出"
       },
       "concept_color": "pitch-black"
+    },
+    {
+      "id": 97,
+      "act": 3,
+      "narration": "運ばれた魚は無償の贈り物ではなく、原材料の仕入れだった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "無償の贈り物",
+        "right_title": "原材料の仕入れ",
+        "left_items": [
+          "ではなく"
+        ],
+        "right_items": [
+          "だった"
+        ],
+        "center_label": "魚の正体"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 98,
       "act": 4,
-      "narration": "評判も立たない。",
+      "narration": "ここで、あの席をもう一度眺めてみて欲しい。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "評判も立たない"
+        "figure": "couple",
+        "label": "あの席をもう一度"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 99,
       "act": 4,
-      "narration": "それでも人は払う。",
+      "narration": "テーブルの上に載っているのは料理と酒だが、その席が成立するために必要だったものは、それだけではない。",
       "visual": {
         "type": "figure",
         "figure": "money",
-        "label": "それでも人は払う"
+        "label": "料理と酒だけではない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "warm"
     },
     {
       "id": 100,
       "act": 4,
-      "narration": "フェールとゲヒターはこれを利他的懲罰と呼び、その引き金は計算ではなく怒りという感情そのものだと結論づけた。",
+      "narration": "予定を空けること。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "利他的懲罰の引き金は怒り"
+        "figure": "clock",
+        "label": "予定を空ける"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 101,
       "act": 4,
-      "narration": "罰は、人間にとってコストではない。",
+      "narration": "着ていくものを用意すること。",
       "visual": {
-        "type": "keyword",
-        "keyword": "罰はコストではない"
+        "type": "figure",
+        "figure": "mask",
+        "label": "着ていくものを用意"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 102,
       "act": 4,
-      "narration": "金を払ってでも実行したい、目的の側だったのである。",
+      "narration": "移動すること。",
       "visual": {
-        "type": "balance",
-        "title": "罰の位置づけ",
-        "left_label": "コスト",
-        "right_label": "目的",
-        "tilt": 0.8,
-        "note": "金を払ってでも実行したい"
+        "type": "figure",
+        "figure": "path",
+        "label": "移動する"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 103,
       "act": 4,
-      "narration": "この非合理は、条件を変えても同じ形で現れる。",
+      "narration": "そして、その場に華があるという状態を保ち続けること。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "条件を変えても同じ形"
+        "figure": "eye",
+        "label": "華を保ち続ける"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 104,
-      "act": 2,
-      "narration": "1982年、ドイツの経済学者ヴェルナー・ギュートらが考案した最後通牒ゲームがある。",
+      "act": 4,
+      "narration": "伝票に印字されるのは、このうち一項目だけである。",
       "visual": {
-        "type": "stat",
-        "value": "1982年",
-        "label": "最後通牒ゲームの考案",
-        "context": "ヴェルナー・ギュートら",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "contract",
+        "label": "伝票に載るのは一項目"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 105,
-      "act": 2,
-      "narration": "提案者が一定額の分け方を提案し、応答者が受け入れれば両者はその通りに受け取るが、拒否すれば両者ともゼロになる。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "受け入れる",
-        "right_title": "拒否する",
-        "left_items": [
-          "両者が提案通り受け取る"
-        ],
-        "right_items": [
-          "両者ともゼロになる"
-        ],
-        "center_label": "最後通牒"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 106,
-      "act": 2,
-      "narration": "合理的に考えれば、応答者は1円でも受け取るべきだ。",
+      "act": 4,
+      "narration": "午前2時40分、タクシーの後部座席。",
       "visual": {
         "type": "stat",
-        "value": "1円",
-        "label": "合理なら受け取るべき最低額",
-        "context": "最後通牒ゲーム",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 107,
-      "act": 2,
-      "narration": "ところが実際には、全体のおよそ2割を下回る提案は、かなりの割合で拒否される。",
-      "visual": {
-        "type": "donut",
-        "title": "低すぎる提案の行方",
-        "percent": 20,
-        "label": "2割未満の提案",
-        "rest_label": "それ以上の提案"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 108,
-      "act": 2,
-      "narration": "自分の取り分をゼロにしてでも、不公正な分配を成立させない。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "取り分ゼロでも拒む"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 109,
-      "act": 2,
-      "narration": "この傾向は各地で繰り返し確認され、金額を跳ね上げても消えなかった。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "各地で繰り返し確認"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 110,
-      "act": 2,
-      "narration": "ではその怒りは、値上げの幅に反応しているのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "怒りは幅への反応か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 111,
-      "act": 2,
-      "narration": "カーネマンらの同じ論文には、続きがある。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "同じ論文の続き"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 112,
-      "act": 2,
-      "narration": "三人は値上げの理由を変えて、同じように評価を求めている。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "値上げの理由を変える"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 113,
-      "act": 2,
-      "narration": "仕入れ値が上がったことを理由にした値上げは、多くの人が公正だと答えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "仕入れ値上昇は公正"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 114,
-      "act": 2,
-      "narration": "利益が脅かされている企業が価格を上げることも、賃金を下げることも、許容された。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "利益を守る値上げは許容"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 115,
-      "act": 2,
-      "narration": "一方で、需要が増えたことに乗じた値上げは、拒絶された。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "需要増に乗じた値上げは拒絶"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 116,
-      "act": 3,
-      "narration": "三人はこれを、売り手と買い手それぞれの取り分に関する二重の権利と呼んだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "二重の権利"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 117,
-      "act": 3,
-      "narration": "判定されているのは値上げの幅ではない。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "判定されるもの",
-        "right_title": "判定されないもの",
-        "left_items": [
-          "値上げの理由"
-        ],
-        "right_items": [
-          "値上げの幅"
-        ],
-        "center_label": "何を見ているか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 118,
-      "act": 3,
-      "narration": "値上げの理由の方だ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "問われるのは理由"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 119,
-      "act": 3,
-      "narration": "同じ100円でも、原価が上がったからだと言えば通り、欲しがる人が増えたからだと言えば通らない。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "通る言い分",
-        "right_title": "通らない言い分",
-        "left_items": [
-          "原価が上がった"
-        ],
-        "right_items": [
-          "欲しがる人が増えた"
-        ],
-        "center_label": "同じ100円"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 120,
-      "act": 3,
-      "narration": "この非対称は、人間に固有のものなのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "この非対称は人間固有か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 121,
-      "act": 2,
-      "narration": "ここで、一見まったく関係のない研究を持ち出したい。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "無関係に見える研究"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 122,
-      "act": 2,
-      "narration": "2003年9月、同じくネイチャーに載った論文だ。",
-      "visual": {
-        "type": "stat",
-        "value": "2003年9月",
-        "label": "ネイチャー掲載論文",
+        "value": "午前2時40分",
+        "label": "タクシーの後部座席",
         "context": "",
         "unit": "",
         "axis": {
@@ -1628,673 +1322,994 @@
           "ticks": []
         }
       },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 106,
+      "act": 3,
+      "narration": "スマートフォンの画面に、決済の通知が並んでいる。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "決済の通知"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 107,
+      "act": 3,
+      "narration": "美容室、ネイル、洋服のサブスク。",
+      "visual": {
+        "type": "list",
+        "title": "月々のサブスク",
+        "items": [
+          "美容室",
+          "ネイル",
+          "洋服のサブスク"
+        ]
+      },
       "concept_color": "charcoal"
     },
     {
-      "id": 123,
-      "act": 2,
-      "narration": "著者はエモリー大学のサラ・ブロスナンとフランス・ドゥ・ヴァール。",
+      "id": 108,
+      "act": 3,
+      "narration": "合計は、今夜の会計とほとんど同じ額だ。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "ブロスナンとドゥ・ヴァール"
+        "figure": "scale",
+        "label": "今夜とほぼ同額"
       },
-      "concept_color": "daylight"
+      "concept_color": "dark-navy"
     },
     {
-      "id": 124,
+      "id": 109,
+      "act": 3,
+      "narration": "窓の外を、まだ明かりの落ちていないビルが流れていく。",
+      "visual": {
+        "type": "figure",
+        "figure": "city",
+        "label": "まだ灯るビル"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 110,
       "act": 2,
-      "narration": "実験台に乗ったのは、10頭のフサオマキザルである。",
+      "narration": "冒頭の14.8ポイントに戻ろう。",
       "visual": {
         "type": "stat",
-        "value": "10頭",
-        "label": "フサオマキザル",
-        "context": "実験台の被験体",
+        "value": "14.8ポイント",
+        "label": "冒頭の差",
+        "context": "払った認識のズレ",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
-      "id": 125,
+      "id": 111,
       "act": 2,
-      "narration": "二頭を隣り合わせのケージに入れ、小石を実験者の手に返すと餌がもらえる、という取引を覚えさせる。",
+      "narration": "男性の72.4パーセントが多めに払ったと答え、そう認識している女性は57.6パーセントしかいなかった。",
       "visual": {
-        "type": "figure",
-        "figure": "cage",
-        "label": "小石を返すと餌がもらえる"
+        "type": "chart",
+        "title": "多めに払ったと答えた割合",
+        "subtitle": "意識調査",
+        "unit": "%",
+        "items": [
+          {
+            "label": "男性",
+            "value": 72.4
+          },
+          {
+            "label": "女性",
+            "value": 57.6
+          }
+        ],
+        "highlight": 0,
+        "annotation": "認識のズレ 72.4%対57.6%"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 126,
-      "act": 2,
-      "narration": "報酬はキュウリの薄切りだ。",
+      "id": 112,
+      "act": 3,
+      "narration": "この差は、記憶違いでも見栄でもない可能性が高い。",
       "visual": {
         "type": "keyword",
-        "keyword": "報酬はキュウリ"
+        "keyword": "記憶違いではない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 113,
+      "act": 3,
+      "narration": "払った側は自分の支出だけを数え、払われた側は自分の支出も数えている。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "払った側",
+        "right_title": "払われた側",
+        "left_items": [
+          "自分の支出だけ数える"
+        ],
+        "right_items": [
+          "自分の支出も数える"
+        ],
+        "center_label": "数え方の非対称"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 114,
+      "act": 3,
+      "narration": "ではその夜、金は実際にどこからどこへ流れていたのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "金はどこへ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 115,
+      "act": 3,
+      "narration": "供給する側から見ると、この夜の会計は少し奇妙な構造をしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "奇妙な構造"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 116,
+      "act": 3,
+      "narration": "会員制のラウンジでは、料金は時間で売られる。",
+      "visual": {
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "時間を売る店"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 117,
+      "act": 3,
+      "narration": "テーブルにつく人数と滞在した時間の掛け算で額が決まり、飲まれた酒はその一部でしかない。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "人数×滞在時間"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 118,
+      "act": 3,
+      "narration": "ボトルの仕入れ値と提供価格の差は確かに大きいが、店の利益の芯はそこではない。",
+      "visual": {
+        "type": "columns",
+        "title": "利益の芯はどこか",
+        "left": {
+          "label": "仕入れ値",
+          "value": "低",
+          "level": 0.3
+        },
+        "right": {
+          "label": "提供価格",
+          "value": "高",
+          "level": 0.75
+        },
+        "note": "差は大きいが芯ではない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 119,
+      "act": 3,
+      "narration": "芯にあるのは、その場に人がいるという状態そのものだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "crowd",
+        "label": "人がいる状態"
       },
       "concept_color": "warm"
     },
     {
+      "id": 120,
+      "act": 3,
+      "narration": "仕入れ原価という概念が存在しない商品を、時間で切り分けて売っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "原価なき商品"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 121,
+      "act": 3,
+      "narration": "ただし、この動画で伝えたいのは、店が悪質だとか、彼女たちがずるいという単純な話ではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "善悪の話ではない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 122,
+      "act": 3,
+      "narration": "店は需要のある場所に商品を置いているに過ぎず、払う側も払われる側も、その夜に得たいものを得ている。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "双方が得ている"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 123,
+      "act": 3,
+      "narration": "誰かが誰かを騙してこの配置ができたわけではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "誰も騙していない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 124,
+      "act": 3,
+      "narration": "だとすれば問うべきは、なぜこの支払いの向きが、これほど安定して一方向を向き続けるのかのほうだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "なぜ一方向か"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 125,
+      "act": 3,
+      "narration": "その安定を、外側から支えている仕組みがある。",
+      "visual": {
+        "type": "figure",
+        "figure": "gavel",
+        "label": "外側で支える仕組み"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 126,
+      "act": 3,
+      "narration": "税である。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "税"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 127,
       "act": 2,
-      "narration": "二年分の予備実験で、サルたちが95パーセント以上の確率で素直に小石を返すことは分かっていた。",
+      "narration": "日本の法人が交際費等として計上した4兆4139億円は、その全額が企業の持ち出しになるわけではない。",
       "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 95,
-        "label": "95%以上が素直に返す"
+        "type": "stat",
+        "value": "4兆4139億円",
+        "label": "法人の交際費等",
+        "context": "全額が持ち出しではない",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 128,
       "act": 2,
-      "narration": "ここで実験者は、片方にだけブドウを渡し始める。",
+      "narration": "中小企業なら年800万円まで、大企業でも接待飲食費の50パーセントが、法人税を計算するときの損金として認められる。",
       "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "片方にだけブドウを渡す"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 129,
-      "act": 2,
-      "narration": "ブドウはキュウリよりはるかに好まれる。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "キュウリ",
-        "right_title": "ブドウ",
-        "left_items": [
-          "ふつうの報酬"
+        "type": "table",
+        "title": "損金算入の扱い",
+        "headers": [
+          "区分",
+          "認められる範囲"
         ],
-        "right_items": [
-          "はるかに好まれる"
-        ],
-        "center_label": "報酬の格差"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 130,
-      "act": 3,
-      "narration": "隣が同じ仕事でブドウを受け取っているのを見た瞬間、もう一方のサルは小石を返さなくなった。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "隣の報酬を見た瞬間"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 131,
-      "act": 3,
-      "narration": "差し出されたキュウリを、実験者に投げ返す個体もいた。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "キュウリを投げ返す"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 132,
-      "act": 3,
-      "narration": "取引の条件は、何ひとつ変わっていない。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "取引条件は不変"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 133,
-      "act": 3,
-      "narration": "変わったのは、隣の取り分だけである。",
-      "visual": {
-        "type": "balance",
-        "title": "変わったのは何か",
-        "left_label": "自分の取り分",
-        "right_label": "隣の取り分",
-        "tilt": 0.7,
-        "note": "隣だけが変わった"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 134,
-      "act": 2,
-      "narration": "ただし、この研究には反論もある。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "研究への反論"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 135,
-      "act": 2,
-      "narration": "2006年には、同じ手続きで再現を試みたうえで、サルの拒否は不公平への反応ではなく、目の前にブドウがあるのに自分は手に入らないという苛立ちで説明できる、と主張した論文が出ている。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "不公平ではなく苛立ちか"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 136,
-      "act": 3,
-      "narration": "議論はいまも続いており、決着はついていない。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "議論は未決着"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 137,
-      "act": 3,
-      "narration": "それでも、ひとつだけ言えることがある。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "それでも言えること"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 138,
-      "act": 3,
-      "narration": "同じ仕事に違う値段が付いた瞬間、それを見て取引そのものを降りる回路は、少なくとも人間が発明したものではないかもしれない、ということだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "取引を降りる回路"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 139,
-      "act": 3,
-      "narration": "そしてその回路の正面に、転売という行為は立っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "その正面に立つ転売"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 140,
-      "act": 3,
-      "narration": "深夜11時40分。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "深夜11時40分"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 141,
-      "act": 4,
-      "narration": "仕事帰りの女性が、電車の吊り革を握ったまま画面を見ている。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "電車で画面を見る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 142,
-      "act": 4,
-      "narration": "半年前から通知を待っていた公演は、落選だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "落選の通知"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 143,
-      "act": 4,
-      "narration": "同じ会場の座席が、いま画面の中で、6万8000円で売られている。",
-      "visual": {
-        "type": "stat",
-        "value": "68000円",
-        "label": "転売価格",
-        "context": "同じ会場の座席",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 144,
-      "act": 4,
-      "narration": "定価は9800円。",
-      "visual": {
-        "type": "stat",
-        "value": "9800円",
-        "label": "定価",
-        "context": "本来の値段",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 145,
-      "act": 4,
-      "narration": "指はスクロールを止めない。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "止まらないスクロール"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 146,
-      "act": 4,
-      "narration": "買うためではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "買うためではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 147,
-      "act": 4,
-      "narration": "出品者のアカウント名を、覚えるためだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "名前を覚える"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 148,
-      "act": 2,
-      "narration": "ここで、冒頭の話に戻りたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "冒頭へ戻る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 149,
-      "act": 2,
-      "narration": "この国で、メーカーが定価を守らせることを法的に許されているのは、6品目だけだった。",
-      "visual": {
-        "type": "stat",
-        "value": "6品目",
-        "label": "定価維持が許される商品",
-        "context": "再販売価格維持制度",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 150,
-      "act": 2,
-      "narration": "書籍、雑誌、新聞、レコード盤、音楽用テープ、音楽用CD。",
-      "visual": {
-        "type": "list",
-        "title": "再販適用の6品目",
-        "items": [
-          "書籍",
-          "雑誌",
-          "新聞",
-          "レコード盤",
-          "音楽用テープ",
-          "音楽用CD"
+        "rows": [
+          [
+            "中小企業",
+            "年800万円まで"
+          ],
+          [
+            "大企業",
+            "接待飲食費の50%"
+          ]
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 151,
+      "id": 129,
       "act": 2,
-      "narration": "1953年に決まったこの例外は、文化を守るためだと説明されてきた。",
+      "narration": "そして2024年4月1日、この制度が緩められた。",
       "visual": {
         "type": "stat",
-        "value": "1953年",
-        "label": "例外が決まった年",
-        "context": "文化を守るため",
+        "value": "2024年4月1日",
+        "label": "制度が緩められた日",
+        "context": "交際費の基準改定",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 130,
+      "act": 2,
+      "narration": "交際費等の範囲から除外される飲食費の基準が、参加者ひとりあたり5000円以下から1万円以下へ引き上げられたのである。",
+      "visual": {
+        "type": "columns",
+        "title": "除外される飲食費の基準",
+        "left": {
+          "label": "改定前 5000円以下",
+          "value": "5000",
+          "level": 0.35
+        },
+        "right": {
+          "label": "改定後 1万円以下",
+          "value": "10000",
+          "level": 0.8
+        },
+        "note": "上限が引き上げられた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 131,
+      "act": 2,
+      "narration": "適用は2027年3月31日までに開始する事業年度まで延長された。",
+      "visual": {
+        "type": "stat",
+        "value": "2027年3月31日",
+        "label": "適用の延長期限",
+        "context": "開始事業年度まで",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 132,
+      "act": 3,
+      "narration": "ひとり1万円の食事なら、交際費の枠を使わずに落とせるようになったということだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "contract",
+        "label": "枠を使わず落とせる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 133,
+      "act": 3,
+      "narration": "冒頭の数字を思い出して欲しい。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "冒頭の数字"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 134,
+      "act": 2,
+      "narration": "交際費の総額は令和5年度に16.8パーセント増え、令和6年度もさらに増えている。",
+      "visual": {
+        "type": "line",
+        "title": "交際費総額の推移",
+        "unit": "%増",
+        "points": [
+          {
+            "label": "令和5年度",
+            "value": 16.8
+          },
+          {
+            "label": "令和6年度",
+            "value": 21
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 135,
+      "act": 3,
+      "narration": "あの夜の会計の一部は、払った本人の財布からではなく、法人の口座から出ている。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "法人の口座から"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 136,
+      "act": 3,
+      "narration": "そしてその一部は、税という形で、社会の側が負担している。",
+      "visual": {
+        "type": "figure",
+        "figure": "gavel",
+        "label": "社会が負担している"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 137,
+      "act": 3,
+      "narration": "一方、払われた側の帳簿はどうなっているか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "払われた側の帳簿"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 138,
+      "act": 3,
+      "narration": "同じ調査の年代別の内訳が、静かな数字を出している。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "静かな数字"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 139,
+      "act": 2,
+      "narration": "デートの予算が5000円未満だと答えた割合は、男性では20代の17.8パーセントから、30代で16パーセント、40代では13.3パーセントへと下がっていく。",
+      "visual": {
+        "type": "line",
+        "title": "予算5000円未満と答えた男性",
+        "unit": "%",
+        "points": [
+          {
+            "label": "20代",
+            "value": 17.8
+          },
+          {
+            "label": "30代",
+            "value": 16
+          },
+          {
+            "label": "40代",
+            "value": 13.3
+          }
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 140,
+      "act": 2,
+      "narration": "ところが女性では、20代の25.4パーセントから、30代で29.5パーセント、40代では38パーセントへと、逆に上がっていく。",
+      "visual": {
+        "type": "line",
+        "title": "予算5000円未満と答えた女性",
+        "unit": "%",
+        "points": [
+          {
+            "label": "20代",
+            "value": 25.4
+          },
+          {
+            "label": "30代",
+            "value": 29.5
+          },
+          {
+            "label": "40代",
+            "value": 38
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 141,
+      "act": 3,
+      "narration": "年齢が上がるほど、男性は多く出し、女性は少なく出す。",
+      "visual": {
+        "type": "columns",
+        "title": "年齢と支払いの非対称",
+        "left": {
+          "label": "男性",
+          "value": "多く出す",
+          "level": 0.8
+        },
+        "right": {
+          "label": "女性",
+          "value": "少なく出す",
+          "level": 0.35
+        },
+        "note": "年齢が上がるほど差が拡大"
+      },
       "concept_color": "daylight"
+    },
+    {
+      "id": 142,
+      "act": 3,
+      "narration": "非対称は、時間とともに縮まるのではなく、開いていく。",
+      "visual": {
+        "type": "line",
+        "title": "非対称は開いていく",
+        "unit": "差",
+        "points": [
+          {
+            "label": "20代",
+            "value": 10
+          },
+          {
+            "label": "30代",
+            "value": 22
+          },
+          {
+            "label": "40代",
+            "value": 38
+          },
+          {
+            "label": "50代",
+            "value": 55
+          }
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 143,
+      "act": 3,
+      "narration": "そして同じ調査には、もうひとつの数字がある。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "もうひとつの数字"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 144,
+      "act": 2,
+      "narration": "多めに払ったと答えた男性の72.4パーセントと、払ってもらったと答えた女性の57.6パーセント。",
+      "visual": {
+        "type": "chart",
+        "title": "同じ夜の二つの記憶",
+        "subtitle": "同一調査",
+        "unit": "%",
+        "items": [
+          {
+            "label": "多めに払ったと答えた男性",
+            "value": 72.4
+          },
+          {
+            "label": "払ってもらったと答えた女性",
+            "value": 57.6
+          }
+        ],
+        "highlight": 0,
+        "annotation": "認識のズレ 72.4%対57.6%"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 145,
+      "act": 3,
+      "narration": "同じ夜を、ふたりが別々の帳簿に記録している。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "男性の帳簿",
+        "right_title": "女性の帳簿",
+        "left_items": [
+          "払った"
+        ],
+        "right_items": [
+          "払ってもらった"
+        ],
+        "center_label": "同じ夜の別記録"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 146,
+      "act": 1,
+      "narration": "土曜の午後3時、美容室の鏡の前。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "土曜午後3時 美容室の鏡"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 147,
+      "act": 1,
+      "narration": "担当者が、次の予約は3週間後でいいかと聞く。",
+      "visual": {
+        "type": "dialogue",
+        "line": "次のご予約は3週間後でよろしいですか"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 148,
+      "act": 1,
+      "narration": "彼女は、来週の金曜までにもう一度来たいと答える。",
+      "visual": {
+        "type": "dialogue",
+        "line": "来週の金曜までに、もう一度来たいんです"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 149,
+      "act": 3,
+      "narration": "この構造には、もう一本の線が走っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "path",
+        "label": "構造に走るもう一本の線"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 150,
+      "act": 3,
+      "narration": "夜の会計に載らない支出は、昼の側で発生していて、そちらの伝票を見る人間は誰もいない。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "昼に発生し誰も見ない伝票"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 151,
+      "act": 3,
+      "narration": "そもそも人間は、いつから、どちらが払うかを決めるようになったのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "いつから払う側を決めた?"
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 152,
       "act": 3,
-      "narration": "裏を返せば、それ以外のすべての商品について、法は値段を自由に動かせと命じている。",
+      "narration": "そもそも人間は、いつから婚姻や求愛に、金を伴わせるようになったのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "gavel",
-        "label": "値段を自由に動かせ"
+        "figure": "heart",
+        "label": "求愛に金を伴わせたのは"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 153,
       "act": 3,
-      "narration": "定価を守れという要求は、法律の要求ではない。",
+      "narration": "婚姻のときに金や家畜や布が動く慣行は、ひとつの文明の思いつきではなかった。",
       "visual": {
-        "type": "keyword",
-        "keyword": "法律の要求ではない"
+        "type": "figure",
+        "figure": "contract",
+        "label": "金・家畜・布が動く慣行"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 154,
       "act": 3,
-      "narration": "人間の側から出ている要求だ。",
+      "narration": "サハラ以南のアフリカでは家畜が花嫁の家へ渡り、南アジアでは現金と金製品が花婿の家へ渡る。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "人間の側からの要求"
+        "type": "comparison",
+        "left_title": "サハラ以南アフリカ",
+        "right_title": "南アジア",
+        "left_items": [
+          "家畜が花嫁の家へ"
+        ],
+        "right_items": [
+          "現金・金製品が花婿の家へ"
+        ],
+        "center_label": "逆向きの流れ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 155,
       "act": 3,
-      "narration": "では、その要求を毎日受け取っている売り手の帳簿は、どうなっているのだろうか。",
+      "narration": "中世ヨーロッパの貴族層は持参金で領地そのものを動かし、日本では結納金が男の側から差し出される。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "売り手の帳簿は?"
+        "type": "comparison",
+        "left_title": "中世ヨーロッパ貴族",
+        "right_title": "日本",
+        "left_items": [
+          "持参金で領地が動く"
+        ],
+        "right_items": [
+          "結納金は男の側から"
+        ],
+        "center_label": "向きの違い"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 156,
       "act": 3,
-      "narration": "供給側から見ると、チケットという商品は、少し奇妙な性質を持っている。",
+      "narration": "向きも中身も違うのに、金が動くという一点だけが、どこでも同じだ。",
       "visual": {
         "type": "figure",
-        "figure": "contract",
-        "label": "奇妙な性質の商品"
+        "figure": "money",
+        "label": "どこでも金だけが動く"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 157,
+      "act": 4,
+      "narration": "ところが、である。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ところが、である"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 157,
-      "act": 3,
-      "narration": "座席の原価は、公演が始まる前にほぼ確定している。",
+      "id": 158,
+      "act": 4,
+      "narration": "実は歴史のほとんどの期間、多数派だったのは、男の側が払う形のほうだった。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "原価は事前に確定"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 158,
-      "act": 3,
-      "narration": "会場費、機材、人件費。",
-      "visual": {
-        "type": "list",
-        "title": "固定費の中身",
-        "items": [
-          "会場費",
-          "機材",
-          "人件費"
-        ]
+        "figure": "crowd",
+        "label": "多数派は男が払う形"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 159,
-      "act": 3,
-      "narration": "何枚売れようと総額は大きく動かない。",
+      "act": 2,
+      "narration": "アンダーソンが整理したマードックの民族誌アトラスでは、1167の前工業社会のうち、およそ3分の2でブライドプライスが行われている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "総額は動かない"
+        "type": "donut",
+        "title": "マードック民族誌アトラス 1167社会",
+        "percent": 67,
+        "label": "ブライドプライスの社会",
+        "rest_label": "それ以外"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 160,
-      "act": 3,
-      "narration": "そのうえ、席の数は物理的に増やせない。",
+      "act": 4,
+      "narration": "花婿の家が、花嫁の家に家畜や現金を渡す。",
       "visual": {
         "type": "figure",
-        "figure": "cage",
-        "label": "席は増やせない"
+        "figure": "handshake",
+        "label": "花婿の家から花嫁の家へ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 161,
-      "act": 3,
-      "narration": "原価がほぼ固定で、供給が絶対に増やせない商品は、理屈の上では需要に合わせていくらでも値上げできるはずだ。",
+      "act": 4,
+      "narration": "つまり男が払うのは、現代の甘やかしでも日本の悪癖でもない。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "理屈では値上げできる"
+        "type": "keyword",
+        "keyword": "甘やかしでも悪癖でもない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 162,
-      "act": 3,
-      "narration": "にもかかわらず、興行主の多くは値上げしない。",
+      "act": 4,
+      "narration": "人類の標準だったのだ。",
       "visual": {
         "type": "keyword",
-        "keyword": "それでも値上げしない"
+        "keyword": "人類の標準だった"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 163,
-      "act": 2,
-      "narration": "2025年の動員ひとりあたりの単価は9286円。",
+      "act": 4,
+      "narration": "では、逆向きの持参金はなぜ生まれたのか。",
       "visual": {
-        "type": "stat",
-        "value": "9286円",
-        "label": "動員ひとりあたり単価",
-        "context": "2025年",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "question",
+        "label": "逆向きの持参金はなぜ?"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 164,
-      "act": 2,
-      "narration": "前年より4.5パーセント上がってはいるが、二次流通で付く値段の上がり方とは桁がひとつ違う。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "一次流通",
-        "right_title": "二次流通",
-        "left_items": [
-          "前年比+4.5%"
-        ],
-        "right_items": [
-          "桁がひとつ違う上昇"
-        ],
-        "center_label": "上がり方の差"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 165,
-      "act": 3,
-      "narration": "売り手は、自分の手で天井を作っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "chains",
-        "label": "自分の手で天井を作る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 166,
-      "act": 2,
-      "narration": "ただし、この動画で伝えたいのは、興行主が怠慢だという単純な話ではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "怠慢ではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 167,
-      "act": 2,
-      "narration": "1991年、シカゴ大学のゲイリー・ベッカーが、政治経済学ジャーナルに短い論文を書いている。",
-      "visual": {
-        "type": "stat",
-        "value": "1991年",
-        "label": "ベッカーの論文",
-        "context": "シカゴ大学・政治経済学ジャーナル",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 168,
-      "act": 2,
-      "narration": "人気のレストランや劇場やスポーツ興行が、行列ができているのに値上げしないのはなぜか。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "行列でも値上げしない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 169,
-      "act": 2,
-      "narration": "ベッカーの答えはこうだ。",
+      "act": 4,
+      "narration": "ここで鋤の話が効いてくる。",
       "visual": {
         "type": "figure",
         "figure": "lightbulb",
-        "label": "ベッカーの答え"
+        "label": "ここで鋤の話が効く"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 165,
+      "act": 4,
+      "narration": "鍬で耕す農業では、女性は男性とほぼ同じだけ働ける。",
+      "visual": {
+        "type": "balance",
+        "title": "鍬で耕す農業",
+        "left_label": "女性の労働",
+        "right_label": "男性の労働",
+        "tilt": 0.05,
+        "note": "ほぼ同じだけ働ける"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 166,
+      "act": 4,
+      "narration": "花嫁は労働力であり、その労働力を失う実家に対して、花婿の側が対価を払った。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "花嫁は労働力だった"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 167,
+      "act": 4,
+      "narration": "ところが鋤が入ると、農作業は上半身の力と大型家畜の扱いを要求するようになり、女性の農業労働の価値が相対的に下がる。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "鋤の導入で女性労働の価値低下"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 168,
+      "act": 4,
+      "narration": "労働力ではなく扶養される存在として数えられたとき、支払いの向きは反転する。",
+      "visual": {
+        "type": "columns",
+        "title": "支払いの向きが反転",
+        "left": {
+          "label": "労働力として",
+          "value": "払われる側",
+          "level": 0.3
+        },
+        "right": {
+          "label": "扶養される存在",
+          "value": "払う側",
+          "level": 0.85
+        },
+        "note": "反転"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 169,
+      "act": 4,
+      "narration": "花嫁の側が、引き受けてもらうために払う側へ回るのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "花嫁側が払う側へ回る"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 170,
-      "act": 3,
-      "narration": "この種の商品では、ある人の需要が他人の需要に依存している。",
+      "act": 2,
+      "narration": "1961年、インドは持参金禁止法を制定し、この流れを止めようとした。",
       "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "需要が需要に依存する"
+        "type": "stat",
+        "value": "1961年",
+        "label": "インド持参金禁止法の制定",
+        "context": "流れを止める試み",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 171,
-      "act": 3,
-      "narration": "満席であること自体が、商品の一部なのだ。",
+      "act": 2,
+      "narration": "1984年と1986年の改正で刑は重くなり、最低の懲役は2年から5年へ引き上げられている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "満席こそ商品の一部"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 172,
-      "act": 3,
-      "narration": "値上げして席を埋め残せば、増えた売上以上のものを失う。",
-      "visual": {
-        "type": "balance",
-        "title": "",
-        "left_label": "増えた売上",
-        "right_label": "失うもの",
-        "tilt": 0.7,
-        "note": "席を埋め残す損失"
+        "type": "stat",
+        "value": "2年→5年",
+        "label": "最低の懲役の引き上げ",
+        "context": "1984年・1986年の改正",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 173,
-      "act": 3,
-      "narration": "売り手が定価を守っているのは、道徳心からだけではない。",
+      "id": 172,
+      "act": 4,
+      "narration": "それでも慣行は消えず、地域によっては婚資が世帯年収の4倍から6倍に達したままだ。",
       "visual": {
-        "type": "comparison",
-        "left_title": "道徳心",
-        "right_title": "計算",
-        "left_items": [
-          "定価を守る善意"
-        ],
-        "right_items": [
-          "損得の合理"
-        ],
-        "center_label": "定価維持の理由"
+        "type": "stat",
+        "value": "4〜6倍",
+        "label": "婚資が世帯年収に達する",
+        "context": "それでも慣行は消えず",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 173,
+      "act": 5,
+      "narration": "つまり、どちらが払うかに自然な正解はない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自然な正解はない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 174,
-      "act": 3,
-      "narration": "計算の結果でもある。",
+      "act": 5,
+      "narration": "その場で、どちらの差し出すものに値札がついていないかが、支払いの向きを決めている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "計算の結果"
+        "type": "balance",
+        "title": "支払いの向きを決めるもの",
+        "left_label": "値札のあるもの",
+        "right_label": "値札のないもの",
+        "tilt": -0.6,
+        "note": "値札のない側へ傾く"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 175,
-      "act": 3,
-      "narration": "そして、この構造の上に、誰も語らない収益の線が一本走っている。",
+      "act": 5,
+      "narration": "では、値札のつかない側は、なぜ弱くならないのか。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "誰も語らない収益の線"
+        "figure": "question",
+        "label": "値札のつかない側はなぜ弱くならない?"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 176,
       "act": 3,
-      "narration": "2025年9月17日、アメリカの連邦取引委員会と7つの州が、ライブネイションとその子会社チケットマスターを提訴した。",
+      "narration": "1925年、人類学者のマルセル・モースは、世界中の贈与を比較して、贈り物には三つの義務がついて回ることを示した。",
       "visual": {
         "type": "stat",
-        "value": "2025.9.17",
-        "label": "FTCと7州が提訴",
-        "context": "米連邦取引委員会",
+        "value": "1925年",
+        "label": "モースの贈与論",
+        "context": "人類学",
         "unit": "",
         "axis": {
           "label": "",
@@ -2306,180 +2321,184 @@
     {
       "id": 177,
       "act": 3,
-      "narration": "訴状の中心にあるのは、トリプルディップ、三度すくうと訳せる言葉だ。",
+      "narration": "与える義務、受け取る義務、そして返す義務である。",
       "visual": {
-        "type": "keyword",
-        "keyword": "三度すくう"
+        "type": "list",
+        "title": "贈与の三つの義務",
+        "items": [
+          "与える義務",
+          "受け取る義務",
+          "返す義務"
+        ]
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 178,
       "act": 3,
-      "narration": "転売業者が一次流通でチケットを買うとき、手数料が取れる。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "一次流通で買う"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 179,
-      "act": 3,
-      "narration": "その業者が同じプラットフォームに転売を出すとき、また手数料が取れる。",
+      "narration": "返礼のない贈与というものは存在しない。",
       "visual": {
         "type": "figure",
         "figure": "cycle",
-        "label": "同じ場で転売"
+        "label": "返礼なき贈与は無い"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 180,
+      "id": 179,
       "act": 3,
-      "narration": "そのチケットをファンが買うとき、三度目の手数料が取れる。",
+      "narration": "返せない相手に一方的に与え続ける行為は、贈与ではなく、序列の宣言になる。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "三度目の手数料"
+        "figure": "hierarchy",
+        "label": "一方的な贈与は序列"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 180,
+      "act": 3,
+      "narration": "だから受け取る側は、必ず何かを返している。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "受け取る側も返す"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 181,
       "act": 3,
-      "narration": "つまりこのプラットフォームにとって、転売業者は敵ではなく、最も収益効率の高い顧客だったことになる。",
+      "narration": "ザハヴィの言い方を借りれば、払うこと自体が信号であり、返すこと自体もまた信号なのだ。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "転売業者は最良の顧客"
+        "figure": "notification",
+        "label": "払うも返すも信号"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 182,
       "act": 3,
-      "narration": "訴状によれば、二次流通の手数料収入は2019年から2024年までで37億ドル。",
+      "narration": "では、その交換は、支払った分だけ何かを返してくれるのだろうか。",
       "visual": {
-        "type": "stat",
-        "value": "37億ドル",
-        "label": "二次流通の手数料収入",
-        "context": "訴状より",
-        "unit": "",
-        "axis": {
-          "label": "2019〜2024",
-          "ticks": [
-            "2019",
-            "2021",
-            "2023",
-            "2024"
-          ]
-        }
+        "type": "balance",
+        "title": "支払った分は返るか",
+        "left_label": "支払い",
+        "right_label": "見返り",
+        "tilt": 0.3,
+        "note": ""
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 183,
       "act": 3,
-      "narration": "社内の点検では、たった5つの業者が6345のアカウントを保有し、2594公演のチケットを24万6407枚集めていたとされる。",
+      "narration": "アンダーソンの整理は、婚資が膨らんだ社会で何が起きたかも記録している。",
       "visual": {
-        "type": "table",
-        "title": "5業者の実態",
-        "headers": [
-          "項目",
-          "数"
-        ],
-        "rows": [
-          [
-            "アカウント",
-            "6345"
-          ],
-          [
-            "公演",
-            "2594"
-          ],
-          [
-            "チケット",
-            "246407枚"
-          ]
-        ]
+        "type": "figure",
+        "figure": "money",
+        "label": "膨らむ婚資の記録"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 184,
       "act": 3,
-      "narration": "ひとり4枚までという上限は、購入画面に表示されていた。",
+      "narration": "持参金の額が世帯年収の4倍から6倍に達する地域では、娘が生まれること自体が、家計の将来の負債として数えられるようになった。",
       "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "ひとり4枚まで"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 185,
-      "act": 3,
-      "narration": "ある幹部の社内メールには、方針として見て見ぬふりをする、と書かれていたと訴状は述べる。",
-      "visual": {
-        "type": "dialogue",
-        "line": "方針として、見て見ぬふりをする"
+        "type": "stat",
+        "value": "4倍〜6倍",
+        "label": "持参金/世帯年収",
+        "context": "娘は将来の負債に",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 186,
+      "id": 185,
       "act": 3,
-      "narration": "2021年、第三者による本人確認の導入は見送られた。",
+      "narration": "生まれたその日に、十数年後の支払い予定が確定してしまうからである。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "本人確認の導入見送り"
+        "figure": "hourglass",
+        "label": "生まれた日に支払い確定"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 186,
+      "act": 3,
+      "narration": "インドでは2005年、結婚から7年以内に女性が不自然な死に方をし、持参金をめぐる嫌がらせが立証された場合に、その死の背景を推定する規定が法律に置かれた。",
+      "visual": {
+        "type": "stat",
+        "value": "2005年",
+        "label": "インドの推定規定",
+        "context": "婚姻7年以内の不自然死",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 187,
       "act": 3,
-      "narration": "理由は、効きすぎるからだったとされる。",
+      "narration": "国家が個別の事情を調べる前から推定を働かせなければならないほど、支払いの非対称は人を追い詰めてきた。",
       "visual": {
-        "type": "keyword",
-        "keyword": "効きすぎるから"
+        "type": "figure",
+        "figure": "gavel",
+        "label": "国家が推定を働かせる"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 188,
       "act": 3,
-      "narration": "同社は、これらの主張を強く否定している。",
+      "narration": "理由は、金額の大きさではない。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "同社は強く否定"
+        "type": "keyword",
+        "keyword": "額ではない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 189,
-      "act": 4,
-      "narration": "この構造の請求書は、買う側に回ってくる。",
+      "act": 3,
+      "narration": "値札のつかない側が、自分の支出を自分でも数えられなくなることだ。",
       "visual": {
         "type": "figure",
-        "figure": "blame",
-        "label": "請求書は買う側へ"
+        "figure": "scale",
+        "label": "値札なき側は数えられない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 190,
+      "act": 3,
+      "narration": "数えられないものは、交渉の材料にならない。",
+      "visual": {
+        "type": "figure",
+        "figure": "conflict",
+        "label": "数えられねば交渉できぬ"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 190,
-      "act": 4,
-      "narration": "同じ訴状によれば、表示価格に上乗せされる必須手数料は、価格の24パーセントから44パーセントに達する。",
+      "id": 191,
+      "act": 3,
+      "narration": "1961年5月、インド議会は持参金禁止法を可決した。",
       "visual": {
         "type": "stat",
-        "value": "24〜44%",
-        "label": "必須手数料の上乗せ",
-        "context": "同じ訴状より",
+        "value": "1961年5月",
+        "label": "持参金禁止法 可決",
+        "context": "インド議会",
         "unit": "",
         "axis": {
           "label": "",
@@ -2489,964 +2508,104 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 191,
-      "act": 4,
-      "narration": "日本でも、支払っているのは金だけではない。",
+      "id": 192,
+      "act": 3,
+      "narration": "法律の第2条は、持参金を、婚姻に関連して一方の当事者から他方へ渡される財産と定義している。",
       "visual": {
-        "type": "keyword",
-        "keyword": "払うのは金だけではない"
+        "type": "figure",
+        "figure": "contract",
+        "label": "第2条・持参金の定義"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 192,
-      "act": 4,
-      "narration": "抽選への申し込み、本人確認、同行者の事前登録、当日の身分証提示。",
+      "id": 193,
+      "act": 3,
+      "narration": "渡すことも、受け取ることも、要求することも罰の対象になった。",
       "visual": {
         "type": "list",
-        "title": "見えない負担",
+        "title": "罰の対象",
         "items": [
-          "抽選への申し込み",
-          "本人確認",
-          "同行者の事前登録",
-          "当日の身分証提示"
+          "渡すこと",
+          "受け取ること",
+          "要求すること"
         ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 193,
-      "act": 4,
-      "narration": "2025年の国内公演回数は10万820回、動員は9223万人だった。",
-      "visual": {
-        "type": "stat",
-        "value": "9223万人",
-        "label": "2025年の動員",
-        "context": "国内公演10万820回",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 194,
-      "act": 4,
-      "narration": "そのほぼ全員が、席にたどり着くまでに、値札のどこにも書かれていない時間と手間を払っている。",
+      "act": 3,
+      "narration": "可決から60年以上が過ぎている。",
       "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "席まで払う時間と手間"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 195,
-      "act": 4,
-      "narration": "定価を守るという約束は、無料では守れない。",
-      "visual": {
-        "type": "balance",
-        "title": "定価を守る約束",
-        "left_label": "定価の維持",
-        "right_label": "隠れたコスト",
-        "tilt": 0.6,
-        "note": "無料では守れない"
+        "type": "stat",
+        "value": "60年以上",
+        "label": "可決からの歳月",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 196,
-      "act": 4,
-      "narration": "そして、同じ市場には、もうひとつの数字がある。",
+      "id": 195,
+      "act": 3,
+      "narration": "それでもいまなお、結婚式の前の晩に、どこかの家の台所で、小さな秤が電球の下に出されている。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "もうひとつの数字"
+        "figure": "scale",
+        "label": "電球の下の小さな秤"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
+    },
+    {
+      "id": 196,
+      "act": 4,
+      "narration": "支払いの非対称は、額の問題ではない。",
+      "visual": {
+        "type": "balance",
+        "title": "支払いの非対称",
+        "left_label": "載る支出",
+        "right_label": "載らない支出",
+        "tilt": 0.7,
+        "note": "額の問題ではない"
+      },
+      "concept_color": "pitch-black"
     },
     {
       "id": 197,
       "act": 4,
-      "narration": "国内のリユース市場は2024年に3兆2628億円、15年連続で拡大した。",
+      "narration": "片方の支出だけが伝票に載る状態が続くと、載らない側の支出は、やがて本人からも見えなくなる。",
       "visual": {
-        "type": "stat",
-        "value": "3兆2628億円",
-        "label": "国内リユース市場",
-        "context": "2024年",
-        "unit": "",
-        "axis": {
-          "label": "15年連続拡大",
-          "ticks": [
-            "2010",
-            "2016",
-            "2020",
-            "2024"
-          ]
-        }
+        "type": "comparison",
+        "left_title": "伝票に載る側",
+        "right_title": "載らない側",
+        "left_items": [
+          "支出が記録される"
+        ],
+        "right_items": [
+          "やがて自分にも見えない"
+        ],
+        "center_label": "非対称"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 198,
       "act": 4,
-      "narration": "あるフリマアプリの推計では、家庭に眠ったままの持ち物を金額に換算すると、総額はおよそ216兆円になるという。",
+      "narration": "では我々は、自分が毎日何を払っているのかを、どこまで数えられているのだろうか。",
       "visual": {
-        "type": "stat",
-        "value": "216兆円",
-        "label": "家庭に眠る持ち物",
-        "context": "あるフリマアプリの推計",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "question",
+        "label": "毎日何を払っているか"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 199,
-      "act": 4,
-      "narration": "私たちは転売を憎みながら、自分の持ち物を売るための市場を、毎年少しずつ大きくしている。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "憎みながら市場を育てる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 200,
-      "act": 1,
-      "narration": "金曜の午後4時を想像してみて欲しい。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "金曜の午後4時"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 201,
-      "act": 1,
-      "narration": "都内のアリーナの通用口の裏で、当日券を諦めた男が二人、少し離れて別々にスマートフォンを見ている。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "通用口の裏、二人の男"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 202,
-      "act": 1,
-      "narration": "片方は、開演2時間前に値が崩れるのを待っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "値が崩れるのを待つ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 203,
-      "act": 1,
-      "narration": "もう片方は、値が崩れる前に売り抜けるのを待っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "崩れる前に売り抜ける"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 204,
-      "act": 1,
-      "narration": "二人が見つめているのは、同じ一枚の座席だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "同じ一枚の座席"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 205,
-      "act": 3,
-      "narration": "この構造には、もう一本の線が走っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "もう一本の線"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 206,
-      "act": 3,
-      "narration": "国家である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "国家"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 207,
-      "act": 2,
-      "narration": "では、値段を誰が決めていいのかという問題を、人類はこれまでどう処理してきたのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": ""
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 208,
-      "act": 2,
-      "narration": "そもそも人間は、なぜ値段が動くという、ただそれだけのことに、これほど反応してしまうのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "なぜ値動きに反応するのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 209,
-      "act": 2,
-      "narration": "13世紀、トマス・アクィナスは神学大全の中で、物には正しい値段があり、それを超えて売る者は罪を犯していると書いた。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "アクィナス『正しい値段』"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 210,
-      "act": 2,
-      "narration": "イスラム法には、生活必需品を買い占めて値を吊り上げる行為を戒める規範が古くからある。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "買い占めを戒める規範"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 211,
-      "act": 3,
-      "narration": "江戸では、米を買い占めた商家の店先が打ちこわされた。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "店先の打ちこわし"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 212,
-      "act": 3,
-      "narration": "1787年には、江戸市中で大規模な打ちこわしが起きている。",
-      "visual": {
-        "type": "stat",
-        "value": "1787年",
-        "label": "江戸の大打ちこわし",
-        "context": "江戸市中",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 213,
-      "act": 3,
-      "narration": "時代も、宗教も、統治の形も違う。",
-      "visual": {
-        "type": "list",
-        "title": "違うもの",
-        "items": [
-          "時代",
-          "宗教",
-          "統治の形"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 214,
-      "act": 3,
-      "narration": "それなのに、罰される人間の職業だけは、驚くほど同じだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "罰される職業は同じ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 215,
-      "act": 3,
-      "narration": "安く買い、高く売った者である。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "安く買い高く売る"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 216,
-      "act": 3,
-      "narration": "ところが、である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "ところが"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 217,
-      "act": 3,
-      "narration": "実は歴史のほとんどの期間、値段は固定されていなかった。",
-      "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "値段は交渉で決まった"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 218,
-      "act": 3,
-      "narration": "値札という物体が、そもそも存在しなかった。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "値札は存在しなかった"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 219,
-      "act": 3,
-      "narration": "客の顔を見て、身なりを見て、急いでいるかどうかを見て、そのつど値が決まる。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "客を見て値が決まる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 220,
-      "act": 3,
-      "narration": "いまも世界の多くの市場に残っているあの光景の方が、人類の標準だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "village",
-        "label": "これが人類の標準"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 221,
-      "act": 3,
-      "narration": "それを崩したのは、正義感ではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "正義感ではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 222,
-      "act": 3,
-      "narration": "事務作業である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "事務作業"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 223,
-      "act": 3,
-      "narration": "1673年8月、伊勢松坂から出てきた52歳の商人、三井高利が、江戸本町一丁目に呉服店の越後屋を開いた。",
-      "visual": {
-        "type": "stat",
-        "value": "1673年",
-        "label": "越後屋 開店",
-        "context": "伊勢松坂の商人 三井高利52歳",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 224,
-      "act": 3,
-      "narration": "掲げた看板が、現銀掛け値なし。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "現銀掛け値なし"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 225,
-      "act": 3,
-      "narration": "掛け値とは、値切られることを見越して最初に高く言っておく金額のことだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "掛け値=高く言う金額"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 226,
-      "act": 3,
-      "narration": "高利はそれを捨て、商品に正札を付け、値段交渉そのものを店から追放した。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "正札で交渉を追放"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 227,
-      "act": 3,
-      "narration": "理由は明快である。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "理由は明快"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 228,
-      "act": 3,
-      "narration": "一人ずつ交渉している限り、店員は一人ずつしか客をさばけない。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "一人ずつしかさばけない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 229,
-      "act": 3,
-      "narration": "交渉をやめれば、大勢を同時にさばける。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "大勢を同時にさばく"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 230,
-      "act": 2,
-      "narration": "それから188年後の1861年、フィラデルフィアで、ジョン・ワナメーカーという二十代の青年が、同じことを始めた。",
-      "visual": {
-        "type": "stat",
-        "value": "1861年",
-        "label": "ワナメーカー同じ試み",
-        "context": "188年後 フィラデルフィア",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 231,
-      "act": 3,
-      "narration": "すべての商品に値札を付け、ひとつの値段、そして返品可能、と掲げた。",
-      "visual": {
-        "type": "list",
-        "title": "掲げたもの",
-        "items": [
-          "すべてに値札",
-          "ひとつの値段",
-          "返品可能"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 232,
-      "act": 3,
-      "narration": "彼はそれを、神の前で人が平等なら、値段の前でも平等であるべきだからだと説明した。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "値段の前でも平等"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 233,
-      "act": 3,
-      "narration": "もっとも、固定価格そのものは、それ以前からクエーカーの商人たちが実践していたとも言われる。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "クエーカーの先例"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 234,
-      "act": 3,
-      "narration": "いずれにせよ、我々が正しい値段と呼び、破られると本気で腹を立てているあの約束は、たかだか350年ほど前に、大量の客を効率よくさばきたかった商人が発明した、事務手続きにすぎない。",
-      "visual": {
-        "type": "stat",
-        "value": "350年前",
-        "label": "正しい値段=事務手続き",
-        "context": "効率よくさばくための発明",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 235,
-      "act": 3,
-      "narration": "では、なぜ事務手続きが道徳になったのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "なぜ道徳になったのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 236,
-      "act": 2,
-      "narration": "2007年、経済学者のアルヴィン・ロスが、経済展望ジャーナルに、市場の制約としての嫌悪感という論文を発表している。",
-      "visual": {
-        "type": "stat",
-        "value": "2007年",
-        "label": "市場の嫌悪感 論文",
-        "context": "経済学者 アルヴィン・ロス",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 237,
-      "act": 2,
-      "narration": "ロスがそこに並べたのは、当事者双方が合意していて、双方に利益があり、それでも社会が法で禁じている取引の一覧だった。",
-      "visual": {
-        "type": "list",
-        "title": "禁じられた取引",
-        "items": [
-          "双方が合意",
-          "双方に利益",
-          "なのに法で禁止"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 238,
-      "act": 3,
-      "narration": "臓器の売買。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "臓器の売買"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 239,
-      "act": 2,
-      "narration": "フランスでは小人投げが禁じられ、カリフォルニアでは馬肉の販売が禁じられた。",
-      "visual": {
-        "type": "table",
-        "title": "嫌悪で禁じられた取引",
-        "headers": [
-          "地域",
-          "禁止された取引"
-        ],
-        "rows": [
-          [
-            "フランス",
-            "小人投げ"
-          ],
-          [
-            "カリフォルニア",
-            "馬肉の販売"
-          ]
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 240,
-      "act": 3,
-      "narration": "経済学的には何の問題もない取引が、嫌悪感というただ一つの理由で消えていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "嫌悪感で消える取引"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 241,
-      "act": 3,
-      "narration": "ロスの結論はこうだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "ロスの結論"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 242,
-      "act": 3,
-      "narration": "市場が何を扱えるかを決めているのは効率ではない。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "決めるのは効率",
-        "right_title": "耐えられるか",
-        "left_items": [
-          "合理性"
-        ],
-        "right_items": [
-          "感情の限界"
-        ],
-        "center_label": "市場の境界"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 243,
-      "act": 3,
-      "narration": "人々がそれに耐えられるかどうかである。",
-      "visual": {
-        "type": "balance",
-        "title": "市場が扱えるもの",
-        "left_label": "効率",
-        "right_label": "耐えられるか",
-        "tilt": 0.6,
-        "note": "耐えられるかが決める"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 244,
-      "act": 3,
-      "narration": "定価は、その耐えられる範囲を示す線として、350年かけて、事務の側から道徳の側へ引っ越した。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "事務から道徳へ引っ越した"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 245,
-      "act": 3,
-      "narration": "では、その線を守ることは、支払った分だけ何かを返してくれるのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "線を守れば報われるか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 246,
-      "act": 3,
-      "narration": "値段で配ることを禁じたなら、別の何かで配らなければならない。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "値段で配る",
-        "right_title": "別の何かで配る",
-        "left_items": [
-          "お金",
-          "支払い能力"
-        ],
-        "right_items": [
-          "時間",
-          "運",
-          "手間"
-        ],
-        "center_label": "配分の手段"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 247,
-      "act": 3,
-      "narration": "使われるのは、時間と、運と、手間だ。",
-      "visual": {
-        "type": "list",
-        "title": "定価の下で使われるもの",
-        "items": [
-          "時間",
-          "運",
-          "手間"
-        ]
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 248,
-      "act": 2,
-      "narration": "2025年、国内のライブ市場の動員は9223万人、公演回数は10万820回、1公演あたりの平均動員は915人だった。",
-      "visual": {
-        "type": "stat",
-        "value": "9223万人",
-        "label": "2025年 国内ライブ動員",
-        "context": "公演10万820回",
-        "unit": "",
-        "axis": {
-          "label": "1公演平均915人",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 249,
-      "act": 2,
-      "narration": "注目すべきは伸び方の差である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "伸び方の差"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 250,
-      "act": 2,
-      "narration": "市場規模は12.6パーセント伸びたのに対し、公演回数の伸びは6.0パーセントにとどまった。",
-      "visual": {
-        "type": "chart",
-        "title": "2025年の伸び",
-        "subtitle": "ぴあ総研",
-        "unit": "%",
-        "items": [
-          {
-            "label": "市場規模",
-            "value": 12.6
-          },
-          {
-            "label": "公演回数",
-            "value": 6
-          }
-        ],
-        "highlight": 0,
-        "annotation": "規模は伸びるが回数は伸びない 12.6%対6.0%"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 251,
-      "act": 3,
-      "narration": "増えているのは公演の数ではなく、一公演あたりの規模と単価の方だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": ""
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 252,
-      "act": 2,
-      "narration": "調査を行ったぴあ総研は、同じ発表の中で、舞台技術者の不足、施設の老朽化、中規模ホールの不足を挙げ、限られた人材と施設を効率的に使うために、大規模公演と人気コンテンツへの集中が進んでいると書いている。",
-      "visual": {
-        "type": "list",
-        "title": "ぴあ総研の指摘",
-        "items": [
-          "舞台技術者の不足",
-          "施設の老朽化",
-          "中規模ホールの不足",
-          "大規模公演への集中"
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 253,
-      "act": 3,
-      "narration": "理由は、転売業者が席を奪っているからではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "転売業者のせいではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 254,
-      "act": 3,
-      "narration": "定価という上限が動かせない以上、供給側が増やせるのは席の値段ではなく、席の集中度の方だからだ。",
-      "visual": {
-        "type": "columns",
-        "title": "供給側が動かせるもの",
-        "left": {
-          "label": "席の値段",
-          "value": "固定",
-          "level": 0.2
-        },
-        "right": {
-          "label": "席の集中度",
-          "value": "上昇",
-          "level": 0.85
-        },
-        "note": "定価が動かせない分だけ集中が進む"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 255,
-      "act": 2,
-      "narration": "2026年3月、ライブネイションはアメリカ司法省などとの間で、2億8000万ドルの和解に合意した。",
-      "visual": {
-        "type": "stat",
-        "value": "2.8億ドル",
-        "label": "ライブネイションの和解",
-        "context": "2026年3月 米司法省など",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 256,
-      "act": 2,
-      "narration": "一部の会場でサービス手数料に上限を設けることが、条件のひとつだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "手数料に上限を設定"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 257,
-      "act": 2,
-      "narration": "だが33の州とコロンビア特別区は和解に応じず、裁判を続けた。",
-      "visual": {
-        "type": "stat",
-        "value": "33州",
-        "label": "和解に応じず提訴継続",
-        "context": "コロンビア特別区を含む",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 258,
-      "act": 2,
-      "narration": "そして2026年4月15日、マンハッタンの連邦地裁で、陪審は4日間の評議のすえ、同社が独占として振る舞い、チケット購入者から過大に徴収していたと認定した。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "独占・過大徴収を認定"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 259,
-      "act": 2,
-      "narration": "同社は、これで終わりではない、控訴すると表明している。",
-      "visual": {
-        "type": "dialogue",
-        "line": "これで終わりではない。控訴する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 260,
-      "act": 3,
-      "narration": "評決が出たその日も、同社のサイトでは、翌月の公演のチケットが、いつも通りの手順で売られていた。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "評決の日も、いつも通り販売"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 261,
-      "act": 3,
-      "narration": "定価という約束は、供給を増やせる商品でだけ機能する。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "供給を増やせる商品でだけ機能"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 262,
-      "act": 3,
-      "narration": "増やせない商品に定価を課した瞬間、それは公正の装置から、行列と抽選を生む装置に変わる。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "本来の役割",
-        "right_title": "変質した役割",
-        "left_items": [
-          "公正の装置"
-        ],
-        "right_items": [
-          "行列を生む",
-          "抽選を生む"
-        ],
-        "center_label": "増やせない商品では"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 263,
-      "act": 4,
-      "narration": "では、その行列に並んでいるのは、いったい誰なのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "並んでいるのは誰か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 264,
       "act": 5,
       "narration": "ここまでの道のりを振り返ろう。",
       "visual": {
@@ -3454,79 +2613,61 @@
         "figure": "path",
         "label": "ここまでの道のり"
       },
-      "concept_color": "dusk"
+      "concept_color": "pitch-black"
     },
     {
-      "id": 265,
+      "id": 200,
       "act": 5,
-      "narration": "行動経済学は、需要に乗じた値上げを82パーセントの人間が罪と判定し、判定されているのが幅ではなく理由であることを示した。",
+      "narration": "進化生物学は、返さない者を人間が必ず検出し、記憶し、排除することを示した。",
       "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 82,
-        "label": "100人中82人が罪と判定"
+        "type": "figure",
+        "figure": "eye",
+        "label": "裏切り者を検出し排除"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 266,
+      "id": 201,
       "act": 5,
-      "narration": "取引効用の研究は、同じビールの値段が売り手によって1.8倍動くこと、つまり我々が見ているのは商品ではなく売り手の資格であることを描き出した。",
-      "visual": {
-        "type": "stat",
-        "value": "1.8倍",
-        "label": "同じビールの値段差",
-        "context": "取引効用の研究",
-        "unit": "",
-        "axis": {
-          "label": "見ているのは売り手の資格",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 267,
-      "act": 5,
-      "narration": "実験経済学は、人間が自腹を切ってでも他人を罰し、その引き金が計算ではなく怒りであることを突きつけた。",
+      "narration": "ネイチャー誌の実験は、自分の取り分を減らしてでもただ乗りを罰する性質が我々に備わっていることを描き出した。",
       "visual": {
         "type": "figure",
-        "figure": "conflict",
-        "label": "自腹を切ってでも罰する"
+        "figure": "blame",
+        "label": "損してでも罰する"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 268,
+      "id": 202,
       "act": 5,
-      "narration": "霊長類の研究は、その回路が人間だけの発明ではないかもしれないと示唆した。",
+      "narration": "社会学は、交換される二つのものが同じ通貨である必要はないという一点を教えた。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "回路は人間だけの発明か"
+        "figure": "money",
+        "label": "同じ通貨でなくてよい"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 269,
+      "id": 203,
       "act": 5,
-      "narration": "帳簿は、転売を憎む舞台のちょうど裏側で、転売そのものが三重の手数料源になっていたことを映していた。",
+      "narration": "動物行動学は、アジサシのメスが魚を一匹も返さないまま、卵という最も高価な支出をしていたことを見せた。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "転売が三重の手数料源"
+        "figure": "seed",
+        "label": "卵という最も高価な支出"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 270,
+      "id": 204,
       "act": 5,
-      "narration": "そして文明史は、我々が守れと叫んでいる定価が、350年前に事務作業を減らしたかった商人の発明であることを教えた。",
+      "narration": "帳簿は、4兆4139億円の交際費と、2024年に1万円へ引き上げられた基準を並べ、あの夜の会計に社会が混ざっていることを映していた。",
       "visual": {
         "type": "stat",
-        "value": "350年前",
-        "label": "定価の起源",
-        "context": "事務を減らしたい商人の発明",
+        "value": "4兆4139億円",
+        "label": "交際費/2024年基準1万円",
+        "context": "あの夜の会計",
         "unit": "",
         "axis": {
           "label": "",
@@ -3536,195 +2677,179 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 271,
+      "id": 205,
       "act": 5,
-      "narration": "定価とは、正しい値段のことではない。",
+      "narration": "そして人類経済史は、支払いの向きが鋤ひとつで反転してきた事実を突きつけた。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "鋤ひとつで反転した向き"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 206,
+      "act": 5,
+      "narration": "奢りとは、無償の贈与ではない。",
       "visual": {
         "type": "keyword",
-        "keyword": "正しい値段ではない"
+        "keyword": "無償ではない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 207,
+      "act": 5,
+      "narration": "支払いが一方向にしか見えないとき、それはもう一方の通貨に値札がついていないだけである。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "もう一方に値札がない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 272,
+      "id": 208,
       "act": 5,
-      "narration": "誰が値上げしていいかを決める、社会の許可証だ。",
+      "narration": "港区女子が払っていないのではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "払っていないのではない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 209,
+      "act": 5,
+      "narration": "彼女たちの支出には、領収書が発行されないのだ。",
       "visual": {
         "type": "figure",
         "figure": "contract",
-        "label": "社会の許可証"
+        "label": "領収書が発行されない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 273,
+      "id": 210,
       "act": 5,
-      "narration": "同じ値上げでも、原価が上がったからだと言えば通り、欲しがる人が増えたからだと言えば通らない。",
+      "narration": "そして領収書の出ない支出は、やがて払った本人からも見えなくなる。",
       "visual": {
-        "type": "comparison",
-        "left_title": "通る言い訳",
-        "right_title": "通らない言い訳",
-        "left_items": [
-          "原価が上がった"
-        ],
-        "right_items": [
-          "欲しがる人が増えた"
-        ],
-        "center_label": "同じ値上げでも"
+        "type": "keyword",
+        "keyword": "やがて自分にも見えない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "daylight"
     },
     {
-      "id": 274,
-      "act": 5,
-      "narration": "転売する者が憎まれているのは、高く売ったからではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "blame",
-        "label": "高く売ったからではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 275,
-      "act": 5,
-      "narration": "その許可証を持たないまま、値段を付ける側の椅子に座ったからだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "crown",
-        "label": "許可証なく値付けの椅子に"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 276,
+      "id": 211,
       "act": 5,
       "narration": "最後に、ひとつだけ。",
       "visual": {
         "type": "keyword",
         "keyword": "最後に、ひとつだけ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
-      "id": 277,
+      "id": 212,
       "act": 5,
       "narration": "この動画を見ているあいだ、あなたは何を感じていただろうか。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "あなたは何を感じていたか"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 278,
-      "act": 5,
-      "narration": "買ったときより高い値段でフリマアプリに出したことのある人は、少なくないはずだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "高い値段でフリマに出した経験"
+        "figure": "screen",
+        "label": "見ていたあなたの心"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 279,
+      "id": 213,
       "act": 5,
-      "narration": "数年前に買った時計の相場や、値上がりした株や、住んでいる家の査定額を、一度も嬉しいと思わなかった人は、もっと少ないだろう。",
-      "visual": {
-        "type": "list",
-        "title": "嬉しかった値上がり",
-        "items": [
-          "時計の相場",
-          "値上がりした株",
-          "家の査定額"
-        ]
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 280,
-      "act": 5,
-      "narration": "あの喜びと、転売への怒りは、同じ一枚の値札の表と裏である。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "あの喜び",
-        "right_title": "転売への怒り",
-        "left_items": [
-          "自分の値上がり"
-        ],
-        "right_items": [
-          "他人の値上げ"
-        ],
-        "center_label": "同じ値札の表と裏"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 281,
-      "act": 5,
-      "narration": "違うのは、値段を付けているのが自分か、他人かだけだ。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "自分で付ける",
-        "right_title": "他人が付ける",
-        "left_items": [
-          "自己評価"
-        ],
-        "right_items": [
-          "市場価格"
-        ],
-        "center_label": "値段を付けるのは誰か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 282,
-      "act": 5,
-      "narration": "この動画の下にある登録ボタンもまた、値段の付いていない取引のひとつだ。",
+      "narration": "誰かに食事を奢ったあと、その相手が次に何をしてくれるかを、心のどこかで数えていたことはないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "notification",
-        "label": "値段のない取引"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 283,
-      "act": 5,
-      "narration": "仕組みを全部知った上で、それでも押す価値があると思っていただけたなら、押していただけると嬉しいです。",
-      "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "それでも押す価値"
+        "figure": "brain",
+        "label": "奢った後、心で数える"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 284,
+      "id": 214,
       "act": 5,
-      "narration": "そんなことを、また考えすぎてしまいました。",
+      "narration": "逆に、奢られた帰り道に、今日は自分が場を持たせたのだと思ったことはないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "また考えすぎた"
+        "figure": "path",
+        "label": "奢られた帰り道の計算"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
-      "id": 285,
+      "id": 215,
       "act": 5,
-      "narration": "よろしければチャンネル登録と高評価をお願いします。",
+      "narration": "あの計算は、六本木の交差点にだけ設置されている装置ではない。",
       "visual": {
         "type": "figure",
-        "figure": "applause",
-        "label": "登録と高評価"
+        "figure": "city",
+        "label": "あの計算は特別ではない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 286,
+      "id": 216,
+      "act": 5,
+      "narration": "伝票の出ない帳簿は、あなたの側でも毎日つけられている。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "伝票の出ない帳簿"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 217,
+      "act": 5,
+      "narration": "この動画を見て少し賢くなった気がしたなら、その感覚もまた、あなたが今日受け取った何かです。",
+      "visual": {
+        "type": "dialogue",
+        "line": "賢くなった気──それも受け取った何か"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 218,
+      "act": 5,
+      "narration": "返す方法のひとつが画面の下にありますが、押すかどうかは、仕組みを全部知った上で決めていただければと思います。",
+      "visual": {
+        "type": "figure",
+        "figure": "door",
+        "label": "押すかは全部知った上で"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 219,
+      "act": 5,
+      "narration": "そんなことまで、また解剖してしまいました。",
+      "visual": {
+        "type": "figure",
+        "figure": "gavel",
+        "label": "また解剖してしまった"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 220,
+      "act": 5,
+      "narration": "よろしければチャンネル登録と高評価をお願いします。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "登録と高評価"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 221,
       "act": 5,
       "narration": "それでは次の動画で、またお会いしましょう。",
       "visual": {
