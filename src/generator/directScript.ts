@@ -10,6 +10,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { DIRECTOR_SYSTEM_PROMPT } from "./prompts";
 import { VISUAL_JSON_FIELD, CONCEPT_COLOR_SCHEMA } from "./visualSchema";
+import { extractJsonObject } from "./extractJson";
 import { enforceToneVariety, summarizeTones } from "./toneVariety";
 import { enforceVisualRichness, summarizeVisuals } from "./visualRichness";
 import { sanitizeScenes, parseVisual } from "./sanitizeScenes";
@@ -99,6 +100,31 @@ function buildDirectionSchema(withReading: boolean) {
   };
 }
 
+/**
+ * 構造化出力を使わずに書かせるときの追加指示。
+ *
+ * 構造化出力を外すと、スキーマ経由で渡していた visual / concept_color の書式が
+ * モデルに届かなくなるため、ここでシステムプロンプトに直接埋め込む。
+ */
+function plainJsonSystemPrompt(withReading: boolean): string {
+  return `${DIRECTOR_SYSTEM_PROMPT}
+
+# visual の書式
+${VISUAL_JSON_FIELD.description}
+
+# concept_color の選び方
+${CONCEPT_COLOR_SCHEMA.description}
+
+# 出力形式（厳守）
+JSONオブジェクトを**1つだけ**出力する。前置き・解説・コードフェンス(\`\`\`)を一切書かない。
+{"title":"動画タイトル","bgm_direction":"英語の音楽指示","directions":[{"act":1,${
+    withReading ? '"reading":"よみがな",' : ""
+  }"visual":"{\\"type\\":\\"figure\\",\\"figure\\":\\"village\\",\\"label\\":\\"静かな村\\"}","concept_color":"dark-navy"}]}
+- act は 1〜5 の整数。
+- visual は上記の画面構成JSONを**文字列として**入れる（内側の " は \\" にエスケープする）。
+- directions の要素数は指示されたシーン数と厳密に一致させる。`;
+}
+
 interface Direction {
   act: 1 | 2 | 3 | 4 | 5;
   reading?: string;
@@ -153,30 +179,46 @@ act は全体${total}シーン中の位置から判断せよ（序盤=1、終盤
 
 ${numbered}`;
 
-    let message;
-    try {
+    /** 構造化出力あり／なしの2通りで1回ずつ試す */
+    const attempt = async (useSchema: boolean) => {
       const stream = client.messages.stream({
         model: MODEL,
         max_tokens: CHUNK_MAX_TOKENS,
         thinking: { type: "adaptive" },
-        output_config: { format: schema },
-        system: DIRECTOR_SYSTEM_PROMPT,
+        ...(useSchema ? { output_config: { format: schema } } : {}),
+        system: useSchema ? DIRECTOR_SYSTEM_PROMPT : plainJsonSystemPrompt(NEEDS_READING),
         messages: [{ role: "user", content: userPrompt }],
       });
-      message = await stream.finalMessage();
+      return stream.finalMessage();
+    };
+
+    let message;
+    let schemaFree = false;
+    try {
+      message = await attempt(true);
     } catch (err) {
-      // 構造化出力のスキーマが複雑すぎると 400 で丸ごと失敗する。
-      // 生のスタックトレースだと原因が分からないので、対処法を示して落とす。
+      // 構造化出力はAPI側でスキーマをコンパイルするため、こちらのリクエストが
+      // 正しくても "compiled grammar is too large" や "Invalid request data" で
+      // 丸ごと拒否されることがある。20分の生成を1本落とすには軽すぎる理由なので、
+      // 構造化出力を外して同じ内容をもう一度だけ投げ、JSONを自力で読む。
       const msg = err instanceof Error ? err.message : String(err);
-      if (/compiled grammar is too large|grammar/i.test(msg)) {
+      console.warn(
+        `[directScript] シーン${globalStart + 1}〜${globalStart + slice.length}: ` +
+          `構造化出力が拒否されました。スキーマ無しで再試行します。\n` +
+          `  model=${MODEL} スキーマ=${JSON.stringify(schema).length}文字 / ${slice.length}シーン\n` +
+          `  API応答: ${msg}`,
+      );
+      try {
+        message = await attempt(false);
+        schemaFree = true;
+      } catch (err2) {
+        const msg2 = err2 instanceof Error ? err2.message : String(err2);
         throw new Error(
-          "[directScript] visualスキーマが複雑すぎて構造化出力の上限を超えました。" +
-            "src/generator/visualSchema.ts の図解型を減らすか、enum（列挙）をやめて" +
-            "descriptionでの指定に変え、sanitizeScenes.ts 側で検証してください。\n  " +
-            msg,
+          `[directScript] シーン${globalStart + 1}付近で演出付けに失敗しました（2通りとも不成立）。\n` +
+            `  構造化出力あり: ${msg}\n` +
+            `  構造化出力なし: ${msg2}`,
         );
       }
-      throw err;
     }
 
     if (message.stop_reason === "max_tokens") {
@@ -200,7 +242,17 @@ ${numbered}`;
 
     const text = message.content.find((b) => b.type === "text")?.text;
     if (!text) throw new Error("[directScript] 応答にテキストがありません。");
-    const parsed = JSON.parse(text) as ChunkResult;
+    // スキーマ無しの応答はコードフェンスや前置きが混ざりうるので寛容に取り出す
+    let parsed: ChunkResult;
+    try {
+      parsed = JSON.parse(schemaFree ? extractJsonObject(text) : text) as ChunkResult;
+    } catch (err) {
+      throw new Error(
+        `[directScript] シーン${globalStart + 1}付近の応答JSONを解釈できませんでした` +
+          `（構造化出力=${schemaFree ? "なし" : "あり"}）: ` +
+          `${err instanceof Error ? err.message : String(err)}\n  先頭200文字: ${text.slice(0, 200)}`,
+      );
+    }
     return {
       title: parsed.title ?? "",
       bgm_direction: parsed.bgm_direction ?? "",
