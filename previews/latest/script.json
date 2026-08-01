@@ -1,234 +1,194 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ好きなことは金を受け取った途端に続かなくなるのか【行動経済学×社会心理学】",
-  "bgm_direction": "A slow, dark and quiet piano drone with sparse minor notes, distant and contemplative, like a stage lit only by a single lamp.",
+  "title": "なぜ人は自分で言ったタイプと違う相手を選ぶのか【恋愛心理学×社会統計】",
+  "bgm_direction": "A slow, dark and quiet piano motif with a low sustained drone, intimate yet unsettling, like a memory examined alone at night.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "日曜の深夜、あなたの部屋の机の上で、液晶タブレットのペンが三か月ぶりに握られている。",
+      "narration": "あなたが最後に付き合った相手は、あなたが昔から公言していたタイプと、たぶん違っていた。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "三か月ぶりに握られたペン"
+        "type": "figure",
+        "figure": "couple",
+        "label": "最後に付き合った相手"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "かつては、誰にも頼まれていなかった。",
+      "narration": "思い出してみてほしい。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "誰にも頼まれず"
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "思い出してみてほしい"
       },
-      "concept_color": "dusk"
+      "concept_color": "pitch-black"
     },
     {
       "id": 3,
       "act": 1,
-      "narration": "平日の夜も、休みの日の午後も、あなたは勝手に描いていた。",
+      "narration": "学生のころ、友人に聞かれて答えたはずだ。",
       "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "勝手に描く衝動"
+        "type": "dialogue",
+        "line": "どんな人がタイプ？"
       },
       "concept_color": "warm"
     },
     {
       "id": 4,
       "act": 1,
-      "narration": "ある日、見知らぬ相手から依頼が来る。",
+      "narration": "背が高い人。",
       "visual": {
         "type": "figure",
-        "figure": "door",
-        "label": "見知らぬ依頼"
+        "figure": "person",
+        "label": "背が高い人"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "一枚八千円。",
+      "narration": "落ち着いている人。",
       "visual": {
-        "type": "stat",
-        "value": "8000円",
-        "label": "イラスト一枚の値段",
-        "context": "初めての依頼",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "tree",
+        "label": "落ち着いている人"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "振り込まれた金額を見て、あなたは自分の手が値段を持ったことを知った。",
+      "narration": "よく笑う人。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "手が値段を持つ"
+        "figure": "heart",
+        "label": "よく笑う人"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "二枚目が来る。",
+      "narration": "同じ音楽を聴く人。",
       "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "二枚目の依頼"
+        "type": "keyword",
+        "keyword": "同じ音楽を聴く人"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 8,
       "act": 1,
-      "narration": "三枚目が来る。",
+      "narration": "条件はそれなりに具体的だったし、嘘でもなかった。",
       "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "三枚目の依頼"
+        "type": "list",
+        "title": "公言していた理想",
+        "items": [
+          "背が高い",
+          "落ち着いている",
+          "よく笑う",
+          "同じ音楽"
+        ]
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 9,
       "act": 1,
-      "narration": "修正の指示が付く。",
+      "narration": "あのとき、あなたは本気でそう思っていた。",
       "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "修正の指示"
+        "type": "dialogue",
+        "line": "あのときは、本気でそう思っていた"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 10,
-      "act": 1,
-      "narration": "納期が付く。",
+      "act": 2,
+      "narration": "ところが実際に隣にいた相手を順に数え上げていくと、その条件を全部満たしていた人は、たぶん一人もいない。",
       "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "納期という締切"
+        "type": "comparison",
+        "left_title": "公言したタイプ",
+        "right_title": "実際の相手",
+        "left_items": [
+          "背が高い",
+          "落ち着き",
+          "よく笑う"
+        ],
+        "right_items": [
+          "どれかが欠ける"
+        ],
+        "center_label": "全部満たす人ゼロ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 11,
-      "act": 1,
-      "narration": "そして気づけば、頼まれていない絵を、あなたはもう描かなくなっていた。",
+      "act": 2,
+      "narration": "背は同じくらいだったかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": "頼まれない絵を描かない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 12,
-      "act": 1,
-      "narration": "金は入っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "金は入っている"
+        "figure": "scale",
+        "label": "背は同じくらい？"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 13,
-      "act": 1,
-      "narration": "前より確かに上手くなってもいる。",
+      "id": 12,
+      "act": 2,
+      "narration": "落ち着いてはいなかったかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "確かに上手くなった"
+        "figure": "anxiety",
+        "label": "落ち着いてはいなかった"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 14,
-      "act": 1,
-      "narration": "それなのに、あの日曜の深夜に手のなかにあった何かだけが、どこを探しても見つからない。",
+      "id": 13,
+      "act": 2,
+      "narration": "それでも、あのときのあなたは確かにその人がよかった。",
       "visual": {
         "type": "scenery",
         "place": "room",
-        "people": 1,
-        "caption": "手の中の何かが見つからない"
+        "people": 2,
+        "caption": "それでも、その人がよかった"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
+    },
+    {
+      "id": 14,
+      "act": 2,
+      "narration": "おかしいのはあなたではない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "おかしいのは、あなたではない"
+      },
+      "concept_color": "pitch-black"
     },
     {
       "id": 15,
       "act": 2,
-      "narration": "これはあなたひとりの話ではない。",
+      "narration": "この食い違いは、測れば出てくるものである。",
       "visual": {
         "type": "figure",
-        "figure": "crowd",
-        "label": "あなただけの話ではない"
+        "figure": "scale",
+        "label": "測れば出てくる食い違い"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 16,
       "act": 2,
-      "narration": "総務省の令和4年就業構造基本調査によれば、本業を持ちながら副業もしている人は305万人で、5年前より60万人増えている。",
+      "narration": "厚生労働省の人口動態統計によれば、2024年に日本で結婚したのは48万5063組だった。",
       "visual": {
         "type": "stat",
-        "value": "305万人",
-        "label": "副業もしている人",
-        "context": "令和4年 就業構造基本調査",
-        "unit": "",
-        "axis": {
-          "label": "5年で60万人増",
-          "ticks": [
-            "平成29年",
-            "令和4年"
-          ]
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 17,
-      "act": 2,
-      "narration": "さらに、いまの仕事を続けたまま別の仕事もしたいと考えている人が493万人いて、こちらは93万人増えた。",
-      "visual": {
-        "type": "chart",
-        "title": "別の仕事もしたい人",
-        "subtitle": "総務省 就業構造基本調査",
-        "unit": "万人",
-        "items": [
-          {
-            "label": "5年前",
-            "value": 400
-          },
-          {
-            "label": "現在",
-            "value": 493
-          }
-        ],
-        "highlight": 1,
-        "annotation": "5年で93万人増 493万人"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 18,
-      "act": 2,
-      "narration": "合わせておよそ800万人が、好きなことか得意なことに値段を付けようとしている、あるいはすでに付けている。",
-      "visual": {
-        "type": "stat",
-        "value": "約800万人",
-        "label": "好きか得意に値段を付ける人",
-        "context": "副業者＋希望者",
+        "value": "48万5063組",
+        "label": "2024年に結婚した数",
+        "context": "厚生労働省 人口動態統計",
         "unit": "",
         "axis": {
           "label": "",
@@ -238,74 +198,158 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 19,
+      "id": 17,
       "act": 2,
-      "narration": "世間はこれを、甘えと呼ぶ。",
+      "narration": "平均初婚年齢は夫が31.1歳、妻が29.8歳。",
+      "visual": {
+        "type": "table",
+        "title": "平均初婚年齢",
+        "headers": [
+          "",
+          "歳"
+        ],
+        "rows": [
+          [
+            "夫",
+            "31.1"
+          ],
+          [
+            "妻",
+            "29.8"
+          ]
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 18,
+      "act": 2,
+      "narration": "そしてこの人たちが相手と出会う経路も変わった。",
       "visual": {
         "type": "figure",
-        "figure": "blame",
-        "label": "世間はこれを甘えと呼ぶ"
+        "figure": "network",
+        "label": "出会う経路も変わった"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 19,
+      "act": 2,
+      "narration": "国立社会保障人口問題研究所の第16回出生動向基本調査では、2018年7月から2021年6月に結婚した夫婦のうち、ネットで知り合った組が13.6パーセントを占めている。",
+      "visual": {
+        "type": "stat",
+        "value": "13.6%",
+        "label": "ネットで知り合った夫婦",
+        "context": "第16回 出生動向基本調査",
+        "unit": "",
+        "axis": {
+          "label": "2018-2021年に結婚",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 20,
       "act": 2,
-      "narration": "趣味の延長でやっているからプロ意識が足りないのだ、金をもらう覚悟が無かったのだ、と。",
+      "narration": "条件を打ち込んで人に会う時代が、すでに来ている。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "プロ意識が足りない、覚悟が無い"
+        "type": "scenery",
+        "place": "city",
+        "people": 0,
+        "caption": "条件を打ち込んで人に会う時代"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 21,
       "act": 3,
-      "narration": "だが、この話には3つの意外な続きがある。",
+      "narration": "世間はこれを、理想が高いだけだと言う。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "3つの意外な続き"
+        "figure": "arrowUp",
+        "label": "理想が高いだけ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 22,
       "act": 3,
-      "narration": "ひとつ。",
+      "narration": "あるいは逆に、現実を見て妥協したのだと言う。",
       "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 0,
-        "caption": "ひとつ"
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "現実を見て妥協した"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 23,
       "act": 3,
-      "narration": "お迎えの遅刻に罰金を課した保育園で、遅刻はむしろ増えた。",
+      "narration": "どちらも、あなたの意志の問題として片付けている。",
       "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "罰金でむしろ遅刻が増えた"
+        "type": "keyword",
+        "keyword": "すべて意志のせいにされる"
       },
-      "concept_color": "daylight"
+      "concept_color": "dark-navy"
     },
     {
       "id": 24,
       "act": 3,
-      "narration": "しかも罰金を撤廃したあと、遅刻の数は元に戻らなかった。",
+      "narration": "だが、この話には3つの意外な続きがある。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "撤廃後も元に戻らない"
+        "type": "list",
+        "title": "3つの意外な続き",
+        "items": [
+          "ひとつ",
+          "ふたつ",
+          "みっつ"
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 25,
+      "act": 3,
+      "narration": "ひとつ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ひとつ"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 26,
+      "act": 3,
+      "narration": "スピードデートの会場で、参加者が事前に書いた理想の条件は、その日に実際に誰へ惹かれたかを予測しなかった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "事前に書いた理想",
+        "right_title": "当日惹かれた相手",
+        "left_items": [
+          "条件リスト"
+        ],
+        "right_items": [
+          "予測できず"
+        ],
+        "center_label": "一致しない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 25,
+      "id": 27,
+      "act": 3,
+      "narration": "男女どちらでも、である。",
+      "visual": {
+        "type": "scenery",
+        "place": "hall",
+        "people": 8,
+        "caption": "男女どちらでも、である"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 28,
       "act": 3,
       "narration": "ふたつ。",
       "visual": {
@@ -315,345 +359,219 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 26,
-      "act": 3,
-      "narration": "生後20か月の乳児に、手助けをした見返りとして物を渡すと、その乳児はその後、人を助けなくなる。",
-      "visual": {
-        "type": "stat",
-        "value": "20か月",
-        "label": "報酬を渡された乳児",
-        "context": "その後 人を助けなくなる",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 27,
-      "act": 3,
-      "narration": "言葉も持たず、金という制度を知りもしない段階で、すでにこれが起きている。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "言葉も金も知らぬ段階で"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 28,
-      "act": 3,
-      "narration": "そして3つ目。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "3つ目"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 29,
       "act": 3,
-      "narration": "ここまでの結論には、正反対の結論を出した研究が、同じ分野の中に並んで存在している。",
+      "narration": "女性の顔写真を二枚見せて、魅力的なほうを選ばせる実験がある。",
       "visual": {
         "type": "figure",
-        "figure": "conflict",
-        "label": "正反対の結論が並存"
+        "figure": "eye",
+        "label": "魅力的なほうを選ぶ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 30,
       "act": 3,
-      "narration": "この論争は、いまも決着していない。",
-      "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 0,
-        "caption": "論争は、いまも決着していない"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 31,
-      "act": 3,
-      "narration": "好きだったことは、なぜ金を受け取った途端に続かなくなるのか。",
+      "narration": "手品の要領で、選ばなかったほうを渡す。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "金を受け取った途端に"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 32,
-      "act": 3,
-      "narration": "そして、続かなくなったのは本当にあなたの側の問題なのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "本当にあなたの側の問題か"
+        "figure": "mask",
+        "label": "選ばなかったほうを渡す"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 33,
+      "id": 31,
       "act": 3,
-      "narration": "今日はそれを、動機クラウディングという概念に集まった実験と、日本がかつて血を売っていた時代の記録から解剖してみたい。",
+      "narration": "すり替えに気づいたのは13パーセントだった。",
       "visual": {
-        "type": "comparison",
-        "left_title": "動機クラウディング",
-        "right_title": "血を売った時代",
-        "left_items": [
-          "数々の実験"
-        ],
-        "right_items": [
-          "日本の記録"
-        ],
-        "center_label": "解剖"
+        "type": "donut",
+        "title": "すり替えに気づいた人",
+        "percent": 13,
+        "label": "気づいた",
+        "rest_label": "気づかなかった"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 32,
+      "act": 3,
+      "narration": "残りは、自分が選んでいない顔について、選んだ理由を語りはじめた。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "選んでいない顔の理由を語る"
       },
       "concept_color": "dark-navy"
+    },
+    {
+      "id": 33,
+      "act": 3,
+      "narration": "そして3つ目。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "そして3つ目"
+      },
+      "concept_color": "pitch-black"
     },
     {
       "id": 34,
       "act": 3,
-      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
+      "narration": "日本で、自分の好みで自分の相手を選ぶという方式が多数派になったのは、たかだか60年ほど前のことである。",
       "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "まず思いつく答えを検証"
+        "type": "stat",
+        "value": "60年ほど前",
+        "label": "自分の好みで選ぶのが多数派に",
+        "context": "日本",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 35,
-      "act": 3,
-      "narration": "報酬が足りないから続かない、という説明である。",
+      "act": 4,
+      "narration": "なぜ人は、自分で言ったタイプと違う相手を選ぶのか。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "報酬が足りないから続かない"
+        "figure": "question",
+        "label": "言ったタイプと違う相手を選ぶ"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 36,
-      "act": 2,
-      "narration": "確かに、単価は動機に効く。",
+      "act": 1,
+      "narration": "そして、自分の好みを自分が知らないということが、どうして起こりうるのか。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "単価は動機に効く"
+        "figure": "hourglass",
+        "label": ""
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 37,
       "act": 2,
-      "narration": "安すぎる仕事が人を腐らせるのは事実だ。",
+      "narration": "今日はそれを、配偶者選択の実験と、日本の結婚の記録から解剖してみたい。",
       "visual": {
-        "type": "figure",
-        "figure": "chains",
-        "label": "安すぎる仕事"
+        "type": "comparison",
+        "left_title": "配偶者選択の実験",
+        "right_title": "日本の結婚の記録",
+        "left_items": [
+          "心理学の測定"
+        ],
+        "right_items": [
+          "統計の推移"
+        ],
+        "center_label": "解剖の道具"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 38,
       "act": 2,
-      "narration": "だがこの説明には決定的な弱点がある。",
+      "narration": "先に断っておくと、これはあなたの一貫性のなさを責める話ではない。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "決定的な弱点"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 39,
-      "act": 2,
-      "narration": "金額を上げても戻らない現象が、半世紀にわたって報告され続けているという点だ。",
-      "visual": {
-        "type": "stat",
-        "value": "半世紀",
-        "label": "報告され続けた期間",
-        "context": "金額を上げても戻らない",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "dialogue",
+        "line": "あなたを責める話ではない"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 39,
+      "act": 2,
+      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
+      "visual": {
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "誰もが思いつく答え"
+      },
+      "concept_color": "daylight"
+    },
+    {
       "id": 40,
       "act": 2,
-      "narration": "しかも報告しているのは、心理学と経済学の両方である。",
+      "narration": "好みなんて人それぞれだ、という説明である。",
       "visual": {
-        "type": "comparison",
-        "left_title": "心理学",
-        "right_title": "経済学",
-        "left_items": [
-          "内発的動機"
-        ],
-        "right_items": [
-          "インセンティブ"
-        ],
-        "center_label": "両方が報告"
+        "type": "keyword",
+        "keyword": "好みは人それぞれ"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 41,
       "act": 2,
-      "narration": "1973年、心理学者のマーク・レッパー、デイヴィッド・グリーン、リチャード・ニスベットが、就学前の子どもたちを集めてこんな観察をしている。",
+      "narration": "確かに、好みは人によって違う。",
       "visual": {
-        "type": "stat",
-        "value": "1973年",
-        "label": "レッパーらの観察",
-        "context": "就学前の子どもたち",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "crowd",
+        "label": "確かに人それぞれ違う"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 42,
       "act": 2,
-      "narration": "まず自由時間の様子を眺め、マジックペンで絵を描くことを自分から選ぶ子だけを選び出した。",
+      "narration": "そして人は、自分の好みをかなり明確に言葉にできる。",
       "visual": {
         "type": "figure",
         "figure": "person",
-        "label": "自分から絵を描く子"
+        "label": "自分の好みを言葉にできる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 43,
       "act": 2,
-      "narration": "放っておいても描く子どもたちである。",
+      "narration": "それも事実だ。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 5,
-        "caption": "放っておいても描く子どもたち"
+        "type": "keyword",
+        "keyword": "それも事実"
       },
-      "concept_color": "warm"
+      "concept_color": "charcoal"
     },
     {
       "id": 44,
       "act": 2,
-      "narration": "その子たちを3つの群に分けた。",
+      "narration": "だがこの説明には決定的な弱点がある。",
       "visual": {
-        "type": "table",
-        "title": "3つの群",
-        "headers": [
-          "群",
-          "条件"
-        ],
-        "rows": [
-          [
-            "第一",
-            "賞状を約束"
-          ],
-          [
-            "第二",
-            "不意に賞状"
-          ],
-          [
-            "第三",
-            "何も無し"
-          ]
-        ]
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "決定的な弱点"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 45,
       "act": 2,
-      "narration": "第一の群には、描いたら賞状をあげると約束してから描かせる。",
+      "narration": "言葉にできるということと、その言葉が当たっているということは、まったく別だという点だ。",
       "visual": {
-        "type": "figure",
-        "figure": "trophy",
-        "label": "描いたら賞状"
+        "type": "comparison",
+        "left_title": "言葉にできる",
+        "right_title": "言葉が当たっている",
+        "left_items": [
+          "語れる"
+        ],
+        "right_items": [
+          "正しいとは限らない"
+        ],
+        "center_label": "まったく別"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 46,
       "act": 2,
-      "narration": "第二の群には何も言わず、描き終わってから不意に賞状を渡す。",
-      "visual": {
-        "type": "figure",
-        "figure": "applause",
-        "label": "描き終えて不意に賞状"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 47,
-      "act": 2,
-      "narration": "第三の群には約束も賞状も無い。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "約束も賞状も無い"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 48,
-      "act": 2,
-      "narration": "数日後、もう一度自由時間を作って、誰が自分から描くかを数えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "誰が自分から描くか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 49,
-      "act": 3,
-      "narration": "描かなくなっていたのは、賞状を約束された第一の群だけだった。",
-      "visual": {
-        "type": "chart",
-        "title": "自分から描いた子",
-        "subtitle": "Lepper et al. 1973",
-        "unit": "",
-        "items": [
-          {
-            "label": "賞状を約束",
-            "value": 8
-          },
-          {
-            "label": "不意に賞状",
-            "value": 17
-          },
-          {
-            "label": "賞状無し",
-            "value": 17
-          }
-        ],
-        "highlight": 0,
-        "annotation": "約束された群だけが描かなくなった"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 50,
-      "act": 2,
-      "narration": "1998年の1月から6月にかけて、経済学者のウリ・ニーズィーとアルド・ルスティチーニが、イスラエルのハイファにある私立保育園10園で実験をしている。",
+      "narration": "1989年、心理学者のデイヴィッド・バスが、人がどんな相手を望むのかを世界規模で測っている。",
       "visual": {
         "type": "stat",
-        "value": "10園",
-        "label": "ハイファの私立保育園",
-        "context": "1998年 経済学の実験",
+        "value": "1989年",
+        "label": "バスの世界調査",
+        "context": "デイヴィッド・バス",
         "unit": "",
         "axis": {
           "label": "",
@@ -663,820 +581,859 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 51,
-      "act": 3,
-      "narration": "この街の保育園はどこも、お迎えの締め切り時刻を過ぎて来る親に悩んでいた。",
+      "id": 47,
+      "act": 2,
+      "narration": "集めたのは37の標本。",
+      "visual": {
+        "type": "stat",
+        "value": "37",
+        "label": "集めた標本の数",
+        "context": "標本",
+        "unit": "の標本",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 48,
+      "act": 2,
+      "narration": "33か国、6つの大陸と5つの島にまたがり、回答者は合わせて1万47人。",
+      "visual": {
+        "type": "stat",
+        "value": "1万47人",
+        "label": "33か国・6大陸・5島",
+        "context": "回答者総数",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 49,
+      "act": 2,
+      "narration": "尋ねたのは、稼ぐ力、野心と勤勉さ、若さ、身体的な魅力、貞節を、それぞれどれだけ重視するかである。",
+      "visual": {
+        "type": "list",
+        "title": "何を重視するか",
+        "items": [
+          "稼ぐ力",
+          "野心と勤勉さ",
+          "若さ",
+          "身体的な魅力",
+          "貞節"
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 50,
+      "act": 2,
+      "narration": "結果はきれいに割れた。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "お迎えの遅刻"
+        "figure": "scale",
+        "label": "結果はきれいに割れた"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 52,
-      "act": 3,
-      "narration": "最初の4週間、二人は何もしない。",
+      "id": 51,
+      "act": 2,
+      "narration": "資源を手に入れる手がかりを重く見たのは女性のほうで、生殖の能力を示す特徴を重く見たのは男性のほうだった。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 3,
-        "caption": "最初の4週間、二人は何もしない"
+        "type": "comparison",
+        "left_title": "女性",
+        "right_title": "男性",
+        "left_items": [
+          "資源を手に入れる手がかり"
+        ],
+        "right_items": [
+          "生殖の能力を示す特徴"
+        ],
+        "center_label": "重視の差"
       },
-      "concept_color": "dusk"
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 52,
+      "act": 2,
+      "narration": "しかもこの差は、文化をまたいで繰り返し現れている。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "文化をまたいで繰り返す"
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 53,
-      "act": 3,
-      "narration": "ただ各園の遅刻の件数を数えるだけである。",
+      "act": 2,
+      "narration": "人は自分の好みを語れる。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "遅刻の件数を数える"
+        "figure": "person",
+        "label": "人は好みを語れる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 54,
-      "act": 3,
-      "narration": "5週目に入って、一部の園にだけ掲示を出した。",
+      "act": 2,
+      "narration": "それどころか、世界中で語り方に規則性がある。",
       "visual": {
         "type": "figure",
-        "figure": "contract",
-        "label": "5週目 一部の園に掲示"
+        "figure": "network",
+        "label": "世界中で語り方に規則性"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 55,
       "act": 3,
-      "narration": "「今後、お迎えが一定時間以上遅れた場合は罰金を徴収します」という掲示である。",
+      "narration": "では、その語られた好みは当たっているのか。",
       "visual": {
-        "type": "dialogue",
-        "line": "遅れた場合は罰金を徴収します"
+        "type": "figure",
+        "figure": "crossroad",
+        "label": ""
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 56,
       "act": 3,
-      "narration": "標準的な経済学の予測はひとつしかない。",
+      "narration": "2008年、心理学者のポール・イーストウィックとイーライ・フィンケルが、大学でスピードデートの会を開いている。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "経済学の予測"
+        "type": "stat",
+        "value": "2008年",
+        "label": "スピードデートの会",
+        "context": "イーストウィックとフィンケル",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 57,
       "act": 3,
-      "narration": "価格が付けば需要は減る。",
+      "narration": "手順はこうだ。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "価格が付けば需要は減る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 58,
-      "act": 3,
-      "narration": "遅刻は減るはずだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "遅刻は減るはず"
+        "type": "scenery",
+        "place": "hall",
+        "people": 10,
+        "caption": "手順はこうだ"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 59,
-      "act": 4,
-      "narration": "ところが数字は逆に動いた。",
+      "id": 58,
+      "act": 3,
+      "narration": "まず参加者に、誰にも会う前の段階で理想の相手を書かせる。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "数字は逆に動いた"
+        "figure": "contract",
+        "label": "会う前に理想を書かせる"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 59,
+      "act": 3,
+      "narration": "容姿はどれくらい大事か。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": ""
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 60,
       "act": 3,
-      "narration": "罰金を導入した園の遅刻は、導入しなかった園より増えたのである。",
+      "narration": "稼ぐ見込みはどれくらい大事か。",
       "visual": {
-        "type": "chart",
-        "title": "遅刻の件数",
-        "subtitle": "Gneezy & Rustichini 2000",
-        "unit": "",
-        "items": [
-          {
-            "label": "罰金あり",
-            "value": 20
-          },
-          {
-            "label": "罰金なし",
-            "value": 10
-          }
-        ],
-        "highlight": 0,
-        "annotation": "罰金を導入した園ほど遅刻が増えた"
+        "type": "figure",
+        "figure": "hourglass",
+        "label": ""
       },
       "concept_color": "charcoal"
     },
     {
       "id": 61,
       "act": 3,
-      "narration": "しかも増えたまま、下がらなかった。",
+      "narration": "ここでは、さきほどの調査と同じ性差がきれいに出た。",
       "visual": {
-        "type": "line",
-        "title": "罰金導入園の遅刻",
-        "unit": "件",
-        "points": [
-          {
-            "label": "導入前",
-            "value": 8
-          },
-          {
-            "label": "導入後",
-            "value": 18
-          },
-          {
-            "label": "数週後",
-            "value": 20
-          }
-        ]
+        "type": "comparison",
+        "left_title": "男性",
+        "right_title": "女性",
+        "left_items": [
+          "容姿を重く"
+        ],
+        "right_items": [
+          "稼ぐ見込みを重く"
+        ],
+        "center_label": "同じ性差が出た"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 62,
       "act": 3,
-      "narration": "実験の後半、二人は罰金を撤廃した。",
+      "narration": "男性は容姿を重く、女性は稼ぐ見込みを重く申告している。",
       "visual": {
         "type": "figure",
-        "figure": "gavel",
-        "label": "罰金を撤廃"
+        "figure": "couple",
+        "label": "男女の申告する差"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 63,
       "act": 3,
-      "narration": "掲示を外し、罰金の無い元の状態に戻した。",
+      "narration": "次に本番である。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 2,
-        "caption": "掲示を外し、元の状態に戻す"
+        "type": "figure",
+        "figure": "target",
+        "label": "いよいよ本番"
       },
-      "concept_color": "dusk"
+      "concept_color": "charcoal"
     },
     {
       "id": 64,
       "act": 3,
-      "narration": "遅刻は元に戻らなかった。",
+      "narration": "参加者は次々と相手を替えて短い時間だけ話し、終わるたびに、この人ともう一度会いたいかどうかを記録していく。",
       "visual": {
         "type": "figure",
-        "figure": "chains",
-        "label": "遅刻は元に戻らない"
+        "figure": "queue",
+        "label": "次々に相手を替えて話す"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 65,
       "act": 3,
-      "narration": "増えた水準のまま、そこに留まった。",
+      "narration": "研究チームは、会の前に書かせた理想と、当日の実際の惹かれ方を突き合わせた。",
       "visual": {
-        "type": "line",
-        "title": "撤廃後も遅刻は",
-        "unit": "件",
-        "points": [
-          {
-            "label": "罰金中",
-            "value": 20
-          },
-          {
-            "label": "撤廃後",
-            "value": 20
-          }
-        ]
+        "type": "figure",
+        "figure": "scale",
+        "label": "理想と実際を突き合わせる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 66,
       "act": 4,
-      "narration": "これはSNSで言えば、自分の投稿にはじめて値段が付いた日から、無料で上げていた過去の投稿が急に下手に見えはじめるのと同じ構造だ。",
+      "narration": "理想は、実際を予測しなかった。",
       "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "投稿に値段が付いた日"
+        "type": "verdict",
+        "caption": "突き合わせの結果",
+        "statement": "理想 ≠ 実際",
+        "note": "理想は実際を予測しなかった"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 67,
       "act": 4,
-      "narration": "作品は一文字も変わっていない。",
+      "narration": "それだけではない。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "作品は一文字も変わらない"
+        "type": "keyword",
+        "keyword": "それだけではない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 68,
       "act": 4,
-      "narration": "変わったのは、それを置く棚の名前である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "棚の名前が変わった"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 69,
-      "act": 4,
-      "narration": "いや、待ってくれと思うかもしれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "いや、待ってくれ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 70,
-      "act": 4,
-      "narration": "保育園の話は罰金であって、報酬とは方向が逆ではないか。",
+      "narration": "実際に惹かれた相手の容姿と稼ぐ見込みを見ると、男女の差そのものが見当たらなかった。",
       "visual": {
         "type": "comparison",
-        "left_title": "保育園",
-        "right_title": "SNS",
+        "left_title": "実際に惹かれた相手",
+        "right_title": "男女差",
         "left_items": [
-          "罰金=マイナス"
+          "容姿",
+          "稼ぐ見込み"
         ],
         "right_items": [
-          "報酬=プラス"
+          "見当たらなかった"
         ],
-        "center_label": "方向が逆では?"
+        "center_label": "差が消えた"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 71,
-      "act": 3,
-      "narration": "金を払う話と金を取る話を、同じ棚に並べていいのか。",
+      "id": 69,
+      "act": 4,
+      "narration": "申告の段階では確かにあった性差が、行動の段階では消えていたのである。",
       "visual": {
-        "type": "comparison",
-        "left_title": "金を払う",
-        "right_title": "金を取る",
-        "left_items": [
-          "報酬"
-        ],
-        "right_items": [
-          "罰金"
-        ],
-        "center_label": "同じ棚?"
+        "type": "columns",
+        "title": "申告と行動",
+        "left": {
+          "label": "申告の性差",
+          "value": "あり",
+          "level": 0.8
+        },
+        "right": {
+          "label": "行動の性差",
+          "value": "消失",
+          "level": 0.15
+        },
+        "note": "語りと行動のずれ"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 70,
+      "act": 4,
+      "narration": "これはマッチングアプリで言えば、年収と身長と年齢で絞り込みをかけたのに、その条件から外れた相手と続いてしまうのと同じ構造だ。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "条件で絞ったのに外れた相手と続く"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 71,
+      "act": 3,
+      "narration": "フィルターは正しく動いている。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "正しく動くフィルター"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 72,
       "act": 3,
-      "narration": "その指摘はまったく正しい。",
+      "narration": "壊れてもいない。",
       "visual": {
-        "type": "dialogue",
-        "line": "——その指摘は、正しい"
+        "type": "figure",
+        "figure": "cycle",
+        "label": "故障はしていない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 73,
       "act": 3,
-      "narration": "だが、罰金と報酬はひとつのことを共有している。",
+      "narration": "ただ、フィルターに入れた条件のほうが、あなたの実際の反応とつながっていない。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "罰金と報酬"
+        "type": "comparison",
+        "left_title": "フィルターの条件",
+        "right_title": "実際の反応",
+        "left_items": [
+          "申告した理想"
+        ],
+        "right_items": [
+          "目の前の反応"
+        ],
+        "center_label": "繋がらない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 74,
       "act": 3,
-      "narration": "どちらも、その行為に値札を貼るという点だ。",
+      "narration": "いや、それは数分しか話していないから当てにならないのではないか、と思うかもしれない。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "行為に値札を貼る"
+        "type": "dialogue",
+        "line": "数分では当てにならないのでは？"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 75,
       "act": 3,
-      "narration": "遅刻に値札が付いた瞬間、遅刻は破ってはいけない約束から、買える商品に変わった。",
+      "narration": "短い時間で理想もなにもないだろう、と。",
       "visual": {
-        "type": "comparison",
-        "left_title": "破れない約束",
-        "right_title": "買える商品",
-        "left_items": [
-          "守るべきもの"
-        ],
-        "right_items": [
-          "値札が付く"
-        ],
-        "center_label": "値札で変質"
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "わずか数分の会話"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 76,
       "act": 3,
+      "narration": "その指摘はまったく正しい。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "その指摘は正しい"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 77,
+      "act": 3,
+      "narration": "だから研究チームは、スピードデートの会場以外で出会った相手についても、同じ測定を続けている。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "会場の外でも測定"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 78,
+      "act": 3,
+      "narration": "結果は変わらなかった。",
+      "visual": {
+        "type": "figure",
+        "figure": "echo",
+        "label": "結果は変わらない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 79,
+      "act": 3,
+      "narration": "理想は、そこでも実際を予測していない。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "理想",
+        "right_title": "実際",
+        "left_items": [
+          "望むと言った条件"
+        ],
+        "right_items": [
+          "実際の選択"
+        ],
+        "center_label": "予測できない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 80,
+      "act": 3,
       "narration": "ここまで聞くと、この動画の着地点は見えた気がするだろう。",
       "visual": {
         "type": "scenery",
         "place": "field",
         "people": 1,
-        "caption": "着地点は見えた気がする"
+        "caption": "見えてきた着地点"
       },
       "concept_color": "dusk"
     },
     {
-      "id": 77,
-      "act": 3,
-      "narration": "つまり金は動機を壊すのだから、好きなことに値段を付けるな、と。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "好きなことに、値段を付けるな"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 78,
-      "act": 3,
-      "narration": "事実、その線で説明する記事はすでに山ほどある。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "山ほどの記事"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 79,
-      "act": 3,
-      "narration": "だが、この動画はそこで終わらない。",
-      "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 3,
-        "caption": "だが、そこで終わらない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 80,
-      "act": 3,
-      "narration": "本当に厄介なのは、金が動機を消したのかどうかが、まだ確定していないという点にある。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "まだ確定していない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 81,
       "act": 3,
-      "narration": "あの罰金は、親たちの善意を本当に消し去ったのだろうか。",
+      "narration": "つまり人は理想どおりの相手など選べないのだから、条件を捨てて出会う数を増やせ、と。",
       "visual": {
         "type": "figure",
-        "figure": "candle",
-        "label": "善意は消えたか"
+        "figure": "crowd",
+        "label": "出会う数を増やせ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 82,
-      "act": 2,
-      "narration": "2008年、マックス・プランク進化人類学研究所のフェリックス・ワーネケンとマイケル・トマセロが、生後20か月の乳児を相手に実験をしている。",
+      "act": 3,
+      "narration": "事実、その線で書かれた記事はすでに山ほどある。",
       "visual": {
-        "type": "stat",
-        "value": "2008年",
-        "label": "生後20か月の実験",
-        "context": "マックス・プランク研究所",
-        "unit": ""
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "同じ論調の記事は山ほど"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 83,
-      "act": 2,
-      "narration": "大人がわざと物を落とし、手が届かないふりをする。",
+      "act": 3,
+      "narration": "だが、この動画はそこで終わらない。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "落として拾えぬふり"
+        "type": "keyword",
+        "keyword": "そこで終わらない"
       },
-      "concept_color": "daylight"
+      "concept_color": "pitch-black"
     },
     {
       "id": 84,
-      "act": 2,
-      "narration": "この月齢の子どもは、頼まれなくてもよちよち歩いて拾って渡す。",
+      "act": 3,
+      "narration": "本当に厄介なのは、条件を捨てたところで、自分が何に反応しているのかは依然として分からないという点にある。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "頼まれず拾って渡す"
+        "figure": "anxiety",
+        "label": "何に反応しているのか不明"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 85,
-      "act": 2,
-      "narration": "人間はかなり早い時期から他人を助ける。",
+      "act": 3,
+      "narration": "ではあなたは、いったい何を見て選んでいるのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "family",
-        "label": "早い時期から他人を助ける"
+        "figure": "question",
+        "label": "何を見て選ぶのか"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 86,
       "act": 2,
-      "narration": "ここで3つの条件を作った。",
+      "narration": "2005年、ロバート・カーズバンとジェイソン・ウィーデンが、商業のスピードデート事業の記録を丸ごと分析している。",
       "visual": {
-        "type": "list",
-        "title": "3つの条件",
-        "items": [
-          "おもちゃを渡す",
-          "言葉で褒める",
-          "何も返さない"
-        ]
+        "type": "stat",
+        "value": "2005年",
+        "label": "スピードデート事業を丸ごと分析",
+        "context": "カーズバン&ウィーデン",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 87,
       "act": 2,
-      "narration": "助けたあとに小さなおもちゃを渡す群、言葉で褒めるだけの群、何も返さない群である。",
+      "narration": "対象は1万526人。",
       "visual": {
-        "type": "table",
-        "title": "三群の設計",
-        "headers": [
-          "群",
-          "返礼"
-        ],
-        "rows": [
-          [
-            "おもちゃ群",
-            "小さなおもちゃ"
-          ],
-          [
-            "称賛群",
-            "言葉で褒める"
-          ],
-          [
-            "無報酬群",
-            "何も返さない"
-          ]
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 88,
-      "act": 2,
-      "narration": "そのあと同じ場面をもう一度作って、助けるかどうかを見た。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "同じ場面を再現"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 89,
-      "act": 2,
-      "narration": "助ける回数が減っていたのは、おもちゃを受け取った群だった。",
-      "visual": {
-        "type": "chart",
-        "title": "助ける回数",
-        "subtitle": "",
-        "unit": "",
+        "type": "orbs",
+        "title": "分析対象",
         "items": [
           {
-            "label": "おもちゃ群",
-            "value": 53
+            "label": "参加者",
+            "value": 10526,
+            "display": "1万526人"
           },
           {
-            "label": "称賛群",
-            "value": 89
-          },
-          {
-            "label": "無報酬群",
-            "value": 89
+            "label": "…",
+            "value": 1
           }
         ],
-        "highlight": 0,
-        "annotation": "報酬を受けた群だけ助けが減った"
+        "shafts": false
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 90,
+      "id": 88,
       "act": 2,
-      "narration": "大人でも同じことが起きる。",
+      "narration": "ひとつの会には男女それぞれおよそ25人が集まり、3分ずつ話して、また会いたい相手に印を付ける。",
+      "visual": {
+        "type": "table",
+        "title": "ひとつの会",
+        "headers": [
+          "項目",
+          "内容"
+        ],
+        "rows": [
+          [
+            "参加",
+            "男女それぞれ約25人"
+          ],
+          [
+            "会話",
+            "3分ずつ"
+          ],
+          [
+            "印",
+            "また会いたい相手"
+          ]
+        ]
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 89,
+      "act": 3,
+      "narration": "この規模になると、誰が誰を選んだかの組み合わせが全部見える。",
       "visual": {
         "type": "figure",
-        "figure": "echo",
-        "label": "大人でも同じ"
+        "figure": "network",
+        "label": "誰が誰を選んだか全部見える"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 91,
-      "act": 2,
-      "narration": "2009年、ダン・アリエリーらのチームが、米国とインドで成績連動の報酬を使った実験を行っている。",
+      "id": 90,
+      "act": 3,
+      "narration": "二人が探していたのは、ニッチな好みの痕跡だった。",
       "visual": {
-        "type": "stat",
-        "value": "2009年",
-        "label": "成績連動の報酬実験",
-        "context": "米国とインド／アリエリーら",
-        "unit": ""
+        "type": "scenery",
+        "place": "forest",
+        "people": 2,
+        "caption": "ニッチな好みの痕跡を探して"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 91,
+      "act": 3,
+      "narration": "特定の人にだけ刺さる何かがあるはずだ、あるいは似た者どうしが引き合うはずだ、と。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "特定層に刺さる",
+        "right_title": "似た者どうし",
+        "left_items": [
+          "個別の好み"
+        ],
+        "right_items": [
+          "類似で引き合う"
+        ],
+        "center_label": "どちらの仮説か"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 92,
-      "act": 2,
-      "narration": "報酬額を、その人の普段の収入に比べて小さいものから非常に大きいものまで振り分ける。",
+      "act": 3,
+      "narration": "見つからなかった。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "収入比で振り分け"
+        "figure": "eye",
+        "label": "見つからなかった"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 93,
-      "act": 2,
-      "narration": "結果は素直な直線にならなかった。",
+      "act": 3,
+      "narration": "選択を動かしていたのは、ほぼ全員が同じ方向に評価する特徴、つまり見た目の魅力度、体格、身長、年齢だった。",
       "visual": {
-        "type": "line",
-        "title": "報酬と成績",
-        "unit": "",
-        "points": [
-          {
-            "label": "少額",
-            "value": 40
-          },
-          {
-            "label": "中程度",
-            "value": 72
-          },
-          {
-            "label": "高額",
-            "value": 48
-          }
+        "type": "list",
+        "title": "選択を動かした特徴",
+        "items": [
+          "見た目の魅力度",
+          "体格",
+          "身長",
+          "年齢"
         ]
       },
       "concept_color": "charcoal"
     },
     {
       "id": 94,
-      "act": 2,
-      "narration": "報酬が非常に高い条件では、被験者の努力は増えているのに成績が下がった。",
+      "act": 3,
+      "narration": "同じ結論は、この分野の研究をまとめて数え直しても出てくる。",
       "visual": {
-        "type": "columns",
-        "title": "高報酬の逆説",
-        "left": {
-          "label": "努力",
-          "value": "増加",
-          "level": 0.8
-        },
-        "right": {
-          "label": "成績",
-          "value": "低下",
-          "level": 0.35
-        },
-        "note": "努力しても成績が下がる"
+        "type": "figure",
+        "figure": "scale",
+        "label": "研究をまとめ直しても同じ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 95,
       "act": 2,
-      "narration": "逆の端も同じである。",
+      "narration": "2014年、イーストウィックらのチームが、理想の選好が実際の関係をどれだけ予測するのかを、レビューとメタ分析にかけている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "逆の端も同じ"
+        "type": "stat",
+        "value": "2014年",
+        "label": "理想の選好は実際を予測するか",
+        "context": "イーストウィックら",
+        "unit": "",
+        "axis": {
+          "label": "レビューとメタ分析",
+          "ticks": []
+        }
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 96,
       "act": 2,
-      "narration": "ニーズィーとルスティチーニは別の実験で、少額の報酬を払うくらいなら何も払わないほうが成績が良いという結果を報告している。",
+      "narration": "掲載はサイコロジカル・ブレティン誌の140巻。",
       "visual": {
-        "type": "comparison",
-        "left_title": "少額の報酬",
-        "right_title": "何も払わない",
-        "left_items": [
-          "成績が下がる"
-        ],
-        "right_items": [
-          "成績が良い"
-        ],
-        "center_label": "少額の逆説"
+        "type": "stat",
+        "value": "140巻",
+        "label": "サイコロジカル・ブレティン誌",
+        "context": "掲載",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 97,
       "act": 3,
-      "narration": "報酬という軸は、上でも下でも折れている。",
+      "narration": "結論は穏やかだが冷たい。",
       "visual": {
-        "type": "line",
-        "title": "報酬という軸",
-        "unit": "",
-        "points": [
-          {
-            "label": "低",
-            "value": 42
-          },
-          {
-            "label": "中",
-            "value": 78
-          },
-          {
-            "label": "高",
-            "value": 45
-          }
-        ]
+        "type": "scenery",
+        "place": "sea",
+        "people": 0,
+        "caption": "穏やかだが、冷たい結論"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 98,
       "act": 3,
-      "narration": "ここで、この動画の足元を自分で崩しておきたい。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "足元を自分で崩しておく"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 99,
-      "act": 3,
-      "narration": "報酬が動機を損なうという結論は、一枚岩ではない。",
+      "narration": "写真や架空の人物を評価させる場面では、申告した好みは確かに効く。",
       "visual": {
         "type": "figure",
-        "figure": "crossroad",
-        "label": "一枚岩ではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 100,
-      "act": 3,
-      "narration": "1999年にエドワード・デシらが128の実験をまとめて負の効果を確認したのに対し、1994年にキャメロンとピアースは同じ問いに正反対の結論を出していた。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "デシら(1999)",
-        "right_title": "キャメロンら(1994)",
-        "left_items": [
-          "128の実験",
-          "負の効果"
-        ],
-        "right_items": [
-          "正反対の結論"
-        ],
-        "center_label": "対立"
+        "figure": "camera",
+        "label": "写真や架空の人物なら効く"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 101,
+      "id": 99,
       "act": 3,
-      "narration": "負の効果は限定的で、応用の場面では防げる、と。",
+      "narration": "ところが生身の相手が目の前にいる場面になると、その予測力はほとんど残らない。",
       "visual": {
-        "type": "dialogue",
-        "line": "負の効果は限定的、応用では防げる"
+        "type": "comparison",
+        "left_title": "写真・架空",
+        "right_title": "生身の相手",
+        "left_items": [
+          "好みが効く"
+        ],
+        "right_items": [
+          "予測力が消える"
+        ],
+        "center_label": "予測力の差"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 100,
+      "act": 3,
+      "narration": "同じチームは後年、人は自分の理想に特別よく合う相手を望んでいる、という主張を支える証拠はごくわずかだ、という論文も出している。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "望むという証拠はごくわずか"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 101,
+      "act": 3,
+      "narration": "ここで、この動画の足元を自分で崩しておきたい。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自分で足元を崩す"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 102,
       "act": 3,
-      "narration": "デシらは2001年に再反論を書いている。",
+      "narration": "イーストウィックとフィンケルの2008年の研究には、追試が行われている。",
       "visual": {
         "type": "stat",
-        "value": "2001年",
-        "label": "デシらの再反論",
-        "context": "論争は続く",
-        "unit": ""
+        "value": "2008年",
+        "label": "追試が行われた研究",
+        "context": "イーストウィック&フィンケル",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 103,
-      "act": 4,
-      "narration": "そして2020年、法と経済学の研究者4人がハイファの実験を追試した。",
+      "act": 3,
+      "narration": "同じ手続きで、男女が異なる好みを示すのかどうかを確かめ直した仕事である。",
       "visual": {
-        "type": "stat",
-        "value": "2020年",
-        "label": "研究者4人が追試",
-        "context": "ハイファの実験を再検証",
-        "unit": ""
+        "type": "comparison",
+        "left_title": "男性の好み",
+        "right_title": "女性の好み",
+        "left_items": [
+          "何を望むか"
+        ],
+        "right_items": [
+          "何を望むか"
+        ],
+        "center_label": "異なるのか"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 104,
-      "act": 4,
-      "narration": "再現しなかった。",
+      "act": 3,
+      "narration": "この分野の結論は一枚岩ではない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "再現しなかった"
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "結論は一枚岩ではない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 105,
-      "act": 4,
-      "narration": "彼らの手元では、罰金は違反を減らした。",
+      "act": 3,
+      "narration": "理想が実際を予測しないという言い方も、程度の問題として読むべきであって、予測力がゼロだと確定したわけではない。",
       "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "罰金が違反を減らした"
+        "type": "balance",
+        "title": "程度の問題として読む",
+        "left_label": "実際を予測しない",
+        "right_label": "ゼロではない",
+        "tilt": -0.3,
+        "note": "予測力ゼロと確定したわけではない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 106,
       "act": 3,
-      "narration": "しかも罰金を外すと、行動は元の水準に戻った。",
+      "narration": "バスの調査が測った性差そのものが消えたのでもない。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "元の水準に戻る"
+        "figure": "scale",
+        "label": "測られた性差"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 107,
       "act": 3,
-      "narration": "この動画の柱の一本は、いま揺れている。",
+      "narration": "消えているのは、申告と行動をつなぐ線のほうである。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "揺れる柱"
+        "figure": "path",
+        "label": "申告と行動をつなぐ線"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 108,
       "act": 3,
-      "narration": "では、罰金と規範の関係を、まったく別の場所で見てみたい。",
+      "narration": "まったく別の場所で、同じ形をした現象が観測されている。",
       "visual": {
         "type": "figure",
-        "figure": "crossroad",
-        "label": "別の場所で見る"
+        "figure": "echo",
+        "label": "同じ形の現象"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 109,
       "act": 3,
-      "narration": "図書館である。",
+      "narration": "保護施設にいる犬の、里親選びである。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 3,
-        "caption": "図書館"
+        "type": "figure",
+        "figure": "cage",
+        "label": "保護施設の犬"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 110,
       "act": 3,
-      "narration": "2019年9月、シカゴ市の公共図書館が、延滞金を廃止すると決めた。",
+      "narration": "2014年、アレクサンドラ・プロトポポヴァとクライヴ・ウィンが、施設に来た里親候補と犬の交流を記録して、引き取りの成否と結びついた要素を探した。",
       "visual": {
         "type": "stat",
-        "value": "2019年9月",
-        "label": "シカゴ市立図書館が延滞金廃止を決定",
-        "context": "アメリカ・シカゴ",
+        "value": "2014年",
+        "label": "里親と犬の交流を記録",
+        "context": "プロトポポヴァとウィン",
         "unit": "",
         "axis": {
           "label": "",
@@ -1488,298 +1445,257 @@
     {
       "id": 111,
       "act": 3,
-      "narration": "全米でも最大級の公共図書館システムが、返却の遅れに対する罰金をやめるという決定である。",
+      "narration": "来場者はたいてい条件を持って来る。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "全米最大級の図書館網"
+        "figure": "contract",
+        "label": "来場者の条件"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 112,
       "act": 3,
-      "narration": "10月1日から実施された。",
+      "narration": "犬種、大きさ、年齢。",
       "visual": {
-        "type": "stat",
-        "value": "10月1日",
-        "label": "廃止を実施",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "list",
+        "title": "来場者が持って来る条件",
+        "items": [
+          "犬種",
+          "大きさ",
+          "年齢"
+        ]
       },
       "concept_color": "charcoal"
     },
     {
       "id": 113,
       "act": 3,
-      "narration": "理由は動機の研究ではなく、貧困層の排除だった。",
+      "narration": "研究チームは犬の外見も、来場者が最初に持っていた意向も、交流した場所も同時に検討している。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": "貧困層の排除"
+        "figure": "eye",
+        "label": "外見・意向・場所を検討"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 114,
       "act": 3,
-      "narration": "数ドルの延滞金が払えずに図書館カードを止められた子どもが、大量にいたからである。",
+      "narration": "それでも浮かび上がったのは、犬の側の、ごく短い動作だった。",
       "visual": {
         "type": "figure",
-        "figure": "crowd",
-        "label": "カードを止められた子ども"
+        "figure": "person",
+        "label": "犬のごく短い動作"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 115,
       "act": 3,
-      "narration": "廃止から5か月間の記録はこうだ。",
+      "narration": "遊びに誘われて無視した犬は、引き取られる確率が下がる。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "廃止から5か月の記録"
+        "figure": "arrowDown",
+        "label": "誘いを無視→確率低下"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 116,
       "act": 3,
-      "narration": "長期にわたって延滞していた本の返却は、月およそ900冊から、月およそ1650冊に増えた。",
+      "narration": "そして里親候補の隣に寝そべった犬は、引き取られる確率がおよそ15倍になった。",
       "visual": {
-        "type": "line",
-        "title": "延滞本の返却(月あたり)",
-        "unit": "冊",
-        "points": [
-          {
-            "label": "廃止前",
-            "value": 900
-          },
-          {
-            "label": "廃止後",
-            "value": 1650
-          }
-        ]
+        "type": "stat",
+        "value": "約15倍",
+        "label": "隣に寝そべった犬",
+        "context": "引き取られる確率",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 117,
       "act": 3,
-      "narration": "貸出そのものも約36万1000冊で、前年の同じ時期より7パーセント多かった。",
+      "narration": "これは家探しに例えれば、駅からの距離と家賃で候補を絞り込んだ人が、内見の日に窓から入る光の角度だけで決めてしまう、という話に相当する。",
       "visual": {
-        "type": "stat",
-        "value": "36万1000冊",
-        "label": "貸出、前年同期比7パーセント増",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "door",
+        "label": "窓から入る光の角度で決める"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "daylight"
     },
     {
       "id": 118,
-      "act": 3,
-      "narration": "失った延滞金収入は年間およそ80万から90万ドル。",
+      "act": 4,
+      "narration": "ここでもう一度、あなた自身の条件を見てみてほしい。",
       "visual": {
-        "type": "stat",
-        "value": "80万〜90万ドル",
-        "label": "失った延滞金収入(年間)",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "eye",
+        "label": "あなた自身の条件"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 119,
+      "act": 4,
+      "narration": "背が高い人。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "背が高い人"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 119,
-      "act": 3,
-      "narration": "図書館の総予算に対して0.7パーセントである。",
-      "visual": {
-        "type": "stat",
-        "value": "0.7パーセント",
-        "label": "総予算に対する失った収入の割合",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 120,
-      "act": 3,
-      "narration": "罰金をやめたら、本は返ってきた。",
+      "act": 4,
+      "narration": "落ち着いている人。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "本は返ってきた"
+        "type": "keyword",
+        "keyword": "落ち着いている人"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 121,
-      "act": 3,
-      "narration": "これは家計に例えれば、家賃の督促状を出すのをやめたら家賃が集まりはじめた、という話に相当する。",
+      "act": 4,
+      "narration": "よく笑う人。",
       "visual": {
-        "type": "comparison",
-        "left_title": "督促を続ける",
-        "right_title": "督促をやめる",
-        "left_items": [
-          "圧力",
-          "反発と滞納"
-        ],
-        "right_items": [
-          "圧力を外す",
-          "集まりはじめる"
-        ],
-        "center_label": "家計のたとえ"
+        "type": "keyword",
+        "keyword": "よく笑う人"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 122,
       "act": 4,
-      "narration": "ここでもう一度、あなたの机の上のペンを見てみてほしい。",
+      "narration": "この3つは、たぶん本当にあなたが好きなものだ。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "机の上のペンを、もう一度"
+        "type": "list",
+        "title": "たぶん本当に好きなもの",
+        "items": [
+          "背が高い",
+          "落ち着いている",
+          "よく笑う"
+        ]
       },
       "concept_color": "warm"
     },
     {
       "id": 123,
       "act": 4,
-      "narration": "あなたは腕が落ちたわけではない。",
+      "narration": "問題は、それが好きだということと、目の前の相手に惹かれるかどうかが、別の回路で動いているという点にある。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "腕が落ちたわけではない"
+        "figure": "brain",
+        "label": "別の回路で動いている"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 124,
       "act": 4,
-      "narration": "むしろ依頼をこなすうちに上手くなった。",
+      "narration": "条件は、あなたの価値観を正確に述べている。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "むしろ上手くなった"
+        "figure": "contract",
+        "label": "条件=価値観の記述"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 125,
       "act": 4,
-      "narration": "減ったのは技術ではなく、頼まれていないときに手が動く回数である。",
+      "narration": "ただ、あなたの反応を予報していない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "減っていない",
-        "right_title": "減った",
-        "left_items": [
-          "技術",
-          "描く力"
-        ],
-        "right_items": [
-          "頼まれず動く手",
-          "自発の回数"
-        ],
-        "center_label": "失われたもの"
+        "type": "figure",
+        "figure": "question",
+        "label": "反応は予報しない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 126,
       "act": 4,
-      "narration": "保育園の親も、善意を失ったわけではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "善意を失っていない親"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 127,
-      "act": 4,
-      "narration": "彼らが失ったのは、遅刻を申し訳ないと感じる回路のほうだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "申し訳なさを感じる回路"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 128,
-      "act": 4,
       "narration": "想像してみてほしい。",
       "visual": {
         "type": "scenery",
         "place": "room",
-        "people": 1,
+        "people": 0,
         "caption": "想像してみてほしい"
       },
       "concept_color": "warm"
     },
     {
-      "id": 129,
+      "id": 127,
       "act": 4,
-      "narration": "あなたは締め切りの三日前に、依頼の絵を仕上げている。",
+      "narration": "あなたはいま、初対面の相手と向かい合っている。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "締め切り三日前"
+        "figure": "couple",
+        "label": "初対面の相手と向かい合う"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 128,
+      "act": 4,
+      "narration": "相手が笑う。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "相手が笑う"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 129,
+      "act": 4,
+      "narration": "そのとき、あなたの頭の中で条件表が開くだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "条件表は開くか"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 130,
       "act": 4,
-      "narration": "保存して、送信して、画面を閉じる。",
+      "narration": "開かない。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "保存・送信・画面を閉じる"
+        "type": "keyword",
+        "keyword": "開かない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 131,
       "act": 4,
-      "narration": "そのあと、新しいカンバスを開くだろうか。",
+      "narration": "条件表が開くのは、帰りの電車の中である。",
       "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "新しいカンバスを開くか"
+        "type": "scenery",
+        "place": "city",
+        "people": 1,
+        "caption": "条件表が開くのは、帰りの電車の中"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 132,
       "act": 4,
-      "narration": "それとも開かないまま、机の照明を落とすだろうか。",
+      "narration": "そこで初めて、あなたはさっきの何が良かったのかを、言葉にしはじめる。",
       "visual": {
         "type": "figure",
-        "figure": "candle",
-        "label": "照明を落とすか"
+        "figure": "thought",
+        "label": "あとから言葉にしはじめる"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 133,
@@ -1790,40 +1706,17 @@
         "figure": "cycle",
         "label": "最初の数字に戻る"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 134,
       "act": 4,
-      "narration": "副業をしている305万人と、したいと思っている493万人。",
-      "visual": {
-        "type": "orbs",
-        "title": "副業の実態",
-        "items": [
-          {
-            "label": "している",
-            "value": 305,
-            "display": "305万人"
-          },
-          {
-            "label": "したい",
-            "value": 493,
-            "display": "493万人"
-          }
-        ],
-        "shafts": false
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 135,
-      "act": 4,
-      "narration": "この800万人は、自分の好きなことを市場に接続しようとしている人たちである。",
+      "narration": "2024年に結婚した48万5063組。",
       "visual": {
         "type": "stat",
-        "value": "800万人",
-        "label": "好きを市場に接続しようとする人",
-        "context": "",
+        "value": "48万5063組",
+        "label": "2024年に結婚",
+        "context": "最初の数字",
         "unit": "",
         "axis": {
           "label": "",
@@ -1833,1678 +1726,1584 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 136,
+      "id": 135,
       "act": 4,
-      "narration": "だとすれば、いま起きているのは個人の心の弱さの話ではない。",
+      "narration": "そのうちネットで出会った13.6パーセント。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "心の弱さではない"
+        "type": "donut",
+        "title": "ネットで出会った割合",
+        "percent": 13.6,
+        "label": "ネットで出会った",
+        "rest_label": "それ以外"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 137,
+      "id": 136,
       "act": 4,
-      "narration": "800万人分の動機が、同じ方向に書き換えられている最中だという話になる。",
+      "narration": "検索の窓に打ち込まれているのは、年齢と身長と年収と職業である。",
       "visual": {
-        "type": "figure",
-        "figure": "leader",
-        "label": "同じ方向へ書き換えられる"
+        "type": "list",
+        "title": "検索の窓に打ち込む項目",
+        "items": [
+          "年齢",
+          "身長",
+          "年収",
+          "職業"
+        ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 138,
+      "id": 137,
       "act": 4,
-      "narration": "ではその書き換えは、いったい誰の手で行われているのだろうか。",
+      "narration": "つまり、実際の惹かれ方を予測しないと分かっている項目で、母集団のほうが先に切り取られている。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "誰の手で行われているのか"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 139,
-      "act": 4,
-      "narration": "ここで、受け取る側から見るのをやめてみたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "受け取る側から見るのをやめる"
+        "figure": "crowd",
+        "label": "母集団が先に切り取られる"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 138,
+      "act": 4,
+      "narration": "条件は本人の言葉であり、嘘でもない。",
+      "visual": {
+        "type": "dialogue",
+        "line": "これは本当のわたしの言葉、嘘じゃない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 139,
+      "act": 4,
+      "narration": "それなのに、その言葉のほうが、会う相手を決めてしまっている。",
+      "visual": {
+        "type": "verdict",
+        "caption": "それなのに",
+        "statement": "条件の言葉 = 会う相手を決めるもの",
+        "note": "予測しないと分かっている項目が"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 140,
       "act": 4,
-      "narration": "払う側から眺めると、風景がひとつ増える。",
+      "narration": "ではその言葉は、いったいどこから来ているのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "払う側から眺める"
+        "figure": "question",
+        "label": "その言葉はどこから来る"
       },
-      "concept_color": "dusk"
+      "concept_color": "pitch-black"
     },
     {
       "id": 141,
       "act": 3,
-      "narration": "揃っていないものがある。",
+      "narration": "ここで、選ぶ側から見るのをやめてみたい。",
       "visual": {
-        "type": "balance",
-        "title": "揃わないもの",
-        "left_label": "行動の量",
-        "right_label": "動機の質",
-        "tilt": 0.6,
-        "note": "同じ天秤に乗らない"
+        "type": "figure",
+        "figure": "eye",
+        "label": "選ぶ側から降りる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 142,
       "act": 3,
-      "narration": "報酬は、行動の量を増やす。",
+      "narration": "語る側から眺めると、風景がひとつ増える。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "報酬が量を増やす"
+        "figure": "person",
+        "label": "語る側の風景"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 143,
       "act": 3,
-      "narration": "締め切りは守られ、納品はされ、依頼はこなされる。",
+      "narration": "揃っていないものがある。",
       "visual": {
-        "type": "list",
-        "title": "こなされる行動",
-        "items": [
-          "締め切りは守られる",
-          "納品はされる",
-          "依頼はこなされる"
-        ]
+        "type": "figure",
+        "figure": "scale",
+        "label": "揃わない二つ"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 144,
       "act": 3,
-      "narration": "だが同じ報酬が、動機の質を減らす。",
+      "narration": "人は自分の好みを、はっきりと、詳しく、そして一貫して語れる。",
       "visual": {
         "type": "figure",
-        "figure": "arrowDown",
-        "label": "動機の質は減る"
+        "figure": "person",
+        "label": "好みを一貫して語る"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 145,
       "act": 3,
-      "narration": "頼まれていないときに手が動く回数が落ちる。",
+      "narration": "この語りの能力は本物だ。",
       "visual": {
-        "type": "line",
-        "title": "頼まれず手が動く回数",
-        "unit": "回",
-        "points": [
-          {
-            "label": "前",
-            "value": 10
-          },
-          {
-            "label": "報酬導入",
-            "value": 7
-          },
-          {
-            "label": "後",
-            "value": 4
-          }
-        ]
+        "type": "keyword",
+        "keyword": "語りは本物"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 146,
       "act": 3,
-      "narration": "量と質が逆を向いているだけなら、まだ取引の話で済む。",
+      "narration": "バスの調査は、それが世界中で規則的でさえあることを示した。",
       "visual": {
-        "type": "comparison",
-        "left_title": "量",
-        "right_title": "質",
-        "left_items": [
-          "増える"
-        ],
-        "right_items": [
-          "減る"
-        ],
-        "center_label": "逆を向く"
+        "type": "figure",
+        "figure": "network",
+        "label": "世界中で規則的"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 147,
       "act": 3,
-      "narration": "厄介なのは、この取引が片道だという点だ。",
+      "narration": "だが同じ人間が、その語りで自分の行動を予測できない。",
       "visual": {
         "type": "figure",
-        "figure": "path",
-        "label": "この取引は片道"
+        "figure": "question",
+        "label": "行動を予測できない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 148,
       "act": 3,
-      "narration": "ハイファの園は罰金を外した。",
+      "narration": "語る能力と、当てる能力が、切り離されている。",
       "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "罰金を外した"
+        "type": "comparison",
+        "left_title": "語る能力",
+        "right_title": "当てる能力",
+        "left_items": [
+          "流暢に説明できる"
+        ],
+        "right_items": [
+          "予測はできない"
+        ],
+        "center_label": "切り離されている"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 149,
       "act": 3,
-      "narration": "それでも遅刻は元に戻らなかった。",
+      "narration": "これは天気の話に近い。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 6,
-        "caption": "それでも遅刻は戻らなかった"
+        "type": "keyword",
+        "keyword": "天気の話に近い"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 150,
       "act": 3,
-      "narration": "これは値札のシールに近い。",
+      "narration": "空模様を正確に描写できることと、明日の雨を当てられることは、まったく別の技術である。",
       "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "値札のシール"
+        "type": "comparison",
+        "left_title": "空模様の描写",
+        "right_title": "明日の雨を当てる",
+        "left_items": [
+          "正確に描ける"
+        ],
+        "right_items": [
+          "別の技術"
+        ],
+        "center_label": "まったく別物"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 151,
       "act": 3,
-      "narration": "貼るのは一瞬だが、剥がしても跡が残る。",
+      "narration": "ただし、この動画で言いたいのは、条件を書かせるアプリが悪いという単純な話ではない。",
       "visual": {
         "type": "figure",
-        "figure": "echo",
-        "label": "剥がしても跡が残る"
+        "figure": "smartphone",
+        "label": "アプリが悪い話ではない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 152,
       "act": 3,
-      "narration": "ただし、この動画で言いたいのは、依頼する側が悪いという単純な話ではない。",
+      "narration": "人数が多すぎる場所では、何らかの絞り込みなしに相手には辿り着けない。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "依頼する側が悪い、という話ではない"
+        "type": "figure",
+        "figure": "crowd",
+        "label": "人数が多すぎる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 153,
       "act": 3,
-      "narration": "1997年、経済学者のブルーノ・フライらのチームが、スイスで核廃棄物の処分場の受け入れ意向を調べている。",
+      "narration": "年齢と居住地で切るのは、運営側の悪意ではなく必要である。",
       "visual": {
-        "type": "stat",
-        "value": "1997年",
-        "label": "核廃棄物処分場の受け入れ調査",
-        "context": "ブルーノ・フライら",
-        "unit": "",
-        "axis": {
-          "label": "スイス",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 154,
-      "act": 3,
-      "narration": "住民に補償金を提示したところ、受け入れると答える人の割合は上がらず、下がった。",
-      "visual": {
-        "type": "columns",
-        "title": "補償金で受け入れは",
-        "left": {
-          "label": "補償なし",
-          "value": "50.8%",
-          "level": 0.51
-        },
-        "right": {
-          "label": "補償あり",
-          "value": "24.6%",
-          "level": 0.25
-        },
-        "note": "提示すると下がった"
+        "type": "figure",
+        "figure": "contract",
+        "label": "年齢と居住地で切る"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 155,
+      "id": 154,
       "act": 3,
-      "narration": "提示した側は善意で払っている。",
+      "narration": "そして条件を書いた本人も、嘘をついてはいない。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "善意で払っている"
+        "figure": "person",
+        "label": "本人も嘘はない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 156,
+      "id": 155,
       "act": 3,
-      "narration": "迷惑をかけるのだから金を出すのが誠実だと考えている。",
+      "narration": "誰も間違っていないのに、噛み合っていない。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "金を出すのが誠実"
+        "figure": "conflict",
+        "label": "誰も間違っていない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 156,
+      "act": 3,
+      "narration": "そして誰もあまり口に出さない回路が、もうひとつ走っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "もう一つの回路"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 157,
       "act": 3,
-      "narration": "その誠実さが、受け取る側の動機を書き換えてしまった。",
+      "narration": "2005年、スウェーデンのルンド大学のペッテル・ヨハンソンとラース・ホールらが、サイエンス誌に短い実験を発表した。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "動機が書き換わる"
+        "type": "stat",
+        "value": "2005年",
+        "label": "ルンド大学の実験発表",
+        "context": "ヨハンソンとホール",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 158,
       "act": 3,
-      "narration": "払う側も、同じ構造の中にいる。",
+      "narration": "手順は単純である。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "払う側も同じ構造"
+        "type": "keyword",
+        "keyword": "手順は単純"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 159,
       "act": 3,
-      "narration": "そして誰もあまり口に出さない回路が、もうひとつ走っている。",
+      "narration": "被験者の前に、女性の顔写真を二枚並べる。",
       "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 0,
-        "caption": "口に出されない回路が走る"
+        "type": "comparison",
+        "left_title": "写真A",
+        "right_title": "写真B",
+        "left_items": [
+          "女性の顔"
+        ],
+        "right_items": [
+          "女性の顔"
+        ],
+        "center_label": "二枚を並べる"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 160,
       "act": 3,
-      "narration": "2020年、キムとケイらのチームが、心理学の専門誌に7つの研究とメタ分析をまとめた論文を発表している。",
-      "visual": {
-        "type": "stat",
-        "value": "7つ",
-        "label": "研究＋メタ分析の論文",
-        "context": "2020年 キムとケイら",
-        "unit": "",
-        "axis": {
-          "label": "心理学専門誌",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 161,
-      "act": 3,
-      "narration": "調べたのは、労働者が情熱を持っていると見なされたときに、周囲の判断がどう変わるかである。",
+      "narration": "魅力的だと思うほうを指さしてもらう。",
       "visual": {
         "type": "figure",
         "figure": "eye",
-        "label": "情熱と見なされたとき"
+        "label": "魅力的なほうを指さす"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 162,
+      "id": 161,
       "act": 3,
-      "narration": "参加者に架空の労働者の情報を見せ、その人に対する扱いが妥当かどうかを評価させた。",
+      "narration": "実験者はその写真を伏せて手渡し、なぜそちらを選んだのかを説明させる。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "架空の労働者を評価"
+        "figure": "question",
+        "label": "なぜ選んだか説明"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 162,
+      "act": 3,
+      "narration": "ここに仕掛けがある。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ここに仕掛け"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 163,
       "act": 3,
-      "narration": "扱いの内容は、職務と関係のない雑務を頼む、無給で残業させる、といったものだ。",
+      "narration": "一部の試行で、実験者は手品の要領で、選ばれなかったほうの写真を渡していた。",
       "visual": {
-        "type": "list",
-        "title": "課された扱い",
-        "items": [
-          "職務外の雑務を頼む",
-          "無給で残業させる"
-        ]
+        "type": "figure",
+        "figure": "mask",
+        "label": "手品ですり替える"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 164,
       "act": 3,
-      "narration": "結果は一貫していた。",
+      "narration": "自分が退けた顔が、自分の選択として目の前に置かれているわけである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "結果は一貫"
+        "type": "figure",
+        "figure": "eye",
+        "label": "退けた顔が目の前に"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 165,
       "act": 3,
-      "narration": "その労働者が仕事に情熱を持っていると示された条件では、まったく同じ扱いが、より正当だと判断されたのである。",
+      "narration": "すり替えに気づいた人は13パーセントだった。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "同じ扱いが正当に見える"
+        "type": "donut",
+        "title": "すり替えに気づいた人",
+        "percent": 13,
+        "label": "気づいた",
+        "rest_label": "気づかない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 166,
       "act": 3,
-      "narration": "研究者たちは、そう判断される道筋を2つ特定している。",
+      "narration": "残る87パーセントは、気づかないまま説明をはじめた。",
       "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "判断の道筋は2つ"
+        "type": "units",
+        "total": 100,
+        "value": 87,
+        "label": "100人中87人が気づかない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 167,
       "act": 3,
-      "narration": "ひとつは、情熱があるならどうせ志願したはずだという推定。",
+      "narration": "この人は笑顔が良かった。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "どうせ志願したはず"
+        "type": "dialogue",
+        "line": "この人は笑顔が良かった"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 168,
       "act": 3,
-      "narration": "もうひとつは、情熱がある人にとっては仕事そのものが報酬だという信念である。",
+      "narration": "髪型が好みだった。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "仕事そのものが報酬"
+        "type": "dialogue",
+        "line": "髪型が好みだった"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 169,
       "act": 3,
-      "narration": "つまり情熱は、待遇を引き上げる材料ではなく、値引きの根拠として使われていた。",
+      "narration": "前に会った人に似ている。",
       "visual": {
-        "type": "columns",
-        "title": "情熱の使われ方",
-        "left": {
-          "label": "待遇を引き上げる",
-          "value": "—",
-          "level": 0.28
-        },
-        "right": {
-          "label": "値引きの根拠",
-          "value": "採用",
-          "level": 0.82
-        },
-        "note": "引き上げではなく値引きへ"
+        "type": "dialogue",
+        "line": "前に会った人に似ている"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 170,
       "act": 3,
-      "narration": "好きだと言うことが、そのまま割引券になる。",
+      "narration": "自分が選ばなかった顔について、選んだ理由がすらすらと出てくる。",
       "visual": {
         "type": "figure",
-        "figure": "shopping",
-        "label": "好き＝割引券"
+        "figure": "thought",
+        "label": "理由がすらすら出る"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 171,
-      "act": 4,
-      "narration": "ここでひとつ、あなたにも一緒に考えられる問いを出したい。",
+      "act": 3,
+      "narration": "理由は、選択の前ではなく、選択の後に作られていた。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 2,
-        "caption": "あなたにも一緒に考えてほしい"
+        "type": "comparison",
+        "left_title": "選択の前",
+        "right_title": "選択の後",
+        "left_items": [
+          "理由はまだない"
+        ],
+        "right_items": [
+          "理由が作られる"
+        ],
+        "center_label": "後付けの理由"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 172,
       "act": 4,
-      "narration": "同じ求人に、二人が応募してきたとする。",
+      "narration": "ここでひとつ、あなたにも一緒に考えられる問いを出したい。",
       "visual": {
-        "type": "comparison",
-        "left_title": "一人目",
-        "right_title": "二人目",
-        "left_items": [
-          "同じ求人へ応募"
-        ],
-        "right_items": [
-          "同じ求人へ応募"
-        ],
-        "center_label": "二人が応募"
+        "type": "figure",
+        "figure": "question",
+        "label": "あなたへの問い"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 173,
       "act": 4,
-      "narration": "一人は、生活のために働きたいと言う。",
+      "narration": "最後に人を好きになったときのことを思い出してほしい。",
       "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "生活のために働きたい"
+        "type": "scenery",
+        "place": "room",
+        "people": 2,
+        "caption": "最後に人を好きになったとき"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 174,
       "act": 4,
-      "narration": "もう一人は、この仕事がずっと好きだったと言う。",
+      "narration": "なぜその人だったのか、理由を3つ挙げられるだろうか。",
       "visual": {
-        "type": "dialogue",
-        "line": "この仕事がずっと好きだった"
+        "type": "figure",
+        "figure": "heart",
+        "label": "理由を3つ挙げられるか"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 175,
       "act": 4,
-      "narration": "あなたが雇う側なら、どちらに高い報酬を提示するだろうか。",
+      "narration": "少し考えてみてほしい。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "どちらに高い報酬を?"
+        "type": "scenery",
+        "place": "field",
+        "people": 1,
+        "caption": "少し考えてみてほしい"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 176,
-      "act": 4,
-      "narration": "少し考えてみてほしい。",
+      "act": 3,
+      "narration": "おそらく挙げられる。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "少し考えてみる"
+        "figure": "thought",
+        "label": "理由は挙がる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 177,
-      "act": 4,
-      "narration": "多くの人は後者を高く評価する。",
+      "act": 3,
+      "narration": "優しかった。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "後者を高く評価"
+        "figure": "heart",
+        "label": "優しかった"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 178,
-      "act": 4,
-      "narration": "熱意があり、辞めにくく、有能そうに見えるからだ。",
+      "act": 3,
+      "narration": "話が合った。",
       "visual": {
-        "type": "list",
-        "title": "高評価の理由",
-        "items": [
-          "熱意がある",
-          "辞めにくい",
-          "有能そうに見える"
-        ]
+        "type": "figure",
+        "figure": "couple",
+        "label": "話が合った"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 179,
-      "act": 4,
-      "narration": "ところがさきほどの実験が観測したのは、評価ではなく待遇のほうだった。",
+      "act": 3,
+      "narration": "一緒にいて楽だった。",
       "visual": {
-        "type": "comparison",
-        "left_title": "観測されたのは",
-        "right_title": "実際は",
-        "left_items": [
-          "評価"
-        ],
-        "right_items": [
-          "待遇"
-        ],
-        "center_label": "実験が測ったもの"
+        "type": "dialogue",
+        "line": "一緒にいて楽だった"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 180,
-      "act": 4,
-      "narration": "好きだと答えた側には、無給の残業を頼んでもよいと判断されやすくなる。",
+      "act": 3,
+      "narration": "ここで確かめたいのは、その理由が正しいかどうかではない。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "無給の残業を頼んでよい"
+        "figure": "question",
+        "label": "正しさは問わない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 181,
-      "act": 4,
-      "narration": "善意ある直感が、そのまま値引きに変換されている。",
+      "act": 3,
+      "narration": "理由が、どれくらいすらすら出てきたかである。",
       "visual": {
-        "type": "columns",
-        "title": "善意の変換",
-        "left": {
-          "label": "善意ある直感",
-          "value": "好き",
-          "level": 0.3
-        },
-        "right": {
-          "label": "値引き",
-          "value": "半額",
-          "level": 0.85
-        },
-        "note": "そのまま変換されている"
+        "type": "figure",
+        "figure": "thought",
+        "label": "どれだけ滑らかに出たか"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 182,
-      "act": 4,
-      "narration": "自分はそんな露骨な計算はしない、と思うかもしれない。",
+      "act": 3,
+      "narration": "すり替えられた顔についても、人は同じ速さで理由を出した。",
       "visual": {
-        "type": "dialogue",
-        "line": "自分はそんな露骨な計算はしない"
+        "type": "figure",
+        "figure": "mask",
+        "label": "すり替えても同じ速さ"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 183,
+      "act": 3,
+      "narration": "説明のなめらかさは、正しさの証拠にはならない。",
+      "visual": {
+        "type": "balance",
+        "title": "",
+        "left_label": "説明のなめらかさ",
+        "right_label": "正しさ",
+        "tilt": 0.7,
+        "note": "滑らかさは証拠ではない"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 183,
-      "act": 4,
-      "narration": "その感覚はもっともだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "その感覚はもっともだ"
-      },
-      "concept_color": "dusk"
-    },
-    {
       "id": 184,
       "act": 4,
-      "narration": "実際、この判断をしている人に悪意はない。",
+      "narration": "自分はそこまで無自覚ではない、と思うかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "判断する人に悪意はない"
+        "figure": "anxiety",
+        "label": "自分は無自覚ではない?"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 185,
       "act": 4,
-      "narration": "さきほどの2つの道筋を読み返してみてほしい。",
+      "narration": "その感覚はもっともだ。",
       "visual": {
         "type": "figure",
-        "figure": "crossroad",
-        "label": "2つの道筋を読み返す"
+        "figure": "person",
+        "label": "その感覚はもっともだ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 186,
       "act": 4,
-      "narration": "どうせ志願したはず。",
+      "narration": "実際、13パーセントの人はすり替えに気づいている。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "どうせ志願したはず"
+        "type": "donut",
+        "title": "すり替えに気づいた人",
+        "percent": 13,
+        "label": "気づいた",
+        "rest_label": "気づかなかった"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 187,
       "act": 4,
-      "narration": "仕事そのものが報酬。",
+      "narration": "だが残る87パーセントも、実験を受ける前は、同じことを思っていたはずだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "仕事そのものが報酬"
+        "type": "units",
+        "total": 100,
+        "value": 87,
+        "label": "100人中87人"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 188,
       "act": 4,
-      "narration": "どちらも、相手を認める言葉の形をしている。",
+      "narration": "無自覚であることの厄介さは、無自覚だと自覚できないという一点にある。",
       "visual": {
-        "type": "comparison",
-        "left_title": "志願したはず",
-        "right_title": "仕事が報酬",
-        "left_items": [
-          "認める言葉"
-        ],
-        "right_items": [
-          "認める言葉"
-        ],
-        "center_label": "同じ形をしている"
+        "type": "figure",
+        "figure": "eye",
+        "label": "無自覚だと自覚できない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 189,
       "act": 4,
-      "narration": "値引きは、称賛の顔をしてやってくる。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "値引きは称賛の顔で来る"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 190,
-      "act": 4,
-      "narration": "打ち合わせの席を想像してみてほしい。",
+      "narration": "友人に恋人を紹介する場面を想像してみてほしい。",
       "visual": {
         "type": "scenery",
         "place": "room",
-        "people": 2,
-        "caption": "打ち合わせの席を想像する"
+        "people": 3,
+        "caption": "友人に恋人を紹介する"
       },
       "concept_color": "dusk"
     },
     {
-      "id": 191,
+      "id": 190,
       "act": 4,
-      "narration": "テーブルの向こうで、依頼する側が身を乗り出している。",
+      "narration": "テーブルの向こうで、友人があなたの隣の人を見ている。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "依頼する側が身を乗り出す"
+        "figure": "eye",
+        "label": "友人が隣の人を見る"
       },
       "concept_color": "dark-navy"
+    },
+    {
+      "id": 191,
+      "act": 4,
+      "narration": "あとで二人きりになったとき、友人はこう言う。",
+      "visual": {
+        "type": "figure",
+        "figure": "couple",
+        "label": "二人きりになって"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 192,
       "act": 4,
-      "narration": "あなたの作品がずっと好きだった、と言っている。",
+      "narration": "意外だね、そういうタイプが好きだと思わなかった。",
       "visual": {
         "type": "dialogue",
-        "line": "あなたの作品がずっと好きだった"
+        "line": "意外だね、そういうタイプが好きだと思わなかった"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 193,
       "act": 4,
-      "narration": "嘘ではない。",
+      "narration": "あなたは笑って答える。",
       "visual": {
-        "type": "keyword",
-        "keyword": "嘘ではない"
+        "type": "figure",
+        "figure": "person",
+        "label": "笑って答える"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 194,
       "act": 4,
-      "narration": "本当に好きなのだ。",
+      "narration": "自分でも意外だった、と。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "本当に好きなのだ"
+        "type": "dialogue",
+        "line": "自分でも意外だった"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 195,
       "act": 4,
-      "narration": "そのあと、予算の話になる。",
+      "narration": "その一言は、たぶん正直な感想である。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "予算の話になる"
+        "figure": "heart",
+        "label": "正直な感想"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 196,
       "act": 4,
-      "narration": "提示された金額は、あなたが最初に思い浮かべた額の半分だった。",
-      "visual": {
-        "type": "donut",
-        "title": "提示された金額",
-        "percent": 50,
-        "label": "提示額",
-        "rest_label": "思い浮かべた額との差"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 197,
-      "act": 4,
-      "narration": "相手はこう続ける。",
+      "narration": "だが同時に、あなたはそこから、自分の選択を説明で埋めはじめてもいる。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "相手はこう続ける"
+        "figure": "thought",
+        "label": "説明で埋めはじめる"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 198,
+      "id": 197,
       "act": 4,
-      "narration": "「この仕事、きっと楽しんでもらえると思うんです」。",
+      "narration": "この説明は、どこまでが記憶で、どこからが後付けなのだろうか。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "この仕事、きっと楽しんでもらえると思うんです"
+        "type": "comparison",
+        "left_title": "記憶",
+        "right_title": "後付け",
+        "left_items": [
+          "実際に感じたこと"
+        ],
+        "right_items": [
+          "あとで作った理由"
+        ],
+        "center_label": "どこが境目?"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 199,
+      "id": 198,
       "act": 4,
-      "narration": "あなたはうなずく。",
+      "narration": "そもそも人間は、いつから自分の好みで相手を選ぶようになったのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "あなたはうなずく"
+        "figure": "question",
+        "label": "いつから好みで選ぶ?"
       },
-      "concept_color": "daylight"
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 199,
+      "act": 2,
+      "narration": "日本の記録は、この問いにかなり正確に答えられる。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "日本の記録が答える"
+      },
+      "concept_color": "pitch-black"
     },
     {
       "id": 200,
-      "act": 4,
-      "narration": "うなずいた自分に、後から違和感が残る。",
+      "act": 2,
+      "narration": "国立社会保障人口問題研究所の出生動向基本調査は、結婚した夫婦がどうやって知り合ったのかを、戦前の結婚までさかのぼって集計している。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "後から違和感が残る"
+        "figure": "screen",
+        "label": "出生動向基本調査"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 201,
-      "act": 4,
-      "narration": "この違和感は、いったい何を検知したのだろうか。",
+      "act": 2,
+      "narration": "見合い。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "違和感は何を検知したのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 202,
-      "act": 3,
-      "narration": "そもそも人間は、いつから対価の付かないものを差し出せるようになったのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "対価の付かないものを差し出す"
+        "figure": "handshake",
+        "label": "見合い"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 203,
-      "act": 3,
-      "narration": "対価なしで供給が成立している仕組みを、3つ並べてみる。",
+      "id": 202,
+      "act": 2,
+      "narration": "職場や仕事の関係。",
       "visual": {
-        "type": "list",
-        "title": "対価なしで成立する仕組み",
-        "items": [
-          "消防団",
-          "リナックス",
-          "血液"
-        ]
+        "type": "figure",
+        "figure": "factory",
+        "label": "職場や仕事の関係"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 203,
+      "act": 2,
+      "narration": "友人や兄弟姉妹の紹介。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "友人や兄弟姉妹の紹介"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 204,
-      "act": 3,
-      "narration": "ひとつ、消防団。",
-      "visual": {
-        "type": "scenery",
-        "place": "village",
-        "people": 6,
-        "caption": "ひとつ、消防団"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 205,
-      "act": 3,
-      "narration": "地域の火事に、報酬をほとんど受け取らずに人が集まる。",
+      "act": 2,
+      "narration": "学校。",
       "visual": {
         "type": "figure",
-        "figure": "crowd",
-        "label": "報酬なしで人が集まる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 206,
-      "act": 3,
-      "narration": "ふたつ、リナックス。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "ふたつ、リナックス"
+        "figure": "stairs",
+        "label": "学校"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 207,
-      "act": 3,
-      "narration": "1991年にリーナス・トーバルズが公開した基本ソフトの中核は、無償の書き手が積み上げて、いまも世界中の計算機の土台になっている。",
+      "id": 205,
+      "act": 2,
+      "narration": "街なかや旅行先。",
       "visual": {
-        "type": "stat",
-        "value": "1991年",
-        "label": "基本ソフトの中核を公開",
-        "context": "リーナス・トーバルズ",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "scenery",
+        "place": "city",
+        "people": 6,
+        "caption": "街なかや旅行先"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 206,
+      "act": 2,
+      "narration": "そして最近の調査からは、ネットで。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "ネットで"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 208,
-      "act": 3,
-      "narration": "そして3つ目、血液。",
+      "id": 207,
+      "act": 2,
+      "narration": "この選択肢の並びの上を、日本人の結婚は数十年かけて移動してきた。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "そして3つ目、血液"
+        "figure": "path",
+        "label": "数十年かけて移動した"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 208,
+      "act": 2,
+      "narration": "戦前の日本で、結婚した夫婦のおよそ7割は見合いだった。",
+      "visual": {
+        "type": "donut",
+        "title": "戦前の結婚",
+        "percent": 70,
+        "label": "見合い",
+        "rest_label": "それ以外"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 209,
       "act": 3,
-      "narration": "日本人が病院で受ける輸血の血は、全量が対価なしで集められている。",
+      "narration": "相手を選んでいたのは、本人ではない。",
       "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 100,
-        "label": "輸血の血は全量が対価なし"
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "選んだのは本人ではない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 210,
       "act": 3,
-      "narration": "ところが、この3つ目だけは、かつて完全に逆だった。",
+      "narration": "親であり、親戚であり、仲人であり、家である。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "この3つ目だけはかつて逆だった"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 211,
-      "act": 3,
-      "narration": "1963年の日本で、輸血に使われる血液のうち、無償の献血で集まっていたのはおよそ2パーセントにすぎない。",
-      "visual": {
-        "type": "stat",
-        "value": "約2%",
-        "label": "無償の献血で集まった血液",
-        "context": "1963年 日本の輸血用血液",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 212,
-      "act": 3,
-      "narration": "残りは買った血だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "残りは買った血だった"
+        "type": "list",
+        "title": "選んでいたもの",
+        "items": [
+          "親",
+          "親戚",
+          "仲人",
+          "家"
+        ]
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 213,
+      "id": 211,
       "act": 3,
-      "narration": "街には血液銀行があり、血を売って生計を立てる人が並んでいた。",
+      "narration": "ここで大事なのは、その仕組みが幸福だったか不幸だったかではない。",
       "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 6,
-        "caption": "街に並ぶ、血液銀行の列"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 214,
-      "act": 3,
-      "narration": "何度も売るから慢性の貧血になり、赤血球の薄い血が黄色く見えたことから、その血は黄色い血と呼ばれた。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "黄色い血"
+        "type": "figure",
+        "figure": "scale",
+        "label": "幸福か不幸かではない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 215,
+      "id": 212,
       "act": 3,
-      "narration": "診断の技術も未熟で、輸血を受けた患者が肝炎になる例が増えていた。",
+      "narration": "当時は、自分の好みを言葉にして、それに合う相手を探すという手続きが、そもそも制度として存在していなかったという点である。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "輸血後に増える肝炎"
+        "figure": "contract",
+        "label": "制度が存在しなかった"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 213,
+      "act": 3,
+      "narration": "理想の条件を書き出す必要が無ければ、書き出す習慣も生まれない。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "書き出す習慣も生まれない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 214,
+      "act": 3,
+      "narration": "見合いの比率は戦後、一貫して下がり続けた。",
+      "visual": {
+        "type": "line",
+        "title": "見合い結婚の比率",
+        "unit": "%",
+        "points": [
+          {
+            "label": "1950",
+            "value": 60
+          },
+          {
+            "label": "1965",
+            "value": 45
+          },
+          {
+            "label": "1980",
+            "value": 24
+          },
+          {
+            "label": "1995",
+            "value": 9
+          },
+          {
+            "label": "2015",
+            "value": 5.5
+          }
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 215,
+      "act": 3,
+      "narration": "そして1960年代の末に、見合い結婚と恋愛結婚の割合が逆転する。",
+      "visual": {
+        "type": "columns",
+        "title": "割合の逆転",
+        "left": {
+          "label": "見合い結婚",
+          "value": "減少",
+          "level": 0.3
+        },
+        "right": {
+          "label": "恋愛結婚",
+          "value": "増加",
+          "level": 0.8
+        },
+        "note": "1960年代末に逆転"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 216,
       "act": 3,
-      "narration": "転機は1964年に来る。",
+      "narration": "ここが分岐点である。",
       "visual": {
-        "type": "stat",
-        "value": "1964年",
-        "label": "転機の年",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "ここが分岐点"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 217,
       "act": 3,
-      "narration": "3月24日、駐日米国大使のライシャワーが刺傷され、虎ノ門病院に運ばれた。",
+      "narration": "1990年代の半ばには、見合いは全体の1割を切った。",
       "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "駐日米国大使、刺傷される"
+        "type": "stat",
+        "value": "1割未満",
+        "label": "見合い結婚の割合",
+        "context": "1990年代半ば",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 218,
       "act": 3,
-      "narration": "命は助かった。",
+      "narration": "2010年から2014年に結婚した夫婦では、5.5パーセントまで落ちている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "命は助かった"
+        "type": "donut",
+        "title": "2010〜2014年に結婚した夫婦",
+        "percent": 5.5,
+        "label": "見合い結婚",
+        "rest_label": "恋愛など"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 219,
       "act": 3,
-      "narration": "だがこの輸血で肝炎に感染した。",
+      "narration": "つまり、自分の好みで自分の相手を選ぶという方式が日本で多数派になってから、まだ60年ほどしか経っていない。",
       "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "輸血で肝炎に感染"
+        "type": "stat",
+        "value": "60年",
+        "label": "多数派になってからの年月",
+        "context": "自分の好みで相手を選ぶ方式",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 220,
       "act": 3,
-      "narration": "一国の大使が、日本の病院の血で病気になったのである。",
+      "narration": "我々が当たり前だと思っているこの手続きは、祖父母の世代には無かったものである。",
       "visual": {
-        "type": "dialogue",
-        "line": "一国の大使が、日本の病院の血で病気になった。"
+        "type": "scenery",
+        "place": "village",
+        "people": 6,
+        "caption": "祖父母の世代には無かった"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 221,
       "act": 3,
-      "narration": "同じ年、全国の学生たちが黄色い血の追放運動を展開していた。",
+      "narration": "それでも恋愛結婚のほうが良いに決まっている、と思うかもしれない。",
       "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "黄色い血の追放運動"
+        "type": "dialogue",
+        "line": "恋愛結婚のほうが良いに決まっている"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 222,
       "act": 3,
-      "narration": "そして8月21日、政府は閣議で決定する。",
+      "narration": "その感覚はもっともだし、私もそう思う。",
       "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "8月21日 閣議決定"
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "その感覚はもっともだ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 223,
       "act": 3,
-      "narration": "輸血用の血液は、献血によって確保する体制を確立する、と。",
+      "narration": "ここで言いたいのは、見合いに戻れという話ではまったくない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "献血で確保する"
+        "type": "figure",
+        "figure": "path",
+        "label": "見合いに戻れという話ではない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 224,
       "act": 3,
-      "narration": "ここからが重要である。",
+      "narration": "注目したいのは、制度が変わったときに、何が個人の側へ移されたかである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "ここからが重要"
+        "type": "figure",
+        "figure": "eye",
+        "label": "何が個人の側へ移されたか"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 225,
       "act": 3,
-      "narration": "買うのをやめたら供給が減る、という予測は当たらなかった。",
+      "narration": "見合いの時代、相手を見立てる責任は仲人と家にあった。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "「供給は減る」という予測"
+        "figure": "family",
+        "label": "責任は仲人と家に"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 226,
       "act": 3,
-      "narration": "1969年に売血は終息し、1974年には民間血液銀行の預血制度も廃止され、国内の輸血用血液は全量が献血由来になった。",
+      "narration": "恋愛結婚の時代、その責任は本人ひとりに移った。",
       "visual": {
-        "type": "line",
-        "title": "輸血用血液に占める献血の割合",
-        "unit": "%",
-        "points": [
-          {
-            "label": "1963年",
-            "value": 2
-          },
-          {
-            "label": "1969年",
-            "value": 85
-          },
-          {
-            "label": "1974年",
-            "value": 100
-          }
-        ]
+        "type": "figure",
+        "figure": "isolation",
+        "label": "責任は本人ひとりに"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 227,
       "act": 3,
-      "narration": "10年で、日本は血を買うのをやめた。",
+      "narration": "選ぶ自由と一緒に、選び損ねたときの説明責任も引き受けたのである。",
+      "visual": {
+        "type": "balance",
+        "title": "自由と責任",
+        "left_label": "選ぶ自由",
+        "right_label": "説明責任",
+        "tilt": 0.2,
+        "note": "両方を引き受けた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 228,
+      "act": 3,
+      "narration": "そして人間には、自分の選択の理由を正確に報告する装置が、もともと積まれていなかった。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "理由を報告する装置が無い"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 229,
+      "act": 3,
+      "narration": "自由だけが先に届いて、その自由を運用するための計器が、届いていない。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "自由だけが先に届いた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 230,
+      "act": 3,
+      "narration": "では、その計器の無さは、我々に何を払わせているのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "計器の無さは何を払わせるか"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 231,
+      "act": 3,
+      "narration": "数字で見てみたい。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 0,
+        "caption": "数字で見てみたい"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 232,
+      "act": 3,
+      "narration": "リクルートの婚活実態調査では、2023年に結婚した人のうち、婚活サービスを通じて結婚した人が15.3パーセントを占めた。",
       "visual": {
         "type": "stat",
-        "value": "10年",
-        "label": "日本が血を買うのをやめるまで",
-        "context": "",
+        "value": "15.3%",
+        "label": "婚活サービスを通じた結婚",
+        "context": "2023年に結婚した人",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 228,
-      "act": 3,
-      "narration": "そして足りなくならなかった。",
-      "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 3,
-        "caption": "それでも、足りなくならなかった"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 229,
-      "act": 3,
-      "narration": "日本だから成功したのだ、と思うかもしれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "日本だから成功したのだ。"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 230,
-      "act": 3,
-      "narration": "国民性の話ではないか、と。",
-      "visual": {
-        "type": "dialogue",
-        "line": "国民性の話ではないか。"
-      },
       "concept_color": "charcoal"
-    },
-    {
-      "id": 231,
-      "act": 3,
-      "narration": "その疑いはもっともだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "その疑いはもっともだ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 232,
-      "act": 3,
-      "narration": "だがイギリスの社会政策学者リチャード・ティトマスは、1970年の著作で、無償の献血制度を持つイギリスと、売血が広く行われていた当時の米国を比較している。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "イギリス",
-        "right_title": "当時の米国",
-        "left_items": [
-          "無償の献血制度"
-        ],
-        "right_items": [
-          "広く行われた売血"
-        ],
-        "center_label": "ティトマス 1970年の比較"
-      },
-      "concept_color": "daylight"
     },
     {
       "id": 233,
       "act": 3,
-      "narration": "彼が指摘したのは、市場化すると血液の供給量が減るという話ではない。",
+      "narration": "さらに、恋愛か結婚の意向があって恋人のいない独身者では、婚活サービスを使った経験がある人が25.2パーセントにのぼる。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "供給が減る話ではない"
+        "type": "stat",
+        "value": "25.2%",
+        "label": "婚活サービス利用経験",
+        "context": "恋人のいない独身者",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 234,
       "act": 3,
-      "narration": "売る側に、自分の血の危険を隠す動機が生まれるという話だった。",
+      "narration": "4人に1人である。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "危険を隠す動機が生まれる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 235,
-      "act": 3,
-      "narration": "金のために売る人は、直前に飲んだ薬や病歴を申告しない。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "飲んだ薬も、病歴も、申告しない。"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 236,
-      "act": 3,
-      "narration": "贈与が強いのは、贈与する人が正直になれるからである。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "贈与する人は正直になれる"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 237,
-      "act": 3,
-      "narration": "無償にすることは、量を減らすかわりに、嘘を減らしていた。",
-      "visual": {
-        "type": "balance",
-        "title": "無償化が変えたもの",
-        "left_label": "量",
-        "right_label": "嘘",
-        "tilt": -0.6,
-        "note": "量を減らすかわりに、嘘を減らす"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 238,
-      "act": 4,
-      "narration": "では、対価を外してしまえば、それで全部うまくいくのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "対価を外せば全部うまくいく?"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 239,
-      "act": 4,
-      "narration": "うまくはいっていない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "うまくはいっていない"
+        "type": "units",
+        "total": 100,
+        "value": 25,
+        "label": "4人に1人"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 240,
-      "act": 4,
-      "narration": "日本赤十字社の集計をもとにした報道では、2022年度に献血した30代以下は167万人だった。",
+      "id": 235,
+      "act": 3,
+      "narration": "そして条件で絞り込むという行為は、この経路の入り口に必ず置かれている。",
       "visual": {
-        "type": "stat",
-        "value": "167万人",
-        "label": "献血した30代以下",
-        "context": "2022年度",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "target",
+        "label": "経路の入り口の絞り込み"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 241,
-      "act": 4,
-      "narration": "2012年度の251万人から、およそ33パーセント減っている。",
+      "id": 236,
+      "act": 3,
+      "narration": "年齢の範囲。",
       "visual": {
-        "type": "line",
-        "title": "30代以下の献血者数",
-        "unit": "万人",
-        "points": [
-          {
-            "label": "2012年度",
-            "value": 251
-          },
-          {
-            "label": "2022年度",
-            "value": 167
-          }
-        ]
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "年齢の範囲"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 237,
+      "act": 3,
+      "narration": "身長。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "身長"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 238,
+      "act": 3,
+      "narration": "年収。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "年収"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 239,
+      "act": 3,
+      "narration": "職業。",
+      "visual": {
+        "type": "figure",
+        "figure": "factory",
+        "label": "職業"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 240,
+      "act": 3,
+      "narration": "学歴。",
+      "visual": {
+        "type": "figure",
+        "figure": "stairs",
+        "label": "学歴"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 241,
+      "act": 3,
+      "narration": "喫煙の有無。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "喫煙の有無"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 242,
       "act": 4,
-      "narration": "内訳は10代が22万人、20代が70万人、30代が75万人。",
+      "narration": "ここまで見てきた研究が正しければ、この画面で切り落とされている相手の中に、実際に会えば惹かれたはずの人がいる。",
       "visual": {
-        "type": "chart",
-        "title": "30代以下の献血者 内訳",
-        "subtitle": "2022年度",
-        "unit": "万人",
-        "items": [
-          {
-            "label": "10代",
-            "value": 22
-          },
-          {
-            "label": "20代",
-            "value": 70
-          },
-          {
-            "label": "30代",
-            "value": 75
-          }
-        ],
-        "highlight": 0,
-        "annotation": "最も薄いのは10代 22万人"
+        "type": "figure",
+        "figure": "isolation",
+        "label": "切り落とされた中に惹かれる人が"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 243,
       "act": 4,
-      "narration": "2024年度の全国の献血者数は498万7309人で、前年より0.4パーセント少ない。",
-      "visual": {
-        "type": "stat",
-        "value": "498万7309人",
-        "label": "2024年度 全国の献血者数",
-        "context": "前年より0.4%減",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 244,
-      "act": 4,
-      "narration": "全体の減り方は緩やかに見えるが、若い側から抜けている。",
+      "narration": "理由は、条件が間違っているからではない。",
       "visual": {
         "type": "figure",
-        "figure": "arrowDown",
-        "label": "若い側から抜けていく"
+        "figure": "heart",
+        "label": "条件が間違いではない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 245,
+      "id": 244,
       "act": 4,
-      "narration": "いま日本の輸血を支えているのは、繰り返し来る中高年のリピーターである。",
+      "narration": "条件は本人の価値観を正確に映している。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "支えるのは中高年のリピーター"
+        "figure": "screen",
+        "label": "条件は価値観を正確に映す"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 245,
+      "act": 4,
+      "narration": "ただ、価値観は反応の予報ではない。",
+      "visual": {
+        "type": "verdict",
+        "caption": "研究が示すこと",
+        "statement": "価値観 ≠ 反応の予報",
+        "note": "ただ、価値観は反応の予報ではない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 246,
       "act": 4,
-      "narration": "贈与でできた制度は、それ自体が脆い。",
+      "narration": "予報のつもりで使われているだけである。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "贈与でできた制度"
+        "figure": "question",
+        "label": "予報として使う"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 247,
       "act": 4,
-      "narration": "理由は、若者の善意が減ったからではない。",
+      "narration": "代償は、時間の形で出てくる。",
       "visual": {
-        "type": "dialogue",
-        "line": "善意が減ったからではない"
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "時間という代償"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 248,
       "act": 4,
-      "narration": "贈与の仕組みは、誰かが払っていることを見えなくする。",
+      "narration": "ネットで出会った夫婦は13.6パーセントまで来た。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "誰かが払うのが見えない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 249,
-      "act": 4,
-      "narration": "値札が無いものは、無くなるまで誰も残量を数えない。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "値札の無いものは数えない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 250,
-      "act": 4,
-      "narration": "同じことが、好きを仕事にという助言にも起きている。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "好きを仕事に"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 251,
-      "act": 2,
-      "narration": "2021年、社会学者のエリン・チェックが、カリフォルニア大学出版から一冊の研究書を出した。",
-      "visual": {
-        "type": "stat",
-        "value": "2021年",
-        "label": "エリン・チェックの研究書",
-        "context": "カリフォルニア大学出版",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "donut",
+        "title": "",
+        "percent": 13.6,
+        "label": "ネットで出会った夫婦",
+        "rest_label": "それ以外"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 252,
-      "act": 2,
-      "narration": "学生を大学から職場まで追った聞き取りと、就労者への調査、そして実験を組み合わせて、情熱の原理と呼ぶ考え方を検討したものである。",
+      "id": 249,
+      "act": 4,
+      "narration": "この経路は、条件の入力から始まる。",
       "visual": {
-        "type": "list",
-        "title": "情熱の原理を検討する",
-        "items": [
-          "学生への聞き取り",
-          "就労者への調査",
-          "実験"
-        ]
+        "type": "figure",
+        "figure": "path",
+        "label": "条件の入力から始まる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 250,
+      "act": 4,
+      "narration": "入力を細かくするほど候補は減り、会う前に落ちる人が増える。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "候補は減っていく"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 251,
+      "act": 4,
+      "narration": "そして会わなければ、あの数分で隣に寝そべるかどうかは、そもそも観測されない。",
+      "visual": {
+        "type": "figure",
+        "figure": "isolation",
+        "label": "会わなければ観測されない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 252,
+      "act": 4,
+      "narration": "金曜の夜、部屋の明かりの下で、指が画面の上の年齢の帯を左へ少し動かしている。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "金曜の夜、明かりの下で"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 253,
-      "act": 2,
-      "narration": "彼女の結論はこうだ。",
+      "act": 4,
+      "narration": "その一動作で何人が視界から消えたのかは、動かした本人にも分からない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "彼女の結論"
+        "type": "figure",
+        "figure": "eye",
+        "label": "視界から消えた人"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 254,
-      "act": 2,
-      "narration": "好きを追えという助言は、失敗しても戻れる家と、無給の下積みを支える蓄えを前提にしている。",
+      "act": 4,
+      "narration": "条件は、母集団を切るには使える。",
       "visual": {
-        "type": "comparison",
-        "left_title": "前提",
-        "right_title": "必要なもの",
-        "left_items": [
-          "戻れる家"
-        ],
-        "right_items": [
-          "下積みを支える蓄え"
-        ],
-        "center_label": "好きを追う条件"
+        "type": "figure",
+        "figure": "scale",
+        "label": "母集団を切る"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 255,
-      "act": 3,
-      "narration": "それを持たない第一世代の若者にとって、同じ助言は罠として働く。",
+      "act": 4,
+      "narration": "だが誰に惹かれるかは、会ってからでないと分からない。",
       "visual": {
         "type": "figure",
-        "figure": "cage",
-        "label": "第一世代には罠として働く"
+        "figure": "heart",
+        "label": "会ってから分かる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 256,
+      "act": 4,
+      "narration": "この二つを同じ道具でやろうとすると、切ったあとで気づくことになる。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "条件で切る",
+        "right_title": "誰に惹かれるか",
+        "left_items": [
+          "母集団を絞れる"
+        ],
+        "right_items": [
+          "会わないと分からない"
+        ],
+        "center_label": "同じ道具"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 257,
+      "act": 4,
+      "narration": "では、切られた側にいたのは誰なのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "切られた側は誰か"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 256,
-      "act": 3,
-      "narration": "夜、就職説明会の会場を出た学生が二人いる。",
+      "id": 258,
+      "act": 5,
+      "narration": "ここまでの道のりを振り返ろう。",
       "visual": {
         "type": "scenery",
-        "place": "city",
-        "people": 2,
-        "caption": "夜、会場を出た二人"
+        "place": "field",
+        "people": 0,
+        "caption": "ここまでの道のりを振り返る"
       },
       "concept_color": "dusk"
     },
     {
-      "id": 257,
-      "act": 3,
-      "narration": "ひとりは実家に帰り、ひとりはアルバイト先へ向かう。",
+      "id": 259,
+      "act": 5,
+      "narration": "バスの調査は、人が自分の好みを世界中で規則的に語れることを示した。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": ""
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 258,
-      "act": 3,
-      "narration": "好きは、値段を付けなければ守れる。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "値段を付けなければ守れる"
+        "figure": "network",
+        "label": "世界中で規則的に語る"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 259,
-      "act": 3,
-      "narration": "だが値段を付けないということは、その差額を誰かが身体で払っているという意味でもある。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "差額を誰かが身体で払う"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 260,
-      "act": 4,
-      "narration": "では、払っているのは誰なのだろうか。",
+      "act": 5,
+      "narration": "スピードデートの実験は、その語りが実際の惹かれ方を予測しないことを記録し、申告にあった性差が行動では消えることまで見せた。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "払っているのは誰か"
+        "figure": "couple",
+        "label": "スピードデートの実験"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 261,
       "act": 5,
-      "narration": "ここまでの道のりを振り返ろう。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "ここまでの道のりを振り返る"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 262,
-      "act": 5,
-      "narration": "心理学は、賞状を約束されただけで子どもが描くのをやめることを示した。",
-      "visual": {
-        "type": "figure",
-        "figure": "trophy",
-        "label": "賞状で描くのをやめた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 263,
-      "act": 5,
-      "narration": "経済学は、ハイファの保育園10園で、罰金が遅刻を増やし、撤廃しても戻らないことを記録した。",
+      "narration": "1万人を超える記録の分析は、選択を動かしていたのがニッチな好みではなく、ほぼ全員が同じ方向に評価する特徴だったことを明らかにした。",
       "visual": {
         "type": "stat",
-        "value": "10園",
-        "label": "ハイファの保育園の罰金実験",
-        "context": "経済学",
+        "value": "1万人超",
+        "label": "ほぼ全員が同じ方向に評価",
+        "context": "記録の分析",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 262,
+      "act": 5,
+      "narration": "追試とメタ分析は、その結論が程度の問題であって、まだ動いていることを教えた。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "程度の問題、まだ動く"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 263,
+      "act": 5,
+      "narration": "保護施設の犬の記録は、条件を持って来た里親が、隣に寝そべるという数秒の動作で決めていたことを並べた。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "数秒で決める里親"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 264,
       "act": 5,
-      "narration": "発達心理学は、生後20か月の乳児にすでに同じ反応があることを見つけ、この現象が金という制度より古いことを示した。",
+      "narration": "サイエンス誌の実験は、選ばなかった顔についても人が理由をすらすら語れることを突きつけた。",
       "visual": {
-        "type": "stat",
-        "value": "生後20か月",
-        "label": "乳児にすでに同じ反応",
-        "context": "発達心理学",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "mask",
+        "label": "選ばなかった理由も語る"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 265,
       "act": 5,
-      "narration": "追試は、その柱の一本が揺れていることを教えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "柱の一本が揺れている"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 266,
-      "act": 5,
-      "narration": "図書館の帳簿は、罰金をやめたら本が返ってくるという、常識と逆の数字を並べた。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "罰金をやめたら本が返る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 267,
-      "act": 5,
-      "narration": "社会心理学は、情熱があると見なされた労働者に対して、無給の残業が正当だと判断されることを突きつけた。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "情熱ゆえに無給の残業が正当化"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 268,
-      "act": 5,
-      "narration": "そして日本の血の記録は、対価を外したほうが嘘が減った10年を残している。",
+      "narration": "そして日本の結婚の記録は、自分の好みで相手を選ぶという方式が、たかだか60年前に多数派になったばかりだと示している。",
       "visual": {
         "type": "stat",
-        "value": "10年",
-        "label": "対価を外して嘘が減った",
-        "context": "日本の血の記録",
+        "value": "60年前",
+        "label": "好みで選ぶ結婚が多数派に",
+        "context": "日本",
         "unit": "",
         "axis": {
           "label": "",
@@ -3514,208 +3313,196 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 269,
+      "id": 266,
       "act": 5,
-      "narration": "最後に献血の統計が、その贈与の制度から若い世代が抜けていることを示した。",
+      "narration": "タイプというのは、あなたが誰に惹かれるかの予報ではない。",
       "visual": {
         "type": "figure",
-        "figure": "arrowDown",
-        "label": "贈与から若い世代が抜ける"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 270,
-      "act": 5,
-      "narration": "金は、好きを壊すのではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "金は好きを壊さない"
+        "figure": "question",
+        "label": "タイプは予報ではない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 271,
+      "id": 267,
       "act": 5,
-      "narration": "金は、好きの名前を書き換える。",
+      "narration": "あなたが自分をどう説明したいかの、宣言である。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自分を語る宣言"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 268,
+      "act": 5,
+      "narration": "宣言は本物だ。",
+      "visual": {
+        "type": "dialogue",
+        "line": "宣言は本物だ。"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 269,
+      "act": 5,
+      "narration": "嘘でもないし、あなたの価値観を正確に映している。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "好きの名前を書き換える"
+        "figure": "heart",
+        "label": "価値観を正確に映す"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 270,
+      "act": 5,
+      "narration": "ただそれは、未来を当てるために作られたものではなかった。",
+      "visual": {
+        "type": "figure",
+        "figure": "target",
+        "label": "未来を当てる為ではない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 271,
+      "act": 5,
+      "narration": "予報のつもりで使ってきたのは、我々のほうである。",
+      "visual": {
+        "type": "figure",
+        "figure": "crowd",
+        "label": "予報にしたのは我々"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 272,
       "act": 5,
-      "narration": "同じ行為が、贈り物から商品へ移る。",
+      "narration": "最初の話に戻ろう。",
       "visual": {
-        "type": "comparison",
-        "left_title": "贈り物",
-        "right_title": "商品",
-        "left_items": [
-          "同じ行為"
-        ],
-        "right_items": [
-          "同じ行為"
-        ],
-        "center_label": "棚が移る"
+        "type": "scenery",
+        "place": "city",
+        "people": 1,
+        "caption": "最初の話に戻ろう"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 273,
       "act": 5,
-      "narration": "贈り物に乗るのは受け取った側の感謝だが、商品に乗るのは価格だけである。",
+      "narration": "あなたが最後に付き合った相手は、あなたが公言していたタイプと、たぶん違っていた。",
       "visual": {
         "type": "comparison",
-        "left_title": "贈り物に乗るもの",
-        "right_title": "商品に乗るもの",
+        "left_title": "公言したタイプ",
+        "right_title": "最後の相手",
         "left_items": [
-          "受け取った側の感謝"
+          "理想の条件"
         ],
         "right_items": [
-          "価格だけ"
+          "実際に選んだ人"
         ],
-        "center_label": "乗るもの"
+        "center_label": "たぶん違う"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 274,
       "act": 5,
-      "narration": "あなたが失ったのは情熱ではない。",
+      "narration": "ここで、一貫していないあなたを責める必要はない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "失ったのは情熱ではない"
+        "type": "figure",
+        "figure": "blame",
+        "label": "責める必要はない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 275,
       "act": 5,
-      "narration": "あなたの行為が置かれていた棚が、静かに移動しただけだ。",
+      "narration": "ずれていたのは、あなたと相手ではない。",
       "visual": {
-        "type": "verdict",
-        "caption": "変わったのは棚",
-        "statement": "消えた情熱 = 移動した棚",
-        "note": "あなたの中身ではない"
+        "type": "figure",
+        "figure": "couple",
+        "label": "ずれたのは二人ではない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 276,
       "act": 5,
-      "narration": "日曜の深夜、あなたの部屋の机に戻ろう。",
+      "narration": "あなたの言葉と、あなたの反応のほうだった。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "日曜の深夜、あなたの部屋の机"
+        "type": "comparison",
+        "left_title": "あなたの言葉",
+        "right_title": "あなたの反応",
+        "left_items": [
+          "宣言したタイプ"
+        ],
+        "right_items": [
+          "実際の惹かれ方"
+        ],
+        "center_label": "ずれ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 277,
       "act": 5,
-      "narration": "三か月ぶりに握られたペンは、まだ何も描いていない。",
+      "narration": "ひとつだけ聞いておきたい。",
       "visual": {
         "type": "figure",
-        "figure": "seed",
-        "label": "三か月ぶりのペン、まだ白紙"
+        "figure": "question",
+        "label": "ひとつだけ聞きたい"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 278,
       "act": 5,
-      "narration": "ここで、描けなくなったあなたを責める必要はない。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "責める必要はない"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 279,
-      "act": 5,
-      "narration": "書き換えられたのは棚の名前であって、あなたの中身ではないからだ。",
+      "narration": "あなたが条件表に一度も書かなかったのに、実際には毎回そこにいた要素は、何かあるだろうか。",
       "visual": {
         "type": "verdict",
-        "caption": "書き換えられたのは",
-        "statement": "棚の名前 ≠ あなたの中身",
-        "note": "中身は変わっていない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 280,
-      "act": 5,
-      "narration": "ひとつだけ聞いておきたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "ひとつだけ聞いておきたい"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 281,
-      "act": 5,
-      "narration": "あなたがいま、誰にも頼まれずに続けていることは、何かあるだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "誰にも頼まれず続けること"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 282,
-      "act": 5,
-      "narration": "それは、まだ誰も値札を貼っていないものではないだろうか。",
-      "visual": {
-        "type": "verdict",
-        "caption": "値札のないもの",
-        "statement": "まだ誰も測っていない = あなただけの価値",
+        "caption": "最後の問い",
+        "statement": "書かなかった条件 = 毎回そこにいた要素",
         "note": ""
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 283,
+      "id": 279,
       "act": 5,
       "narration": "そんなことまで、また解剖してしまいました。",
       "visual": {
         "type": "scenery",
         "place": "room",
         "people": 1,
-        "caption": "また、解剖してしまいました"
+        "caption": "また解剖してしまいました"
       },
-      "concept_color": "dusk"
+      "concept_color": "warm"
     },
     {
-      "id": 284,
+      "id": 280,
       "act": 5,
       "narration": "よろしければチャンネル登録と高評価をお願いします。",
       "visual": {
         "type": "figure",
         "figure": "applause",
-        "label": "チャンネル登録と高評価を"
+        "label": "登録と高評価をお願いします"
       },
       "concept_color": "warm"
     },
     {
-      "id": 285,
+      "id": 281,
       "act": 5,
       "narration": "それでは次の動画で、またお会いしましょう。",
       "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "また、次の動画で"
+        "type": "scenery",
+        "place": "village",
+        "people": 3,
+        "caption": "またお会いしましょう"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     }
   ]
 }
