@@ -1,685 +1,703 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ写真の自分は鏡と別人に見えるのか【認知心理学×鏡の文化史】",
-  "bgm_direction": "A quiet, unsettling minimalist piano with faint ambient drones, dark and introspective, like standing alone before a mirror at night.",
+  "title": "なぜ好きと伝えるほど熱が冷めるのか【シグナル理論×社会心理学】",
+  "bgm_direction": "A dark, hushed piano and low strings drone, restrained and tense, like a quiet confession made alone at night.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "証明写真の機械から出てきた一枚を、あなたはもう一度見ている。",
+      "narration": "好きだと伝えるほど、相手の熱は下がっていく。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "出てきた一枚を見つめる"
+        "figure": "arrowDown",
+        "label": "伝えるほど下がる熱"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "撮り直そうか、と一瞬考える。",
+      "narration": "誠実さが裏目に出るという話ではない。",
       "visual": {
-        "type": "dialogue",
-        "line": "撮り直そうか…"
+        "type": "figure",
+        "figure": "mask",
+        "label": "誠実さの問題ではない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 3,
       "act": 1,
-      "narration": "さっき、機械に入る前に、あなたは前髪を直した。",
+      "narration": "伝えたその瞬間に、相手の頭の中で計算式そのものが書き換わってしまうのだ。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "鏡の前で前髪を直す"
+        "figure": "brain",
+        "label": "書き換わる計算式"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 4,
       "act": 1,
-      "narration": "そのとき鏡に映っていた顔は、こんな顔ではなかったはずだ。",
+      "narration": "あなたにも覚えがあるのではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "こんな顔ではなかった"
+        "figure": "question",
+        "label": "覚えがある？"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "もっと見慣れた、もっと落ち着いた顔だったと思う。",
+      "narration": "画面に文面を打ち込み、送信を押す前に三度読み直す。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "見慣れた、落ち着いた顔"
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "送信前に三度読む"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "それが数十秒後、紙になって出てきた瞬間に、別人になっている。",
+      "narration": "長すぎる気がして削り、削ったら素っ気なく見えてまた足す。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "紙になった瞬間の別人"
+        "figure": "anxiety",
+        "label": "削ってはまた足す"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "目の高さが左右で違う。",
+      "narration": "そうやって整えた一通を送ったあと、返信の間隔だけが少しずつ伸びていく。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "目の高さが左右で違う"
+        "figure": "notification",
+        "label": "伸びる返信の間隔"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 8,
       "act": 1,
-      "narration": "口元が歪んでいる。",
+      "narration": "指はまだ画面の上にある。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "歪んだ口元"
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "指はまだ画面の上にある"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 9,
       "act": 1,
-      "narration": "輪郭が思っていた形をしていない。",
+      "narration": "この位置に立っている人は少なくない。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "思っていない輪郭"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 10,
-      "act": 1,
-      "narration": "ここで奇妙なことがひとつある。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "奇妙な食い違い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 11,
-      "act": 1,
-      "narration": "鏡もカメラも、同じ顔を写している。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "鏡",
-        "right_title": "カメラ",
-        "left_items": [
-          "同じ顔を写す"
-        ],
-        "right_items": [
-          "同じ顔を写す"
-        ],
-        "center_label": "同じ被写体"
+        "figure": "crowd",
+        "label": "少なくないこの位置"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 12,
-      "act": 1,
-      "narration": "それなのに、どちらかが嘘をついているとしか思えない。",
+      "id": 10,
+      "act": 2,
+      "narration": "国立社会保障人口問題研究所が2021年に行った出生動向基本調査によれば、18歳から34歳の未婚者のうち、交際相手がいる人は男性で21.1パーセント、女性で27.8パーセントだった。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "どちらかが嘘をついている"
+        "type": "chart",
+        "title": "交際相手がいる未婚者",
+        "subtitle": "出生動向基本調査 2021年",
+        "unit": "%",
+        "items": [
+          {
+            "label": "男性",
+            "value": 21.1
+          },
+          {
+            "label": "女性",
+            "value": 27.8
+          }
+        ],
+        "highlight": 1,
+        "annotation": "18〜34歳の未婚者 女性27.8%"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
-      "id": 13,
+      "id": 11,
       "act": 2,
-      "narration": "これはあなただけの悩みではない。",
-      "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 8,
-        "caption": "あなただけの悩みではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 14,
-      "act": 2,
-      "narration": "2021年、アメリカ皮膚科学会の会合で、ハーバード大学医学大学院のシャディ・クーロシュが、ある調査の結果を報告している。",
+      "narration": "有効票は7,826票ある。",
       "visual": {
         "type": "stat",
-        "value": "2021年",
-        "label": "皮膚科学会での報告",
-        "context": "アメリカ",
+        "value": "7,826票",
+        "label": "有効票",
+        "context": "調査の規模",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 12,
+      "act": 2,
+      "narration": "厚生労働省の人口動態統計では、2024年の婚姻件数は485,092組、平均初婚年齢は夫が31.1歳、妻が29.8歳で、1995年からそれぞれ2.6歳と3.5歳上がっている。",
+      "visual": {
+        "type": "table",
+        "title": "人口動態統計 2024年",
+        "headers": [
+          "項目",
+          "値",
+          "1995年比"
+        ],
+        "rows": [
+          [
+            "婚姻件数",
+            "485,092組",
+            "—"
+          ],
+          [
+            "夫 平均初婚年齢",
+            "31.1歳",
+            "+2.6歳"
+          ],
+          [
+            "妻 平均初婚年齢",
+            "29.8歳",
+            "+3.5歳"
+          ]
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 13,
+      "act": 2,
+      "narration": "多くの人はここで、押しが足りなかったのだと考える。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "押しが足りない？"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 14,
+      "act": 2,
+      "narration": "あるいは押しすぎたのだと考える。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "押しすぎた？"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 15,
       "act": 2,
-      "narration": "100人を超える皮膚科医に、在宅勤務への移行が患者の自己認識にどう影響したかを尋ねたものだ。",
+      "narration": "どちらにしても量の問題として処理する。",
       "visual": {
         "type": "figure",
-        "figure": "crowd",
-        "label": "100人超の皮膚科医に調査"
+        "figure": "scale",
+        "label": "量の問題として処理"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 16,
       "act": 2,
-      "narration": "5割を超える医師が、美容目的の相談が増えたと答えた。",
+      "narration": "もっと伝えるか、もっと引くか。",
       "visual": {
-        "type": "donut",
-        "title": "美容相談は増えたか",
-        "percent": 51,
-        "label": "増えたと答えた医師",
-        "rest_label": "変化なし"
+        "type": "comparison",
+        "left_title": "もっと伝える",
+        "right_title": "もっと引く",
+        "left_items": [
+          "熱を上げる"
+        ],
+        "right_items": [
+          "距離を取る"
+        ],
+        "center_label": "一本の目盛り"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 17,
       "act": 2,
-      "narration": "そして86パーセントの医師が、患者がビデオ会議を理由に挙げたと報告している。",
-      "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 86,
-        "label": "100人中86人がビデオ会議を理由に"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 18,
-      "act": 2,
-      "narration": "人が外に出なくなった時期に、自分の顔の相談だけが増えていた。",
+      "narration": "世に出回っている恋愛の助言は、そのほとんどがこの一本の目盛りの上に乗っている。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "外出しない時期に相談だけ増加"
+        "figure": "scale",
+        "label": "一本の目盛りの上"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 19,
+      "id": 18,
       "act": 2,
-      "narration": "世間はこれを、こう説明する。",
+      "narration": "だが、目盛りをどちらへ動かしても結果が変わらないなら、測っているものそのものが違う。",
       "visual": {
-        "type": "dialogue",
-        "line": "世間はこう説明する"
+        "type": "keyword",
+        "keyword": "測るものが違う"
       },
       "concept_color": "pitch-black"
+    },
+    {
+      "id": 19,
+      "act": 2,
+      "narration": "追う側に回った瞬間に失われるのは、熱量ではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "isolation",
+        "label": "追う側で失うもの"
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 20,
       "act": 2,
-      "narration": "カメラのレンズが歪ませているだけだ、と。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "レンズが歪ませているだけ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 21,
-      "act": 2,
-      "narration": "角度が悪い、光が悪い、自分は写真写りが悪い体質なのだ、と。",
-      "visual": {
-        "type": "list",
-        "title": "写真写りが悪い?",
-        "items": [
-          "角度が悪い",
-          "光が悪い",
-          "写真写りが悪い体質"
-        ]
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 22,
-      "act": 3,
-      "narration": "だが、この話には3つの意外な続きがある。",
+      "narration": "今日はそれを、シグナル理論と社会心理学から解剖してみたい。",
       "visual": {
         "type": "scenery",
         "place": "hall",
         "people": 0,
-        "caption": "だが、話には3つの続きがある"
+        "caption": "シグナル理論と社会心理学から"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 21,
+      "act": 2,
+      "narration": "まず、通説の側をきちんと立てておきたい。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "まず通説を立てる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 22,
+      "act": 2,
+      "narration": "好意は好意を生む、という相互性の原理は、実験室で何度も確かめられてきたもので、いま否定されたわけではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "好意は好意を生む"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 23,
-      "act": 3,
-      "narration": "ひとつ。",
+      "act": 2,
+      "narration": "誰かに好かれていると知った人が、その相手を前より好きになるという傾向自体は、この先に出てくるどの実験でも消えていない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "ひとつ"
+        "type": "figure",
+        "figure": "heart",
+        "label": "好かれると好きになる"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 24,
-      "act": 3,
-      "narration": "自分の顔写真を、そのままの向きと左右反転した向きで並べて見せる実験がある。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "そのまま",
-        "right_title": "左右反転",
-        "left_items": [
-          "実物の向き"
-        ],
-        "right_items": [
-          "鏡と同じ向き"
-        ],
-        "center_label": "どちらを選ぶ?"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 25,
-      "act": 3,
-      "narration": "本人は反転したほうを選んだ。",
+      "act": 2,
+      "narration": "話をひっくり返すために、まずこの土台を正確に置いておく必要がある。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "本人は反転を選んだ"
+        "figure": "scale",
+        "label": "土台を正確に置く"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 25,
+      "act": 2,
+      "narration": "2011年、バージニア大学のエリン・ホイットチャーチ、ティモシー・ウィルソン、ダニエル・ギルバートの三人が、女子学部生47人を集めて実験を行っている。",
+      "visual": {
+        "type": "stat",
+        "value": "47人",
+        "label": "女子学部生",
+        "context": "バージニア大学 2011年",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 26,
-      "act": 3,
-      "narration": "そして同じ2枚を見せられた友人と恋人は、そのままの向きを選んだ。",
+      "act": 2,
+      "narration": "参加者には、フェイスブックが出会いの場として機能するかを調べる研究だと説明された。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "友人と恋人はそのままを選んだ"
+        "figure": "screen",
+        "label": "出会いの場としてのSNS"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 27,
-      "act": 3,
-      "narration": "ふたつ。",
+      "act": 2,
+      "narration": "他の大学の男子学生たちが、自分を含む15人から20人のプロフィールをすでに見ている、と伝えられる。",
       "visual": {
-        "type": "keyword",
-        "keyword": "ふたつ"
+        "type": "figure",
+        "figure": "crowd",
+        "label": "15〜20人が見ている"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 28,
-      "act": 3,
-      "narration": "自分の顔を少しだけ魅力的に加工した写真を混ぜておくと、人はそれを自分の顔だと選び、しかも他の顔が並んだ列の中から、より速く見つけ出す。",
+      "act": 2,
+      "narration": "そのうえで、自分を見た男子学生四人のプロフィールを見せられ、その相手にどれくらい惹かれるかを答える。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "盛った自分を速く選び出す"
+        "figure": "eye",
+        "label": "自分を見た四人"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 29,
-      "act": 3,
-      "narration": "そして3つ目。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "3つ目"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 30,
-      "act": 3,
-      "narration": "鏡に映った像を自分だと理解できる動物は、ごくわずかしかいない。",
-      "visual": {
-        "type": "scenery",
-        "place": "forest",
-        "people": 0,
-        "caption": "鏡を自分と知る動物はごくわずか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 31,
-      "act": 3,
-      "narration": "チンパンジーですら、最初の数日は鏡像を別の個体として扱っていた。",
-      "visual": {
-        "type": "figure",
-        "figure": "evolution",
-        "label": "チンパンジーも最初は別個体扱い"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 32,
-      "act": 4,
-      "narration": "なぜ写真の自分は、鏡の自分と別人に見えるのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "なぜ写真は別人に見えるのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 33,
-      "act": 4,
-      "narration": "そして、そのどちらが本当の顔なのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "どちらが本当の顔なのか"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 34,
-      "act": 4,
-      "narration": "今日はそれを、自己認知の実験と、鏡という道具そのものの歴史から解剖してみたい。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "自己認知の実験",
-        "right_title": "鏡という道具",
-        "left_items": [
-          "心理の実験"
-        ],
-        "right_items": [
-          "道具の歴史"
-        ],
-        "center_label": "解剖する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 35,
-      "act": 4,
-      "narration": "先に断っておくと、これはあなたの顔の造作を採点する話ではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "顔を採点する話ではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 36,
       "act": 2,
-      "narration": "むしろその逆で、採点そのものが成り立たない理由の話である。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "採点が成り立たない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 37,
-      "act": 2,
-      "narration": "まず、誰もが最初に思いつく答えから検証しよう。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "最初に思いつく答え"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 38,
-      "act": 2,
-      "narration": "カメラが歪ませている、という説明である。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "カメラが歪ませる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 39,
-      "act": 2,
-      "narration": "確かに、これは半分正しい。",
-      "visual": {
-        "type": "balance",
-        "title": "",
-        "left_label": "正しい",
-        "right_label": "不十分",
-        "tilt": 0.1,
-        "note": "半分正しい"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 40,
-      "act": 2,
-      "narration": "さきほどのクーロシュも指摘している。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "クーロシュの指摘"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 41,
-      "act": 2,
-      "narration": "スマートフォンやノートパソコンの前面カメラは、通常のカメラより像を大きくゆがめる。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "前面カメラの歪み"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 42,
-      "act": 2,
-      "narration": "近い距離から広い画角で撮るからだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "近距離・広い画角"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 43,
-      "act": 2,
-      "narration": "だがこの説明には決定的な弱点がある。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "決定的な弱点"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 44,
-      "act": 2,
-      "narration": "もしレンズだけが原因なら、良いカメラで、離れた位置から、正しい光で撮れば、違和感は消えるはずである。",
+      "narration": "仕掛けは、男子学生たちが自分をどう評価したかの伝え方を三つに分けたところにあった。",
       "visual": {
         "type": "list",
-        "title": "歪みが原因なら消えるはず",
+        "title": "評価の伝え方を三つに分けた",
         "items": [
-          "良いカメラ",
-          "離れた位置",
-          "正しい光"
+          "とても気に入っている",
+          "平均的に気に入っている",
+          "もう一つの条件"
         ]
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 30,
+      "act": 2,
+      "narration": "ひとつ目は、あなたをとても気に入っている。",
+      "visual": {
+        "type": "dialogue",
+        "line": "あなたをとても気に入っている"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 31,
+      "act": 2,
+      "narration": "ふたつ目は、平均的に気に入っている。",
+      "visual": {
+        "type": "dialogue",
+        "line": "平均的に気に入っている"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 32,
+      "act": 2,
+      "narration": "この二つを比べた結果は、通説どおりだった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "とても好き群",
+        "right_title": "平均的群",
+        "left_items": [
+          "強く惹かれる"
+        ],
+        "right_items": [
+          "ほどほど"
+        ],
+        "center_label": "結果は通説どおり"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 33,
+      "act": 2,
+      "narration": "とても気に入られていると伝えられた学生のほうが、相手に強く惹かれている。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "相手に強く惹かれる"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 34,
+      "act": 2,
+      "narration": "これは職場で起きることと同じ構造にある。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 3,
+        "caption": "職場でも起きる同じ構造"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 35,
+      "act": 2,
+      "narration": "自分を高く評価している上司には、こちらも自然と好意的になる。",
+      "visual": {
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "高評価の上司に好意的"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 36,
+      "act": 3,
+      "narration": "相手からの矢印が、そのまま自分の矢印を作っていく。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "好意が好意を作る"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 37,
+      "act": 3,
+      "narration": "問題は三つ目の条件だった。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "三つ目の条件"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 38,
+      "act": 3,
+      "narration": "一部の学生には、こう伝えられた。",
+      "visual": {
+        "type": "figure",
+        "figure": "person",
+        "label": "一部の学生へ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 39,
+      "act": 3,
+      "narration": "「この四人は、あなたをとても気に入っているか、平均的に気に入っているかのどちらかです」。",
+      "visual": {
+        "type": "dialogue",
+        "line": "とても気に入っているか、平均的か、どちらか"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 40,
+      "act": 3,
+      "narration": "どちらなのかは最後まで明かされない。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "最後まで明かされない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 41,
+      "act": 3,
+      "narration": "確定した好意ではなく、確定しない好意が渡されたわけである。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "確定した好意",
+        "right_title": "確定しない好意",
+        "left_items": [
+          "答えが出ている"
+        ],
+        "right_items": [
+          "答えが出ない"
+        ],
+        "center_label": "渡されたもの"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 42,
+      "act": 3,
+      "narration": "結果は、その三つ目が最も高かった。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "三つ目が最も高い"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 43,
+      "act": 3,
+      "narration": "とても気に入られていると確定して伝えられた学生よりも、どちらか分からないと伝えられた学生のほうが、相手に強く惹かれたのである。",
+      "visual": {
+        "type": "columns",
+        "title": "惹かれの強さ",
+        "left": {
+          "label": "確定して伝えられた",
+          "value": "中",
+          "level": 0.45
+        },
+        "right": {
+          "label": "わからないと伝えられた",
+          "value": "高",
+          "level": 0.85
+        },
+        "note": "わからないほうが強く惹かれた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 44,
+      "act": 3,
+      "narration": "しかも研究者たちは理由まで測っていた。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "理由まで測る"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 45,
       "act": 3,
-      "narration": "消えない。",
+      "narration": "三つ目の条件に置かれた学生は、その男子学生について考えている時間が最も長く、その考え続けた時間そのものが、魅力の上昇を運んでいた。",
       "visual": {
-        "type": "keyword",
-        "keyword": "消えない"
+        "type": "figure",
+        "figure": "thought",
+        "label": "考え続けた時間が魅力を運ぶ"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 46,
       "act": 3,
-      "narration": "1977年、ミタ、ダーマー、ナイトの3人が、ある実験を発表している。",
+      "narration": "確定した好意は受け取った瞬間に処理が終わる。",
       "visual": {
-        "type": "stat",
-        "value": "1977年",
-        "label": "3人の実験発表",
-        "context": "ミタ・ダーマー・ナイト",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "受け取った瞬間に終わる"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 47,
       "act": 3,
-      "narration": "対象はウィスコンシン大学ミルウォーキー校の女子学生37人。",
+      "narration": "確定しない好意は、処理が終わらないまま頭の中に居座り続ける。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "頭の中に居座り続ける"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 48,
+      "act": 3,
+      "narration": "これは47人にすぎない、と思うかもしれない。",
       "visual": {
         "type": "stat",
-        "value": "37人",
-        "label": "女子学生",
-        "context": "ウィスコンシン大学ミルウォーキー校",
+        "value": "47人",
+        "label": "にすぎない?",
+        "context": "実験の規模",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 48,
-      "act": 3,
-      "narration": "手順は拍子抜けするほど単純だ。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 3,
-        "caption": "拍子抜けするほど単純な手順"
-      },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 49,
       "act": 3,
-      "narration": "一人ずつ正面から顔写真を撮り、その一枚を2通りに焼く。",
+      "narration": "相手はプロフィール上の他人で、実際に会ってもいない。",
       "visual": {
         "type": "figure",
-        "figure": "camera",
-        "label": "正面から顔写真"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 50,
-      "act": 3,
-      "narration": "そのままの実像と、左右を反転させた鏡像である。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "実像",
-        "right_title": "鏡像",
-        "left_items": [
-          "そのまま"
-        ],
-        "right_items": [
-          "左右反転"
-        ],
-        "center_label": "2通りに焼く"
+        "figure": "screen",
+        "label": "会ってもいない他人"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 51,
+      "id": 50,
       "act": 3,
-      "narration": "この2枚を並べて本人に見せ、どちらが好きかを尋ねる。",
+      "narration": "その指摘はもっともだ。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "どちらが好きか"
+        "figure": "person",
+        "label": "その指摘はもっともだ"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 51,
+      "act": 3,
+      "narration": "だが、この実験が示しているのは魅力の大きさではなく、魅力がどこから供給されているかのほうである。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "魅力はどこから供給されるか"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 52,
-      "act": 3,
-      "narration": "同じ2枚を、その人の友人や恋人にも見せて、同じことを尋ねる。",
+      "act": 4,
+      "narration": "つまり、あなたが好意を伝えるという行為は、相手に情報をひとつ渡す行為であると同時に、相手の頭からひとつの問いを取り上げる行為でもある。",
       "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "友人や恋人にも"
+        "type": "comparison",
+        "left_title": "渡す",
+        "right_title": "取り上げる",
+        "left_items": [
+          "情報をひとつ"
+        ],
+        "right_items": [
+          "問いをひとつ"
+        ],
+        "center_label": "好意を伝える行為"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 53,
-      "act": 3,
-      "narration": "写っているのは同一人物の同一の写真で、違いは左右だけである。",
+      "act": 4,
+      "narration": "渡したものは何で、取り上げたものは何だろうか。",
       "visual": {
-        "type": "comparison",
-        "left_title": "同一人物",
-        "right_title": "同一写真",
-        "left_items": [
-          "変わらない"
-        ],
-        "right_items": [
-          "変わらない"
-        ],
-        "center_label": "違いは左右だけ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 54,
-      "act": 3,
-      "narration": "本人が選んだのは、鏡像だった。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "本人は鏡像"
+        "type": "figure",
+        "figure": "question",
+        "label": "渡したものと取り上げたもの"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 55,
-      "act": 3,
-      "narration": "友人と恋人が選んだのは、実像だった。",
+      "id": 54,
+      "act": 2,
+      "narration": "似た構造は、もっと古い実験にも出ている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "他人は実像"
+        "type": "figure",
+        "figure": "clock",
+        "label": "もっと古い実験"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 56,
-      "act": 3,
-      "narration": "2008年、ニコラス・エプリーとエリン・ウィッチャーチが、こんな実験をしている。",
+      "id": 55,
+      "act": 2,
+      "narration": "1965年、エリオット・アロンソンとダーウィン・リンダーが行った研究では、参加者が自分についての評価を偶然に耳にする、という状況が作られた。",
       "visual": {
         "type": "stat",
-        "value": "2008年",
-        "label": "エプリーとウィッチャーチ",
-        "context": "新たな実験",
+        "value": "1965年",
+        "label": "アロンソンとリンダーの研究",
+        "context": "偶然に評価を耳にする",
         "unit": "",
         "axis": {
           "label": "",
@@ -689,2716 +707,1817 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 57,
-      "act": 3,
-      "narration": "参加者の顔写真を用意し、モーフィングという手法で少しずつ加工する。",
+      "id": 56,
+      "act": 2,
+      "narration": "評価は一度きりではなく、何度か繰り返される。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "モーフィング加工"
+        "figure": "cycle",
+        "label": "評価は何度も繰り返される"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 57,
+      "act": 2,
+      "narration": "研究者が操作したのは評価の中身ではなく、その並び方だけである。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "操作したのは並び方だけ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 58,
-      "act": 3,
-      "narration": "片方の方向へは魅力度が上がるように、もう片方へは下がるように、段階的に変えた何枚もの顔が並ぶ。",
+      "act": 2,
+      "narration": "並び方を変えると、相手への好意が変わった。",
       "visual": {
-        "type": "comparison",
-        "left_title": "魅力度アップ",
-        "right_title": "魅力度ダウン",
-        "left_items": [
-          "段階的に上げる"
-        ],
-        "right_items": [
-          "段階的に下げる"
-        ],
-        "center_label": "何枚もの顔"
+        "type": "figure",
+        "figure": "scale",
+        "label": "並び方で好意が変わる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 59,
-      "act": 3,
-      "narration": "その中に、加工していない本物の写真も混ぜておく。",
+      "act": 2,
+      "narration": "最初は否定的で、途中から肯定的に変わった相手のほうが、最初から最後まで一貫して肯定的だった相手より好かれたのである。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "本物の写真も混ぜる"
+        "type": "columns",
+        "title": "どちらが好かれるか",
+        "left": {
+          "label": "一貫して肯定的",
+          "value": "中",
+          "level": 0.5
+        },
+        "right": {
+          "label": "否定→肯定",
+          "value": "高",
+          "level": 0.85
+        },
+        "note": "途中から変わったほうが好かれた"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 60,
-      "act": 3,
-      "narration": "そして本人に尋ねる。",
+      "act": 2,
+      "narration": "逆も起きている。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "そして本人に尋ねる"
+        "type": "figure",
+        "figure": "cycle",
+        "label": "逆も起きている"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 61,
-      "act": 3,
-      "narration": "この中で、あなたの本当の顔はどれですか、と。",
+      "act": 2,
+      "narration": "最初は肯定的で途中から否定的になった相手は、最初から一貫して否定的だった相手よりも嫌われた。",
       "visual": {
-        "type": "dialogue",
-        "line": "あなたの本当の顔はどれですか"
+        "type": "columns",
+        "title": "どちらが嫌われるか",
+        "left": {
+          "label": "一貫して否定的",
+          "value": "中",
+          "level": 0.5
+        },
+        "right": {
+          "label": "肯定→否定",
+          "value": "高",
+          "level": 0.85
+        },
+        "note": "落差のあるほうが嫌われた"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 62,
-      "act": 4,
-      "narration": "参加者が選んだのは、加工していない写真ではなかった。",
+      "act": 2,
+      "narration": "獲得喪失効果と呼ばれている。",
       "visual": {
         "type": "keyword",
-        "keyword": "本物ではなかった"
+        "keyword": "獲得喪失効果"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 63,
-      "act": 4,
-      "narration": "魅力度を上げた側の顔だった。",
+      "act": 3,
+      "narration": "これはスマートフォンの通知に例えると分かりやすい。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "魅力度を上げた顔"
+        "figure": "notification",
+        "label": "スマートフォンの通知"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 64,
-      "act": 4,
-      "narration": "加工していない写真は、確かにその列の中にあった。",
+      "act": 3,
+      "narration": "鳴りっぱなしの音は、二日で聞こえなくなる。",
       "visual": {
         "type": "figure",
-        "figure": "queue",
-        "label": "本物は確かに列の中に"
+        "figure": "echo",
+        "label": "鳴りっぱなしは聞こえなくなる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 65,
-      "act": 4,
-      "narration": "参加者はそれを見たうえで、少しだけ整えられたほうを指している。",
+      "act": 3,
+      "narration": "止まっていた音が急に鳴ると、心臓のほうが先に反応する。",
       "visual": {
         "type": "figure",
-        "figure": "target",
-        "label": "整えた側を指す"
+        "figure": "heart",
+        "label": "心臓が先に反応する"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 66,
-      "act": 4,
-      "narration": "しかも本人には、加工されているという自覚が無い。",
+      "act": 3,
+      "narration": "人が拾っているのは音量ではなく、変化の幅のほうなのだ。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "加工の自覚が無い"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 67,
-      "act": 4,
-      "narration": "自分は正直に、自分の顔を選んだつもりでいる。",
-      "visual": {
-        "type": "dialogue",
-        "line": "正直に自分の顔を選んだつもり"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 68,
-      "act": 4,
-      "narration": "これは音楽で言えば、自分がいつも聴いている音源と、同じ曲を左右のスピーカーを入れ替えて再生した音源を並べられて、迷わず片方を選んでしまうのと同じ構造だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "左右を入れ替えた音源"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 69,
-      "act": 4,
-      "narration": "曲は一音も変わっていない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "一音も変わっていない"
+        "figure": "brain",
+        "label": "拾うのは変化の幅"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 67,
+      "act": 4,
+      "narration": "夜の駅のホーム。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 1,
+        "caption": "夜の駅のホーム"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 68,
+      "act": 4,
+      "narration": "あなたはスマートフォンを見ながら、階段のほうへゆっくり歩いている。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "階段のほうへ歩く"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 69,
+      "act": 4,
+      "narration": "相手からの返信は三時間前で止まったままだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "返信は三時間前で止まったまま"
+      },
+      "concept_color": "daylight"
+    },
+    {
       "id": 70,
       "act": 4,
-      "narration": "変わったのは、あなたが何百回聴いた側かという一点だけである。",
+      "narration": "二週間前なら、この三時間はただの三時間だった。",
       "visual": {
-        "type": "verdict",
-        "caption": "変わったのは一点だけ",
-        "statement": "選ぶ顔 = 何百回見た側",
-        "note": "見慣れが選択を決める"
+        "type": "figure",
+        "figure": "clock",
+        "label": "二週間前ならただの三時間"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 71,
-      "act": 2,
-      "narration": "いや、そんな微妙な差に気づけるものだろうか、と思うかもしれない。",
+      "act": 3,
+      "narration": "毎日おはようと送るようになってからの三時間は、まったく違う長さを持っている。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "微妙な差に気づけるか"
+        "figure": "clock",
+        "label": "おはようの三時間"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 72,
-      "act": 2,
-      "narration": "左右が入れ替わったところで、同じ顔ではないか、と。",
+      "act": 3,
+      "narration": "では、逆の側はどうなっているのか。",
       "visual": {
-        "type": "comparison",
-        "left_title": "元の顔",
-        "right_title": "左右反転",
-        "left_items": [
-          "見慣れた向き"
-        ],
-        "right_items": [
-          "入れ替えた向き"
-        ],
-        "center_label": "同じ顔では?"
+        "type": "figure",
+        "figure": "question",
+        "label": "逆の側は?"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 73,
-      "act": 2,
-      "narration": "その指摘はまったく正しい。",
+      "act": 3,
+      "narration": "追われる側に立てば魅力が上がるのなら、手に入りにくい相手ほど望まれるはずである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "その指摘は正しい"
+        "type": "figure",
+        "figure": "target",
+        "label": "追われる側の魅力"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 74,
-      "act": 2,
-      "narration": "人の顔は、ぱっと見ればほぼ左右対称に見える。",
+      "act": 3,
+      "narration": "世間で駆け引きと呼ばれているものは、この素朴な前提の上に建てられている。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "ぱっと見はほぼ左右対称"
+        "figure": "scale",
+        "label": "駆け引きの前提"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 75,
-      "act": 2,
-      "narration": "だが実際には対称ではない。",
+      "act": 3,
+      "narration": "その前提は、本当に確かめられているのだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "実際には対称ではない"
+        "figure": "anxiety",
+        "label": "本当に確かか"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 76,
       "act": 2,
-      "narration": "目の高さも、眉の角度も、口角の上がり方も、鼻筋の通り方も、左右でわずかにずれている。",
+      "narration": "1973年、エレイン・ウォルスターらの研究チームが、これを正面から確かめようとした。",
       "visual": {
-        "type": "list",
-        "title": "左右でずれる要素",
-        "items": [
-          "目の高さ",
-          "眉の角度",
-          "口角の上がり方",
-          "鼻筋の通り方"
-        ]
+        "type": "stat",
+        "value": "1973年",
+        "label": "ウォルスターらの研究",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 77,
       "act": 2,
-      "narration": "そのずれの向きが逆になると、脳にとっては別の配置になる。",
+      "narration": "手に入りにくい相手のほうが望まれるはずだ、という素直な仮説を立てて実験を組む。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "逆向きは脳には別の配置"
+        "figure": "thought",
+        "label": "手に入りにくい=望まれる?"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 78,
       "act": 2,
-      "narration": "日常で自分の顔を見る手段が鏡しかなかった時代、あなたはその反転した配置のほうを、何万回と見てきた。",
+      "narration": "一つ目は支持されなかった。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "鏡しかなかった時代、反転した顔を何万回も見てきた"
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "一つ目 支持されず"
       },
-      "concept_color": "warm"
+      "concept_color": "charcoal"
     },
     {
       "id": 79,
-      "act": 3,
-      "narration": "ここまで聞くと、この動画の着地点は見えた気がするだろう。",
+      "act": 2,
+      "narration": "二つ目も支持されない。",
       "visual": {
         "type": "figure",
-        "figure": "path",
-        "label": "着地点は見えた気がする"
+        "figure": "conflict",
+        "label": "二つ目も不支持"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 80,
-      "act": 3,
-      "narration": "つまり人は自分の顔を都合よく記憶しているのだから、写真のほうを信じればいい、と。",
+      "act": 2,
+      "narration": "三つ目、四つ目、五つ目と続けて、五つの実験がすべて失敗している。",
       "visual": {
-        "type": "dialogue",
-        "line": "都合よく記憶しているのだから、写真を信じればいい"
+        "type": "table",
+        "title": "五つの実験の結果",
+        "headers": [
+          "実験",
+          "結果"
+        ],
+        "rows": [
+          [
+            "一つ目",
+            "失敗"
+          ],
+          [
+            "二つ目",
+            "失敗"
+          ],
+          [
+            "三つ目",
+            "失敗"
+          ],
+          [
+            "四つ目",
+            "失敗"
+          ],
+          [
+            "五つ目",
+            "失敗"
+          ]
+        ]
       },
       "concept_color": "charcoal"
     },
     {
       "id": 81,
-      "act": 3,
-      "narration": "事実、その線で書かれた記事は多い。",
+      "act": 2,
+      "narration": "論文には、その五つが順番に並べられたまま残されている。",
       "visual": {
         "type": "figure",
         "figure": "screen",
-        "label": "その線の記事は多い"
+        "label": "論文に並ぶ五つ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 82,
+      "act": 2,
+      "narration": "仮説が正しければ、どこかで出るはずのものが、五回とも出なかったわけである。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "五回とも出なかった"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 82,
-      "act": 3,
-      "narration": "だが、この動画はそこで終わらない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "そこでは終わらない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 83,
-      "act": 3,
-      "narration": "本当に厄介なのは、この書き換えが、本人の意志の外側で起きているという点にある。",
+      "act": 2,
+      "narration": "六つ目で、ようやく別の形が見えた。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "書き換えは意志の外側で起きる"
+        "figure": "lightbulb",
+        "label": "六つ目で見えた形"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 84,
-      "act": 3,
-      "narration": "参加者は自分の顔を正直に選んだつもりでいた。",
+      "act": 2,
+      "narration": "彼らが試したのは、条件をひとつ割った仮説だった。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "正直に選んだつもり"
+        "figure": "crossroad",
+        "label": "条件を一つ割る"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 85,
       "act": 3,
-      "narration": "ではその選択は、どの段階で決まっていたのだろうか。",
+      "narration": "誰にとっても手に入りにくい女性ではなく、他の男性にとっては手に入りにくいが、自分にとっては手に入りやすい女性。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "選択はどの段階で決まった?"
+        "type": "comparison",
+        "left_title": "誰にとっても難しい",
+        "right_title": "他人に難・自分に易",
+        "left_items": [
+          "一律に手に入りにくい"
+        ],
+        "right_items": [
+          "自分にだけ開いている"
+        ],
+        "center_label": "条件の違い"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 86,
       "act": 3,
-      "narration": "しかも研究チームは、選ばせるだけでは終わらなかった。",
+      "narration": "この条件だけが、一律に手に入りにくい相手、一律に手に入りやすい相手、情報のない相手のいずれよりも強く好まれている。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 6,
-        "caption": "研究チームは選ばせるだけでは終わらなかった"
+        "type": "chart",
+        "title": "最も好まれた条件",
+        "subtitle": "",
+        "unit": "",
+        "items": [
+          {
+            "label": "他人に難/自分に易",
+            "value": 8.5
+          },
+          {
+            "label": "一律に難しい",
+            "value": 6
+          },
+          {
+            "label": "一律に易しい",
+            "value": 5.5
+          },
+          {
+            "label": "情報なし",
+            "value": 5
+          }
+        ],
+        "highlight": 0,
+        "annotation": "自分にだけ開いた相手が最も好まれた"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 87,
       "act": 3,
-      "narration": "次に、他人の顔を大量に混ぜた列を用意する。",
+      "narration": "手に入りにくさそのものに力があるとは限らない、というのが五回分の失敗が残した結論だった。",
       "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": "他人の顔を大量に並べた列"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 88,
-      "act": 3,
-      "narration": "その中に、参加者本人の顔を一枚だけ紛れ込ませる。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "本人の顔を一枚だけ紛れ込ませる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 89,
-      "act": 3,
-      "narration": "自分の顔を見つけたら、できるだけ速く反応するように指示して、時間を測る。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "見つけたら速く反応、時間を測る"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 90,
-      "act": 3,
-      "narration": "ここでも列に置く自分の顔を、そのままのものと、魅力度を上げたものとで入れ替えて比べた。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "そのまま",
-        "right_title": "魅力度を上げた",
-        "left_items": [
-          "素の顔"
-        ],
-        "right_items": [
-          "盛った顔"
-        ],
-        "center_label": "列に置いて比較"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 91,
-      "act": 3,
-      "narration": "速く見つかったのは、魅力度を上げたほうだった。",
-      "visual": {
-        "type": "columns",
-        "title": "見つかる速さ",
-        "left": {
-          "label": "そのままの顔",
-          "value": "遅い",
-          "level": 0.4
-        },
-        "right": {
-          "label": "盛った顔",
-          "value": "速い",
-          "level": 0.85
-        },
-        "note": "速かったのは盛ったほう"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 92,
-      "act": 3,
-      "narration": "これは意見ではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "これは意見ではない"
+        "type": "balance",
+        "title": "",
+        "left_label": "手に入りにくさ",
+        "right_label": "差",
+        "tilt": 0.6,
+        "note": "五回の失敗が残した結論"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 93,
+      "id": 88,
       "act": 3,
-      "narration": "反応時間である。",
+      "narration": "効いていたのは、他人には難しいが自分には開いている、というその差のほうである。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "反応時間である"
+        "figure": "door",
+        "label": "自分には開いている差"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 89,
+      "act": 4,
+      "narration": "ここまでで、あなたの中にあった助言はいくつ書き換わっただろうか。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "助言はいくつ書き換わったか"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 90,
+      "act": 3,
+      "narration": "この差を、さらに精密に分けて測った研究がある。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "差を精密に測る"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 91,
+      "act": 3,
+      "narration": "2014年にダイ、ドン、ジアの三人が発表した実験は、じらしが相手の中で何を上げて何を下げるのかを、二つに割って測定した。",
+      "visual": {
+        "type": "stat",
+        "value": "2014年",
+        "label": "ダイ・ドン・ジアの実験",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 92,
+      "act": 3,
+      "narration": "出てきたのは、その二つが反対方向へ動くという結果だった。",
+      "visual": {
+        "type": "columns",
+        "title": "反対方向へ",
+        "left": {
+          "label": "欲しさ",
+          "value": "↑",
+          "level": 0.8
+        },
+        "right": {
+          "label": "好ましさ",
+          "value": "↓",
+          "level": 0.3
+        },
+        "note": "二つが逆に動く"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 93,
+      "act": 3,
+      "narration": "じらされた相手は、その人をより欲しがるようになる。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "より欲しくなる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 94,
       "act": 3,
-      "narration": "本人が答えを考える前の段階で、脳はすでに、盛られたほうの顔を自分の顔として扱っていた。",
+      "narration": "それと同時に、その人をより好ましくないと感じるようになる。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "脳は盛った顔を自分として扱った"
+        "figure": "arrowDown",
+        "label": "より好ましくなくなる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 95,
       "act": 3,
-      "narration": "この結論の強さは、測り方の違いから来ている。",
+      "narration": "欲しさと好ましさが、同じ出来事によって逆へ動いていく。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "結論の強さは測り方から"
+        "type": "columns",
+        "title": "同じ出来事で逆へ",
+        "left": {
+          "label": "欲しさ",
+          "value": "上昇",
+          "level": 0.8
+        },
+        "right": {
+          "label": "好ましさ",
+          "value": "下降",
+          "level": 0.25
+        },
+        "note": "逆方向へ動く"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 96,
       "act": 3,
-      "narration": "どちらの顔が自分かを口で答えさせるだけなら、見栄や照れが混ざりうる。",
+      "narration": "しかもこの効果には、はっきりした境界があった。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "口で答えると見栄や照れが混ざる"
+        "figure": "contract",
+        "label": "はっきりした境界"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 97,
       "act": 3,
-      "narration": "だが列の中から探す速さには、答え方の工夫が入り込む余地がほとんど無い。",
+      "narration": "すでにその相手を追う気持ちがある場合にだけ、欲しさは上がっている。",
       "visual": {
         "type": "figure",
-        "figure": "target",
-        "label": "探す速さに工夫は入り込めない"
+        "figure": "arrowUp",
+        "label": "追う気持ちがある時だけ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 98,
-      "act": 3,
-      "narration": "二つの方法で同じ方向の結果が出たとき、その現象は、意識的な回答の癖では説明しにくくなる。",
+      "act": 4,
+      "narration": "無作為に組み合わされただけの相手がじらしてきた場合は、欲しさも好ましさも両方が下がった。",
       "visual": {
-        "type": "comparison",
-        "left_title": "選ばせる課題",
-        "right_title": "反応時間",
-        "left_items": [
-          "同じ方向の結果"
-        ],
-        "right_items": [
-          "同じ方向の結果"
-        ],
-        "center_label": "二つの方法が一致"
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "無作為な相手なら両方下降"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 99,
-      "act": 3,
-      "narration": "測っている層も違う。",
+      "act": 4,
+      "narration": "じらしは、火のないところに火をつける道具ではない。",
       "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 0,
-        "caption": "測っている層そのものが違う"
+        "type": "figure",
+        "figure": "candle",
+        "label": "火のないところに火はつかない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 100,
-      "act": 3,
-      "narration": "選ばせる課題が拾うのは、本人が答えとして差し出したものだ。",
+      "act": 4,
+      "narration": "ここに、この回のいちばん硬い骨がある。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "選ばせる課題が拾うもの"
+        "type": "keyword",
+        "keyword": "いちばん硬い骨"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 101,
+      "act": 4,
+      "narration": "追われる側は欲しがられているが、好かれてはいない。",
+      "visual": {
+        "type": "columns",
+        "title": "追われる側",
+        "left": {
+          "label": "欲しがられる",
+          "value": "高",
+          "level": 0.85
+        },
+        "right": {
+          "label": "好かれる",
+          "value": "低",
+          "level": 0.25
+        },
+        "note": "欲しがられるが好かれない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 101,
-      "act": 3,
-      "narration": "反応時間が拾うのは、答えを組み立てる前に脳が済ませていた照合のほうである。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "反応時間は脳が済ませた照合を拾う"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
       "id": 102,
-      "act": 3,
-      "narration": "あなたが自分の顔を思い浮かべるとき、最初に立ち上がっているのは、盛られた側の鋳型だということになる。",
+      "act": 4,
+      "narration": "追う側は好かれているが、欲しがられてはいない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "最初に立つのは盛った鋳型"
+        "type": "comparison",
+        "left_title": "追われる側",
+        "right_title": "追う側",
+        "left_items": [
+          "欲しがられる",
+          "好かれない"
+        ],
+        "right_items": [
+          "好かれる",
+          "欲しがられない"
+        ],
+        "center_label": "ねじれ"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 103,
-      "act": 3,
-      "narration": "ここで、この動画の足元を自分で崩しておきたい。",
+      "act": 4,
+      "narration": "恋愛の助言がいつまでも噛み合わないのは、この二つをひとつの言葉で呼び続けているからではないだろうか。",
       "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 1,
-        "caption": "ここで、この動画の足元を自分で崩しておきたい"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 104,
-      "act": 3,
-      "narration": "ミタらの実験は1977年の研究で、対象は女子学生37人にすぎない。",
-      "visual": {
-        "type": "stat",
-        "value": "37人",
-        "label": "対象は女子学生",
-        "context": "ミタらの研究",
-        "unit": "",
-        "axis": {
-          "label": "1977年",
-          "ticks": [
-            ""
-          ]
-        }
+        "type": "verdict",
+        "caption": "恋愛の助言が噛み合わない理由",
+        "statement": "欲しがられる ≠ 好かれる",
+        "note": "ひとつの言葉で呼び続けている"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 104,
+      "act": 5,
+      "narration": "昼休みのオフィス。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 4,
+        "caption": "昼休みのオフィス"
+      },
+      "concept_color": "daylight"
+    },
+    {
       "id": 105,
-      "act": 3,
-      "narration": "標本の小ささという限界があり、追試の状況をこの動画では確認できていない。",
+      "act": 5,
+      "narration": "同僚が二人、コンビニの袋を机に置いたまま話している。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "標本は小さく、追試も未確認"
+        "figure": "couple",
+        "label": "机の袋とふたりの会話"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 106,
       "act": 3,
-      "narration": "エプリーらの実験も、ひとつの研究チームの結果である。",
+      "narration": "片方が言う。",
       "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "ひとつの研究チームの結果"
+        "type": "dialogue",
+        "line": "片方が、ぽつりと言う"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 107,
       "act": 3,
-      "narration": "そして最も大事なことを言っておく。",
+      "narration": "あの人は本当にいい人なんだけど、恋愛としては見られない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "最も大事なこと"
+        "type": "dialogue",
+        "line": "いい人なんだけど、恋愛としては見られない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 108,
       "act": 3,
-      "narration": "実像と鏡像のどちらが本当の顔かという問いに、科学的な答えは無い。",
+      "narration": "もう片方が言う。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "どちらが本当の顔か"
+        "type": "dialogue",
+        "line": "もう片方も、口を開く"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 109,
       "act": 3,
-      "narration": "どちらも同じ顔を記録したものだ。",
+      "narration": "あの人は最低なんだけど、頭から離れない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "実像",
-        "right_title": "鏡像",
-        "left_items": [
-          "目の前の顔"
-        ],
-        "right_items": [
-          "鏡に映る顔"
-        ],
-        "center_label": "同じ顔の記録"
+        "type": "dialogue",
+        "line": "最低なんだけど、頭から離れない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "warm"
     },
     {
       "id": 110,
       "act": 3,
-      "narration": "この動画が言えるのは、あなたがどちらをより多く見てきたか、という一点までである。",
+      "narration": "二人は同じことを、別々の回路で言っているようなものだ。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "どちらをより多く見てきたか"
+        "type": "comparison",
+        "left_title": "いい人",
+        "right_title": "最低な人",
+        "left_items": [
+          "見られない"
+        ],
+        "right_items": [
+          "離れない"
+        ],
+        "center_label": "同じ回路"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 111,
       "act": 3,
-      "narration": "その一点が、どれだけ特殊なことなのか。",
+      "narration": "では、追う側は具体的に何を渡し損ねているのか。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "その一点の特殊さ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 112,
-      "act": 3,
-      "narration": "まったく別の場所を見てみたい。",
-      "visual": {
-        "type": "scenery",
-        "place": "forest",
-        "people": 0,
-        "caption": "まったく別の場所へ"
+        "figure": "path",
+        "label": ""
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 113,
-      "act": 3,
-      "narration": "1970年、ゴードン・ギャラップが、サイエンス誌に短い報告を載せている。",
+      "id": 112,
+      "act": 2,
+      "narration": "2007年、ポール・イーストウィック、イーライ・フィンケル、ダニエル・モション、ダン・アリエリーの四人が、スピードデーティングを使ってこれを調べている。",
       "visual": {
         "type": "stat",
-        "value": "1970年",
-        "label": "ギャラップの報告",
-        "context": "サイエンス誌",
+        "value": "2007年",
+        "label": "スピードデーティングの実験",
+        "context": "イーストウィック他4名",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "warm"
+      "concept_color": "charcoal"
     },
     {
-      "id": 114,
-      "act": 3,
-      "narration": "チンパンジーに鏡を与えるという実験だ。",
+      "id": 113,
+      "act": 2,
+      "narration": "一回の会話は4分で区切られ、参加者は相手を次々に入れ替えながら、その都度この人ともう一度会いたいかを記録していく。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "チンパンジーに鏡を与える"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 115,
-      "act": 3,
-      "narration": "最初、チンパンジーたちは鏡像を別の個体として扱った。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "鏡像を別の個体として扱う"
+        "type": "stat",
+        "value": "4分",
+        "label": "一回の会話",
+        "context": "相手を次々入れ替える",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 116,
-      "act": 3,
-      "narration": "威嚇し、鏡の裏側を覗きに行く。",
+      "id": 114,
+      "act": 2,
+      "narration": "全部で7回のセッションが行われた。",
+      "visual": {
+        "type": "stat",
+        "value": "7回",
+        "label": "行われたセッション",
+        "context": "実験の規模",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 115,
+      "act": 2,
+      "narration": "誰が誰に矢印を出したかが、部屋ごとにまるごと残る仕組みである。",
       "visual": {
         "type": "figure",
-        "figure": "conflict",
-        "label": "威嚇し裏側を覗く"
+        "figure": "network",
+        "label": "誰が誰に矢印を出したか"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 116,
+      "act": 2,
+      "narration": "彼らが分けたのは、二種類の相互性である。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "二種類の相互性"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 117,
-      "act": 3,
-      "narration": "ところが数日たつと、鏡を見ながら自分の口の中を調べ、自分では見えない場所を確認しはじめた。",
+      "act": 2,
+      "narration": "ひとつは、誰に対しても好意的な人が相手からも好意を返される形。",
       "visual": {
         "type": "figure",
-        "figure": "thought",
-        "label": "自分の口の中を調べる"
+        "figure": "applause",
+        "label": "誰にでも好意的な人"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 118,
-      "act": 3,
-      "narration": "そこでギャラップは決定的な検証を行った。",
+      "act": 2,
+      "narration": "もうひとつは、特定の相手にだけ強い好意を持ち、その相手からも同じ好意が返ってくる形。",
       "visual": {
         "type": "figure",
-        "figure": "atom",
-        "label": "決定的な検証"
+        "figure": "target",
+        "label": "特定の相手にだけ強い好意"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 119,
       "act": 3,
-      "narration": "麻酔をかけたチンパンジーの、眉の上と、反対側の耳の上半分に、無臭で刺激の無い赤い染料を付ける。",
+      "narration": "結果として望まれたのは、後者だけだった。",
       "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "眉と耳に赤い染料"
+        "type": "verdict",
+        "caption": "実験の結論",
+        "statement": "望まれたのは、後者だけ",
+        "note": "特定への好意"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 120,
       "act": 3,
-      "narration": "触っても分からず、鏡が無ければ気づけない印である。",
+      "narration": "誰にでも好意的な参加者は、相手から選ばれていない。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "鏡が無ければ気づけない印"
+        "figure": "isolation",
+        "label": "誰にでも好意的な人は選ばれない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 121,
       "act": 3,
-      "narration": "目を覚ましたチンパンジーは、鏡を見て、その印に手を伸ばした。",
+      "narration": "外交には、意図を明示しないという手法がある。",
       "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "印に手を伸ばした"
+        "type": "scenery",
+        "place": "hall",
+        "people": 8,
+        "caption": "外交には、意図を明示しないという手法がある"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 122,
       "act": 3,
-      "narration": "同じ手続きをサルで行うと、この行動は現れなかった。",
+      "narration": "どう動くかを確定して宣言せず、複数の可能性を相手に計算させ続ける。",
       "visual": {
-        "type": "comparison",
-        "left_title": "チンパンジー",
-        "right_title": "サル",
-        "left_items": [
-          "印に手を伸ばす"
-        ],
-        "right_items": [
-          "行動は現れず"
-        ],
-        "center_label": "自己認知"
+        "type": "figure",
+        "figure": "question",
+        "label": "複数の可能性を計算させ続ける"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 123,
       "act": 3,
-      "narration": "これは職場に例えれば、防犯カメラの映像を見て、そこに映っているのが自分だと分かる社員と、いつまでも他人だと思っている社員がいる、という話に相当する。",
+      "narration": "確定した宣言は、受け取られた瞬間に相手の思考を終わらせてしまう。",
       "visual": {
         "type": "figure",
-        "figure": "camera",
-        "label": "防犯カメラの自分"
+        "figure": "door",
+        "label": "宣言は思考を終わらせる"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 124,
       "act": 3,
-      "narration": "鏡の中の像を自分だと理解すること自体が、動物界では例外的な芸当なのである。",
+      "narration": "確定しない状態は、相手の注意を占有し続ける。",
       "visual": {
         "type": "figure",
-        "figure": "crown",
-        "label": "動物界では例外的な芸当"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 125,
-      "act": 4,
-      "narration": "ここでもう一度、あなたの証明写真を見てみてほしい。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "もう一度、証明写真を"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 126,
-      "act": 4,
-      "narration": "あなたはその一枚を、失敗だと思っている。",
-      "visual": {
-        "type": "dialogue",
-        "line": "あの一枚は失敗だ"
+        "figure": "eye",
+        "label": "確定しない状態が注意を占有する"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 127,
-      "act": 4,
-      "narration": "だが世界中の生き物のうち、鏡や写真に映った像を自分だと理解できるものは、ほんの一握りしかいない。",
+      "id": 125,
+      "act": 3,
+      "narration": "恋愛と外交が似ているという話ではない。",
       "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 5,
-        "label": "自己像を理解できる生き物",
-        "rest_label": "理解できない生き物"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 128,
-      "act": 4,
-      "narration": "あなたが「不細工に写った」と落ち込めるのは、その一握りに入っているからである。",
-      "visual": {
-        "type": "figure",
-        "figure": "trophy",
-        "label": "その一握りの中にいる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 129,
-      "act": 4,
-      "narration": "落ち込みは、能力の副産物だった。",
-      "visual": {
-        "type": "verdict",
-        "caption": "落ち込みの正体",
-        "statement": "落ち込み = 能力の副産物",
-        "note": ""
+        "type": "keyword",
+        "keyword": "似ているのではない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 130,
-      "act": 4,
-      "narration": "想像してみてほしい。",
+      "id": 126,
+      "act": 3,
+      "narration": "同じ情報の構造が、まったく違う場所に現れているだけである。",
       "visual": {
-        "type": "keyword",
-        "keyword": "想像してみてほしい"
+        "type": "figure",
+        "figure": "echo",
+        "label": "同じ構造が別の場所に現れる"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 131,
+      "id": 127,
       "act": 4,
-      "narration": "あなたはいま、洗面所の鏡の前に立っている。",
+      "narration": "追う側が必死になるほど、その好意は「誰でもよかったのではないか」という疑いのほうへ寄っていく。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "洗面所の鏡の前"
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "誰でもよかったのでは、という疑い"
       },
-      "concept_color": "warm"
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 128,
+      "act": 4,
+      "narration": "毎日届くおはようは、あなたがその相手を選んだ証拠にはならない。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "毎日届くおはよう"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 129,
+      "act": 4,
+      "narration": "むしろ、選ぶという行為をしていない証拠に見えてしまう。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "選ぶという行為をしていない証拠"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 130,
+      "act": 4,
+      "narration": "あなたが失っているのは熱量だろうか、それとも選んだという事実の証明のほうだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": ""
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 131,
+      "act": 3,
+      "narration": "市場の側から見ると、この仕組みはもっと乾いた形をしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "市場の側から見ると乾いている"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 132,
-      "act": 4,
-      "narration": "右手を上げる。",
+      "act": 2,
+      "narration": "1973年に経済学者のマイケル・スペンスが発表したシグナリングの理論は、こういうものだ。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "右手を上げる"
+        "type": "stat",
+        "value": "1973年",
+        "label": "シグナリング理論",
+        "context": "マイケル・スペンス",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 133,
-      "act": 4,
-      "narration": "鏡の中の像は、左手を上げる。",
+      "act": 2,
+      "narration": "採用する側は、応募者の能力そのものを直接見ることができない。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "鏡の像は左手を上げる"
+        "figure": "eye",
+        "label": "能力そのものは直接見えない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 134,
+      "act": 2,
+      "narration": "だから、能力と相関する観察可能な指標のほうを見る。",
+      "visual": {
+        "type": "figure",
+        "figure": "target",
+        "label": "観察可能な指標を見る"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 134,
-      "act": 4,
-      "narration": "あなたはそれを一度も不思議に思わず、毎朝そこで前髪を直してきた。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "毎朝、前髪を直す"
-      },
-      "concept_color": "dusk"
-    },
-    {
       "id": 135,
-      "act": 4,
-      "narration": "その動作を、あなたは何年続けているだろうか。",
+      "act": 2,
+      "narration": "学歴がその代表である。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "その動作、何年続けた"
+        "figure": "stairs",
+        "label": "学歴がその代表"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 136,
-      "act": 5,
-      "narration": "ここで最初の場面に戻る。",
+      "act": 3,
+      "narration": "ここで肝心なのは、学歴が能力を高めるかどうかではない。",
       "visual": {
         "type": "keyword",
-        "keyword": "最初の場面に戻る"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 137,
-      "act": 5,
-      "narration": "5割を超える医師が美容相談の増加を報告し、86パーセントが患者からビデオ会議の名を聞いた。",
-      "visual": {
-        "type": "chart",
-        "title": "",
-        "subtitle": "",
-        "unit": "%",
-        "items": [
-          {
-            "label": "美容相談の増加を報告した医師",
-            "value": 50
-          },
-          {
-            "label": "患者からビデオ会議の名を聞いた",
-            "value": 86
-          }
-        ],
-        "highlight": 1,
-        "annotation": "86%がビデオ会議に言及"
+        "keyword": "能力を高めるかではない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 138,
-      "act": 5,
-      "narration": "この数字が示しているのは、人の顔が急に崩れたということではない。",
+      "id": 137,
+      "act": 3,
+      "narration": "能力の低い人にとって取得コストが高いこと、それ自体が信号を信頼できるものにしている。",
       "visual": {
-        "type": "keyword",
-        "keyword": "顔が崩れたのではない"
+        "type": "balance",
+        "title": "信号の信頼性",
+        "left_label": "取得コストの高さ",
+        "right_label": "信号の信頼",
+        "tilt": 0.6,
+        "note": "コストが信頼を生む"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 138,
+      "act": 3,
+      "narration": "誰でも安く手に入るものは、信号として機能しないのだ。",
+      "visual": {
+        "type": "verdict",
+        "caption": "シグナリングの核",
+        "statement": "誰でも安く手に入るもの = 信号にならない",
+        "note": ""
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 139,
-      "act": 5,
-      "narration": "自分の顔を見る回数と、その見え方の種類が、この数年で一気に変わったということである。",
+      "act": 2,
+      "narration": "スペンスはこの仕事で、2001年にアカロフ、スティグリッツとともにノーベル経済学賞を受けている。",
       "visual": {
-        "type": "figure",
-        "figure": "evolution",
-        "label": "見る回数と見え方が一変"
+        "type": "stat",
+        "value": "2001年",
+        "label": "ノーベル経済学賞",
+        "context": "アカロフ、スティグリッツと共に",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 140,
-      "act": 5,
-      "narration": "鏡でしか自分を見なかった時代から、画面の中の自分を一日に何時間も見る時代になった。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "鏡の時代",
-        "right_title": "画面の時代",
-        "left_items": [
-          "鏡でしか見なかった"
-        ],
-        "right_items": [
-          "一日に何時間も見る"
-        ],
-        "center_label": "自分の見え方"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 141,
-      "act": 3,
-      "narration": "ではこの二つの像は、あなたの中でどう扱われているのだろうか。",
+      "act": 4,
+      "narration": "それなら好意を出し惜しめということか、と思うかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "二つの像の行方"
+        "figure": "door",
+        "label": ""
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 141,
+      "act": 3,
+      "narration": "ただ、事実の側はもう少し込み入っている。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "事実は込み入っている"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 142,
       "act": 3,
-      "narration": "ここで、見ている側から見るのをやめてみたい。",
+      "narration": "リクルート ブライダル総研の婚活実態調査2024によれば、2023年に結婚した人のうち婚活サービスを通じて出会った人は15.3パーセント、うちアプリなどネット系の経由は11.4パーセントで過去最高になった。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "見る側をやめる"
+        "type": "chart",
+        "title": "2023年に結婚した人の出会い",
+        "subtitle": "リクルート ブライダル総研 婚活実態調査2024",
+        "unit": "%",
+        "items": [
+          {
+            "label": "婚活サービス経由",
+            "value": 15.3
+          },
+          {
+            "label": "うちネット系",
+            "value": 11.4
+          }
+        ],
+        "highlight": 1,
+        "annotation": "アプリなどネット系は過去最高 11.4%"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 143,
       "act": 3,
-      "narration": "見られている顔の側から眺めると、風景がひとつ増える。",
+      "narration": "好意を出す場所そのものが増えている。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "風景がひとつ増える"
+        "type": "figure",
+        "figure": "network",
+        "label": "好意を出す場所が増える"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 144,
       "act": 3,
-      "narration": "揃っていないものがある。",
+      "narration": "出し惜しみが効く場所も効かない場所も、同時に増えているということだ。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "揃わないもの"
+        "type": "comparison",
+        "left_title": "効く場所",
+        "right_title": "効かない場所",
+        "left_items": [
+          "出し惜しみが意味を持つ"
+        ],
+        "right_items": [
+          "出し惜しみが無効"
+        ],
+        "center_label": "同時に増える"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 145,
       "act": 3,
-      "narration": "あなたが見慣れている自分の顔は、左右が逆になっている。",
+      "narration": "信号の設計という問題を、生き物のほうはずっと前から扱ってきた。",
       "visual": {
-        "type": "comparison",
-        "left_title": "見慣れた顔",
-        "right_title": "実際の顔",
-        "left_items": [
-          "左右が逆"
-        ],
-        "right_items": [
-          "本来の向き"
-        ],
-        "center_label": "反転"
+        "type": "figure",
+        "figure": "dna",
+        "label": "信号の設計という問題"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 146,
       "act": 3,
-      "narration": "それだけではない。",
+      "narration": "クジャクの尾は、逃げるには重すぎ、隠れるには目立ちすぎる。",
       "visual": {
-        "type": "keyword",
-        "keyword": "それだけではない"
+        "type": "figure",
+        "figure": "evolution",
+        "label": "重すぎ、目立ちすぎる尾"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 147,
       "act": 3,
-      "narration": "実物より少しだけ魅力的に記憶されている。",
+      "narration": "1975年にアモツ・ザハヴィが提出したハンディキャップ原理は、生存に不利なほど目立つ装飾が、なぜ配偶者選択で有利になるのかを説明しようとしたものである。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "少し魅力的に記憶"
+        "type": "stat",
+        "value": "1975年",
+        "label": "ザハヴィのハンディキャップ原理",
+        "context": "不利なほど有利になる謎",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
     },
     {
       "id": 148,
       "act": 3,
-      "narration": "一方で世界が見ているあなたの顔は、反転しておらず、盛られてもいない。",
+      "narration": "答えは、コストが高く偽装しにくい信号だけが正直な信号として機能する、というものだった。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "世界が見るあなた"
+        "figure": "scale",
+        "label": "高コストな信号だけが正直"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 149,
       "act": 3,
-      "narration": "同じひとつの顔について、本人と他人が別々の像を持っている。",
+      "narration": "安く出せる信号は、出せてしまうがゆえに何も伝えない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "本人の像",
-        "right_title": "他人の像",
-        "left_items": [
-          "反転",
-          "少し良く"
-        ],
-        "right_items": [
-          "そのまま"
-        ],
-        "center_label": "別々の顔"
+        "type": "figure",
+        "figure": "echo",
+        "label": "安い信号は何も伝えない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 150,
       "act": 3,
-      "narration": "しかも本人の像のほうが、二重に加工されている。",
+      "narration": "トムソンガゼルは、捕食者を見つけたとき、その場で高く跳ね上がることがある。",
       "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "二重の加工"
+        "type": "scenery",
+        "place": "field",
+        "people": 0,
+        "caption": "捕食者を前に、跳ね上がる一頭"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dusk"
     },
     {
       "id": 151,
       "act": 3,
-      "narration": "これは録音に近い。",
+      "narration": "逃げる時間を削って跳ぶのだから、どう見ても損である。",
       "visual": {
         "type": "figure",
-        "figure": "echo",
-        "label": "録音に近い"
+        "figure": "arrowDown",
+        "label": "逃げる時間を削って跳ぶ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 152,
       "act": 3,
-      "narration": "自分の声を録音で聞くと、いつも別人に聞こえる。",
+      "narration": "1988年のフィッツギボンとファンショーの観察が示したのは、跳び方に条件があることだった。",
       "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "別人に聞こえる声"
+        "type": "stat",
+        "value": "1988年",
+        "label": "フィッツギボンとファンショーの観察",
+        "context": "跳び方には条件がある",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 153,
       "act": 3,
-      "narration": "あの違和感と、写真の違和感は、同じ場所から来ている。",
+      "narration": "リカオンのように追いかけてくる捕食者には跳ぶが、チーターのように待ち伏せる捕食者には跳ばない。",
       "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 1,
-        "caption": "同じ場所から来る違和感"
+        "type": "comparison",
+        "left_title": "跳ぶ",
+        "right_title": "跳ばない",
+        "left_items": [
+          "リカオン=追跡型"
+        ],
+        "right_items": [
+          "チーター=待ち伏せ型"
+        ],
+        "center_label": "相手で使い分ける"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 154,
       "act": 3,
-      "narration": "ただし、この動画で言いたいのは、加工アプリや前面カメラが悪いという単純な話ではない。",
+      "narration": "乾季で体調が落ちている個体は、跳ぶ頻度そのものが下がる。",
       "visual": {
         "type": "figure",
-        "figure": "smartphone",
-        "label": "アプリが悪いのではない"
+        "figure": "arrowDown",
+        "label": "乾季は跳ぶ頻度が下がる"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 155,
       "act": 3,
-      "narration": "前面カメラが像をゆがめるのは設計上そうなるからで、誰かの悪意ではない。",
+      "narration": "信号は、相手を選んだうえで出されている。",
       "visual": {
         "type": "figure",
-        "figure": "camera",
-        "label": "設計上そうなる"
+        "figure": "target",
+        "label": "相手を選んで出す信号"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 156,
       "act": 3,
-      "narration": "加工アプリを使う人も、嘘をついてはいない。",
+      "narration": "人間の側にも古い形が残っている。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "嘘ではない"
+        "figure": "dna",
+        "label": "人間にも残る古い形"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 157,
       "act": 3,
-      "narration": "彼らは、自分が記憶している自分の顔に、写真のほうを近づけているだけである。",
+      "narration": "12世紀ごろの南フランスで成立した宮廷恋愛という詩の様式では、手の届かない貴婦人へ、報われないまま奉仕し続けることが美徳とされた。",
       "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "記憶へ写真を近づける"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 158,
-      "act": 3,
-      "narration": "ずれの原因は、道具ではなく、見慣れという仕組みのほうにある。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "見慣れという仕組み"
+        "type": "stat",
+        "value": "12世紀",
+        "label": "南フランスの宮廷恋愛",
+        "context": "報われぬ奉仕が美徳",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 159,
+      "id": 158,
       "act": 3,
-      "narration": "そして誰もあまり口に出さない回路が、もうひとつ走っている。",
+      "narration": "届かないことがあらかじめ組み込まれた愛の形が、様式として何百年も生き延びている。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "口に出さない回路"
+        "figure": "heart",
+        "label": "届かないことが組み込まれた愛"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "dusk"
+    },
+    {
+      "id": 159,
+      "act": 4,
+      "narration": "ただし、ここで自分の足元を削っておきたい。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自分の足元を削る"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 160,
-      "act": 2,
-      "narration": "エプリーらの実験には、続きがある。",
+      "act": 4,
+      "narration": "ハンディキャップ原理には限界がある。",
       "visual": {
         "type": "figure",
-        "figure": "path",
-        "label": "実験には続きがある"
+        "figure": "scale",
+        "label": "ハンディキャップ原理の限界"
       },
-      "concept_color": "daylight"
+      "concept_color": "charcoal"
     },
     {
       "id": 161,
-      "act": 2,
-      "narration": "研究チームは、この盛りがどこまで及ぶのかを調べた。",
+      "act": 4,
+      "narration": "その後の数理的な検討で、コストの高い信号ほど正直である、という主張は条件を付けずに成り立つとは限らないと指摘されてきた。",
       "visual": {
         "type": "figure",
-        "figure": "target",
-        "label": "盛りはどこまで及ぶか"
+        "figure": "question",
+        "label": "高コスト=正直とは限らない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 162,
-      "act": 2,
-      "narration": "まず自分の顔。",
+      "act": 4,
+      "narration": "五回失敗したウォルスターの実験もそうだった。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "まず自分の顔"
+        "figure": "anxiety",
+        "label": "五回失敗した実験"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 163,
-      "act": 2,
-      "narration": "ここでは盛りが起きる。",
+      "act": 4,
+      "narration": "都合よく並べれば線は引ける。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "ここで盛りが起きる"
+        "figure": "scale",
+        "label": "都合よく並べれば線は引ける"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 164,
-      "act": 2,
-      "narration": "次に、参加者の友人の顔。",
+      "act": 4,
+      "narration": "それでも本当に残っているものは何だろうか。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "次に友人の顔"
+        "figure": "question",
+        "label": "本当に残るものは何か"
       },
-      "concept_color": "dusk"
+      "concept_color": "pitch-black"
     },
     {
       "id": 165,
-      "act": 2,
-      "narration": "ここでも盛りが起きた。",
+      "act": 4,
+      "narration": "もう一度、あの画面に戻る。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "ここでも盛りが起きた"
+        "figure": "smartphone",
+        "label": "もう一度、あの画面へ"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 166,
-      "act": 2,
-      "narration": "そして最後に、比較的よく知らない他人の顔。",
+      "act": 4,
+      "narration": "文面を打っては消し、また打ち直している指がそこにある。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 3,
-        "caption": "よく知らない他人の顔"
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "打っては消す指"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 167,
-      "act": 2,
-      "narration": "ここでは起きなかった。",
+      "act": 4,
+      "narration": "相手からの一通は三時間前で止まったままだ。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": "ここでは起きなかった"
+        "figure": "notification",
+        "label": "三時間前で止まった一通"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 168,
-      "act": 3,
-      "narration": "つまりこの装置は、自分だけを特別扱いしているのではない。",
+      "act": 4,
+      "narration": "あなたはその画面を見ながら、自分の熱量が足りないのか、それとも多すぎるのかを測ろうとしていた。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "自分だけではない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 169,
-      "act": 3,
-      "narration": "親しい相手の顔もまとめて、実物より少し良く記憶している。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "親しい相手もまとめて"
+        "figure": "scale",
+        "label": "熱量は足りないのか多すぎるのか"
       },
       "concept_color": "warm"
     },
     {
-      "id": 170,
-      "act": 3,
-      "narration": "さらに研究チームは、この盛りの大きさが何と結びつくのかも測っている。",
+      "id": 169,
+      "act": 4,
+      "narration": "長すぎる気がして削り、素っ気なく見えてまた足したのも、同じ目盛りの上での作業だった。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "盛りは何と結びつくか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 171,
-      "act": 3,
-      "narration": "意識的に答える自尊心の指標とは、相関しなかった。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "自尊心とは相関せず"
+        "figure": "cycle",
+        "label": "削り、また足す"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 172,
-      "act": 3,
-      "narration": "相関したのは、意識に上らない自己価値の指標のほうだった。",
+      "id": 170,
+      "act": 4,
+      "narration": "測っていた目盛りのほうが違っていた。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "意識に上らない自己価値"
+        "type": "keyword",
+        "keyword": "目盛りのほうが違っていた"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 171,
+      "act": 4,
+      "narration": "相手の側で起きていたのは、量の計算ではない。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "あなた",
+        "right_title": "相手",
+        "left_items": [
+          "量を計算する"
+        ],
+        "right_items": [
+          "量の計算ではない"
+        ],
+        "center_label": "ずれ"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 173,
-      "act": 4,
-      "narration": "見栄ではないのである。",
+      "id": 172,
+      "act": 5,
+      "narration": "確定したものは処理が終わり、確定しないものは処理が続く。",
       "visual": {
-        "type": "keyword",
-        "keyword": "見栄ではない"
+        "type": "comparison",
+        "left_title": "確定",
+        "right_title": "未確定",
+        "left_items": [
+          "処理が終わる"
+        ],
+        "right_items": [
+          "処理が続く"
+        ],
+        "center_label": "脳の扱い"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 173,
+      "act": 5,
+      "narration": "ただそれだけのことが、あなたの一日を占領していた。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "一日を占領していた"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 174,
-      "act": 4,
-      "narration": "自分と、自分の近くにいる人の顔だけを、静かに、自動的に、少しだけ良く書き換えている。",
+      "act": 5,
+      "narration": "並べ直すと、線は一本になる。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "静かに自動で書き換える"
+        "figure": "path",
+        "label": "並べ直せば線は一本"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 175,
-      "act": 4,
-      "narration": "ここでひとつ、あなたにも一緒に考えられる問いを出したい。",
+      "act": 5,
+      "narration": "好意は好意を生む。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "一緒に考える問い"
+        "type": "verdict",
+        "caption": "",
+        "statement": "好意 = 好意を生む",
+        "note": ""
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 176,
-      "act": 3,
-      "narration": "親しい友人の顔を、頭に思い浮かべてほしい。",
+      "act": 4,
+      "narration": "しかし確定した好意は、生んだ瞬間に問いを閉じてしまう。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "親しい友人の顔"
+        "figure": "door",
+        "label": "確定した瞬間、問いが閉じる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 177,
-      "act": 3,
-      "narration": "その人の顔写真を、左右反転させたとする。",
+      "act": 4,
+      "narration": "評価は水準ではなく変化の幅で効く。",
       "visual": {
         "type": "figure",
-        "figure": "camera",
-        "label": "顔写真を左右反転"
+        "figure": "arrowUp",
+        "label": "水準ではなく変化の幅"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 178,
-      "act": 3,
-      "narration": "あなたはその違和感に気づくだろうか。",
+      "act": 4,
+      "narration": "手に入りにくさそのものには力がなく、他人には難しいが自分には開いている、という差だけが効く。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "違和感に気づくか"
+        "type": "comparison",
+        "left_title": "手に入りにくさ自体",
+        "right_title": "自分にだけ開いている",
+        "left_items": [
+          "力はない"
+        ],
+        "right_items": [
+          "差が効く"
+        ],
+        "center_label": "効くのはどちら"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 179,
-      "act": 3,
-      "narration": "少し考えてみてほしい。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "少し考えてみてほしい"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 180,
-      "act": 3,
-      "narration": "多くの人は、たぶん気づかないと答える。",
+      "act": 4,
+      "narration": "そして誰にでも向けられた好意は、選ばれた証拠にならない。",
       "visual": {
         "type": "figure",
         "figure": "crowd",
-        "label": "たぶん気づかない"
+        "label": "誰にでもの好意は証拠にならない"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 180,
+      "act": 4,
+      "narration": "では駆け引きをしろということか、と思うかもしれない。",
+      "visual": {
+        "type": "dialogue",
+        "line": "では、駆け引きをしろということか？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 181,
-      "act": 3,
-      "narration": "だが1977年の実験が示したのは逆だった。",
+      "act": 4,
+      "narration": "だが、ここまでの実験がひとつも支持していないのが、まさにその読み方である。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "実験はひとつも支持していない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 182,
+      "act": 4,
+      "narration": "ウォルスターの五つの失敗は、じらしそのものには力がないことを示していた。",
       "visual": {
         "type": "stat",
-        "value": "1977年",
-        "label": "逆を示した実験",
-        "context": "顔の記憶",
+        "value": "5つの失敗",
+        "label": "じらし自体に力はない",
+        "context": "ウォルスターの実験",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 182,
-      "act": 3,
-      "narration": "友人と恋人たちは、実像と鏡像を並べられて、迷わず実像のほうを選んでいる。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "実像",
-        "right_title": "鏡像",
-        "left_items": [
-          "迷わず選ばれた"
-        ],
-        "right_items": [
-          "選ばれなかった"
-        ],
-        "center_label": "友人と恋人の選択"
-      },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 183,
-      "act": 3,
-      "narration": "彼らは、その人の顔の左右を正確に覚えていた。",
+      "act": 4,
+      "narration": "ダイたちの実験は、火のないところでじらせば欲しさも好ましさも両方下がることを示していた。",
+      "visual": {
+        "type": "balance",
+        "title": "火のないところでじらすと",
+        "left_label": "欲しさ",
+        "right_label": "好ましさ",
+        "tilt": -0.6,
+        "note": "両方とも下がる"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 184,
+      "act": 4,
+      "narration": "技術として持ち帰れるものは、ほとんど残っていないのではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "顔の左右を正確に記憶"
+        "figure": "isolation",
+        "label": "技術として残るものは、ほぼない"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 184,
-      "act": 3,
-      "narration": "あなたが自分の顔について持っている確信と、まったく同じ強さで。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "同じ強さの確信"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
       "id": 185,
-      "act": 3,
-      "narration": "自分はそこまで人の顔を見ていない、と思うかもしれない。",
+      "act": 5,
+      "narration": "残っているのは、もっと静かな事実のほうだ。",
       "visual": {
-        "type": "dialogue",
-        "line": "そこまで人の顔は見ていない"
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "残っているのは、もっと静かな事実"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 186,
-      "act": 3,
-      "narration": "その感覚はもっともだ。",
+      "act": 5,
+      "narration": "同じ出生動向基本調査によれば、未婚者の3人に1人は、そもそも交際を望んでいない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "その感覚はもっとも"
+        "type": "donut",
+        "title": "出生動向基本調査",
+        "percent": 33,
+        "label": "交際を望まない",
+        "rest_label": "望む"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 187,
-      "act": 3,
-      "narration": "だが実験の参加者たちも、自分が友人の顔の左右を覚えているとは思っていなかったはずである。",
+      "act": 5,
+      "narration": "誰かを追いかけている時点で、あなたはすでに少数派の側に立っている。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "覚えている自覚はない"
+        "figure": "person",
+        "label": "追う時点で、すでに少数派"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 188,
-      "act": 3,
-      "narration": "覚えているという自覚が無いのに選べてしまう。",
+      "act": 5,
+      "narration": "この構造がいちばん奪っているのは、機会でも時間でもない。",
       "visual": {
         "type": "figure",
-        "figure": "lightbulb",
-        "label": "自覚なく選べてしまう"
+        "figure": "tears",
+        "label": "奪われるのは機会でも時間でもない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 189,
-      "act": 3,
-      "narration": "それが、単純接触という仕組みの厄介なところだ。",
+      "act": 5,
+      "narration": "追う側に立った人が、自分を欠陥のある人間だと思い込んでしまうことのほうだ。",
       "visual": {
-        "type": "keyword",
-        "keyword": "単純接触の厄介さ"
+        "type": "dialogue",
+        "line": "自分は欠陥のある人間なのだ、という思い込み"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 190,
-      "act": 3,
-      "narration": "回数は、意識を通らずに溜まっていく。",
+      "act": 5,
+      "narration": "追う側と追われる側は、性格の差ではない。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "回数は意識を通らず溜まる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 191,
-      "act": 3,
-      "narration": "同窓会の場面を想像してみてほしい。",
-      "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 8,
-        "caption": "同窓会の会場"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 192,
-      "act": 3,
-      "narration": "会場の受付で、集合写真が配られる。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "配られる集合写真"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 193,
-      "act": 3,
-      "narration": "あなたは自分の顔を真っ先に探す。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "真っ先に自分を探す"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 194,
-      "act": 3,
-      "narration": "見つけて、少しがっかりする。",
-      "visual": {
-        "type": "figure",
-        "figure": "tears",
-        "label": "見つけて、少しがっかり"
+        "type": "comparison",
+        "left_title": "追う側",
+        "right_title": "追われる側",
+        "left_items": [
+          "性格の差ではない"
+        ],
+        "right_items": [
+          "性格の差ではない"
+        ],
+        "center_label": "違いの正体"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 195,
-      "act": 3,
-      "narration": "隣にいた友人が、その写真を覗き込んで言う。",
+      "id": 191,
+      "act": 5,
+      "narration": "熱量の差でもない。",
       "visual": {
-        "type": "dialogue",
-        "line": "隣の友人が写真を覗き込む"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 196,
-      "act": 3,
-      "narration": "いい写真じゃない、と。",
-      "visual": {
-        "type": "dialogue",
-        "line": "いい写真じゃない"
+        "type": "keyword",
+        "keyword": "熱量の差でもない"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 197,
-      "act": 3,
-      "narration": "友人は嘘をついていない。",
+      "id": 192,
+      "act": 5,
+      "narration": "情報がどちらに寄っているか、その配置の差にすぎない。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "情報の配置の差にすぎない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 193,
+      "act": 5,
+      "narration": "そして配置は、二人のどちらかが悪いから生まれたものではなかった。",
+      "visual": {
+        "type": "figure",
+        "figure": "couple",
+        "label": "どちらかが悪いのではない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 194,
+      "act": 5,
+      "narration": "あなたが誠実に伝えたことは、間違いではない。",
       "visual": {
         "type": "keyword",
-        "keyword": "友人は嘘をついていない"
+        "keyword": "誠実さは、間違いではない"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 195,
+      "act": 5,
+      "narration": "ただ、伝えたその瞬間に、相手の頭からひとつの問いが消えた。",
+      "visual": {
+        "type": "figure",
+        "figure": "door",
+        "label": "伝えた瞬間、ひとつの問いが消えた"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 196,
+      "act": 5,
+      "narration": "それだけのことだったのだ。",
+      "visual": {
+        "type": "verdict",
+        "caption": "すべては",
+        "statement": "色あせ = 問いが消えたこと",
+        "note": "それだけのことだった"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 197,
+      "act": 5,
+      "narration": "そんなことまで、また解剖してしまいました。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 0,
+        "caption": "そんなことまで、また解剖してしまいました"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 198,
-      "act": 4,
-      "narration": "彼が見ているのは、彼がいつも見ていたあなたの顔である。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "彼がいつも見ていた顔"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 199,
-      "act": 4,
-      "narration": "あなたが見ているのは、あなたが一度も見たことのないあなたの顔だ。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "一度も見たことのない顔"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 200,
-      "act": 4,
-      "narration": "同じ一枚の紙を見ながら、二人はいったい何を見ているのだろうか。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "あなた",
-        "right_title": "友人",
-        "left_items": [
-          "鏡像に慣れた顔"
-        ],
-        "right_items": [
-          "実像の顔"
-        ],
-        "center_label": "同じ一枚を見て"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 201,
-      "act": 3,
-      "narration": "そもそも人類は、いつから自分の顔を毎日見るようになったのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "いつから毎日顔を見る?"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 202,
-      "act": 3,
-      "narration": "鏡の歴史は、思っているより新しい。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "鏡の歴史は新しい"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 203,
-      "act": 3,
-      "narration": "古代にも鏡はあった。",
-      "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "古代にも鏡はあった"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 204,
-      "act": 3,
-      "narration": "黒曜石を磨いたもの。",
-      "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "黒曜石を磨いた鏡"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 205,
-      "act": 3,
-      "narration": "銅や青銅を磨いたもの。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "銅や青銅を磨いた鏡"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 206,
-      "act": 3,
-      "narration": "金や銀や水晶のものもある。",
-      "visual": {
-        "type": "figure",
-        "figure": "crown",
-        "label": "金・銀・水晶の鏡"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 207,
-      "act": 3,
-      "narration": "だがそれらの多くは化粧のための道具で、映る像は暗く、輪郭も甘い。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "化粧の道具、暗く甘い像"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 208,
-      "act": 3,
-      "narration": "人の顔をはっきり映すというより、位置を確かめるための面に近い。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "位置を確かめる面"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 209,
-      "act": 3,
-      "narration": "水面はどうか。",
-      "visual": {
-        "type": "scenery",
-        "place": "sea",
-        "people": 0,
-        "caption": "水面はどうか"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 210,
-      "act": 3,
-      "narration": "揺れるうえに、覗き込む姿勢しか取れない。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "揺れ、覗き込む姿勢だけ"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 211,
-      "act": 3,
-      "narration": "毎朝、正面から、鮮明に自分の顔を見るという習慣は、この段階の道具では成立しない。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "毎朝みる自分の顔"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 212,
-      "act": 3,
-      "narration": "転機は14世紀に来る。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "14世紀の転機"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 213,
-      "act": 3,
-      "narration": "1317年、ヴェネツィアのガラス工が、錫アマルガムをガラスの裏面に付着させる方法を発明した。",
-      "visual": {
-        "type": "stat",
-        "value": "1317年",
-        "label": "錫アマルガム法の発明",
-        "context": "ヴェネツィアのガラス工",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 214,
-      "act": 3,
-      "narration": "しわのない錫箔をガラスの上に置き、その上に水銀を注いで放置する。",
-      "visual": {
-        "type": "list",
-        "title": "鏡づくりの工程",
-        "items": [
-          "しわのない錫箔をガラスに置く",
-          "その上に水銀を注ぐ",
-          "放置して定着させる"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 215,
-      "act": 3,
-      "narration": "一枚の完成におよそ1か月を要したと伝えられている。",
-      "visual": {
-        "type": "stat",
-        "value": "約1か月",
-        "label": "一枚の完成に要した時間",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 216,
-      "act": 3,
-      "narration": "鏡は高価な工芸品だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "高価な工芸品"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 217,
-      "act": 3,
-      "narration": "16世紀から17世紀にかけて、ヨーロッパの鏡需要のほとんどをヴェネツィアが独占的に供給している。",
-      "visual": {
-        "type": "figure",
-        "figure": "crown",
-        "label": "ヴェネツィアの独占供給"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 218,
-      "act": 3,
-      "narration": "つまりこの時代、鮮明な鏡を日常的に持てたのは、ごく限られた人々だった。",
-      "visual": {
-        "type": "pyramid",
-        "title": "鏡を持てた者",
-        "tiers": [
-          {
-            "label": "ごく限られた人々",
-            "note": "鮮明な鏡を日常に"
-          },
-          {
-            "label": "職人・商人",
-            "note": ""
-          },
-          {
-            "label": "大多数",
-            "note": "鏡なき暮らし"
-          }
-        ]
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 219,
-      "act": 3,
-      "narration": "次の転機は19世紀である。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "19世紀の転機"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 220,
-      "act": 3,
-      "narration": "1835年、ドイツの化学者ユストゥス・フォン・リービッヒが銀鏡反応を開発した。",
-      "visual": {
-        "type": "stat",
-        "value": "1835年",
-        "label": "銀鏡反応の開発",
-        "context": "化学者リービッヒ",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 221,
-      "act": 3,
-      "narration": "銀が析出してガラスに付着するこの反応が製鏡に応用され、大量生産の契機になった。",
-      "visual": {
-        "type": "figure",
-        "figure": "factory",
-        "label": "製鏡への応用と大量生産"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 222,
-      "act": 3,
-      "narration": "銀を使う方式が普及するのは1840年ころからである。",
-      "visual": {
-        "type": "stat",
-        "value": "1840年ころ",
-        "label": "銀を使う方式の普及",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 223,
-      "act": 3,
-      "narration": "ここから逆算すると、人類が自分の顔を鮮明に、毎日、安価に見られるようになってから、まだ180年ほどしか経っていない。",
-      "visual": {
-        "type": "stat",
-        "value": "180年",
-        "label": "自分の顔を毎日安価に見られる歴史",
-        "context": "逆算すると",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 224,
-      "act": 3,
-      "narration": "それ以前の人間は、自分の顔をほとんど知らないまま一生を終えていた。",
-      "visual": {
-        "type": "scenery",
-        "place": "village",
-        "people": 4,
-        "caption": "顔をほとんど知らぬまま一生を終えた"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 225,
-      "act": 3,
-      "narration": "それでも水面や磨いた金属があったのだから、まったく知らなかったわけではないだろう、と思うかもしれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "水面や磨いた金属では?"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 226,
-      "act": 3,
-      "narration": "その指摘はまったく正しい。",
-      "visual": {
-        "type": "dialogue",
-        "line": "その指摘は、まったく正しい。"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 227,
-      "act": 3,
-      "narration": "問題は、知っていたかどうかではなく、何回見たかである。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "知っていたか",
-        "right_title": "何回見たか",
-        "left_items": [
-          "知識の有無"
-        ],
-        "right_items": [
-          "接触の回数"
-        ],
-        "center_label": "問いのすり替え"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 228,
-      "act": 3,
-      "narration": "ミタらの実験が依拠している単純接触という考え方は、見た回数の関数として働く。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "単純接触は回数の関数"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 229,
-      "act": 3,
-      "narration": "揺れる水面で年に数回確かめる顔と、鮮明な鏡で毎朝確かめる顔とでは、蓄積される回数が桁で違う。",
-      "visual": {
-        "type": "orbs",
-        "title": "蓄積される回数の差",
-        "items": [
-          {
-            "label": "揺れる水面で",
-            "value": 5,
-            "display": "年に数回"
-          },
-          {
-            "label": "鮮明な鏡で",
-            "value": 365,
-            "display": "毎朝"
-          }
-        ],
-        "shafts": false
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 230,
-      "act": 3,
-      "narration": "そして左右を反転させた像を何万回も見るという経験は、鏡が安くなって初めて人類に配られたものである。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "反転像を何万回も"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 231,
-      "act": 4,
-      "narration": "あなたが自分の顔に対して持っている、あの奇妙に強い既視感は、たかだか数世代前には存在しなかった。",
-      "visual": {
-        "type": "dialogue",
-        "line": "この既視感は、数世代前には存在しなかった。"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 232,
-      "act": 4,
-      "narration": "では、その新しい習慣は、我々に何を払わせているのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "何を払わせているのか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 233,
-      "act": 4,
-      "narration": "数字をもう一度置く。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "数字をもう一度"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 234,
-      "act": 4,
-      "narration": "100人を超える皮膚科医への調査で、5割を超える医師が美容目的の相談の増加を報告した。",
-      "visual": {
-        "type": "stat",
-        "value": "5割超",
-        "label": "美容目的の相談増加を報告した医師",
-        "context": "皮膚科医100人超への調査",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 235,
-      "act": 4,
-      "narration": "86パーセントの医師が、患者がビデオ会議を理由に挙げたと答えている。",
-      "visual": {
-        "type": "units",
-        "total": 100,
-        "value": 86,
-        "label": "100人中86人がビデオ会議を理由に"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 236,
-      "act": 4,
-      "narration": "感染症が流行し、外で人に会う回数はむしろ減っていた時期である。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "会う回数はむしろ減った"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 237,
-      "act": 4,
-      "narration": "増えていたのは、画面の中の自分を見る回数のほうだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "画面の中の自分を見る回数"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 238,
-      "act": 4,
-      "narration": "しかもその像は、前面カメラという、通常より大きくゆがめるレンズを通っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "前面カメラという歪めるレンズ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 239,
-      "act": 4,
-      "narration": "近い距離から広い画角で撮るため、中央にあるものが手前に張り出して写る。",
-      "visual": {
-        "type": "figure",
-        "figure": "smartphone",
-        "label": "中央が手前に張り出す"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 240,
-      "act": 4,
-      "narration": "会議の画面で自分の鼻筋が気になるのは、その一点に光学的な理由がある。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "鼻筋が気になる光学的理由"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 241,
-      "act": 4,
-      "narration": "そして厄介なことに、その歪んだ像を見ているのは、あなただけではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "見ているのはあなただけではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 242,
-      "act": 4,
-      "narration": "画面の向こうの全員が、同じ歪んだあなたを見ている。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "全員が同じ歪んだあなたを見る"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 243,
-      "act": 5,
-      "narration": "理由は、人が急に見た目を気にしはじめたからではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "理由は別にある"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 244,
-      "act": 5,
-      "narration": "鏡が配ってきた見慣れた像と、画面が返してくる新しい像が、同時に手元にあるからだ。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "鏡が配った見慣れた像",
-        "right_title": "画面が返す新しい像",
-        "left_items": [
-          "何万回もの既視"
-        ],
-        "right_items": [
-          "歪んだ初対面"
-        ],
-        "center_label": "同時に手元にある"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 245,
-      "act": 5,
-      "narration": "基準が二つある状態では、どちらかが必ず失敗に見える。",
-      "visual": {
-        "type": "verdict",
-        "caption": "基準が二つある状態",
-        "statement": "基準が二つ = どちらかが必ず失敗に見える",
-        "note": ""
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 246,
-      "act": 4,
-      "narration": "2021年の春、皮膚科の学会で、この現象に名前が付いた。",
-      "visual": {
-        "type": "stat",
-        "value": "2021年",
-        "label": "この現象に名前が付いた",
-        "context": "皮膚科の学会",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 247,
-      "act": 4,
-      "narration": "報告した医師は、それを遊園地の変な鏡を覗き込むようなものだと表現している。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "遊園地の変な鏡"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 248,
-      "act": 4,
-      "narration": "診察室に来る人が口にするのは、鏡を見て気になった、ではない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "鏡を見て気になった、ではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 249,
-      "act": 4,
-      "narration": "会議の画面に映った自分を見て気になった、である。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "会議の画面に映った自分"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 250,
-      "act": 4,
-      "narration": "何年も同じ顔で暮らしてきた人が、在宅勤務が始まった週から、急に自分の輪郭の話をしはじめる。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "在宅勤務で輪郭を気にしだす"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 251,
-      "act": 4,
-      "narration": "顔は変わっていない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "顔は変わっていない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 252,
-      "act": 4,
-      "narration": "増えたのは、その顔を他人と同じ角度で見る時間だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "他人と同じ角度で見る時間"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 253,
-      "act": 4,
-      "narration": "鏡は、あなたに反転した顔を配った。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "鏡が配る反転した顔"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 254,
-      "act": 4,
-      "narration": "画面は、反転していない顔を配った。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "画面が配る反転しない顔"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 255,
-      "act": 4,
-      "narration": "どちらも同じ顔である。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "どちらも同じ顔"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 256,
-      "act": 4,
-      "narration": "だが基準が二つになった瞬間、片方は必ず劣ったほうに見える。",
-      "visual": {
-        "type": "columns",
-        "title": "基準が二つになる",
-        "left": {
-          "label": "鏡像",
-          "value": "見慣れ",
-          "level": 0.4
-        },
-        "right": {
-          "label": "実像",
-          "value": "劣って見える",
-          "level": 0.85
-        },
-        "note": "片方は必ず劣ったほうに見える"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 257,
-      "act": 4,
-      "narration": "では、その落差を毎日払っているのは誰なのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "落差を毎日払うのは誰か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 258,
-      "act": 4,
-      "narration": "ここまでの道のりを振り返ろう。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "ここまでの道のりを振り返る"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 259,
-      "act": 4,
-      "narration": "1977年の実験は、本人が鏡像を選び、友人と恋人が実像を選ぶことを示し、好みが顔の造作ではなく見慣れで決まることを記録した。",
-      "visual": {
-        "type": "table",
-        "title": "1977年の実験",
-        "headers": [
-          "見る人",
-          "選んだ像"
-        ],
-        "rows": [
-          [
-            "本人",
-            "鏡像"
-          ],
-          [
-            "友人・恋人",
-            "実像"
-          ]
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 260,
-      "act": 4,
-      "narration": "2008年の実験は、人が自分の顔を実物より魅力的なものとして選び、列の中からより速く見つけ出すことを示した。",
-      "visual": {
-        "type": "chart",
-        "title": "2008年の実験",
-        "subtitle": "",
-        "unit": "",
-        "items": [
-          {
-            "label": "実物の自分",
-            "value": 50
-          },
-          {
-            "label": "盛った自分",
-            "value": 80
-          }
-        ],
-        "highlight": 1,
-        "annotation": "実物より魅力的な顔を速く見つけ出す"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 261,
-      "act": 4,
-      "narration": "同じ実験の続きは、その盛りが自分と友人には及び、よく知らない他人には及ばないこと、そして意識的な自尊心ではなく意識に上らない自己価値と結びついていることを明らかにした。",
-      "visual": {
-        "type": "list",
-        "title": "同じ実験の続き",
-        "items": [
-          "盛りは自分と友人に及ぶ",
-          "知らない他人には及ばない",
-          "意識に上らない自己価値と結びつく"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 262,
-      "act": 4,
-      "narration": "ギャラップの記録は、鏡の中の像を自分だと理解すること自体が、動物界で例外的な能力だと突きつけた。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "鏡像を自分だと理解する能力"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 263,
-      "act": 4,
-      "narration": "鏡の技術史は、その能力を毎日使えるようになったのが、たかだか180年ほど前だと教えている。",
-      "visual": {
-        "type": "stat",
-        "value": "180年",
-        "label": "鏡を毎日使えるようになって",
-        "context": "鏡の技術史",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 264,
-      "act": 4,
-      "narration": "そして皮膚科医への調査は、そこに画面という二つ目の鏡が加わった数年間を映していた。",
-      "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "画面という二つ目の鏡"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 265,
-      "act": 5,
-      "narration": "写真写りが悪いのではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "写真写りが悪いのではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 266,
-      "act": 5,
-      "narration": "あなたが見慣れているほうの顔が、この世に一枚も存在しないのである。",
-      "visual": {
-        "type": "verdict",
-        "caption": "見慣れた顔",
-        "statement": "見慣れた顔 = この世に一枚も存在しない",
-        "note": ""
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 267,
-      "act": 5,
-      "narration": "鏡が返しているのは左右の入れ替わった像で、記憶が返しているのは少し盛られた像だ。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "鏡",
-        "right_title": "記憶",
-        "left_items": [
-          "左右が入れ替わった像"
-        ],
-        "right_items": [
-          "少し盛られた像"
-        ],
-        "center_label": "どちらも本物ではない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 268,
-      "act": 5,
-      "narration": "その二つを合成したものを、あなたは自分の顔だと思ってきた。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "合成した顔を自分と思ってきた"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 269,
-      "act": 5,
-      "narration": "写真は、あなたを不細工に写したのではない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "不細工に写したのではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 270,
-      "act": 5,
-      "narration": "あなたが一度も見たことのない角度から、あなたを写しただけである。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "見たことのない角度から写した"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 271,
-      "act": 5,
-      "narration": "証明写真の一枚に戻ろう。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "一枚の証明写真に戻る"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 272,
-      "act": 5,
-      "narration": "あなたはそれを、封筒にしまうかどうか迷っている。",
-      "visual": {
-        "type": "dialogue",
-        "line": "封筒にしまうかどうか、迷っている"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 273,
-      "act": 5,
-      "narration": "ここで、その顔を失敗だと呼ぶ必要はない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "失敗と呼ぶ必要はない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 274,
-      "act": 5,
-      "narration": "そこに写っているのは、あなたを好きな人たちが、ずっと見てきたほうの顔である。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "好きな人がずっと見てきた顔"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 275,
-      "act": 5,
-      "narration": "彼らが実像を選んだのは、それが彼らにとって見慣れた顔だからだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "彼らには見慣れた顔だから"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 276,
-      "act": 5,
-      "narration": "最後にひとつだけ聞いておきたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "最後にひとつだけ聞きたい"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 277,
-      "act": 5,
-      "narration": "あなたが自分の顔を最後に良いと思ったのは、鏡の前でだっただろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "鏡の前でだったか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 278,
-      "act": 5,
-      "narration": "それとも、誰かに撮ってもらった一枚を見たときだっただろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "camera",
-        "label": "撮ってもらった一枚を見たときか"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 279,
-      "act": 5,
-      "narration": "そんなことまで、また解剖してしまいました。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "そんなことまで、また解剖してしまった"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 280,
       "act": 5,
       "narration": "よろしければチャンネル登録と高評価をお願いします。",
       "visual": {
@@ -3406,17 +2525,17 @@
         "figure": "applause",
         "label": "チャンネル登録と高評価を"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
-      "id": 281,
+      "id": 199,
       "act": 5,
       "narration": "それでは次の動画で、またお会いしましょう。",
       "visual": {
         "type": "scenery",
-        "place": "city",
-        "people": 1,
-        "caption": "また、次の夜に"
+        "place": "village",
+        "people": 2,
+        "caption": "それでは次の動画で、またお会いしましょう"
       },
       "concept_color": "dusk"
     }
