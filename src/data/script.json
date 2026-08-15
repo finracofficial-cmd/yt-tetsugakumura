@@ -70,10 +70,10 @@
     {
       "id": 5,
       "act": 5,
-      "narration": "そんなことを、考えすぎてみました。",
+      "narration": "そんなことを、余計に解剖してみました。",
       "visual": {
         "type": "keyword",
-        "keyword": "考えすぎる"
+        "keyword": "静かな村"
       },
       "concept_color": "pitch-black"
     }

@@ -26,6 +26,7 @@ import { OrbsContent } from "./components/contents/OrbsContent";
 import { VerdictContent } from "./components/contents/VerdictContent";
 import { EndCard } from "./components/EndCard";
 import { getPalette } from "./theme";
+import { CHANNEL_NAME } from "../channel";
 import type { AssetsManifest, Scene, SyncMap, Visual } from "../generator/types";
 import scriptJson from "../data/script.json";
 import syncMapJson from "../data/sync-map.json";
@@ -365,7 +366,7 @@ export const MainComposition: React.FC = () => {
         durationInFrames={END_CARD_FRAMES}
         name="EndCard"
       >
-        <EndCard channelName="考えすぎる葦" durationInFrames={END_CARD_FRAMES} />
+        <EndCard channelName={CHANNEL_NAME} durationInFrames={END_CARD_FRAMES} />
       </Sequence>
     </AbsoluteFill>
   );

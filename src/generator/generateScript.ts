@@ -8,6 +8,7 @@
  * 必要な環境変数: ANTHROPIC_API_KEY
  */
 import Anthropic from "@anthropic-ai/sdk";
+import { SIGN_OFF, SIGN_OFF_MARK } from "../channel";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -168,9 +169,9 @@ function validateScript(script: VideoScript): void {
     }
   }
   const last = script.scenes[script.scenes.length - 1];
-  if (!last.narration.includes("考えすぎてみました")) {
+  if (!last.narration.includes(SIGN_OFF_MARK)) {
     console.warn(
-      "[generateScript] 警告: 結びの決まり文句「そんなことを、考えすぎてみました。」が最終シーンに含まれていません。",
+      `[generateScript] 警告: 結びの決まり文句「${SIGN_OFF}」が最終シーンに含まれていません。`,
     );
   }
 }

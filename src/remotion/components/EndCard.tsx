@@ -1,10 +1,13 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { SERIF_FONT } from "./SceneFrame";
+import { CHANNEL_AVATAR_GLYPH } from "../../channel";
 import { CUBIC_OUT } from "../easing";
 import { revealAt } from "../reveal";
 
 type Props = {
   channelName: string;
+  /** アイコンの円に入れる1文字 */
+  avatarGlyph?: string;
   durationInFrames: number;
 };
 
@@ -14,7 +17,11 @@ type Props = {
  *   高評価・低評価・コメントのアイコン / SUBSCRIBEボタン / 動く手のカーソル
  * 手のカーソルが動いて高評価→コメント→SUBSCRIBE の順に触れていく。
  */
-export const EndCard: React.FC<Props> = ({ channelName, durationInFrames }) => {
+export const EndCard: React.FC<Props> = ({
+  channelName,
+  avatarGlyph = CHANNEL_AVATAR_GLYPH,
+  durationInFrames,
+}) => {
   const frame = useCurrentFrame();
 
   const paperIn = revealAt(frame, 0.02, durationInFrames, 18);
@@ -109,7 +116,7 @@ export const EndCard: React.FC<Props> = ({ channelName, durationInFrames }) => {
             color: "#2c2a24",
           }}
         >
-          葦
+          {avatarGlyph}
         </div>
         <div
           style={{
