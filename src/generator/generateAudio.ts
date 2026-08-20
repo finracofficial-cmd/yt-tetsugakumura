@@ -257,6 +257,37 @@ export async function elevenLabsSpeech(
 }
 
 /**
+ * ElevenLabs の残クレジットを調べる。
+ *
+ * 「生成が落ちたのはクレジット切れでは？」を毎回推測で議論しないための計測。
+ * 残量はログに必ず出し、明らかに足りないときは**合成を始める前に**落とす
+ * （179シーンの途中で尽きると、それまでの合成分が無駄になる）。
+ *
+ * 失敗しても本処理は止めない（残量が読めないだけで合成自体は可能なため）。
+ */
+export async function fetchElevenLabsQuota(
+  apiKey: string,
+): Promise<{ used: number; limit: number; remaining: number } | null> {
+  try {
+    const res = await fetch("https://api.elevenlabs.io/v1/user/subscription", {
+      headers: { "xi-api-key": apiKey },
+    });
+    if (!res.ok) return null;
+    const j = (await res.json()) as { character_count?: number; character_limit?: number };
+    if (typeof j.character_count !== "number" || typeof j.character_limit !== "number") {
+      return null;
+    }
+    return {
+      used: j.character_count,
+      limit: j.character_limit,
+      remaining: Math.max(0, j.character_limit - j.character_count),
+    };
+  } catch {
+    return null;
+  }
+}
+
+/**
  * 一時的な失敗（同時実行数超過・レート制限・サーバ側の一時エラー）かどうか。
  *
  * ElevenLabs の 429 concurrent_limit_exceeded は「今この瞬間に投げすぎ」という
@@ -353,6 +384,37 @@ export async function generateAudio(): Promise<SyncMap> {
     console.log(
       `[generateAudio] TTS音声を生成中... (${desc}, scenes=${script.scenes.length})`,
     );
+
+    // ElevenLabs は文字数でクレジットを消費する。合成を始める前に残量を測って必ず出す。
+    if (TTS_PROVIDER === "elevenlabs" && elevenLabsKey) {
+      const needed = script.scenes.reduce((n, s) => n + speakTextFor(s).length, 0);
+      const quota = await fetchElevenLabsQuota(elevenLabsKey);
+      if (!quota) {
+        console.warn(
+          `[generateAudio] クレジット残量を取得できませんでした（合成は続行します）。必要文字数=${needed.toLocaleString()}`,
+        );
+      } else {
+        const pct = quota.limit > 0 ? Math.round((quota.remaining / quota.limit) * 100) : 0;
+        console.log(
+          `[generateAudio] ElevenLabsクレジット: 残り ${quota.remaining.toLocaleString()} / ${quota.limit.toLocaleString()} 文字 (${pct}%)` +
+            ` — この動画に必要: ${needed.toLocaleString()} 文字`,
+        );
+        if (quota.remaining < needed) {
+          throw new Error(
+            `[generateAudio] ElevenLabsのクレジットが不足しています。\n` +
+              `  残り ${quota.remaining.toLocaleString()} 文字 < 必要 ${needed.toLocaleString()} 文字\n` +
+              `  途中まで合成しても無駄になるため、開始前に停止しました。\n` +
+              `  プランを更新するか、TTS_PROVIDER=voicevox で生成してください。`,
+          );
+        }
+        if (quota.remaining - needed < quota.limit * 0.1) {
+          console.warn(
+            `[generateAudio] 警告: この生成でクレジットの残りが1割を切ります（生成後の残り 約${(quota.remaining - needed).toLocaleString()} 文字）。`,
+          );
+        }
+      }
+    }
+
     mkdirSync(AUDIO_DIR, { recursive: true });
   }
 
