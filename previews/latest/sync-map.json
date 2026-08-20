@@ -1,932 +1,932 @@
 {
   "fps": 30,
-  "totalDurationInFrames": 26904,
+  "totalDurationInFrames": 29759,
   "scenes": [
     {
       "id": 1,
       "startMs": 0,
       "startFrame": 0,
-      "durationMs": 3240,
-      "durationInFrames": 98,
+      "durationMs": 8280,
+      "durationInFrames": 249,
       "audioFile": "audio/scene-1.mp3",
       "segments": [
         {
-          "text": "平日の朝、目覚ましが鳴る前に目が覚める。",
-          "startFrame": 0,
-          "durationInFrames": 94
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "startMs": 3240,
-      "startFrame": 98,
-      "durationMs": 2440,
-      "durationInFrames": 74,
-      "audioFile": "audio/scene-2.mp3",
-      "segments": [
-        {
-          "text": "カーテンの隙間はまだ暗いままだ。",
-          "startFrame": 0,
-          "durationInFrames": 70
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "startMs": 5680,
-      "startFrame": 172,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-3.mp3",
-      "segments": [
-        {
-          "text": "天井を見ながら、あなたは頭の中で引き算をしている。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "startMs": 9320,
-      "startFrame": 282,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-4.mp3",
-      "segments": [
-        {
-          "text": "昨日布団に入ったのが一時過ぎだから、四時間と少し。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "startMs": 12800,
-      "startFrame": 387,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-5.mp3",
-      "segments": [
-        {
-          "text": "もう眠れそうにない。",
-          "startFrame": 0,
-          "durationInFrames": 41
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "startMs": 14800,
-      "startFrame": 447,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-6.mp3",
-      "segments": [
-        {
-          "text": "その計算を、あなたはもう何年も続けている。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "startMs": 18760,
-      "startFrame": 566,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-7.mp3",
-      "segments": [
-        {
-          "text": "そしてたいてい、同じ結論にたどり着く。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "startMs": 21680,
-      "startFrame": 654,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-8.mp3",
-      "segments": [
-        {
-          "text": "自分はこれで足りているのかもしれない、という結論である。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "startMs": 25560,
-      "startFrame": 771,
-      "durationMs": 2280,
-      "durationInFrames": 69,
-      "audioFile": "audio/scene-9.mp3",
-      "segments": [
-        {
-          "text": "実際、日中に倒れているわけではない。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "startMs": 27840,
-      "startFrame": 840,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-10.mp3",
-      "segments": [
-        {
-          "text": "仕事も回っているし、周りから指摘されたこともない。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "startMs": 31400,
-      "startFrame": 947,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-11.mp3",
-      "segments": [
-        {
-          "text": "会議で意見も言えているし、締め切りにも間に合っている。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "startMs": 34720,
-      "startFrame": 1047,
-      "durationMs": 4840,
-      "durationInFrames": 146,
-      "audioFile": "audio/scene-12.mp3",
-      "segments": [
-        {
-          "text": "だとすればこれは、体が短い睡眠に慣れたということではないだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 142
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "startMs": 39560,
-      "startFrame": 1193,
-      "durationMs": 2690,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-13.mp3",
-      "segments": [
-        {
-          "text": "そう考えたほうが、話の収まりもいい。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "startMs": 42250,
-      "startFrame": 1274,
-      "durationMs": 4120,
-      "durationInFrames": 124,
-      "audioFile": "audio/scene-14.mp3",
-      "segments": [
-        {
-          "text": "同じ計算をしている人は、この国にかなりの数いる。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "startMs": 46370,
-      "startFrame": 1398,
-      "durationMs": 8760,
-      "durationInFrames": 263,
-      "audioFile": "audio/scene-15.mp3",
-      "segments": [
-        {
-          "text": "厚生労働省の国民健康栄養調査によれば、一日の平均睡眠時間が六時間未満の人は、およそ四割にのぼる。",
-          "startFrame": 0,
-          "durationInFrames": 259
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "startMs": 55130,
-      "startFrame": 1661,
-      "durationMs": 8040,
-      "durationInFrames": 242,
-      "audioFile": "audio/scene-16.mp3",
-      "segments": [
-        {
-          "text": "令和元年の調査では、六時間未満の割合は男性で37.5パーセント、女性で40.6パーセントだった。",
-          "startFrame": 0,
-          "durationInFrames": 238
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "startMs": 63170,
-      "startFrame": 1903,
-      "durationMs": 8120,
-      "durationInFrames": 244,
-      "audioFile": "audio/scene-17.mp3",
-      "segments": [
-        {
-          "text": "しかも男性の30代から50代、女性の40代から50代では、その割合が四割を超えている。",
-          "startFrame": 0,
-          "durationInFrames": 240
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "startMs": 71290,
-      "startFrame": 2147,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-18.mp3",
-      "segments": [
-        {
-          "text": "働き盛りと呼ばれる層が、まとめてこの帯の中に入っているわけである。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "startMs": 75810,
-      "startFrame": 2283,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-19.mp3",
-      "segments": [
-        {
-          "text": "そしてこの帯にいる人の多くが、同じ言葉を使う。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "startMs": 79130,
-      "startFrame": 2383,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-20.mp3",
-      "segments": [
-        {
-          "text": "慣れた。",
-          "startFrame": 0,
-          "durationInFrames": 46
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "startMs": 81130,
-      "startFrame": 2443,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-21.mp3",
-      "segments": [
-        {
-          "text": "自分は短くても平気な体質だ。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "startMs": 83490,
-      "startFrame": 2514,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-22.mp3",
-      "segments": [
-        {
-          "text": "人によっては、それを訓練の成果だと考えている。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "startMs": 86970,
-      "startFrame": 2619,
-      "durationMs": 6530,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-23.mp3",
-      "segments": [
-        {
-          "text": "眠る時間は減らせる技術であり、自分はその技術を身につけたのだ、と。",
-          "startFrame": 0,
-          "durationInFrames": 182
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "startMs": 93500,
-      "startFrame": 2815,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-24.mp3",
-      "segments": [
-        {
-          "text": "この考え方には筋が通っているように見える。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "startMs": 96420,
-      "startFrame": 2903,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-25.mp3",
-      "segments": [
-        {
-          "text": "走る距離を伸ばせるなら、眠る時間も縮められるはずだ。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "startMs": 100300,
-      "startFrame": 3020,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-26.mp3",
-      "segments": [
-        {
-          "text": "体は鍛えれば応えてくれる。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "startMs": 102660,
-      "startFrame": 3091,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-27.mp3",
-      "segments": [
-        {
-          "text": "少なくとも、そのように扱える領域が人間にはいくつもある。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "startMs": 106620,
-      "startFrame": 3210,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-28.mp3",
-      "segments": [
-        {
-          "text": "その感覚は、本当だろうか。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "startMs": 109620,
-      "startFrame": 3300,
-      "durationMs": 8120,
-      "durationInFrames": 244,
-      "audioFile": "audio/scene-29.mp3",
-      "segments": [
-        {
-          "text": "もっと正確に言えば、その感覚が本当かどうかを、感覚の側から判定することはできるのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 240
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "startMs": 117740,
-      "startFrame": 3544,
-      "durationMs": 4040,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-30.mp3",
-      "segments": [
-        {
-          "text": "今日はそれを、睡眠科学と遺伝学から解剖してみたい。",
-          "startFrame": 0,
-          "durationInFrames": 118
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "startMs": 121780,
-      "startFrame": 3666,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-31.mp3",
-      "segments": [
-        {
-          "text": "この問いには、ちょうど答えになる実験がある。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "startMs": 124700,
-      "startFrame": 3754,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-32.mp3",
-      "segments": [
-        {
-          "text": "ただし設計を先に見ておかないと、結果の意味が読めない。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "startMs": 128420,
-      "startFrame": 3866,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-33.mp3",
-      "segments": [
-        {
-          "text": "手順のほうが結論を運んでいる種類の研究だからである。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "startMs": 132300,
-      "startFrame": 3983,
-      "durationMs": 8280,
-      "durationInFrames": 249,
-      "audioFile": "audio/scene-34.mp3",
-      "segments": [
-        {
-          "text": "2003年、ハンス・ファン・ドンゲンとデイヴィッド・ディンジェスらの研究チームが、専門誌スリープに発表した論文がそれにあたる。",
+          "text": "深夜、隣で眠っている相手の背中を見ながら、もう何年になるのかを天井に向かって数えている。",
           "startFrame": 0,
           "durationInFrames": 245
         }
       ]
     },
     {
-      "id": 35,
-      "startMs": 140580,
-      "startFrame": 4232,
-      "durationMs": 6530,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-35.mp3",
+      "id": 2,
+      "startMs": 8280,
+      "startFrame": 249,
+      "durationMs": 7000,
+      "durationInFrames": 210,
+      "audioFile": "audio/scene-2.mp3",
       "segments": [
         {
-          "text": "集められたのは、21歳から38歳の健康な成人48人だった。",
+          "text": "付き合い始めたのがあの年の春で、一緒に住み始めたのがその二年後だったから、と指を折っていく。",
           "startFrame": 0,
-          "durationInFrames": 182
+          "durationInFrames": 206
         }
       ]
     },
     {
-      "id": 36,
-      "startMs": 147110,
-      "startFrame": 4428,
-      "durationMs": 6280,
-      "durationInFrames": 189,
-      "audioFile": "audio/scene-36.mp3",
+      "id": 3,
+      "startMs": 15280,
+      "startFrame": 459,
+      "durationMs": 7240,
+      "durationInFrames": 218,
+      "audioFile": "audio/scene-3.mp3",
       "segments": [
         {
-          "text": "参加者は、就床時間を四時間、六時間、八時間のいずれかに無作為に割り付けられる。",
+          "text": "数え終わったところで、自分がいま何を確かめようとしていたのかが分からなくなる。",
           "startFrame": 0,
-          "durationInFrames": 185
+          "durationInFrames": 214
         }
       ]
     },
     {
-      "id": 37,
-      "startMs": 153390,
-      "startFrame": 4617,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-37.mp3",
+      "id": 4,
+      "startMs": 22520,
+      "startFrame": 677,
+      "durationMs": 2440,
+      "durationInFrames": 74,
+      "audioFile": "audio/scene-4.mp3",
       "segments": [
         {
-          "text": "自分で選ぶのではなく、くじで決まる。",
+          "text": "好きかどうかを確かめていたわけではない。",
           "startFrame": 0,
-          "durationInFrames": 72
+          "durationInFrames": 70
         }
       ]
     },
     {
-      "id": 38,
-      "startMs": 155910,
-      "startFrame": 4693,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-38.mp3",
+      "id": 5,
+      "startMs": 24960,
+      "startFrame": 751,
+      "durationMs": 4040,
+      "durationInFrames": 122,
+      "audioFile": "audio/scene-5.mp3",
       "segments": [
         {
-          "text": "そしてその時間割を、十四日間にわたって続ける。",
+          "text": "それについては、だいぶ前に自分の中で答えが出てしまっている。",
           "startFrame": 0,
-          "durationInFrames": 130
+          "durationInFrames": 118
         }
       ]
     },
     {
-      "id": 39,
-      "startMs": 160350,
-      "startFrame": 4827,
-      "durationMs": 5880,
-      "durationInFrames": 177,
-      "audioFile": "audio/scene-39.mp3",
-      "segments": [
-        {
-          "text": "研究室に滞在するあいだ、参加者は毎日、注意力と反応速度を測る課題を受ける。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "startMs": 166230,
-      "startFrame": 5004,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-40.mp3",
-      "segments": [
-        {
-          "text": "単純な反応の速さを、条件をそろえて何度も記録していく作業である。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "startMs": 170750,
-      "startFrame": 5140,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-41.mp3",
-      "segments": [
-        {
-          "text": "それと並行して、いま自分がどれくらい眠いと感じているかも自己申告する。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "startMs": 175670,
-      "startFrame": 5288,
+      "id": 6,
+      "startMs": 29000,
+      "startFrame": 873,
       "durationMs": 5480,
       "durationInFrames": 165,
-      "audioFile": "audio/scene-42.mp3",
+      "audioFile": "audio/scene-6.mp3",
       "segments": [
         {
-          "text": "客観の指標と主観の指標を、同じ人から同時に取り続けたわけだ。",
+          "text": "それでもあなたが数えていたのは、気持ちの深さではなく年数のほうだった。",
           "startFrame": 0,
           "durationInFrames": 161
         }
       ]
     },
     {
-      "id": 43,
-      "startMs": 181150,
-      "startFrame": 5453,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-43.mp3",
+      "id": 7,
+      "startMs": 34480,
+      "startFrame": 1038,
+      "durationMs": 8290,
+      "durationInFrames": 249,
+      "audioFile": "audio/scene-7.mp3",
       "segments": [
         {
-          "text": "ふだんの生活ではまず手に入らない二本の線が、ここで並べて引かれている。",
+          "text": "そして数え終わった翌朝も、いつもと同じ時刻に二人で家を出て、同じ改札で別れることになる。",
           "startFrame": 0,
-          "durationInFrames": 158
+          "durationInFrames": 235
         }
       ]
     },
     {
-      "id": 44,
-      "startMs": 186550,
-      "startFrame": 5615,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-44.mp3",
+      "id": 8,
+      "startMs": 42770,
+      "startFrame": 1287,
+      "durationMs": 2600,
+      "durationInFrames": 78,
+      "audioFile": "audio/scene-8.mp3",
       "segments": [
         {
-          "text": "十四日という長さは短くない。",
+          "text": "情が湧いたのだ、と人は言う。",
           "startFrame": 0,
-          "durationInFrames": 58
+          "durationInFrames": 74
         }
       ]
     },
     {
-      "id": 45,
-      "startMs": 188590,
-      "startFrame": 5677,
-      "durationMs": 4200,
-      "durationInFrames": 126,
-      "audioFile": "audio/scene-45.mp3",
-      "segments": [
-        {
-          "text": "二週間あれば、たいていの人は新しい生活のリズムに慣れる。",
-          "startFrame": 0,
-          "durationInFrames": 122
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "startMs": 192790,
-      "startFrame": 5803,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-46.mp3",
-      "segments": [
-        {
-          "text": "実際、参加者たちも慣れていった。",
-          "startFrame": 0,
-          "durationInFrames": 82
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "startMs": 195630,
-      "startFrame": 5889,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-47.mp3",
-      "segments": [
-        {
-          "text": "少なくとも、慣れたと申告するようになった。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 48,
-      "startMs": 198950,
-      "startFrame": 5989,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-48.mp3",
-      "segments": [
-        {
-          "text": "二週間も実験室にいる状況なんて特殊すぎる、と思うかもしれない。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 49,
-      "startMs": 203550,
-      "startFrame": 6127,
+      "id": 9,
+      "startMs": 45370,
+      "startFrame": 1365,
       "durationMs": 2000,
       "durationInFrames": 60,
-      "audioFile": "audio/scene-49.mp3",
+      "audioFile": "audio/scene-9.mp3",
       "segments": [
         {
-          "text": "その指摘はもっともである。",
+          "text": "惰性だ、とも言う。",
           "startFrame": 0,
-          "durationInFrames": 53
+          "durationInFrames": 50
         }
       ]
     },
     {
-      "id": 50,
-      "startMs": 205550,
-      "startFrame": 6187,
-      "durationMs": 5000,
-      "durationInFrames": 150,
-      "audioFile": "audio/scene-50.mp3",
-      "segments": [
-        {
-          "text": "生活のリズムも、光の量も、食事の時間も、ふだんとは違う。",
-          "startFrame": 0,
-          "durationInFrames": 146
-        }
-      ]
-    },
-    {
-      "id": 51,
-      "startMs": 210550,
-      "startFrame": 6337,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-51.mp3",
-      "segments": [
-        {
-          "text": "だが、この設計だからこそ見えるものがある。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "startMs": 214430,
-      "startFrame": 6454,
-      "durationMs": 5160,
-      "durationInFrames": 155,
-      "audioFile": "audio/scene-52.mp3",
-      "segments": [
-        {
-          "text": "ふだんの生活では、自分の反応速度を毎日同じ条件で測ってくれる人はいない。",
-          "startFrame": 0,
-          "durationInFrames": 151
-        }
-      ]
-    },
-    {
-      "id": 53,
-      "startMs": 219590,
-      "startFrame": 6609,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-53.mp3",
-      "segments": [
-        {
-          "text": "上司も家族も、あなたの反応が去年より何ミリ秒遅いかを教えてはくれない。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "startMs": 226030,
-      "startFrame": 6803,
-      "durationMs": 7160,
-      "durationInFrames": 215,
-      "audioFile": "audio/scene-54.mp3",
-      "segments": [
-        {
-          "text": "慣れたかどうかを、自己申告以外の方法で確かめる手段が、日常には最初から用意されていないのである。",
-          "startFrame": 0,
-          "durationInFrames": 211
-        }
-      ]
-    },
-    {
-      "id": 55,
-      "startMs": 233190,
-      "startFrame": 7018,
-      "durationMs": 4450,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-55.mp3",
-      "segments": [
-        {
-          "text": "では、その自己申告はどこまで信用できるのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "startMs": 237640,
-      "startFrame": 7152,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-56.mp3",
-      "segments": [
-        {
-          "text": "さて、結果である。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "startMs": 239680,
-      "startFrame": 7214,
-      "durationMs": 4120,
-      "durationInFrames": 124,
-      "audioFile": "audio/scene-57.mp3",
-      "segments": [
-        {
-          "text": "自覚的な眠気の申告は、途中から横ばいになった。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "startMs": 243800,
-      "startFrame": 7338,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-58.mp3",
-      "segments": [
-        {
-          "text": "最初の数日で悪化したあと、それ以上は悪くならない。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "startMs": 247200,
-      "startFrame": 7440,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-59.mp3",
-      "segments": [
-        {
-          "text": "数字の上でも、参加者はたしかに慣れているのである。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "startMs": 250840,
-      "startFrame": 7550,
+      "id": 10,
+      "startMs": 47370,
+      "startFrame": 1425,
       "durationMs": 4840,
       "durationInFrames": 146,
-      "audioFile": "audio/scene-60.mp3",
+      "audioFile": "audio/scene-10.mp3",
       "segments": [
         {
-          "text": "ところが、注意と反応速度の成績のほうは横ばいにならなかった。",
+          "text": "要するに決断できないだけなのだと、そこで話は終わりになる。",
           "startFrame": 0,
           "durationInFrames": 142
         }
       ]
     },
     {
+      "id": 11,
+      "startMs": 52210,
+      "startFrame": 1571,
+      "durationMs": 8520,
+      "durationInFrames": 256,
+      "audioFile": "audio/scene-11.mp3",
+      "segments": [
+        {
+          "text": "この説明は、居酒屋でもSNSでもほとんど反論を受けないまま流通していて、言われた本人もたいてい黙って受け入れてしまう。",
+          "startFrame": 0,
+          "durationInFrames": 252
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "startMs": 60730,
+      "startFrame": 1827,
+      "durationMs": 4680,
+      "durationInFrames": 141,
+      "audioFile": "audio/scene-12.mp3",
+      "segments": [
+        {
+          "text": "こうした夜が積み重なった先の数字だけは、公的な統計に残っている。",
+          "startFrame": 0,
+          "durationInFrames": 137
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "startMs": 65410,
+      "startFrame": 1968,
+      "durationMs": 16440,
+      "durationInFrames": 494,
+      "audioFile": "audio/scene-13.mp3",
+      "segments": [
+        {
+          "text": "厚生労働省の人口動態統計によれば、2024年の離婚件数は185,895組で、前年の183,814組より2,081組増えた。",
+          "startFrame": 0,
+          "durationInFrames": 490
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "startMs": 81850,
+      "startFrame": 2462,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-14.mp3",
+      "segments": [
+        {
+          "text": "離婚率は人口千対で1.55である。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "startMs": 85170,
+      "startFrame": 2562,
+      "durationMs": 9970,
+      "durationInFrames": 300,
+      "audioFile": "audio/scene-15.mp3",
+      "segments": [
+        {
+          "text": "ピークは2002年の289,836組で、そこから二十年以上かけて減ってきたのだが、ここ二年は続けて増えている。",
+          "startFrame": 0,
+          "durationInFrames": 286
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "startMs": 95140,
+      "startFrame": 2862,
+      "durationMs": 4040,
+      "durationInFrames": 122,
+      "audioFile": "audio/scene-16.mp3",
+      "segments": [
+        {
+          "text": "ただし、この統計が数えているのは、終わった関係だけである。",
+          "startFrame": 0,
+          "durationInFrames": 118
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "startMs": 99180,
+      "startFrame": 2984,
+      "durationMs": 5960,
+      "durationInFrames": 179,
+      "audioFile": "audio/scene-17.mp3",
+      "segments": [
+        {
+          "text": "数え終わったあとで結局その場に留まった夜のほうは、どこにも記録されない。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "startMs": 105140,
+      "startFrame": 3163,
+      "durationMs": 5330,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-18.mp3",
+      "segments": [
+        {
+          "text": "記録されないものを、決断力の不足と呼んでしまってよいのだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 146
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "startMs": 110470,
+      "startFrame": 3323,
+      "durationMs": 5960,
+      "durationInFrames": 179,
+      "audioFile": "audio/scene-19.mp3",
+      "segments": [
+        {
+          "text": "今日はそれを、行動経済学と進化心理学から解剖してみたい。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "startMs": 116430,
+      "startFrame": 3502,
+      "durationMs": 3400,
+      "durationInFrames": 102,
+      "audioFile": "audio/scene-20.mp3",
+      "segments": [
+        {
+          "text": "まず、通説の側を正しく立てておきたい。",
+          "startFrame": 0,
+          "durationInFrames": 98
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "startMs": 119830,
+      "startFrame": 3604,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-21.mp3",
+      "segments": [
+        {
+          "text": "ここを雑に扱うと、この回はただの気休めになる。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "startMs": 123550,
+      "startFrame": 3716,
+      "durationMs": 8920,
+      "durationInFrames": 268,
+      "audioFile": "audio/scene-22.mp3",
+      "segments": [
+        {
+          "text": "1985年、ハル・アークスとキャサリン・ブルーマーという二人の心理学者が、オハイオ大学の劇場で実験を行った。",
+          "startFrame": 0,
+          "durationInFrames": 264
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "startMs": 132470,
+      "startFrame": 3984,
+      "durationMs": 5080,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-23.mp3",
+      "segments": [
+        {
+          "text": "売られていたのは、その年の全演目を通しで観られるシーズン券である。",
+          "startFrame": 0,
+          "durationInFrames": 149
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "startMs": 137550,
+      "startFrame": 4137,
+      "durationMs": 9090,
+      "durationInFrames": 273,
+      "audioFile": "audio/scene-24.mp3",
+      "segments": [
+        {
+          "text": "窓口に来た客をおよそ三分の一ずつ三つに分け、それぞれ15ドル、13ドル、8ドルで買ってもらった。",
+          "startFrame": 0,
+          "durationInFrames": 259
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "startMs": 146640,
+      "startFrame": 4410,
+      "durationMs": 2120,
+      "durationInFrames": 64,
+      "audioFile": "audio/scene-25.mp3",
+      "segments": [
+        {
+          "text": "肝心なのはここからだ。",
+          "startFrame": 0,
+          "durationInFrames": 60
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "startMs": 148760,
+      "startFrame": 4474,
+      "durationMs": 4520,
+      "durationInFrames": 136,
+      "audioFile": "audio/scene-26.mp3",
+      "segments": [
+        {
+          "text": "割引は客の側の事情とは無関係に、無作為に配られている。",
+          "startFrame": 0,
+          "durationInFrames": 132
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "startMs": 153280,
+      "startFrame": 4610,
+      "durationMs": 7720,
+      "durationInFrames": 232,
+      "audioFile": "audio/scene-27.mp3",
+      "segments": [
+        {
+          "text": "券の中身も、上演される演目も、座れる席の範囲も、三つのグループでまったく同じである。",
+          "startFrame": 0,
+          "durationInFrames": 228
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "startMs": 161000,
+      "startFrame": 4842,
+      "durationMs": 3560,
+      "durationInFrames": 107,
+      "audioFile": "audio/scene-28.mp3",
+      "segments": [
+        {
+          "text": "違っているのは、財布から出ていった額だけだった。",
+          "startFrame": 0,
+          "durationInFrames": 103
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "startMs": 164560,
+      "startFrame": 4949,
+      "durationMs": 4760,
+      "durationInFrames": 143,
+      "audioFile": "audio/scene-29.mp3",
+      "segments": [
+        {
+          "text": "そのあと研究チームは、誰が何回劇場に足を運んだかを数えた。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "startMs": 169320,
+      "startFrame": 5092,
+      "durationMs": 4440,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-30.mp3",
+      "segments": [
+        {
+          "text": "定価で買った客のほうが、シーズン前半に多く通っていたのである。",
+          "startFrame": 0,
+          "durationInFrames": 130
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "startMs": 173760,
+      "startFrame": 5226,
+      "durationMs": 4680,
+      "durationInFrames": 141,
+      "audioFile": "audio/scene-31.mp3",
+      "segments": [
+        {
+          "text": "回数にしておよそ4.11回に対して3.3回だった。",
+          "startFrame": 0,
+          "durationInFrames": 137
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "startMs": 178440,
+      "startFrame": 5367,
+      "durationMs": 4920,
+      "durationInFrames": 148,
+      "audioFile": "audio/scene-32.mp3",
+      "segments": [
+        {
+          "text": "演目は同じで、天気も同じで、家からの距離も変わらない。",
+          "startFrame": 0,
+          "durationInFrames": 144
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "startMs": 183360,
+      "startFrame": 5515,
+      "durationMs": 7320,
+      "durationInFrames": 220,
+      "audioFile": "audio/scene-33.mp3",
+      "segments": [
+        {
+          "text": "それにもかかわらず、多く払った人のほうが、雨の日にも都合の悪い夜にも出かけていた。",
+          "startFrame": 0,
+          "durationInFrames": 216
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "startMs": 190680,
+      "startFrame": 5735,
+      "durationMs": 6520,
+      "durationInFrames": 196,
+      "audioFile": "audio/scene-34.mp3",
+      "segments": [
+        {
+          "text": "すでに支払われて、どうやっても取り返せない額が、そのあとの足の動きを決めていたことになる。",
+          "startFrame": 0,
+          "durationInFrames": 192
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "startMs": 197200,
+      "startFrame": 5931,
+      "durationMs": 5250,
+      "durationInFrames": 158,
+      "audioFile": "audio/scene-35.mp3",
+      "segments": [
+        {
+          "text": "経済学の教科書は、この額を判断に入れてはならないと書いている。",
+          "startFrame": 0,
+          "durationInFrames": 144
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "startMs": 202450,
+      "startFrame": 6089,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-36.mp3",
+      "segments": [
+        {
+          "text": "人間はそれを入れてしまう。",
+          "startFrame": 0,
+          "durationInFrames": 46
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "startMs": 204450,
+      "startFrame": 6149,
+      "durationMs": 4680,
+      "durationInFrames": 141,
+      "audioFile": "audio/scene-37.mp3",
+      "segments": [
+        {
+          "text": "そんなものは劇場の券の話ではないか、と思うかもしれない。",
+          "startFrame": 0,
+          "durationInFrames": 137
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "startMs": 209130,
+      "startFrame": 6290,
+      "durationMs": 6600,
+      "durationInFrames": 198,
+      "audioFile": "audio/scene-38.mp3",
+      "segments": [
+        {
+          "text": "八ドルと十五ドルの差で片づく問題と、何年も続いた人間関係を同じ棚に置けるのかと。",
+          "startFrame": 0,
+          "durationInFrames": 194
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "startMs": 215730,
+      "startFrame": 6488,
+      "durationMs": 2120,
+      "durationInFrames": 64,
+      "audioFile": "audio/scene-39.mp3",
+      "segments": [
+        {
+          "text": "その指摘はもっともだ。",
+          "startFrame": 0,
+          "durationInFrames": 60
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "startMs": 217850,
+      "startFrame": 6552,
+      "durationMs": 6360,
+      "durationInFrames": 191,
+      "audioFile": "audio/scene-40.mp3",
+      "segments": [
+        {
+          "text": "だが研究者たちのほうも、同じ疑いを持って、この問いをそのまま人間関係のほうへ持っていった。",
+          "startFrame": 0,
+          "durationInFrames": 187
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "startMs": 224210,
+      "startFrame": 6743,
+      "durationMs": 2120,
+      "durationInFrames": 64,
+      "audioFile": "audio/scene-41.mp3",
+      "segments": [
+        {
+          "text": "ちなみにこの実験には続きがある。",
+          "startFrame": 0,
+          "durationInFrames": 60
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "startMs": 226330,
+      "startFrame": 6807,
+      "durationMs": 4600,
+      "durationInFrames": 138,
+      "audioFile": "audio/scene-42.mp3",
+      "segments": [
+        {
+          "text": "シーズンの後半になると、支払額による差はきれいに消えていた。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "startMs": 230930,
+      "startFrame": 6945,
+      "durationMs": 4120,
+      "durationInFrames": 124,
+      "audioFile": "audio/scene-43.mp3",
+      "segments": [
+        {
+          "text": "言い換えれば、払った額の効き目には期限があったのである。",
+          "startFrame": 0,
+          "durationInFrames": 120
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "startMs": 235050,
+      "startFrame": 7069,
+      "durationMs": 9160,
+      "durationInFrames": 275,
+      "audioFile": "audio/scene-44.mp3",
+      "segments": [
+        {
+          "text": "人間関係にそのまま重ねてよい結果ではないが、この「効き目に期限がある」という形は、あとでもう一度出てくる。",
+          "startFrame": 0,
+          "durationInFrames": 271
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "startMs": 244210,
+      "startFrame": 7344,
+      "durationMs": 7400,
+      "durationInFrames": 222,
+      "audioFile": "audio/scene-45.mp3",
+      "segments": [
+        {
+          "text": "2018年、レゴ、アランテス、マガリャンイスの三人が、カレント・サイコロジー誌に論文を発表した。",
+          "startFrame": 0,
+          "durationInFrames": 218
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "startMs": 251610,
+      "startFrame": 7566,
+      "durationMs": 8680,
+      "durationInFrames": 261,
+      "audioFile": "audio/scene-46.mp3",
+      "segments": [
+        {
+          "text": "題は、コミットした関係に沈没費用効果はあるか、である。",
+          "startFrame": 0,
+          "durationInFrames": 257
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "startMs": 260290,
+      "startFrame": 7827,
+      "durationMs": 4440,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-47.mp3",
+      "segments": [
+        {
+          "text": "彼らが用意したのは、もううまくいっていない交際の場面だった。",
+          "startFrame": 0,
+          "durationInFrames": 130
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "startMs": 264730,
+      "startFrame": 7961,
+      "durationMs": 7080,
+      "durationInFrames": 213,
+      "audioFile": "audio/scene-48.mp3",
+      "segments": [
+        {
+          "text": "回答者にはその場面を読んでもらい、場面ごとに、これまで注ぎ込んできたものの量だけを変えてある。",
+          "startFrame": 0,
+          "durationInFrames": 209
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "startMs": 271810,
+      "startFrame": 8174,
+      "durationMs": 10040,
+      "durationInFrames": 302,
+      "audioFile": "audio/scene-49.mp3",
+      "segments": [
+        {
+          "text": "使った金額を大きくした版、注いだ労力を大きくした版、そして一緒に過ごした時間の長さを引き伸ばした版の三種類である。",
+          "startFrame": 0,
+          "durationInFrames": 298
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "startMs": 281850,
+      "startFrame": 8476,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-50.mp3",
+      "segments": [
+        {
+          "text": "設計としては単純だ。",
+          "startFrame": 0,
+          "durationInFrames": 43
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "startMs": 283850,
+      "startFrame": 8536,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-51.mp3",
+      "segments": [
+        {
+          "text": "同じ「冷めた関係」を見せて、投資の量だけを動かす。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "startMs": 287570,
+      "startFrame": 8648,
+      "durationMs": 7890,
+      "durationInFrames": 237,
+      "audioFile": "audio/scene-52.mp3",
+      "segments": [
+        {
+          "text": "もし沈没費用が効いているなら、たくさん注ぎ込んだ条件を読んだ人ほど、この関係を続けると答えるはずである。",
+          "startFrame": 0,
+          "durationInFrames": 223
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "startMs": 295460,
+      "startFrame": 8885,
+      "durationMs": 6040,
+      "durationInFrames": 182,
+      "audioFile": "audio/scene-53.mp3",
+      "segments": [
+        {
+          "text": "金曜の夜、あなたは友人から相談を受けている。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "startMs": 301500,
+      "startFrame": 9067,
+      "durationMs": 2840,
+      "durationInFrames": 86,
+      "audioFile": "audio/scene-54.mp3",
+      "segments": [
+        {
+          "text": "もう気持ちは残っていないのだと、その人は言う。",
+          "startFrame": 0,
+          "durationInFrames": 82
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "startMs": 304340,
+      "startFrame": 9153,
+      "durationMs": 8360,
+      "durationInFrames": 251,
+      "audioFile": "audio/scene-55.mp3",
+      "segments": [
+        {
+          "text": "ひととおり話を聞き終えたあなたが最初に口にするのは、たぶん、じゃあ別れなよ、ではない。",
+          "startFrame": 0,
+          "durationInFrames": 247
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "startMs": 312700,
+      "startFrame": 9404,
+      "durationMs": 2600,
+      "durationInFrames": 78,
+      "audioFile": "audio/scene-56.mp3",
+      "segments": [
+        {
+          "text": "何年になるんだっけ、のほうである。",
+          "startFrame": 0,
+          "durationInFrames": 74
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "startMs": 315300,
+      "startFrame": 9482,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-57.mp3",
+      "segments": [
+        {
+          "text": "結果は、きれいに分かれた。",
+          "startFrame": 0,
+          "durationInFrames": 55
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "startMs": 317300,
+      "startFrame": 9542,
+      "durationMs": 2200,
+      "durationInFrames": 66,
+      "audioFile": "audio/scene-58.mp3",
+      "segments": [
+        {
+          "text": "金額を動かしたときには効いた。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "startMs": 319500,
+      "startFrame": 9608,
+      "durationMs": 2360,
+      "durationInFrames": 71,
+      "audioFile": "audio/scene-59.mp3",
+      "segments": [
+        {
+          "text": "注いだ労力を動かしたときにも効いた。",
+          "startFrame": 0,
+          "durationInFrames": 67
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "startMs": 321860,
+      "startFrame": 9679,
+      "durationMs": 8840,
+      "durationInFrames": 266,
+      "audioFile": "audio/scene-60.mp3",
+      "segments": [
+        {
+          "text": "ところが、一緒に過ごした時間の長さをどれだけ引き伸ばしても、続けるか終えるかという二択のほうは動かなかったのである。",
+          "startFrame": 0,
+          "durationInFrames": 262
+        }
+      ]
+    },
+    {
       "id": 61,
-      "startMs": 255680,
-      "startFrame": 7696,
-      "durationMs": 3480,
-      "durationInFrames": 105,
+      "startMs": 330700,
+      "startFrame": 9945,
+      "durationMs": 7320,
+      "durationInFrames": 220,
       "audioFile": "audio/scene-61.mp3",
       "segments": [
         {
-          "text": "日を追うごとに落ち続け、二週目に入っても止まらない。",
+          "text": "あれだけ多くの人が口にする「何年になるんだっけ」は、出口の前に立ったときには効いていなかった。",
           "startFrame": 0,
-          "durationInFrames": 101
+          "durationInFrames": 216
         }
       ]
     },
     {
       "id": 62,
-      "startMs": 259160,
-      "startFrame": 7801,
+      "startMs": 338020,
+      "startFrame": 10165,
       "durationMs": 4040,
       "durationInFrames": 122,
       "audioFile": "audio/scene-62.mp3",
       "segments": [
         {
-          "text": "自覚が頭打ちになったあとも、成績だけが下がり続けたのである。",
+          "text": "では、時間はこの話にまったく関係していなかったのだろうか。",
           "startFrame": 0,
           "durationInFrames": 118
         }
@@ -934,1199 +934,1199 @@
     },
     {
       "id": 63,
-      "startMs": 263200,
-      "startFrame": 7923,
-      "durationMs": 9080,
-      "durationInFrames": 273,
+      "startMs": 342060,
+      "startFrame": 10287,
+      "durationMs": 3800,
+      "durationInFrames": 114,
       "audioFile": "audio/scene-63.mp3",
       "segments": [
         {
-          "text": "研究者たちはこの状態を、余分に起きていた時間の神経生物学的なコストが累積したもの、という言い方で整理している。",
+          "text": "同じ研究には、もうひとつの聞き方が用意されていた。",
           "startFrame": 0,
-          "durationInFrames": 269
+          "durationInFrames": 110
         }
       ]
     },
     {
       "id": 64,
-      "startMs": 272280,
-      "startFrame": 8196,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 345860,
+      "startFrame": 10401,
+      "durationMs": 6840,
+      "durationInFrames": 206,
       "audioFile": "audio/scene-64.mp3",
       "segments": [
         {
-          "text": "借りは消えていない。",
+          "text": "続けるか終えるかではなく、この関係にこれからあと何か月を使うつもりかを尋ねたのである。",
           "startFrame": 0,
-          "durationInFrames": 53
+          "durationInFrames": 202
         }
       ]
     },
     {
       "id": 65,
-      "startMs": 274280,
-      "startFrame": 8256,
-      "durationMs": 3080,
-      "durationInFrames": 93,
+      "startMs": 352700,
+      "startFrame": 10607,
+      "durationMs": 2760,
+      "durationInFrames": 83,
       "audioFile": "audio/scene-65.mp3",
       "segments": [
         {
-          "text": "借りていることを知らせる通知だけが、途中で止まる。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 66,
-      "startMs": 277360,
-      "startFrame": 8349,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-66.mp3",
-      "segments": [
-        {
-          "text": "ここに、この回のいちばん硬い骨がある。",
-          "startFrame": 0,
-          "durationInFrames": 103
-        }
-      ]
-    },
-    {
-      "id": 67,
-      "startMs": 280920,
-      "startFrame": 8456,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-67.mp3",
-      "segments": [
-        {
-          "text": "睡眠を削ったとき、落ちるものは二つある。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 68,
-      "startMs": 284400,
-      "startFrame": 8561,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-68.mp3",
-      "segments": [
-        {
-          "text": "ひとつは能力そのもの。",
-          "startFrame": 0,
-          "durationInFrames": 43
-        }
-      ]
-    },
-    {
-      "id": 69,
-      "startMs": 286400,
-      "startFrame": 8621,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-69.mp3",
-      "segments": [
-        {
-          "text": "もうひとつは、能力が落ちたことを検知する能力である。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 70,
-      "startMs": 289880,
-      "startFrame": 8726,
-      "durationMs": 2760,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-70.mp3",
-      "segments": [
-        {
-          "text": "そして二つは同じ速さで落ちない。",
+          "text": "そちらでは、時間がはっきりと効いていた。",
           "startFrame": 0,
           "durationInFrames": 79
         }
       ]
     },
     {
-      "id": 71,
-      "startMs": 292640,
-      "startFrame": 8809,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-71.mp3",
-      "segments": [
-        {
-          "text": "検知のほうが先に止まる。",
-          "startFrame": 0,
-          "durationInFrames": 43
-        }
-      ]
-    },
-    {
-      "id": 72,
-      "startMs": 294640,
-      "startFrame": 8869,
-      "durationMs": 5800,
-      "durationInFrames": 174,
-      "audioFile": "audio/scene-72.mp3",
-      "segments": [
-        {
-          "text": "だから、自分の状態を自分で採点した結果は、ある日を境に更新されなくなる。",
-          "startFrame": 0,
-          "durationInFrames": 170
-        }
-      ]
-    },
-    {
-      "id": 73,
-      "startMs": 300440,
-      "startFrame": 9043,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-73.mp3",
-      "segments": [
-        {
-          "text": "これは車の燃料計に例えると分かりやすい。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 74,
-      "startMs": 303440,
-      "startFrame": 9133,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-74.mp3",
-      "segments": [
-        {
-          "text": "針が動かなくなった車は、燃料が減らなくなったわけではない。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 75,
-      "startMs": 308040,
-      "startFrame": 9271,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-75.mp3",
-      "segments": [
-        {
-          "text": "減っていることを表示する機能のほうが止まっただけである。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 76,
-      "startMs": 311520,
-      "startFrame": 9376,
-      "durationMs": 7000,
-      "durationInFrames": 210,
-      "audioFile": "audio/scene-76.mp3",
-      "segments": [
-        {
-          "text": "針を見て安心している人と、実際に走れる距離は、その日から別々の数字になっていく。",
-          "startFrame": 0,
-          "durationInFrames": 206
-        }
-      ]
-    },
-    {
-      "id": 77,
-      "startMs": 318520,
-      "startFrame": 9586,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-77.mp3",
-      "segments": [
-        {
-          "text": "朝の通勤電車。",
-          "startFrame": 0,
-          "durationInFrames": 36
-        }
-      ]
-    },
-    {
-      "id": 78,
-      "startMs": 320520,
-      "startFrame": 9646,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-78.mp3",
-      "segments": [
-        {
-          "text": "ドアの脇に立ったあなたは、吊り革を持たずにスマートフォンの画面を見ている。",
-          "startFrame": 0,
-          "durationInFrames": 158
-        }
-      ]
-    },
-    {
-      "id": 79,
-      "startMs": 325920,
-      "startFrame": 9808,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-79.mp3",
-      "segments": [
-        {
-          "text": "駅の名前を読み違えて、一瞬だけ焦る。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 80,
-      "startMs": 328520,
-      "startFrame": 9886,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-80.mp3",
-      "segments": [
-        {
-          "text": "すぐに気を取り直して、また画面に戻る。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 81,
-      "startMs": 331040,
-      "startFrame": 9962,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-81.mp3",
-      "segments": [
-        {
-          "text": "この一瞬を、あなたは今日の記録として持ち帰らない。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 82,
-      "startMs": 334760,
-      "startFrame": 10074,
-      "durationMs": 4920,
-      "durationInFrames": 148,
-      "audioFile": "audio/scene-82.mp3",
-      "segments": [
-        {
-          "text": "持ち帰るのは、今日も一日ちゃんと働けたという結論のほうである。",
-          "startFrame": 0,
-          "durationInFrames": 144
-        }
-      ]
-    },
-    {
-      "id": 83,
-      "startMs": 339680,
-      "startFrame": 10222,
-      "durationMs": 2280,
-      "durationInFrames": 69,
-      "audioFile": "audio/scene-83.mp3",
-      "segments": [
-        {
-          "text": "ここから、少し角度を変えたい。",
-          "startFrame": 0,
-          "durationInFrames": 65
-        }
-      ]
-    },
-    {
-      "id": 84,
-      "startMs": 341960,
-      "startFrame": 10291,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-84.mp3",
-      "segments": [
-        {
-          "text": "短い睡眠を可能にするという話は、本や講座の形でずっと流通してきた。",
-          "startFrame": 0,
-          "durationInFrames": 158
-        }
-      ]
-    },
-    {
-      "id": 85,
-      "startMs": 347360,
-      "startFrame": 10453,
-      "durationMs": 4040,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-85.mp3",
-      "segments": [
-        {
-          "text": "この動画では、特定の誰かを取り上げることはしない。",
-          "startFrame": 0,
-          "durationInFrames": 118
-        }
-      ]
-    },
-    {
-      "id": 86,
-      "startMs": 351400,
-      "startFrame": 10575,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-86.mp3",
-      "segments": [
-        {
-          "text": "理由は二つある。",
-          "startFrame": 0,
-          "durationInFrames": 55
-        }
-      ]
-    },
-    {
-      "id": 87,
-      "startMs": 353400,
-      "startFrame": 10635,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-87.mp3",
-      "segments": [
-        {
-          "text": "ひとつは、これがある特定の人物の問題ではないからだ。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "startMs": 357280,
-      "startFrame": 10752,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-88.mp3",
-      "segments": [
-        {
-          "text": "需要が途切れないという事実のほうが本体である。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 89,
-      "startMs": 360920,
-      "startFrame": 10862,
-      "durationMs": 3010,
-      "durationInFrames": 91,
-      "audioFile": "audio/scene-89.mp3",
-      "segments": [
-        {
-          "text": "もうひとつは、もっと大事な理由になる。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 90,
-      "startMs": 363930,
-      "startFrame": 10953,
-      "durationMs": 4120,
-      "durationInFrames": 124,
-      "audioFile": "audio/scene-90.mp3",
-      "segments": [
-        {
-          "text": "ファン・ドンゲンらの結果は、当人が嘘をついていることを示していない。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 91,
-      "startMs": 368050,
-      "startFrame": 11077,
-      "durationMs": 4050,
-      "durationInFrames": 122,
-      "audioFile": "audio/scene-91.mp3",
-      "segments": [
-        {
-          "text": "実験で頭打ちになったのは自覚の申告のほうだった。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 92,
-      "startMs": 372100,
-      "startFrame": 11199,
+      "id": 66,
+      "startMs": 355460,
+      "startFrame": 10690,
       "durationMs": 6040,
       "durationInFrames": 182,
-      "audioFile": "audio/scene-92.mp3",
+      "audioFile": "audio/scene-66.mp3",
       "segments": [
         {
-          "text": "つまり、平気だと感じている人にとって、その申告はその人にとって正直なのである。",
+          "text": "すでに長い時間を注ぎ込んだ条件を読んだ人ほど、これから差し出す時間も長かったのだ。",
           "startFrame": 0,
           "durationInFrames": 178
         }
       ]
     },
     {
-      "id": 93,
-      "startMs": 378140,
-      "startFrame": 11381,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-93.mp3",
-      "segments": [
-        {
-          "text": "嘘つき呼ばわりするための材料は、こちらが持っている実験の中に無い。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 94,
-      "startMs": 382500,
-      "startFrame": 11512,
+      "id": 67,
+      "startMs": 361500,
+      "startFrame": 10872,
       "durationMs": 3080,
       "durationInFrames": 93,
-      "audioFile": "audio/scene-94.mp3",
+      "audioFile": "audio/scene-67.mp3",
       "segments": [
         {
-          "text": "だとすれば、問うべき相手が変わってくる。",
+          "text": "ここに、この回のいちばん硬い骨がある。",
           "startFrame": 0,
           "durationInFrames": 89
         }
       ]
     },
     {
-      "id": 95,
-      "startMs": 385580,
-      "startFrame": 11605,
-      "durationMs": 4760,
-      "durationInFrames": 143,
-      "audioFile": "audio/scene-95.mp3",
-      "segments": [
-        {
-          "text": "なぜこの言説は、これほど長いあいだ売れ続けているのだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 139
-        }
-      ]
-    },
-    {
-      "id": 96,
-      "startMs": 390340,
-      "startFrame": 11748,
-      "durationMs": 2520,
-      "durationInFrames": 76,
-      "audioFile": "audio/scene-96.mp3",
-      "segments": [
-        {
-          "text": "答えの半分は、需要の側にある。",
-          "startFrame": 0,
-          "durationInFrames": 72
-        }
-      ]
-    },
-    {
-      "id": 97,
-      "startMs": 392860,
-      "startFrame": 11824,
+      "id": 68,
+      "startMs": 364580,
+      "startFrame": 10965,
       "durationMs": 3640,
       "durationInFrames": 110,
-      "audioFile": "audio/scene-97.mp3",
+      "audioFile": "audio/scene-68.mp3",
       "segments": [
         {
-          "text": "眠る時間を減らせるなら、一日は長くなる。",
+          "text": "年数は、あなたが去るかどうかを決めていない。",
           "startFrame": 0,
           "durationInFrames": 106
         }
       ]
     },
     {
-      "id": 98,
-      "startMs": 396500,
-      "startFrame": 11934,
-      "durationMs": 3240,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-98.mp3",
+      "id": 69,
+      "startMs": 368220,
+      "startFrame": 11075,
+      "durationMs": 4440,
+      "durationInFrames": 134,
+      "audioFile": "audio/scene-69.mp3",
       "segments": [
         {
-          "text": "長くなった一日で、遅れを取り戻せる。",
+          "text": "年数が決めているのは、あなたがこれから何年を追加するかのほうである。",
           "startFrame": 0,
-          "durationInFrames": 94
+          "durationInFrames": 130
         }
       ]
     },
     {
-      "id": 99,
-      "startMs": 399740,
-      "startFrame": 12032,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-99.mp3",
+      "id": 70,
+      "startMs": 372660,
+      "startFrame": 11209,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-70.mp3",
       "segments": [
         {
-          "text": "この期待は、時間が足りていない人ほど強く効く。",
+          "text": "出口の扉のほうは動かないまま、延長のボタンだけが何度も押されている。",
           "startFrame": 0,
-          "durationInFrames": 103
+          "durationInFrames": 151
         }
       ]
     },
     {
-      "id": 100,
-      "startMs": 403300,
-      "startFrame": 12139,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-100.mp3",
-      "segments": [
-        {
-          "text": "余裕のある人は、そもそも一日を伸ばそうとしない。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 101,
-      "startMs": 407020,
-      "startFrame": 12251,
+      "id": 71,
+      "startMs": 377820,
+      "startFrame": 11364,
       "durationMs": 2920,
       "durationInFrames": 88,
-      "audioFile": "audio/scene-101.mp3",
+      "audioFile": "audio/scene-71.mp3",
       "segments": [
         {
-          "text": "そしてもう半分は、確認の方法にある。",
+          "text": "これはサブスクリプションの自動更新に近い。",
           "startFrame": 0,
           "durationInFrames": 84
         }
       ]
     },
     {
-      "id": 102,
-      "startMs": 409940,
-      "startFrame": 12339,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-102.mp3",
-      "segments": [
-        {
-          "text": "短眠の技術は、うまくいっているかどうかを当人の感覚が判定する。",
-          "startFrame": 0,
-          "durationInFrames": 130
-        }
-      ]
-    },
-    {
-      "id": 103,
-      "startMs": 414380,
-      "startFrame": 12473,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-103.mp3",
-      "segments": [
-        {
-          "text": "体重計に乗るわけでも、血液を採るわけでもない。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 104,
-      "startMs": 417780,
-      "startFrame": 12575,
-      "durationMs": 4440,
-      "durationInFrames": 134,
-      "audioFile": "audio/scene-104.mp3",
-      "segments": [
-        {
-          "text": "平気だと感じられれば成功であり、つらければ失敗である。",
-          "startFrame": 0,
-          "durationInFrames": 130
-        }
-      ]
-    },
-    {
-      "id": 105,
-      "startMs": 422220,
-      "startFrame": 12709,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-105.mp3",
-      "segments": [
-        {
-          "text": "ところがその感覚こそが、実験でいちばん最初に更新を止めた指標だった。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 106,
-      "startMs": 427540,
-      "startFrame": 12869,
-      "durationMs": 6520,
-      "durationInFrames": 196,
-      "audioFile": "audio/scene-106.mp3",
-      "segments": [
-        {
-          "text": "効果を測る物差しと、壊れる場所が同じところに置かれているという構造である。",
-          "startFrame": 0,
-          "durationInFrames": 192
-        }
-      ]
-    },
-    {
-      "id": 107,
-      "startMs": 434060,
-      "startFrame": 13065,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-107.mp3",
-      "segments": [
-        {
-          "text": "もっとも、生まれつき短い睡眠で足りる人がいるのも事実である。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 108,
-      "startMs": 438020,
-      "startFrame": 13184,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-108.mp3",
-      "segments": [
-        {
-          "text": "ここを曖昧にすると、この回はただの説教になってしまう。",
-          "startFrame": 0,
-          "durationInFrames": 108
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "startMs": 441740,
-      "startFrame": 13296,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-109.mp3",
-      "segments": [
-        {
-          "text": "だから、その側の証拠のほうも同じ精度で並べておきたい。",
-          "startFrame": 0,
-          "durationInFrames": 115
-        }
-      ]
-    },
-    {
-      "id": 110,
-      "startMs": 445700,
-      "startFrame": 13415,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-110.mp3",
-      "segments": [
-        {
-          "text": "2009年、サイエンス誌に一本の論文が出ている。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 111,
-      "startMs": 450220,
-      "startFrame": 13551,
-      "durationMs": 6120,
-      "durationInFrames": 184,
-      "audioFile": "audio/scene-111.mp3",
-      "segments": [
-        {
-          "text": "短い睡眠でよく眠れているという表現型を持つ、母と娘の家系が見つかったのである。",
-          "startFrame": 0,
-          "durationInFrames": 180
-        }
-      ]
-    },
-    {
-      "id": 112,
-      "startMs": 456340,
-      "startFrame": 13735,
-      "durationMs": 8920,
-      "durationInFrames": 268,
-      "audioFile": "audio/scene-112.mp3",
-      "segments": [
-        {
-          "text": "研究チームがその遺伝子を調べたところ、ディーイーシー2と呼ばれる遺伝子に、片方の染色体だけの変異があった。",
-          "startFrame": 0,
-          "durationInFrames": 264
-        }
-      ]
-    },
-    {
-      "id": 113,
-      "startMs": 465260,
-      "startFrame": 14003,
-      "durationMs": 6360,
-      "durationInFrames": 191,
-      "audioFile": "audio/scene-113.mp3",
-      "segments": [
-        {
-          "text": "385番目のアミノ酸が、プロリンからアルギニンに置き換わっている。",
-          "startFrame": 0,
-          "durationInFrames": 187
-        }
-      ]
-    },
-    {
-      "id": 114,
-      "startMs": 471620,
-      "startFrame": 14194,
-      "durationMs": 2360,
-      "durationInFrames": 71,
-      "audioFile": "audio/scene-114.mp3",
-      "segments": [
-        {
-          "text": "たった一文字の違いである。",
-          "startFrame": 0,
-          "durationInFrames": 67
-        }
-      ]
-    },
-    {
-      "id": 115,
-      "startMs": 473980,
-      "startFrame": 14265,
-      "durationMs": 3320,
-      "durationInFrames": 100,
-      "audioFile": "audio/scene-115.mp3",
-      "segments": [
-        {
-          "text": "彼らはさらに、その同じ変異をマウスに入れた。",
-          "startFrame": 0,
-          "durationInFrames": 96
-        }
-      ]
-    },
-    {
-      "id": 116,
-      "startMs": 477300,
-      "startFrame": 14365,
-      "durationMs": 3000,
-      "durationInFrames": 90,
-      "audioFile": "audio/scene-116.mp3",
-      "segments": [
-        {
-          "text": "すると、マウスの睡眠時間も短くなった。",
-          "startFrame": 0,
-          "durationInFrames": 86
-        }
-      ]
-    },
-    {
-      "id": 117,
-      "startMs": 480300,
-      "startFrame": 14455,
+      "id": 72,
+      "startMs": 380740,
+      "startFrame": 11452,
       "durationMs": 5640,
       "durationInFrames": 170,
-      "audioFile": "audio/scene-117.mp3",
+      "audioFile": "audio/scene-72.mp3",
       "segments": [
         {
-          "text": "人間の家系で見つかった一文字が、種をまたいで同じ方向に働いたわけである。",
+          "text": "解約の画面までは誰も行かないのに、更新の通知だけは毎月きちんと通っていく。",
           "startFrame": 0,
           "durationInFrames": 166
         }
       ]
     },
     {
-      "id": 118,
-      "startMs": 485940,
-      "startFrame": 14625,
-      "durationMs": 6120,
-      "durationInFrames": 184,
-      "audioFile": "audio/scene-118.mp3",
+      "id": 73,
+      "startMs": 386380,
+      "startFrame": 11622,
+      "durationMs": 8600,
+      "durationInFrames": 258,
+      "audioFile": "audio/scene-73.mp3",
       "segments": [
         {
-          "text": "睡眠時間の制御が、進化の途中でかなり深いところに置かれた仕組みだということでもある。",
+          "text": "長く付き合ったから別れられないのではなく、長く付き合ったから、もう少しだけ様子を見よう、が何度でも承認されてしまう。",
           "startFrame": 0,
-          "durationInFrames": 180
+          "durationInFrames": 254
         }
       ]
     },
     {
-      "id": 119,
-      "startMs": 492060,
-      "startFrame": 14809,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-119.mp3",
+      "id": 74,
+      "startMs": 394980,
+      "startFrame": 11880,
+      "durationMs": 5720,
+      "durationInFrames": 172,
+      "audioFile": "audio/scene-74.mp3",
       "segments": [
         {
-          "text": "2019年には、別の遺伝子が見つかっている。",
+          "text": "そして「もう少し」という単位には、終わりの目盛りが付いていないのではないだろうか。",
           "startFrame": 0,
-          "durationInFrames": 89
+          "durationInFrames": 168
         }
       ]
     },
     {
-      "id": 120,
-      "startMs": 495140,
-      "startFrame": 14902,
-      "durationMs": 12120,
-      "durationInFrames": 364,
-      "audioFile": "audio/scene-120.mp3",
+      "id": 75,
+      "startMs": 400700,
+      "startFrame": 12052,
+      "durationMs": 5320,
+      "durationInFrames": 160,
+      "audioFile": "audio/scene-75.mp3",
       "segments": [
         {
-          "text": "ニューロン誌に載ったこの研究では、家族性自然短眠と呼ばれる家系を連鎖解析と全エクソーム解析で追いかけ、エーディーアールビー1という遺伝子の稀な変異にたどり着いた。",
+          "text": "それは結局、未練を難しく言い換えただけではないか、と思う人もいるだろう。",
           "startFrame": 0,
-          "durationInFrames": 360
+          "durationInFrames": 156
         }
       ]
     },
     {
-      "id": 121,
-      "startMs": 507260,
-      "startFrame": 15266,
+      "id": 76,
+      "startMs": 406020,
+      "startFrame": 12212,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-76.mp3",
+      "segments": [
+        {
+          "text": "半分までは同意する。",
+          "startFrame": 0,
+          "durationInFrames": 53
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "startMs": 408020,
+      "startFrame": 12272,
+      "durationMs": 7480,
+      "durationInFrames": 225,
+      "audioFile": "audio/scene-77.mp3",
+      "segments": [
+        {
+          "text": "だが、未練という言葉は気持ちの強さしか説明せず、なぜ出口の側だけが動かないのかを説明しない。",
+          "startFrame": 0,
+          "durationInFrames": 221
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "startMs": 415500,
+      "startFrame": 12497,
+      "durationMs": 6690,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-78.mp3",
+      "segments": [
+        {
+          "text": "そこを説明するには、留まる力が何でできているのかを分解しなければならないのではないだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 187
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "startMs": 422190,
+      "startFrame": 12698,
+      "durationMs": 7480,
+      "durationInFrames": 225,
+      "audioFile": "audio/scene-79.mp3",
+      "segments": [
+        {
+          "text": "2003年、ベンジャミン・レイとクリストファー・アグニューが、パーソナル・リレーションシップス誌にメタ分析を発表した。",
+          "startFrame": 0,
+          "durationInFrames": 221
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "startMs": 429670,
+      "startFrame": 12923,
+      "durationMs": 6680,
+      "durationInFrames": 201,
+      "audioFile": "audio/scene-80.mp3",
+      "segments": [
+        {
+          "text": "集めたのは52の研究、60の標本、合わせて11,582人である。",
+          "startFrame": 0,
+          "durationInFrames": 197
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "startMs": 436350,
+      "startFrame": 13124,
+      "durationMs": 7160,
+      "durationInFrames": 215,
+      "audioFile": "audio/scene-81.mp3",
+      "segments": [
+        {
+          "text": "国はアメリカ、イギリス、オランダ、イスラエル、台湾の五つにまたがっている。",
+          "startFrame": 0,
+          "durationInFrames": 211
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "startMs": 443510,
+      "startFrame": 13339,
+      "durationMs": 7000,
+      "durationInFrames": 210,
+      "audioFile": "audio/scene-82.mp3",
+      "segments": [
+        {
+          "text": "彼らが調べたのは、人が関係にどれだけ縛られているかを何が説明するのか、という一点だった。",
+          "startFrame": 0,
+          "durationInFrames": 206
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "startMs": 450510,
+      "startFrame": 13549,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-83.mp3",
+      "segments": [
+        {
+          "text": "出てきた数字は三つある。",
+          "startFrame": 0,
+          "durationInFrames": 53
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "startMs": 452510,
+      "startFrame": 13609,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-84.mp3",
+      "segments": [
+        {
+          "text": "満足度との相関がプラス0.68。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "startMs": 455830,
+      "startFrame": 13709,
+      "durationMs": 4360,
+      "durationInFrames": 131,
+      "audioFile": "audio/scene-85.mp3",
+      "segments": [
+        {
+          "text": "ほかの選択肢の質との相関がマイナス0.48。",
+          "startFrame": 0,
+          "durationInFrames": 127
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "startMs": 460190,
+      "startFrame": 13840,
+      "durationMs": 3800,
+      "durationInFrames": 114,
+      "audioFile": "audio/scene-86.mp3",
+      "segments": [
+        {
+          "text": "すでに注ぎ込んだ量との相関がプラス0.46。",
+          "startFrame": 0,
+          "durationInFrames": 110
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "startMs": 463990,
+      "startFrame": 13954,
+      "durationMs": 4930,
+      "durationInFrames": 148,
+      "audioFile": "audio/scene-87.mp3",
+      "segments": [
+        {
+          "text": "この三つを合わせると、縛られ具合のおよそ三分の二が説明できた。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "startMs": 468920,
+      "startFrame": 14102,
+      "durationMs": 2520,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-88.mp3",
+      "segments": [
+        {
+          "text": "三つ並べたときに見えてくるものがある。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "startMs": 471440,
+      "startFrame": 14178,
+      "durationMs": 2520,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-89.mp3",
+      "segments": [
+        {
+          "text": "注ぎ込んだ量は、たしかに効いている。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "startMs": 473960,
+      "startFrame": 14254,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-90.mp3",
+      "segments": [
+        {
+          "text": "だがこの三つの中ではいちばん弱いのだ。",
+          "startFrame": 0,
+          "durationInFrames": 79
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "startMs": 476720,
+      "startFrame": 14337,
+      "durationMs": 6290,
+      "durationInFrames": 189,
+      "audioFile": "audio/scene-91.mp3",
+      "segments": [
+        {
+          "text": "いちばん強いのは満足度で、その次に来るのが、ほかにどんな道があるかという項目である。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "startMs": 483010,
+      "startFrame": 14526,
+      "durationMs": 5960,
+      "durationInFrames": 179,
+      "audioFile": "audio/scene-92.mp3",
+      "segments": [
+        {
+          "text": "つまり、あなたが動けないのは過去が重いからだけではなく、ほかの道が見えていないからでもある。",
+          "startFrame": 0,
+          "durationInFrames": 175
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "startMs": 488970,
+      "startFrame": 14705,
+      "durationMs": 14280,
+      "durationInFrames": 429,
+      "audioFile": "audio/scene-93.mp3",
+      "segments": [
+        {
+          "text": "そしてこの「ほかの道が見えるかどうか」は、性格の問題として語られやすいわりに、実際には住んでいる場所や職種や年収や年齢によって、かなりの部分があらかじめ決まってしまう。",
+          "startFrame": 0,
+          "durationInFrames": 425
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "startMs": 503250,
+      "startFrame": 15134,
+      "durationMs": 5090,
+      "durationInFrames": 153,
+      "audioFile": "audio/scene-94.mp3",
+      "segments": [
+        {
+          "text": "制度と労働市場が、個人の勇気の量に見えているようなものである。",
+          "startFrame": 0,
+          "durationInFrames": 139
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "startMs": 508340,
+      "startFrame": 15287,
+      "durationMs": 8840,
+      "durationInFrames": 266,
+      "audioFile": "audio/scene-95.mp3",
+      "segments": [
+        {
+          "text": "人類が何万年もかけて作ってきた定住と分業の仕組みが、深夜の一人分の計算に混ざり込んでいるとは言えないだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 262
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "startMs": 517180,
+      "startFrame": 15553,
       "durationMs": 3960,
       "durationInFrames": 119,
-      "audioFile": "audio/scene-121.mp3",
+      "audioFile": "audio/scene-96.mp3",
       "segments": [
         {
-          "text": "187番目のアラニンが、バリンに変わっている。",
+          "text": "ここまでは、まだ全部あなた自身の損得の話である。",
           "startFrame": 0,
           "durationInFrames": 115
         }
       ]
     },
     {
-      "id": 122,
-      "startMs": 511220,
-      "startFrame": 15385,
-      "durationMs": 5000,
-      "durationInFrames": 150,
-      "audioFile": "audio/scene-122.mp3",
+      "id": 97,
+      "startMs": 521140,
+      "startFrame": 15672,
+      "durationMs": 6610,
+      "durationInFrames": 199,
+      "audioFile": "audio/scene-97.mp3",
       "segments": [
         {
-          "text": "この形質は、常染色体優性のかたちで家系の中を伝わっていた。",
+          "text": "ところが、人が実際に別れを切り出すかどうかを調べにいくと、まったく別のものが出てくる。",
+          "startFrame": 0,
+          "durationInFrames": 185
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "startMs": 527750,
+      "startFrame": 15871,
+      "durationMs": 12440,
+      "durationInFrames": 374,
+      "audioFile": "audio/scene-98.mp3",
+      "segments": [
+        {
+          "text": "2018年、サマンサ・ジョエル、エミリー・インペット、ステファニー・シュピールマン、ジェフ・マクドナルドの四人が、ジャーナル・オブ・パーソナリティ・アンド・ソーシャル・サイコロジー誌に論文を出した。",
+          "startFrame": 0,
+          "durationInFrames": 370
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "startMs": 540190,
+      "startFrame": 16245,
+      "durationMs": 6840,
+      "durationInFrames": 206,
+      "audioFile": "audio/scene-99.mp3",
+      "segments": [
+        {
+          "text": "題は、去るか留まるかの判断はどれだけ相互依存的か、である。",
+          "startFrame": 0,
+          "durationInFrames": 202
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "startMs": 547030,
+      "startFrame": 16451,
+      "durationMs": 5000,
+      "durationInFrames": 150,
+      "audioFile": "audio/scene-100.mp3",
+      "segments": [
+        {
+          "text": "副題には、相手のために関係に留まること、と付いている。",
           "startFrame": 0,
           "durationInFrames": 146
         }
       ]
     },
     {
-      "id": 123,
-      "startMs": 516220,
-      "startFrame": 15535,
-      "durationMs": 8760,
-      "durationInFrames": 263,
-      "audioFile": "audio/scene-123.mp3",
-      "segments": [
-        {
-          "text": "2014年には、最初に見つかった遺伝子の別の変異が、短い睡眠と断眠への耐性の両方に関連するという報告も出ている。",
-          "startFrame": 0,
-          "durationInFrames": 259
-        }
-      ]
-    },
-    {
-      "id": 124,
-      "startMs": 524980,
-      "startFrame": 15798,
-      "durationMs": 3400,
-      "durationInFrames": 102,
-      "audioFile": "audio/scene-124.mp3",
-      "segments": [
-        {
-          "text": "言い換えれば、本物のショートスリーパーは実在する。",
-          "startFrame": 0,
-          "durationInFrames": 98
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "startMs": 528380,
-      "startFrame": 15900,
-      "durationMs": 5560,
-      "durationInFrames": 167,
-      "audioFile": "audio/scene-125.mp3",
-      "segments": [
-        {
-          "text": "しかもそれは、体調でも気合でもなく、家系をたどって追跡できる形質である。",
-          "startFrame": 0,
-          "durationInFrames": 163
-        }
-      ]
-    },
-    {
-      "id": 126,
-      "startMs": 533940,
-      "startFrame": 16067,
-      "durationMs": 9810,
-      "durationInFrames": 295,
-      "audioFile": "audio/scene-126.mp3",
-      "segments": [
-        {
-          "text": "この形質は、遺伝性の形質を集めたオンライン・メンデル遺伝学というカタログに、家族性自然短眠として番号つきで登録されている。",
-          "startFrame": 0,
-          "durationInFrames": 281
-        }
-      ]
-    },
-    {
-      "id": 127,
-      "startMs": 543750,
-      "startFrame": 16362,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-127.mp3",
-      "segments": [
-        {
-          "text": "ただし、ここで自分の足元を削っておきたい。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 128,
-      "startMs": 546670,
-      "startFrame": 16450,
-      "durationMs": 4600,
-      "durationInFrames": 138,
-      "audioFile": "audio/scene-128.mp3",
-      "segments": [
-        {
-          "text": "2009年に見つかった家系が必要としていた睡眠は、六時間である。",
-          "startFrame": 0,
-          "durationInFrames": 134
-        }
-      ]
-    },
-    {
-      "id": 129,
-      "startMs": 551270,
-      "startFrame": 16588,
-      "durationMs": 2120,
-      "durationInFrames": 64,
-      "audioFile": "audio/scene-129.mp3",
-      "segments": [
-        {
-          "text": "三時間でも二時間でもない。",
-          "startFrame": 0,
-          "durationInFrames": 60
-        }
-      ]
-    },
-    {
-      "id": 130,
-      "startMs": 553390,
-      "startFrame": 16652,
-      "durationMs": 8440,
+      "id": 101,
+      "startMs": 552030,
+      "startFrame": 16601,
+      "durationMs": 8450,
       "durationInFrames": 254,
-      "audioFile": "audio/scene-130.mp3",
+      "audioFile": "audio/scene-101.mp3",
       "segments": [
         {
-          "text": "遺伝子の扉の向こう側にあったのは、極端に短い睡眠ではなく、常人より少し短い睡眠だった。",
+          "text": "この研究は結果を見る前に手続きを公開する事前登録の形をとっていて、オープンサイエンス財団の賞を受けている。",
           "startFrame": 0,
-          "durationInFrames": 250
+          "durationInFrames": 240
         }
       ]
     },
     {
-      "id": 131,
-      "startMs": 561830,
-      "startFrame": 16906,
-      "durationMs": 3720,
-      "durationInFrames": 112,
-      "audioFile": "audio/scene-131.mp3",
+      "id": 102,
+      "startMs": 560480,
+      "startFrame": 16855,
+      "durationMs": 2760,
+      "durationInFrames": 83,
+      "audioFile": "audio/scene-102.mp3",
       "segments": [
         {
-          "text": "そしてその扉は、訓練で開くとは限らない。",
+          "text": "結果はこうだった。",
           "startFrame": 0,
-          "durationInFrames": 108
+          "durationInFrames": 79
         }
       ]
     },
     {
-      "id": 132,
-      "startMs": 565550,
-      "startFrame": 17018,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-132.mp3",
+      "id": 103,
+      "startMs": 563240,
+      "startFrame": 16938,
+      "durationMs": 6040,
+      "durationInFrames": 182,
+      "audioFile": "audio/scene-103.mp3",
       "segments": [
         {
-          "text": "というより、開いたという報告が無い。",
+          "text": "相手が自分に依存していると思っている人ほど、自分のほうから別れを切り出さなかったのである。",
           "startFrame": 0,
-          "durationInFrames": 74
+          "durationInFrames": 178
         }
       ]
     },
     {
-      "id": 133,
-      "startMs": 568150,
-      "startFrame": 17096,
-      "durationMs": 3480,
-      "durationInFrames": 105,
-      "audioFile": "audio/scene-133.mp3",
+      "id": 104,
+      "startMs": 569280,
+      "startFrame": 17120,
+      "durationMs": 7330,
+      "durationInFrames": 220,
+      "audioFile": "audio/scene-104.mp3",
       "segments": [
         {
-          "text": "生まれたときにどちらの側にいたかで決まっている。",
+          "text": "著者らは論文の中で、去るか留まるかの判断には利他的な成分が含まれていると書いている。",
           "startFrame": 0,
-          "durationInFrames": 101
+          "durationInFrames": 206
         }
       ]
     },
     {
-      "id": 134,
-      "startMs": 571630,
-      "startFrame": 17201,
-      "durationMs": 3560,
-      "durationInFrames": 107,
-      "audioFile": "audio/scene-134.mp3",
+      "id": 105,
+      "startMs": 576610,
+      "startFrame": 17340,
+      "durationMs": 6130,
+      "durationInFrames": 184,
+      "audioFile": "audio/scene-105.mp3",
       "segments": [
         {
-          "text": "あなたはどちらの側にいるのだろうか。",
+          "text": "動かない理由の中身が、自分の損得ではなく相手の生活だったということだ。",
           "startFrame": 0,
-          "durationInFrames": 103
+          "durationInFrames": 170
         }
       ]
     },
     {
-      "id": 135,
-      "startMs": 575190,
-      "startFrame": 17308,
-      "durationMs": 5240,
-      "durationInFrames": 158,
-      "audioFile": "audio/scene-135.mp3",
+      "id": 106,
+      "startMs": 582740,
+      "startFrame": 17524,
+      "durationMs": 4920,
+      "durationInFrames": 148,
+      "audioFile": "audio/scene-106.mp3",
       "segments": [
         {
-          "text": "慣れという言葉について、まったく別の領域から補助線を引いておきたい。",
-          "startFrame": 0,
-          "durationInFrames": 154
-        }
-      ]
-    },
-    {
-      "id": 136,
-      "startMs": 580430,
-      "startFrame": 17466,
-      "durationMs": 2600,
-      "durationInFrames": 78,
-      "audioFile": "audio/scene-136.mp3",
-      "segments": [
-        {
-          "text": "音の話である。",
-          "startFrame": 0,
-          "durationInFrames": 74
-        }
-      ]
-    },
-    {
-      "id": 137,
-      "startMs": 583030,
-      "startFrame": 17544,
-      "durationMs": 5480,
-      "durationInFrames": 165,
-      "audioFile": "audio/scene-137.mp3",
-      "segments": [
-        {
-          "text": "大きな音のする環境に長くいると、その音はうるさく感じられなくなる。",
-          "startFrame": 0,
-          "durationInFrames": 161
-        }
-      ]
-    },
-    {
-      "id": 138,
-      "startMs": 588510,
-      "startFrame": 17709,
-      "durationMs": 3240,
-      "durationInFrames": 98,
-      "audioFile": "audio/scene-138.mp3",
-      "segments": [
-        {
-          "text": "人はこれを、耳が慣れたと表現する。",
-          "startFrame": 0,
-          "durationInFrames": 94
-        }
-      ]
-    },
-    {
-      "id": 139,
-      "startMs": 591750,
-      "startFrame": 17807,
-      "durationMs": 3880,
-      "durationInFrames": 117,
-      "audioFile": "audio/scene-139.mp3",
-      "segments": [
-        {
-          "text": "ところが実際に起きているのは、聞こえの閾値が上がることだ。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 140,
-      "startMs": 595630,
-      "startFrame": 17924,
-      "durationMs": 5250,
-      "durationInFrames": 158,
-      "audioFile": "audio/scene-140.mp3",
-      "segments": [
-        {
-          "text": "つまり、小さい音が拾えなくなっている。",
+          "text": "日曜の午後、あなたは荷物をまとめようとして手を止めている。",
           "startFrame": 0,
           "durationInFrames": 144
         }
       ]
     },
     {
+      "id": 107,
+      "startMs": 587660,
+      "startFrame": 17672,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-107.mp3",
+      "segments": [
+        {
+          "text": "頭に浮かんでいるのは自分が使った三年ではない。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "startMs": 591300,
+      "startFrame": 17782,
+      "durationMs": 8440,
+      "durationInFrames": 254,
+      "audioFile": "audio/scene-108.mp3",
+      "segments": [
+        {
+          "text": "あの人が誰にも相談できないこと、実家と折り合いが悪いこと、この部屋の家賃を一人では払えないこと。",
+          "startFrame": 0,
+          "durationInFrames": 250
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "startMs": 599740,
+      "startFrame": 18036,
+      "durationMs": 6450,
+      "durationInFrames": 194,
+      "audioFile": "audio/scene-109.mp3",
+      "segments": [
+        {
+          "text": "気づけば、あなたの計算の中に、あなた自身の項目がひとつも入っていない。",
+          "startFrame": 0,
+          "durationInFrames": 180
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "startMs": 606190,
+      "startFrame": 18230,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-110.mp3",
+      "segments": [
+        {
+          "text": "それは動けない自分への言い訳ではないか、と思うかもしれない。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "startMs": 610470,
+      "startFrame": 18359,
+      "durationMs": 2530,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-111.mp3",
+      "segments": [
+        {
+          "text": "その懸念はもっともだ。",
+          "startFrame": 0,
+          "durationInFrames": 62
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "startMs": 613000,
+      "startFrame": 18435,
+      "durationMs": 16840,
+      "durationInFrames": 506,
+      "audioFile": "audio/scene-112.mp3",
+      "segments": [
+        {
+          "text": "だが同じ研究者たちは別の論文で、人が挙げる留まりたい理由を27種類、去りたい理由を23種類に分類していて、多くの人がその両方を同時に抱えていることを示している。",
+          "startFrame": 0,
+          "durationInFrames": 502
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "startMs": 629840,
+      "startFrame": 18941,
+      "durationMs": 4840,
+      "durationInFrames": 146,
+      "audioFile": "audio/scene-113.mp3",
+      "segments": [
+        {
+          "text": "言い訳なら片方だけ残るはずだが、実際には両方が残り続けている。",
+          "startFrame": 0,
+          "durationInFrames": 142
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "startMs": 634680,
+      "startFrame": 19087,
+      "durationMs": 3160,
+      "durationInFrames": 95,
+      "audioFile": "audio/scene-114.mp3",
+      "segments": [
+        {
+          "text": "そして、この構造には、はるかに重い場面がある。",
+          "startFrame": 0,
+          "durationInFrames": 91
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "startMs": 637840,
+      "startFrame": 19182,
+      "durationMs": 9480,
+      "durationInFrames": 285,
+      "audioFile": "audio/scene-115.mp3",
+      "segments": [
+        {
+          "text": "1995年、キャリル・ラズボルトとジョン・マーツが、暴力被害者のシェルターで行われた入所面接のデータを分析した。",
+          "startFrame": 0,
+          "durationInFrames": 281
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "startMs": 647320,
+      "startFrame": 19467,
+      "durationMs": 12600,
+      "durationInFrames": 378,
+      "audioFile": "audio/scene-116.mp3",
+      "segments": [
+        {
+          "text": "経済的な選択肢が乏しい人ほど、そして投資が大きい人ほど、関係への縛られ具合は強く、それが退所後に相手のもとへ戻るかどうかを有意に分けていた。",
+          "startFrame": 0,
+          "durationInFrames": 374
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "startMs": 659920,
+      "startFrame": 19845,
+      "durationMs": 2280,
+      "durationInFrames": 69,
+      "audioFile": "audio/scene-117.mp3",
+      "segments": [
+        {
+          "text": "この結果を読み違えてはならない。",
+          "startFrame": 0,
+          "durationInFrames": 65
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "startMs": 662200,
+      "startFrame": 19914,
+      "durationMs": 3720,
+      "durationInFrames": 112,
+      "audioFile": "audio/scene-118.mp3",
+      "segments": [
+        {
+          "text": "責任は暴力をふるった側にあり、そこに例外は無い。",
+          "startFrame": 0,
+          "durationInFrames": 108
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "startMs": 665920,
+      "startFrame": 20026,
+      "durationMs": 16520,
+      "durationInFrames": 496,
+      "audioFile": "audio/scene-119.mp3",
+      "segments": [
+        {
+          "text": "この研究が示しているのは、留まった人の判断の甘さではなく、代替の道を制度と経済の側から絶たれてしまった人には、留まる以外の選択肢がそもそも存在しないという事実のほうである。",
+          "startFrame": 0,
+          "durationInFrames": 492
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "startMs": 682440,
+      "startFrame": 20522,
+      "durationMs": 6370,
+      "durationInFrames": 192,
+      "audioFile": "audio/scene-120.mp3",
+      "segments": [
+        {
+          "text": "同じ仕組みが、片方では惰性と呼ばれ、もう片方では逃げられないと呼ばれている。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "startMs": 688810,
+      "startFrame": 20714,
+      "durationMs": 2600,
+      "durationInFrames": 78,
+      "audioFile": "audio/scene-121.mp3",
+      "segments": [
+        {
+          "text": "自分の足元も削っておきたい。",
+          "startFrame": 0,
+          "durationInFrames": 74
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "startMs": 691410,
+      "startFrame": 20792,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-122.mp3",
+      "segments": [
+        {
+          "text": "レゴらの研究は、仮想の場面を読んで答えてもらう形式だった。",
+          "startFrame": 0,
+          "durationInFrames": 125
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "startMs": 695690,
+      "startFrame": 20921,
+      "durationMs": 2520,
+      "durationInFrames": 76,
+      "audioFile": "audio/scene-123.mp3",
+      "segments": [
+        {
+          "text": "実際に別れた人を追跡したものではない。",
+          "startFrame": 0,
+          "durationInFrames": 72
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "startMs": 698210,
+      "startFrame": 20997,
+      "durationMs": 7570,
+      "durationInFrames": 228,
+      "audioFile": "audio/scene-124.mp3",
+      "segments": [
+        {
+          "text": "人が紙の上で選ぶことと、玄関で靴を履くかどうかが同じとは限らないのではないだろうか。",
+          "startFrame": 0,
+          "durationInFrames": 214
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "startMs": 705780,
+      "startFrame": 21225,
+      "durationMs": 7400,
+      "durationInFrames": 222,
+      "audioFile": "audio/scene-125.mp3",
+      "segments": [
+        {
+          "text": "では、この「注ぎ込んだ分だけ続けてしまう」という性質は、人間に生まれつき備わったものなのか。",
+          "startFrame": 0,
+          "durationInFrames": 218
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "startMs": 713180,
+      "startFrame": 21447,
+      "durationMs": 3480,
+      "durationInFrames": 105,
+      "audioFile": "audio/scene-126.mp3",
+      "segments": [
+        {
+          "text": "ここで、まったく違う場所から答えが返ってくる。",
+          "startFrame": 0,
+          "durationInFrames": 101
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "startMs": 716660,
+      "startFrame": 21552,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-127.mp3",
+      "segments": [
+        {
+          "text": "生き物の世界である。",
+          "startFrame": 0,
+          "durationInFrames": 43
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "startMs": 718660,
+      "startFrame": 21612,
+      "durationMs": 7560,
+      "durationInFrames": 227,
+      "audioFile": "audio/scene-128.mp3",
+      "segments": [
+        {
+          "text": "1976年、リチャード・ドーキンスとタムシン・カーライルが、ネイチャー誌に短い論文を出した。",
+          "startFrame": 0,
+          "durationInFrames": 223
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "startMs": 726220,
+      "startFrame": 21839,
+      "durationMs": 8360,
+      "durationInFrames": 251,
+      "audioFile": "audio/scene-129.mp3",
+      "segments": [
+        {
+          "text": "当時、親が子育てを続けるかどうかは、すでに産んだ卵にどれだけ投資したかで決まる、という説明が使われていた。",
+          "startFrame": 0,
+          "durationInFrames": 247
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "startMs": 734580,
+      "startFrame": 22090,
+      "durationMs": 3240,
+      "durationInFrames": 98,
+      "audioFile": "audio/scene-130.mp3",
+      "segments": [
+        {
+          "text": "二人はそれを誤りとして退けている。",
+          "startFrame": 0,
+          "durationInFrames": 94
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "startMs": 737820,
+      "startFrame": 22188,
+      "durationMs": 3960,
+      "durationInFrames": 119,
+      "audioFile": "audio/scene-131.mp3",
+      "segments": [
+        {
+          "text": "判断の材料になるのは、これから救えるものだけである。",
+          "startFrame": 0,
+          "durationInFrames": 115
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "startMs": 741780,
+      "startFrame": 22307,
+      "durationMs": 3640,
+      "durationInFrames": 110,
+      "audioFile": "audio/scene-132.mp3",
+      "segments": [
+        {
+          "text": "すでに払った分は、どちらを選んでも戻ってこないのだから。",
+          "startFrame": 0,
+          "durationInFrames": 106
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "startMs": 745420,
+      "startFrame": 22417,
+      "durationMs": 2280,
+      "durationInFrames": 69,
+      "audioFile": "audio/scene-133.mp3",
+      "segments": [
+        {
+          "text": "彼らはこの誤りに名前を付けた。",
+          "startFrame": 0,
+          "durationInFrames": 65
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "startMs": 747700,
+      "startFrame": 22486,
+      "durationMs": 8520,
+      "durationInFrames": 256,
+      "audioFile": "audio/scene-134.mp3",
+      "segments": [
+        {
+          "text": "すでに投じた額を理由に開発が続けられていた超音速旅客機の名を借りて、コンコルドの誤り、と呼んだのである。",
+          "startFrame": 0,
+          "durationInFrames": 252
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "startMs": 756220,
+      "startFrame": 22742,
+      "durationMs": 6280,
+      "durationInFrames": 189,
+      "audioFile": "audio/scene-135.mp3",
+      "segments": [
+        {
+          "text": "その機体は1962年の英仏協定に始まり、2003年に退役した。",
+          "startFrame": 0,
+          "durationInFrames": 185
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "startMs": 762500,
+      "startFrame": 22931,
+      "durationMs": 6370,
+      "durationInFrames": 192,
+      "audioFile": "audio/scene-136.mp3",
+      "segments": [
+        {
+          "text": "恋愛と航空機開発と親鳥の子育てが、同じ構造で並んでいることになる。",
+          "startFrame": 0,
+          "durationInFrames": 178
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "startMs": 768870,
+      "startFrame": 23123,
+      "durationMs": 2000,
+      "durationInFrames": 60,
+      "audioFile": "audio/scene-137.mp3",
+      "segments": [
+        {
+          "text": "さらに踏み込んだ検討がある。",
+          "startFrame": 0,
+          "durationInFrames": 48
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "startMs": 770870,
+      "startFrame": 23183,
+      "durationMs": 7800,
+      "durationInFrames": 234,
+      "audioFile": "audio/scene-138.mp3",
+      "segments": [
+        {
+          "text": "1999年、アークスとピーター・エイトンが、サイコロジカル・ブレティン誌でこの問題を洗い直した。",
+          "startFrame": 0,
+          "durationInFrames": 230
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "startMs": 778670,
+      "startFrame": 23417,
+      "durationMs": 7480,
+      "durationInFrames": 225,
+      "audioFile": "audio/scene-139.mp3",
+      "segments": [
+        {
+          "text": "彼らの結論は、動物にコンコルドの誤りの曖昧でない実例は無い、というものだった。",
+          "startFrame": 0,
+          "durationInFrames": 221
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "startMs": 786150,
+      "startFrame": 23642,
+      "durationMs": 10530,
+      "durationInFrames": 316,
+      "audioFile": "audio/scene-140.mp3",
+      "segments": [
+        {
+          "text": "しかもそれだけではなく、同じような場面に置かれたとき、幼い子どものほうが大人よりも経済学の教科書に近いふるまいをしていたのである。",
+          "startFrame": 0,
+          "durationInFrames": 302
+        }
+      ]
+    },
+    {
       "id": 141,
-      "startMs": 600880,
-      "startFrame": 18082,
-      "durationMs": 4600,
-      "durationInFrames": 138,
+      "startMs": 796680,
+      "startFrame": 23958,
+      "durationMs": 5640,
+      "durationInFrames": 170,
       "audioFile": "audio/scene-141.mp3",
       "segments": [
         {
-          "text": "うるさく感じなくなったという感覚は、耳が強くなった証拠ではない。",
+          "text": "この誤りは、古い本能ではなく、育つ過程で身につけたもののほうだったのだろうか。",
           "startFrame": 0,
-          "durationInFrames": 134
+          "durationInFrames": 166
         }
       ]
     },
     {
       "id": 142,
-      "startMs": 605480,
-      "startFrame": 18220,
+      "startMs": 802320,
+      "startFrame": 24128,
       "durationMs": 6040,
       "durationInFrames": 182,
       "audioFile": "audio/scene-142.mp3",
       "segments": [
         {
-          "text": "受け取れる範囲がせまくなったという、損失そのものの内側から出てきた感想なのである。",
+          "text": "二人はその原因を、無駄にするな、という規則の使いすぎに求めている。",
           "startFrame": 0,
           "durationInFrames": 178
         }
@@ -2134,224 +2134,224 @@
     },
     {
       "id": 143,
-      "startMs": 611520,
-      "startFrame": 18402,
-      "durationMs": 5800,
-      "durationInFrames": 174,
+      "startMs": 808360,
+      "startFrame": 24310,
+      "durationMs": 5960,
+      "durationInFrames": 179,
       "audioFile": "audio/scene-143.mp3",
       "segments": [
         {
-          "text": "慣れという同じ言葉が、まったく別の中身を指している場合があるということでもある。",
+          "text": "食べ物を残すな、道具を大事にしろ、始めたことは途中で投げ出すな。",
           "startFrame": 0,
-          "durationInFrames": 170
+          "durationInFrames": 175
         }
       ]
     },
     {
       "id": 144,
-      "startMs": 617320,
-      "startFrame": 18576,
-      "durationMs": 3400,
-      "durationInFrames": 102,
+      "startMs": 814320,
+      "startFrame": 24489,
+      "durationMs": 7160,
+      "durationInFrames": 215,
       "audioFile": "audio/scene-144.mp3",
       "segments": [
         {
-          "text": "夜のライブハウスを出て、外の通りに立つ。",
+          "text": "私たちはこれを子どもの頃から何百回と教えられ、実際その多くの場面で助けられてきた。",
           "startFrame": 0,
-          "durationInFrames": 98
+          "durationInFrames": 211
         }
       ]
     },
     {
       "id": 145,
-      "startMs": 620720,
-      "startFrame": 18678,
-      "durationMs": 4280,
-      "durationInFrames": 129,
+      "startMs": 821480,
+      "startFrame": 24704,
+      "durationMs": 4840,
+      "durationInFrames": 146,
       "audioFile": "audio/scene-145.mp3",
       "segments": [
         {
-          "text": "しばらく耳が遠くなっていて、隣の人の声が薄く聞こえる。",
+          "text": "約束を守るのも、簡単に諦めないのも、同じ根から出ている。",
+          "startFrame": 0,
+          "durationInFrames": 142
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "startMs": 826320,
+      "startFrame": 24850,
+      "durationMs": 5160,
+      "durationInFrames": 155,
+      "audioFile": "audio/scene-146.mp3",
+      "segments": [
+        {
+          "text": "ただしこの規則はモノを念頭に作られていて、モノは使い続ければ元が取れる。",
+          "startFrame": 0,
+          "durationInFrames": 151
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "startMs": 831480,
+      "startFrame": 25005,
+      "durationMs": 4930,
+      "durationInFrames": 148,
+      "audioFile": "audio/scene-147.mp3",
+      "segments": [
+        {
+          "text": "取り返せないのは時間だけなのに、規則の側はその区別をしない。",
+          "startFrame": 0,
+          "durationInFrames": 134
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "startMs": 836410,
+      "startFrame": 25153,
+      "durationMs": 2600,
+      "durationInFrames": 78,
+      "audioFile": "audio/scene-148.mp3",
+      "segments": [
+        {
+          "text": "もう一度、あの深夜の部屋に戻る。",
+          "startFrame": 0,
+          "durationInFrames": 74
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "startMs": 839010,
+      "startFrame": 25231,
+      "durationMs": 4200,
+      "durationInFrames": 126,
+      "audioFile": "audio/scene-149.mp3",
+      "segments": [
+        {
+          "text": "天井を見ながら年数を数えていた、あの数分間である。",
+          "startFrame": 0,
+          "durationInFrames": 122
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "startMs": 843210,
+      "startFrame": 25357,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-150.mp3",
+      "segments": [
+        {
+          "text": "あなたはそのとき、たぶん自分を試していた。",
+          "startFrame": 0,
+          "durationInFrames": 96
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "startMs": 846530,
+      "startFrame": 25457,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-151.mp3",
+      "segments": [
+        {
+          "text": "これだけの年数を数えられるのだから、まだ何かあるはずだ、と。",
           "startFrame": 0,
           "durationInFrames": 125
         }
       ]
     },
     {
-      "id": 146,
-      "startMs": 625000,
-      "startFrame": 18807,
-      "durationMs": 9000,
-      "durationInFrames": 270,
-      "audioFile": "audio/scene-146.mp3",
-      "segments": [
-        {
-          "text": "数十分もすれば戻るのだが、その数十分のあいだに、自分の聴力を自己申告で採点したら、どんな数字を出すことになるだろうか。",
-          "startFrame": 0,
-          "durationInFrames": 266
-        }
-      ]
-    },
-    {
-      "id": 147,
-      "startMs": 634000,
-      "startFrame": 19077,
-      "durationMs": 3410,
-      "durationInFrames": 103,
-      "audioFile": "audio/scene-147.mp3",
-      "segments": [
-        {
-          "text": "睡眠で起きているのも、これと似た構造にある。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 148,
-      "startMs": 637410,
-      "startFrame": 19180,
-      "durationMs": 5480,
-      "durationInFrames": 165,
-      "audioFile": "audio/scene-148.mp3",
-      "segments": [
-        {
-          "text": "とはいえ、自分は本当に平気なのだから放っておいてくれ、と思う人もいるかもしれない。",
-          "startFrame": 0,
-          "durationInFrames": 161
-        }
-      ]
-    },
-    {
-      "id": 149,
-      "startMs": 642890,
-      "startFrame": 19345,
-      "durationMs": 4120,
-      "durationInFrames": 124,
-      "audioFile": "audio/scene-149.mp3",
-      "segments": [
-        {
-          "text": "その気持ちは分かるし、否定する材料もこちらには無い。",
-          "startFrame": 0,
-          "durationInFrames": 120
-        }
-      ]
-    },
-    {
-      "id": 150,
-      "startMs": 647010,
-      "startFrame": 19469,
-      "durationMs": 9800,
-      "durationInFrames": 294,
-      "audioFile": "audio/scene-150.mp3",
-      "segments": [
-        {
-          "text": "だがこの動画で言えるのは、平気だという感覚が正しいかどうかを、感覚の側から検算することはできない、というところまでである。",
-          "startFrame": 0,
-          "durationInFrames": 290
-        }
-      ]
-    },
-    {
-      "id": 151,
-      "startMs": 656810,
-      "startFrame": 19763,
-      "durationMs": 5400,
-      "durationInFrames": 162,
-      "audioFile": "audio/scene-151.mp3",
-      "segments": [
-        {
-          "text": "正しいと言い切ることも、間違っていると言い切ることも、自己申告からはできない。",
-          "startFrame": 0,
-          "durationInFrames": 158
-        }
-      ]
-    },
-    {
       "id": 152,
-      "startMs": 662210,
-      "startFrame": 19925,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 850810,
+      "startFrame": 25586,
+      "durationMs": 7080,
+      "durationInFrames": 213,
       "audioFile": "audio/scene-152.mp3",
       "segments": [
         {
-          "text": "さらに削っておく。",
+          "text": "あるいは、これだけ数えて何も出てこないのなら自分は薄情なのだ、と。",
           "startFrame": 0,
-          "durationInFrames": 41
+          "durationInFrames": 209
         }
       ]
     },
     {
       "id": 153,
-      "startMs": 664210,
-      "startFrame": 19985,
-      "durationMs": 9080,
-      "durationInFrames": 273,
+      "startMs": 857890,
+      "startFrame": 25799,
+      "durationMs": 3320,
+      "durationInFrames": 100,
       "audioFile": "audio/scene-153.mp3",
       "segments": [
         {
-          "text": "ファン・ドンゲンらの研究では、睡眠制限に対する反応に個人差があり、その差が形質のように安定していることも指摘されている。",
+          "text": "どちらにしても、年数が判定の材料に使われていた。",
           "startFrame": 0,
-          "durationInFrames": 269
+          "durationInFrames": 96
         }
       ]
     },
     {
       "id": 154,
-      "startMs": 673290,
-      "startFrame": 20258,
-      "durationMs": 2360,
-      "durationInFrames": 71,
+      "startMs": 861210,
+      "startFrame": 25899,
+      "durationMs": 3480,
+      "durationInFrames": 105,
       "audioFile": "audio/scene-154.mp3",
       "segments": [
         {
-          "text": "全員が同じ落ち方をするわけではない。",
+          "text": "だがあの数字は、はじめから判定の材料ではなかったのである。",
+          "startFrame": 0,
+          "durationInFrames": 101
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "startMs": 864690,
+      "startFrame": 26004,
+      "durationMs": 2360,
+      "durationInFrames": 71,
+      "audioFile": "audio/scene-155.mp3",
+      "segments": [
+        {
+          "text": "並べ直すと、線は一本になる。",
           "startFrame": 0,
           "durationInFrames": 67
         }
       ]
     },
     {
-      "id": 155,
-      "startMs": 675650,
-      "startFrame": 20329,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-155.mp3",
-      "segments": [
-        {
-          "text": "落ち方の小さい人は、実際に小さい。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
       "id": 156,
-      "startMs": 678730,
-      "startFrame": 20422,
-      "durationMs": 6360,
-      "durationInFrames": 191,
+      "startMs": 867050,
+      "startFrame": 26075,
+      "durationMs": 4280,
+      "durationInFrames": 129,
       "audioFile": "audio/scene-156.mp3",
       "segments": [
         {
-          "text": "この回は、四時間で足りる人が一人もいないと主張するものではない。",
+          "text": "年数は、去るかどうかの二択を動かさない。",
           "startFrame": 0,
-          "durationInFrames": 187
+          "durationInFrames": 125
         }
       ]
     },
     {
       "id": 157,
-      "startMs": 685090,
-      "startFrame": 20613,
+      "startMs": 871330,
+      "startFrame": 26204,
       "durationMs": 3160,
       "durationInFrames": 95,
       "audioFile": "audio/scene-157.mp3",
       "segments": [
         {
-          "text": "そのうえで、国全体の位置は書いておく価値がある。",
+          "text": "動かすのは、あと何年を足すかのほうである。",
           "startFrame": 0,
           "durationInFrames": 91
         }
@@ -2359,671 +2359,296 @@
     },
     {
       "id": 158,
-      "startMs": 688250,
-      "startFrame": 20708,
-      "durationMs": 10840,
-      "durationInFrames": 326,
+      "startMs": 874490,
+      "startFrame": 26299,
+      "durationMs": 8840,
+      "durationInFrames": 266,
       "audioFile": "audio/scene-158.mp3",
       "segments": [
         {
-          "text": "2021年の経済協力開発機構の報告では、調査対象となった33か国のうち、日本人の平均睡眠時間が最も短かった。",
+          "text": "人を縛る力のうち、注ぎ込んだ量はいちばん弱く、いちばん強いのは満足度と、ほかに道があるかどうかだった。",
           "startFrame": 0,
-          "durationInFrames": 322
+          "durationInFrames": 262
         }
       ]
     },
     {
       "id": 159,
-      "startMs": 699090,
-      "startFrame": 21034,
-      "durationMs": 5880,
-      "durationInFrames": 177,
+      "startMs": 883330,
+      "startFrame": 26565,
+      "durationMs": 5800,
+      "durationInFrames": 174,
       "audioFile": "audio/scene-159.mp3",
       "segments": [
         {
-          "text": "厚生労働省は2023年に、健康づくりのための睡眠ガイドを策定している。",
+          "text": "そして人が動かないとき、その勘定にはしばしば自分ではなく相手が入っている。",
           "startFrame": 0,
-          "durationInFrames": 173
+          "durationInFrames": 170
         }
       ]
     },
     {
       "id": 160,
-      "startMs": 704970,
-      "startFrame": 21211,
-      "durationMs": 3720,
-      "durationInFrames": 112,
+      "startMs": 889130,
+      "startFrame": 26739,
+      "durationMs": 3320,
+      "durationInFrames": 100,
       "audioFile": "audio/scene-160.mp3",
       "segments": [
         {
-          "text": "個人の資質の話であれば、国が指針を出す必要はない。",
+          "text": "では、さっさと別れろということか、と思うかもしれない。",
           "startFrame": 0,
-          "durationInFrames": 108
+          "durationInFrames": 96
         }
       ]
     },
     {
       "id": 161,
-      "startMs": 708690,
-      "startFrame": 21323,
-      "durationMs": 6440,
-      "durationInFrames": 194,
+      "startMs": 892450,
+      "startFrame": 26839,
+      "durationMs": 2000,
+      "durationInFrames": 60,
       "audioFile": "audio/scene-161.mp3",
       "segments": [
         {
-          "text": "指針が出るということは、個人の努力では動かない何かが、その手前にあるという判断である。",
+          "text": "そうではない。",
           "startFrame": 0,
-          "durationInFrames": 190
+          "durationInFrames": 34
         }
       ]
     },
     {
       "id": 162,
-      "startMs": 715130,
-      "startFrame": 21517,
-      "durationMs": 2840,
-      "durationInFrames": 86,
+      "startMs": 894450,
+      "startFrame": 26899,
+      "durationMs": 4040,
+      "durationInFrames": 122,
       "audioFile": "audio/scene-162.mp3",
       "segments": [
         {
-          "text": "その何かは、おそらく時間割のほうにある。",
+          "text": "ここまでの研究は、どれ一つとして別れることを勧めていない。",
           "startFrame": 0,
-          "durationInFrames": 82
+          "durationInFrames": 118
         }
       ]
     },
     {
       "id": 163,
-      "startMs": 717970,
-      "startFrame": 21603,
-      "durationMs": 9640,
-      "durationInFrames": 290,
+      "startMs": 898490,
+      "startFrame": 27021,
+      "durationMs": 11000,
+      "durationInFrames": 330,
       "audioFile": "audio/scene-163.mp3",
       "segments": [
         {
-          "text": "労働時間と通勤時間を先に確定させると、そこから食事と入浴と家事を引いた最後の余りが、そのまま睡眠になる。",
+          "text": "レイとアグニューのメタ分析は相関を並べたものであって、注ぎ込んだから留まる、という因果を示したわけではないし、留まった人が間違っていたとも限らない。",
           "startFrame": 0,
-          "durationInFrames": 286
+          "durationInFrames": 326
         }
       ]
     },
     {
       "id": 164,
-      "startMs": 727610,
-      "startFrame": 21893,
-      "durationMs": 3080,
-      "durationInFrames": 93,
+      "startMs": 909490,
+      "startFrame": 27351,
+      "durationMs": 3320,
+      "durationInFrames": 100,
       "audioFile": "audio/scene-164.mp3",
       "segments": [
         {
-          "text": "つまり睡眠は意志の力で削られたのではない。",
+          "text": "そもそも、留まること自体は誤りではない。",
           "startFrame": 0,
-          "durationInFrames": 89
+          "durationInFrames": 96
         }
       ]
     },
     {
       "id": 165,
-      "startMs": 730690,
-      "startFrame": 21986,
-      "durationMs": 3080,
-      "durationInFrames": 93,
+      "startMs": 912810,
+      "startFrame": 27451,
+      "durationMs": 5650,
+      "durationInFrames": 170,
       "audioFile": "audio/scene-165.mp3",
       "segments": [
         {
-          "text": "時間割の最後に置かれていたから減ったのである。",
+          "text": "沈没費用が誤りになるのは、それが判断の材料に混ざったときだけである。",
           "startFrame": 0,
-          "durationInFrames": 89
+          "durationInFrames": 156
         }
       ]
     },
     {
       "id": 166,
-      "startMs": 733770,
-      "startFrame": 22079,
-      "durationMs": 6920,
-      "durationInFrames": 208,
+      "startMs": 918460,
+      "startFrame": 27621,
+      "durationMs": 4040,
+      "durationInFrames": 122,
       "audioFile": "audio/scene-166.mp3",
       "segments": [
         {
-          "text": "夜更かしを選んだ覚えのない人でも、順番がそうなっている限り、削られる側に回り続ける。",
+          "text": "長く一緒にいたから幸せだ、というのは正しい理由だ。",
           "startFrame": 0,
-          "durationInFrames": 204
+          "durationInFrames": 118
         }
       ]
     },
     {
       "id": 167,
-      "startMs": 740690,
-      "startFrame": 22287,
-      "durationMs": 10290,
-      "durationInFrames": 309,
+      "startMs": 922500,
+      "startFrame": 27743,
+      "durationMs": 5640,
+      "durationInFrames": 170,
       "audioFile": "audio/scene-167.mp3",
       "segments": [
         {
-          "text": "この順番の問題を、自分の体質の問題として引き受けてしまった人が、この国にはかなりの数いるのではないだろうか。",
+          "text": "長く一緒にいたから抜けられない、というほうが、材料の取り違えなのである。",
           "startFrame": 0,
-          "durationInFrames": 295
+          "durationInFrames": 166
         }
       ]
     },
     {
       "id": 168,
-      "startMs": 750980,
-      "startFrame": 22596,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 928140,
+      "startFrame": 27913,
+      "durationMs": 17640,
+      "durationInFrames": 530,
       "audioFile": "audio/scene-168.mp3",
       "segments": [
         {
-          "text": "もう一度、あの朝に戻る。",
+          "text": "ちなみに厚生労働省の同じ統計では、同居期間20年以上の離婚が40,686組あり、そのうち35年以上が7,194組で、前年比プラス5.4パーセントと全階級で最大の伸びだった。",
           "startFrame": 0,
-          "durationInFrames": 41
+          "durationInFrames": 526
         }
       ]
     },
     {
       "id": 169,
-      "startMs": 752980,
-      "startFrame": 22656,
-      "durationMs": 4680,
-      "durationInFrames": 141,
+      "startMs": 945780,
+      "startFrame": 28443,
+      "durationMs": 4280,
+      "durationInFrames": 129,
       "audioFile": "audio/scene-169.mp3",
       "segments": [
         {
-          "text": "目覚ましが鳴る前の、暗いままのカーテン。",
+          "text": "決断は消えてなくなるのではなく、何年も遅れて届いている。",
           "startFrame": 0,
-          "durationInFrames": 137
+          "durationInFrames": 125
         }
       ]
     },
     {
       "id": 170,
-      "startMs": 757660,
-      "startFrame": 22797,
-      "durationMs": 4120,
-      "durationInFrames": 124,
+      "startMs": 950060,
+      "startFrame": 28572,
+      "durationMs": 2000,
+      "durationInFrames": 60,
       "audioFile": "audio/scene-170.mp3",
       "segments": [
         {
-          "text": "天井を見ながら、昨日は何時から寝たのかを数えている指。",
+          "text": "だから、返しておきたいものがある。",
           "startFrame": 0,
-          "durationInFrames": 120
+          "durationInFrames": 50
         }
       ]
     },
     {
       "id": 171,
-      "startMs": 761780,
-      "startFrame": 22921,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 952060,
+      "startFrame": 28632,
+      "durationMs": 6280,
+      "durationInFrames": 189,
       "audioFile": "audio/scene-171.mp3",
       "segments": [
         {
-          "text": "四時間と少し。",
+          "text": "あなたが数えていたあの年数は、留まる理由にも、去る理由にもならない。",
           "startFrame": 0,
-          "durationInFrames": 43
+          "durationInFrames": 185
         }
       ]
     },
     {
       "id": 172,
-      "startMs": 763780,
-      "startFrame": 22981,
-      "durationMs": 2000,
-      "durationInFrames": 60,
+      "startMs": 958340,
+      "startFrame": 28821,
+      "durationMs": 4840,
+      "durationInFrames": 146,
       "audioFile": "audio/scene-172.mp3",
       "segments": [
         {
-          "text": "もう眠れそうにない。",
-          "startFrame": 0,
-          "durationInFrames": 53
-        }
-      ]
-    },
-    {
-      "id": 173,
-      "startMs": 765780,
-      "startFrame": 23041,
-      "durationMs": 2680,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-173.mp3",
-      "segments": [
-        {
-          "text": "数えていた数字は、たぶん正しかった。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 174,
-      "startMs": 768460,
-      "startFrame": 23122,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-174.mp3",
-      "segments": [
-        {
-          "text": "正しくなかったのは、その数字のあとに続けていた判定のほうである。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 175,
-      "startMs": 772980,
-      "startFrame": 23258,
-      "durationMs": 3810,
-      "durationInFrames": 115,
-      "audioFile": "audio/scene-175.mp3",
-      "segments": [
-        {
-          "text": "日中に倒れていないから足りている、という一行。",
-          "startFrame": 0,
-          "durationInFrames": 101
-        }
-      ]
-    },
-    {
-      "id": 176,
-      "startMs": 776790,
-      "startFrame": 23373,
-      "durationMs": 6200,
-      "durationInFrames": 186,
-      "audioFile": "audio/scene-176.mp3",
-      "segments": [
-        {
-          "text": "その一行を書いていたのは、実験でいちばん最初に更新を止めた側の器官だった。",
-          "startFrame": 0,
-          "durationInFrames": 182
-        }
-      ]
-    },
-    {
-      "id": 177,
-      "startMs": 782990,
-      "startFrame": 23559,
-      "durationMs": 2920,
-      "durationInFrames": 88,
-      "audioFile": "audio/scene-177.mp3",
-      "segments": [
-        {
-          "text": "並べ直すと、線は一本になる。",
-          "startFrame": 0,
-          "durationInFrames": 84
-        }
-      ]
-    },
-    {
-      "id": 178,
-      "startMs": 785910,
-      "startFrame": 23647,
-      "durationMs": 6440,
-      "durationInFrames": 194,
-      "audioFile": "audio/scene-178.mp3",
-      "segments": [
-        {
-          "text": "睡眠を削ると、能力と、能力の低下を検知する力の両方が落ちる。",
-          "startFrame": 0,
-          "durationInFrames": 190
-        }
-      ]
-    },
-    {
-      "id": 179,
-      "startMs": 792350,
-      "startFrame": 23841,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-179.mp3",
-      "segments": [
-        {
-          "text": "落ちる速さが違うので、自覚だけが先に頭打ちになる。",
-          "startFrame": 0,
-          "durationInFrames": 106
-        }
-      ]
-    },
-    {
-      "id": 180,
-      "startMs": 795990,
-      "startFrame": 23951,
-      "durationMs": 7480,
-      "durationInFrames": 225,
-      "audioFile": "audio/scene-180.mp3",
-      "segments": [
-        {
-          "text": "生まれつき短い睡眠で足りる人はいるが、その扉は遺伝子の側にあり、そこで得られるのは六時間前後だった。",
-          "startFrame": 0,
-          "durationInFrames": 221
-        }
-      ]
-    },
-    {
-      "id": 181,
-      "startMs": 803470,
-      "startFrame": 24176,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-181.mp3",
-      "segments": [
-        {
-          "text": "そして慣れという感覚は、音の世界では損失の別名だった。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 182,
-      "startMs": 807990,
-      "startFrame": 24312,
-      "durationMs": 4840,
-      "durationInFrames": 146,
-      "audioFile": "audio/scene-182.mp3",
-      "segments": [
-        {
-          "text": "では、自分が短眠に向いているかどうかを調べればいいのか、と思うかもしれない。",
+          "text": "それは判定の材料ではなく、すでにあなたが受け取ってしまったもののほうだ。",
           "startFrame": 0,
           "durationInFrames": 142
         }
       ]
     },
     {
-      "id": 183,
-      "startMs": 812830,
-      "startFrame": 24458,
-      "durationMs": 2840,
-      "durationInFrames": 86,
-      "audioFile": "audio/scene-183.mp3",
+      "id": 173,
+      "startMs": 963180,
+      "startFrame": 28967,
+      "durationMs": 4760,
+      "durationInFrames": 143,
+      "audioFile": "audio/scene-173.mp3",
       "segments": [
         {
-          "text": "ただ、その方向にもこの動画は答えを持っていない。",
+          "text": "誰にも回収されないし、どちらを選んでも一日も減らない。",
           "startFrame": 0,
-          "durationInFrames": 82
+          "durationInFrames": 139
         }
       ]
     },
     {
-      "id": 184,
-      "startMs": 815670,
-      "startFrame": 24544,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-184.mp3",
+      "id": 174,
+      "startMs": 967940,
+      "startFrame": 29110,
+      "durationMs": 4040,
+      "durationInFrames": 122,
+      "audioFile": "audio/scene-174.mp3",
       "segments": [
         {
-          "text": "持ち帰れるのは、判定に使う道具をひとつ増やしておくという提案だけである。",
+          "text": "数え終わったあとに残っている問いは、たったひとつである。",
           "startFrame": 0,
-          "durationInFrames": 156
+          "durationInFrames": 118
         }
       ]
     },
     {
-      "id": 185,
-      "startMs": 820990,
-      "startFrame": 24704,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-185.mp3",
+      "id": 175,
+      "startMs": 971980,
+      "startFrame": 29232,
+      "durationMs": 3320,
+      "durationInFrames": 100,
+      "audioFile": "audio/scene-175.mp3",
       "segments": [
         {
-          "text": "感覚以外の何か。",
+          "text": "これから先の時間を、どこで使うか。",
           "startFrame": 0,
-          "durationInFrames": 46
+          "durationInFrames": 96
         }
       ]
     },
     {
-      "id": 186,
-      "startMs": 822990,
-      "startFrame": 24764,
-      "durationMs": 3960,
-      "durationInFrames": 119,
-      "audioFile": "audio/scene-186.mp3",
+      "id": 176,
+      "startMs": 975300,
+      "startFrame": 29332,
+      "durationMs": 4280,
+      "durationInFrames": 129,
+      "audioFile": "audio/scene-176.mp3",
       "segments": [
         {
-          "text": "同じ時間に同じ作業をしたときの、出来のばらつき。",
+          "text": "年数を数えるのをやめた人だけが、その問いに答えることができる。",
           "startFrame": 0,
-          "durationInFrames": 115
+          "durationInFrames": 125
         }
       ]
     },
     {
-      "id": 187,
-      "startMs": 826950,
-      "startFrame": 24883,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-187.mp3",
-      "segments": [
-        {
-          "text": "誤字の数。",
-          "startFrame": 0,
-          "durationInFrames": 43
-        }
-      ]
-    },
-    {
-      "id": 188,
-      "startMs": 828950,
-      "startFrame": 24943,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-188.mp3",
-      "segments": [
-        {
-          "text": "読み返した回数。",
-          "startFrame": 0,
-          "durationInFrames": 36
-        }
-      ]
-    },
-    {
-      "id": 189,
-      "startMs": 830950,
-      "startFrame": 25003,
-      "durationMs": 2040,
-      "durationInFrames": 62,
-      "audioFile": "audio/scene-189.mp3",
-      "segments": [
-        {
-          "text": "何でもいい。",
-          "startFrame": 0,
-          "durationInFrames": 58
-        }
-      ]
-    },
-    {
-      "id": 190,
-      "startMs": 832990,
-      "startFrame": 25065,
-      "durationMs": 4210,
-      "durationInFrames": 127,
-      "audioFile": "audio/scene-190.mp3",
-      "segments": [
-        {
-          "text": "自覚の外側に、目盛りをひとつだけ置いておく。",
-          "startFrame": 0,
-          "durationInFrames": 113
-        }
-      ]
-    },
-    {
-      "id": 191,
-      "startMs": 837200,
-      "startFrame": 25192,
-      "durationMs": 4360,
-      "durationInFrames": 131,
-      "audioFile": "audio/scene-191.mp3",
-      "segments": [
-        {
-          "text": "この構造がいちばん奪っているのは、睡眠時間そのものではない。",
-          "startFrame": 0,
-          "durationInFrames": 127
-        }
-      ]
-    },
-    {
-      "id": 192,
-      "startMs": 841560,
-      "startFrame": 25323,
-      "durationMs": 5320,
-      "durationInFrames": 160,
-      "audioFile": "audio/scene-192.mp3",
-      "segments": [
-        {
-          "text": "眠いという感覚を、自分の弱さの証拠として読み替えてしまうことのほうだ。",
-          "startFrame": 0,
-          "durationInFrames": 156
-        }
-      ]
-    },
-    {
-      "id": 193,
-      "startMs": 846880,
-      "startFrame": 25483,
+      "id": 177,
+      "startMs": 979580,
+      "startFrame": 29461,
       "durationMs": 3080,
       "durationInFrames": 93,
-      "audioFile": "audio/scene-193.mp3",
-      "segments": [
-        {
-          "text": "眠いと感じるのは意志が弱いからではない。",
-          "startFrame": 0,
-          "durationInFrames": 89
-        }
-      ]
-    },
-    {
-      "id": 194,
-      "startMs": 849960,
-      "startFrame": 25576,
-      "durationMs": 4520,
-      "durationInFrames": 136,
-      "audioFile": "audio/scene-194.mp3",
-      "segments": [
-        {
-          "text": "借りがあることを知らせる通知が、まだ生きているというだけである。",
-          "startFrame": 0,
-          "durationInFrames": 132
-        }
-      ]
-    },
-    {
-      "id": 195,
-      "startMs": 854480,
-      "startFrame": 25712,
-      "durationMs": 6040,
-      "durationInFrames": 182,
-      "audioFile": "audio/scene-195.mp3",
-      "segments": [
-        {
-          "text": "そして通知が止まった状態のことを、人は長いあいだ慣れと呼んできた。",
-          "startFrame": 0,
-          "durationInFrames": 178
-        }
-      ]
-    },
-    {
-      "id": 196,
-      "startMs": 860520,
-      "startFrame": 25894,
-      "durationMs": 2760,
-      "durationInFrames": 83,
-      "audioFile": "audio/scene-196.mp3",
-      "segments": [
-        {
-          "text": "だから、返しておきたいものがある。",
-          "startFrame": 0,
-          "durationInFrames": 79
-        }
-      ]
-    },
-    {
-      "id": 197,
-      "startMs": 863280,
-      "startFrame": 25977,
-      "durationMs": 5880,
-      "durationInFrames": 177,
-      "audioFile": "audio/scene-197.mp3",
-      "segments": [
-        {
-          "text": "あなたが朝の布団の中で数えていたのは、自分の能力ではなかった。",
-          "startFrame": 0,
-          "durationInFrames": 173
-        }
-      ]
-    },
-    {
-      "id": 198,
-      "startMs": 869160,
-      "startFrame": 26154,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-198.mp3",
-      "segments": [
-        {
-          "text": "時間割の残りだった。",
-          "startFrame": 0,
-          "durationInFrames": 43
-        }
-      ]
-    },
-    {
-      "id": 199,
-      "startMs": 871160,
-      "startFrame": 26214,
-      "durationMs": 8600,
-      "durationInFrames": 258,
-      "audioFile": "audio/scene-199.mp3",
-      "segments": [
-        {
-          "text": "それを能力の採点表だと思い込ませていたのは、労働時間を先に固定して、睡眠を最後の余りに置いてきた順番のほうである。",
-          "startFrame": 0,
-          "durationInFrames": 254
-        }
-      ]
-    },
-    {
-      "id": 200,
-      "startMs": 879760,
-      "startFrame": 26472,
-      "durationMs": 2000,
-      "durationInFrames": 60,
-      "audioFile": "audio/scene-200.mp3",
-      "segments": [
-        {
-          "text": "採点表を返す。",
-          "startFrame": 0,
-          "durationInFrames": 55
-        }
-      ]
-    },
-    {
-      "id": 201,
-      "startMs": 881760,
-      "startFrame": 26532,
-      "durationMs": 2680,
-      "durationInFrames": 81,
-      "audioFile": "audio/scene-201.mp3",
-      "segments": [
-        {
-          "text": "あなたが眠いのは、あなたのせいではない。",
-          "startFrame": 0,
-          "durationInFrames": 77
-        }
-      ]
-    },
-    {
-      "id": 202,
-      "startMs": 884440,
-      "startFrame": 26613,
-      "durationMs": 3080,
-      "durationInFrames": 93,
-      "audioFile": "audio/scene-202.mp3",
+      "audioFile": "audio/scene-177.mp3",
       "segments": [
         {
           "text": "そんなことまで、また解剖してしまいました。",
@@ -3033,27 +2658,27 @@
       ]
     },
     {
-      "id": 203,
-      "startMs": 887520,
-      "startFrame": 26706,
-      "durationMs": 3640,
-      "durationInFrames": 110,
-      "audioFile": "audio/scene-203.mp3",
+      "id": 178,
+      "startMs": 982660,
+      "startFrame": 29554,
+      "durationMs": 3880,
+      "durationInFrames": 117,
+      "audioFile": "audio/scene-178.mp3",
       "segments": [
         {
           "text": "よろしければチャンネル登録と高評価をお願いします。",
           "startFrame": 0,
-          "durationInFrames": 106
+          "durationInFrames": 113
         }
       ]
     },
     {
-      "id": 204,
-      "startMs": 891160,
-      "startFrame": 26816,
+      "id": 179,
+      "startMs": 986540,
+      "startFrame": 29671,
       "durationMs": 2930,
       "durationInFrames": 88,
-      "audioFile": "audio/scene-204.mp3",
+      "audioFile": "audio/scene-179.mp3",
       "segments": [
         {
           "text": "それでは次の動画で、またお会いしましょう。",
