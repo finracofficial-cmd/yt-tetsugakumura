@@ -239,10 +239,39 @@ export async function elevenLabsSpeech(
     },
   );
   if (!res.ok) {
-    throw new Error(`ElevenLabs error ${res.status}: ${await res.text()}`);
+    const body = await res.text();
+    const err = new Error(`ElevenLabs error ${res.status}: ${body}`) as Error & {
+      status?: number;
+      retryAfterMs?: number;
+    };
+    err.status = res.status;
+    // 429 は Retry-After を返すことがある。あれば従う
+    const ra = res.headers.get("retry-after");
+    if (ra) {
+      const sec = Number(ra);
+      if (Number.isFinite(sec)) err.retryAfterMs = sec * 1000;
+    }
+    throw err;
   }
   return Buffer.from(await res.arrayBuffer());
 }
+
+/**
+ * 一時的な失敗（同時実行数超過・レート制限・サーバ側の一時エラー）かどうか。
+ *
+ * ElevenLabs の 429 concurrent_limit_exceeded は「今この瞬間に投げすぎ」という
+ * 意味しかなく、少し待てば必ず通る。ところが以前はこれを致命的として扱い、
+ * 20分の生成が1回の429で丸ごと落ちていた。
+ */
+function isRetriableTtsError(err: unknown): boolean {
+  const e = err as { status?: number; message?: string };
+  if (e?.status === 429) return true;
+  if (typeof e?.status === "number" && e.status >= 500) return true;
+  const m = String(e?.message ?? "");
+  return /429|concurrent_limit_exceeded|rate_limit|too many requests|ECONNRESET|ETIMEDOUT|fetch failed/i.test(m);
+}
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /** public/assets/ の音響アセットの有無を検査してマニフェストを書き出す */
 export function writeAssetsManifest(): AssetsManifest {
@@ -350,7 +379,42 @@ export async function generateAudio(): Promise<SyncMap> {
   //   フラグメント分割はしない。自然音声(ElevenLabs等)は文脈で抑揚を作るので、
   //   細切れに送ると片言になる。VOICEVOXも文全体を渡せば句読点で自然に間を取る。
   //   合成はシーンをまたいで並列実行し、20分尺でも時間を抑える。
-  const CONCURRENCY = TTS_PROVIDER === "elevenlabs" ? 4 : 6;
+  // ElevenLabs は契約プランごとに「同時リクエスト数」の上限がある。
+  // Creator プランは3で、以前は4を投げていたため最初のバッチで即座に
+  // 429 concurrent_limit_exceeded になり、生成が丸ごと落ちていた。
+  // 上限に張り付かせず1本余裕を残す。プランを上げたら環境変数で引き上げられる。
+  const CONCURRENCY = Math.max(
+    1,
+    Number(
+      process.env.TTS_CONCURRENCY ||
+        (TTS_PROVIDER === "elevenlabs" ? "2" : "6"),
+    ),
+  );
+  /** 1シーンあたりの最大リトライ回数（一時的失敗のみ） */
+  const MAX_TTS_RETRY = Math.max(0, Number(process.env.TTS_MAX_RETRY || "5"));
+
+  /** 一時的失敗は指数バックオフで粘る。恒久的な失敗（401/404等）は即座に投げる */
+  const synthesizeWithRetry = async (
+    text: string,
+  ): Promise<{ buffer: Buffer; ext: "mp3" | "wav" }> => {
+    let lastErr: unknown;
+    for (let attempt = 0; attempt <= MAX_TTS_RETRY; attempt++) {
+      try {
+        return await synthesize(text);
+      } catch (err) {
+        lastErr = err;
+        if (!isRetriableTtsError(err) || attempt === MAX_TTS_RETRY) throw err;
+        const hinted = (err as { retryAfterMs?: number }).retryAfterMs;
+        // 1.5s, 3s, 6s, 12s, 24s（Retry-Afterがあればそれを優先）＋ゆらぎ
+        const wait = hinted ?? 1500 * 2 ** attempt + Math.floor(Math.random() * 400);
+        console.warn(
+          `[generateAudio] TTSが一時的に失敗（${attempt + 1}/${MAX_TTS_RETRY}回目）。${Math.round(wait / 100) / 10}秒待って再試行します。`,
+        );
+        await sleep(wait);
+      }
+    }
+    throw lastErr;
+  };
   const synthResults: ({ buffer: Buffer; ext: "mp3" | "wav" } | null)[] = new Array(
     script.scenes.length,
   ).fill(null);
@@ -363,7 +427,7 @@ export async function generateAudio(): Promise<SyncMap> {
         batch.map(async (scene, k) => {
           const speakText = speakTextFor(scene);
           try {
-            return { idx: start + k, result: await synthesize(speakText) };
+            return { idx: start + k, result: await synthesizeWithRetry(speakText) };
           } catch (err) {
             if (!firstError) firstError = err instanceof Error ? err.message : String(err);
             return { idx: start + k, result: null };
