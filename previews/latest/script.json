@@ -1,173 +1,155 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ私たちは終わった関係に留まるのか【行動経済学×進化心理学】",
-  "bgm_direction": "A quiet, dark piano drone with sparse notes, evoking late-night solitude and slow contemplation.",
+  "title": "なぜ最初の記憶はあてにならないのか【脳科学×発達心理学】",
+  "bgm_direction": "A quiet, dark cinematic underscore with sparse piano and low sustained strings, evoking memory and uncertainty in a hushed nocturnal theatre.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "深夜、隣で眠っている相手の背中を見ながら、もう何年になるのかを天井に向かって数えている。",
+      "narration": "実家の押し入れから出てきた古いアルバムを、畳の上に広げてめくっている。",
       "visual": {
         "type": "scenery",
         "place": "room",
-        "people": 2,
-        "caption": "深夜、眠る背中を数えている"
+        "people": 1,
+        "caption": "畳に広げた古いアルバム"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "warm"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "付き合い始めたのがあの年の春で、一緒に住み始めたのがその二年後だったから、と指を折っていく。",
+      "narration": "色の褪せた一枚に、まだ小さい自分が写っている。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "春に始まり二年後に同居"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 3,
-      "act": 1,
-      "narration": "数え終わったところで、自分がいま何を確かめようとしていたのかが分からなくなる。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "何を確かめていたのか"
+        "figure": "person",
+        "label": "色褪せた写真の自分"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 3,
+      "act": 1,
+      "narration": "場所も、着ているものも、隣にいる大人の顔も分かる。",
+      "visual": {
+        "type": "figure",
+        "figure": "family",
+        "label": "隣にいる大人"
+      },
+      "concept_color": "dusk"
+    },
+    {
       "id": 4,
       "act": 1,
-      "narration": "好きかどうかを確かめていたわけではない。",
+      "narration": "分かるのだが、めくりながらふと止まる手がある。",
       "visual": {
-        "type": "dialogue",
-        "line": "好きかどうかを確かめていたわけではない"
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "ふと止まる手"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 5,
       "act": 1,
-      "narration": "それについては、だいぶ前に自分の中で答えが出てしまっている。",
+      "narration": "この日のことを自分は覚えているのか、それともこの写真を覚えているだけなのか。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "答えはとうに出ている"
+        "figure": "question",
+        "label": "覚えているのは、どちら"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 6,
       "act": 1,
-      "narration": "それでもあなたが数えていたのは、気持ちの深さではなく年数のほうだった。",
+      "narration": "たいていの人は、自分のいちばん古い記憶をひとつ持っている。",
       "visual": {
-        "type": "comparison",
-        "left_title": "数えたもの",
-        "right_title": "数えなかったもの",
-        "left_items": [
-          "年数"
-        ],
-        "right_items": [
-          "気持ちの深さ"
-        ],
-        "center_label": "何を数えたか"
+        "type": "figure",
+        "figure": "dream",
+        "label": "いちばん古い記憶"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 7,
       "act": 1,
-      "narration": "そして数え終わった翌朝も、いつもと同じ時刻に二人で家を出て、同じ改札で別れることになる。",
+      "narration": "台所の匂いだったり、階段から落ちたことだったり、誰かに手を引かれていた坂道だったりする。",
+      "visual": {
+        "type": "scenery",
+        "place": "field",
+        "people": 2,
+        "caption": "手を引かれた坂道"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 8,
+      "act": 1,
+      "narration": "あなたにも一つあるはずだ。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "翌朝も同じ改札で別れる"
+        "figure": "person",
+        "label": "あなたにも一つある"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 8,
-      "act": 2,
-      "narration": "情が湧いたのだ、と人は言う。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "情が湧いた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
       "id": 9,
-      "act": 2,
-      "narration": "惰性だ、とも言う。",
+      "act": 1,
+      "narration": "そしておそらく、それが本当にあった出来事なのかどうかを、あなたは一度も確かめたことがない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "惰性だ"
+        "type": "figure",
+        "figure": "question",
+        "label": "確かめたことがない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 10,
       "act": 2,
-      "narration": "要するに決断できないだけなのだと、そこで話は終わりになる。",
+      "narration": "人生の最初の数年をほとんど思い出せないことには、幼児期健忘という名前がついている。",
       "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "決断できないだけ"
+        "type": "keyword",
+        "keyword": "幼児期健忘"
       },
-      "concept_color": "daylight"
+      "concept_color": "charcoal"
     },
     {
       "id": 11,
       "act": 2,
-      "narration": "この説明は、居酒屋でもSNSでもほとんど反論を受けないまま流通していて、言われた本人もたいてい黙って受け入れてしまう。",
+      "narration": "誰にでも起きるので、欠陥として扱われることはない。",
       "visual": {
         "type": "figure",
-        "figure": "echo",
-        "label": "反論なく流通する通説"
+        "figure": "brain",
+        "label": "誰にでも起きる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 12,
       "act": 2,
-      "narration": "こうした夜が積み重なった先の数字だけは、公的な統計に残っている。",
+      "narration": "厚生労働省の人口動態統計によれば、2024年に日本で生まれた子どもは686,061人で、前年の727,288人より41,227人減っている。",
       "visual": {
-        "type": "figure",
-        "figure": "screen",
-        "label": "数字だけが統計に残る"
+        "type": "stat",
+        "value": "686,061人",
+        "label": "2024年に生まれた子ども",
+        "context": "厚労省 人口動態統計",
+        "unit": "",
+        "axis": {
+          "label": "前年比 −41,227人",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 13,
       "act": 2,
-      "narration": "厚生労働省の人口動態統計によれば、2024年の離婚件数は185,895組で、前年の183,814組より2,081組増えた。",
+      "narration": "合計特殊出生率は1.15である。",
       "visual": {
         "type": "stat",
-        "value": "185,895組",
-        "label": "2024年の離婚件数",
-        "context": "厚労省 人口動態統計",
-        "unit": "",
-        "axis": {
-          "label": "前年比+2,081組",
-          "ticks": [
-            "2023",
-            "2024"
-          ]
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 14,
-      "act": 2,
-      "narration": "離婚率は人口千対で1.55である。",
-      "visual": {
-        "type": "stat",
-        "value": "1.55",
-        "label": "離婚率(人口千対)",
+        "value": "1.15",
+        "label": "合計特殊出生率",
         "context": "2024年",
         "unit": "",
         "axis": {
@@ -178,421 +160,14 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 15,
+      "id": 14,
       "act": 2,
-      "narration": "ピークは2002年の289,836組で、そこから二十年以上かけて減ってきたのだが、ここ二年は続けて増えている。",
-      "visual": {
-        "type": "line",
-        "title": "離婚件数の推移",
-        "unit": "組",
-        "points": [
-          {
-            "label": "2002",
-            "value": 289836
-          },
-          {
-            "label": "2023",
-            "value": 183814
-          },
-          {
-            "label": "2024",
-            "value": 185895
-          }
-        ]
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 16,
-      "act": 3,
-      "narration": "ただし、この統計が数えているのは、終わった関係だけである。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "統計は終わった関係だけ数える"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 17,
-      "act": 3,
-      "narration": "数え終わったあとで結局その場に留まった夜のほうは、どこにも記録されない。",
-      "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "留まった夜は記録されない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 18,
-      "act": 3,
-      "narration": "記録されないものを、決断力の不足と呼んでしまってよいのだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "それは決断力の不足か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 19,
-      "act": 2,
-      "narration": "今日はそれを、行動経済学と進化心理学から解剖してみたい。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "行動経済学",
-        "right_title": "進化心理学",
-        "left_items": [
-          "サンクコスト"
-        ],
-        "right_items": [
-          "人の本能"
-        ],
-        "center_label": "二つの刃で解剖する"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 20,
-      "act": 2,
-      "narration": "まず、通説の側を正しく立てておきたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "まず通説を正しく立てる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 21,
-      "act": 2,
-      "narration": "ここを雑に扱うと、この回はただの気休めになる。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "雑に扱えば気休めになる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 22,
-      "act": 2,
-      "narration": "1985年、ハル・アークスとキャサリン・ブルーマーという二人の心理学者が、オハイオ大学の劇場で実験を行った。",
-      "visual": {
-        "type": "figure",
-        "figure": "mask",
-        "label": "1985年 オハイオ大学の劇場実験"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 23,
-      "act": 2,
-      "narration": "売られていたのは、その年の全演目を通しで観られるシーズン券である。",
-      "visual": {
-        "type": "figure",
-        "figure": "contract",
-        "label": "全演目通しのシーズン券"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 24,
-      "act": 2,
-      "narration": "窓口に来た客をおよそ三分の一ずつ三つに分け、それぞれ15ドル、13ドル、8ドルで買ってもらった。",
-      "visual": {
-        "type": "chart",
-        "title": "三つの価格グループ",
-        "subtitle": "Arkes & Blumer 1985",
-        "unit": "ドル",
-        "items": [
-          {
-            "label": "定価",
-            "value": 15
-          },
-          {
-            "label": "少額割引",
-            "value": 13
-          },
-          {
-            "label": "大幅割引",
-            "value": 8
-          }
-        ],
-        "highlight": 0,
-        "annotation": "客を三分の一ずつ三つに分けた"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 25,
-      "act": 3,
-      "narration": "肝心なのはここからだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "肝心なのはここから"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 26,
-      "act": 3,
-      "narration": "割引は客の側の事情とは無関係に、無作為に配られている。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "割引は無作為に配られた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 27,
-      "act": 3,
-      "narration": "券の中身も、上演される演目も、座れる席の範囲も、三つのグループでまったく同じである。",
-      "visual": {
-        "type": "list",
-        "title": "三グループで同じもの",
-        "items": [
-          "券の中身",
-          "上演される演目",
-          "座れる席の範囲"
-        ]
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 28,
-      "act": 3,
-      "narration": "違っているのは、財布から出ていった額だけだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "違うのは払った額だけ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 29,
-      "act": 3,
-      "narration": "そのあと研究チームは、誰が何回劇場に足を運んだかを数えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "誰が何回通ったか数えた"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 30,
-      "act": 3,
-      "narration": "定価で買った客のほうが、シーズン前半に多く通っていたのである。",
-      "visual": {
-        "type": "figure",
-        "figure": "stairs",
-        "label": "定価客ほど前半に多く通った"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 31,
-      "act": 3,
-      "narration": "回数にしておよそ4.11回に対して3.3回だった。",
-      "visual": {
-        "type": "chart",
-        "title": "シーズン前半の来場回数",
-        "subtitle": "Arkes & Blumer 1985",
-        "unit": "回",
-        "items": [
-          {
-            "label": "定価",
-            "value": 4.11
-          },
-          {
-            "label": "割引",
-            "value": 3.3
-          }
-        ],
-        "highlight": 0,
-        "annotation": "多く払った客ほど足を運んだ 4.11回対3.3回"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 32,
-      "act": 3,
-      "narration": "演目は同じで、天気も同じで、家からの距離も変わらない。",
-      "visual": {
-        "type": "list",
-        "title": "変わらなかった条件",
-        "items": [
-          "演目は同じ",
-          "天気も同じ",
-          "家からの距離も同じ"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 33,
-      "act": 3,
-      "narration": "それにもかかわらず、多く払った人のほうが、雨の日にも都合の悪い夜にも出かけていた。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "多く払った人は雨の夜も出かけた"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 34,
-      "act": 3,
-      "narration": "すでに支払われて、どうやっても取り返せない額が、そのあとの足の動きを決めていたことになる。",
-      "visual": {
-        "type": "figure",
-        "figure": "chains",
-        "label": "取り返せない額が足を縛る"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 35,
-      "act": 3,
-      "narration": "経済学の教科書は、この額を判断に入れてはならないと書いている。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "教科書はこの額を入れるなと書く"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 36,
-      "act": 2,
-      "narration": "人間はそれを入れてしまう。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "つい入れてしまう"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 37,
-      "act": 2,
-      "narration": "そんなものは劇場の券の話ではないか、と思うかもしれない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "劇場の券の話にすぎないのでは？"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 38,
-      "act": 2,
-      "narration": "八ドルと十五ドルの差で片づく問題と、何年も続いた人間関係を同じ棚に置けるのかと。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "券の値段",
-        "right_title": "人間関係",
-        "left_items": [
-          "八ドルと十五ドルの差"
-        ],
-        "right_items": [
-          "何年も続いた歳月"
-        ],
-        "center_label": "同じ棚に置けるか"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 39,
-      "act": 2,
-      "narration": "その指摘はもっともだ。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "その指摘はもっともだ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 40,
-      "act": 2,
-      "narration": "だが研究者たちのほうも、同じ疑いを持って、この問いをそのまま人間関係のほうへ持っていった。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "同じ疑いを関係へ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 41,
-      "act": 2,
-      "narration": "ちなみにこの実験には続きがある。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "実験には続きがある"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 42,
-      "act": 2,
-      "narration": "シーズンの後半になると、支払額による差はきれいに消えていた。",
-      "visual": {
-        "type": "line",
-        "title": "支払額による観戦差",
-        "unit": "回",
-        "points": [
-          {
-            "label": "前半",
-            "value": 9
-          },
-          {
-            "label": "中盤",
-            "value": 5
-          },
-          {
-            "label": "後半",
-            "value": 1
-          }
-        ]
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 43,
-      "act": 2,
-      "narration": "言い換えれば、払った額の効き目には期限があったのである。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "効き目には期限"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 44,
-      "act": 2,
-      "narration": "人間関係にそのまま重ねてよい結果ではないが、この「効き目に期限がある」という形は、あとでもう一度出てくる。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "あとで再び現れる形"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 45,
-      "act": 2,
-      "narration": "2018年、レゴ、アランテス、マガリャンイスの三人が、カレント・サイコロジー誌に論文を発表した。",
+      "narration": "ピークだった1949年には2,696,638人が生まれていた。",
       "visual": {
         "type": "stat",
-        "value": "2018年",
-        "label": "三人が論文を発表",
-        "context": "カレント・サイコロジー誌",
+        "value": "2,696,638人",
+        "label": "生まれた数",
+        "context": "1949年 ピーク",
         "unit": "",
         "axis": {
           "label": "",
@@ -602,257 +177,881 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 46,
+      "id": 15,
       "act": 2,
-      "narration": "題は、コミットした関係に沈没費用効果はあるか、である。",
+      "narration": "これだけの人数が、それぞれ人生の最初の数年を持ち、そのほとんどを持ち帰れない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "関係に沈没費用効果はあるか"
+        "type": "scenery",
+        "place": "hall",
+        "people": 9,
+        "caption": "最初の数年を持ち帰れない人々"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 47,
+      "id": 16,
       "act": 2,
-      "narration": "彼らが用意したのは、もううまくいっていない交際の場面だった。",
+      "narration": "歩けるようになった日も、初めて誰かの名前を呼んだ日も、記録として残っているのは他人の側だけである。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "もう冷めた交際"
+        "figure": "family",
+        "label": "記録は他人の側にだけ"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 17,
+      "act": 2,
+      "narration": "持ち帰れたわずかな一枚だけが、その人の最初の記憶として残る。",
+      "visual": {
+        "type": "figure",
+        "figure": "candle",
+        "label": "持ち帰れたわずか一枚"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 18,
+      "act": 2,
+      "narration": "では、その残った一枚のほうは、確かに起きたことなのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "それは確かに起きたか"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 19,
+      "act": 2,
+      "narration": "今日はそれを、脳科学と発達心理学から解剖してみたい。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "脳科学と発達心理学"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 20,
+      "act": 2,
+      "narration": "まず、この問いを正面から数で扱った研究がある。",
+      "visual": {
+        "type": "figure",
+        "figure": "screen",
+        "label": "数で扱った研究"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 21,
+      "act": 2,
+      "narration": "ここから始めたい。",
+      "visual": {
+        "type": "scenery",
+        "place": "forest",
+        "people": 0,
+        "caption": "ここから始めたい"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 22,
+      "act": 2,
+      "narration": "2018年、シャジア・アフタル、ルーシー・ジャスティス、カトリオナ・モリソン、マーティン・コンウェイの四人が、サイコロジカル・サイエンス誌に論文を発表した。",
+      "visual": {
+        "type": "stat",
+        "value": "2018年",
+        "label": "四人の研究者が論文を発表",
+        "context": "サイコロジカル・サイエンス誌",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 23,
+      "act": 2,
+      "narration": "集めたのは6,641人分の回答である。",
+      "visual": {
+        "type": "stat",
+        "value": "6,641人",
+        "label": "集めた回答",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 24,
+      "act": 2,
+      "narration": "質問は単純で、あなたのいちばん古い記憶は何か、そしてそのとき何歳だったか、というものだった。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "いちばん古い記憶は？　そのとき何歳？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 25,
+      "act": 2,
+      "narration": "回答された年齢の平均は3.15歳だった。",
+      "visual": {
+        "type": "stat",
+        "value": "3.15歳",
+        "label": "回答された年齢の平均",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 26,
+      "act": 3,
+      "narration": "ここまでは、これまでの研究とよく合っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "従来の研究と一致"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 27,
+      "act": 3,
+      "narration": "ところが分布のほうを見ると、そこに収まらないものが大量に混じっていた。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "分布に混じる外れ値"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 28,
+      "act": 3,
+      "narration": "2,487件が「2歳以下」と申告されていたのである。",
+      "visual": {
+        "type": "stat",
+        "value": "2,487件",
+        "label": "「2歳以下」と申告",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 29,
+      "act": 3,
+      "narration": "そのうち893件は「1歳以下」だった。",
+      "visual": {
+        "type": "stat",
+        "value": "893件",
+        "label": "うち「1歳以下」",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 30,
+      "act": 3,
+      "narration": "六千件あまりのうち、およそ三分の一が、記憶の研究がこれまで扱ってきた下限より下に置かれていたことになる。",
+      "visual": {
+        "type": "donut",
+        "title": "",
+        "percent": 33,
+        "label": "下限より下の記憶",
+        "rest_label": "従来の範囲内"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 31,
+      "act": 3,
+      "narration": "申告された年齢が本人の思い違いなのではないか、と思うかもしれない。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "年齢の思い違いでは？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 32,
+      "act": 3,
+      "narration": "人が自分の過去の出来事を実際より昔に置いてしまうことは、よく知られている。",
+      "visual": {
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "過去を実際より昔へ"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 33,
+      "act": 3,
+      "narration": "その可能性は否定できない。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "可能性は否定できない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 34,
+      "act": 3,
+      "narration": "だが著者らが注目したのは年齢そのものではなく、そこに書かれた記憶の中身のほうだった。",
+      "visual": {
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "注目は記憶の中身"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 35,
+      "act": 3,
+      "narration": "1歳以下と申告された記憶にも、場面があり、人物がいて、順序を持った出来事として書かれていたのである。",
+      "visual": {
+        "type": "list",
+        "title": "1歳以下の記憶にも",
+        "items": [
+          "場面がある",
+          "人物がいる",
+          "順序を持つ出来事"
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 36,
+      "act": 2,
+      "narration": "著者らはそこから、こう結論した。",
+      "visual": {
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "著者らの結論"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 37,
+      "act": 2,
+      "narration": "これらの多くは実際に体験した出来事の記憶ではなく、あとから聞いた話や写真や、家族のあいだで繰り返されてきた説明をもとに組み立てられたものではないか。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "あとから組み立てた記憶"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 38,
+      "act": 2,
+      "narration": "論文の題は、そのまま「作られた最初の記憶」となっている。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "作られた最初の記憶"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 39,
+      "act": 2,
+      "narration": "言い換えれば、こういうことになる。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "言い換えれば"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 40,
+      "act": 3,
+      "narration": "あなたが持っている最初の一枚は、その日に自分の目で撮ったものかもしれないし、あとから誰かに手渡されたものかもしれない。",
+      "visual": {
+        "type": "figure",
+        "figure": "camera",
+        "label": "最初の一枚"
       },
       "concept_color": "dusk"
     },
     {
-      "id": 48,
-      "act": 2,
-      "narration": "回答者にはその場面を読んでもらい、場面ごとに、これまで注ぎ込んできたものの量だけを変えてある。",
+      "id": 41,
+      "act": 3,
+      "narration": "そして手元にある時点では、その二つはまったく同じ手触りをしている。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "自分で撮った",
+        "right_title": "誰かから",
+        "left_items": [
+          "最初の一枚"
+        ],
+        "right_items": [
+          "手渡された一枚"
+        ],
+        "center_label": "同じ手触り"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 42,
+      "act": 3,
+      "narration": "アルバムに貼られてしまえば、自分で撮った写真も、親戚からもらった写真も、同じ台紙の上で同じ顔をしているようなものだ。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "注ぎ込んだ量だけ変える"
+        "figure": "eye",
+        "label": "同じ顔をした写真"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 43,
+      "act": 3,
+      "narration": "どちらだったのかを、あなたはどうやって見分けるのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "どちらだったのか"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 44,
+      "act": 3,
+      "narration": "法事の席。",
+      "visual": {
+        "type": "scenery",
+        "place": "hall",
+        "people": 6,
+        "caption": "法事の席"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 45,
+      "act": 3,
+      "narration": "伯母があなたに向かって、あの日あなたは池に落ちそうになって大泣きしたのだと話し始める。",
+      "visual": {
+        "type": "dialogue",
+        "line": "あの日あなたは池に落ちそうになって大泣きしたのよ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 46,
+      "act": 3,
+      "narration": "周りの大人が笑う。",
+      "visual": {
+        "type": "figure",
+        "figure": "applause",
+        "label": "周りの大人が笑う"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 47,
+      "act": 3,
+      "narration": "話を聞いているうちに、あなたの頭の中には水面の色と、掴まれた腕の感触が浮かんでくる。",
+      "visual": {
+        "type": "figure",
+        "figure": "brain",
+        "label": "浮かぶ水面と腕の感触"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 48,
+      "act": 3,
+      "narration": "それが今日この場で生まれたものなのか、二十年前からそこにあったものなのかは、もう分けられない。",
+      "visual": {
+        "type": "figure",
+        "figure": "thought",
+        "label": "もう分けられない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 49,
       "act": 2,
-      "narration": "使った金額を大きくした版、注いだ労力を大きくした版、そして一緒に過ごした時間の長さを引き伸ばした版の三種類である。",
+      "narration": "こうしたことが実験室で起きるかどうかは、ずっと前に調べられている。",
       "visual": {
-        "type": "list",
-        "title": "変えた三種類",
-        "items": [
-          "使った金額",
-          "注いだ労力",
-          "過ごした時間の長さ"
-        ]
+        "type": "figure",
+        "figure": "atom",
+        "label": "実験室で確かめる"
       },
-      "concept_color": "warm"
+      "concept_color": "pitch-black"
     },
     {
       "id": 50,
       "act": 2,
-      "narration": "設計としては単純だ。",
+      "narration": "1995年、エリザベス・ロフタスとジャクリーン・ピックレルが、ワシントン大学の学生24名を相手に実験を行った。",
       "visual": {
-        "type": "keyword",
-        "keyword": "設計は単純だ"
+        "type": "stat",
+        "value": "24名",
+        "label": "実験の参加者",
+        "context": "1995年 ロフタス&ピックレル",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 51,
       "act": 2,
-      "narration": "同じ「冷めた関係」を見せて、投資の量だけを動かす。",
+      "narration": "それぞれの家族から、その人が子どもの頃に本当にあった出来事をいくつか聞き取っておく。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "投資量だけを動かす"
+        "figure": "family",
+        "label": "家族から本当の出来事を聞く"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 52,
       "act": 2,
-      "narration": "もし沈没費用が効いているなら、たくさん注ぎ込んだ条件を読んだ人ほど、この関係を続けると答えるはずである。",
+      "narration": "そこに一つだけ、家族が否定した作り話を混ぜる。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "続けると答えるはず？"
+        "figure": "mask",
+        "label": "作り話を一つ混ぜる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 53,
-      "act": 3,
-      "narration": "金曜の夜、あなたは友人から相談を受けている。",
+      "act": 2,
+      "narration": "幼い頃にショッピングモールで迷子になり、泣いていたところを年上の女性に助けられ、家族と再会した、という話である。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 2,
-        "caption": "金曜の夜、友人からの相談"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 54,
-      "act": 3,
-      "narration": "もう気持ちは残っていないのだと、その人は言う。",
-      "visual": {
-        "type": "dialogue",
-        "line": "もう気持ちは残っていないの"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 55,
-      "act": 3,
-      "narration": "ひととおり話を聞き終えたあなたが最初に口にするのは、たぶん、じゃあ別れなよ、ではない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "最初の一言は、じゃあ別れなよ、ではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 56,
-      "act": 3,
-      "narration": "何年になるんだっけ、のほうである。",
-      "visual": {
-        "type": "dialogue",
-        "line": "何年になるんだっけ？"
+        "type": "figure",
+        "figure": "shopping",
+        "label": "モールで迷子"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 54,
+      "act": 2,
+      "narration": "面接を重ねて、その出来事について思い出せることを話してもらう。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 2,
+        "caption": "面接を重ねる"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 55,
+      "act": 2,
+      "narration": "すると、およそ25パーセントの参加者が、その作り話を自分の記憶として語るようになった。",
+      "visual": {
+        "type": "donut",
+        "title": "",
+        "percent": 25,
+        "label": "作り話を記憶と語った人",
+        "rest_label": "語らなかった人"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 56,
+      "act": 2,
+      "narration": "何も思い出せませんと答えた人が大半だったが、四人に一人はそうならなかったのである。",
+      "visual": {
+        "type": "units",
+        "total": 4,
+        "value": 1,
+        "label": "四人に一人"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 57,
       "act": 3,
-      "narration": "結果は、きれいに分かれた。",
+      "narration": "その研究は古いし、24人しかいないではないか、と思うかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "crossroad",
-        "label": "結果はきれいに分かれた"
+        "figure": "thought",
+        "label": "古い研究だし、24人しかいないじゃないか"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 58,
       "act": 3,
-      "narration": "金額を動かしたときには効いた。",
+      "narration": "もっともな指摘だ。",
       "visual": {
-        "type": "figure",
-        "figure": "money",
-        "label": "金額は効いた"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 59,
-      "act": 3,
-      "narration": "注いだ労力を動かしたときにも効いた。",
-      "visual": {
-        "type": "figure",
-        "figure": "stairs",
-        "label": "労力も効いた"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 60,
-      "act": 3,
-      "narration": "ところが、一緒に過ごした時間の長さをどれだけ引き伸ばしても、続けるか終えるかという二択のほうは動かなかったのである。",
-      "visual": {
-        "type": "balance",
-        "title": "時間を引き伸ばしても",
-        "left_label": "続ける",
-        "right_label": "終える",
-        "tilt": 0,
-        "note": "二択は動かなかった"
+        "type": "keyword",
+        "keyword": "もっともな指摘"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 61,
-      "act": 3,
-      "narration": "あれだけ多くの人が口にする「何年になるんだっけ」は、出口の前に立ったときには効いていなかった。",
+      "id": 59,
+      "act": 2,
+      "narration": "だから2023年に、事前登録つきの追試が行われている。",
       "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "出口の前では効かない"
+        "type": "stat",
+        "value": "2023年",
+        "label": "事前登録つきの追試",
+        "context": "",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 60,
+      "act": 2,
+      "narration": "アイルランドのユニヴァーシティ・カレッジ・コークとダブリンの研究チームが、標本を五倍の123名にして、分析の手順を先に公開したうえで同じことをやった。",
+      "visual": {
+        "type": "stat",
+        "value": "123名",
+        "label": "標本は5倍に",
+        "context": "コーク&ダブリンの研究チーム",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 62,
-      "act": 3,
-      "narration": "では、時間はこの話にまったく関係していなかったのだろうか。",
+      "id": 61,
+      "act": 2,
+      "narration": "結果は35パーセントだった。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "時間は無関係なのか"
+        "type": "donut",
+        "title": "",
+        "percent": 35,
+        "label": "作り話を記憶と語った人",
+        "rest_label": "語らなかった人"
       },
       "concept_color": "charcoal"
+    },
+    {
+      "id": 62,
+      "act": 2,
+      "narration": "効果は消えるどころか、元の研究より強く出たのである。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowUp",
+        "label": "効果はより強く出た"
+      },
+      "concept_color": "dark-navy"
     },
     {
       "id": 63,
       "act": 3,
-      "narration": "同じ研究には、もうひとつの聞き方が用意されていた。",
+      "narration": "追試で数字が下がる話ばかり聞く時代に、これは珍しい方向の結果ではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "もうひとつの聞き方"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 64,
-      "act": 3,
-      "narration": "続けるか終えるかではなく、この関係にこれからあと何か月を使うつもりかを尋ねたのである。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "あと何か月使うつもりか"
+        "figure": "question",
+        "label": "珍しい方向の結果"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 65,
+      "id": 64,
       "act": 3,
-      "narration": "そちらでは、時間がはっきりと効いていた。",
+      "narration": "ここまでは、記憶が外から入りうるという話である。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "そこでは時間が効いた"
+        "figure": "network",
+        "label": "記憶は外から入りうる"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 65,
+      "act": 3,
+      "narration": "だが、もっと静かに効いているものがある。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "もっと静かに効くもの"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 66,
       "act": 3,
-      "narration": "すでに長い時間を注ぎ込んだ条件を読んだ人ほど、これから差し出す時間も長かったのだ。",
+      "narration": "それは、あなたが子どもの頃に周りで交わされていた言葉の量だ。",
       "visual": {
-        "type": "line",
-        "title": "注いだ時間と差し出す時間",
-        "unit": "か月",
-        "points": [
-          {
-            "label": "短い投資",
-            "value": 4
-          },
-          {
-            "label": "中",
-            "value": 8
-          },
-          {
-            "label": "長い投資",
-            "value": 14
-          }
-        ]
+        "type": "scenery",
+        "place": "village",
+        "people": 4,
+        "caption": "子どもの頃に交わされた言葉"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 67,
+      "act": 2,
+      "narration": "2001年、キィ・ワンが、ジャーナル・オブ・パーソナリティ・アンド・ソーシャル・サイコロジー誌に研究を発表した。",
+      "visual": {
+        "type": "stat",
+        "value": "2001年",
+        "label": "キィ・ワンの研究",
+        "context": "J.パーソナリティ&社会心理学誌",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 68,
+      "act": 2,
+      "narration": "集めたのはアメリカの大学生119名と、中国の大学生137名である。",
+      "visual": {
+        "type": "chart",
+        "title": "",
+        "subtitle": "",
+        "unit": "名",
+        "items": [
+          {
+            "label": "アメリカの大学生",
+            "value": 119
+          },
+          {
+            "label": "中国の大学生",
+            "value": 137
+          }
+        ],
+        "highlight": 1,
+        "annotation": "アメリカ119名・中国137名"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 69,
+      "act": 2,
+      "narration": "両方に、いちばん古い記憶を書いてもらった。",
+      "visual": {
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "いちばん古い記憶を書く"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 70,
+      "act": 2,
+      "narration": "出てきた平均年齢に、はっきりした差があった。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "アメリカ",
+        "right_title": "中国",
+        "left_items": [
+          "最古の記憶"
+        ],
+        "right_items": [
+          "最古の記憶"
+        ],
+        "center_label": "平均年齢の差"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 71,
+      "act": 2,
+      "narration": "アメリカの学生はおよそ3歳半だったのに対し、中国の学生はそれよりおよそ6か月遅かったのである。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "アメリカの学生",
+        "right_title": "中国の学生",
+        "left_items": [
+          "およそ3歳半"
+        ],
+        "right_items": [
+          "およそ6か月遅い"
+        ],
+        "center_label": "最初の記憶の年齢"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 72,
+      "act": 2,
+      "narration": "半年という幅は、人生の最初の記憶の位置としては小さくない。",
+      "visual": {
+        "type": "stat",
+        "value": "半年",
+        "label": "最初の記憶の位置の差",
+        "context": "人生の始まり",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 73,
+      "act": 2,
+      "narration": "同じ研究の流れで、幼い子どもと母親の会話も調べられている。",
+      "visual": {
+        "type": "figure",
+        "figure": "family",
+        "label": "母子の会話を調べる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 74,
+      "act": 2,
+      "narration": "アメリカの母親は、子どもと過去の出来事を話すときに話を膨らませる傾向があった。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "話を膨らませる母親"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 75,
+      "act": 2,
+      "narration": "そのときどう思ったか、あなたは何をしたのか、と子ども自身の役割や感情に触れていく。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "そのときどう思った？あなたは何をしたの？"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 76,
+      "act": 2,
+      "narration": "中国の母親のほうは、事実を確かめ直す形の問いが多く、話を膨らませることは少なかった。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "事実を確かめ直す問い"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 77,
       "act": 3,
-      "narration": "ここに、この回のいちばん硬い骨がある。",
+      "narration": "保育園からの帰り道。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 2,
+        "caption": "保育園からの帰り道"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 78,
+      "act": 3,
+      "narration": "今日は何したの、と親が聞く。",
+      "visual": {
+        "type": "dialogue",
+        "line": "今日は何したの？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 79,
+      "act": 3,
+      "narration": "片方の家では、そこから話が広がっていく。",
+      "visual": {
+        "type": "figure",
+        "figure": "network",
+        "label": "そこから話が広がる家"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 80,
+      "act": 3,
+      "narration": "誰と遊んだのか、そのとき嬉しかったのか、どうしてそう思ったのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "誰と遊んだ？嬉しかった？どうしてそう思ったの？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 81,
+      "act": 3,
+      "narration": "もう片方の家では、給食は全部食べたのか、先生の言うことを聞いたのか、と確認が続く。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "給食は全部食べた？先生の言うことを聞いた？"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 82,
+      "act": 3,
+      "narration": "どちらの子も同じ一日を過ごしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "couple",
+        "label": "どちらも同じ一日"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 83,
+      "act": 3,
+      "narration": "だが、その一日が言葉になる量は違っている。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "広がる家",
+        "right_title": "確認の家",
+        "left_items": [
+          "言葉が多い"
+        ],
+        "right_items": [
+          "言葉が少ない"
+        ],
+        "center_label": "言葉になる量"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 84,
+      "act": 3,
+      "narration": "ここで、この回のいちばん硬い骨がある。",
       "visual": {
         "type": "keyword",
         "keyword": "いちばん硬い骨"
@@ -860,644 +1059,386 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 68,
-      "act": 3,
-      "narration": "年数は、あなたが去るかどうかを決めていない。",
-      "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "去るかは、年数で決まらない"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 69,
-      "act": 3,
-      "narration": "年数が決めているのは、あなたがこれから何年を追加するかのほうである。",
-      "visual": {
-        "type": "figure",
-        "figure": "clock",
-        "label": "決まるのは追加する年数"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 70,
-      "act": 3,
-      "narration": "出口の扉のほうは動かないまま、延長のボタンだけが何度も押されている。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "出口の扉",
-        "right_title": "延長ボタン",
-        "left_items": [
-          "動かないまま"
-        ],
-        "right_items": [
-          "何度も押される"
-        ],
-        "center_label": "沈没費用の罠"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 71,
-      "act": 3,
-      "narration": "これはサブスクリプションの自動更新に近い。",
-      "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "自動更新される関係"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 72,
-      "act": 3,
-      "narration": "解約の画面までは誰も行かないのに、更新の通知だけは毎月きちんと通っていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "notification",
-        "label": "更新の通知だけ届く"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 73,
-      "act": 3,
-      "narration": "長く付き合ったから別れられないのではなく、長く付き合ったから、もう少しだけ様子を見よう、が何度でも承認されてしまう。",
-      "visual": {
-        "type": "dialogue",
-        "line": "もう少しだけ様子を見よう"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 74,
-      "act": 3,
-      "narration": "そして「もう少し」という単位には、終わりの目盛りが付いていないのではないだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "終わりの目盛りがない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 75,
-      "act": 3,
-      "narration": "それは結局、未練を難しく言い換えただけではないか、と思う人もいるだろう。",
-      "visual": {
-        "type": "dialogue",
-        "line": "未練を言い換えただけでは？"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 76,
-      "act": 3,
-      "narration": "半分までは同意する。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "半分までは同意"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 77,
-      "act": 3,
-      "narration": "だが、未練という言葉は気持ちの強さしか説明せず、なぜ出口の側だけが動かないのかを説明しない。",
-      "visual": {
-        "type": "figure",
-        "figure": "door",
-        "label": "出口の側だけ動かない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 78,
-      "act": 3,
-      "narration": "そこを説明するには、留まる力が何でできているのかを分解しなければならないのではないだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "留まる力を分解する"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 79,
-      "act": 2,
-      "narration": "2003年、ベンジャミン・レイとクリストファー・アグニューが、パーソナル・リレーションシップス誌にメタ分析を発表した。",
-      "visual": {
-        "type": "stat",
-        "value": "2003年",
-        "label": "レイとアグニューのメタ分析",
-        "context": "パーソナル・リレーションシップス誌",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 80,
-      "act": 2,
-      "narration": "集めたのは52の研究、60の標本、合わせて11,582人である。",
-      "visual": {
-        "type": "table",
-        "title": "集めたデータ",
-        "headers": [
-          "項目",
-          "数"
-        ],
-        "rows": [
-          [
-            "研究",
-            "52"
-          ],
-          [
-            "標本",
-            "60"
-          ],
-          [
-            "人数",
-            "11,582人"
-          ]
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 81,
-      "act": 2,
-      "narration": "国はアメリカ、イギリス、オランダ、イスラエル、台湾の五つにまたがっている。",
-      "visual": {
-        "type": "list",
-        "title": "五つの国",
-        "items": [
-          "アメリカ",
-          "イギリス",
-          "オランダ",
-          "イスラエル",
-          "台湾"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 82,
-      "act": 2,
-      "narration": "彼らが調べたのは、人が関係にどれだけ縛られているかを何が説明するのか、という一点だった。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "何が縛りを説明するのか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 83,
-      "act": 2,
-      "narration": "出てきた数字は三つある。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "三つの数字"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 84,
-      "act": 2,
-      "narration": "満足度との相関がプラス0.68。",
-      "visual": {
-        "type": "stat",
-        "value": "プラス0.68",
-        "label": "満足度との相関",
-        "context": "コミットメント",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
       "id": 85,
-      "act": 2,
-      "narration": "ほかの選択肢の質との相関がマイナス0.48。",
+      "act": 3,
+      "narration": "最初の記憶がいつ始まるかは、その人の記憶力の強さではなかった可能性が高い。",
       "visual": {
-        "type": "stat",
-        "value": "マイナス0.48",
-        "label": "ほかの選択肢の質との相関",
-        "context": "コミットメント",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "brain",
+        "label": "記憶力の強さではない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 86,
-      "act": 2,
-      "narration": "すでに注ぎ込んだ量との相関がプラス0.46。",
+      "act": 3,
+      "narration": "それは、その人の周りで、出来事がどれだけ言葉に変換されていたかのほうに対応していた。",
       "visual": {
-        "type": "stat",
-        "value": "プラス0.46",
-        "label": "注ぎ込んだ量との相関",
-        "context": "コミットメント",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "echo",
+        "label": "どれだけ言葉に変換されたか"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 87,
-      "act": 2,
-      "narration": "この三つを合わせると、縛られ具合のおよそ三分の二が説明できた。",
+      "act": 3,
+      "narration": "記憶が先にあって語られるのではなく、語られたものが記憶として残っているという順番である。",
       "visual": {
-        "type": "donut",
-        "title": "縛られ具合の説明",
-        "percent": 67,
-        "label": "説明できた",
-        "rest_label": "残り"
+        "type": "figure",
+        "figure": "queue",
+        "label": ""
       },
-      "concept_color": "dusk"
+      "concept_color": "pitch-black"
     },
     {
       "id": 88,
       "act": 3,
-      "narration": "三つ並べたときに見えてくるものがある。",
+      "narration": "これは母語の習得に近い。",
       "visual": {
-        "type": "chart",
-        "title": "三つの相関の強さ",
-        "subtitle": "投資モデル",
-        "unit": "",
-        "items": [
-          {
-            "label": "満足度",
-            "value": 0.68
-          },
-          {
-            "label": "ほかの選択肢",
-            "value": 0.48
-          },
-          {
-            "label": "注ぎ込んだ量",
-            "value": 0.46
-          }
-        ],
-        "highlight": 0,
-        "annotation": "満足度がいちばん強い 0.68"
+        "type": "figure",
+        "figure": "seed",
+        "label": "母語の習得に近い"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 89,
       "act": 3,
-      "narration": "注ぎ込んだ量は、たしかに効いている。",
+      "narration": "どの言語を話すようになるかを子どもが選んだのではなく、周りで鳴っていた音のほうが決めている。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "投入した量は効いている"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 90,
-      "act": 3,
-      "narration": "だがこの三つの中ではいちばん弱いのだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "三つの中でいちばん弱い"
+        "figure": "echo",
+        "label": "周りで鳴っていた音が決める"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 91,
+      "id": 90,
       "act": 3,
-      "narration": "いちばん強いのは満足度で、その次に来るのが、ほかにどんな道があるかという項目である。",
+      "narration": "人類が言葉を持って以来、記憶も同じ経路を通ってきたのかもしれない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "いちばん強い",
-        "right_title": "その次",
-        "left_items": [
-          "満足度"
-        ],
-        "right_items": [
-          "ほかにどんな道があるか"
-        ],
-        "center_label": "縛りの内訳"
+        "type": "scenery",
+        "place": "village",
+        "people": 6,
+        "caption": "言葉を持って以来、記憶も同じ経路を"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 91,
+      "act": 4,
+      "narration": "ただし、ここは慎重に言わなければならない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "ここは慎重に"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 92,
       "act": 4,
-      "narration": "つまり、あなたが動けないのは過去が重いからだけではなく、ほかの道が見えていないからでもある。",
+      "narration": "ワンの研究は文化のあいだを比べたものであって、母親の語り方が最初の記憶の年齢を決めた、という因果を示したわけではない。",
       "visual": {
         "type": "figure",
-        "figure": "crossroad",
-        "label": "ほかの道が見えていない"
+        "figure": "scale",
+        "label": "文化の比較であって因果ではない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 93,
       "act": 4,
-      "narration": "そしてこの「ほかの道が見えるかどうか」は、性格の問題として語られやすいわりに、実際には住んでいる場所や職種や年収や年齢によって、かなりの部分があらかじめ決まってしまう。",
+      "narration": "二つが並んで観察されているというところまでである。",
       "visual": {
-        "type": "list",
-        "title": "見え方を決めるもの",
-        "items": [
-          "住んでいる場所",
-          "職種",
-          "年収",
-          "年齢"
-        ]
+        "type": "figure",
+        "figure": "couple",
+        "label": "並んで観察されたところまで"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 94,
       "act": 4,
-      "narration": "制度と労働市場が、個人の勇気の量に見えているようなものである。",
+      "narration": "そして誤解を避けるために、もう一つ置いておきたい。",
       "visual": {
         "type": "figure",
-        "figure": "factory",
-        "label": "制度と労働市場"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 95,
-      "act": 3,
-      "narration": "人類が何万年もかけて作ってきた定住と分業の仕組みが、深夜の一人分の計算に混ざり込んでいるとは言えないだろうか。",
-      "visual": {
-        "type": "scenery",
-        "place": "village",
-        "people": 4,
-        "caption": "定住と分業の何万年"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 96,
-      "act": 3,
-      "narration": "ここまでは、まだ全部あなた自身の損得の話である。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "ここまでは自分の損得"
+        "figure": "question",
+        "label": "誤解を避けるために"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 97,
-      "act": 3,
-      "narration": "ところが、人が実際に別れを切り出すかどうかを調べにいくと、まったく別のものが出てくる。",
+      "id": 95,
+      "act": 4,
+      "narration": "ここで対応しているのは言葉の量であって、愛情の量ではない。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "対応するのは",
+        "right_title": "対応しないのは",
+        "left_items": [
+          "言葉の量"
+        ],
+        "right_items": [
+          "愛情の量"
+        ],
+        "center_label": "混同してはならない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 96,
+      "act": 4,
+      "narration": "膨らませる語り方をされなかった人が、大事にされなかったということには一切ならない。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "別れを切り出すか"
+        "figure": "heart",
+        "label": "大事にされなかったのではない"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 97,
+      "act": 4,
+      "narration": "文化ごとに、子どもに何を教えようとするかが違うだけである。",
+      "visual": {
+        "type": "figure",
+        "figure": "village",
+        "label": "何を教えるかが文化で違う"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 98,
-      "act": 2,
-      "narration": "2018年、サマンサ・ジョエル、エミリー・インペット、ステファニー・シュピールマン、ジェフ・マクドナルドの四人が、ジャーナル・オブ・パーソナリティ・アンド・ソーシャル・サイコロジー誌に論文を出した。",
+      "act": 4,
+      "narration": "どちらの語り方も、その社会の中では正しく機能してきた。",
+      "visual": {
+        "type": "figure",
+        "figure": "handshake",
+        "label": "どちらも正しく機能してきた"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 99,
+      "act": 4,
+      "narration": "さて、ここまで書いてきて、自分の足元を削らなければならない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "自分の足元を削る"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 100,
+      "act": 4,
+      "narration": "冒頭で出したアフタルらの研究には、専門誌の上で公開の反論が付いている。",
+      "visual": {
+        "type": "figure",
+        "figure": "conflict",
+        "label": "公開の反論が付いている"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 101,
+      "act": 4,
+      "narration": "2019年、パトリシア・バウアー、リン・ベイカーワード、ピーター・クロイゴー、キャロル・ピーターソン、そしてキィ・ワンの五人が、同じサイコロジカル・サイエンス誌に反論を発表した。",
       "visual": {
         "type": "stat",
-        "value": "2018年",
-        "label": "ジョエルら四人の論文",
-        "context": "パーソナリティ・社会心理学誌",
+        "value": "5人",
+        "label": "反論を発表した研究者",
+        "context": "2019年 サイコロジカル・サイエンス誌",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 99,
-      "act": 2,
-      "narration": "題は、去るか留まるかの判断はどれだけ相互依存的か、である。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "判断はどれだけ相互依存的か"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 100,
-      "act": 2,
-      "narration": "副題には、相手のために関係に留まること、と付いている。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "相手のために留まる"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 101,
-      "act": 2,
-      "narration": "この研究は結果を見る前に手続きを公開する事前登録の形をとっていて、オープンサイエンス財団の賞を受けている。",
-      "visual": {
-        "type": "figure",
-        "figure": "trophy",
-        "label": "事前登録と受賞"
-      },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 102,
-      "act": 3,
-      "narration": "結果はこうだった。",
+      "act": 4,
+      "narration": "題は「作り話として描くことへの反証」である。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 2,
-        "caption": "結果はこうだった"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 103,
-      "act": 3,
-      "narration": "相手が自分に依存していると思っている人ほど、自分のほうから別れを切り出さなかったのである。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "依存を感じるほど言い出せない"
+        "type": "keyword",
+        "keyword": "作り話への反証"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 104,
-      "act": 3,
-      "narration": "著者らは論文の中で、去るか留まるかの判断には利他的な成分が含まれていると書いている。",
+      "id": 103,
+      "act": 4,
+      "narration": "彼らが問題にしたのは、アフタルらの前提のほうだった。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "利他的な成分"
+        "figure": "target",
+        "label": "問題は前提のほうだった"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 104,
+      "act": 4,
+      "narration": "2歳から3歳より前の子どもは記憶の断片しか報告できない、という線の引き方が厳しすぎるというのである。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "線の引き方が厳しすぎる"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 105,
       "act": 4,
-      "narration": "動かない理由の中身が、自分の損得ではなく相手の生活だったということだ。",
+      "narration": "発達研究の蓄積によれば、子どもは言葉で語れるようになるよりずっと前から、出来事を符号化し、保持し、あとから取り出している。",
       "visual": {
-        "type": "comparison",
-        "left_title": "動かない理由",
-        "right_title": "実際は",
-        "left_items": [
-          "自分の損得"
-        ],
-        "right_items": [
-          "相手の生活"
-        ],
-        "center_label": "別れの判断"
+        "type": "list",
+        "title": "言葉より前から子どもは",
+        "items": [
+          "出来事を符号化する",
+          "保持する",
+          "あとから取り出す"
+        ]
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 106,
       "act": 3,
-      "narration": "日曜の午後、あなたは荷物をまとめようとして手を止めている。",
+      "narration": "そこには人物がいて、動作があり、場所と時間の中に置かれている。",
       "visual": {
         "type": "scenery",
         "place": "room",
-        "people": 1,
-        "caption": "日曜の午後、手が止まる"
+        "people": 3,
+        "caption": "人物がいて、動作があり、場所と時間がある"
       },
       "concept_color": "warm"
     },
     {
       "id": 107,
       "act": 3,
-      "narration": "頭に浮かんでいるのは自分が使った三年ではない。",
+      "narration": "話せないことと、覚えていないことは別だ、という指摘である。",
       "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "浮かぶのは三年ではない"
+        "type": "comparison",
+        "left_title": "話せない",
+        "right_title": "覚えていない",
+        "left_items": [
+          "言葉にできない"
+        ],
+        "right_items": [
+          "記憶が無い"
+        ],
+        "center_label": "別のこと"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 108,
       "act": 3,
-      "narration": "あの人が誰にも相談できないこと、実家と折り合いが悪いこと、この部屋の家賃を一人では払えないこと。",
+      "narration": "つまり、2歳以下と申告された記憶を、それだけの理由で作り話に分類することはできない。",
       "visual": {
-        "type": "list",
-        "title": "計算に入っていたもの",
-        "items": [
-          "誰にも相談できない",
-          "実家と折り合いが悪い",
-          "家賃を一人では払えない"
-        ]
+        "type": "stat",
+        "value": "2歳以下",
+        "label": "申告された記憶",
+        "context": "作り話とは断定できない",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 109,
       "act": 3,
-      "narration": "気づけば、あなたの計算の中に、あなた自身の項目がひとつも入っていない。",
+      "narration": "この五人はいずれも幼児の記憶を長く研究してきた側であり、片方の陣営が素人だという構図ではない。",
       "visual": {
         "type": "figure",
-        "figure": "isolation",
-        "label": "自分の項目がひとつも無い"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 110,
-      "act": 4,
-      "narration": "それは動けない自分への言い訳ではないか、と思うかもしれない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "動けない自分への言い訳では?"
+        "figure": "crowd",
+        "label": "幼児の記憶の研究者 五人"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 111,
-      "act": 4,
-      "narration": "その懸念はもっともだ。",
+      "id": 110,
+      "act": 3,
+      "narration": "アフタルらは同じ年に再反論を出しており、論争は現在も決着していない。",
       "visual": {
-        "type": "keyword",
-        "keyword": "その懸念はもっともだ"
+        "type": "figure",
+        "figure": "conflict",
+        "label": "再反論・決着せず"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 111,
+      "act": 3,
+      "narration": "だから、この動画で言えるのは、四割が偽物だ、ということではない。",
+      "visual": {
+        "type": "donut",
+        "title": "",
+        "percent": 40,
+        "label": "偽物とは言えない",
+        "rest_label": "確かめられない"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 112,
       "act": 3,
-      "narration": "だが同じ研究者たちは別の論文で、人が挙げる留まりたい理由を27種類、去りたい理由を23種類に分類していて、多くの人がその両方を同時に抱えていることを示している。",
+      "narration": "言えるのは、確かめる手段が無い、というところまでである。",
       "visual": {
-        "type": "chart",
-        "title": "留まりたい理由と去りたい理由",
-        "subtitle": "",
-        "unit": "種類",
-        "items": [
-          {
-            "label": "留まりたい理由",
-            "value": 27
-          },
-          {
-            "label": "去りたい理由",
-            "value": 23
-          }
-        ],
-        "highlight": 0,
-        "annotation": "多くの人が両方を同時に抱える"
+        "type": "keyword",
+        "keyword": "確かめる手段が無い"
       },
-      "concept_color": "charcoal"
+      "concept_color": "pitch-black"
     },
     {
       "id": 113,
       "act": 3,
-      "narration": "言い訳なら片方だけ残るはずだが、実際には両方が残り続けている。",
+      "narration": "そして確かめる手段が無いという事実自体は、どちらの側も否定していないのではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "両方が残り続ける"
+        "figure": "handshake",
+        "label": "どちらの側も否定しない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 114,
       "act": 3,
-      "narration": "そして、この構造には、はるかに重い場面がある。",
+      "narration": "では、体の側では何が起きているのか。",
       "visual": {
         "type": "figure",
-        "figure": "conflict",
-        "label": "はるかに重い場面"
+        "figure": "question",
+        "label": "体の側では何が"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 115,
       "act": 3,
-      "narration": "1995年、キャリル・ラズボルトとジョン・マーツが、暴力被害者のシェルターで行われた入所面接のデータを分析した。",
+      "narration": "ここで、まったく違う場所から手がかりが来る。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 0,
+        "caption": "まったく違う場所から手がかりが来る"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 116,
+      "act": 3,
+      "narration": "2014年、アカーズらの研究チームが、サイエンス誌に論文を発表した。",
       "visual": {
         "type": "stat",
-        "value": "1995年",
-        "label": "シェルター入所面接データの分析",
-        "context": "ラズボルト&マーツ",
+        "value": "2014年",
+        "label": "アカーズらの論文",
+        "context": "サイエンス誌に発表",
         "unit": "",
         "axis": {
           "label": "",
@@ -1507,804 +1448,752 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 116,
+      "id": 117,
       "act": 3,
-      "narration": "経済的な選択肢が乏しい人ほど、そして投資が大きい人ほど、関係への縛られ具合は強く、それが退所後に相手のもとへ戻るかどうかを有意に分けていた。",
+      "narration": "彼らが扱ったのは、海馬という部位で新しい神経細胞が作られる働きである。",
       "visual": {
         "type": "figure",
-        "figure": "cage",
-        "label": "選択肢が乏しいほど縛られる"
+        "figure": "brain",
+        "label": "海馬で新しい神経細胞"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 117,
-      "act": 3,
-      "narration": "この結果を読み違えてはならない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "読み違えてはならない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 118,
       "act": 3,
-      "narration": "責任は暴力をふるった側にあり、そこに例外は無い。",
+      "narration": "この働きは、ふつう良いものとして紹介される。",
       "visual": {
         "type": "figure",
-        "figure": "blame",
-        "label": "責任はふるった側に、例外は無い"
+        "figure": "arrowUp",
+        "label": "ふつう良いものとされる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 119,
       "act": 3,
-      "narration": "この研究が示しているのは、留まった人の判断の甘さではなく、代替の道を制度と経済の側から絶たれてしまった人には、留まる以外の選択肢がそもそも存在しないという事実のほうである。",
+      "narration": "ところが彼らが示したのは逆のことだった。",
       "visual": {
         "type": "figure",
-        "figure": "door",
-        "label": "代替の道が制度と経済に絶たれる"
+        "figure": "conflict",
+        "label": "示したのは逆のこと"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 120,
       "act": 3,
-      "narration": "同じ仕組みが、片方では惰性と呼ばれ、もう片方では逃げられないと呼ばれている。",
+      "narration": "新しい細胞が回路に組み込まれると、そこにすでに保存されていた記憶が壊れるのである。",
       "visual": {
-        "type": "comparison",
-        "left_title": "惰性",
-        "right_title": "逃げられない",
-        "left_items": [
-          "惰性と呼ばれる"
-        ],
-        "right_items": [
-          "逃げられないと呼ばれる"
-        ],
-        "center_label": "同じ仕組み"
+        "type": "figure",
+        "figure": "network",
+        "label": "新しい細胞で記憶が壊れる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 121,
-      "act": 4,
-      "narration": "自分の足元も削っておきたい。",
+      "act": 3,
+      "narration": "成体のマウスで神経新生を増やしてやると、覚えていたはずのことを忘れた。",
       "visual": {
         "type": "figure",
-        "figure": "stairs",
-        "label": "自分の足元も削る"
+        "figure": "brain",
+        "label": "成体マウス 増やすと忘却"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 122,
-      "act": 4,
-      "narration": "レゴらの研究は、仮想の場面を読んで答えてもらう形式だった。",
+      "act": 3,
+      "narration": "そして乳児期のほうでも確かめている。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "仮想の場面を読んで答える"
+        "figure": "seed",
+        "label": "乳児期でも確かめる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 123,
-      "act": 4,
-      "narration": "実際に別れた人を追跡したものではない。",
+      "act": 3,
+      "narration": "乳児期は神経新生がいちばん盛んな時期で、覚えたことが急速に失われる。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "実際の別れは追跡していない"
+        "type": "line",
+        "title": "乳児期の記憶",
+        "unit": "",
+        "points": [
+          {
+            "label": "直後",
+            "value": 80
+          },
+          {
+            "label": "少し後",
+            "value": 40
+          },
+          {
+            "label": "のち",
+            "value": 10
+          }
+        ]
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 124,
-      "act": 4,
-      "narration": "人が紙の上で選ぶことと、玄関で靴を履くかどうかが同じとは限らないのではないだろうか。",
+      "act": 3,
+      "narration": "そこで神経新生を減らしてやると、忘却が和らいだ。",
       "visual": {
-        "type": "comparison",
-        "left_title": "紙の上の選択",
-        "right_title": "玄関で靴を履くか",
-        "left_items": [
-          "回答する"
-        ],
-        "right_items": [
-          "実際に動く"
-        ],
-        "center_label": "同じとは限らない"
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "神経新生を減らすと忘却和らぐ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 125,
       "act": 3,
-      "narration": "では、この「注ぎ込んだ分だけ続けてしまう」という性質は、人間に生まれつき備わったものなのか。",
+      "narration": "さらに種をまたいでいる。",
       "visual": {
         "type": "figure",
-        "figure": "dna",
-        "label": "生まれつき備わったものか"
+        "figure": "evolution",
+        "label": "種をまたいで確かめる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 126,
       "act": 3,
-      "narration": "ここで、まったく違う場所から答えが返ってくる。",
+      "narration": "モルモットとデグーは、生まれた時点ですでに自力で動ける動物で、生後の神経新生が少ない。",
       "visual": {
-        "type": "figure",
-        "figure": "cycle",
-        "label": "違う場所からの答え"
+        "type": "table",
+        "title": "生まれてすぐ動ける動物",
+        "headers": [
+          "動物",
+          "生後の神経新生"
+        ],
+        "rows": [
+          [
+            "モルモット",
+            "少ない"
+          ],
+          [
+            "デグー",
+            "少ない"
+          ]
+        ]
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 127,
       "act": 3,
-      "narration": "生き物の世界である。",
+      "narration": "この二種は、乳児期健忘を示さなかった。",
       "visual": {
-        "type": "scenery",
-        "place": "forest",
-        "people": 0,
-        "caption": "生き物の世界"
+        "type": "figure",
+        "figure": "question",
+        "label": "二種は健忘を示さず"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 128,
       "act": 3,
-      "narration": "1976年、リチャード・ドーキンスとタムシン・カーライルが、ネイチャー誌に短い論文を出した。",
+      "narration": "ところが人工的に神経新生を増やしてやると、示すようになったのである。",
       "visual": {
-        "type": "stat",
-        "value": "1976年",
-        "label": "ネイチャー誌の短い論文",
-        "context": "ドーキンス&カーライル",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "atom",
+        "label": "人工的に増やすと示す"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 129,
-      "act": 3,
-      "narration": "当時、親が子育てを続けるかどうかは、すでに産んだ卵にどれだけ投資したかで決まる、という説明が使われていた。",
-      "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "産んだ卵への投資で決まる説"
-      },
-      "concept_color": "daylight"
-    },
-    {
-      "id": 130,
-      "act": 3,
-      "narration": "二人はそれを誤りとして退けている。",
-      "visual": {
-        "type": "figure",
-        "figure": "gavel",
-        "label": "それを誤りとして退けた"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 131,
-      "act": 3,
-      "narration": "判断の材料になるのは、これから救えるものだけである。",
+      "act": 4,
+      "narration": "忘れることのほうが、作り込まれた仕組みだという話になる。",
       "visual": {
         "type": "keyword",
-        "keyword": "判断材料は救えるものだけ"
+        "keyword": "忘却こそ作り込まれた仕組み"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 132,
-      "act": 3,
-      "narration": "すでに払った分は、どちらを選んでも戻ってこないのだから。",
+      "id": 130,
+      "act": 4,
+      "narration": "では、忘れずに済ませる方法もあるのではないか、と思うかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "money",
-        "label": "払った分は戻ってこない"
+        "figure": "thought",
+        "label": "忘れずに済む方法は？"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 131,
+      "act": 4,
+      "narration": "その期待はもっともだ。",
+      "visual": {
+        "type": "scenery",
+        "place": "field",
+        "people": 2,
+        "caption": "その期待は、もっともだ"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 132,
+      "act": 4,
+      "narration": "だが、この実験が示しているのはその逆に近い。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "示すのはその逆に近い"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 133,
-      "act": 3,
-      "narration": "彼らはこの誤りに名前を付けた。",
+      "act": 4,
+      "narration": "生後も脳が作られ続ける種ほど、初期の記憶を手放している。",
       "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "この誤りに名前を付けた"
+        "type": "balance",
+        "title": "",
+        "left_label": "脳が作られ続ける",
+        "right_label": "初期の記憶を手放す",
+        "tilt": 0.7,
+        "note": "作るほど手放す"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 134,
-      "act": 3,
-      "narration": "すでに投じた額を理由に開発が続けられていた超音速旅客機の名を借りて、コンコルドの誤り、と呼んだのである。",
+      "act": 4,
+      "narration": "進化の過程で残ってきたのは、覚え続ける仕組みではなく、入れ替え続ける仕組みのほうだった。",
       "visual": {
-        "type": "keyword",
-        "keyword": "コンコルドの誤り"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 135,
-      "act": 3,
-      "narration": "その機体は1962年の英仏協定に始まり、2003年に退役した。",
-      "visual": {
-        "type": "line",
-        "title": "コンコルド 就役から退役",
-        "unit": "",
-        "points": [
-          {
-            "label": "1962",
-            "value": 0
-          },
-          {
-            "label": "2003",
-            "value": 10
-          }
-        ]
+        "type": "comparison",
+        "left_title": "覚え続ける",
+        "right_title": "入れ替え続ける",
+        "left_items": [
+          "保持"
+        ],
+        "right_items": [
+          "更新"
+        ],
+        "center_label": "進化が残したのは"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 136,
-      "act": 3,
-      "narration": "恋愛と航空機開発と親鳥の子育てが、同じ構造で並んでいることになる。",
+      "id": 135,
+      "act": 4,
+      "narration": "ただし、これはマウスとモルモットとデグーの実験である。",
       "visual": {
         "type": "list",
-        "title": "同じ構造で並ぶ",
+        "title": "これはこの三種の実験",
         "items": [
-          "恋愛",
-          "航空機開発",
-          "親鳥の子育て"
+          "マウス",
+          "モルモット",
+          "デグー"
         ]
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 137,
+      "id": 136,
       "act": 4,
-      "narration": "さらに踏み込んだ検討がある。",
+      "narration": "ヒトの幼児期健忘に同じ機構が同じように効いているという直接の証拠ではない。",
       "visual": {
         "type": "figure",
-        "figure": "path",
-        "label": "さらに踏み込んだ検討"
+        "figure": "anxiety",
+        "label": "ヒトへの直接の証拠ではない"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 137,
+      "act": 4,
+      "narration": "並べて考えたくなるが、そこは分けておきたい。",
+      "visual": {
+        "type": "figure",
+        "figure": "isolation",
+        "label": "並べず、分けておく"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 138,
       "act": 4,
-      "narration": "1999年、アークスとピーター・エイトンが、サイコロジカル・ブレティン誌でこの問題を洗い直した。",
+      "narration": "最後に、記憶が語りから作られるという話を、もっと古い場所で見ておきたい。",
+      "visual": {
+        "type": "scenery",
+        "place": "hall",
+        "people": 0,
+        "caption": "もっと古い場所へ"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 139,
+      "act": 4,
+      "narration": "1932年、ケンブリッジ大学のフレデリック・バートレットが行った実験である。",
       "visual": {
         "type": "stat",
-        "value": "1999年",
-        "label": "サイコロジカル・ブレティン誌で洗い直し",
-        "context": "アークス&エイトン",
+        "value": "1932年",
+        "label": "バートレットの実験",
+        "context": "ケンブリッジ大学",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 139,
-      "act": 4,
-      "narration": "彼らの結論は、動物にコンコルドの誤りの曖昧でない実例は無い、というものだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "動物に曖昧でない実例は無い"
-      },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 140,
       "act": 4,
-      "narration": "しかもそれだけではなく、同じような場面に置かれたとき、幼い子どものほうが大人よりも経済学の教科書に近いふるまいをしていたのである。",
+      "narration": "ある人に短い話を読ませ、しばらくしてから思い出して書かせる。",
       "visual": {
-        "type": "comparison",
-        "left_title": "幼い子ども",
-        "right_title": "大人",
-        "left_items": [
-          "教科書に近い"
-        ],
-        "right_items": [
-          "誤りに縛られる"
-        ],
-        "center_label": "ふるまいの差"
+        "type": "figure",
+        "figure": "person",
+        "label": "短い話を読み、後で書かせる"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 141,
       "act": 3,
-      "narration": "この誤りは、古い本能ではなく、育つ過程で身につけたもののほうだったのだろうか。",
+      "narration": "それを次の人に渡し、また思い出させる。",
       "visual": {
-        "type": "comparison",
-        "left_title": "古い本能",
-        "right_title": "育つ過程で身につけたもの",
-        "left_items": [
-          "生まれつき"
-        ],
-        "right_items": [
-          "学習された誤り"
-        ],
-        "center_label": "どちらの誤りか"
+        "type": "figure",
+        "figure": "network",
+        "label": "次の人へ渡す"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 142,
       "act": 3,
-      "narration": "二人はその原因を、無駄にするな、という規則の使いすぎに求めている。",
+      "narration": "伝言を繰り返していく形である。",
       "visual": {
         "type": "figure",
-        "figure": "contract",
-        "label": "無駄にするな、という規則"
+        "figure": "echo",
+        "label": "伝言を繰り返す"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 143,
       "act": 3,
-      "narration": "食べ物を残すな、道具を大事にしろ、始めたことは途中で投げ出すな。",
+      "narration": "使われたのは、北米先住民に伝わる「幽霊たちの戦い」という民話だった。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "「幽霊たちの戦い」"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 144,
+      "act": 3,
+      "narration": "渡っていくうちに、話は短くなり、理解しにくい部分は削られ、聞き手の文化になじむ形へと置き換わっていった。",
       "visual": {
         "type": "list",
-        "title": "教え込まれた規則",
+        "title": "渡るうちに変わる",
         "items": [
-          "食べ物を残すな",
-          "道具を大事にしろ",
-          "途中で投げ出すな"
+          "話は短くなる",
+          "難しい部分は削られる",
+          "聞き手の文化になじむ形へ"
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 144,
-      "act": 3,
-      "narration": "私たちはこれを子どもの頃から何百回と教えられ、実際その多くの場面で助けられてきた。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "子どもの頃から何百回と"
-      },
-      "concept_color": "warm"
-    },
-    {
       "id": 145,
       "act": 3,
-      "narration": "約束を守るのも、簡単に諦めないのも、同じ根から出ている。",
+      "narration": "誰も嘘をついていない。",
       "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "約束を守る、諦めない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 146,
-      "act": 3,
-      "narration": "ただしこの規則はモノを念頭に作られていて、モノは使い続ければ元が取れる。",
-      "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "モノは使えば元が取れる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 147,
-      "act": 3,
-      "narration": "取り返せないのは時間だけなのに、規則の側はその区別をしない。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "取り返せないのは時間だけ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 148,
-      "act": 4,
-      "narration": "もう一度、あの深夜の部屋に戻る。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "もう一度、あの深夜の部屋へ"
+        "type": "keyword",
+        "keyword": "誰も嘘をついていない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 149,
-      "act": 4,
-      "narration": "天井を見ながら年数を数えていた、あの数分間である。",
+      "id": 146,
+      "act": 3,
+      "narration": "全員が正直に思い出しただけである。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "天井を見て数えた数分間"
+        "figure": "person",
+        "label": "全員が正直に思い出した"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 147,
+      "act": 3,
+      "narration": "あなたの家族が法事のたびに繰り返してきたあの話と、同じ構造がここにある。",
+      "visual": {
+        "type": "figure",
+        "figure": "family",
+        "label": "法事のたびの、あの話"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 148,
+      "act": 4,
+      "narration": "もう一度、あの部屋に戻る。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "もう一度、あの部屋に"
       },
       "concept_color": "dusk"
     },
     {
+      "id": 149,
+      "act": 4,
+      "narration": "畳の上に広げたアルバムと、色の褪せた写真。",
+      "visual": {
+        "type": "figure",
+        "figure": "candle",
+        "label": "色の褪せた写真"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 150,
       "act": 4,
-      "narration": "あなたはそのとき、たぶん自分を試していた。",
+      "narration": "手元でページが止まった、あの数秒である。",
       "visual": {
-        "type": "dialogue",
-        "line": "あなたはそのとき、自分を試していた"
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "ページが止まった数秒"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 151,
       "act": 4,
-      "narration": "これだけの年数を数えられるのだから、まだ何かあるはずだ、と。",
+      "narration": "あなたはそのとき、自分の記憶力を疑っていた。",
       "visual": {
-        "type": "dialogue",
-        "line": "これだけ数えられる、まだ何かあるはずだ"
+        "type": "figure",
+        "figure": "scale",
+        "label": "自分の記憶力を、疑っていた"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 152,
       "act": 4,
-      "narration": "あるいは、これだけ数えて何も出てこないのなら自分は薄情なのだ、と。",
+      "narration": "この日を覚えていないのだとしたら、自分は薄情なのではないか、と。",
       "visual": {
         "type": "dialogue",
-        "line": "何も出てこないなら、自分は薄情なのだ"
+        "line": "自分は薄情なのではないか"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 153,
       "act": 4,
-      "narration": "どちらにしても、年数が判定の材料に使われていた。",
-      "visual": {
-        "type": "balance",
-        "title": "",
-        "left_label": "まだ愛がある",
-        "right_label": "自分は薄情",
-        "tilt": 0,
-        "note": "年数が判定の材料に"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 154,
-      "act": 4,
-      "narration": "だがあの数字は、はじめから判定の材料ではなかったのである。",
+      "narration": "だがここまで並べてきたものは、どれもあなたの記憶力の話をしていない。",
       "visual": {
         "type": "figure",
         "figure": "question",
-        "label": "はじめから材料ではなかった"
+        "label": "記憶力の話ではない"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 155,
+      "id": 154,
       "act": 4,
       "narration": "並べ直すと、線は一本になる。",
       "visual": {
         "type": "figure",
         "figure": "path",
-        "label": "並べ直すと線は一本になる"
+        "label": "並べ直すと一本の線に"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 155,
+      "act": 4,
+      "narration": "六千人あまりの申告のうち三分の一が、記憶の下限より下に置かれていた。",
+      "visual": {
+        "type": "stat",
+        "value": "三分の一",
+        "label": "記憶の下限より下",
+        "context": "六千人あまりの申告",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 156,
       "act": 4,
-      "narration": "年数は、去るかどうかの二択を動かさない。",
+      "narration": "作り話は実験室で四人に一人、追試では三人に一人に入り込んだ。",
       "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "去るかどうかの二択"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 157,
-      "act": 4,
-      "narration": "動かすのは、あと何年を足すかのほうである。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "動かすのは、あと何年を足すか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 158,
-      "act": 4,
-      "narration": "人を縛る力のうち、注ぎ込んだ量はいちばん弱く、いちばん強いのは満足度と、ほかに道があるかどうかだった。",
-      "visual": {
-        "type": "chart",
-        "title": "人を縛る力の強さ",
-        "subtitle": "",
-        "unit": "",
-        "items": [
-          {
-            "label": "注ぎ込んだ量",
-            "value": 1
-          },
-          {
-            "label": "満足度",
-            "value": 3
-          },
-          {
-            "label": "ほかに道",
-            "value": 3
-          }
+        "type": "comparison",
+        "left_title": "実験室",
+        "right_title": "追試",
+        "left_items": [
+          "四人に一人"
         ],
-        "highlight": 0,
-        "annotation": "注ぎ込んだ量はいちばん弱い"
+        "right_items": [
+          "三人に一人"
+        ],
+        "center_label": "作り話が入り込む"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 159,
+      "id": 157,
       "act": 4,
-      "narration": "そして人が動かないとき、その勘定にはしばしば自分ではなく相手が入っている。",
+      "narration": "最初の記憶の年齢は文化によって半年ずれ、その差は周りで交わされた言葉の量と並んでいた。",
+      "visual": {
+        "type": "balance",
+        "title": "",
+        "left_label": "最初の記憶の年齢",
+        "right_label": "交わされた言葉の量",
+        "tilt": 0.4,
+        "note": "文化で半年ずれる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 158,
+      "act": 4,
+      "narration": "そして忘れることのほうが、脳に作り込まれた仕組みだった。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "勘定に入るのは相手"
+        "figure": "brain",
+        "label": "忘れることは仕組み"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 159,
+      "act": 4,
+      "narration": "では、あの記憶は無かったことになるのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "あの記憶は無かったことに?"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 160,
-      "act": 4,
-      "narration": "では、さっさと別れろということか、と思うかもしれない。",
-      "visual": {
-        "type": "dialogue",
-        "line": "では、さっさと別れろということか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 161,
-      "act": 4,
-      "narration": "そうではない。",
+      "act": 5,
+      "narration": "ならない。",
       "visual": {
         "type": "keyword",
-        "keyword": "そうではない"
+        "keyword": "ならない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 162,
-      "act": 4,
-      "narration": "ここまでの研究は、どれ一つとして別れることを勧めていない。",
+      "id": 161,
+      "act": 5,
+      "narration": "ここまでの研究は、どれ一つとしてあなたの記憶を否定していない。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "別れることは勧めていない"
+        "figure": "heart",
+        "label": "記憶を否定していない"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 163,
-      "act": 4,
-      "narration": "レイとアグニューのメタ分析は相関を並べたものであって、注ぎ込んだから留まる、という因果を示したわけではないし、留まった人が間違っていたとも限らない。",
+      "id": 162,
+      "act": 5,
+      "narration": "バウアーらの反論があるとおり、幼い子どもは実際に出来事を覚えている。",
       "visual": {
-        "type": "comparison",
-        "left_title": "相関",
-        "right_title": "因果",
-        "left_items": [
-          "並べただけ"
-        ],
-        "right_items": [
-          "証明ではない"
-        ],
-        "center_label": "メタ分析の限界"
+        "type": "figure",
+        "figure": "seed",
+        "label": "幼い子どもは覚えている"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 163,
+      "act": 5,
+      "narration": "分かっているのは、どちらなのかを外から見分ける方法が、まだ誰にも無いということだけである。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "どちらか見分けられない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 164,
-      "act": 4,
-      "narration": "そもそも、留まること自体は誤りではない。",
+      "act": 5,
+      "narration": "そもそも、外から入ったのなら偽物だ、という前提のほうを疑ってよい。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "留まること自体は誤りではない"
+        "figure": "question",
+        "label": "その前提を疑ってよい"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 165,
-      "act": 4,
-      "narration": "沈没費用が誤りになるのは、それが判断の材料に混ざったときだけである。",
+      "act": 5,
+      "narration": "バートレットの実験で話を運んだ人たちは、誰も嘘をついていなかった。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "判断の材料に混ざったときだけ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 166,
-      "act": 5,
-      "narration": "長く一緒にいたから幸せだ、というのは正しい理由だ。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "正しい理由",
-        "right_title": "取り違え",
-        "left_items": [
-          "長くいたから幸せだ"
-        ],
-        "right_items": [
-          "長くいたから抜けられない"
-        ],
-        "center_label": "同じ年数、違う使い方"
+        "figure": "person",
+        "label": "誰も嘘をついていなかった"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 166,
+      "act": 5,
+      "narration": "人間の記憶は、初めからそういう作りになっている。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "初めからそういう作り"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 167,
       "act": 5,
-      "narration": "長く一緒にいたから抜けられない、というほうが、材料の取り違えなのである。",
+      "narration": "人類が言葉を持ってからずっと、私たちは自分の過去を、他人と一緒に組み立ててきたのではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "chains",
-        "label": "抜けられない、は材料の取り違え"
+        "figure": "handshake",
+        "label": "過去を他人と組み立てる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 168,
       "act": 5,
-      "narration": "ちなみに厚生労働省の同じ統計では、同居期間20年以上の離婚が40,686組あり、そのうち35年以上が7,194組で、前年比プラス5.4パーセントと全階級で最大の伸びだった。",
+      "narration": "だから、返しておきたいものがある。",
       "visual": {
-        "type": "stat",
-        "value": "40,686組",
-        "label": "同居20年以上の離婚",
-        "context": "厚生労働省 同じ統計",
-        "unit": "",
-        "axis": {
-          "label": "うち35年以上7,194組・前年比+5.4%",
-          "ticks": []
-        }
+        "type": "scenery",
+        "place": "field",
+        "people": 2,
+        "caption": "返しておきたいものがある"
       },
-      "concept_color": "warm"
+      "concept_color": "dusk"
     },
     {
       "id": 169,
       "act": 5,
-      "narration": "決断は消えてなくなるのではなく、何年も遅れて届いている。",
+      "narration": "あなたの最初の記憶が何歳のものかは、記憶力の成績ではない。",
       "visual": {
         "type": "figure",
-        "figure": "clock",
-        "label": "決断は何年も遅れて届く"
+        "figure": "question",
+        "label": "記憶力の成績ではない"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 170,
       "act": 5,
-      "narration": "だから、返しておきたいものがある。",
+      "narration": "それは、あなたの周りで出来事が言葉に変わり始めた地点である。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "返しておきたいものがある"
+        "type": "verdict",
+        "caption": "",
+        "statement": "最初の記憶 = 出来事が言葉に変わり始めた地点",
+        "note": ""
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 171,
       "act": 5,
-      "narration": "あなたが数えていたあの年数は、留まる理由にも、去る理由にもならない。",
+      "narration": "誰かがあなたに、今日は何をしたのかと聞いた。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "留まる理由にも、去る理由にもならない"
+        "figure": "question",
+        "label": "今日は何をしたの?"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 172,
       "act": 5,
-      "narration": "それは判定の材料ではなく、すでにあなたが受け取ってしまったもののほうだ。",
-      "visual": {
-        "type": "verdict",
-        "caption": "あの年数の正体",
-        "statement": "数えた年数 = すでに受け取ったもの",
-        "note": "判定の材料ではない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 173,
-      "act": 5,
-      "narration": "誰にも回収されないし、どちらを選んでも一日も減らない。",
+      "narration": "あなたがそれに答えた。",
       "visual": {
         "type": "figure",
-        "figure": "candle",
-        "label": "どちらを選んでも一日も減らない"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 174,
-      "act": 5,
-      "narration": "数え終わったあとに残っている問いは、たったひとつである。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "残っている問いは、たったひとつ"
+        "figure": "couple",
+        "label": "あなたが、それに答えた"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 175,
+      "id": 173,
       "act": 5,
-      "narration": "これから先の時間を、どこで使うか。",
+      "narration": "その往復が始まった場所に、最初の一枚は置かれている。",
       "visual": {
-        "type": "verdict",
-        "caption": "最後の問い",
-        "statement": "これから先の時間を、どこで使うか",
-        "note": ""
+        "type": "figure",
+        "figure": "cycle",
+        "label": "往復が始まった場所"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 174,
+      "act": 5,
+      "narration": "本当にあったかどうかは、たぶん最後まで確かめられない。",
+      "visual": {
+        "type": "figure",
+        "figure": "candle",
+        "label": "最後まで確かめられない"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 175,
+      "act": 5,
+      "narration": "確かめられないまま持っていてよいものが、人生には一つくらいあってもいいのではないだろうか。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "確かめられないまま持っていてよいもの"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 176,
       "act": 5,
-      "narration": "年数を数えるのをやめた人だけが、その問いに答えることができる。",
+      "narration": "そんなことまで、また解剖してしまいました。",
       "visual": {
-        "type": "verdict",
-        "caption": "最後の問い",
-        "statement": "数えるのをやめた人 = 答えられる人",
-        "note": "年数から自由になったとき"
+        "type": "figure",
+        "figure": "thought",
+        "label": "また解剖してしまった"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 177,
       "act": 5,
-      "narration": "そんなことまで、また解剖してしまいました。",
+      "narration": "よろしければチャンネル登録と高評価をお願いします。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "また、解剖してしまいました"
+        "type": "figure",
+        "figure": "applause",
+        "label": "登録と高評価を"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 178,
       "act": 5,
-      "narration": "よろしければチャンネル登録と高評価をお願いします。",
-      "visual": {
-        "type": "figure",
-        "figure": "applause",
-        "label": "チャンネル登録と高評価"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 179,
-      "act": 5,
       "narration": "それでは次の動画で、またお会いしましょう。",
       "visual": {
         "type": "scenery",
         "place": "village",
-        "people": 0,
-        "caption": "また次の動画で"
+        "people": 2,
+        "caption": "それでは、また次の夜に"
       },
       "concept_color": "dusk"
     }
