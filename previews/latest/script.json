@@ -1,1057 +1,1030 @@
 {
   "theme": "（Gist台本）",
-  "title": "なぜ最初の記憶はあてにならないのか【脳科学×発達心理学】",
-  "bgm_direction": "A quiet, dark cinematic underscore with sparse piano and low sustained strings, evoking memory and uncertainty in a hushed nocturnal theatre.",
+  "title": "なぜ人は奢ってしまうのか【進化生物学×シグナル理論】",
+  "bgm_direction": "A slow, sparse piano motif over low sustained strings, quiet and melancholic, with a faint sense of tension building in the dark.",
   "scenes": [
     {
       "id": 1,
       "act": 1,
-      "narration": "実家の押し入れから出てきた古いアルバムを、畳の上に広げてめくっている。",
+      "narration": "店員が伝票を置いていく。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "畳に広げた古いアルバム"
+        "type": "figure",
+        "figure": "contract",
+        "label": "置かれた伝票"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 2,
       "act": 1,
-      "narration": "色の褪せた一枚に、まだ小さい自分が写っている。",
+      "narration": "会話が途切れた一秒のあいだに、あなたの手のほうが先に動いている。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "色褪せた写真の自分"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 3,
-      "act": 1,
-      "narration": "場所も、着ているものも、隣にいる大人の顔も分かる。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "隣にいる大人"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 4,
-      "act": 1,
-      "narration": "分かるのだが、めくりながらふと止まる手がある。",
-      "visual": {
-        "type": "figure",
-        "figure": "anxiety",
-        "label": "ふと止まる手"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 5,
-      "act": 1,
-      "narration": "この日のことを自分は覚えているのか、それともこの写真を覚えているだけなのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "覚えているのは、どちら"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 6,
-      "act": 1,
-      "narration": "たいていの人は、自分のいちばん古い記憶をひとつ持っている。",
-      "visual": {
-        "type": "figure",
-        "figure": "dream",
-        "label": "いちばん古い記憶"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 7,
-      "act": 1,
-      "narration": "台所の匂いだったり、階段から落ちたことだったり、誰かに手を引かれていた坂道だったりする。",
-      "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 2,
-        "caption": "手を引かれた坂道"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 8,
-      "act": 1,
-      "narration": "あなたにも一つあるはずだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "あなたにも一つある"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 9,
-      "act": 1,
-      "narration": "そしておそらく、それが本当にあった出来事なのかどうかを、あなたは一度も確かめたことがない。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "確かめたことがない"
+        "figure": "money",
+        "label": "先に動く手"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 10,
-      "act": 2,
-      "narration": "人生の最初の数年をほとんど思い出せないことには、幼児期健忘という名前がついている。",
+      "id": 3,
+      "act": 1,
+      "narration": "相手が財布に手をかけるより早く、カードを挟んで返す。",
       "visual": {
-        "type": "keyword",
-        "keyword": "幼児期健忘"
+        "type": "figure",
+        "figure": "shopping",
+        "label": "カードを挟んで返す"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 4,
+      "act": 1,
+      "narration": "ありがとう、と言われる。",
+      "visual": {
+        "type": "dialogue",
+        "line": "ありがとう"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 5,
+      "act": 1,
+      "narration": "悪くない時間だった。",
+      "visual": {
+        "type": "scenery",
+        "place": "city",
+        "people": 2,
+        "caption": "悪くない時間だった"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 6,
+      "act": 1,
+      "narration": "店を出て、駅で別れて、その夜のうちに次の店の候補を三つ送る。",
+      "visual": {
+        "type": "figure",
+        "figure": "smartphone",
+        "label": "次の店の候補を三つ"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 7,
+      "act": 1,
+      "narration": "既読はつく。",
+      "visual": {
+        "type": "figure",
+        "figure": "notification",
+        "label": "既読はつく"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 8,
+      "act": 1,
+      "narration": "返事は、来ない。",
+      "visual": {
+        "type": "figure",
+        "figure": "isolation",
+        "label": "返事は、来ない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 9,
+      "act": 1,
+      "narration": "同じことが何度かあると、人は自分なりの説明を作るようになる。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "自分なりの説明"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 10,
+      "act": 1,
+      "narration": "金で気を引こうとしたのが浅ましかったのだ、と考える人がいる。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "金で気を引こうとしたのが浅ましかった"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 11,
-      "act": 2,
-      "narration": "誰にでも起きるので、欠陥として扱われることはない。",
+      "act": 1,
+      "narration": "都合のいい財布として扱われただけなのだ、と考える人もいる。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "誰にでも起きる"
+        "type": "dialogue",
+        "line": "都合のいい財布として扱われただけだ"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 12,
-      "act": 2,
-      "narration": "厚生労働省の人口動態統計によれば、2024年に日本で生まれた子どもは686,061人で、前年の727,288人より41,227人減っている。",
+      "act": 1,
+      "narration": "どちらの説明も、結論のところで自分をいくらか傷つける形をしている。",
       "visual": {
-        "type": "stat",
-        "value": "686,061人",
-        "label": "2024年に生まれた子ども",
-        "context": "厚労省 人口動態統計",
-        "unit": "",
-        "axis": {
-          "label": "前年比 −41,227人",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 13,
-      "act": 2,
-      "narration": "合計特殊出生率は1.15である。",
-      "visual": {
-        "type": "stat",
-        "value": "1.15",
-        "label": "合計特殊出生率",
-        "context": "2024年",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "tears",
+        "label": "どちらも自分を傷つける"
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 13,
+      "act": 1,
+      "narration": "そして不思議なことに、次の機会が来るとまた同じように手が伸びる。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "また同じように手が伸びる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 14,
       "act": 2,
-      "narration": "ピークだった1949年には2,696,638人が生まれていた。",
+      "narration": "この場面は、統計の上でもかなりの数だけ起きている。",
       "visual": {
-        "type": "stat",
-        "value": "2,696,638人",
-        "label": "生まれた数",
-        "context": "1949年 ピーク",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "crowd",
+        "label": "統計の上でも起きている"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 15,
       "act": 2,
-      "narration": "これだけの人数が、それぞれ人生の最初の数年を持ち、そのほとんどを持ち帰れない。",
+      "narration": "ナイル株式会社が2025年の初めに行った調査では、2024年に初めてデートをした男女1,148人のうち、男性の72.4パーセントが自分が多めに払ったか全額払ったと答えている。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 9,
-        "caption": "最初の数年を持ち帰れない人々"
+        "type": "stat",
+        "value": "72.4%",
+        "label": "男性が多めor全額払った",
+        "context": "ナイル調査 2025年初",
+        "unit": "",
+        "axis": {
+          "label": "初デート男女1,148人",
+          "ticks": []
+        }
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 16,
       "act": 2,
-      "narration": "歩けるようになった日も、初めて誰かの名前を呼んだ日も、記録として残っているのは他人の側だけである。",
+      "narration": "女性の側では57.6パーセントが、相手が多めに払ったか全額払ったと答えた。",
       "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "記録は他人の側にだけ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 17,
-      "act": 2,
-      "narration": "持ち帰れたわずかな一枚だけが、その人の最初の記憶として残る。",
-      "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "持ち帰れたわずか一枚"
+        "type": "stat",
+        "value": "57.6%",
+        "label": "女性が相手に払ってもらった",
+        "context": "同調査",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 18,
+      "id": 17,
       "act": 2,
-      "narration": "では、その残った一枚のほうは、確かに起きたことなのだろうか。",
+      "narration": "個人の財布の外でも、同じことが規模を変えて起きている。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "それは確かに起きたか"
+        "figure": "factory",
+        "label": "規模を変えて起きる"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 19,
+      "id": 18,
       "act": 2,
-      "narration": "今日はそれを、脳科学と発達心理学から解剖してみたい。",
+      "narration": "国税庁の会社標本調査によれば、法人が使った交際費等の額は令和6年度分で4兆4139億円だった。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "脳科学と発達心理学"
+        "type": "stat",
+        "value": "4兆4139億円",
+        "label": "法人の交際費等（令和6年度分）",
+        "context": "国税庁 会社標本調査",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 19,
+      "act": 2,
+      "narration": "令和4年度分が3兆5820億円、令和5年度分が4兆1841億円だから、二年続けて増えている。",
+      "visual": {
+        "type": "line",
+        "title": "交際費等の推移",
+        "unit": "兆円",
+        "points": [
+          {
+            "label": "令和4年度",
+            "value": 3.58
+          },
+          {
+            "label": "令和5年度",
+            "value": 4.18
+          },
+          {
+            "label": "令和6年度",
+            "value": 4.41
+          }
+        ]
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 20,
       "act": 2,
-      "narration": "まず、この問いを正面から数で扱った研究がある。",
+      "narration": "景気の話でも世代の話でもなく、人は誰かのために払うという行為を、いまだにやめていない。",
       "visual": {
         "type": "figure",
-        "figure": "screen",
-        "label": "数で扱った研究"
+        "figure": "handshake",
+        "label": "誰かのために払う"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 21,
-      "act": 2,
-      "narration": "ここから始めたい。",
+      "act": 3,
+      "narration": "会社が払うそれは接待と呼ばれ、個人が払うそれは奢りと呼ばれる。",
       "visual": {
-        "type": "scenery",
-        "place": "forest",
-        "people": 0,
-        "caption": "ここから始めたい"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 22,
-      "act": 2,
-      "narration": "2018年、シャジア・アフタル、ルーシー・ジャスティス、カトリオナ・モリソン、マーティン・コンウェイの四人が、サイコロジカル・サイエンス誌に論文を発表した。",
-      "visual": {
-        "type": "stat",
-        "value": "2018年",
-        "label": "四人の研究者が論文を発表",
-        "context": "サイコロジカル・サイエンス誌",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "comparison",
+        "left_title": "会社が払う",
+        "right_title": "個人が払う",
+        "left_items": [
+          "接待"
+        ],
+        "right_items": [
+          "奢り"
+        ],
+        "center_label": "呼び名の違い"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 23,
-      "act": 2,
-      "narration": "集めたのは6,641人分の回答である。",
+      "id": 22,
+      "act": 3,
+      "narration": "名前は違うが、財布から出ていく向きも、見返りが約束されていないところも同じ構造をしている。",
       "visual": {
-        "type": "stat",
-        "value": "6,641人",
-        "label": "集めた回答",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "scale",
+        "label": "見返りは約束されない"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 24,
-      "act": 2,
-      "narration": "質問は単純で、あなたのいちばん古い記憶は何か、そしてそのとき何歳だったか、というものだった。",
+      "id": 23,
+      "act": 3,
+      "narration": "では、その支払いは何をしているのだろうか。",
       "visual": {
         "type": "figure",
         "figure": "question",
-        "label": "いちばん古い記憶は？　そのとき何歳？"
+        "label": "その支払いは何をしている？"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 24,
+      "act": 3,
+      "narration": "今日はそれを、互恵性の進化とシグナル理論から解剖してみたい。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "互恵性の進化とシグナル理論"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 25,
-      "act": 2,
-      "narration": "回答された年齢の平均は3.15歳だった。",
+      "act": 3,
+      "narration": "まず、通説の側を正しく立てておきたい。",
       "visual": {
-        "type": "stat",
-        "value": "3.15歳",
-        "label": "回答された年齢の平均",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "scale",
+        "label": "通説を正しく立てる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 26,
       "act": 3,
-      "narration": "ここまでは、これまでの研究とよく合っている。",
+      "narration": "ここを雑に扱うと、この回はただの気休めになる。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "従来の研究と一致"
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "雑に扱えば気休めになる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 27,
       "act": 3,
-      "narration": "ところが分布のほうを見ると、そこに収まらないものが大量に混じっていた。",
+      "narration": "奢りは負債を作る。",
       "visual": {
         "type": "figure",
-        "figure": "eye",
-        "label": "分布に混じる外れ値"
+        "figure": "chains",
+        "label": "奢りは負債を作る"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 28,
       "act": 3,
-      "narration": "2,487件が「2歳以下」と申告されていたのである。",
+      "narration": "これはほとんど反論を受けない説明で、しかも根拠がある。",
       "visual": {
-        "type": "stat",
-        "value": "2,487件",
-        "label": "「2歳以下」と申告",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "contract",
+        "label": "根拠のある説明"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 29,
       "act": 3,
-      "narration": "そのうち893件は「1歳以下」だった。",
+      "narration": "1971年、ロバート・トリヴァースがクォータリー・レビュー・オブ・バイオロジー誌に発表した互恵的利他主義の論文は、血縁でない個体どうしで協力が続く条件を整理した。",
       "visual": {
         "type": "stat",
-        "value": "893件",
-        "label": "うち「1歳以下」",
-        "context": "",
+        "value": "1971年",
+        "label": "トリヴァース 互恵的利他主義",
+        "context": "Quarterly Review of Biology",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 30,
       "act": 3,
-      "narration": "六千件あまりのうち、およそ三分の一が、記憶の研究がこれまで扱ってきた下限より下に置かれていたことになる。",
-      "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 33,
-        "label": "下限より下の記憶",
-        "rest_label": "従来の範囲内"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 31,
-      "act": 3,
-      "narration": "申告された年齢が本人の思い違いなのではないか、と思うかもしれない。",
+      "narration": "条件のひとつは、誰が返して誰が返さなかったかを覚えていられることである。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "年齢の思い違いでは？"
+        "figure": "brain",
+        "label": "誰が返したかを覚える"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 32,
+      "id": 31,
       "act": 3,
-      "narration": "人が自分の過去の出来事を実際より昔に置いてしまうことは、よく知られている。",
+      "narration": "人間の頭には、その記録装置が入っている。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "過去を実際より昔へ"
+        "figure": "brain",
+        "label": "頭の中の記録装置"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 32,
+      "act": 3,
+      "narration": "だから、払われた側の手元には負債が残ることになる。",
+      "visual": {
+        "type": "figure",
+        "figure": "chains",
+        "label": "手元に残る負債"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 33,
       "act": 3,
-      "narration": "その可能性は否定できない。",
+      "narration": "そして負債というのは、額の大小にかかわらず、抱えていて気持ちのいいものではない。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "可能性は否定できない"
+        "figure": "anxiety",
+        "label": "抱えて気持ちのいいものではない"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "dark-navy"
     },
     {
       "id": 34,
       "act": 3,
-      "narration": "だが著者らが注目したのは年齢そのものではなく、そこに書かれた記憶の中身のほうだった。",
+      "narration": "返せそうにない相手からは、自然と距離を取りたくなる。",
       "visual": {
         "type": "figure",
-        "figure": "lightbulb",
-        "label": "注目は記憶の中身"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 35,
-      "act": 3,
-      "narration": "1歳以下と申告された記憶にも、場面があり、人物がいて、順序を持った出来事として書かれていたのである。",
-      "visual": {
-        "type": "list",
-        "title": "1歳以下の記憶にも",
-        "items": [
-          "場面がある",
-          "人物がいる",
-          "順序を持つ出来事"
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 36,
-      "act": 2,
-      "narration": "著者らはそこから、こう結論した。",
-      "visual": {
-        "type": "figure",
-        "figure": "lightbulb",
-        "label": "著者らの結論"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 37,
-      "act": 2,
-      "narration": "これらの多くは実際に体験した出来事の記憶ではなく、あとから聞いた話や写真や、家族のあいだで繰り返されてきた説明をもとに組み立てられたものではないか。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "あとから組み立てた記憶"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 38,
-      "act": 2,
-      "narration": "論文の題は、そのまま「作られた最初の記憶」となっている。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "作られた最初の記憶"
+        "figure": "isolation",
+        "label": "返せない相手から距離を取る"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 39,
+      "id": 35,
+      "act": 3,
+      "narration": "ここまでは、居酒屋で誰かが言いそうな通説とぴったり一致している。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 4,
+        "caption": "居酒屋の通説とぴったり一致"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 36,
       "act": 2,
-      "narration": "言い換えれば、こういうことになる。",
+      "narration": "それなら、払わなければいいではないか、と思うかもしれない。",
+      "visual": {
+        "type": "dialogue",
+        "line": "払わなければいい、と思うかもしれない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 37,
+      "act": 2,
+      "narration": "もっともな指摘である。",
       "visual": {
         "type": "figure",
         "figure": "question",
-        "label": "言い換えれば"
+        "label": "もっともな指摘"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 38,
+      "act": 2,
+      "narration": "だが、それで話が終わるなら、人類が何万年もこの習慣を続けてきた理由が説明できない。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "何万年も続く習慣"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 39,
+      "act": 2,
+      "narration": "負債を作るだけの行為が、なぜこれほど広く残っているのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "なぜ広く残るのか"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 40,
-      "act": 3,
-      "narration": "あなたが持っている最初の一枚は、その日に自分の目で撮ったものかもしれないし、あとから誰かに手渡されたものかもしれない。",
+      "act": 2,
+      "narration": "そこで、この問いを正面から扱ったモデルがある。",
       "visual": {
         "type": "figure",
-        "figure": "camera",
-        "label": "最初の一枚"
+        "figure": "target",
+        "label": "問いを正面から扱う"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 41,
-      "act": 3,
-      "narration": "そして手元にある時点では、その二つはまったく同じ手触りをしている。",
+      "act": 2,
+      "narration": "ここから始めたい。",
       "visual": {
-        "type": "comparison",
-        "left_title": "自分で撮った",
-        "right_title": "誰かから",
-        "left_items": [
-          "最初の一枚"
-        ],
-        "right_items": [
-          "手渡された一枚"
-        ],
-        "center_label": "同じ手触り"
+        "type": "scenery",
+        "place": "room",
+        "people": 0,
+        "caption": "ここから始めたい"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 42,
-      "act": 3,
-      "narration": "アルバムに貼られてしまえば、自分で撮った写真も、親戚からもらった写真も、同じ台紙の上で同じ顔をしているようなものだ。",
+      "act": 2,
+      "narration": "2005年、ピーター・ソゾウとロバート・シーモアが、英国王立協会の紀要に論文を発表した。",
       "visual": {
-        "type": "figure",
-        "figure": "eye",
-        "label": "同じ顔をした写真"
+        "type": "stat",
+        "value": "2005年",
+        "label": "英国王立協会紀要に発表",
+        "context": "ソゾウ＆シーモア",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
-      "concept_color": "pitch-black"
+      "concept_color": "charcoal"
     },
     {
       "id": 43,
-      "act": 3,
-      "narration": "どちらだったのかを、あなたはどうやって見分けるのだろうか。",
+      "act": 2,
+      "narration": "題は「高くつくのに無価値な贈り物が求愛を助ける」である。",
       "visual": {
-        "type": "figure",
-        "figure": "crossroad",
-        "label": "どちらだったのか"
+        "type": "keyword",
+        "keyword": "高くつくのに無価値な贈り物"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 44,
       "act": 3,
-      "narration": "法事の席。",
+      "narration": "彼らは求愛を、順番に手を打つゲームとして書き下した。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 6,
-        "caption": "法事の席"
+        "type": "figure",
+        "figure": "couple",
+        "label": "順番に手を打つゲーム"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 45,
       "act": 3,
-      "narration": "伯母があなたに向かって、あの日あなたは池に落ちそうになって大泣きしたのだと話し始める。",
-      "visual": {
-        "type": "dialogue",
-        "line": "あの日あなたは池に落ちそうになって大泣きしたのよ"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 46,
-      "act": 3,
-      "narration": "周りの大人が笑う。",
+      "narration": "まずオスが贈り物を出す。",
       "visual": {
         "type": "figure",
-        "figure": "applause",
-        "label": "周りの大人が笑う"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 47,
-      "act": 3,
-      "narration": "話を聞いているうちに、あなたの頭の中には水面の色と、掴まれた腕の感触が浮かんでくる。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "浮かぶ水面と腕の感触"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 48,
-      "act": 3,
-      "narration": "それが今日この場で生まれたものなのか、二十年前からそこにあったものなのかは、もう分けられない。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "もう分けられない"
+        "figure": "contract",
+        "label": "まずオスが贈り物を出す"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 49,
-      "act": 2,
-      "narration": "こうしたことが実験室で起きるかどうかは、ずっと前に調べられている。",
+      "id": 46,
+      "act": 3,
+      "narration": "メスがそれを受け取るかどうかを決める。",
       "visual": {
         "type": "figure",
-        "figure": "atom",
-        "label": "実験室で確かめる"
+        "figure": "door",
+        "label": "受け取るかを決める"
       },
-      "concept_color": "pitch-black"
+      "concept_color": "warm"
+    },
+    {
+      "id": 47,
+      "act": 3,
+      "narration": "そのあとで、つがうかどうかを決める。",
+      "visual": {
+        "type": "figure",
+        "figure": "crossroad",
+        "label": "つがうかを決める"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 48,
+      "act": 3,
+      "narration": "人間版のモデルでは、ひとつ重要な条件が入っている。",
+      "visual": {
+        "type": "figure",
+        "figure": "mask",
+        "label": "人間版の重要な条件"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 49,
+      "act": 3,
+      "narration": "メスの側は、相手がそのあと留まるのか去るのかを知らない。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "留まるか去るか知らない"
+      },
+      "concept_color": "charcoal"
     },
     {
       "id": 50,
-      "act": 2,
-      "narration": "1995年、エリザベス・ロフタスとジャクリーン・ピックレルが、ワシントン大学の学生24名を相手に実験を行った。",
+      "act": 3,
+      "narration": "このモデルで彼らが解こうとしたのは、贈り物をする側が抱える板挟みである。",
       "visual": {
-        "type": "stat",
-        "value": "24名",
-        "label": "実験の参加者",
-        "context": "1995年 ロフタス&ピックレル",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "scale",
+        "label": "贈る側の板挟み"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 51,
-      "act": 2,
-      "narration": "それぞれの家族から、その人が子どもの頃に本当にあった出来事をいくつか聞き取っておく。",
+      "act": 3,
+      "narration": "高い贈り物を出せば、長く留まるつもりがあることは伝わる。",
       "visual": {
         "type": "figure",
-        "figure": "family",
-        "label": "家族から本当の出来事を聞く"
+        "figure": "heart",
+        "label": "長く留まる意図が伝わる"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 52,
-      "act": 2,
-      "narration": "そこに一つだけ、家族が否定した作り話を混ぜる。",
+      "act": 3,
+      "narration": "ところが同時に、贈り物だけを受け取って去っていく相手も引き寄せてしまう。",
       "visual": {
         "type": "figure",
-        "figure": "mask",
-        "label": "作り話を一つ混ぜる"
+        "figure": "blame",
+        "label": "贈り物だけ受け取り去る相手"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 53,
-      "act": 2,
-      "narration": "幼い頃にショッピングモールで迷子になり、泣いていたところを年上の女性に助けられ、家族と再会した、という話である。",
+      "act": 3,
+      "narration": "英語ではこれをゴールドディガーと呼ぶ。",
       "visual": {
-        "type": "figure",
-        "figure": "shopping",
-        "label": "モールで迷子"
+        "type": "keyword",
+        "keyword": "ゴールドディガー"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 54,
-      "act": 2,
-      "narration": "面接を重ねて、その出来事について思い出せることを話してもらう。",
+      "act": 3,
+      "narration": "この二つを同時に満たす贈り物は、どんな性質を持っているか。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 2,
-        "caption": "面接を重ねる"
+        "type": "figure",
+        "figure": "question",
+        "label": "両方を満たす贈り物とは"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 55,
-      "act": 2,
-      "narration": "すると、およそ25パーセントの参加者が、その作り話を自分の記憶として語るようになった。",
+      "act": 3,
+      "narration": "結論は、教科書に載っていない形をしていた。",
       "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 25,
-        "label": "作り話を記憶と語った人",
-        "rest_label": "語らなかった人"
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "教科書にない形"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 56,
-      "act": 2,
-      "narration": "何も思い出せませんと答えた人が大半だったが、四人に一人はそうならなかったのである。",
+      "act": 3,
+      "narration": "払う側にとって高くつき、受け取る側にとって換金できないもの。",
       "visual": {
-        "type": "units",
-        "total": 4,
-        "value": 1,
-        "label": "四人に一人"
+        "type": "comparison",
+        "left_title": "払う側",
+        "right_title": "受け取る側",
+        "left_items": [
+          "高くつく"
+        ],
+        "right_items": [
+          "換金できない"
+        ],
+        "center_label": "贈り物の条件"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 57,
       "act": 3,
-      "narration": "その研究は古いし、24人しかいないではないか、と思うかもしれない。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "古い研究だし、24人しかいないじゃないか"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 58,
-      "act": 3,
-      "narration": "もっともな指摘だ。",
+      "narration": "これだけが両方を満たす。",
       "visual": {
         "type": "keyword",
-        "keyword": "もっともな指摘"
+        "keyword": "これだけが両方を満たす"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 59,
-      "act": 2,
-      "narration": "だから2023年に、事前登録つきの追試が行われている。",
+      "id": 58,
+      "act": 3,
+      "narration": "食事、観劇、旅行。",
       "visual": {
-        "type": "stat",
-        "value": "2023年",
-        "label": "事前登録つきの追試",
-        "context": "",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "list",
+        "title": "換金できない贈り物",
+        "items": [
+          "食事",
+          "観劇",
+          "旅行"
+        ]
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 59,
+      "act": 3,
+      "narration": "どれも払う側の財布からは確実に減るのに、受け取った側は売って現金に戻せない。",
+      "visual": {
+        "type": "balance",
+        "title": "",
+        "left_label": "財布から確実に減る",
+        "right_label": "現金に戻せない",
+        "tilt": 0.6,
+        "note": "非対称な価値"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 60,
-      "act": 2,
-      "narration": "アイルランドのユニヴァーシティ・カレッジ・コークとダブリンの研究チームが、標本を五倍の123名にして、分析の手順を先に公開したうえで同じことをやった。",
+      "act": 4,
+      "narration": "金曜の夜、あなたは店を選んでいる。",
       "visual": {
-        "type": "stat",
-        "value": "123名",
-        "label": "標本は5倍に",
-        "context": "コーク&ダブリンの研究チーム",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "scenery",
+        "place": "city",
+        "people": 1,
+        "caption": "金曜の夜、店を選んでいる"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 61,
-      "act": 2,
-      "narration": "結果は35パーセントだった。",
+      "act": 4,
+      "narration": "相手の好みを考えているつもりでいるが、実際に手が止まるのは値段のところだ。",
       "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 35,
-        "label": "作り話を記憶と語った人",
-        "rest_label": "語らなかった人"
+        "type": "dialogue",
+        "line": "手が止まるのは値段のところだ"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 62,
-      "act": 2,
-      "narration": "効果は消えるどころか、元の研究より強く出たのである。",
+      "act": 4,
+      "narration": "少し無理をした額の店を押さえる。",
       "visual": {
         "type": "figure",
-        "figure": "arrowUp",
-        "label": "効果はより強く出た"
+        "figure": "money",
+        "label": "少し無理をした額の店"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "daylight"
     },
     {
       "id": 63,
-      "act": 3,
-      "narration": "追試で数字が下がる話ばかり聞く時代に、これは珍しい方向の結果ではないだろうか。",
+      "act": 4,
+      "narration": "そのときあなたが買っていたのは、料理でも雰囲気でもなかったのかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "珍しい方向の結果"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 64,
-      "act": 3,
-      "narration": "ここまでは、記憶が外から入りうるという話である。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "記憶は外から入りうる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 65,
-      "act": 3,
-      "narration": "だが、もっと静かに効いているものがある。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "もっと静かに効くもの"
+        "figure": "heart",
+        "label": "買っていたのは料理ではない"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 66,
-      "act": 3,
-      "narration": "それは、あなたが子どもの頃に周りで交わされていた言葉の量だ。",
+      "id": 64,
+      "act": 4,
+      "narration": "そして現金は、このモデルで機能しない。",
       "visual": {
-        "type": "scenery",
-        "place": "village",
-        "people": 4,
-        "caption": "子どもの頃に交わされた言葉"
+        "type": "figure",
+        "figure": "money",
+        "label": "現金は機能しない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 65,
+      "act": 4,
+      "narration": "額が同じでも、封筒に入れて渡した瞬間に選別の力が消える。",
+      "visual": {
+        "type": "figure",
+        "figure": "contract",
+        "label": "封筒で選別の力が消える"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 66,
+      "act": 4,
+      "narration": "受け取った側にとって価値があるものは、贈り物だけを目当てにする相手を呼び込んでしまうからだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "blame",
+        "label": "目当ての相手を呼び込む"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 67,
-      "act": 2,
-      "narration": "2001年、キィ・ワンが、ジャーナル・オブ・パーソナリティ・アンド・ソーシャル・サイコロジー誌に研究を発表した。",
+      "act": 4,
+      "narration": "高価さが長く留まる意図を伝え、無価値さが目当ての相手をふるい落とす。",
       "visual": {
-        "type": "stat",
-        "value": "2001年",
-        "label": "キィ・ワンの研究",
-        "context": "J.パーソナリティ&社会心理学誌",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 68,
-      "act": 2,
-      "narration": "集めたのはアメリカの大学生119名と、中国の大学生137名である。",
-      "visual": {
-        "type": "chart",
-        "title": "",
-        "subtitle": "",
-        "unit": "名",
-        "items": [
-          {
-            "label": "アメリカの大学生",
-            "value": 119
-          },
-          {
-            "label": "中国の大学生",
-            "value": 137
-          }
+        "type": "comparison",
+        "left_title": "高価さ",
+        "right_title": "無価値さ",
+        "left_items": [
+          "留まる意図を伝える"
         ],
-        "highlight": 1,
-        "annotation": "アメリカ119名・中国137名"
+        "right_items": [
+          "目当てをふるい落とす"
+        ],
+        "center_label": "贈り物の二機能"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 68,
+      "act": 4,
+      "narration": "この二つは、同じ贈り物の表と裏である。",
+      "visual": {
+        "type": "verdict",
+        "caption": "同じ贈り物の",
+        "statement": "高価さ = 無価値さ",
+        "note": "表と裏"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
       "id": 69,
-      "act": 2,
-      "narration": "両方に、いちばん古い記憶を書いてもらった。",
+      "act": 4,
+      "narration": "ただし、ここは慎重に言わなければならない。",
       "visual": {
         "type": "figure",
-        "figure": "hourglass",
-        "label": "いちばん古い記憶を書く"
+        "figure": "anxiety",
+        "label": "ここは慎重に言う"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 70,
-      "act": 2,
-      "narration": "出てきた平均年齢に、はっきりした差があった。",
+      "act": 4,
+      "narration": "ソゾウとシーモアの研究はゲーム理論のモデルであって、人間を観察したものでも、実験したものでもない。",
       "visual": {
-        "type": "comparison",
-        "left_title": "アメリカ",
-        "right_title": "中国",
-        "left_items": [
-          "最古の記憶"
-        ],
-        "right_items": [
-          "最古の記憶"
-        ],
-        "center_label": "平均年齢の差"
+        "type": "figure",
+        "figure": "atom",
+        "label": "ゲーム理論のモデルである"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 71,
-      "act": 2,
-      "narration": "アメリカの学生はおよそ3歳半だったのに対し、中国の学生はそれよりおよそ6か月遅かったのである。",
+      "act": 3,
+      "narration": "数式の中で成り立つ話が、居酒屋の会計でも成り立っている保証は無い。",
       "visual": {
-        "type": "comparison",
-        "left_title": "アメリカの学生",
-        "right_title": "中国の学生",
-        "left_items": [
-          "およそ3歳半"
-        ],
-        "right_items": [
-          "およそ6か月遅い"
-        ],
-        "center_label": "最初の記憶の年齢"
+        "type": "figure",
+        "figure": "question",
+        "label": "数式は現実か"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 72,
+      "act": 3,
+      "narration": "それでも、このモデルはひとつのことだけははっきりと教えてくれる。",
+      "visual": {
+        "type": "figure",
+        "figure": "lightbulb",
+        "label": "モデルが教える一点"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 73,
+      "act": 3,
+      "narration": "奢りは無駄ではなかった、ということだ。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "奢りは無駄ではなかった"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 74,
+      "act": 3,
+      "narration": "少なくとも数式の上では、それは選別の道具として、きちんと仕事をしている。",
+      "visual": {
+        "type": "figure",
+        "figure": "target",
+        "label": "選別の道具"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 75,
+      "act": 3,
+      "narration": "では、その仕事はいったいいつまで続くものなのだろうか。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "いつまで続く"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 76,
       "act": 2,
-      "narration": "半年という幅は、人生の最初の記憶の位置としては小さくない。",
+      "narration": "ここで、生物学の側から補助線が入る。",
+      "visual": {
+        "type": "figure",
+        "figure": "dna",
+        "label": "生物学の補助線"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 77,
+      "act": 2,
+      "narration": "1975年、アモツ・ザハヴィが出したハンディキャップ原理である。",
       "visual": {
         "type": "stat",
-        "value": "半年",
-        "label": "最初の記憶の位置の差",
-        "context": "人生の始まり",
+        "value": "1975年",
+        "label": "ザハヴィのハンディキャップ原理",
+        "context": "進化生物学",
         "unit": "",
         "axis": {
           "label": "",
           "ticks": []
         }
       },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 73,
-      "act": 2,
-      "narration": "同じ研究の流れで、幼い子どもと母親の会話も調べられている。",
-      "visual": {
-        "type": "figure",
-        "figure": "family",
-        "label": "母子の会話を調べる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 74,
-      "act": 2,
-      "narration": "アメリカの母親は、子どもと過去の出来事を話すときに話を膨らませる傾向があった。",
-      "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "話を膨らませる母親"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 75,
-      "act": 2,
-      "narration": "そのときどう思ったか、あなたは何をしたのか、と子ども自身の役割や感情に触れていく。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "そのときどう思った？あなたは何をしたの？"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 76,
-      "act": 2,
-      "narration": "中国の母親のほうは、事実を確かめ直す形の問いが多く、話を膨らませることは少なかった。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "事実を確かめ直す問い"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 77,
-      "act": 3,
-      "narration": "保育園からの帰り道。",
-      "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 2,
-        "caption": "保育園からの帰り道"
-      },
       "concept_color": "pitch-black"
     },
     {
       "id": 78,
-      "act": 3,
-      "narration": "今日は何したの、と親が聞く。",
+      "act": 2,
+      "narration": "信号が情報を運ぶには、その信号にコストがかかっていなければならない。",
       "visual": {
-        "type": "dialogue",
-        "line": "今日は何したの？"
+        "type": "figure",
+        "figure": "network",
+        "label": "信号にはコストが要る"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 79,
-      "act": 3,
-      "narration": "片方の家では、そこから話が広がっていく。",
+      "act": 2,
+      "narration": "しかも、そのコストは相手によって差がついていなければならない。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "そこから話が広がる家"
+        "figure": "hierarchy",
+        "label": "相手ごとに差がつく"
       },
-      "concept_color": "warm"
+      "concept_color": "dusk"
     },
     {
       "id": 80,
-      "act": 3,
-      "narration": "誰と遊んだのか、そのとき嬉しかったのか、どうしてそう思ったのか。",
+      "act": 2,
+      "narration": "言い換えれば、こういうことになる。",
       "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "誰と遊んだ？嬉しかった？どうしてそう思ったの？"
+        "type": "keyword",
+        "keyword": "言い換えれば"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 81,
-      "act": 3,
-      "narration": "もう片方の家では、給食は全部食べたのか、先生の言うことを聞いたのか、と確認が続く。",
+      "act": 2,
+      "narration": "誰にでも払えるコストは、誰も選別しない。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "給食は全部食べた？先生の言うことを聞いた？"
+        "figure": "crowd",
+        "label": "誰でも払える=選別しない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 82,
-      "act": 3,
-      "narration": "どちらの子も同じ一日を過ごしている。",
+      "act": 2,
+      "narration": "孔雀の尾が意味を持つのは、弱い個体があの尾を維持できないからだ。",
       "visual": {
         "type": "figure",
-        "figure": "couple",
-        "label": "どちらも同じ一日"
+        "figure": "evolution",
+        "label": "孔雀の尾の意味"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 83,
       "act": 3,
-      "narration": "だが、その一日が言葉になる量は違っている。",
+      "narration": "全員が同じ尾を生やせるなら、尾は情報を運ばなくなる。",
       "visual": {
-        "type": "comparison",
-        "left_title": "広がる家",
-        "right_title": "確認の家",
-        "left_items": [
-          "言葉が多い"
-        ],
-        "right_items": [
-          "言葉が少ない"
-        ],
-        "center_label": "言葉になる量"
+        "type": "figure",
+        "figure": "echo",
+        "label": "全員が生やせば無意味"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 84,
       "act": 3,
-      "narration": "ここで、この回のいちばん硬い骨がある。",
+      "narration": "そして食事の代金というのは、たいていの場合、誰にでも払える範囲に収まっている。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "食事代は払える範囲"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 85,
+      "act": 3,
+      "narration": "一万円の会計は、年収三百万の人にとっても千五百万の人にとっても、伝票の上ではまったく同じ一万円として存在していて、その一万円がどれだけ痛いかは、テーブルの向かい側からは決して見えない。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "年収300万",
+        "right_title": "年収1500万",
+        "left_items": [
+          "伝票の上は同じ一万円",
+          "痛みは重い"
+        ],
+        "right_items": [
+          "伝票の上は同じ一万円",
+          "痛みは軽い"
+        ],
+        "center_label": "同じ一万円"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 86,
+      "act": 3,
+      "narration": "ここに、この回のいちばん硬い骨がある。",
       "visual": {
         "type": "keyword",
         "keyword": "いちばん硬い骨"
@@ -1059,687 +1032,733 @@
       "concept_color": "pitch-black"
     },
     {
-      "id": 85,
+      "id": 87,
       "act": 3,
-      "narration": "最初の記憶がいつ始まるかは、その人の記憶力の強さではなかった可能性が高い。",
+      "narration": "奢りは入口では強い信号になり、二度目からは急速に弱くなる。",
       "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "記憶力の強さではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 86,
-      "act": 3,
-      "narration": "それは、その人の周りで、出来事がどれだけ言葉に変換されていたかのほうに対応していた。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "どれだけ言葉に変換されたか"
+        "type": "line",
+        "title": "信号の強さ",
+        "unit": "",
+        "points": [
+          {
+            "label": "一度目",
+            "value": 90
+          },
+          {
+            "label": "二度目",
+            "value": 40
+          },
+          {
+            "label": "三度目",
+            "value": 20
+          }
+        ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 87,
-      "act": 3,
-      "narration": "記憶が先にあって語られるのではなく、語られたものが記憶として残っているという順番である。",
-      "visual": {
-        "type": "figure",
-        "figure": "queue",
-        "label": ""
-      },
-      "concept_color": "pitch-black"
-    },
-    {
       "id": 88,
       "act": 3,
-      "narration": "これは母語の習得に近い。",
+      "narration": "相手はもう、あなたが払えることを知っているからだ。",
       "visual": {
         "type": "figure",
-        "figure": "seed",
-        "label": "母語の習得に近い"
+        "figure": "eye",
+        "label": "もう払えると知っている"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 89,
       "act": 3,
-      "narration": "どの言語を話すようになるかを子どもが選んだのではなく、周りで鳴っていた音のほうが決めている。",
+      "narration": "同じ信号を二度送っても、二度目には情報が乗っていないのではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "echo",
-        "label": "周りで鳴っていた音が決める"
+        "figure": "cycle",
+        "label": "二度目は情報が乗らない"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 90,
       "act": 3,
-      "narration": "人類が言葉を持って以来、記憶も同じ経路を通ってきたのかもしれない。",
+      "narration": "では、払われた側ではなく、払っている側の中では何が起きているのだろうか。",
       "visual": {
-        "type": "scenery",
-        "place": "village",
-        "people": 6,
-        "caption": "言葉を持って以来、記憶も同じ経路を"
+        "type": "figure",
+        "figure": "brain",
+        "label": "払う側の中で"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 91,
-      "act": 4,
-      "narration": "ただし、ここは慎重に言わなければならない。",
+      "act": 3,
+      "narration": "ここから、話は逆の方向へ折り返していく。",
       "visual": {
-        "type": "keyword",
-        "keyword": "ここは慎重に"
+        "type": "scenery",
+        "place": "sea",
+        "people": 0,
+        "caption": "話は逆の方向へ折り返す"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 92,
-      "act": 4,
-      "narration": "ワンの研究は文化のあいだを比べたものであって、母親の語り方が最初の記憶の年齢を決めた、という因果を示したわけではない。",
+      "act": 2,
+      "narration": "1959年、エリオット・アロンソンとジャドソン・ミルズが、加入儀礼の実験を行った。",
       "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "文化の比較であって因果ではない"
+        "type": "stat",
+        "value": "1959年",
+        "label": "アロンソンとミルズの加入儀礼実験",
+        "context": "社会心理学",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 93,
-      "act": 4,
-      "narration": "二つが並んで観察されているというところまでである。",
+      "act": 2,
+      "narration": "あるグループに入りたいという学生を、三つの条件に分ける。",
       "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "並んで観察されたところまで"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 94,
-      "act": 4,
-      "narration": "そして誤解を避けるために、もう一つ置いておきたい。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "誤解を避けるために"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 95,
-      "act": 4,
-      "narration": "ここで対応しているのは言葉の量であって、愛情の量ではない。",
-      "visual": {
-        "type": "comparison",
-        "left_title": "対応するのは",
-        "right_title": "対応しないのは",
-        "left_items": [
-          "言葉の量"
-        ],
-        "right_items": [
-          "愛情の量"
-        ],
-        "center_label": "混同してはならない"
+        "type": "list",
+        "title": "三つの条件",
+        "items": [
+          "何もせず入れる",
+          "軽く恥ずかしい思い",
+          "はっきり厳しい儀礼"
+        ]
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 96,
-      "act": 4,
-      "narration": "膨らませる語り方をされなかった人が、大事にされなかったということには一切ならない。",
+      "id": 94,
+      "act": 3,
+      "narration": "ひとつは何もせずに入れる条件。",
       "visual": {
         "type": "figure",
-        "figure": "heart",
-        "label": "大事にされなかったのではない"
+        "figure": "door",
+        "label": "何もせず入れる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 95,
+      "act": 3,
+      "narration": "ひとつは軽く恥ずかしい思いをする条件。",
+      "visual": {
+        "type": "figure",
+        "figure": "mask",
+        "label": "軽く恥ずかしい"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 96,
+      "act": 3,
+      "narration": "もうひとつは、性的に露骨な単語を声に出して読み上げさせる、はっきり厳しい条件である。",
+      "visual": {
+        "type": "figure",
+        "figure": "anxiety",
+        "label": "露骨な単語を読み上げる"
       },
       "concept_color": "warm"
     },
     {
       "id": 97,
-      "act": 4,
-      "narration": "文化ごとに、子どもに何を教えようとするかが違うだけである。",
+      "act": 3,
+      "narration": "そのうえで全員に、同じ録音を聞かせた。",
       "visual": {
         "type": "figure",
-        "figure": "village",
-        "label": "何を教えるかが文化で違う"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 98,
-      "act": 4,
-      "narration": "どちらの語り方も、その社会の中では正しく機能してきた。",
-      "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "どちらも正しく機能してきた"
+        "figure": "screen",
+        "label": "全員に同じ録音"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 98,
+      "act": 3,
+      "narration": "これから加わる予定のグループの討論という設定で、内容はわざと退屈に作ってある。",
+      "visual": {
+        "type": "figure",
+        "figure": "bystander",
+        "label": "わざと退屈な討論"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 99,
-      "act": 4,
-      "narration": "さて、ここまで書いてきて、自分の足元を削らなければならない。",
+      "act": 3,
+      "narration": "結果はこうだった。",
       "visual": {
         "type": "keyword",
-        "keyword": "自分の足元を削る"
+        "keyword": "結果はこうだった"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 100,
-      "act": 4,
-      "narration": "冒頭で出したアフタルらの研究には、専門誌の上で公開の反論が付いている。",
+      "act": 3,
+      "narration": "厳しい儀礼を受けた学生ほど、その退屈きわまりない討論を高く評価したのである。",
       "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "公開の反論が付いている"
+        "type": "chart",
+        "title": "退屈な討論の評価",
+        "subtitle": "アロンソン&ミルズ 1959",
+        "unit": "点",
+        "items": [
+          {
+            "label": "何もせず",
+            "value": 40
+          },
+          {
+            "label": "軽い儀礼",
+            "value": 50
+          },
+          {
+            "label": "厳しい儀礼",
+            "value": 80
+          }
+        ],
+        "highlight": 2,
+        "annotation": "厳しい儀礼ほど高評価"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 101,
       "act": 4,
-      "narration": "2019年、パトリシア・バウアー、リン・ベイカーワード、ピーター・クロイゴー、キャロル・ピーターソン、そしてキィ・ワンの五人が、同じサイコロジカル・サイエンス誌に反論を発表した。",
+      "narration": "全員がまったく同じ録音を聞いているのに、つけられた点数のほうが違っていた。",
       "visual": {
-        "type": "stat",
-        "value": "5人",
-        "label": "反論を発表した研究者",
-        "context": "2019年 サイコロジカル・サイエンス誌",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 102,
-      "act": 4,
-      "narration": "題は「作り話として描くことへの反証」である。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "作り話への反証"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 103,
-      "act": 4,
-      "narration": "彼らが問題にしたのは、アフタルらの前提のほうだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "target",
-        "label": "問題は前提のほうだった"
+        "type": "comparison",
+        "left_title": "同じ録音",
+        "right_title": "違う点数",
+        "left_items": [
+          "全員が同じ内容を聴いた"
+        ],
+        "right_items": [
+          "つけた評価は割れた"
+        ],
+        "center_label": "払ったコスト"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 104,
+      "id": 102,
       "act": 4,
-      "narration": "2歳から3歳より前の子どもは記憶の断片しか報告できない、という線の引き方が厳しすぎるというのである。",
+      "narration": "加入のために払ったコストが、そのあとに出会うものの評価を押し上げていたことになる。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "線の引き方が厳しすぎる"
+        "figure": "arrowUp",
+        "label": "コストが評価を押し上げる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 103,
+      "act": 4,
+      "narration": "入社して三年目の同期を思い浮かべてみてほしい。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 3,
+        "caption": "入社三年目の同期"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 104,
+      "act": 4,
+      "narration": "就職活動で三十社受けて入った人と、たまたま声をかけられて入った人がいる。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "三十社受けた人",
+        "right_title": "声をかけられた人",
+        "left_items": [
+          "重いコストを払った"
+        ],
+        "right_items": [
+          "ほぼ払っていない"
+        ],
+        "center_label": "入社の入口"
       },
       "concept_color": "charcoal"
     },
     {
       "id": 105,
       "act": 4,
-      "narration": "発達研究の蓄積によれば、子どもは言葉で語れるようになるよりずっと前から、出来事を符号化し、保持し、あとから取り出している。",
+      "narration": "同じ会社にいて、同じ仕事をしていても、この会社はいい会社だと言うのは、たいてい前者のほうである。",
       "visual": {
-        "type": "list",
-        "title": "言葉より前から子どもは",
-        "items": [
-          "出来事を符号化する",
-          "保持する",
-          "あとから取り出す"
-        ]
+        "type": "verdict",
+        "caption": "同じ会社・同じ仕事でも",
+        "statement": "いい会社だと言う人 = 入口で多く払った人",
+        "note": "評価は入口のコストが決める"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "pitch-black"
     },
     {
       "id": 106,
       "act": 3,
-      "narration": "そこには人物がいて、動作があり、場所と時間の中に置かれている。",
+      "narration": "もうひとつ、方向が同じ実験がある。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 3,
-        "caption": "人物がいて、動作があり、場所と時間がある"
+        "type": "keyword",
+        "keyword": "同じ向きの実験"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 107,
       "act": 3,
-      "narration": "話せないことと、覚えていないことは別だ、という指摘である。",
+      "narration": "1969年、ジョン・ジェッカーとデヴィッド・ランディが、ヒューマン・リレーションズ誌に発表した研究だ。",
       "visual": {
-        "type": "comparison",
-        "left_title": "話せない",
-        "right_title": "覚えていない",
-        "left_items": [
-          "言葉にできない"
-        ],
-        "right_items": [
-          "記憶が無い"
-        ],
-        "center_label": "別のこと"
+        "type": "stat",
+        "value": "1969年",
+        "label": "ジェッカーとランディの研究",
+        "context": "ヒューマン・リレーションズ誌",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
       "id": 108,
       "act": 3,
-      "narration": "つまり、2歳以下と申告された記憶を、それだけの理由で作り話に分類することはできない。",
+      "narration": "学生を集めてクイズ大会をやり、勝った人に賞金を渡す。",
       "visual": {
-        "type": "stat",
-        "value": "2歳以下",
-        "label": "申告された記憶",
-        "context": "作り話とは断定できない",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
+        "type": "figure",
+        "figure": "trophy",
+        "label": "クイズ勝者に賞金"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 109,
       "act": 3,
-      "narration": "この五人はいずれも幼児の記憶を長く研究してきた側であり、片方の陣営が素人だという構図ではない。",
-      "visual": {
-        "type": "figure",
-        "figure": "crowd",
-        "label": "幼児の記憶の研究者 五人"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 110,
-      "act": 3,
-      "narration": "アフタルらは同じ年に再反論を出しており、論争は現在も決着していない。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "再反論・決着せず"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 111,
-      "act": 3,
-      "narration": "だから、この動画で言えるのは、四割が偽物だ、ということではない。",
-      "visual": {
-        "type": "donut",
-        "title": "",
-        "percent": 40,
-        "label": "偽物とは言えない",
-        "rest_label": "確かめられない"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 112,
-      "act": 3,
-      "narration": "言えるのは、確かめる手段が無い、というところまでである。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "確かめる手段が無い"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 113,
-      "act": 3,
-      "narration": "そして確かめる手段が無いという事実自体は、どちらの側も否定していないのではないだろうか。",
-      "visual": {
-        "type": "figure",
-        "figure": "handshake",
-        "label": "どちらの側も否定しない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 114,
-      "act": 3,
-      "narration": "では、体の側では何が起きているのか。",
-      "visual": {
-        "type": "figure",
-        "figure": "question",
-        "label": "体の側では何が"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 115,
-      "act": 3,
-      "narration": "ここで、まったく違う場所から手がかりが来る。",
-      "visual": {
-        "type": "scenery",
-        "place": "city",
-        "people": 0,
-        "caption": "まったく違う場所から手がかりが来る"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 116,
-      "act": 3,
-      "narration": "2014年、アカーズらの研究チームが、サイエンス誌に論文を発表した。",
-      "visual": {
-        "type": "stat",
-        "value": "2014年",
-        "label": "アカーズらの論文",
-        "context": "サイエンス誌に発表",
-        "unit": "",
-        "axis": {
-          "label": "",
-          "ticks": []
-        }
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 117,
-      "act": 3,
-      "narration": "彼らが扱ったのは、海馬という部位で新しい神経細胞が作られる働きである。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "海馬で新しい神経細胞"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 118,
-      "act": 3,
-      "narration": "この働きは、ふつう良いものとして紹介される。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowUp",
-        "label": "ふつう良いものとされる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 119,
-      "act": 3,
-      "narration": "ところが彼らが示したのは逆のことだった。",
-      "visual": {
-        "type": "figure",
-        "figure": "conflict",
-        "label": "示したのは逆のこと"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 120,
-      "act": 3,
-      "narration": "新しい細胞が回路に組み込まれると、そこにすでに保存されていた記憶が壊れるのである。",
-      "visual": {
-        "type": "figure",
-        "figure": "network",
-        "label": "新しい細胞で記憶が壊れる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 121,
-      "act": 3,
-      "narration": "成体のマウスで神経新生を増やしてやると、覚えていたはずのことを忘れた。",
-      "visual": {
-        "type": "figure",
-        "figure": "brain",
-        "label": "成体マウス 増やすと忘却"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 122,
-      "act": 3,
-      "narration": "そして乳児期のほうでも確かめている。",
-      "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "乳児期でも確かめる"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 123,
-      "act": 3,
-      "narration": "乳児期は神経新生がいちばん盛んな時期で、覚えたことが急速に失われる。",
-      "visual": {
-        "type": "line",
-        "title": "乳児期の記憶",
-        "unit": "",
-        "points": [
-          {
-            "label": "直後",
-            "value": 80
-          },
-          {
-            "label": "少し後",
-            "value": 40
-          },
-          {
-            "label": "のち",
-            "value": 10
-          }
-        ]
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 124,
-      "act": 3,
-      "narration": "そこで神経新生を減らしてやると、忘却が和らいだ。",
-      "visual": {
-        "type": "figure",
-        "figure": "arrowDown",
-        "label": "神経新生を減らすと忘却和らぐ"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 125,
-      "act": 3,
-      "narration": "さらに種をまたいでいる。",
-      "visual": {
-        "type": "figure",
-        "figure": "evolution",
-        "label": "種をまたいで確かめる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 126,
-      "act": 3,
-      "narration": "モルモットとデグーは、生まれた時点ですでに自力で動ける動物で、生後の神経新生が少ない。",
+      "narration": "そのあと三つの群に分けた。",
       "visual": {
         "type": "table",
-        "title": "生まれてすぐ動ける動物",
+        "title": "三つの群",
         "headers": [
-          "動物",
-          "生後の神経新生"
+          "群",
+          "条件"
         ],
         "rows": [
           [
-            "モルモット",
-            "少ない"
+            "第1群",
+            "研究者本人が返却を依頼"
           ],
           [
-            "デグー",
-            "少ない"
+            "第2群",
+            "秘書が返却を依頼"
+          ],
+          [
+            "第3群",
+            "何も頼まれない"
           ]
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 127,
+      "id": 110,
       "act": 3,
-      "narration": "この二種は、乳児期健忘を示さなかった。",
+      "narration": "研究者本人が来て、実は自腹だったので返してほしいと頼む群。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "二種は健忘を示さず"
+        "figure": "thought",
+        "label": "実は自腹だったので、返してほしい"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 128,
+      "id": 111,
       "act": 3,
-      "narration": "ところが人工的に神経新生を増やしてやると、示すようになったのである。",
+      "narration": "秘書が来て、学科の予算が足りないので返してほしいと頼む群。",
       "visual": {
-        "type": "figure",
-        "figure": "atom",
-        "label": "人工的に増やすと示す"
+        "type": "dialogue",
+        "line": "学科の予算が足りないので、返してほしい"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 129,
-      "act": 4,
-      "narration": "忘れることのほうが、作り込まれた仕組みだという話になる。",
+      "id": 112,
+      "act": 3,
+      "narration": "何も頼まれない群である。",
       "visual": {
-        "type": "keyword",
-        "keyword": "忘却こそ作り込まれた仕組み"
+        "type": "figure",
+        "figure": "bystander",
+        "label": "何も頼まれない群"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 113,
+      "act": 3,
+      "narration": "そのあと全員に、研究者への好感度を聞いた。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "研究者への好感度は?"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 114,
+      "act": 3,
+      "narration": "いちばん高かったのは、研究者本人に頼まれて返した群だった。",
+      "visual": {
+        "type": "chart",
+        "title": "研究者への好感度",
+        "subtitle": "Jecker & Landy 1969",
+        "unit": "",
+        "items": [
+          {
+            "label": "本人に返却",
+            "value": 8.2
+          },
+          {
+            "label": "何も頼まれず",
+            "value": 6.5
+          },
+          {
+            "label": "秘書に返却",
+            "value": 4.8
+          }
+        ],
+        "highlight": 0,
+        "annotation": "最も好きになったのは本人に頼まれた群"
+      },
+      "concept_color": "daylight"
+    },
+    {
+      "id": 115,
+      "act": 3,
+      "narration": "金を取り戻された側が、取り戻した相手をいちばん好きになっている。",
+      "visual": {
+        "type": "columns",
+        "title": "取り戻された側の好意",
+        "left": {
+          "label": "払わされた側",
+          "value": "好意 最大",
+          "level": 0.85
+        },
+        "right": {
+          "label": "受け取った側",
+          "value": "—",
+          "level": 0.35
+        },
+        "note": "取り戻された側ほど相手を好きになる"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 116,
+      "act": 3,
+      "narration": "いちばん低かったのは、秘書に頼まれた群である。",
+      "visual": {
+        "type": "figure",
+        "figure": "arrowDown",
+        "label": "秘書群は最低"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 117,
+      "act": 3,
+      "narration": "この二つを並べると、ひとつの向きが見えてくる。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "本人に返した群",
+        "right_title": "秘書に返した群",
+        "left_items": [
+          "好感度 最高"
+        ],
+        "right_items": [
+          "好感度 最低"
+        ],
+        "center_label": "好感度の差"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 118,
+      "act": 4,
+      "narration": "好意は、してもらった側ではなく、した側に生まれている。",
+      "visual": {
+        "type": "figure",
+        "figure": "heart",
+        "label": "好意は「した側」に"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 130,
+      "id": 119,
       "act": 4,
-      "narration": "では、忘れずに済ませる方法もあるのではないか、と思うかもしれない。",
+      "narration": "この向きが正しいなら、奢るという行為が最も強く動かしているのは、相手の気持ちではなく、あなた自身の気持ちのほうではないだろうか。",
       "visual": {
         "type": "figure",
-        "figure": "thought",
-        "label": "忘れずに済む方法は？"
+        "figure": "brain",
+        "label": "動くのは自分の気持ち"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 120,
+      "act": 4,
+      "narration": "ここで自分の足元を削っておきたい。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "ここで自分の足元を削っておく"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 121,
+      "act": 4,
+      "narration": "アロンソンとミルズの結果は、その後の研究で条件が単純ではないと指摘されている。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "条件は単純ではない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 122,
+      "act": 4,
+      "narration": "儀礼のあとに何が得られるかによって効き方が変わる、という報告が出ており、厳しいほど好きになる、と一行にまとめることはできない。",
+      "visual": {
+        "type": "list",
+        "title": "指摘された複雑さ",
+        "items": [
+          "儀礼の後に得られるもので効き方が変わる",
+          "「厳しいほど好き」とは言い切れない"
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 123,
+      "act": 4,
+      "narration": "方向は残っているが、強さは場合による。",
+      "visual": {
+        "type": "balance",
+        "title": "方向と強さ",
+        "left_label": "方向は残る",
+        "right_label": "強さは場合による",
+        "tilt": 0.3,
+        "note": ""
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 124,
+      "act": 4,
+      "narration": "それでも、この非対称そのものは無視できないところに残る。",
+      "visual": {
+        "type": "figure",
+        "figure": "scale",
+        "label": "非対称は無視できない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 125,
+      "act": 4,
+      "narration": "あなたが会計を持つたびに、上がっていくのはあなたの側の評価のほうで、相手の側に積まれていくのは返せていない負債のほうである。",
+      "visual": {
+        "type": "columns",
+        "title": "会計を持つたびに",
+        "left": {
+          "label": "あなたの側",
+          "value": "評価↑",
+          "level": 0.8
+        },
+        "right": {
+          "label": "相手の側",
+          "value": "負債↑",
+          "level": 0.45
+        },
+        "note": "上がる評価と、積まれる負債"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 126,
+      "act": 4,
+      "narration": "二人のあいだにある熱量の差は、回を重ねるほど、静かに開いていくことになる。",
+      "visual": {
+        "type": "scenery",
+        "place": "sea",
+        "people": 2,
+        "caption": "熱量の差は静かに開いていく"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 127,
+      "act": 4,
+      "narration": "では、その負債は返せないのか。",
+      "visual": {
+        "type": "figure",
+        "figure": "question",
+        "label": "負債は返せないのか"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 128,
+      "act": 4,
+      "narration": "返せる。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "返せる"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 129,
+      "act": 4,
+      "narration": "ただし同じ通貨では返らない。",
+      "visual": {
+        "type": "figure",
+        "figure": "money",
+        "label": "同じ通貨では返らない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 130,
+      "act": 3,
+      "narration": "1964年、ピーター・ブラウが社会的交換理論で書いたのは、交換される二つのものが同じ通貨である必要はない、ということだった。",
+      "visual": {
+        "type": "stat",
+        "value": "1964年",
+        "label": "ブラウ 社会的交換理論",
+        "context": "同じ通貨である必要はない",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 131,
-      "act": 4,
-      "narration": "その期待はもっともだ。",
+      "act": 3,
+      "narration": "時間、機嫌、同行、周囲への説明。",
       "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 2,
-        "caption": "その期待は、もっともだ"
+        "type": "list",
+        "title": "見えない支払い",
+        "items": [
+          "時間",
+          "機嫌",
+          "同行",
+          "周囲への説明"
+        ]
       },
       "concept_color": "dusk"
     },
     {
       "id": 132,
-      "act": 4,
-      "narration": "だが、この実験が示しているのはその逆に近い。",
+      "act": 3,
+      "narration": "どれも支払いだが、領収書が出ない。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "示すのはその逆に近い"
+        "figure": "money",
+        "label": "領収書は出ない"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 133,
-      "act": 4,
-      "narration": "生後も脳が作られ続ける種ほど、初期の記憶を手放している。",
+      "act": 3,
+      "narration": "だから外から見ると、片方だけが払っているように見える。",
       "visual": {
-        "type": "balance",
-        "title": "",
-        "left_label": "脳が作られ続ける",
-        "right_label": "初期の記憶を手放す",
-        "tilt": 0.7,
-        "note": "作るほど手放す"
+        "type": "figure",
+        "figure": "eye",
+        "label": "片方だけ払って見える"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 134,
-      "act": 4,
-      "narration": "進化の過程で残ってきたのは、覚え続ける仕組みではなく、入れ替え続ける仕組みのほうだった。",
+      "act": 3,
+      "narration": "物々交換に近いと言ってもいい。",
       "visual": {
-        "type": "comparison",
-        "left_title": "覚え続ける",
-        "right_title": "入れ替え続ける",
-        "left_items": [
-          "保持"
-        ],
-        "right_items": [
-          "更新"
-        ],
-        "center_label": "進化が残したのは"
+        "type": "scenery",
+        "place": "village",
+        "people": 4,
+        "caption": "物々交換に近いと言ってもいい"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dusk"
     },
     {
       "id": 135,
-      "act": 4,
-      "narration": "ただし、これはマウスとモルモットとデグーの実験である。",
+      "act": 3,
+      "narration": "米と魚を交換するとき、どちらがどれだけ得をしたかは、共通の値札が無いかぎり誰にも決められない。",
       "visual": {
-        "type": "list",
-        "title": "これはこの三種の実験",
-        "items": [
-          "マウス",
-          "モルモット",
-          "デグー"
-        ]
+        "type": "comparison",
+        "left_title": "米",
+        "right_title": "魚",
+        "left_items": [
+          "どれだけ得をした?"
+        ],
+        "right_items": [
+          "誰にも決められない"
+        ],
+        "center_label": "共通の値札が無い"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 136,
-      "act": 4,
-      "narration": "ヒトの幼児期健忘に同じ機構が同じように効いているという直接の証拠ではない。",
+      "act": 3,
+      "narration": "人類が貨幣を持つよりずっと前から、この非対称な交換は動いてきた。",
       "visual": {
         "type": "figure",
-        "figure": "anxiety",
-        "label": "ヒトへの直接の証拠ではない"
+        "figure": "cycle",
+        "label": "貨幣より前から動く交換"
       },
-      "concept_color": "charcoal"
+      "concept_color": "dark-navy"
     },
     {
       "id": 137,
       "act": 4,
-      "narration": "並べて考えたくなるが、そこは分けておきたい。",
+      "narration": "とはいえ、それは払っている側の慰めにすぎないのではないか、と思うかもしれない。",
       "visual": {
-        "type": "figure",
-        "figure": "isolation",
-        "label": "並べず、分けておく"
+        "type": "dialogue",
+        "line": "払う側の慰めにすぎないのでは"
       },
-      "concept_color": "dark-navy"
+      "concept_color": "charcoal"
     },
     {
       "id": 138,
       "act": 4,
-      "narration": "最後に、記憶が語りから作られるという話を、もっと古い場所で見ておきたい。",
+      "narration": "その懸念はもっともだ。",
       "visual": {
-        "type": "scenery",
-        "place": "hall",
-        "people": 0,
-        "caption": "もっと古い場所へ"
+        "type": "figure",
+        "figure": "thought",
+        "label": "その懸念はもっともだ"
       },
-      "concept_color": "warm"
+      "concept_color": "dark-navy"
     },
     {
       "id": 139,
-      "act": 4,
-      "narration": "1932年、ケンブリッジ大学のフレデリック・バートレットが行った実験である。",
+      "act": 3,
+      "narration": "だが1925年のマルセル・モースの贈与論には、それを裏返す指摘がある。",
       "visual": {
         "type": "stat",
-        "value": "1932年",
-        "label": "バートレットの実験",
-        "context": "ケンブリッジ大学",
+        "value": "1925年",
+        "label": "モース『贈与論』",
+        "context": "それを裏返す指摘",
         "unit": "",
         "axis": {
           "label": "",
@@ -1750,180 +1769,211 @@
     },
     {
       "id": 140,
-      "act": 4,
-      "narration": "ある人に短い話を読ませ、しばらくしてから思い出して書かせる。",
-      "visual": {
-        "type": "figure",
-        "figure": "person",
-        "label": "短い話を読み、後で書かせる"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 141,
       "act": 3,
-      "narration": "それを次の人に渡し、また思い出させる。",
+      "narration": "贈与には三つの義務がつく。",
       "visual": {
         "type": "figure",
-        "figure": "network",
-        "label": "次の人へ渡す"
+        "figure": "contract",
+        "label": "贈与に伴う三つの義務"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 142,
+      "id": 141,
       "act": 3,
-      "narration": "伝言を繰り返していく形である。",
-      "visual": {
-        "type": "figure",
-        "figure": "echo",
-        "label": "伝言を繰り返す"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 143,
-      "act": 3,
-      "narration": "使われたのは、北米先住民に伝わる「幽霊たちの戦い」という民話だった。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "「幽霊たちの戦い」"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 144,
-      "act": 3,
-      "narration": "渡っていくうちに、話は短くなり、理解しにくい部分は削られ、聞き手の文化になじむ形へと置き換わっていった。",
+      "narration": "与える義務、受け取る義務、そして返す義務である。",
       "visual": {
         "type": "list",
-        "title": "渡るうちに変わる",
+        "title": "贈与の三つの義務",
         "items": [
-          "話は短くなる",
-          "難しい部分は削られる",
-          "聞き手の文化になじむ形へ"
+          "与える義務",
+          "受け取る義務",
+          "返す義務"
         ]
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 145,
+      "id": 142,
       "act": 3,
-      "narration": "誰も嘘をついていない。",
+      "narration": "そしてモースが強調したのは、返礼のない贈与は贈与ではなくなる、という点だった。",
       "visual": {
-        "type": "keyword",
-        "keyword": "誰も嘘をついていない"
+        "type": "figure",
+        "figure": "mask",
+        "label": ""
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 143,
+      "act": 3,
+      "narration": "返せない量を渡された側にとって、それは好意ではなく序列の宣言になる。",
+      "visual": {
+        "type": "figure",
+        "figure": "hierarchy",
+        "label": "序列の宣言"
       },
       "concept_color": "pitch-black"
     },
     {
-      "id": 146,
+      "id": 144,
       "act": 3,
-      "narration": "全員が正直に思い出しただけである。",
+      "narration": "払いすぎは、優しさとして届かない。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "全員が正直に思い出した"
+        "figure": "scale",
+        "label": "優しさとして届かない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 145,
+      "act": 3,
+      "narration": "渡された側が受け取っているのは好意ではなく、返せないという事実のほうである。",
+      "visual": {
+        "type": "dialogue",
+        "line": "受け取ったのは、返せないという事実"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 146,
+      "act": 3,
+      "narration": "このやり取りは、人間だけのものではない。",
+      "visual": {
+        "type": "figure",
+        "figure": "dna",
+        "label": "人間だけのものではない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 147,
       "act": 3,
-      "narration": "あなたの家族が法事のたびに繰り返してきたあの話と、同じ構造がここにある。",
+      "narration": "ハエ目にオドリバエという一群がいて、オスがメスに贈り物を渡してからつがう。",
       "visual": {
         "type": "figure",
-        "figure": "family",
-        "label": "法事のたびの、あの話"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 148,
-      "act": 4,
-      "narration": "もう一度、あの部屋に戻る。",
-      "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "もう一度、あの部屋に"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 149,
-      "act": 4,
-      "narration": "畳の上に広げたアルバムと、色の褪せた写真。",
-      "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "色の褪せた写真"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 150,
-      "act": 4,
-      "narration": "手元でページが止まった、あの数秒である。",
-      "visual": {
-        "type": "figure",
-        "figure": "hourglass",
-        "label": "ページが止まった数秒"
+        "figure": "couple",
+        "label": "オドリバエの贈り物"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 151,
-      "act": 4,
-      "narration": "あなたはそのとき、自分の記憶力を疑っていた。",
+      "id": 148,
+      "act": 3,
+      "narration": "この仲間が面白いのは、進化の系列がそのまま並んで見えることだ。",
       "visual": {
         "type": "figure",
-        "figure": "scale",
-        "label": "自分の記憶力を、疑っていた"
+        "figure": "evolution",
+        "label": "進化の系列が並ぶ"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 149,
+      "act": 3,
+      "narration": "獲物をそのまま渡す種がいる。",
+      "visual": {
+        "type": "list",
+        "title": "贈り物の段階",
+        "items": [
+          "獲物をそのまま渡す"
+        ]
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 150,
+      "act": 3,
+      "narration": "栄養価の低いものを渡す種がいる。",
+      "visual": {
+        "type": "list",
+        "title": "贈り物の段階",
+        "items": [
+          "獲物をそのまま渡す",
+          "栄養価の低いものを渡す"
+        ]
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 151,
+      "act": 3,
+      "narration": "そして、絹で作った風船だけを渡す種がいる。",
+      "visual": {
+        "type": "list",
+        "title": "贈り物の段階",
+        "items": [
+          "獲物をそのまま渡す",
+          "栄養価の低いものを渡す",
+          "絹の風船だけを渡す"
+        ]
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 152,
-      "act": 4,
-      "narration": "この日を覚えていないのだとしたら、自分は薄情なのではないか、と。",
+      "act": 3,
+      "narration": "エンピス・スノッディという種では、その風船の中に何も入っていない。",
       "visual": {
-        "type": "dialogue",
-        "line": "自分は薄情なのではないか"
+        "type": "keyword",
+        "keyword": "中身は空っぽ"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 153,
-      "act": 4,
-      "narration": "だがここまで並べてきたものは、どれもあなたの記憶力の話をしていない。",
+      "act": 3,
+      "narration": "包装だけが残ったのである。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "記憶力の話ではない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 154,
-      "act": 4,
-      "narration": "並べ直すと、線は一本になる。",
-      "visual": {
-        "type": "figure",
-        "figure": "path",
-        "label": "並べ直すと一本の線に"
+        "figure": "mask",
+        "label": "包装だけが残った"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 154,
+      "act": 3,
+      "narration": "中身のほうが先に要らなくなり、渡すという手続きそのものが仕事を引き受けるようになった。",
+      "visual": {
+        "type": "figure",
+        "figure": "contract",
+        "label": "手続きが仕事を引き受ける"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
       "id": 155,
-      "act": 4,
-      "narration": "六千人あまりの申告のうち三分の一が、記憶の下限より下に置かれていた。",
+      "act": 3,
+      "narration": "何を渡したかは、もう問われていない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "何を渡したかは問われない"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 156,
+      "act": 3,
+      "narration": "ただし、受け取る側が黙って騙されているわけでもない。",
+      "visual": {
+        "type": "scenery",
+        "place": "forest",
+        "people": 0,
+        "caption": "受け取る側も黙ってはいない"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 157,
+      "act": 3,
+      "narration": "2011年、アルボらの研究チームが、贈り物を渡すクモの一種ピサウラ・ミラビリスを調べた。",
       "visual": {
         "type": "stat",
-        "value": "三分の一",
-        "label": "記憶の下限より下",
-        "context": "六千人あまりの申告",
+        "value": "2011年",
+        "label": "アルボらの研究",
+        "context": "ピサウラ・ミラビリス",
         "unit": "",
         "axis": {
           "label": "",
@@ -1933,267 +1983,443 @@
       "concept_color": "charcoal"
     },
     {
-      "id": 156,
-      "act": 4,
-      "narration": "作り話は実験室で四人に一人、追試では三人に一人に入り込んだ。",
+      "id": 158,
+      "act": 3,
+      "narration": "無価値な贈り物を出したオスは、メスに交尾を早く打ち切られていた。",
       "visual": {
-        "type": "comparison",
-        "left_title": "実験室",
-        "right_title": "追試",
-        "left_items": [
-          "四人に一人"
-        ],
-        "right_items": [
-          "三人に一人"
-        ],
-        "center_label": "作り話が入り込む"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 157,
-      "act": 4,
-      "narration": "最初の記憶の年齢は文化によって半年ずれ、その差は周りで交わされた言葉の量と並んでいた。",
-      "visual": {
-        "type": "balance",
-        "title": "",
-        "left_label": "最初の記憶の年齢",
-        "right_label": "交わされた言葉の量",
-        "tilt": 0.4,
-        "note": "文化で半年ずれる"
+        "type": "figure",
+        "figure": "conflict",
+        "label": "無価値な贈り物→早期打ち切り"
       },
       "concept_color": "dark-navy"
     },
     {
-      "id": 158,
-      "act": 4,
-      "narration": "そして忘れることのほうが、脳に作り込まれた仕組みだった。",
+      "id": 159,
+      "act": 3,
+      "narration": "打ち切られれば精子の受け渡しは減る。",
       "visual": {
         "type": "figure",
-        "figure": "brain",
-        "label": "忘れることは仕組み"
+        "figure": "arrowDown",
+        "label": "精子の受け渡しは減る"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 159,
-      "act": 4,
-      "narration": "では、あの記憶は無かったことになるのか。",
+      "id": 160,
+      "act": 3,
+      "narration": "受け取る側には、ちゃんと対抗手段があるのだ。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "あの記憶は無かったことに?"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 160,
-      "act": 5,
-      "narration": "ならない。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "ならない"
+        "figure": "stairs",
+        "label": "受け取る側の対抗手段"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 161,
-      "act": 5,
-      "narration": "ここまでの研究は、どれ一つとしてあなたの記憶を否定していない。",
+      "act": 3,
+      "narration": "似た仕組みは鳥にもあって、1973年にニスベットがネイチャー誌に出した研究では、アジサシのオスの給餌量が、そのあとの卵の大きさと繁殖の成功を予測していた。",
       "visual": {
-        "type": "figure",
-        "figure": "heart",
-        "label": "記憶を否定していない"
-      },
-      "concept_color": "dark-navy"
-    },
-    {
-      "id": 162,
-      "act": 5,
-      "narration": "バウアーらの反論があるとおり、幼い子どもは実際に出来事を覚えている。",
-      "visual": {
-        "type": "figure",
-        "figure": "seed",
-        "label": "幼い子どもは覚えている"
-      },
-      "concept_color": "warm"
-    },
-    {
-      "id": 163,
-      "act": 5,
-      "narration": "分かっているのは、どちらなのかを外から見分ける方法が、まだ誰にも無いということだけである。",
-      "visual": {
-        "type": "figure",
-        "figure": "scale",
-        "label": "どちらか見分けられない"
+        "type": "stat",
+        "value": "1973年",
+        "label": "ニスベットのネイチャー論文",
+        "context": "アジサシの給餌量",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 164,
-      "act": 5,
-      "narration": "そもそも、外から入ったのなら偽物だ、という前提のほうを疑ってよい。",
+      "id": 162,
+      "act": 3,
+      "narration": "あちらでは、渡されたものが確かに使われている。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "その前提を疑ってよい"
+        "figure": "seed",
+        "label": "渡されたものが使われる"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 163,
+      "act": 4,
+      "narration": "もう一度、あの会計の場面に戻る。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 2,
+        "caption": "もう一度、会計の場面へ"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 164,
+      "act": 4,
+      "narration": "伝票が置かれて、あなたの手が先に動いた、あの一秒である。",
+      "visual": {
+        "type": "figure",
+        "figure": "clock",
+        "label": "手が先に動いた一秒"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 165,
-      "act": 5,
-      "narration": "バートレットの実験で話を運んだ人たちは、誰も嘘をついていなかった。",
+      "act": 4,
+      "narration": "あなたはそのとき、金で気を引こうとした自分は浅ましいのではないか、と疑っていたかもしれない。",
       "visual": {
         "type": "figure",
-        "figure": "person",
-        "label": "誰も嘘をついていなかった"
-      },
-      "concept_color": "pitch-black"
-    },
-    {
-      "id": 166,
-      "act": 5,
-      "narration": "人間の記憶は、初めからそういう作りになっている。",
-      "visual": {
-        "type": "keyword",
-        "keyword": "初めからそういう作り"
+        "figure": "money",
+        "label": "金で気を引く自分は浅ましいのか"
       },
       "concept_color": "charcoal"
     },
     {
+      "id": 166,
+      "act": 4,
+      "narration": "あるいは反対に、自分は都合のいい財布として扱われたのだ、と結論していたかもしれない。",
+      "visual": {
+        "type": "dialogue",
+        "line": "都合のいい財布にされたのか"
+      },
+      "concept_color": "daylight"
+    },
+    {
       "id": 167,
-      "act": 5,
-      "narration": "人類が言葉を持ってからずっと、私たちは自分の過去を、他人と一緒に組み立ててきたのではないだろうか。",
+      "act": 4,
+      "narration": "だが、ここまで並べてきた研究は、そのどちらの説明も支持していない。",
       "visual": {
         "type": "figure",
-        "figure": "handshake",
-        "label": "過去を他人と組み立てる"
+        "figure": "crossroad",
+        "label": "どちらの説明も支持しない"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 168,
-      "act": 5,
-      "narration": "だから、返しておきたいものがある。",
-      "visual": {
-        "type": "scenery",
-        "place": "field",
-        "people": 2,
-        "caption": "返しておきたいものがある"
-      },
-      "concept_color": "dusk"
-    },
-    {
-      "id": 169,
-      "act": 5,
-      "narration": "あなたの最初の記憶が何歳のものかは、記憶力の成績ではない。",
+      "act": 4,
+      "narration": "並べ直すと、線は一本になる。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "記憶力の成績ではない"
+        "figure": "path",
+        "label": "線は一本になる"
       },
       "concept_color": "charcoal"
     },
     {
-      "id": 170,
-      "act": 5,
-      "narration": "それは、あなたの周りで出来事が言葉に変わり始めた地点である。",
+      "id": 169,
+      "act": 4,
+      "narration": "換金できない支払いは、入口で確かに仕事をする。",
       "visual": {
-        "type": "verdict",
-        "caption": "",
-        "statement": "最初の記憶 = 出来事が言葉に変わり始めた地点",
-        "note": ""
+        "type": "figure",
+        "figure": "door",
+        "label": "入口で確かに仕事をする"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 170,
+      "act": 4,
+      "narration": "だがその仕事は、コストの差が見えているあいだしか続かない。",
+      "visual": {
+        "type": "figure",
+        "figure": "hourglass",
+        "label": "コストの差が見えるあいだだけ"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 171,
-      "act": 5,
-      "narration": "誰かがあなたに、今日は何をしたのかと聞いた。",
+      "act": 4,
+      "narration": "そして払うという行為がいちばん強く動かすのは、払った側の気持ちのほうだった。",
       "visual": {
         "type": "figure",
-        "figure": "question",
-        "label": "今日は何をしたの?"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 172,
-      "act": 5,
-      "narration": "あなたがそれに答えた。",
-      "visual": {
-        "type": "figure",
-        "figure": "couple",
-        "label": "あなたが、それに答えた"
+        "figure": "heart",
+        "label": "動くのは払った側の気持ち"
       },
       "concept_color": "dark-navy"
     },
     {
+      "id": 172,
+      "act": 4,
+      "narration": "渡された側には負債が残り、返礼の通貨が違うせいで、外からは片方だけが払っているように見える。",
+      "visual": {
+        "type": "columns",
+        "title": "見え方の非対称",
+        "left": {
+          "label": "渡した側",
+          "value": "払う",
+          "level": 0.8
+        },
+        "right": {
+          "label": "渡された側",
+          "value": "負債",
+          "level": 0.3
+        },
+        "note": "返礼の通貨が違う"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 173,
-      "act": 5,
-      "narration": "その往復が始まった場所に、最初の一枚は置かれている。",
+      "act": 4,
+      "narration": "では、割り勘にすればいいのか。",
       "visual": {
         "type": "figure",
-        "figure": "cycle",
-        "label": "往復が始まった場所"
+        "figure": "question",
+        "label": "では、割り勘にすればいいのか"
       },
-      "concept_color": "dusk"
+      "concept_color": "dark-navy"
     },
     {
       "id": 174,
-      "act": 5,
-      "narration": "本当にあったかどうかは、たぶん最後まで確かめられない。",
+      "act": 4,
+      "narration": "そうではない。",
       "visual": {
-        "type": "figure",
-        "figure": "candle",
-        "label": "最後まで確かめられない"
+        "type": "keyword",
+        "keyword": "そうではない"
       },
       "concept_color": "pitch-black"
     },
     {
       "id": 175,
       "act": 5,
-      "narration": "確かめられないまま持っていてよいものが、人生には一つくらいあってもいいのではないだろうか。",
+      "narration": "ここまでの研究は、どれ一つとして奢りをやめろと言っていない。",
       "visual": {
-        "type": "scenery",
-        "place": "room",
-        "people": 1,
-        "caption": "確かめられないまま持っていてよいもの"
-      },
-      "concept_color": "charcoal"
-    },
-    {
-      "id": 176,
-      "act": 5,
-      "narration": "そんなことまで、また解剖してしまいました。",
-      "visual": {
-        "type": "figure",
-        "figure": "thought",
-        "label": "また解剖してしまった"
+        "type": "verdict",
+        "caption": "ここまでの研究は",
+        "statement": "どれ一つとして奢りをやめろと言っていない",
+        "note": ""
       },
       "concept_color": "pitch-black"
     },
     {
+      "id": 176,
+      "act": 4,
+      "narration": "むしろソゾウとシーモアのモデルは、換金できない支払いに機能があることを示している。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "換金できない支払い"
+      },
+      "concept_color": "charcoal"
+    },
+    {
       "id": 177,
-      "act": 5,
-      "narration": "よろしければチャンネル登録と高評価をお願いします。",
+      "act": 4,
+      "narration": "それに、払うのが男の側だというのは現代の甘やかしでもない。",
       "visual": {
         "type": "figure",
-        "figure": "applause",
-        "label": "登録と高評価を"
+        "figure": "question",
+        "label": "男が払う=甘やかし?"
       },
       "concept_color": "dark-navy"
     },
     {
       "id": 178,
+      "act": 4,
+      "narration": "アンダーソンが2007年にまとめたところでは、マードックの民族誌アトラスに載った1,167の前工業社会のうち、およそ三分の二で花婿の側が払っていた。",
+      "visual": {
+        "type": "stat",
+        "value": "三分の二",
+        "label": "花婿側が払う社会",
+        "context": "アンダーソン2007",
+        "unit": "",
+        "axis": {
+          "label": "1,167の前工業社会",
+          "ticks": []
+        }
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 179,
+      "act": 4,
+      "narration": "持参金のほうが少数派である。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "花婿が払う",
+        "right_title": "持参金",
+        "left_items": [
+          "約三分の二"
+        ],
+        "right_items": [
+          "少数派"
+        ],
+        "center_label": "どちらが多いか"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 180,
+      "act": 4,
+      "narration": "それでも、今回集めた資料の中に、どうしても見つからなかったものがある。",
+      "visual": {
+        "type": "figure",
+        "figure": "eye",
+        "label": "見つからなかったもの"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 181,
+      "act": 4,
+      "narration": "払った額と、そのあと関係がどうなったかを結びつけて追いかけたデータが、一本も出てこなかったのだ。",
+      "visual": {
+        "type": "figure",
+        "figure": "path",
+        "label": "額と関係を結ぶ線"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 182,
+      "act": 5,
+      "narration": "だからこの動画で言えるのは、奢りが効かないということではない。",
+      "visual": {
+        "type": "keyword",
+        "keyword": "奢りが効かない、ではない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 183,
+      "act": 5,
+      "narration": "言えるのは、奢りが効く場所が、世間で思われているよりずっと狭いらしい、というところまでである。",
+      "visual": {
+        "type": "verdict",
+        "caption": "言えるのはここまで",
+        "statement": "奢りが効く場所 = 思ったよりずっと狭い",
+        "note": "それ以上は言えない"
+      },
+      "concept_color": "dusk"
+    },
+    {
+      "id": 184,
+      "act": 5,
+      "narration": "だから、返しておきたいものがある。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 1,
+        "caption": "返しておきたいものがある"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 185,
+      "act": 5,
+      "narration": "あなたが払ったあの一万円は、無駄ではなかった。",
+      "visual": {
+        "type": "stat",
+        "value": "一万円",
+        "label": "あなたが払ったあの額",
+        "context": "無駄ではなかった",
+        "unit": "",
+        "axis": {
+          "label": "",
+          "ticks": []
+        }
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 186,
+      "act": 5,
+      "narration": "それは扉の鍵として、ちゃんと働いた。",
+      "visual": {
+        "type": "figure",
+        "figure": "door",
+        "label": "扉の鍵として働いた"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 187,
+      "act": 5,
+      "narration": "ただ、鍵は開けてしまえば役目を終える。",
+      "visual": {
+        "type": "figure",
+        "figure": "door",
+        "label": "開ければ役目を終える"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 188,
+      "act": 5,
+      "narration": "開いたあとも同じ鍵を回し続けても、部屋はそれ以上広がらない。",
+      "visual": {
+        "type": "figure",
+        "figure": "cycle",
+        "label": "回し続けても広がらない"
+      },
+      "concept_color": "charcoal"
+    },
+    {
+      "id": 189,
+      "act": 5,
+      "narration": "次に要るのは鍵ではなく、部屋の中に置くものだ。",
+      "visual": {
+        "type": "comparison",
+        "left_title": "鍵",
+        "right_title": "部屋に置くもの",
+        "left_items": [
+          "扉を開ける"
+        ],
+        "right_items": [
+          "次に要るもの"
+        ],
+        "center_label": "役割の違い"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 190,
+      "act": 5,
+      "narration": "そして部屋の中に置けるもののほとんどには、値段がついていない。",
+      "visual": {
+        "type": "verdict",
+        "caption": "最後に残るもの",
+        "statement": "部屋に置けるもの = 値段がついていない",
+        "note": "奢りの届かない場所"
+      },
+      "concept_color": "pitch-black"
+    },
+    {
+      "id": 191,
+      "act": 5,
+      "narration": "そんなことまで、また解剖してしまいました。",
+      "visual": {
+        "type": "scenery",
+        "place": "room",
+        "people": 2,
+        "caption": "また解剖してしまいました"
+      },
+      "concept_color": "warm"
+    },
+    {
+      "id": 192,
+      "act": 5,
+      "narration": "よろしければチャンネル登録と高評価をお願いします。",
+      "visual": {
+        "type": "figure",
+        "figure": "applause",
+        "label": "チャンネル登録と高評価"
+      },
+      "concept_color": "dark-navy"
+    },
+    {
+      "id": 193,
       "act": 5,
       "narration": "それでは次の動画で、またお会いしましょう。",
       "visual": {
         "type": "scenery",
-        "place": "village",
-        "people": 2,
-        "caption": "それでは、また次の夜に"
+        "place": "city",
+        "people": 0,
+        "caption": "また次の動画で"
       },
       "concept_color": "dusk"
     }
